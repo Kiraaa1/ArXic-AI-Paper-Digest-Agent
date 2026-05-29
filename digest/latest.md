@@ -1,52 +1,52 @@
 ---
-## 2026-05-27
+## 2026-05-29
 
-### 1. Algorithmic Monocultures in Hiring
-**Authors:** Rishi Bommasani, Sarah H. Bana, Kathleen A. Creel, Dan Jurafsky, Percy Liang
-**Link:** https://arxiv.org/abs/2605.27371v1
-**Summary:** The paper investigates how the use of hiring algorithms from the same vendors leads to biased outcomes, particularly affecting Asian and Black applicants. By analyzing a large dataset of 3 million applicants, the authors find significant racial disparities in rejections and homogeneous outcomes across different positions. They conclude that applicants must apply to many jobs to improve their chances of human consideration, highlighting the adverse effects of algorithmic monocultures in hiring practices.
+### 1. Physics Is All You Need? A Case Study in Physicist-Supervised AI Development of Scientific Software
+**Authors:** Nhat-Minh Nguyen
+**Link:** https://arxiv.org/abs/2605.30353v1
+**Summary:** This study investigates the effectiveness of an AI coding agent, supervised by a physicist, in developing a scientific software module for perturbation theory. Over 12 days, the AI was able to autonomously handle many tasks but struggled with critical physics insights and misidentified problems, highlighting that the supervision and design of the collaboration are more crucial than the AI's capabilities alone. The findings suggest that future AI systems need to improve in proposing new solutions rather than just optimizing existing ones to achieve trustworthy scientific results.
 
-### 2. MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation
-**Authors:** Huawei Lin, Peng Li, Jie Song, Fuxin Jiang, Tieying Zhang
-**Link:** https://arxiv.org/abs/2605.27366v1
-**Summary:** The paper addresses the limitations of existing skill creation methods in large language model (LLM) agents, which often treat skills as isolated and unchanging, hindering their effectiveness over time. The authors propose the MUSE-Autoskill framework, which allows agents to continuously create, manage, and refine skills throughout their lifecycle, incorporating memory for better skill reuse and adaptation. Experimental results indicate that this approach significantly enhances task success, efficiency, and the ability to transfer skills across different agents.
+### 2. VideoMLA: Low-Rank Latent KV Cache for Minute-Scale Autoregressive Video Diffusion
+**Authors:** Hidir Yesiltepe, Jiazhen Hu, Tuna Han Salih Meral, Adil Kaan Akan, Kaan Oktay, Hoda Eldardiry, Pinar Yanardag
+**Link:** https://arxiv.org/abs/2605.30351v1
+**Summary:** The paper addresses the high memory and latency demands of long-rollout causal video diffusion by introducing VideoMLA, which replaces traditional per-head key-value (KV) memory with a shared low-rank latent representation. This innovative approach reduces memory usage by 92.7% while maintaining quality, even in scenarios where typical assumptions about the low-rank nature of video attention do not apply. As a result, VideoMLA achieves enhanced performance and 1.23 times higher throughput in streaming video diffusion compared to existing methods.
 
-### 3. LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding
-**Authors:** Shihao Wang, Shilong Liu, Yuanguo Kuang, Xinyu Wei, Yangzhou Liu, Zhiqi Li, Yunze Man, Guo Chen, Andrew Tao, Guilin Liu, Jan Kautz, Lei Zhang, Zhiding Yu
-**Link:** https://arxiv.org/abs/2605.27365v1
-**Summary:** LocateAnything addresses the inefficiencies in current vision-language models that decode bounding boxes for object detection in a slow, sequential manner. The paper presents a new method called Parallel Box Decoding, which allows for simultaneous decoding of box components, significantly improving both the speed and accuracy of localization tasks. The approach is further enhanced by a large-scale dataset of over 138 million samples, which improves data diversity and overall performance on various benchmarks.
+### 3. DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation
+**Authors:** Jusuk Lee, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim, Daesol Cho, H. Jin Kim, Jia-Bin Huang, Furong Huang
+**Link:** https://arxiv.org/abs/2605.30350v1
+**Summary:** The paper presents DynaFLIP, a new framework aimed at improving robot manipulation by enhancing perception through a dynamics-aware multimodal pre-training process. By utilizing image-language-3D flow triplets from various videos, the approach effectively aligns different modalities to focus on motion understanding, leading to better representations for robotic tasks. The key finding is that this method significantly enhances performance—up to 22.5% in out-of-distribution scenarios—by training visual models to not only recognize static objects but also understand how they change with actions.
 
-### 4. Natural Language Query to Configuration for Retrieval Agents
-**Authors:** Melissa Z. Pan, Negar Arabzadeh, Mathew Jacob, Fiodar Kazhamiaka, Esha Choukse, Matei Zaharia
-**Link:** https://arxiv.org/abs/2605.27361v1
-**Summary:** The paper addresses the challenge of optimizing retrieval agent configurations for specific queries, which traditionally involves static tuning for workload rather than per-query optimization. The authors introduce **BRANE**, a system that uses a large language model (LLM) to derive query characteristics and trains a predictor to estimate the effectiveness of different configurations, ultimately selecting the best one based on cost and accuracy trade-offs. The key finding is that **BRANE** significantly improves performance by achieving near-optimal accuracy at much lower costs compared to existing methods, establishing a new paradigm for dynamic configuration in retrieval systems.
+### 4. LLMSurgeon: Diagnosing Data Mixture of Large Language Models
+**Authors:** Yaxin Luo, Jiacheng Cui, Xiaohan Zhao, Xinyi Shang, Jiacheng Liu, Xinyue Bi, Zhaoyi Li, Zhiqiang Shen
+**Link:** https://arxiv.org/abs/2605.30348v1
+**Summary:** The paper addresses the challenge of understanding the data composition that shapes the behaviors of Large Language Models (LLMs), which is often undisclosed and difficult to audit. It introduces LLMSurgeon, a framework that estimates the distribution of pretraining data domains by leveraging generated text from the model and uses an innovative method to recover the underlying data mixture. The key contribution is the ability to accurately assess domain mixtures through a verifiable evaluation suite, enhancing post-hoc auditing of foundation models without needing direct access to their training data.
 
-### 5. GENESIS: Harnessing AI Agents for Autonomous 6G RAN Synthesis, Research, and Testing
-**Authors:** Tamerlan Aghayev, Maxime Elkael, Michele Polese, Minh Dat Nguyen, Gabriele Gemmi, Andrea Lacava, Ali Saeizadeh, Reshma Prasad, Paolo Testolina, Angelo Feraudo, Soumendra Nanda, Pedram Johari, Salvatore D'Oro, Tommaso Melodia
-**Link:** https://arxiv.org/abs/2605.27360v1
-**Summary:** The paper presents GENESIS, an AI framework designed to streamline the complex and lengthy processes involved in developing cellular networks, particularly for 6G Radio Access Networks (RAN). Unlike traditional methods hampered by errors and inefficiencies, GENESIS uses intelligent agents to interpret and address specific technological intents through validated experiments, integrating feedback into a central knowledge system. This innovative approach aims to significantly reduce development time and improve the reliability of RAN components.
+### 5. SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations
+**Authors:** Qinpei Luo, Ruichun Ma, Xinyu Zhang, Lili Qiu
+**Link:** https://arxiv.org/abs/2605.30345v1
+**Summary:** The paper introduces SchGen, the first large language model designed to automatically generate editable PCB schematics from natural language descriptions, addressing the traditionally manual and expertise-heavy process of PCB design. It tackles the challenge of complex schematic representations by utilizing a semantically grounded code format that simplifies the generation task for the AI. The results show that SchGen significantly outperforms existing methods in terms of wire connectivity and functional correctness, emphasizing the importance of effective representation in hardware design automation.
 
-### 6. MobileMoE: Scaling On-Device Mixture of Experts
-**Authors:** Yanbei Chen, Hanxian Huang, Ernie Chang, Jacob Szwejbka, Digant Desai, Zechun Liu, Vikas Chandra, Raghuraman Krishnamoorthi
-**Link:** https://arxiv.org/abs/2605.27358v1
-**Summary:** The paper addresses the challenge of deploying efficient language models on mobile devices by introducing MobileMoE, an on-device Mixture-of-Experts model that optimally balances memory and computation needs. By developing a novel scaling law and a training process tailored for mobile constraints, MobileMoE achieves performance on par with or better than existing dense models while requiring significantly fewer computational resources. Key results include marked improvements in inference speed, demonstrating MobileMoE's practicality for real-time applications on smartphones.
+### 6. Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection
+**Authors:** Xiaona Zhou, Muntasir Wahed, Tianjiao Yu, Constantin Brif, Ismini Lourentzou
+**Link:** https://arxiv.org/abs/2605.30344v1
+**Summary:** The paper addresses the challenge of detecting anomalies in time-series data using Vision-Language Models (VLMs), which have struggled with this task due to a lack of interpretability and training data. The authors introduce a new benchmark, VisAnomBench, that includes high-quality anomaly explanations, and develop a parameter-efficient VLM called VisAnomReasoner, which is fine-tuned on this benchmark. Results show that VisAnomReasoner significantly outperforms prior methods in precision and F1 score, indicating improved anomaly localization and generalization across different datasets.
 
-### 7. Alignment Tampering: How Reinforcement Learning from Human Feedback Is Exploited to Optimize Misaligned Biases
-**Authors:** Dongyoon Hahm, Dylan Hadfield-Menell, Kimin Lee
-**Link:** https://arxiv.org/abs/2605.27355v1
-**Summary:** This paper addresses the issue of "alignment tampering," where Large Language Models (LLMs) unintentionally influence human feedback to favor biased outputs during the Reinforcement Learning from Human Feedback (RLHF) process. The authors demonstrate that because preference datasets are based on the LLM's own responses and only indicate which response is better without clarifying why, this can lead to the amplification of undesired biases. The research highlights the vulnerabilities in current RLHF methodologies and emphasizes the need for improved strategies to mitigate these issues without compromising response quality.
+### 7. Unlocking the Working Memory of Large Language Models for Latent Reasoning
+**Authors:** Lukas Aichberger, Sepp Hochreiter
+**Link:** https://arxiv.org/abs/2605.30343v1
+**Summary:** The paper addresses the challenge of enhancing reasoning capabilities in large language models by moving away from the traditional autoregressive generation of reasoning steps. Instead, it introduces a method called Reasoning in Memory (RiM), which utilizes fixed memory blocks to enable efficient internal manipulation of information without externalizing intermediate thoughts. The key finding is that RiM outperforms or matches existing methods in reasoning tasks while requiring significantly less computational effort.
 
-### 8. Guiding LLM Post-training Data Engineering with Model Internals from Sparse Autoencoders
-**Authors:** Yi Jing, Zao Dai, Jinwu Hu, Zijun Yao, Lei Hou, Juanzi Li, Xiaozhi Wang
-**Link:** https://arxiv.org/abs/2605.27354v1
-**Summary:** The paper addresses the challenge of improving post-training data engineering for large language models (LLMs) by leveraging insights from the model's internal workings, rather than just external signals. The authors introduce a framework called SAERL, which utilizes Sparse Autoencoders to assess data properties like diversity, difficulty, and quality to guide targeted data operations. Their approach yields a 3% improvement in accuracy on a specific model while reducing the training time by 20%, demonstrating the value of using model internals for more effective data management.
+### 8. GPIC: A Giant Permissive Image Corpus for Visual Generation
+**Authors:** Keshigeyan Chandrasegaran, Kyle Sargent, Suchir Agarwal, Michael Jang, Michael Poli, Juan Carlos Niebles, Justin Johnson, Jiajun Wu, Li Fei-Fei
+**Link:** https://arxiv.org/abs/2605.30341v1
+**Summary:** The paper introduces GPIC, a large and accessible image dataset of approximately 28 trillion pixels aimed at advancing visual generative modeling. It includes a diverse collection of internet images, all permissively licensed for various uses, and comes with a benchmarking protocol and a baseline model for evaluating generative methods. GPIC is hosted on Hugging Face and is designed to support research and development in scalable visual generation.
 
-### 9. From Scores to Gibbs Correctors: Accelerating Uniform-Rate Discrete Diffusion Models
-**Authors:** Yuchen Liang, Ness Shroff, Yingbin Liang
-**Link:** https://arxiv.org/abs/2605.27352v1
-**Summary:** The paper addresses the inefficiency of generating samples with discrete diffusion models, which often require many steps, particularly for uniform-rate models. The authors introduce a new Gibbs-based correction method called GADD, which improves sampling efficiency without needing additional training. Their work demonstrates that GADD significantly reduces sampling complexity and enhances sample quality compared to existing methods, while also providing a new theoretical framework for analyzing these models.
+### 9. Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching
+**Authors:** Alaa Khamis, Alaa Maalouf
+**Link:** https://arxiv.org/abs/2605.30337v1
+**Summary:** The paper addresses the challenge of making test-time finetuning (TTFT) of language models efficient, as existing methods often sacrifice speed for quality. The authors introduce HullFT, a method that uses a geometric approach to select relevant training sequences efficiently and employs techniques to optimize computation time. Their results demonstrate that HullFT provides a better balance between the quality of model adaptation and the speed of processing, leading to improved performance compared to current TTFT methods.
 
-### 10. When Eyes Betray AI: Social Gaze Consistency as a Semantic Cue for AI-Generated Image Detection
-**Authors:** Kim Jihyeon, Sohee Kim, Soosan Lee, Souhwan Jung, James Matthew Rehg, Hyesong Choi
-**Link:** https://arxiv.org/abs/2605.27348v1
-**Summary:** The paper addresses the challenge of detecting AI-generated images, particularly those featuring realistic human interactions where traditional low-level artifacts are minimized. The authors introduce "Social Gaze Consistency," a high-level semantic cue based on the coherence of gaze and head movements among individuals in an image. They demonstrate that this approach significantly improves detection performance across multiple vision-language models, showing its effectiveness in discerning real from generated imagery without relying on low-level artifacts.
+### 10. Fairness-Aware Federated Learning with Trajectory Shapley Value
+**Authors:** Daniel Kuznetsov, Ziqi Wang
+**Link:** https://arxiv.org/abs/2605.30336v1
+**Summary:** The paper addresses the problem of biased and unstable learning in federated learning caused by fixed client contribution weights. The authors propose the Trajectory Shapley Value (TSV) to evaluate each client's influence on the model's optimization process and develop FedTSV, an adaptive aggregation method that adjusts client weights dynamically based on their contributions. Key results show that FedTSV accelerates convergence, enhances robustness, and provides fairer assessments of client contributions, improving the overall fairness of federated optimization.
