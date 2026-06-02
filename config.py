@@ -56,3 +56,6 @@ PROJECT_ROOT: Path = Path(__file__).resolve().parent
 DIGEST_DIR: Path = PROJECT_ROOT / "digest"
 DIGEST_FILE: Path = DIGEST_DIR / "digest.md"
 LATEST_FILE: Path = DIGEST_DIR / "latest.md"
+# Written by the GitHub Action when ArXiv is rate-limited; triggers the 11:00
+# UTC retry run. Contains a single UTC date line (YYYY-MM-DD).
+RETRY_PENDING_FILE: Path = DIGEST_DIR / ".arxiv-retry-pending"

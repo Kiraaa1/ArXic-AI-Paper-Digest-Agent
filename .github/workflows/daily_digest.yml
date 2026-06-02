@@ -2,8 +2,9 @@ name: Daily ArXiv Digest
 
 on:
   schedule:
-    # 09:00 UTC every day
+    # 09:00 UTC primary run; 11:00 UTC automatic retry if morning hit ArXiv limits
     - cron: "0 9 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -16,45 +17,128 @@ concurrency:
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
+      - name: Decide whether to run
+        id: gate
+        run: |
+          set -euo pipefail
+          today=$(date -u +%Y-%m-%d)
+          marker="digest/.arxiv-retry-pending"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=manual" >> "$GITHUB_OUTPUT"
+            echo "Manual run requested."
+            exit 0
+          fi
+
+          schedule="${{ github.event.schedule }}"
+          if [ "$schedule" = "0 9 * * *" ]; then
+            if [ -f "$marker" ]; then
+              marker_date=$(tr -d '[:space:]' < "$marker")
+              if [ "$marker_date" != "$today" ]; then
+                echo "Removing stale retry marker from ${marker_date}."
+                rm -f "$marker"
+              fi
+            fi
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=primary" >> "$GITHUB_OUTPUT"
+            echo "Primary scheduled run for ${today}."
+            exit 0
+          fi
+
+          if [ "$schedule" = "0 11 * * *" ]; then
+            if [ -f "$marker" ] && [ "$(tr -d '[:space:]' < "$marker")" = "$today" ]; then
+              echo "run=true" >> "$GITHUB_OUTPUT"
+              echo "mode=retry" >> "$GITHUB_OUTPUT"
+              echo "Automatic retry scheduled for ${today}."
+              exit 0
+            fi
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "No retry pending for ${today}; skipping 11:00 run."
+            exit 0
+          fi
+
+          echo "run=false" >> "$GITHUB_OUTPUT"
+          echo "Unknown schedule '${schedule}'; skipping."
+
       - name: Set up Python 3.11
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
+        if: steps.gate.outputs.run == 'true'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run digest
+        if: steps.gate.outputs.run == 'true'
+        id: digest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python main.py
-
-      - name: Commit and push digest
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          set +e
+          python main.py
+          code=$?
+          echo "exit_code=${code}" >> "$GITHUB_OUTPUT"
 
-          # Stage the whole digest directory so the step is a no-op when
-          # main.py exits cleanly without writing (e.g. no papers in the
-          # lookback window, or all summaries failed).
-          git add digest/
+          today=$(date -u +%Y-%m-%d)
+          marker="digest/.arxiv-retry-pending"
+          mode="${{ steps.gate.outputs.mode }}"
 
-          if git diff --staged --quiet; then
-            echo "No digest changes to commit (no new papers, or content unchanged)."
+          if [ "$code" -eq 2 ]; then
+            mkdir -p digest
+            if [ "$mode" = "retry" ]; then
+              rm -f "$marker"
+              echo "ArXiv still unavailable on automatic retry; giving up for ${today}."
+              exit 0
+            fi
+            echo "$today" > "$marker"
+            echo "ArXiv unavailable; queued automatic retry for 11:00 UTC."
             exit 0
           fi
 
-          paper_count=$(grep -c '^### ' digest/latest.md || echo 0)
-          today=$(date -u +%Y-%m-%d)
+          exit "$code"
 
-          git commit -m "digest: ${today} (${paper_count} papers)"
+      - name: Commit and push digest
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          today=$(date -u +%Y-%m-%d)
+          marker="digest/.arxiv-retry-pending"
+
+          # Successful run (including no-op skips) clears any pending retry.
+          if [ "${{ steps.digest.outputs.exit_code }}" != "2" ]; then
+            rm -f "$marker"
+          fi
+
+          mkdir -p digest
+          git add digest/
+
+          if git diff --staged --quiet; then
+            echo "No digest changes to commit."
+            exit 0
+          fi
+
+          if git diff --staged --name-only | grep -qx "digest/latest.md"; then
+            paper_count=$(grep -c '^### ' digest/latest.md || echo 0)
+            git commit -m "digest: ${today} (${paper_count} papers)"
+          elif [ -f "$marker" ]; then
+            git commit -m "digest: queue arxiv retry for ${today}"
+          else
+            git commit -m "digest: ${today} (update)"
+          fi
+
           git push

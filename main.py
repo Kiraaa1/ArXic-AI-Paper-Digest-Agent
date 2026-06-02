@@ -6,8 +6,11 @@ Run from the GitHub Action (or locally) to:
   3. Summarise up to MAX_PAPERS of the remainder with OpenAI.
   4. Append the result to digest/digest.md and overwrite digest/latest.md.
 
-Exits with code 0 on success (including the "no new papers today" case)
-and code 1 on a fatal error so the Action shows as failed.
+Exit codes:
+  0 - success, or a benign skip (no new papers)
+  1 - unexpected fatal error
+  2 - ArXiv temporarily unavailable; the GitHub Action queues an automatic
+      retry two hours later
 """
 
 from __future__ import annotations
@@ -21,7 +24,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 import config
-from src.fetcher import fetch_recent_papers
+from src.fetcher import ArxivUnavailableError, fetch_recent_papers
 from src.models import Digest
 from src.summariser import summarise_papers
 from src.writer import append_to_digest, read_seen_arxiv_ids, render_digest, write_latest
@@ -57,11 +60,19 @@ def run() -> int:
     now = datetime.now(timezone.utc)
     logger.info("Starting digest run at %s", now.isoformat())
 
-    fetched = fetch_recent_papers(
-        categories=config.CATEGORIES,
-        page_size=config.ARXIV_PAGE_SIZE,
-        api_url=config.ARXIV_API_URL,
-    )
+    try:
+        fetched = fetch_recent_papers(
+            categories=config.CATEGORIES,
+            page_size=config.ARXIV_PAGE_SIZE,
+            api_url=config.ARXIV_API_URL,
+        )
+    except ArxivUnavailableError as exc:
+        logger.warning(
+            "ArXiv is temporarily unavailable (%s); exiting with code 2 so "
+            "the GitHub Action can queue an automatic retry.",
+            exc,
+        )
+        return 2
 
     if not fetched:
         logger.info(

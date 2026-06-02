@@ -14,6 +14,15 @@ from src.models import Paper
 
 logger = logging.getLogger(__name__)
 
+
+class ArxivUnavailableError(RuntimeError):
+    """ArXiv could not be queried after retries (rate limit, timeout, 5xx).
+
+    Raised for transient upstream limits so the daily job can skip cleanly
+    instead of failing the GitHub Action.
+    """
+
+
 # ArXiv returns an Atom feed; these are the namespaces we need to navigate it.
 _NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -33,10 +42,12 @@ USER_AGENT = (
 # Retry policy for transient ArXiv errors. Network errors (timeouts, etc.)
 # are also retried; see _request_with_retry below.
 _RETRY_STATUSES = {429, 500, 502, 503, 504}
-_MAX_ATTEMPTS = 4
-_BACKOFF_BASE_SECONDS = 10.0
-_BACKOFF_CAP_SECONDS = 60.0
-_REQUEST_TIMEOUT_SECONDS = 60.0
+_MAX_ATTEMPTS = 7
+_BACKOFF_BASE_SECONDS = 15.0
+_BACKOFF_CAP_SECONDS = 120.0
+# 429 from shared egress (e.g. GitHub Actions) often needs longer waits.
+_429_MIN_BACKOFF_SECONDS = 30.0
+_REQUEST_TIMEOUT_SECONDS = 90.0
 
 
 def _normalise(text: str | None) -> str:
@@ -55,15 +66,22 @@ def _retry_after_seconds(response: httpx.Response, attempt: int) -> float:
     """Pick a wait time for the next retry.
 
     Honours the server's `Retry-After` header when present, otherwise uses
-    exponential backoff.
+    exponential backoff. ArXiv 429 responses from shared IPs often need
+    longer waits than generic exponential backoff alone.
     """
     header = response.headers.get("Retry-After")
     if header:
         try:
-            return max(0.0, float(header))
+            wait = max(0.0, float(header))
+            if response.status_code == 429:
+                wait = max(wait, _429_MIN_BACKOFF_SECONDS * attempt)
+            return min(wait, _BACKOFF_CAP_SECONDS)
         except ValueError:
             pass
-    return _backoff_seconds(attempt)
+    wait = _backoff_seconds(attempt)
+    if response.status_code == 429:
+        wait = max(wait, _429_MIN_BACKOFF_SECONDS * attempt)
+    return min(wait, _BACKOFF_CAP_SECONDS)
 
 
 def _request_with_retry(
@@ -86,7 +104,10 @@ def _request_with_retry(
         except httpx.RequestError as exc:
             last_error = exc
             if attempt >= _MAX_ATTEMPTS:
-                raise
+                raise ArxivUnavailableError(
+                    f"ArXiv request failed after {_MAX_ATTEMPTS} attempts "
+                    f"({type(exc).__name__}: {exc}); skipping this digest run."
+                ) from exc
             wait = _backoff_seconds(attempt)
             logger.warning(
                 "ArXiv request failed (%s: %s) on attempt %d/%d; "
@@ -112,15 +133,28 @@ def _request_with_retry(
             )
             time.sleep(wait)
             continue
+        if response.status_code in _RETRY_STATUSES:
+            raise ArxivUnavailableError(
+                f"ArXiv returned {response.status_code} after {_MAX_ATTEMPTS} "
+                "attempts; skipping this digest run."
+            )
         response.raise_for_status()
         return response.text
 
-    # Exhausted retries. Re-raise the most informative failure.
+    # Exhausted retries on a retryable HTTP status.
+    if last_response is not None and last_response.status_code in _RETRY_STATUSES:
+        raise ArxivUnavailableError(
+            f"ArXiv returned {last_response.status_code} after {_MAX_ATTEMPTS} "
+            "attempts; skipping this digest run."
+        )
     if last_response is not None:
         last_response.raise_for_status()
         return last_response.text  # pragma: no cover - unreachable
     assert last_error is not None  # pragma: no cover - retry loop guarantees one of these
-    raise last_error
+    raise ArxivUnavailableError(
+        f"ArXiv request failed after {_MAX_ATTEMPTS} attempts "
+        f"({type(last_error).__name__}: {last_error}); skipping this digest run."
+    ) from last_error
 
 
 def _build_search_query(categories: list[str]) -> str:
