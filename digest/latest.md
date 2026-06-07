@@ -1,52 +1,52 @@
 ---
-## 2026-06-06
+## 2026-06-07
 
-### 1. TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning
-**Authors:** Marius Dragoi, Ioana Pintilie, Alexandra Dragomir, Antonio Barbalau, Florin Brad
-**Link:** https://arxiv.org/abs/2606.06494v1
-**Summary:** The paper introduces TailLoR, a method designed to enhance parameter-efficient continual learning by protecting the principal components of pre-trained models. It employs a fixed reference frame based on the singular bases of the model's weights to facilitate low-rank updates, while a soft spectral penalty minimizes changes in dominant directions to reduce interference. This approach allows for more nuanced adaptation along less frequently used spectral coordinates, improving continual learning performance.
+### 1. MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
+**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng, Zichen Liang, Boyuan Sun, Tianshuo Peng, Yifan Zhou, Xin Li, Jie Zhou, Liang He, Bo Zhang, Lei Bai
+**Link:** https://arxiv.org/abs/2606.06473v1
+**Summary:** MLEvolve addresses the challenges faced by existing machine learning engineering agents, such as information isolation and lack of memory, which hinder long-term optimization. It introduces a self-evolving multi-agent framework that enhances algorithm discovery by enabling information sharing and adapting its search strategy over time. The framework achieved state-of-the-art results in automated algorithm discovery tasks, significantly outperforming specialized methods like AlphaEvolve within a reduced runtime.
 
-### 2. HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers
-**Authors:** Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh, Robert Griffin, Georgia Gkioxari, Aaron Ames
-**Link:** https://arxiv.org/abs/2606.06493v1
-**Summary:** The paper presents HANDOFF, a novel whole-body control system for humanoid robots that addresses the challenge of effectively translating task plans into actionable commands. By using a compact and versatile interface that integrates multiple expert controllers through a knowledge distillation technique, HANDOFF achieves impressive velocity tracking and maintains a large manipulation workspace. The system successfully operates in real-world scenarios using natural language commands without requiring specific task data or controller adjustments, showcasing its practicality and robustness.
+### 2. PC Layer: Polynomial Weight Preconditioning for Improving LLM Pre-Training
+**Authors:** Senmiao Wang, Tiantian Fang, Haoran Zhang, Yushun Zhang, Kunxiang Zhao, Alex Schwing, Ruoyu Sun
+**Link:** https://arxiv.org/abs/2606.06470v1
+**Summary:** The paper addresses the issue of unstable weight conditioning during the pre-training of large language models (LLMs). The authors introduce a PC layer that utilizes a polynomial preconditioning technique to reshape the singular value spectrum of weight matrices, ensuring stability in training without adding inference costs. They demonstrate that this approach improves the training efficiency of models like Llama-1B, significantly enhancing convergence using standard optimizers.
 
-### 3. Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution
-**Authors:** Liliana Hotsko, Yinxi Li, Yuntian Deng, Pengyu Nie
-**Link:** https://arxiv.org/abs/2606.06492v1
-**Summary:** The paper addresses the challenge of adapting code language models to specific software repositories without the costs and limitations associated with previous methods like fine-tuning or long input injections. It introduces Code2LoRA, which utilizes a hypernetwork to create repository-specific adapters with no additional token overhead, offering two modes for both stable and evolving code. The results demonstrate that Code2LoRA outperforms traditional fine-tuning strategies, achieving strong exact match scores on benchmark tasks, especially in scenarios of repository evolution.
+### 3. How abundant are good interpolators?
+**Authors:** August Y. Chen, Ahmed El Alaoui
+**Link:** https://arxiv.org/abs/2606.06469v1
+**Summary:** This paper investigates the abundance and performance of linear classifiers that perfectly classify labeled datasets, focusing on the generalization error of these classifiers under specific data distributions. By analyzing the distribution of points within the set of successful classifiers, the authors establish a large deviation principle that characterizes the generalization performance of these classifiers. The key finding is that, in the overparametrized regime, most interpolating classifiers have similar performance, while gradient descent and a natural linear programming approach significantly outperform the majority of these classifiers, highlighting a beneficial form of overfitting.
 
-### 4. TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies
-**Authors:** Dong Jing, Jingchen Nie, Tianqi Zhang, Jiaqi Liu, Huaxiu Yao, Zhiwu Lu, Mingyu Ding
-**Link:** https://arxiv.org/abs/2606.06491v1
-**Summary:** The paper presents TempoVLA, a new approach to robot manipulation that allows for flexible control of execution speed during tasks, accommodating both fast, low-risk actions and slow, precise movements. It combines a Variable-Speed Trajectory Augmentation technique to adjust demonstration speeds and a conditioning mechanism in the model to dictate execution speed. The key contribution is that TempoVLA can dynamically adapt speed based on the task phase while improving overall performance and motion accuracy.
+### 4. Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement
+**Authors:** Jui-Hui Chung, Ziyang Cai, Zihao Li, Qishuo Yin, Rohit Agarwal, Simon Park, Rodrigo Porto, Narutatsu Ri, Ziran Yang, Shange Tang, Xingyu Dang, Hongzhou Lin, Mengdi Wang, Danqi Chen, Chi Jin, Liam H Fowl, Sanjeev Arora
+**Link:** https://arxiv.org/abs/2606.06468v1
+**Summary:** Goedel-Architect addresses the challenges of formal theorem proving by introducing a framework that generates and refines blueprints—a structured dependency graph of definitions and lemmas leading to a theorem. By combining automatic blueprint generation with a Lean prover that closes lemmas in parallel, the framework enhances efficiency compared to traditional methods. The key contribution is achieving state-of-the-art performance on various theorem proving benchmarks, demonstrating a significant improvement while being cost-effective relative to existing solutions.
 
-### 5. Regret Minimization with Adaptive Opponents in Repeated Games
-**Authors:** Mingyang Liu, Asuman Ozdaglar, Tiancheng Yu, Kaiqing Zhang
-**Link:** https://arxiv.org/abs/2606.06486v1
-**Summary:** This paper addresses the challenge of regret minimization in repeated games where opponents adapt their strategies based on past play, introducing a new metric called Repeated Policy Regret (RP-Regret) to better account for this adaptivity. The authors present three algorithms for minimizing RP-Regret, which is inherently non-convex, and demonstrate through experiments that applying these algorithms can lead to more cooperative and higher-utility outcomes in games like Stag-Hunt. Overall, the work emphasizes the importance of tailored regret metrics and algorithms in dynamic strategic interactions.
+### 5. You Only Index Once: Cross-Layer Sparse Attention with Shared Routing
+**Authors:** Yutao Sun, Yanqi Zhang, Li Dong, Jianyong Wang, Furu Wei
+**Link:** https://arxiv.org/abs/2606.06467v1
+**Summary:** The paper addresses the challenge of improving the decoding efficiency of large language models (LLMs) during long-context inference, which is often hindered by existing sparse attention methods. It introduces a novel cross-layer sparse attention (CLSA) approach that shares both the key-value cache and the routing index across decoder layers, thus retaining the precision of token selection while reducing overhead. This method significantly enhances inference speed, achieving up to 7.6 times faster decoding and 17.1 times improved overall throughput for long-context tasks.
 
-### 6. Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection
-**Authors:** Sondos Mahmoud Bsharat, Jiacheng Liu, Xiaohan Zhao, Tianjun Yao, Xinyi Shang, Yi Tang, Jiacheng Cui, Ahmed Elhagry, Salwa K. Al Khatib, Hao Li, Salman Khan, Zhiqiang Shen
-**Link:** https://arxiv.org/abs/2606.06481v1
-**Summary:** The paper addresses the challenge of detecting AI-generated content in documents that have undergone collaborative human-AI editing, which traditional benchmarks do not adequately capture. The authors introduce OpAI-Bench, a new benchmark that tracks the transformation of text through various editing operations and evaluates the detectability of mixed authorship across different granularities. A key finding shows that intermediate versions with combined human and AI edits are often harder to detect than documents that are either fully human or heavily AI-edited, revealing complex detection patterns not captured by existing methods.
+### 6. Human Adults and LLMs as Scientists: Who Benefits from Active Exploration?
+**Authors:** Mandana Samiei, Eunice Yiu, Anthony GX-Chen, Dongyan Lin, Jocelyn Shen, Blake A. Richards, Alison Gopnik, Doina Precup
+**Link:** https://arxiv.org/abs/2606.06464v1
+**Summary:** This paper investigates whether allowing adults to actively explore can help them better identify complex causal rules (conjunctive rules) compared to passive observation, where they typically struggle. Using a modified task, the authors found that active exploration significantly enhances adults' ability to recognize these rules, although they still require more trials than simpler rules (disjunctive rules). The study also compares human performance to various large language models, revealing that while some models perform well, they tend to use less effective exploration strategies and show similar difficulties with conjunctive rules.
 
-### 7. DNQ: Deep Nash Q-Network for Partially Observable n-Player Games
-**Authors:** Qintong Xie, Edward Koh, Xavier Cadet, Peter Chin
-**Link:** https://arxiv.org/abs/2606.06480v1
-**Summary:** The paper addresses the challenge of training bidding agents in multi-turn simultaneous bidding scenarios, which are common in competitive environments like auctions. The authors introduce the Deep Nash Q-Network (DNQ), a framework that combines trajectory collection, payoff estimation, and equilibrium computation to train agents effectively by minimizing the divergence between their policies and optimal strategies. Key findings reveal that a pairwise approach significantly enhances scalability compared to an exact method, making it feasible for larger groups of agents while balancing strategic accuracy and computational efficiency.
+### 7. Benchmark Everything Everywhere All at Once
+**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang, Wencheng Han, Xiao-Hui Li, Xiangyu Yue
+**Link:** https://arxiv.org/abs/2606.06462v1
+**Summary:** The paper addresses the challenges of constructing benchmarks for evaluating large language models (LLMs) and multimodal language models (MLLMs), which are often labor-intensive and quickly become outdated. To tackle this, the authors introduce Benchmark Agent, an autonomous system that automates the entire benchmark creation process. Their experiments show that Benchmark Agent can generate high-quality benchmarks across various evaluation scenarios with minimal human effort, revealing important insights about current model limitations in specific reasoning tasks.
 
-### 8. Pretraining Recurrent Networks without Recurrence
-**Authors:** Akarsh Kumar, Phillip Isola
-**Link:** https://arxiv.org/abs/2606.06479v1
-**Summary:** The paper addresses the challenges of training recurrent neural networks (RNNs) due to difficulties in credit assignment across long sequences, which are exacerbated by traditional training methods like backpropagation through time. The authors introduce Supervised Memory Training (SMT), a technique that simplifies RNN training by using a Transformer-based encoder to generate memory transition labels, allowing the RNN to be trained parallelly and efficiently without explicit recurrence. SMT shows improved performance over standard methods, enhancing the ability of RNNs to learn long-range dependencies and potentially facilitating the development of larger models capable of understanding temporal patterns.
+### 8. Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
+**Authors:** Thamilvendhan Munirathinam
+**Link:** https://arxiv.org/abs/2606.06460v1
+**Summary:** The paper addresses the challenge of informing autonomous language model (LLM) agents that certain resources are off-limits, proposing a new method called the Recuse Signal. This approach involves implementing a lightweight in-band deny signal that prompts LLM agents to voluntarily withdraw from accessing restricted resources. The key finding from experiments is that when this signal is used, compliant agents demonstrate a 100% rate of recusal, while also revealing that the signal's effectiveness may be influenced by how agents perceive authorization.
 
-### 9. RREDCoT: Segment-Level Reward Redistribution for Reasoning Models
-**Authors:** Mykyta Ielanskyi, Kajetan Schweighofer, Lukas Aichberger, Sepp Hochreiter
-**Link:** https://arxiv.org/abs/2606.06475v1
-**Summary:** The paper addresses the issue of high variance in reinforcement learning fine-tuning for reasoning language models, particularly when assigning rewards for Chain-of-Thought (CoT) traces due to delayed reward feedback. The authors propose RREDCoT, a method that utilizes the model itself to smartly redistribute rewards for critical segments of the CoT, avoiding the computational costs associated with traditional Monte Carlo sampling methods. Their results indicate that RREDCoT improves reward assignment efficiency and effectiveness compared to existing techniques.
+### 9. Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
+**Authors:** Christie Djidjev, Nicholas Kaminski
+**Link:** https://arxiv.org/abs/2606.06459v1
+**Summary:** The paper addresses the challenge of detecting meaningful interactions between control parameters and network performance in AI-integrated wireless networks, where such dependencies are often obscured by noise in telemetry data. The authors propose a machine-learning approach that converts continuous data into binary event indicators, helping to identify which parameters influence network outcomes. Their key finding is that the method can effectively recover these dependencies when the signal strength is adequately distinguishable from background noise, emphasizing the importance of proper threshold calibration for accurate event detection.
 
-### 10. Self-Augmenting Retrieval for Diffusion Language Models
-**Authors:** Paul Jünger, Justin Lovelace, Linxi Zhao, Dongyoung Go, Kilian Q. Weinberger
-**Link:** https://arxiv.org/abs/2606.06474v1
-**Summary:** The paper addresses the challenge of improving text generation in discrete diffusion language models, which typically discard uncertain token predictions during the denoising process. It introduces a method called Self-Augmenting Retrieval for Diffusion Language Models (SARDI), which leverages these discarded tokens as signals to enhance retrieval during text generation without requiring additional training. The key finding is that SARDI significantly boosts performance on multi-hop question answering tasks while achieving up to eight times higher throughput compared to existing methods.
+### 10. In-Context Multiple Instance Learning
+**Authors:** Alexander Möllers, Marvin Sextro, Julius Hense, Gabriel Dernbach, Klaus-Robert Müller
+**Link:** https://arxiv.org/abs/2606.06458v1
+**Summary:** The paper addresses the challenge of Multiple Instance Learning (MIL) in low-label scenarios, where traditional algorithms struggle to adapt. The authors propose a novel approach using an in-context learner with a Perceiver-style architecture, pretrained on synthetic bag-structured data for improved task generalization. This method achieves superior performance across various MIL benchmarks by effectively combining strengths from different data generators, outperforming typical supervised models that need extensive task-specific training.
