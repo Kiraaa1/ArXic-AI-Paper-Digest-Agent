@@ -1,52 +1,52 @@
 ---
-## 2026-06-07
+## 2026-06-08
 
-### 1. MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery
-**Authors:** Shangheng Du, Xiangchao Yan, Jinxin Shi, Zongsheng Cao, Shiyang Feng, Zichen Liang, Boyuan Sun, Tianshuo Peng, Yifan Zhou, Xin Li, Jie Zhou, Liang He, Bo Zhang, Lei Bai
-**Link:** https://arxiv.org/abs/2606.06473v1
-**Summary:** MLEvolve addresses the challenges faced by existing machine learning engineering agents, such as information isolation and lack of memory, which hinder long-term optimization. It introduces a self-evolving multi-agent framework that enhances algorithm discovery by enabling information sharing and adapting its search strategy over time. The framework achieved state-of-the-art results in automated algorithm discovery tasks, significantly outperforming specialized methods like AlphaEvolve within a reduced runtime.
+### 1. How reliable are LLMs when it comes to playing dice?
+**Authors:** Luca Avena, Gianmarco Bet, Bernardo Busoni
+**Link:** https://arxiv.org/abs/2606.07515v1
+**Summary:** This study examines how well large language models (LLMs) understand and solve discrete probability problems, focusing on both standard and counterintuitive exercises. By testing eight advanced models with and without Chain-of-Thought prompting, the authors found that while models performed well on standard questions, their accuracy plummeted on counterintuitive ones, highlighting a significant gap in their probabilistic reasoning skills. The findings reveal that LLMs are vulnerable to token bias, with performance significantly affected by subtle changes in prompt formulations.
 
-### 2. PC Layer: Polynomial Weight Preconditioning for Improving LLM Pre-Training
-**Authors:** Senmiao Wang, Tiantian Fang, Haoran Zhang, Yushun Zhang, Kunxiang Zhao, Alex Schwing, Ruoyu Sun
-**Link:** https://arxiv.org/abs/2606.06470v1
-**Summary:** The paper addresses the issue of unstable weight conditioning during the pre-training of large language models (LLMs). The authors introduce a PC layer that utilizes a polynomial preconditioning technique to reshape the singular value spectrum of weight matrices, ensuring stability in training without adding inference costs. They demonstrate that this approach improves the training efficiency of models like Llama-1B, significantly enhancing convergence using standard optimizers.
+### 2. Agentopia: Long-Term Life Simulation and Learning in Agent Societies
+**Authors:** Xintao Wang, Sirui Zheng, Hongqiu Wu, Weiyuan Li, Jen-tse Huang, Minghao Zhu, Can Zu, Qi Deng, Jiawei Wang, Qianyu He, Heng Wang, Xiaojian Wu, Yunzhe Tao
+**Link:** https://arxiv.org/abs/2606.07513v1
+**Summary:** The paper introduces Agentopia, a framework for simulating long-term interactions among agents to explore how social behaviors develop and how LLMs (large language models) can improve their understanding of human-like social dynamics. By simulating 100 agents over 10 years and using a life reward system that mirrors human well-being, the study shows that agents can exhibit complex social behaviors and that LLMs trained on this simulation achieve enhanced capabilities, resulting in a significant performance boost in role-playing tasks.
 
-### 3. How abundant are good interpolators?
-**Authors:** August Y. Chen, Ahmed El Alaoui
-**Link:** https://arxiv.org/abs/2606.06469v1
-**Summary:** This paper investigates the abundance and performance of linear classifiers that perfectly classify labeled datasets, focusing on the generalization error of these classifiers under specific data distributions. By analyzing the distribution of points within the set of successful classifiers, the authors establish a large deviation principle that characterizes the generalization performance of these classifiers. The key finding is that, in the overparametrized regime, most interpolating classifiers have similar performance, while gradient descent and a natural linear programming approach significantly outperform the majority of these classifiers, highlighting a beneficial form of overfitting.
+### 3. MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism
+**Authors:** Cong Chen, Guo Gan, Kaixiang Ji, ChaoYang Zhang, Zhen Yang, Guangming Yao, Hao Chen, Jingdong Chen, Yi Yuan, Chunhua Shen
+**Link:** https://arxiv.org/abs/2606.07512v1
+**Summary:** The paper introduces MemDreamer, a framework designed to improve understanding of long videos by decoupling perception from reasoning. It utilizes a Hierarchical Graph Memory to efficiently process video content and an agentic retrieval mechanism for logical reasoning. MemDreamer achieves state-of-the-art results on multiple benchmarks, significantly increasing accuracy while drastically reducing the amount of context required for reasoning.
 
-### 4. Goedel-Architect: Streamlining Formal Theorem Proving with Blueprint Generation and Refinement
-**Authors:** Jui-Hui Chung, Ziyang Cai, Zihao Li, Qishuo Yin, Rohit Agarwal, Simon Park, Rodrigo Porto, Narutatsu Ri, Ziran Yang, Shange Tang, Xingyu Dang, Hongzhou Lin, Mengdi Wang, Danqi Chen, Chi Jin, Liam H Fowl, Sanjeev Arora
-**Link:** https://arxiv.org/abs/2606.06468v1
-**Summary:** Goedel-Architect addresses the challenges of formal theorem proving by introducing a framework that generates and refines blueprints—a structured dependency graph of definitions and lemmas leading to a theorem. By combining automatic blueprint generation with a Lean prover that closes lemmas in parallel, the framework enhances efficiency compared to traditional methods. The key contribution is achieving state-of-the-art performance on various theorem proving benchmarks, demonstrating a significant improvement while being cost-effective relative to existing solutions.
+### 4. Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
+**Authors:** Songhao Wu, Zhongxin Chen, Yuxuan Liu, Heng Cui, Cong Li, Rui Yan
+**Link:** https://arxiv.org/abs/2606.07502v1
+**Summary:** The paper addresses the issue of large language models (LLMs) struggling to produce effective text embeddings due to their tendency to focus on common but uninformative tokens, which hampers semantic understanding. The authors propose a method called EmbedFilter, a linear transformation that refines embeddings by filtering out influences from high-frequency tokens. Their experiments show that this approach not only enhances the quality of the embeddings but also enables reduced dimensionality, leading to better zero-shot performance in downstream tasks.
 
-### 5. You Only Index Once: Cross-Layer Sparse Attention with Shared Routing
-**Authors:** Yutao Sun, Yanqi Zhang, Li Dong, Jianyong Wang, Furu Wei
-**Link:** https://arxiv.org/abs/2606.06467v1
-**Summary:** The paper addresses the challenge of improving the decoding efficiency of large language models (LLMs) during long-context inference, which is often hindered by existing sparse attention methods. It introduces a novel cross-layer sparse attention (CLSA) approach that shares both the key-value cache and the routing index across decoder layers, thus retaining the precision of token selection while reducing overhead. This method significantly enhances inference speed, achieving up to 7.6 times faster decoding and 17.1 times improved overall throughput for long-context tasks.
+### 5. Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning
+**Authors:** Fatema Siddika, Md Anwar Hossen, Tanwi Mallick, Ali Jannesari
+**Link:** https://arxiv.org/abs/2606.07500v1
+**Summary:** The paper addresses the challenge of continual learning in Large Language Models (LLMs), specifically the issue of catastrophic forgetting when adapting to new tasks. It proposes a framework called SETA, which uses a mixture of sparse expert modules to separate task-specific knowledge and shared capabilities, thereby reducing interference between tasks. The key finding is that SETA outperforms existing methods, maintaining better retention of earlier knowledge and enhancing overall performance across various benchmarks.
 
-### 6. Human Adults and LLMs as Scientists: Who Benefits from Active Exploration?
-**Authors:** Mandana Samiei, Eunice Yiu, Anthony GX-Chen, Dongyan Lin, Jocelyn Shen, Blake A. Richards, Alison Gopnik, Doina Precup
-**Link:** https://arxiv.org/abs/2606.06464v1
-**Summary:** This paper investigates whether allowing adults to actively explore can help them better identify complex causal rules (conjunctive rules) compared to passive observation, where they typically struggle. Using a modified task, the authors found that active exploration significantly enhances adults' ability to recognize these rules, although they still require more trials than simpler rules (disjunctive rules). The study also compares human performance to various large language models, revealing that while some models perform well, they tend to use less effective exploration strategies and show similar difficulties with conjunctive rules.
+### 6. Accelerated Decentralized Stochastic Gradient Descent for Strongly Convex Optimization
+**Authors:** Ming Sun, Kun Yuan
+**Link:** https://arxiv.org/abs/2606.07496v1
+**Summary:** The paper addresses the challenge of decentralized stochastic optimization for strongly convex problems, where agents communicate only with their neighbors. The authors introduce Multi-Gossip Accelerated DSGD (MG-ADSGD), a novel method that combines advanced averaging techniques and mini-batch strategies to enhance communication efficiency. Their key contribution is demonstrating that MG-ADSGD achieves improved communication complexity, making it the most efficient approach for this type of optimization to date, particularly in terms of balancing the effect of the condition number and network properties.
 
-### 7. Benchmark Everything Everywhere All at Once
-**Authors:** Shiyun Xiong, Dongming Wu, Peiwen Sun, Yuang Ai, Bokang Yang, Wencheng Han, Xiao-Hui Li, Xiangyu Yue
-**Link:** https://arxiv.org/abs/2606.06462v1
-**Summary:** The paper addresses the challenges of constructing benchmarks for evaluating large language models (LLMs) and multimodal language models (MLLMs), which are often labor-intensive and quickly become outdated. To tackle this, the authors introduce Benchmark Agent, an autonomous system that automates the entire benchmark creation process. Their experiments show that Benchmark Agent can generate high-quality benchmarks across various evaluation scenarios with minimal human effort, revealing important insights about current model limitations in specific reasoning tasks.
+### 7. Second-Order Path Kernel Interpolation Formulas in Machine Learning
+**Authors:** Jin Guo, Roy Y. He, Jean-Michel Morel
+**Link:** https://arxiv.org/abs/2606.07495v1
+**Summary:** This paper addresses the challenge of understanding how neural network predictions are influenced by training data by developing second-order interpolation formulas that enhance existing first-order methods. It introduces curvature-weighted terms and considers the effects of mini-batch noise to refine predictions made during stochastic gradient descent, including its variation with momentum. The key contribution is a more nuanced representation of predictions that accounts for both the optimization path and the interaction of curvature and noise, improving insights into neural network behavior.
 
-### 8. Will the Agent Recuse Itself? Measuring LLM-Agent Compliance with In-Band Access-Deny Signals
-**Authors:** Thamilvendhan Munirathinam
-**Link:** https://arxiv.org/abs/2606.06460v1
-**Summary:** The paper addresses the challenge of informing autonomous language model (LLM) agents that certain resources are off-limits, proposing a new method called the Recuse Signal. This approach involves implementing a lightweight in-band deny signal that prompts LLM agents to voluntarily withdraw from accessing restricted resources. The key finding from experiments is that when this signal is used, compliant agents demonstrate a 100% rate of recusal, while also revealing that the signal's effectiveness may be influenced by how agents perceive authorization.
+### 8. Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies
+**Authors:** Ekaterina Grishina, Stepan Kuznetsov, Askar Tsyganov, Ilya Ivanov, Daria Korovaitceva, Margarita Rusanova, Uliana Parkina, Alexander Derevyagin, Evgeny Frolov, Sergey Samsonov, Anton Lysenko
+**Link:** https://arxiv.org/abs/2606.07492v1
+**Summary:** The paper addresses the challenge of fairly ranking recommendation algorithms since their performance varies with different dataset characteristics. The authors propose a novel methodology using the Bradley-Terry model to generate rankings based on data-driven insights, while introducing a new metric to assess ranking consistency. Their approach also allows for effective ranking of algorithms on unseen datasets by utilizing extensions of the Bradley-Terry framework.
 
-### 9. Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN
-**Authors:** Christie Djidjev, Nicholas Kaminski
-**Link:** https://arxiv.org/abs/2606.06459v1
-**Summary:** The paper addresses the challenge of detecting meaningful interactions between control parameters and network performance in AI-integrated wireless networks, where such dependencies are often obscured by noise in telemetry data. The authors propose a machine-learning approach that converts continuous data into binary event indicators, helping to identify which parameters influence network outcomes. Their key finding is that the method can effectively recover these dependencies when the signal strength is adequately distinguishable from background noise, emphasizing the importance of proper threshold calibration for accurate event detection.
+### 9. Twelve quick tips for designing AI-driven HPC workflows
+**Authors:** Jamie J. Alnasir
+**Link:** https://arxiv.org/abs/2606.07491v1
+**Summary:** This paper addresses the challenges of integrating artificial intelligence into high-performance computing workflows, which are typically designed for deterministic processes. It provides twelve practical tips for creating efficient and adaptable AI-driven HPC workflows, focusing on issues like data management and workflow orchestration. The key contribution is a framework to help researchers transition from traditional computing models to more flexible and intelligent environments, especially beneficial for fields like computational biology.
 
-### 10. In-Context Multiple Instance Learning
-**Authors:** Alexander Möllers, Marvin Sextro, Julius Hense, Gabriel Dernbach, Klaus-Robert Müller
-**Link:** https://arxiv.org/abs/2606.06458v1
-**Summary:** The paper addresses the challenge of Multiple Instance Learning (MIL) in low-label scenarios, where traditional algorithms struggle to adapt. The authors propose a novel approach using an in-context learner with a Perceiver-style architecture, pretrained on synthetic bag-structured data for improved task generalization. This method achieves superior performance across various MIL benchmarks by effectively combining strengths from different data generators, outperforming typical supervised models that need extensive task-specific training.
+### 10. How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope
+**Authors:** Jeremy Yang, Kate Zyskowski, Noah Yonack, Jerry Ma
+**Link:** https://arxiv.org/abs/2606.07489v1
+**Summary:** The paper investigates how advanced AI agents, specifically Perplexity's Computer, enhance knowledge work by automating task execution and improving efficiency compared to traditional search tools. By analyzing user sessions, the study finds that Computer significantly reduces task completion time and costs while enhancing output quality, allowing users to engage in more complex, higher-order work. The results highlight the transformative potential of AI agents in reshaping workflows and expanding the scope of tasks that users can effectively undertake.
