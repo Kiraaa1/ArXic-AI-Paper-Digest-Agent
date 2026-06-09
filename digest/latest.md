@@ -1,52 +1,52 @@
 ---
-## 2026-06-08
+## 2026-06-09
 
-### 1. How reliable are LLMs when it comes to playing dice?
-**Authors:** Luca Avena, Gianmarco Bet, Bernardo Busoni
-**Link:** https://arxiv.org/abs/2606.07515v1
-**Summary:** This study examines how well large language models (LLMs) understand and solve discrete probability problems, focusing on both standard and counterintuitive exercises. By testing eight advanced models with and without Chain-of-Thought prompting, the authors found that while models performed well on standard questions, their accuracy plummeted on counterintuitive ones, highlighting a significant gap in their probabilistic reasoning skills. The findings reveal that LLMs are vulnerable to token bias, with performance significantly affected by subtle changes in prompt formulations.
+### 1. OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics
+**Authors:** Mingxian Lin, Shengju Qian, Yuqi Liu, Yi-Hua Huang, Yiyu Wang, Wei Huang, Yitang Li, Fan Zhang, Zeyu Hu, Lingting Zhu, Xin Wang, Xiaojuan Qi
+**Link:** https://arxiv.org/abs/2606.09826v1
+**Summary:** The paper introduces OmniGameArena, a benchmark designed to evaluate vision-language model (VLM) agents in various game types, addressing shortcomings in existing evaluation methods that typically provide a single score for agents. It features twelve Unreal Engine 5 games and utilizes the Improvement Dynamics Curve (IDC) to track the evolution of agent performance over multiple attempts. The key contribution is the provision of detailed performance insights beyond initial scores, revealing how agents improve and adapt to different game scenarios.
 
-### 2. Agentopia: Long-Term Life Simulation and Learning in Agent Societies
-**Authors:** Xintao Wang, Sirui Zheng, Hongqiu Wu, Weiyuan Li, Jen-tse Huang, Minghao Zhu, Can Zu, Qi Deng, Jiawei Wang, Qianyu He, Heng Wang, Xiaojian Wu, Yunzhe Tao
-**Link:** https://arxiv.org/abs/2606.07513v1
-**Summary:** The paper introduces Agentopia, a framework for simulating long-term interactions among agents to explore how social behaviors develop and how LLMs (large language models) can improve their understanding of human-like social dynamics. By simulating 100 agents over 10 years and using a life reward system that mirrors human well-being, the study shows that agents can exhibit complex social behaviors and that LLMs trained on this simulation achieve enhanced capabilities, resulting in a significant performance boost in role-playing tasks.
+### 2. An Agency-Transferring Model-Free Policy Enhancement Technique
+**Authors:** Anton Bolychev, Georgiy Malaniya, Sinan Ibrahim, Pavel Osinenko
+**Link:** https://arxiv.org/abs/2606.09825v1
+**Summary:** This paper addresses the challenge of improving reinforcement learning (RL) efficiency by leveraging existing suboptimal baseline policies during training. It introduces a method that gradually shifts control from the baseline to a trainable policy, allowing the latter to enhance its performance while maintaining high success rates in reaching goals from the start of training. The key contribution is that this approach not only leads to a stronger final policy that operates independently but also achieves impressive results in continuous-control tasks, outperforming other competitive methods.
 
-### 3. MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism
-**Authors:** Cong Chen, Guo Gan, Kaixiang Ji, ChaoYang Zhang, Zhen Yang, Guangming Yao, Hao Chen, Jingdong Chen, Yi Yuan, Chunhua Shen
-**Link:** https://arxiv.org/abs/2606.07512v1
-**Summary:** The paper introduces MemDreamer, a framework designed to improve understanding of long videos by decoupling perception from reasoning. It utilizes a Hierarchical Graph Memory to efficiently process video content and an agentic retrieval mechanism for logical reasoning. MemDreamer achieves state-of-the-art results on multiple benchmarks, significantly increasing accuracy while drastically reducing the amount of context required for reasoning.
+### 3. Causally Evaluating the Learnability of Formal Language Tasks
+**Authors:** Vésteinn Snæbjarnarson, Anej Svete, Josef Valvoda, Reda Boumasmoud, Brian DuSell, Ryan Cotterell
+**Link:** https://arxiv.org/abs/2606.09822v1
+**Summary:** The paper addresses the challenge of determining how much data is needed for language models to learn specific tasks, particularly in complex natural language settings where tasks can intermix. To tackle this, the authors use formal languages generated from probabilistic finite automata to create a controlled environment and introduce a new algebraic tool, the binning semiring, for causal analysis. Their findings reveal that traditional correlational methods can lead to misleading conclusions about task learnability, underscoring the importance of causal evaluation in understanding data requirements for language learning.
 
-### 4. Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings
-**Authors:** Songhao Wu, Zhongxin Chen, Yuxuan Liu, Heng Cui, Cong Li, Rui Yan
-**Link:** https://arxiv.org/abs/2606.07502v1
-**Summary:** The paper addresses the issue of large language models (LLMs) struggling to produce effective text embeddings due to their tendency to focus on common but uninformative tokens, which hampers semantic understanding. The authors propose a method called EmbedFilter, a linear transformation that refines embeddings by filtering out influences from high-frequency tokens. Their experiments show that this approach not only enhances the quality of the embeddings but also enables reduced dimensionality, leading to better zero-shot performance in downstream tasks.
+### 4. Rethinking the Divergence Regularization in LLM RL
+**Authors:** Jiarui Yao, Xiangxin Zhou, Penghui Qi, Wee Sun Lee, Liefeng Bo, Tianyu Pang
+**Link:** https://arxiv.org/abs/2606.09821v1
+**Summary:** The paper addresses the challenges of stable optimization in reinforcement learning for large language models (LLMs), particularly due to issues with off-policy training and distributional shifts in vocabularies. The authors introduce a new method called Divergence Regularized Policy Optimization (DRPO), which uses a smooth regularization approach instead of a hard clipping mask, allowing for better handling of policy updates when crossing trust-region boundaries. Experimental results demonstrate that DRPO enhances both the stability and efficiency of LLM reinforcement learning training compared to existing methods.
 
-### 5. Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning
-**Authors:** Fatema Siddika, Md Anwar Hossen, Tanwi Mallick, Ali Jannesari
-**Link:** https://arxiv.org/abs/2606.07500v1
-**Summary:** The paper addresses the challenge of continual learning in Large Language Models (LLMs), specifically the issue of catastrophic forgetting when adapting to new tasks. It proposes a framework called SETA, which uses a mixture of sparse expert modules to separate task-specific knowledge and shared capabilities, thereby reducing interference between tasks. The key finding is that SETA outperforms existing methods, maintaining better retention of earlier knowledge and enhancing overall performance across various benchmarks.
+### 5. Weighted universal approximation of differentiable maps on infinite-dimensional manifolds
+**Authors:** Philipp Schmocker, Josef Teichmann
+**Link:** https://arxiv.org/abs/2606.09820v1
+**Summary:** This paper extends the universal approximation theorem for functional input neural networks (FNNs) to cover differentiable maps, incorporating the ability to approximate their derivatives. The authors prove a weighted Nachbin theorem, establishing a universal approximation theorem that is applicable beyond compact sets and includes non-anticipative functionals. A significant contribution is demonstrating that linear functions of the signature can approximate path space functionals along with their directional derivatives.
 
-### 6. Accelerated Decentralized Stochastic Gradient Descent for Strongly Convex Optimization
-**Authors:** Ming Sun, Kun Yuan
-**Link:** https://arxiv.org/abs/2606.07496v1
-**Summary:** The paper addresses the challenge of decentralized stochastic optimization for strongly convex problems, where agents communicate only with their neighbors. The authors introduce Multi-Gossip Accelerated DSGD (MG-ADSGD), a novel method that combines advanced averaging techniques and mini-batch strategies to enhance communication efficiency. Their key contribution is demonstrating that MG-ADSGD achieves improved communication complexity, making it the most efficient approach for this type of optimization to date, particularly in terms of balancing the effect of the condition number and network properties.
+### 6. PTL-Diffusion: Manifold-Aware Diffusion with Periodic Terminal Laws
+**Authors:** Danqi Zhuang, Jisui Huang, Xiaoyue Xi, Andrew Kiggins, Xiaojie Wang, Ke Chen, Yue Wu
+**Link:** https://arxiv.org/abs/2606.09816v1
+**Summary:** The paper addresses the limitations of standard diffusion models that rely on a single Gaussian distribution, which struggles to capture the complex structures of data concentrated along low-dimensional manifolds. The authors propose PTL-Diffusion, a new framework that uses a periodic family of Gaussian terminal distributions in the forward noising process, allowing for better integration of geometric and semantic information from the data. Their experiments demonstrate that this approach significantly improves distribution matching and reduces errors compared to traditional methods, suggesting that structured terminal laws could enhance the modeling of complex data landscapes.
 
-### 7. Second-Order Path Kernel Interpolation Formulas in Machine Learning
-**Authors:** Jin Guo, Roy Y. He, Jean-Michel Morel
-**Link:** https://arxiv.org/abs/2606.07495v1
-**Summary:** This paper addresses the challenge of understanding how neural network predictions are influenced by training data by developing second-order interpolation formulas that enhance existing first-order methods. It introduces curvature-weighted terms and considers the effects of mini-batch noise to refine predictions made during stochastic gradient descent, including its variation with momentum. The key contribution is a more nuanced representation of predictions that accounts for both the optimization path and the interaction of curvature and noise, improving insights into neural network behavior.
+### 7. AHA-WAM:Asynchronous Horizon-Adaptive World-Action Modeling with Observation-Guided Context Routing
+**Authors:** Jisong Cai, Long Ling, Shiwei Chu, Zhongshan Liu, Jiayue Kang, Zhixuan Liang, Wenjie Xu, Yinan Mao, Weinan Zhang, Xiaokang Yang, Ru Ying, Ran Zheng, Yao Mu
+**Link:** https://arxiv.org/abs/2606.09811v1
+**Summary:** The paper presents AHA-WAM, an innovative model that improves robot manipulation by decoupling world prediction and action execution, addressing the inefficiencies of existing world-action models. Using a dual Diffusion Transformer architecture, AHA-WAM allows for asynchronous processing, enabling the robot to effectively plan with long-term scene context while executing actions in real-time. The approach demonstrates significant performance improvements, achieving a 92.80% success rate on simulated tasks and 78.3% on real-world tasks, with a notable speed advantage in control execution.
 
-### 8. Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies
-**Authors:** Ekaterina Grishina, Stepan Kuznetsov, Askar Tsyganov, Ilya Ivanov, Daria Korovaitceva, Margarita Rusanova, Uliana Parkina, Alexander Derevyagin, Evgeny Frolov, Sergey Samsonov, Anton Lysenko
-**Link:** https://arxiv.org/abs/2606.07492v1
-**Summary:** The paper addresses the challenge of fairly ranking recommendation algorithms since their performance varies with different dataset characteristics. The authors propose a novel methodology using the Bradley-Terry model to generate rankings based on data-driven insights, while introducing a new metric to assess ranking consistency. Their approach also allows for effective ranking of algorithms on unseen datasets by utilizing extensions of the Bradley-Terry framework.
+### 8. Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting
+**Authors:** Avijit Ghosh, Anka Reuel, Jenny Chim, Wm. Matthew Kennedy, Srishti Yadav, Jennifer Mickel, Yanan Long, Andrew Tran, Anastassia Kornilova, Damian Stachura, Kevin Klyman, Felix Friedrich, Jeba Sania, Max Lamparth, Jan Batzner, Anoop Mishra, Eliya Habba, Yixiong Hao, Nathan Heath, Shalaleh Rismani, Usman Gohar, Andrea Loehr, David Manheim, Ruchira Dhar, Sree Harsha Nelaturu, Aarush Sinha, Leshem Choshen, Drishti Sharma, Ishan Khire, Amit Saha, Subramanyam Sahoo, Michael Hardy, Michael Alexander Riegler, Kabir Manghnani, Michelle Lin, Yanan Jiang, Yilin Huang, Asaf Yehudai, Jessica Ji, Aris Hofmann, Mubashara Akhtar, Nuno Moniz, Yacine Jernite, Stella Biderman, Zeerak Talat, Sanmi Koyejo, Mykel Kochenderfer, Irene Solaiman
+**Link:** https://arxiv.org/abs/2606.09809v1
+**Summary:** The paper addresses the inconsistent reporting of AI evaluation results that makes it difficult for readers to compare findings across different sources. The authors introduce \EvalCards{}, a structured reporting framework that combines various evaluation data into a unified format, and they develop interpretive signals to aid understanding for different audiences. Their implementation revealed widespread gaps in current reporting practices across a large number of AI models and benchmarks.
 
-### 9. Twelve quick tips for designing AI-driven HPC workflows
-**Authors:** Jamie J. Alnasir
-**Link:** https://arxiv.org/abs/2606.07491v1
-**Summary:** This paper addresses the challenges of integrating artificial intelligence into high-performance computing workflows, which are typically designed for deterministic processes. It provides twelve practical tips for creating efficient and adaptable AI-driven HPC workflows, focusing on issues like data management and workflow orchestration. The key contribution is a framework to help researchers transition from traditional computing models to more flexible and intelligent environments, especially beneficial for fields like computational biology.
+### 9. Topological Neural Operators
+**Authors:** Lennart Bastian, Samuel Leventhal, Mustafa Hajij, Tolga Birdal
+**Link:** https://arxiv.org/abs/2606.09806v1
+**Summary:** The paper presents Topological Neural Operators (TNOs), a new framework for learning mathematical operators on complex shapes by using features defined on topological cells of different dimensions. By integrating Discrete Exterior Calculus, TNOs enable effective modeling of interactions across these cells while maintaining the physical integrity of data. The results show that TNOs, especially through Hierarchical TNOs (HTNOs), significantly enhance the accuracy of solutions for various partial differential equations (PDEs), particularly in irregular geometries.
 
-### 10. How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope
-**Authors:** Jeremy Yang, Kate Zyskowski, Noah Yonack, Jerry Ma
-**Link:** https://arxiv.org/abs/2606.07489v1
-**Summary:** The paper investigates how advanced AI agents, specifically Perplexity's Computer, enhance knowledge work by automating task execution and improving efficiency compared to traditional search tools. By analyzing user sessions, the study finds that Computer significantly reduces task completion time and costs while enhancing output quality, allowing users to engage in more complex, higher-order work. The results highlight the transformative potential of AI agents in reshaping workflows and expanding the scope of tasks that users can effectively undertake.
+### 10. Echo-Memory: A Controlled Study of Memory in Action World Models
+**Authors:** Wayne King, Zeyue Xue, Yuxuan Bian, Jie Huang, Haoran Li, Yaowei Li, Yaofeng Su, Yuming Li, Haoyu Wang, Shiyi Zhang, Songchun Zhang, Yuwei Niu, Sihan Xu, Junhao Zhuang, Haoyang Huang, Nan Duan
+**Link:** https://arxiv.org/abs/2606.09803v1
+**Summary:** The paper addresses the issue of memory failures in action-conditioned world models, which often lose track of scene details after a camera moves away. The authors introduce Echo-Memory, a systematic framework to evaluate various memory mechanisms by controlling all factors except for how memory is stored and retrieved. Their key finding is that while raw context significantly enhances the model's ability to recall scenes, more compact memory solutions compromise key details, and a specific state-space recurrence strategy proves to be the most effective for maintaining accurate scene representation in open-domain scenarios.
