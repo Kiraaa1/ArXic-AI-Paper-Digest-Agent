@@ -1,52 +1,52 @@
 ---
-## 2026-06-10
+## 2026-06-11
 
-### 1. When to Align, When to Predict: A Phase Diagram for Multimodal Learning
-**Authors:** Ilay Kamai, Hugues Van Assel, Aviv Regev, Hagai B. Perets, Randall Balestriero
-**Link:** https://arxiv.org/abs/2606.11190v1
-**Summary:** The paper addresses the lack of systematic understanding in multimodal representation learning regarding when to use cross-modal alignment versus cross-modal prediction. The authors propose a unified linear framework that categorizes multimodal problems into four regimes based on their characteristics, helping practitioners identify the most effective approach for their specific datasets. Key findings demonstrate that certain conditions can make cross-modal training counterproductive, thus providing a tool for better decision-making before training models.
+### 1. Reroute, Don't Remove: Recoverable Visual Token Routing for Vision-Language Models
+**Authors:** Cheng-Yu Yang, Shao-Yuan Lo, Yu-Lun Liu
+**Link:** https://arxiv.org/abs/2606.12412v1
+**Summary:** The paper addresses the inefficiency in vision-language models caused by the high computational costs of processing visual tokens during decoder inference. Instead of permanently removing low-ranking tokens, the authors propose a "Reroute" approach that allows tokens to be temporarily bypassed and reconsidered later, which helps improve grounding performance while still reducing overall computational load. This method demonstrates that visual token reduction can be effectively done through recoverable routing rather than irreversible pruning, enhancing model effectiveness without sacrificing performance.
 
-### 2. A Unifying Lens on Supervised Fine-Tuning Through Target Distribution Design
-**Authors:** Tong Xie, Yuanhao Ban, Yunqi Hong, Sohyun An, Yihang Chen, Cho-Jui Hsieh
-**Link:** https://arxiv.org/abs/2606.11189v1
-**Summary:** The paper addresses the limitations of traditional supervised fine-tuning (SFT), which typically attempts to match observed tokens without considering their uniqueness or alignment with the model's prior knowledge. The authors introduce a new framework called Q-target that redefines SFT as a matter of designing target distributions, leading to a method called Target-SFT that adapts training objectives based on these distributions. Their findings demonstrate that this approach consistently outperforms existing methods across various reasoning tasks, highlighting a more foundational principle for effective SFT training.
+### 2. Context-Driven Incremental Compression for Multi-Turn Dialogue Generation
+**Authors:** Yeongseo Jung, Jaehyeok Kim, Eunseo Jung, Jiachuan Wang, Yongqi Zhang, Ka Chun Cheung, Simon See, Lei Chen
+**Link:** https://arxiv.org/abs/2606.12411v1
+**Summary:** The paper addresses the inefficiencies and errors caused by traditional methods of handling long dialogue histories in conversational agents. It introduces a new method called Context-Driven Incremental Compression (C-DIC) that organizes conversation threads and allows for dynamic information sharing across dialogue turns, improving both memory efficiency and accuracy. The results show that C-DIC significantly enhances performance and maintains consistent response times and quality over extended interactions.
 
-### 3. EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents
-**Authors:** Weixian Xu, Shilong Liu, Mengdi Wang
-**Link:** https://arxiv.org/abs/2606.11182v1
-**Summary:** The paper presents EEVEE, a novel framework for enabling large language model (LLM) agents to learn from multiple datasets in real-world scenarios, where tasks and inputs can vary widely. EEVEE introduces a smart routing mechanism to organize incoming data and optimize prompt configurations through a co-evolution learning strategy. The framework significantly enhances model performance and robustness across diverse datasets, achieving notable improvements in benchmark scores compared to existing state-of-the-art methods.
+### 3. FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning
+**Authors:** Steven Oh, Jason Jingzhou Liu, Tony Tao, Philip Han, Kenneth Shaw, Satoshi Funabashi, Ruslan Salakhutdinov, Deepak Pathak
+**Link:** https://arxiv.org/abs/2606.12406v1
+**Summary:** The paper addresses the challenge of enabling force-sensitive manipulation in low-cost robotic arms, which typically lack dedicated force sensors. The authors introduce a method called Neural External Torque Estimation (NEXT) that estimates external joint torques using only brief free-motion data, along with an innovative training technique called Force-Informed Re-Sampling Training (FIRST) that improves robotic policy learning. The key contribution is that this approach significantly enhances the performance of robot arms in complex tasks without requiring additional sensing hardware, achieving over 17% better task progress compared to previous methods.
 
-### 4. Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories
-**Authors:** Kevin Qinghong Lin, Batu EI, Yuhong Shi, Pan Lu, Philip Torr, James Zou
-**Link:** https://arxiv.org/abs/2606.11176v1
-**Summary:** The paper presents the Data Journalist Agent (Data2Story), a multi-agent framework designed to automate the process of transforming raw data into trustworthy, multimodal news stories. This system improves on traditional reporting by ensuring that claims are anchored in verifiable evidence and uses various media formats to enhance reader engagement. The evaluation shows that while Data2Story produces competitive and transparent stories, human journalists still excel in creative decision-making and design aspects.
+### 4. DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners?
+**Authors:** Jadelynn Dao, Milan Ganai, Yasmina Abukhadra, Ajay Sridhar, Mozhgan Nasr Azadani, Katie Luo, Clark Barrett, Jiajun Wu, Chelsea Finn, Marco Pavone
+**Link:** https://arxiv.org/abs/2606.12402v1
+**Summary:** The paper addresses the challenge of efficient test-time computation in Vision-Language Models (VLMs) for embodied agents, which often leads to increased costs and latency without guaranteed performance improvements. The authors propose DIRECT, a routing framework that strategically allocates compute resources based on multimodal scene context, resulting in significant efficiency gains. Their experiments show that DIRECT achieves comparable or better success rates in robotic tasks while reducing average latency by up to 65%, demonstrating a more effective approach to utilizing test-time compute in embodied planning.
 
-### 5. The Role of Feedback Alignment in Self-Distillation
-**Authors:** Semih Kara, Oğuzhan Ersoy
-**Link:** https://arxiv.org/abs/2606.11173v1
-**Summary:** The paper explores how to improve self-distillation in language models by optimizing the feedback context they receive during training. It compares three types of feedback structures—binary rewards, reference solutions, and step-by-step critiques—and finds that step-aligned critiques significantly enhance performance by effectively targeting specific reasoning failures without altering correct responses. This indicates that aligning feedback with the model's reasoning structure is crucial for effective self-distillation.
+### 5. Doc-to-Atom: Learning to Compile and Compose Memory Atoms
+**Authors:** Xingjian Diao, Wenbo Li, Yashas Malur Saidutta, Avinash Amballa, Lazar Valkov, Srinivas Chappidi
+**Link:** https://arxiv.org/abs/2606.12400v1
+**Summary:** The paper addresses the challenge of efficiently handling long input sequences for document comprehension in Large Language Models, which typically struggle with memory and speed due to the quadratic cost of attention. The authors introduce Doc-to-Atom, a method that breaks documents into semantically distinct "knowledge atoms," each represented by an independent micro-LoRA adapter. This approach allows for more targeted and efficient retrieval at inference time, leading to improved performance on question-answering tasks while minimizing memory usage compared to previous methods.
 
-### 6. Predicting Future Behaviors in Reasoning Models Enables Better Steering
-**Authors:** Evgenii Kortukov, Piotr Komorowski, Florian Klein, Paula Engl, Gabriele Sarti, Seong Joon Oh, Sebastian Lapuschkin, Wojciech Samek
-**Link:** https://arxiv.org/abs/2606.11172v1
-**Summary:** The paper addresses the challenge of controlling the outputs of large reasoning models (LRMs) that often produce unexpected results. It introduces a new technique called Future Probe Controlled Generation (FPCG), which uses specially trained activation probes to predict future behaviors based on intermediate reasoning steps, rather than relying on detection of behavior in generated text. This approach significantly improves steering effectiveness while maintaining output quality, demonstrating the importance of distinguishing between detection and prediction features in controlling LRM behavior.
+### 6. Redesign Mixture-of-Experts Routers with Manifold Power Iteration
+**Authors:** Songhao Wu, Ang Lv, Ruobing Xie, Yankai Lin
+**Link:** https://arxiv.org/abs/2606.12397v1
+**Summary:** The paper addresses the challenge of optimizing router matrices in Mixture-of-Experts (MoE) models, which need to effectively represent and connect to the underlying expert matrices. The authors introduce a new design method called Manifold Power Iteration (MPI), which aligns router rows with the principal direction of the associated experts to enhance token-expert affinity. Their experiments show that this approach leads to more effective MoE models, improving performance across various scales.
 
-### 7. Algorithmic and Minimax Complexities in Kernel Bandits
-**Authors:** Yunbei Xu
-**Link:** https://arxiv.org/abs/2606.11171v1
-**Summary:** This paper reconciles two different methods in kernel bandit learning—Gaussian-process upper confidence bounds (GP-UCB) and decision-estimation coefficients (DEC)—by framing them within a shared algorithmic-information perspective. The authors propose a unified framework that combines the strengths of both approaches and demonstrate that algorithmic complexity can offer more insights than traditional minimax bounds in certain overparameterized scenarios. The key contribution is establishing that these two concepts provide distinct insights into the performance of bandit algorithms, particularly in the context of kernel methods.
+### 7. System Report for CCL25-Eval Task 5: New Dataset and LoRA-Fine-Tuned Qwen2.5
+**Authors:** Haotao Xie
+**Link:** https://arxiv.org/abs/2606.12392v1
+**Summary:** The paper addresses the challenges in translating and interpreting classical Chinese poetry, which has been overlooked in previous research. To enhance performance in this area, the authors created a specialized dataset called CCPoetry-49K and fine-tuned the Qwen2.5 model using Low-Rank Adaptation (LoRA), resulting in the development of a new model named PoetryQwen. The key finding is that PoetryQwen outperforms its predecessor by 9.7% on a relevant benchmark, demonstrating significant improvements in translation precision and emotional understanding of poetry.
 
-### 8. Piper: A Programmable Distributed Training System
-**Authors:** Megan Frisella, Shubham Tiwari, Andy Ruan, Yi Pan, Parker Gustafson, Mat Jacob, Gilbert Bernstein, Stephanie Wang
-**Link:** https://arxiv.org/abs/2606.11169v1
-**Summary:** The paper presents Piper, a programmable distributed training system designed to simplify the development and adaptation of large-scale model training by decoupling high-level parallelism strategies from their low-level execution. Piper allows users to easily define their training strategies using annotations and directives that transform a unified intermediate representation. The key contribution is that Piper achieves performance parity with existing methods while enhancing efficiency and enabling new parallelism strategies, demonstrating improved compute and communication scheduling.
+### 8. TAHOE: Text-to-SQL with Automated Hint Optimization from Experience
+**Authors:** Zhiyi Chen, Jie Song, Peng Li
+**Link:** https://arxiv.org/abs/2606.12387v1
+**Summary:** The paper presents Tahoe, a system designed to enhance Text-to-SQL performance by optimizing prompts dynamically to handle complex SQL dialects and user preferences. It utilizes an error-driven hint learning approach that builds a structured Hint Bank from debugging traces and feedback, enabling the model to better navigate SQL generation tasks. Key improvements include raising the pass rate for Text-to-SQL queries from 61.95% to 79.42% and achieving a 100% pass rate for Snowflake syntax, all without needing to retrain the underlying language model.
 
-### 9. Multi-Faceted Interactivity Alignment in Full-Duplex Speech Models
-**Authors:** Atsumoto Ohashi, Neil Zeghidour, Alexandre Défossez, Eugene Kharitonov
-**Link:** https://arxiv.org/abs/2606.11167v1
-**Summary:** The paper addresses the issue of interactivity in full-duplex spoken dialogue models, which struggle with problems like excessive silence and poor turn-taking during conversations. The authors propose a post-training reinforcement learning approach that focuses on improving four aspects of interactivity—pause handling, turn-taking, backchanneling, and user interruption—using specific reward functions derived from human conversation data. Their method is tested on two models, resulting in significant enhancements in conversational interactivity during both offline evaluations and real-time dialogue interactions.
+### 9. ATLAS: Active Theory Learning for Automated Science
+**Authors:** Noémi Éltető, Nathaniel D. Daw, Kimberly L. Stachenfeld, Kevin J. Miller
+**Link:** https://arxiv.org/abs/2606.12386v1
+**Summary:** The paper presents ATLAS, an active learning framework that automates the process of designing experiments to uncover interpretable behavioral models in cognitive science. By generating diverse mechanistic hypotheses and selectively conducting experiments, ATLAS significantly improves sample efficiency—by 5-10 times—compared to random experimentation. The results demonstrate its potential to advance scientific inquiry by efficiently discovering and validating behavioral models.
 
-### 10. Flaws in the LLM Automation Narrative
-**Authors:** George Perrett, Javae Elliott, Jennifer Hill, Marc Scott
-**Link:** https://arxiv.org/abs/2606.11166v1
-**Summary:** This paper critiques the narrative that large language models (LLMs) can match human experts in knowledge-based tasks, highlighting flaws in existing benchmarking methods that overstate LLM performance. The authors introduce a new benchmarking task that involves writing code for data analysis and compare LLM outputs to those of human experts, finding that humans outperform LLMs with more consistent results. The study emphasizes the need for evaluating the reliability and error rates of LLMs in high-stakes contexts.
+### 10. Which Models Are Our Models Built On? Auditing Invisible Dependencies in Modern LLMs
+**Authors:** Sanjay Adhikesaven, Haoxiang Sun, Sewon Min
+**Link:** https://arxiv.org/abs/2606.12385v1
+**Summary:** The paper addresses the challenge of uncovering the complex and often hidden dependencies that modern large language models (LLMs) have on other models in their training and operation. It introduces ModSleuth, a system designed to systematically identify and reconstruct these dependencies from publicly available sources, tackling issues like inconsistent documentation. The key contribution is the generation of extensive dependency graphs revealing important insights into licensing obligations and discrepancies, which enhance transparency in the development of LLMs.
