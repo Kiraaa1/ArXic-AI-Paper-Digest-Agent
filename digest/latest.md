@@ -1,52 +1,52 @@
 ---
-## 2026-06-13
+## 2026-06-14
 
-### 1. Before You Think: System 0, AI-Mediated Cognition and Cognitive Colonization
-**Authors:** Marianna Bergamaschi Ganapini, Massimo Chiriatti, Enrico Panai, Giuseppe Riva
-**Link:** https://arxiv.org/abs/2606.13658v1
-**Summary:** This paper investigates how artificial intelligence affects human thinking and knowledge through three frameworks, emphasizing the unique perspective of System 0. It introduces the idea of "cognitive colonization," where AI systems subtly embed external influences in users' thought processes. The authors argue that recognizing and understanding these hidden impacts is crucial, especially as AI becomes increasingly integrated into daily life.
+### 1. Generative Modeling of Bach-Style Symbolic Music: A Comparative Study of Autoregressive, Latent-Variable, and Adversarial Approaches
+**Authors:** Kyuil Lee, Dezhi Yu, Yongkang Huang
+**Link:** https://arxiv.org/abs/2606.13626v1
+**Summary:** This paper investigates the generative modeling of Bach-style piano music by comparing three different approaches: autoregressive models, latent-variable models, and generative adversarial networks. The key finding is that autoregressive LSTMs with attention generate the most coherent music, while vector-quantized VAEs improve output structure and mitigate issues found in traditional VAEs. In contrast, the adversarial models struggle with training and generalization to Bach's style.
 
-### 2. Dense Supervision, Sparse Updates: On the Sparsity and Geometry of On-Policy Distillation
-**Authors:** Guo Yu, Wenlin Liu, Yulan Hu, Hao-Xuan Ma, Jun-Peng Jiang, Han-Jia Ye
-**Link:** https://arxiv.org/abs/2606.13657v1
-**Summary:** The paper investigates how on-policy distillation (OPD) affects model parameter updates in language and vision-language models, revealing that these updates are small and sparsely distributed across layers, primarily affecting feedforward networks. The authors find that training on just the identified sparse subnetworks achieves nearly the same performance as using the full OPD, but note that the effectiveness of different optimization methods varies, with dense teacher supervision enabling particular geometric characteristics in the updates. This work highlights that OPD maintains specific properties of on-policy training rather than merely rewriting parameters.
+### 2. Beyond Uniform Tokens: Adaptive Compression for Time Series Language Models
+**Authors:** Jialin Gan, Xin Qiu, Guangzhe Chen, Xue Wang
+**Link:** https://arxiv.org/abs/2606.13624v1
+**Summary:** The paper addresses the inefficiency of processing time series data and prompts with the same uniform token approach in large language models. The authors propose a new method that adapts token usage based on the varying importance of information within time series data, allowing for a more efficient representation by compressing less critical tokens and focusing on significant ones. This adaptive compression leads to significant speed improvements and enhanced performance in various time series tasks, achieving up to 7.68 times faster inference and better results in 78% of cases tested.
 
-### 3. Operadic consistency: a label-free signal for compositional reasoning failures in LLMs
-**Authors:** Nathaniel Bottman, Yinhong Liu, Kyle Richardson
-**Link:** https://arxiv.org/abs/2606.13649v1
-**Summary:** The paper addresses the challenge of detecting reasoning failures in large language models (LLMs) during inference without relying on ground-truth labels. The authors introduce "operadic consistency" (OC), a method that checks whether a model's direct answer to a question aligns with the answer derived from a composed breakdown of the same question. Their findings show that OC is a strong predictor of accuracy across various data sets, outperforming existing confidence indicators and leading to improved selective prediction in LLMs.
+### 3. Beyond Runtime Enforcement: Shield Synthesis as Defensibility Analysis for Adversarial Networks
+**Authors:** Achraf Hsain, Sultan Almuhammadi
+**Link:** https://arxiv.org/abs/2606.13621v1
+**Summary:** This paper rethinks shielded reinforcement learning, proposing that instead of just acting as a runtime safety mechanism, the automata-theoretic methods used can serve as a design-time analysis tool for assessing the defensibility of networks against adversarial attacks. By framing network safety as a constrained two-player game, the authors derive a defensibility verdict that evaluates if a given network configuration can effectively withstand attacks, along with broader metrics on its operational safety and adaptability. The key contribution is that this approach provides deeper architectural insights into the defensibility of network systems, demonstrating that formal safety and actual operational effectiveness can differ significantly based on system design.
 
-### 4. SkMTEB: Slovak Massive Text Embedding Benchmark and Model Adaptation
-**Authors:** Marek Šuppa, Andrej Ridzik, Daniel Hládek, Natália Kňažeková, Viktória Ondrejová
-**Link:** https://arxiv.org/abs/2606.13647v1
-**Summary:** The paper presents SkMTEB, the first extensive benchmark for text embeddings in Slovak, addressing the lack of resources for this low-resource language by evaluating 31 datasets across various tasks. The authors developed two efficient Slovak embedding models, \texttt{e5-sk-small} and \texttt{e5-sk-large}, which are competitively effective while being locally deployable, thus providing tools for semantic search and generation tasks. The project aims to set a precedent for developing similar resources for other under-resourced languages.
+### 4. Majority-of-Three is Optimal
+**Authors:** Divit Rawal, Nikita Zhivotovskiy
+**Link:** https://arxiv.org/abs/2606.13614v1
+**Summary:** The paper addresses the problem of determining the optimal voting scheme for combining classifiers in the PAC learning framework. The authors provide a concise proof that using a majority vote among three independent consistent classifiers is the most effective approach. This result simplifies previous analyses and algorithms related to voting mechanisms in machine learning.
 
-### 5. Recursive Agent Harnesses
-**Authors:** Elias Lumer, Sahil Sen, Kevin Paul, Vamse Kumar Subbiah
-**Link:** https://arxiv.org/abs/2606.13643v1
-**Summary:** The paper introduces the Recursive Agent Harness (RAH), a new approach that enhances long-context reasoning in coding agents by utilizing full agent harnesses instead of just recursive model calls. By enabling a parent agent to generate and execute scripts that spawn subagents for more granular tasks, RAH significantly improves performance in coding tasks, achieving an increase from 71.75% to 81.36% accuracy over the Codex baseline, and reaching 89.77% with a more powerful model. The study highlights how this harness recursion strategy effectively enhances task execution and reasoning capabilities in AI coding agents.
+### 5. One Polluted Page Is Enough: Evaluating Web Content Pollution in Generative Recommenders
+**Authors:** Minghao Luo, Liang Chen
+**Link:** https://arxiv.org/abs/2606.13610v1
+**Summary:** This paper addresses the issue of generative recommenders unintentionally promoting fake products due to polluted web content, such as misleading reviews and promotional pages. The authors introduce a benchmark called FORGE, which simulates web-content pollution by replacing real products in search results with fake ones, revealing that all evaluated language models can easily be misled, with promotion rates reaching as high as 73.8%. The study also investigates potential defenses, revealing that some approaches can inadvertently increase vulnerability rather than mitigate it.
 
-### 6. The Stable Recovery Manifold: Geometric Principles Governing Recoverability in Continual Learning
-**Authors:** Ayushman Trivedi, Bhavika Melwani
-**Link:** https://arxiv.org/abs/2606.13637v1
-**Summary:** The paper addresses the issue of catastrophic forgetting in continual learning, where previously learned knowledge can be lost during training on new tasks. The authors investigate the geometric aspects of recoverability by analyzing how knowledge can be retained and recovered despite significant changes in representation, using a model based on a ResNet-18 trained on Split CIFAR-100. They find that the dimensionality required for effective recovery remains stable, indicating that the underlying knowledge is still accessible, despite changes in the representational space, suggesting forgetting is more about access issues rather than a loss of information.
+### 6. AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility
+**Authors:** Xiaoyuan Liu, Jianhong Tu, Yuqi Chen, Siyuan Xie, Sihan Ren, Tianneng Shi, Gal Gantar, Evan Sandoval, Donghyun Lee, Daniel Miao, Peter J. Gilbert, Nick Hynes, Mauro Staver, Warren He, David Marn, Andrew Low, Xi Zhang, Elron Bandel, Michal Shmueli-Scheuer, Siva Reddy, Alexandre Drouin, Alexandre Lacoste, Ramayya Krishnan, Elham Tabassi, Yu Su, Victor Barres, Chenguang Wang, Wenbo Guo, Dawn Song
+**Link:** https://arxiv.org/abs/2606.13608v1
+**Summary:** The paper addresses the fragmented evaluation of agent systems by proposing a unified framework for standardized assessment called Agentified Agent Assessment (AAA), which allows for fair comparisons across diverse agent designs through standardized protocols. To implement this, the authors introduce AgentBeats, which was tested in an open competition and a case study, demonstrating its effectiveness in facilitating reproducible and interoperable evaluations while preserving accuracy and yielding valuable insights into agent design. Overall, AAA and AgentBeats provide a solution for improving openness, standardization, and reproducibility in agent assessment.
 
-### 7. Operads for compositional reasoning in LLMs
-**Authors:** Nathaniel Bottman, Kyle Richardson
-**Link:** https://arxiv.org/abs/2606.13634v1
-**Summary:** The paper addresses the challenge of effectively breaking down complex queries into simpler parts for large language models (LLMs) to enhance their reasoning abilities. It introduces operads, a mathematical framework that models these decompositions, allowing for a formal understanding of how sub-answers can be combined. A key finding is the introduction of operadic consistency, which correlates with higher accuracy in answering multi-step questions across various LLMs, suggesting operads can improve the reliability of reasoning in AI systems.
+### 7. Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning
+**Authors:** Zach Studdiford, Gary Lupyan
+**Link:** https://arxiv.org/abs/2606.13607v1
+**Summary:** This paper examines the similarities between human reasoning and the reasoning of large language models (LLMs), particularly in everyday situations where both can make similar errors. The researchers evaluated human participants alongside 25 LLMs and found that both demonstrate patterns of reasoning errors linked to pattern-matching rather than relying on abstract world models. The study highlights that certain attention mechanisms in LLMs contribute to these errors, suggesting a common pattern-matching strategy in both humans and models when making causal inferences.
 
-### 8. Aerial Wildfire Suppression Planning with a Hybrid CNN-Cellular Automata Fire Model
-**Authors:** Ion Matei, Maksym Zhenirovskyy, Takuya Kurihana, Rohit Vupala, Anthony Wong
-**Link:** https://arxiv.org/abs/2606.13633v1
-**Summary:** The paper addresses the challenge of planning aerial strategies for wildfire suppression, which involves anticipating fire spread and determining effective intervention actions in uncertain conditions. The authors developed a combined model using a hybrid neural network and cellular automaton to predict fire behavior and optimize aerial drop strategies for water and retardants. Their approach demonstrated the ability to create effective suppression plans that reduce the area affected by wildfires while accounting for various uncertainties, as illustrated in a case study on the 2020 Bear Fire.
+### 8. Distribution-Agnostic Robust Trajectory Optimization via Chance-Constrained Reinforcement Learning
+**Authors:** Yashdeep Chaudhary, Roberto Armellin, Harry Holt, Marco Sagliano
+**Link:** https://arxiv.org/abs/2606.13605v1
+**Summary:** The paper addresses the challenge of robust trajectory optimization in uncertain environments, specifically for spacecraft missions. It introduces a framework that combines deterministic trajectory planning with chance-constrained reinforcement learning to improve robustness against various uncertainties. The results demonstrate that this approach effectively maintains fuel efficiency and probabilistic feasibility across different trajectory design scenarios, showcasing its versatility for diverse spacecraft applications without needing significant redesign.
 
-### 9. From Tokens to Faces: Investigating Discrete Speech Representations for 3D Facial Animation
-**Authors:** Pedro Correa, Olivier Perrotin, Samir Sadok, Paula Costa, Thomas Hueber
-**Link:** https://arxiv.org/abs/2606.13630v1
-**Summary:** This paper investigates how different types of speech representations impact the quality of 3D facial animations driven by speech input. The authors evaluate four representation methods and find that those encoding phonetic classes improve the accuracy of facial animations. They also propose a new Audio Visual Text-to-Speech (AVTTS) pipeline that uses shared discrete representations for decoding both speech and facial motions.
+### 9. Multi-Agent Reinforcement Learning from Delayed Marketplace Feedback for Objective-Weight Adaptation in Three-Sided Dispatch
+**Authors:** Haochen Wu, Yi Hou, Shiguang Xie
+**Link:** https://arxiv.org/abs/2606.13604v1
+**Summary:** The paper addresses the challenge of optimizing dispatch strategies in a three-sided food delivery marketplace by adapting the weight of different objectives based on delayed feedback from operational outcomes. It presents a reinforcement learning system that learns a policy to adjust these objectives without replacing the existing optimization framework, using data from real marketplace operations. The key result shows that this approach effectively increases batching efficiency and decreases costs for couriers while maintaining delivery quality for customers.
 
-### 10. Valid Inference with Synthetic Data via Task Exchangeability
-**Authors:** Lezhi Tan, Tijana Zrnic
-**Link:** https://arxiv.org/abs/2606.13629v1
-**Summary:** This paper addresses the challenges of using synthetic data in scientific research, which can often be biased or inaccurately represent real-world scenarios. The authors introduce a concept called "task exchangeability," which allows researchers to validate the use of synthetic data by ensuring it is mathematically comparable to historically relevant real data. They provide methods for making valid inferences from synthetic data, demonstrating their approach through applications in public opinion surveys and AI evaluations.
+### 10. Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models
+**Authors:** Daniel Scalena, Sara Candussio, Luca Bortolussi, Elisabetta Fersini, Malvina Nissim, Gabriele Sarti
+**Link:** https://arxiv.org/abs/2606.13603v1
+**Summary:** The paper investigates how individual steps in chain-of-thought reasoning influence the final answers produced by large language models. By analyzing the causal importance of reasoning steps and identifying a "commitment boundary," the authors demonstrate that answers often stabilize early, allowing for the possibility of shortening reasoning processes without compromising performance. Their approach enables early exits in reasoning blocks, resulting in up to a 55% reduction in reasoning length while maintaining accuracy.
