@@ -1,52 +1,52 @@
 ---
-## 2026-06-15
+## 2026-06-16
 
-### 1. Gaze Heads: How VLMs Look at What They Describe
-**Authors:** Rohit Gandikota, David Bau
-**Link:** https://arxiv.org/abs/2606.14703v1
-**Summary:** This paper investigates how vision-language models (VLMs) effectively describe images, introducing the concept of "gaze heads," specific attention heads that track the image regions being described. By analyzing these heads using comic strips as a controlled environment, the authors demonstrate that manipulating gaze heads allows for precise control of the model's focus and can redirect its descriptive output with high accuracy. This approach highlights a new method for steering VLM behavior in real-time without the need for retraining, and the findings are applicable across different model sizes and architectures.
+### 1. The Value Axis: Language Models Encode Whether They're on the Right Track
+**Authors:** Nick Jiang, Isaac Kauvar, Jack Lindsey
+**Link:** https://arxiv.org/abs/2606.17056v1
+**Summary:** The paper explores how language models, specifically Qwen3-8B, internally assess the likelihood of achieving their goals while generating responses. By constructing a "value" axis based on reinforcement learning data, the authors discovered that this axis influences the model's confidence and decision-making strategies, including its tendency to self-correct and explore options. A notable finding is that optimizing preferences can enhance the model's confidence in certain behaviors, while the model shows lower confidence in politically sensitive topics after training.
 
-### 2. ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning
-**Authors:** Sicheng Yang, Hangjie Yuan, Wenjun Zhang, Jinwang Wang, Yichen Qian, Weihua Chen, Fan Wang, Lei Zhu
-**Link:** https://arxiv.org/abs/2606.14697v1
-**Summary:** The paper introduces ClinHallu, a benchmark aimed at diagnosing and addressing stage-wise hallucinations in medical multimodal large language models (MLLMs), which are critical for clinical decision-making. By analyzing the sources of hallucinations—such as visual misrecognition and flawed reasoning—the benchmark comprises 7,031 validated instances with structured reasoning traces. The study demonstrates that using these traces for fine-tuning significantly reduces hallucinations, offering a valuable tool for improving the reliability of medical MLLMs.
+### 2. Context-Aware RL for Agentic and Multimodal LLMs
+**Authors:** Peiyang Xu, Bangzheng Li, Sijia Liu, Karthik R. Narasimhan, Pramod Viswanath, Prateek Mittal, Xingyu Fu
+**Link:** https://arxiv.org/abs/2606.17053v1
+**Summary:** The paper addresses the challenge that large language models (LLMs) face when required to identify critical evidence within lengthy or complex contexts, which can hinder their reasoning and multimodal capabilities. The authors propose a reinforcement learning method called ContextRL, which incentivizes models to choose the most relevant context by rewarding them based on context selection related to specific queries and answers. Key results demonstrate that ContextRL improves performance on long-horizon reasoning and visual question answering benchmarks by significant margins, showing its effectiveness in enhancing model grounding and context understanding.
 
-### 3. Persona-Pruner: Sculpting Lightweight Models for Role-Playing
-**Authors:** Jinsu Kim, Jihoon Tack, Noah Lee, Jongheon Jeong
-**Link:** https://arxiv.org/abs/2606.14695v1
-**Summary:** The paper addresses the inefficiency of using full language models for role-playing applications, where multiple non-playable characters (NPCs) are needed. The authors introduce Persona-Pruner, a framework that identifies and isolates the parts of a model needed for specific personas, allowing for the creation of lighter models without significantly sacrificing performance. Their approach demonstrates a notable reduction in performance degradation—up to 93.8% less compared to existing pruning methods—while still retaining the general capabilities of the language model.
+### 3. Exact Posterior Score Estimation for Solving Linear Inverse Problems
+**Authors:** Abbas Mammadov, Ozgur Kara, Kaan Oktay, Iskander Azangulov, Adil Kaan Akan, Hyungjin Chung, James Matthew Rehg, Yee Whye Teh
+**Link:** https://arxiv.org/abs/2606.17048v1
+**Summary:** This paper addresses the challenge of sampling from the posterior distribution when solving linear inverse problems using denoising models. The authors derive a method called Exact Posterior Score (EPS) that enables effective posterior sampling by maintaining the structure of existing denoisers, allowing for training from scratch or fine-tuning. Their approach demonstrates significant improvements in fidelity and other metrics while requiring substantially fewer evaluations compared to traditional methods.
 
-### 4. AdaSR: Adaptive Streaming Reasoning with Hierarchical Relative Policy Optimization
-**Authors:** Junlong Tong, Wenqi Xu, Yingqi Fan, Anhao Zhao, Xuan Lu, Yang Tan, Xiaoyu Shen
-**Link:** https://arxiv.org/abs/2606.14694v1
-**Summary:** The paper presents AdaSR, a framework designed to improve reasoning in dynamic environments, such as audio and video streams, by enabling models to reason and adapt their computation while processing incoming data. It introduces Hierarchical Relative Policy Optimization (HRPO), which allows for a more nuanced approach to policy optimization across different reasoning phases. The key contribution is that AdaSR demonstrates improved reasoning accuracy and computational efficiency compared to traditional supervised methods, particularly in terms of managing processing latency.
+### 4. Geometric Action Model for Robot Policy Learning
+**Authors:** Jisang Han, Seonghu Jeon, Jaewoo Jung, René Zurbrügg, Honggyu An, Tifanny Portela, Marco Hutter, Marc Pollefeys, Seungryong Kim, Sunghwan Hong
+**Link:** https://arxiv.org/abs/2606.17046v1
+**Summary:** The paper addresses the challenge of teaching robots to understand and manipulate objects in 3D environments based on user instructions. It introduces the Geometric Action Model (GAM), which utilizes a pretrained geometric foundation model to effectively encode observations and predict future actions based on language and historical data. The key contribution is that GAM outperforms existing methods in accuracy, robustness, speed, and efficiency across various manipulation tasks, demonstrating improved performance in both simulation and real-world settings.
 
-### 5. Learning Coordinated Preference for Multi-Objective Multi-Agent Reinforcement Learning
-**Authors:** Pengxin Wang, Lihao Guo, Yi Xie, Bo Liu, Siyang Cao, Jingdi Chen
-**Link:** https://arxiv.org/abs/2606.14693v1
-**Summary:** The paper addresses the challenge of coordinating decision-making among multiple agents in environments with conflicting objectives. It introduces a method called Preference Coordinated Multi-agent Policy Optimization (PCMA), which enables agents to learn specific preferences that enhance their collaboration. The findings demonstrate that PCMA not only improves overall performance in multi-objective scenarios but also facilitates better trade-off coordination among agents.
+### 5. Hierarchical Advantage Weighting for Online RL Fine-Tuning of VLAs from Sparse Episode Outcomes
+**Authors:** Tongyan Fang, Siyuan Huang, Naiyu Fang, Ganlong Zhao, Zhongjin Luo, Jianbo Liu, Xiaogang Wang, Ying Dong, Hongsheng Li
+**Link:** https://arxiv.org/abs/2606.17043v1
+**Summary:** The paper addresses the challenge of fine-tuning pretrained visual language agent (VLA) policies in online reinforcement learning, where episodes yield only binary success or failure outcomes, complicating effective feedback for learning. The authors introduce Hierarchical Advantage-Weighted Behavior Cloning (HABC), which uses separate critics for viability and efficiency, allowing adaptive weighting of feedback based on the current state and improving credit assignment. This method significantly enhances success rates in real-robot tasks, outperforming supervised fine-tuning baselines.
 
-### 6. CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment
-**Authors:** Jiayue Cao, Zhicong Lu, Xuehan Sun, Wei Jia, Hongling Zheng, Changyuan Tian, Zichuan Lin, Wenqian Lv, Nayu Liu
-**Link:** https://arxiv.org/abs/2606.14691v1
-**Summary:** The paper addresses the problem of inconsistency between the reasoning process and final answers in reinforcement learning with verifiable rewards (RLVR) for large vision-language models. It introduces a new method called Consistency-Oriented Reasoning Alignment (CORA), which enhances semantic consistency in reasoning by integrating a consistency reward model and a Hybrid Reward Advantage Splitting technique. The key result shows that CORA significantly improves task performance and reduces inconsistencies in reasoning outputs across various multimodal reasoning benchmarks.
+### 6. Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio
+**Authors:** Anzhe Xie, Weihang Su, Yujia Zhou, Yiqun Liu, Qingyao Ai
+**Link:** https://arxiv.org/abs/2606.17041v1
+**Summary:** The paper addresses the challenge of effectively conducting meta-analyses by evaluating how well large language models (LLMs) can handle the literature retrieval and screening processes involved. It introduces a new dataset, MetaSyn, consisting of expert-curated meta-analyses that includes extensive research criteria and retrieval information. The key finding is that while LLMs achieve high recall rates in retrieving relevant literature, they struggle significantly in accurately identifying eligible studies, with a maximum recovery rate of only 52.7%, highlighting a major bottleneck in the meta-analysis pipeline.
 
-### 7. A Complexity Measure for Active Learning in Multi-group Mean Estimation
-**Authors:** Abdellah Aznag, Rachel Cummings, Adam N. Elmachtoub
-**Link:** https://arxiv.org/abs/2606.14690v1
-**Summary:** This paper addresses the challenge of optimizing sample allocation in active learning for multi-group mean estimation, specifically minimizing the worst-case uncertainty across different groups. The authors establish a new lower bound on this problem that considers factors like budget, uncertainty distribution, and a novel measure called Variance Local Curvature (VLC), which assesses information gained from variance changes. Their results demonstrate that this framework achieves near-optimal performance in many scenarios and highlights significant gaps in instances with high variance disparity among groups.
+### 7. The Importance of Phase in Neural Representations: An Internal Oppenheim-Lim Test of Image Classifiers
+**Authors:** Alper Yıldırım
+**Link:** https://arxiv.org/abs/2606.17037v1
+**Summary:** This paper investigates the role of phase information in neural networks for image classification, inspired by an earlier finding that natural images can be recognized from Fourier phase alone. The authors conducted experiments by swapping the phase of one image with the magnitude of another within different layers of various neural networks. They found that classifiers generally rely more on phase for identity recognition, while the magnitude information is often less critical, revealing that different architectures handle phase and magnitude in distinct ways, particularly highlighting differences between CNNs and attention-based models.
 
-### 8. Flood and Harvest: The Provable Necessity of Trivia for Generating Valuable Mathematics via the Lens of Language Generation in the Limit
-**Authors:** Xiaoyu Li, Andi Han, Dai Shi, Zheng Gao, Jiaojiao Jiang, Junbin Gao
-**Link:** https://arxiv.org/abs/2606.14688v1
-**Summary:** The paper addresses the challenge of generating valuable mathematical statements using AI systems paired with proof assistants, emphasizing the gap between what can be verified and what is deemed valuable by mathematicians. It proposes a model for understanding this generation as a nested language process, revealing that while finite trivia leads to optimal coverage of valuable content, allowing for infinite trivia results in a significant increase in coverage. The key contribution is demonstrating that a constant stream of trivial statements is essential for capturing unrecorded valuable mathematics, highlighting a fundamental aspect of AI-driven mathematical generation.
+### 8. Your Privacy My Cloak: Backdoor Attacks on Differentially Private Federated Learning
+**Authors:** Xiaolin Li, Ning Wang, Ninghui Li, Wenhai Sun
+**Link:** https://arxiv.org/abs/2606.17035v1
+**Summary:** This paper investigates the vulnerability of differentially private federated learning systems to backdoor attacks, challenging the idea that differential privacy enhances security against such threats. The authors introduce a new attack method called RING, which cleverly exploits the masks created by differential privacy to hide malicious updates while still achieving a significant impact during model aggregation. Their experiments demonstrate that RING can achieve an average attack success rate of 90.3%, highlighting a substantial security gap in differential privacy implementations in federated learning.
 
-### 9. CottonLeafVision: An Explainable and Robust Deep Learning Framework for Cotton Leaf Disease Classification
-**Authors:** Rafi Ahamed, Md. Abir Rahman, Tasnia Tarannum Roza, Munaia Jannat Easha, Md. Asif Khan, Sudeepta Mandal
-**Link:** https://arxiv.org/abs/2606.14686v1
-**Summary:** The paper presents "CottonLeafVision," a deep learning framework aimed at accurately classifying cotton leaf diseases to support the textile industry's economic stability. By evaluating several pretrained neural networks, the authors achieved a high classification accuracy of 98% using DenseNet201 and enhanced the model's reliability and interpretability through various techniques like Grad-CAM and adversarial training. The result is a robust tool for real-world cotton disease management.
+### 9. KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing
+**Authors:** Mufei Li, Shikun Liu, Dongqi Fu, Haoyu Wang, Yinglong Xia, Hong Li, Hong Yan, Pan Li
+**Link:** https://arxiv.org/abs/2606.17034v1
+**Summary:** The paper addresses the challenge of efficiently erasing specific spans from the KV cache of long-context language models, as traditional methods require significant recomputation of subsequent tokens. KVEraser is introduced as a learned method that replaces only the erased KV states without altering the rest of the cache, utilizing a two-stage training process for effective adaptation. Key results demonstrate that KVEraser achieves nearly the same performance as full recomputation while significantly reducing latency, offering a 3-4x speedup in various tasks.
 
-### 10. HumP-KD: A Hybrid Uncertainty-Aware Multi-Stage Progressive Knowledge Distillation Framework for Efficient Fire Classification
-**Authors:** Mohammed Arif Mainuddin, Najifa Tabassum, Omar Ibne Shahid, Riasat Khan
-**Link:** https://arxiv.org/abs/2606.14684v1
-**Summary:** The paper presents HumP-KD, a novel framework for fire classification that improves model efficiency and accuracy while being suitable for deployment on resource-constrained devices. It employs a hybrid approach of knowledge distillation from two transformer models into a lightweight MobileViT-S, utilizing hierarchical and multi-stage strategies for optimal learning. The resulting model achieves a mean F1 score of 0.9876, significantly surpassing the baseline and demonstrating effective generalization and robustness in various conditions, all while maintaining a compact size suitable for real-time applications.
+### 10. DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents
+**Authors:** Minghang Zhu, Chuyang Wei, Junhao Xu, Yilin Cheng, Zhumin Chen, Jiyan He
+**Link:** https://arxiv.org/abs/2606.17029v1
+**Summary:** The paper addresses the inefficiency of reinforcement learning (RL) in training deep research agents due to inadequate rubric-based rewards that may not accurately represent the needs of the task. The authors introduce DeepRubric, a framework that generates high-quality query-rubric pairs by first establishing clear evaluation criteria through an evidence tree built from sub-questions. As a result, they created 9,000 training examples, successfully training a model that performs comparably to existing state-of-the-art systems while using significantly fewer computational resources.
