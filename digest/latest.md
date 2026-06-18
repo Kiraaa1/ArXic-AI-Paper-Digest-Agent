@@ -1,52 +1,52 @@
 ---
-## 2026-06-17
+## 2026-06-18
 
-### 1. Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement
-**Authors:** Mingtong Zhang, Dhruv Shah
-**Link:** https://arxiv.org/abs/2606.18247v1
-**Summary:** The paper addresses the challenge of enabling robots to learn and improve their policies in real-time while operating in the real world. The authors introduce a framework called VERITAS, which combines a pre-trained robot policy with a visual verifier to enhance decision-making during inference and facilitate self-improvement without additional training. The key finding is that this approach not only improves policy performance during operation but also allows for effective offline policy refinement using verified self-generated data, achieving results comparable to those obtained from expert demonstrations without needing human intervention.
+### 1. Native Active Perception as Reasoning for Omni-Modal Understanding
+**Authors:** Zhenghao Xing, Ruiyang Xu, Yuxuan Wang, Jinzheng He, Ziyang Ma, Qize Yang, Yunfei Chu, Jin Xu, Junyang Lin, Chi-Wing Fu, Pheng-Ann Heng
+**Link:** https://arxiv.org/abs/2606.19341v1
+**Summary:** The paper addresses the inefficiencies of traditional video understanding models that process all frames uniformly, leading to increased computational costs for longer videos. The authors introduce OmniAgent, an innovative framework that optimizes video understanding through a dynamic, iterative cycle of observing, reasoning, and acting, effectively extracting key audio-visual cues into a manageable memory. The results show that OmniAgent achieves superior performance compared to larger models, notably outperforming a 72 billion parameter model with only 7 billion parameters on specific benchmarks.
 
-### 2. Variable-Width Transformers
-**Authors:** Zhaofeng Wu, Oliver Sieberling, Shawn Tan, Rameswar Panda, Yury Polyanskiy, Yoon Kim
-**Link:** https://arxiv.org/abs/2606.18246v1
-**Summary:** The paper addresses the inefficiencies in transformer architectures that maintain a uniform layer width, despite different layers serving varied computational roles. The authors propose a novel architecture, termed > <former, which employs a variable-width design, featuring wider layers at the beginning and end while narrowing the middle layers. Their findings reveal that this nonuniform width allocation leads to improved language modeling performance and reduced computational costs, demonstrating a more efficient way to scale language models.
+### 2. Learning User Simulators with Turing Rewards
+**Authors:** Yingshan Susan Wang, Cedegao E. Zhang, Linlu Qiu, Zexue He, Pengyuan Li, Alex Pentland, Roger P. Levy, Yoon Kim
+**Link:** https://arxiv.org/abs/2606.19336v1
+**Summary:** The paper addresses the challenge of creating effective user simulators to enhance training for agent assistants and system evaluations. The authors introduce a novel reinforcement learning method called Turing-RL, which uses a Turing-Test-based reward system to train a language model to generate responses that are indistinguishable from real users' inputs. Their results show that this approach significantly improves performance compared to traditional methods, both in automated metrics and human evaluations.
 
-### 3. ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues
-**Authors:** Shanda Li, Qiuhong Anna Wei, Jingwu Tang, Valerie Chen, Nihar B Shah, Tim Dettmers, Yiming Yang, Ameet Talwalkar
-**Link:** https://arxiv.org/abs/2606.18237v1
-**Summary:** The paper introduces ReproRepo, a scalable framework for evaluating the reproducibility of research results by utilizing GitHub issues to identify common reproduction challenges in machine learning papers. By analyzing 1,149 papers, the authors demonstrate that large language model (LLM) agents, particularly Codex with GPT-5.5, can effectively identify reproducibility issues reported by humans, achieving a success rate of about 90% in linking problems to relevant publications. This approach provides a more efficient method for conducting reproducibility audits in the scientific community.
+### 3. Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States
+**Authors:** Denis Peskoff, Joe Barrow, Christopher Vu, Diag Davenport
+**Link:** https://arxiv.org/abs/2606.19334v1
+**Summary:** The paper addresses the lack of accessible, machine-readable local ordinance codes in the U.S., which are essential for understanding various regulations that affect daily life. The authors introduce LOCUS, a comprehensive corpus and harmonized access layer for municipal and county ordinance codes, leveraging OCR technology to create a usable dataset from diverse document formats. This resource, covering over 9,200 cities and counties, enables researchers to analyze local laws at a scale and depth previously unattainable, with tools like ModernBERT classifiers to explore characteristics of the ordinances.
 
-### 4. Sign-Rank, Index, and List Replicability: Connections and Separations
-**Authors:** Ari Blondal, Hamed Hatami, Pooya Hatami, Chavdar Lalov, Sivan Tretiak
-**Link:** https://arxiv.org/abs/2606.18236v1
-**Summary:** This paper addresses the challenge of establishing lower bounds on the sign rank of binary concept classes, which is crucial in learning theory. The authors link the sign rank to two more manageable measures: the \(\mathbb{Z}_2\)-index and list replicability, demonstrating that the \(\mathbb{Z}_2\)-index is bounded by a linear function of the list replicability number. A significant outcome is a clear separation between sign rank and the \(\mathbb{Z}_2\)-index, along with new upper bounds and composition results for list replicability, which enhance our understanding of these complexity measures.
+### 4. The Chandra-Gaia Catalog of Counterparts: Resolving ambiguous Gaia matches to X-ray sources in the Chandra Source Catalog using Machine Learning
+**Authors:** V. Samuel Pérez-Díaz, Vinay L. Kashyap, Joshua D. Ingram, David Fouhey, Juan Rafael Martínez-Galarza, Pavlos Protopapas, Jeremy J. Drake, Dong-Woo Kim, Cecilia Garraffo
+**Link:** https://arxiv.org/abs/2606.19329v1
+**Summary:** The paper addresses the challenge of accurately identifying optical counterparts to X-ray sources in the Chandra Source Catalog, particularly in cases of ambiguous matches with Gaia data. The authors utilize a machine learning approach, specifically training a gradient-boosted classifier on various source properties, to improve the cross-matching process. They successfully identify counterparts for approximately 113,000 X-ray sources, revealing the ability to resolve ambiguities and providing a comprehensive catalog to aid future astronomical studies.
 
-### 5. EvolveNav: Proactive Preflection and Self-Evolving Memory for Zero-Shot Object Goal Navigation
-**Authors:** Qi Chai, Wenhao Shen, Nanjie Yao, Yue Xia, Kaiyong Zhao, Jie Ma, Guosheng Lin, Hao Wang
-**Link:** https://arxiv.org/abs/2606.18235v1
-**Summary:** The paper addresses the challenge of Zero-Shot Object-Goal Navigation, where agents must find objects without prior training. It introduces EvolveNav, a framework that allows agents to continually improve by learning from past experiences and selecting effective navigation strategies, along with a module that predicts action outcomes. The approach significantly enhances performance, achieving a 10.1% increase in success rates while minimizing unnecessary exploration steps.
+### 5. UBP2: Uncertainty-Balanced Preference Planning for Efficient Preference-based Reinforcement Learning
+**Authors:** Mohamed Nabail, Leo Cheng, Jingmin Wang, Nicholas Rhinehart
+**Link:** https://arxiv.org/abs/2606.19328v1
+**Summary:** The paper addresses the inefficiency of sample collection in preference-based reinforcement learning, where learning from behavior comparisons typically requires a lot of data. The authors present a new method called Uncertainty-Balanced Preference Planning (UBP2), which actively explores potential actions by considering uncertainties in rewards and dynamics. Their results demonstrate that UBP2 significantly improves sample efficiency compared to existing methods, achieving better performance on the Meta-World benchmark.
 
-### 6. Adaptive Volumetric Mechanical Property Fields Invariant to Resolution
-**Authors:** Rishit Dagli, Donglai Xiang, Vismay Modi, Xuning Yang, Gavriel State, David I. W. Levin, Maria Shugrina
-**Link:** https://arxiv.org/abs/2606.18231v1
-**Summary:** The paper addresses the challenge of accurately predicting the mechanical properties of 3D objects, like Young's modulus and density, which are often missing in digital assets. The authors introduce AdaVoMP, a novel method that utilizes a sparse voxel structure and a transformer model to generate precise material properties at a much higher resolution than previous techniques. Their approach not only enhances the accuracy of these predictions but also reduces computational requirements, enabling the creation of realistic simulations for complex 3D models.
+### 6. Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation
+**Authors:** Siyi Gu, Jialin Chen, Sophia Zhou, Arman Cohan, Rex Ying
+**Link:** https://arxiv.org/abs/2606.19327v1
+**Summary:** The paper addresses the challenges in training reasoning language models, particularly the limitations of traditional distillation techniques that rely on costly annotations and scalar rewards. The authors propose a new approach called Rubric-Conditioned Self-Distillation, which uses detailed rubric feedback to provide more granular guidance during training, leading to improved model performance. Their method outperforms existing techniques, achieving higher scores on various scientific reasoning benchmarks.
 
-### 7. Learning Red Agent Policy from Observations for Neurosymbolic Autonomous Cyber Agents
-**Authors:** Ankita Samaddar, Sandeep Neema, Daniel Balasubramanian, Xenofon Koutsoukos
-**Link:** https://arxiv.org/abs/2606.18223v1
-**Summary:** The paper addresses the challenge of predicting the actions of cyber-attackers in partially observable environments, which complicates the training of autonomous cyber-defense agents. The authors propose a Policy Learning Technique that uses imitation learning to derive policies from network observations and defender actions. This method, integrated into a neurosymbolic cyber-defense agent, successfully predicts attacker actions with high accuracy in various simulated scenarios.
+### 7. Reference-Driven Multi-Speaker Audio Scene Generation from In-the-Wild Priors
+**Authors:** Michael Finkelson, Daniel Segal, Eitan Richardson, Shahar Armon, Nani Goldring, Poriya Panet, Nir Zabari, Benjamin Brazowski, Or Patashnik, Yoav HaCohen
+**Link:** https://arxiv.org/abs/2606.19325v1
+**Summary:** The paper addresses the challenge of generating realistic multi-speaker audio scenes without the need for structured supervision typically used in dialogue systems. The authors introduce ScenA, a model that leverages a text-to-audio foundation model, allowing it to create rich, natural audio environments by conditioning on multiple reference voices and a descriptive text prompt. The key contribution is the model's ability to outperform existing systems in generating complex conversational audio, including overlapping speech and ambient sounds, while maintaining speaker identity without structured dialogue scripts.
 
-### 8. Darshana Graph: A Parallel Commentary Corpus for Comparative Indian Philosophy, with Stylometric and Exploratory Graph Analyses
-**Authors:** Joy Bose
-**Link:** https://arxiv.org/abs/2606.18222v1
-**Summary:** The paper presents the Darshana Graph, a comprehensive corpus of over 125,000 philosophical texts from Hindu, Buddhist, and Jain traditions, with a unique focus on aligning 8,500 records from various commentators on the same source verses for comparative analysis. The authors employ stylometric and large language model techniques to analyze argumentative styles and extract philosophical relationships, finding notable patterns and disagreements among different schools. This resource is valuable for researchers examining interpretative differences in Indian philosophy and is publicly available for further exploration.
+### 8. Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents
+**Authors:** Anoushka Vyas, Aarushi Dhanuka, Sina Khoshfetrat Pakazad, Henrik Ohlsson
+**Link:** https://arxiv.org/abs/2606.19319v1
+**Summary:** The paper addresses inefficiencies in data integration caused by repetitive handoffs between data teams, which can lead to loss of information. It introduces Data Intelligence Agents (DIA), a system of autonomous coding agents that independently interpret data, create schemas, and generate queries, while utilizing shared memory for improved efficiency. The key finding is that the Query Generator within DIA outperforms existing methods on a variety of SQL tasks, showcasing its effectiveness in automating and optimizing the data querying process.
 
-### 9. Finite-Time Queue Peak Laws in Stochastic Networks: Logarithmic Scaling After Geometric Thresholds
-**Authors:** Hao Liang, Cheng Tang, Yunzong Xu
-**Link:** https://arxiv.org/abs/2606.18218v1
-**Summary:** The paper investigates how the peaks in queue lengths behave over a finite time horizon in stochastic networks where multiple queues share limited service resources. By examining scheduling policies like MaxWeight under conditions of uniform load, the authors demonstrate that queue peaks grow logarithmically after surpassing a specific geometric threshold, deviating from traditional square-root growth patterns. This work highlights the influence of network geometry on finite-time queue dynamics and offers refined bounds and insights for managing queues in complex network configurations.
+### 9. Explaining Attention with Program Synthesis
+**Authors:** Amiri Hayes, Belinda Li, Jacob Andreas
+**Link:** https://arxiv.org/abs/2606.19317v1
+**Summary:** This paper addresses the challenge of making the inner workings of deep learning models, specifically attention heads in transformer language models, more interpretable by generating human-readable programs that mimic their behavior. The authors compute attention patterns from various models and use a pre-trained language model to create Python programs that can replicate these patterns based on input text. They achieve high accuracy in reproducing attention patterns and demonstrate that these programs can replace parts of the neural model with minimal impact on performance, thus offering a novel method for enhancing transparency in AI systems.
 
-### 10. Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients
-**Authors:** Byung-Kwan Lee, Ximing Lu, Shizhe Diao, Minki Kang, Saurav Muralidharan, Karan Sapra, Andrew Tao, Pavlo Molchanov, Yejin Choi, Yu-Chiang Frank Wang, Ryo Hachiuma
-**Link:** https://arxiv.org/abs/2606.18216v1
-**Summary:** The paper addresses the challenge of knowledge distillation in reinforcement learning, where small models (students) struggle to learn effectively from larger models (teachers) when forced to imitate their output. To overcome this, the authors propose Zone of Proximal Policy Optimization (ZPPO), which focuses on integrating teacher guidance into prompts rather than directly affecting the student's policy gradient. The key result shows that ZPPO significantly improves performance in small student models across various benchmarks compared to traditional distillation methods.
+### 10. Diffusion-Proof: Recipe for Formal Theorem Proving Beyond Auto-Regressive Generation
+**Authors:** Ruida Wang, Rui Pan, Pengcheng Wang, Shizhe Diao, Tong Zhang
+**Link:** https://arxiv.org/abs/2606.19315v1
+**Summary:** The paper addresses the limitations of traditional auto-regressive language models in formal theorem proving, particularly their struggles with long-range coherence and error compounding. It introduces **Diffusion-Proof**, a framework that employs diffusion language models for formal reasoning, featuring two models for proof generation and correction. The results show that **Diffusion-Proof** outperforms existing models, achieving notable improvements on key benchmarks and successfully solving complex problems that previous models could not.
