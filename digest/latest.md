@@ -1,52 +1,52 @@
 ---
-## 2026-06-19
+## 2026-06-20
 
-### 1. How Transparent is DiffusionGemma?
-**Authors:** Joshua Engels, Callum McDougall, Bilal Chughtai, Janos Kramar, Senthoran Rajamanoharan, Cindy Wu, Arthur Conmy, Asic Q Chen, Jean Tarbouriech, Min Ma, Brendan O'Donoghue, João Gabriel Lopes de Oliveira, Rohin Shah, Neel Nanda
-**Link:** https://arxiv.org/abs/2606.20560v1
-**Summary:** This paper investigates the transparency of the DiffusionGemma model compared to the autoregressive Gemma 4, focusing on how well we can understand its reasoning processes. The authors analyze variable and algorithmic transparency, finding that while DiffusionGemma initially seems opaque, it can achieve better interpretability by mapping intermediate states through a token bottleneck without sacrificing performance. The study reveals new phenomena unique to diffusion models and concludes that DiffusionGemma's outputs are comparable in monitorability to those of Gemma 4.
+### 1. LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents
+**Authors:** Md Nayem Uddin, Amir Saeidi, Eduardo Blanco, Chitta Baral
+**Link:** https://arxiv.org/abs/2606.20529v1
+**Summary:** The paper presents LedgerAgent, a method for improving tool-calling agents in customer service by explicitly maintaining task states in a separate ledger instead of relying on implicit state management through prompts. This approach helps ensure that agents make decisions based on accurate and up-to-date information while adhering to domain policies. The key finding is that LedgerAgent significantly enhances performance, particularly in consistency across multiple trials, compared to standard prompt-based methods.
 
-### 2. UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning
-**Authors:** Wenhao Chi, Arkaprava Sinha, Dominick Reilly, Hieu Le, Srijan Das
-**Link:** https://arxiv.org/abs/2606.20559v1
-**Summary:** The paper addresses the challenge of egocentric video understanding, which is limited by the single viewpoint of wearable cameras. It introduces UNIEGO, a novel framework that uses hierarchical multi-teacher distillation with proxy models to integrate knowledge across different perspectives and modalities, enhancing the representation learned from egocentric videos. The key contribution is that UNIEGO achieves state-of-the-art performance in action recognition, video retrieval, and action segmentation by effectively managing and distilling diverse, yet complementary, teacher knowledge.
+### 2. StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs
+**Authors:** Shaghayegh Kolli, Timo Cavelius, Nafiseh Nikeghbal, Samantha Dalal, Jana Diesner
+**Link:** https://arxiv.org/abs/2606.20527v1
+**Summary:** The paper addresses the challenge of understanding how visual cues influence social biases in multimodal large language models (MLLMs). By creating a benchmark called StylisticBias, the authors generated a dataset of 25,000 images with controlled variations in visual attributes while keeping identity constant, allowing for precise measurement of how these attributes affect model judgments. The key finding is that a small number of visual traits—particularly related to age, body type, and fashion—account for the majority of observed biases, emphasizing the importance of specific cues in shaping MLLM responses.
 
-### 3. Optimal Deterministic Multicalibration and Omniprediction
-**Authors:** Georgy Noarov, Aaron Roth
-**Link:** https://arxiv.org/abs/2606.20557v1
-**Summary:** The paper addresses the problem of achieving multicalibration in machine learning models, which requires that these models remain unbiased not only overall but also when considering specific groups. The authors present a deterministic algorithm that achieves the optimal sample complexity previously only attainable by randomized algorithms, thereby solving an open question in the field. Additionally, they extend this approach to create optimal deterministic predictors that satisfy outcome indistinguishability, contributing to advances in omniprediction and panprediction.
+### 3. DeepSWIP: Quotient-WMC Counterfactuals for Neural Probabilistic Logic Programs
+**Authors:** Saimun Habib, Vaishak Belle, Fengxiang He
+**Link:** https://arxiv.org/abs/2606.20526v1
+**Summary:** The paper presents DeepSWIP, a method that enhances the DeepProbLog framework by enabling counterfactual reasoning through a single-world causal semantics. This is achieved by transforming neural predicates into standard ProbLog choices and applying weighted model counting to compute counterfactuals efficiently. The key contribution is a significant inference speedup demonstrated in experiments, along with improved intervention calibration and reduced bias in estimations, particularly in the context of neural probabilistic logic programs.
 
-### 4. Structuring and Tokenizing Distributed User Interest Context for Generative Recommendation
-**Authors:** Ruizhong Qiu, Yinglong Xia, Dongqi Fu, Hanqing Zeng, Ren Chen, Xiangjun Fan, Hong Li, Hong Yan, Hanghang Tong
-**Link:** https://arxiv.org/abs/2606.20554v1
-**Summary:** The paper addresses the challenge of integrating complex user behaviors and item semantics in generative recommendation systems, which often struggle with scalability and representation accuracy. The authors propose G2Rec, a scalable framework that combines holistic graph-based user co-engagement modeling with semantic tokenization, allowing for improved modeling of user interests without needing explicit ground-truth data. The results show that G2Rec outperforms existing methods in generating more comprehensive and accurate recommendations in real-world applications.
+### 4. SARLO-80: Worldwide Slant SAR Language Optic Dataset 80cm
+**Authors:** Solène Debuysère, Nicolas Trouvé, Nathan Letheule, Elise Colin, Georgia Channing
+**Link:** https://arxiv.org/abs/2606.20523v1
+**Summary:** The paper introduces SARLO-80, a new dataset designed to enhance multimodal learning by providing high-resolution synthetic aperture radar (SAR) imagery, aligned optical images, and natural language descriptions. The dataset consists of 119,566 triplets derived from 2,500 scenes worldwide, standardized to an 80cm slant-range grid for precise pixel-level alignment. This contribution addresses the lack of high-quality datasets in the SAR domain and enables better cross-modal retrieval and conditional generation, supporting advanced research in SAR-optical relationships.
 
-### 5. The Token Is a Group Element: On Lie-Algebra Attention over Matrix Lie Groups
-**Authors:** Przemyslaw Musialski
-**Link:** https://arxiv.org/abs/2606.20547v1
-**Summary:** This paper introduces a novel attention mechanism called Lie-Algebra Attention, where the tokens are elements of matrix Lie groups, providing a mathematical framework to process transformations without relying on traditional representation-theoretic approaches. The authors demonstrate that this method achieves an intrinsic, canonical measure of similarity between group elements using a closed-form formula, significantly enhancing performance in sequence-completion tasks on various group types while using far fewer parameters than existing vector-token methods. By effectively addressing the limitations of prior attention mechanisms, this work expands the applicability of attention models to complex group structures, including non-compact affine groups.
+### 5. Sovereign Execution Brokers: Enforcing Certificate-Bound Authority in Agentic Control Planes
+**Authors:** Jun He, Deying Yu
+**Link:** https://arxiv.org/abs/2606.20520v1
+**Summary:** The paper addresses the challenge of securely managing autonomous agents in cloud environments, ensuring that authority for making changes does not reside with unpredictable reasoning processes. It introduces the Sovereign Execution Broker (SEB), which enforces certified action authority by validating and recording actions against established rules before execution. The key contribution is a prototype implementation that effectively separates the processes of proposing, admitting, and executing actions, enhancing security and auditability in agent-based control systems.
 
-### 6. Predictability as a Fine-Grained Measure for Privacy
-**Authors:** Linda Lu, Karthik Sridharan
-**Link:** https://arxiv.org/abs/2606.20546v1
-**Summary:** The paper addresses the challenge of balancing individual privacy and data accuracy in differential privacy (DP) by introducing a new framework called "privacy via predictability." This framework measures privacy leakage based on the attacker's knowledge and the data they have while also being specifically tailored to different types of sensitive information and attacker models. A key contribution is the development of a predictability-calibrated output perturbation scheme, which offers a finer-grained privacy measure that can complement traditional DP methods.
+### 6. FlowEdit: Associative Memory for Lifelong Pronunciation Adaptation in Flow-Matching TTS
+**Authors:** Harshit Singh, Ayush Pratap Singh, Nityanand Mathur
+**Link:** https://arxiv.org/abs/2606.20518v1
+**Summary:** The paper presents FlowEdit, a framework designed to address the persistent pronunciation errors in text-to-speech systems, particularly for out-of-vocabulary proper nouns. Instead of retraining the model, FlowEdit learns corrections as latent edits and stores them in a neural memory system, allowing for efficient and adaptive pronunciation adjustments. The approach significantly reduces pronunciation errors by 92.7% while maintaining the overall quality of speech synthesis, with corrections completed in about 15 seconds on a single GPU.
 
-### 7. Toward Calibrated Mixture-of-Experts Under Distribution Shift
-**Authors:** Gina Wong, Drew Prinster, Suchi Saria, Rama Chellappa, Anqi Liu
-**Link:** https://arxiv.org/abs/2606.20544v1
-**Summary:** This paper addresses the challenge of ensuring that mixture-of-experts models remain well-calibrated when faced with changes in data distributions. The authors analyze how different routing strategies affect the calibration of these models and propose a new method that penalizes calibration errors in the overall model. Their key finding is that this adversarial reweighting approach significantly enhances the balance between accuracy and calibration performance, especially in difficult scenarios.
+### 7. Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages
+**Authors:** Maria Ivanova, Pavel Zadorozhny, Rodion Levichev, Ivan Petrov, Adamenko Pavel, Ivan Lopatin, Alexey Kutalev, Dmitrii Babaev
+**Link:** https://arxiv.org/abs/2606.20517v1
+**Summary:** The paper introduces Multi-LCB, a new benchmark that extends the LiveCodeBench (LCB) framework for evaluating large language models (LLMs) on code generation tasks across twelve programming languages, addressing LCB's limitation of only supporting Python. By transforming Python tasks into equivalent tasks in other languages while maintaining strict contamination controls, Multi-LCB enables robust cross-language assessments of LLM performance. The evaluation of 24 LLMs revealed issues like Python overfitting and significant performance differences across languages, highlighting gaps in LLM capabilities and establishing Multi-LCB as a valuable tool for multi-language code evaluation.
 
-### 8. Multi-Task Bayesian In-Context Learning
-**Authors:** Qingyang Zhu, Eric Karl Oermann, Kyunghyun Cho
-**Link:** https://arxiv.org/abs/2606.20538v1
-**Summary:** The paper addresses the challenge of making Bayesian predictive inference more efficient and adaptable, especially when dealing with shifting data distributions. The authors propose a multi-task in-context learning framework using a transformer that learns to incorporate prior information directly into its predictions. This approach achieves performance comparable to traditional Bayesian methods while being significantly faster, demonstrating its effectiveness on complex tasks like spatiotemporal temperature prediction.
+### 8. Probe-and-Refine Tuning of Repository Guidance for Coding Agents
+**Authors:** Asa Shepard, Jeannie Albrecht
+**Link:** https://arxiv.org/abs/2606.20512v1
+**Summary:** The paper addresses the challenge of providing effective operational guidance for large language model (LLM)-based coding agents, which is crucial for navigating code repositories. The authors propose a novel approach called "probe-and-refine tuning," where synthetic bug-fix probes are used to iteratively improve the guidance files without needing direct agent interaction. Their key finding is that this refined guidance significantly increases the agent's ability to locate relevant files for code changes, achieving a mean resolve rate of 33% compared to lower rates for static or unguided approaches.
 
-### 9. Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving
-**Authors:** Liang Su
-**Link:** https://arxiv.org/abs/2606.20537v1
-**Summary:** The paper addresses the challenge of low-latency, small-batch serving of large language models (LLMs) on devices, which is crucial for interactive applications like speech systems and robotics that require quick responsiveness. The authors propose a novel approach called execution-state capsules, which allow for complete restoration of the entire execution state at designated checkpoints, facilitating efficient state management. Key results show that this method achieves sub-millisecond snapshot and restore times on GPUs, significantly improving performance over traditional key-value cache methods, especially as input sizes increase.
+### 9. Efficient and Sound Probabilistic Verification for AI Agents
+**Authors:** Alaia Solko-Breslin, Pramod Kaushik Mudrakarta, Mihai Christodorescu, Somesh Jha, Krishnamurthy Dj Dvijotham
+**Link:** https://arxiv.org/abs/2606.20510v1
+**Summary:** The paper addresses the challenge of verifying AI agents' compliance with security policies in uncertain environments, which often involves probabilistic behaviors. The authors introduce a new framework that uses distributionally robust optimization to calculate reliable upper bounds on the likelihood of policy violations without needing to assume independence between various factors. Their approach is shown to outperform existing methods in terms of performance and enhances the balance between security and utility in practical applications.
 
-### 10. How Do Instructions Shape Speech? Cross-Attention Attribution for Style-Captioned Text-to-Speech
-**Authors:** Nityanand Mathur, Hamees Sayed, Wasim Madha, Apoorv Singh, Sameer Khurana, Akshat Mandloi, Sudarshan Kamath
-**Link:** https://arxiv.org/abs/2606.20532v1
-**Summary:** The paper addresses the challenge of understanding how specific words in style-captioned text influence the acoustic output in text-to-speech (TTS) systems. The authors introduce a novel method called cross-attention attribution, tailored for speech diffusion models, which analyzes the impact of style and content tokens on voice characteristics. Key findings reveal that style tokens significantly shape the waveform and are most influential early in the generation process, providing insights into improving TTS controllability.
+### 10. What Do Safety-Aligned LLMs Learn From Mixed Compliance Demonstrations?
+**Authors:** Sihui Dai, Mann Patel
+**Link:** https://arxiv.org/abs/2606.20508v1
+**Summary:** The paper investigates how language models interpret and respond to a mix of benign and harmful compliance demonstrations, exploring the effects of demonstration content and ordering on harmful compliance. By testing four different models, the authors find that benign and harmful demonstrations have varied effects on compliance, depending on the model and its training, particularly highlighting the significance of the preference optimization training phase. This research provides insights into the dynamics of how models learn from mixed demonstrations, moving beyond simply showing that harmful behaviors can be triggered to understanding the underlying mechanisms.
