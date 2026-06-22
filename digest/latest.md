@@ -1,52 +1,52 @@
 ---
-## 2026-06-21
+## 2026-06-22
 
-### 1. FreeStyle: Free Control of Style-Content Dual-Reference Generation from Community LoRA Mining
-**Authors:** Jinghong Lan, Wei Cheng, Yunuo Chen, Ziqi Ye, Peng Xing, Yixiao Fang, Rui Wang, Yufeng Yang, Xuanyang Zhang, Xianfang Zeng, Difan Zou, Gang Yu, Chi Zhang
-**Link:** https://arxiv.org/abs/2606.20506v1
-**Summary:** The paper addresses the challenge of generating images that maintain the structure of a content reference while adopting the style of a separate style reference, which is difficult due to potential semantic leakage. The authors introduce FreeStyle, a scalable framework that uses community-generated Low-Rank Adaptations (LoRAs) to create a large dataset of style and content reference triplets, and implement sophisticated mechanisms to prevent content leakage during generation. Their extensive evaluation shows that FreeStyle effectively balances style alignment, content preservation, and leakage suppression, marking an advancement in dual-reference image synthesis.
+### 1. Analyzing Defensive Misdirection Against Model-Guided Automated Attacks on Agentic AI Systems
+**Authors:** Reza Soosahabi, Vivek Namsani
+**Link:** https://arxiv.org/abs/2606.20470v1
+**Summary:** This paper addresses the challenge of defending agentic AI systems from increasingly sophisticated automated attacks, specifically prompt-injection and jailbreak attempts. The authors propose a novel defense strategy called Contextual Misdirection via Progressive Engagement (CMPE), which provides misleading responses to detected malicious interactions, thereby confusing attackers and reducing their success rates. The results demonstrate that CMPE can significantly diminish the effectiveness of these attacks, reducing their success rates by up to 100 times in certain benchmark scenarios.
 
-### 2. Entropy Estimation in Multi-Qutrit Systems via Variational and Classical Neural Networks
-**Authors:** Sai Sakunthala Guddanti, Anil Prabhakar, Ria Rushin Joseph
-**Link:** https://arxiv.org/abs/2606.20504v1
-**Summary:** This paper addresses the challenge of estimating von Neumann entropy in multi-qutrit quantum systems using two methods: variational quantum algorithms and classical convolutional neural networks (CNNs). The authors find that while VQAs are effective for small systems (up to three qutrits), CNNs significantly improve performance and scalability for larger systems (up to five qutrits), achieving high accuracy with fewer measurements. Specifically, the CNN model can provide accurate entropy estimates with only a fraction of the measurements typically needed, demonstrating robustness against noise and generalization to various quantum states.
+### 2. Fisher-Geometric Sharpness and the Implicit Bias of SGD toward Flat Minima
+**Authors:** Md Sakir Ahmed, Kumaresh Sarmah, Hemen Dutta
+**Link:** https://arxiv.org/abs/2606.20469v1
+**Summary:** The paper addresses the problem of understanding why stochastic gradient descent (SGD) seems to favor flat minima, which are thought to generalize better in deep learning, by establishing a reparametrization-invariant measure of flatness using Riemannian geometry based on the Fisher Information Matrix (FIM). The authors define a new mathematical concept of Riemannian sharpness and demonstrate that it correlates better with generalization performance than traditional Euclidean sharpness measures. Their findings show that SGD concentrates probability mass around Riemannian-flat minima, providing a rigorous explanation for the observed generalization capabilities of flat minima.
 
-### 3. Calibration Without Comprehension: Diagnosing the Limits of Fine-Tuning LLMs for Vulnerability Detection in Systems Software
-**Authors:** Arastoo Zibaeirad, Marco Vieira
-**Link:** https://arxiv.org/abs/2606.20502v1
-**Summary:** The paper addresses the reliability of large language models (LLMs) in detecting vulnerabilities in systems software, questioning whether they genuinely understand security concepts or simply match patterns from flawed training data. The authors introduce CWE-Trace, a framework that evaluates various LLMs on their ability to detect vulnerabilities, using a carefully curated dataset and two novel diagnostic metrics. The key finding reveals that while fine-tuning improves detection thresholds, it does not enhance the models' actual understanding of security, as evidenced by significant misclassifications and low overall detection accuracy.
+### 3. Agentic Symbolic Search: Characterizing PDEs Beyond Hand-crafted Expressions, Meshes, and Neural Networks
+**Authors:** Zongmin Yu, Liu Yang
+**Link:** https://arxiv.org/abs/2606.20467v1
+**Summary:** The paper addresses the challenge of finding analytical solutions to partial differential equations (PDEs), which are typically derived through manual mathematical analysis or approximated via numerical simulations and neural networks. The authors introduce Agentic Symbolic Search (ASYS), a framework that combines PDE theory and search experience to generate testable symbolic programs, which are refined through a mix of evolutionary search and gradient-based optimization. ASYS successfully produces interpretable mathematical representations for various PDE problems, demonstrating a novel approach for automating the discovery of solutions beyond traditional methods.
 
-### 4. Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems
-**Authors:** Zewen Liu
-**Link:** https://arxiv.org/abs/2606.20493v1
-**Summary:** This paper addresses the issue of evaluator biases in multi-agent systems where large language models (LLMs) serve as evaluators, leading to the propagation of these biases among agents. The authors introduce the Contagion Networks framework to measure the spread of biases and conduct experiments that show biases can propagate consistently between agents. A key finding is that increasing the size of the evaluator committee can significantly reduce bias contagion, offering a practical strategy for mitigation.
+### 4. Data Bias Mitigation under Coverage Constraints & The Price of Fairness
+**Authors:** Bruno Scarone, Alfredo Viola, Renée J. Miller
+**Link:** https://arxiv.org/abs/2606.20461v1
+**Summary:** This paper addresses the issue of bias in machine learning models, particularly for individuals with intersecting sensitive attributes like race and gender, which often leads to poor performance and discriminatory outcomes. The authors extend a bias mitigation framework to include coverage constraints ensuring sufficient representation of all groups while maintaining data efficiency, rather than striving for complete bias reduction. Key findings show that their approach maintains predictive accuracy across various classifiers and highlights the importance of coverage constraints in enhancing model performance.
 
-### 5. Beyond Global Replanning: Hierarchical Recovery for Cross-Device Agent Systems
-**Authors:** Shu Yao, Yuhua Luo, Qian Long, Jingru Fan, Zhuoyuan Yu, Yuheng Wang, Lin Wu, Yufan Dang, Huatao Li, Chen Qian
-**Link:** https://arxiv.org/abs/2606.20487v1
-**Summary:** The paper addresses the challenge of efficiently handling task execution failures in multi-device agent systems, which often involve coordinating different applications and devices. The authors propose a framework called H-RePlan that separates local recovery strategies from overall global replanning, allowing devices to dynamically adapt their execution without needing to reevaluate the entire plan. Their experiments show that H-RePlan significantly improves task completion rates and reliability compared to existing methods, highlighting the importance of a hierarchical approach to recovery in such systems.
+### 5. Context-Aware Hierarchical Bayesian Modeling of IVF Laboratory Environmental Conditions
+**Authors:** Zahra Asghari Varzaneh, Reza Khoshkangini, Pia Saldeen, Lars Johansson, Thomas Ebner
+**Link:** https://arxiv.org/abs/2606.20459v1
+**Summary:** This paper addresses the problem of improving IVF pregnancy rate predictions by incorporating detailed laboratory environmental conditions, which have been largely overlooked. The authors developed advanced temporal features that capture the dynamics of incubator conditions and applied a hierarchical Bayesian Beta regression model to analyze data from clinics in Asia and Northern Europe. The key contribution is a significant reduction in prediction error, achieving a cross-validated error of 1.27% and demonstrating that environmental monitoring can provide valuable insights for IVF success rates.
 
-### 6. Optimal Order of Multi-Agent and General Many-Body Systems
-**Authors:** Jake J. Xia
-**Link:** https://arxiv.org/abs/2606.20485v1
-**Summary:** This paper addresses the challenge of optimizing multi-agent systems by analyzing how individual agent behaviors influence collective outcomes. The authors introduce a framework based on agent power and response functions, revealing a trade-off between productivity and resilience. A key finding is that while synchronization can boost collective performance, it may also heighten systemic fragility, emphasizing that optimal order in these systems is both task-dependent and context-specific.
+### 6. Repurposing a Speech Classifier for Guided Diffusion-Based Speech Generation
+**Authors:** Rostislav Makarov, Timo Gerkmann
+**Link:** https://arxiv.org/abs/2606.20457v1
+**Summary:** The paper addresses the issue of needing two separate models for classifier-guided speech generation, which can be inefficient. Instead, the authors propose repurposing an existing speech classifier by adding a lightweight subnetwork for diffusion generation, allowing the combined model to generate high-quality speech. The key contribution is demonstrating that this approach not only reduces memory and computational requirements but also effectively combines discriminative modeling with conditional speech synthesis.
 
-### 7. Your Mouse and Eyes Secretly Leak Your Preference: LLM Alignment using Implicit Feedback from Users
-**Authors:** Haw-Shiuan Chang, Jeffrey Gomez, Mehul Patwari, Aryan Sajith, Hamed Zamani
-**Link:** https://arxiv.org/abs/2606.20482v1
-**Summary:** The paper addresses the challenge of aligning Large Language Models (LLMs) by moving beyond traditional methods that rely on explicit human feedback, which is often scarce and expensive to gather. It introduces a novel dataset, IFLLM, which includes user mouse movements and eye tracking data as implicit feedback to improve LLM response quality. The key finding is that this implicit feedback significantly enhances the performance of a reward model, increasing accuracy from 55% to 64% and leading to substantial improvements in the quality of LLM responses.
+### 7. SSH-Net: A Deep Neural Network for Predicting Failure Time Distribution Functions under Competing Risks with Application to GPU Data
+**Authors:** Jie Min, Yueyao Wang, Mengkun Chen
+**Link:** https://arxiv.org/abs/2606.20451v1
+**Summary:** The paper presents SSH-Net, a deep learning model designed to predict failure times in systems experiencing competing risks, which is critical in engineering applications. By structuring the neural network to accommodate different groups of covariates through separate sub-networks, the model improves prediction accuracy for cause-specific failure outcomes. Validation results demonstrate that SSH-Net effectively predicts failure time distribution functions, particularly using data from Titan GPUs.
 
-### 8. Scalable Training of Spatially Grounded 2D Vision-Language Models for Radiology
-**Authors:** Yusuf Salcan, Simon Ging, Robin Schirrmeister, Philipp Arnold, Elmar Kotter, Behzad Bozorgtabar, Thomas Brox
-**Link:** https://arxiv.org/abs/2606.20477v1
-**Summary:** The paper addresses the challenge of training vision-language models for radiology without requiring manual spatial annotations. The authors introduce RefRad2D, a large dataset of CT and MR image-text pairs, and develop RadGrounder, a model capable of report generation, visual question answering, and spatial grounding. Key results show that RadGrounder performs competitively with specialized models and that including their dataset improves performance without compromising language quality.
+### 8. Topological Data Analysis for High-Dimensional Dynamic Process Monitoring
+**Authors:** Angan Mukherjee, Tyler A. Soderstrom, Michael J. Kurtz, Victor M. Zavala
+**Link:** https://arxiv.org/abs/2606.20443v1
+**Summary:** This paper addresses the challenge of real-time monitoring of complex industrial processes using high-dimensional time-series data. The authors propose a novel method that combines topological data analysis with machine learning to represent the data as manifolds and utilize topological descriptors for event detection. Their results demonstrate that this trajectory-based approach effectively identifies a variety of events, outperforming traditional methods like principal component analysis and reconstruction-based models.
 
-### 9. Marginal Advantage Accumulation for Memory-Driven Agent Self-Evolution
-**Authors:** Mingyu Yang, Keye Zheng, Congchao Cheng, Yujie Liu, Xingkang Lu, Fan Jiang, Yefei Zheng
-**Link:** https://arxiv.org/abs/2606.20475v1
-**Summary:** The paper addresses the issue of inconsistent feedback received by memory operations during batch-style trace distillation, which makes it difficult to identify effective operations. The authors introduce Marginal Advantage Accumulation (MAA), a method that accumulates evidence for operations across batches and enhances comparability of feedback. The key contribution is that MAA significantly outperforms existing methods in most scenarios tested, while also reducing the resources needed for optimization by about 75%.
+### 9. Evolutionary Two-Stage Hyperparameter Optimization Strategies for Physics-Informed Neural Networks
+**Authors:** Fedor Buzaev, Dmitry Efremenko, Egor Bugaev, Andrei Ermakov, Denis Derkach, Daria Pugacheva, Fedor Ratnikov
+**Link:** https://arxiv.org/abs/2606.20442v1
+**Summary:** The paper addresses the challenges of optimizing hyperparameters in Physics-Informed Neural Networks (PINNs), which struggle with convergence and sensitivity to various parameters when solving Partial Differential Equations. The authors propose a novel two-stage hyperparameter optimization strategy that utilizes evolutionary algorithms for initial exploration of configurations, followed by refinement using gradient-based methods. Their approach demonstrates superior performance and lower mean error compared to traditional training methods across multiple PDE problems, all while operating within limited computational resources.
 
-### 10. UltraQuant: 4-bit KV Caching for Context-Heavy Agents
-**Authors:** Inesh Chakrabarti, David Limpus, Aditi Ghai Rana, Bowen Bao, Spandan Tiwari, Thiago Crepaldi, Ashish Sirasao
-**Link:** https://arxiv.org/abs/2606.20474v1
-**Summary:** The paper addresses the challenge of efficiently managing key-value (KV) caches in context-heavy agent workloads, which often reuse long prefixes and require high concurrency for GPU utilization. The authors propose a novel 4-bit KV caching method called UltraQuant, integrating advanced techniques like codebook quantization and optimized kernel design, resulting in a significant performance improvement. Specifically, UltraQuant reduces the time to first token by 3.47 times in late cache-pressured rounds and increases output throughput by 1.63 times compared to the FP8 KV baseline.
+### 10. Interpretable Sperm Morphology Classification via Attention-Guided Deep Learning
+**Authors:** Zahra Asghari Varzaneh, Reza Khoshkangini, Thomas Ebner, Lars Johansson
+**Link:** https://arxiv.org/abs/2606.20438v1
+**Summary:** The paper addresses the issue of male infertility linked to abnormal sperm morphology by developing an attention-guided deep learning model for sperm classification. By integrating EfficientNet-B0 with a Convolutional Block Attention Module, the model not only improves classification accuracy but also enhances interpretability, achieving high accuracy on standard datasets. The key contribution is the model's ability to provide both reliable results and visual explanations of its decision-making process, making it suitable for clinical use in fertility assessments.
