@@ -1,52 +1,52 @@
 ---
-## 2026-06-23
+## 2026-06-24
 
-### 1. AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection
-**Authors:** Mingi Choi, Gunhee Kim, Jisoo Kim, Taeksoo Kim, Taeyun Ha, Jongbin Lim, Hanbyul Joo
-**Link:** https://arxiv.org/abs/2606.23689v1
-**Summary:** The paper presents AutoDex, an automated system that addresses the challenge of collecting real-world data for dexterous grasping by running an entire data collection loop without human intervention, including perception, execution, and labeling. The system successfully gathered a database of over 3,500 grasp trials on various objects, improving data collection speed by 4.8 times compared to traditional teleoperation methods, and achieved a significantly higher success rate when validating grasps compared to simulation-only methods. The resulting data will be publicly available to support further research.
+### 1. InSight: Self-Guided Skill Acquisition via Steerable VLAs
+**Authors:** Maggie Wang, Lars Osterberg, Stephen Tian, Ola Shorinwa, Jiajun Wu, Mac Schwager
+**Link:** https://arxiv.org/abs/2606.24884v1
+**Summary:** The paper presents InSight, a framework that enhances Vision-Language-Action (VLA) models by enabling them to autonomously acquire new manipulation skills through a self-guided process. It uses an automated method to break down tasks into basic actions and a data-driven approach to identify and practice missing actions, allowing the models to learn and integrate these skills without human input. The key contribution is demonstrating that this "primitive steerability" facilitates continuous skill acquisition, allowing the models to tackle new, complex tasks effectively.
 
-### 2. Randomized YaRN Improves Length Generalization for Long-Context Reasoning
-**Authors:** Manas Mehta, Fangcong Yin, Greg Durrett
-**Link:** https://arxiv.org/abs/2606.23687v1
-**Summary:** The paper addresses the challenge that large language models have in generalizing to very long sequences beyond their training context. The authors introduce a method called Randomized YaRN, which combines positional encoding with a curriculum that exposes models to a wider range of position representations during training. Their key finding is that this approach significantly enhances reasoning performance on long-context tasks, especially at lengths much longer than those seen during training.
+### 2. New Bounds for the Last Iterate of the Stochastic subGradient Method
+**Authors:** Guglielmo Beretta, Tommaso Cesari, Roberto Colomboni, Andrea Paudice
+**Link:** https://arxiv.org/abs/2606.24879v1
+**Summary:** This paper addresses the performance of the last iterate of the stochastic subgradient method (SsGM) when optimizing one-dimensional convex Lipschitz objectives. The authors prove that using fixed step sizes leads to an optimization error of order \(1/\sqrt{n}\), improving on previous bounds that included an undesirable logarithmic factor. However, they also demonstrate that when the additive noise is not independent and identically distributed (i.i.d.), the error can increase to \((\log n)/\sqrt{n}\), indicating that uniformly bounded variance alone is not sufficient for optimality.
 
-### 3. CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation
-**Authors:** Sikai Li, Shuning Li, Zhenyu Wei, Yunchao Yao, Chenran Li, Mingyu Ding
-**Link:** https://arxiv.org/abs/2606.23680v1
-**Summary:** The paper presents CoorDex, a novel learning framework that enhances humanoid robots' ability to manipulate objects while in motion, moving beyond the traditional stop-and-go method. By utilizing coordinated latent residual control that integrates high-dimensional body movements with dexterous hand manipulation, the system is able to perform complex tasks like grasping and carrying objects continuously. The key contribution is demonstrating that this approach significantly improves the effectiveness of dexterous loco-manipulation compared to previous methods under the same conditions.
+### 3. FLUX3D: High-Fidelity 3D Gaussian Generation with Diffusion-Aligned Sparse Representation
+**Authors:** Haorui Ji, Weizhe Liu, Hongdong Li, Hengkai Guo
+**Link:** https://arxiv.org/abs/2606.24874v1
+**Summary:** FLUX3D addresses the challenge of generating high-fidelity 3D Gaussian structures from 2D images, which often fail to capture fine visual details. The authors propose a new framework that enhances the representation of 2D features and improves alignment between 2D image data and 3D voxel representations through innovative techniques, leading to superior quality in 3D generated assets. The results show that FLUX3D significantly outperforms existing methods in generating realistic 3D structures.
 
-### 4. Semantic Browsing: Controllable Diversity for Image Generation
-**Authors:** Sara Dorfman, Maya Vishnevsky, Omer Dahary, Or Patashnik, Daniel Cohen-Or
-**Link:** https://arxiv.org/abs/2606.23679v1
-**Summary:** The paper addresses the lack of diversity in image generation from text prompts, where models often produce similar outputs instead of varied interpretations. The authors propose a new method called Semantic Browsing, which allows users to explore image galleries by systematically varying meaningful aspects of the generated content, leveraging rich textual representations for more controlled output. Their approach results in diverse, interpretable images that align closely with user-defined semantic choices, enhancing creative exploration.
+### 4. OpenThoughts-Agent: Data Recipes for Agentic Models
+**Authors:** Negin Raoof, Richard Zhuang, Marianna Nezhurina, Etash Guha, Atula Tejaswi, Ryan Marten, Charlie F. Ruan, Tyler Griggs, Alexander Glenn Shaw, Hritik Bansal, E. Kelly Buchanan, Artem Gazizov, Reinhard Heckel, Chinmay Hegde, Sankalp Jajee, Daanish Khazi, Emmanouil Koukoumidis, Xiangyi Li, Hange Liu, Shlok Natarajan, Harsh Raj, Nicholas Roberts, Ethan Shen, Nishad Singhi, Michael Siu, Ashima Suvarna, Hanwen Xing, Patrick Yubeaton, Robert Zhang, Leon Liangyu Chen, Xiaokun Chen, Steven Dillmann, Saadia Gabriel, Xunyi Jiang, Anurag Kashyap, Boxuan Li, Yein Park, Minh Pham, Sujay Sanghavi, Lin Shi, Ke Sun, Yixin Wang, Zhiwei Xu, Erica Zhang, Siyan Zhao, Wanjia Zhao, Jenia Jitsev, Alex Dimakis, Benjamin Feuer, Ludwig Schmidt
+**Link:** https://arxiv.org/abs/2606.24855v1
+**Summary:** The paper presents OpenThoughts-Agent (OT-Agent), which addresses the challenge of curating diverse training data for agentic language models that can perform a wide range of tasks. By developing a fully open data curation pipeline and conducting over 100 experiments, the authors created a training set of 100,000 examples that was used to fine-tune the Qwen3-32B model, achieving a notable improvement in accuracy over existing models. The project also demonstrates strong performance scalability and makes all resources available for further research in this area.
 
-### 5. AIR: Adaptive Interleaved Reasoning with Code in MLLMs
-**Authors:** Cong Han, Xiaohan Lan, Haibo Qiu, Yujie Zhong
-**Link:** https://arxiv.org/abs/2606.23678v1
-**Summary:** The paper addresses the limitations of multimodal large language models (MLLMs) in performing numerical computations during interleaved reasoning with code, which have primarily focused on visual tasks. The authors propose an adaptive interleaved reasoning framework that combines a cold-start data pipeline, effective data filtering for reinforcement learning, and a novel tool-invocation strategy, resulting in a significant performance boost—average accuracy on tasks increased by 6.1 percentage points, with interleaved reasoning accuracy improving by 9.9 percentage points and tool-use success rates above 95%.
+### 5. It's Complicated: On the Design and Evaluation of AI-Powered AAC Interfaces
+**Authors:** Blade Frisch, Will Wade, Dylan Gaines, Michelle Kinsella, Betts Peters, Tamara Broderick, Keith Vertanen
+**Link:** https://arxiv.org/abs/2606.24854v1
+**Summary:** This paper addresses the challenges in evaluating AI-powered augmentative and alternative communication (AAC) systems, which struggle to capture the diverse needs of users. The authors explore six complex problem areas in AAC and propose new evaluation methods that better account for the intersectional and nuanced desires of individuals. Their work aims to improve how AI can be integrated into AAC interfaces by providing a more comprehensive framework for assessment.
 
-### 6. Open Problem: Is AdamW Effective Under Heavy-Tailed Noise?
-**Authors:** Dingzhi Yu, Hongyi Tao, Yuanyu Wan, Luo Luo, Lijun Zhang
-**Link:** https://arxiv.org/abs/2606.23676v1
-**Summary:** The paper addresses whether the AdamW optimizer, commonly used for training large language models, can effectively converge under heavy-tailed noise conditions often encountered in pretraining. The authors propose this as an open problem and establish a positive benchmark for convergence while presenting a lower-bound mechanism that illustrates how the memory component of AdamW's denominator may obscure large gradient effects. This work highlights the need for further theoretical exploration of AdamW's performance in scenarios characterized by heavy-tailed noise.
+### 6. Real vs. Complex Spectral Bases for Neural Operators: The Role of Green's Function Alignment
+**Authors:** Jason Sulskis, Sathya Ravi
+**Link:** https://arxiv.org/abs/2606.24851v1
+**Summary:** The paper addresses the efficiency of neural network architectures in learning solutions to partial differential equations (PDEs) by comparing two spectral bases: the complex Fourier domain used in Fourier Neural Operators (FNO) and a purely real approach with Hartley Neural Operators (HNO). The authors introduce HNO, which eliminates complex arithmetic and retains more frequency information, and demonstrate that the best choice of spectral basis depends on the specific properties of the PDE being solved, particularly its phase content. Their findings provide a guideline for selecting the appropriate operator based on the symmetry of the Green's functions associated with the equations.
 
-### 7. PsyBridge: A Hybrid Intelligent Framework for Multi-Dimensional Mental Health Assessment and Decision Support
-**Authors:** Sunil Wanjari, Manish Thakre, Aayushi Asole, Sharwari Raut, Kwabena Adu-Duodu, Yinhao Li, Stanly Wilson
-**Link:** https://arxiv.org/abs/2606.23673v1
-**Summary:** The paper addresses the limitation of traditional mental health assessments, which often rely on isolated indicators and lack comprehensive insights. It introduces PsyBridge, a hybrid framework that integrates various validated assessment tools and personality profiling to improve decision-making in mental healthcare. The key finding is that PsyBridge achieves a high accuracy of 84% in risk classification, outperforming standard assessments while offering greater interpretability and stability in predictions.
+### 7. IV-CoT: Implicit Visual Chain-of-Thought for Structure-Aware Text-to-Image Generation
+**Authors:** Zixuan Li, Haokun Lin, Yicheng Xiao, Zhiwei Li, Xinyang Song, Zelong Zheng, Yong He, Heng Yao, Ke Ding, Chao Yu, Chuan Yuan, Qi Li, Zhenan Sun
+**Link:** https://arxiv.org/abs/2606.24849v1
+**Summary:** The paper addresses the challenge of ensuring that text-to-image generation models accurately follow structural details in prompts, such as object counts and spatial relationships. To tackle this, the authors introduce Implicit Visual Chain-of-Thought (IV-CoT), a framework that separates structural planning from appearance rendering, thereby allowing for better visual planning through non-extractive sketch supervision. The results indicate that IV-CoT significantly improves generation quality on benchmarks, demonstrating the effectiveness of its structural and semantic query approach.
 
-### 8. Teaching LLMs String Matching, Backtracking, and Error Recovery to Deduce Bases and Truth Tables for the Combinatorially Exploding Bit Manipulation Puzzles
-**Authors:** Prateek Agnihotri, Sanchit Jain, Prabhat Agnihotri, Aditya Prasad, Shubham Jain
-**Link:** https://arxiv.org/abs/2606.23672v1
-**Summary:** This paper addresses the challenge of using Large Language Models (LLMs) to solve complex Bit Manipulation Puzzles that require deducing a hidden logical rule from binary strings. The authors propose a novel approach that avoids traditional arithmetic logic by focusing on string similarity and structured search, allowing for autonomous error recovery. Their method significantly improved performance, achieving over 96% validation accuracy, the highest in the competition.
+### 8. World Models in Pieces: Structural Certification for General Agents
+**Authors:** Yikai Lu, Yifei Wu, Xinyu Lu, Tongxin Li
+**Link:** https://arxiv.org/abs/2606.24842v1
+**Summary:** The paper addresses the issue that general agents cannot perform universally across complex environments, leading to ineffective worst-case performance analyses. To tackle this, the authors propose a method called structural certification, which focuses on evaluating agents based on specific transitions in their world model rather than overall performance. The key contribution is the development of algorithms that provide error bounds for agents' goal-conditioned performance, enabling reliable planning in selected scenarios and facilitating the certifiable use of general agents.
 
-### 9. Can LLMs Reliably Self-Report Adversarial Prefills, and How?
-**Authors:** Quang Minh Nguyen, Uzair Ahmed, Taegyoon Kim
-**Link:** https://arxiv.org/abs/2606.23671v1
-**Summary:** This paper investigates whether large language models (LLMs) can reliably recognize when their prior responses have been influenced by adversarial attacks, specifically focusing on safety contexts. The authors tested ten different models and discovered that none could consistently identify their compromised outputs, with an average self-reporting rate of only 27.3%. Additionally, they explored various finetuning methods, which improved some aspects of model introspection but ultimately did not enhance their ability to detect tampering, indicating potential risks in relying on LLM self-reporting for safety.
+### 9. Matching Tasks to Objectives: Fine-Tuning and Prompt-Tuning Strategies for Encoder-Decoder Pre-trained Language Models
+**Authors:** Ahmad Pouramini, Hesham Faili
+**Link:** https://arxiv.org/abs/2606.24841v1
+**Summary:** This paper addresses the challenge of optimizing encoder-decoder pre-trained language models for specific natural language processing tasks, such as generation and question answering. The authors propose the Match Task to Objective (MTO) framework, which automates the selection of pre-training objectives and designs fine-tuning templates that align with those objectives. Their approach demonstrates substantial performance improvements (over 120%) in few-shot settings compared to traditional methods, while also enhancing prompt-tuning strategies.
 
-### 10. Tapered Language Models
-**Authors:** Reza Bayat, Ali Behrouz, Aaron Courville
-**Link:** https://arxiv.org/abs/2606.23670v1
-**Summary:** The paper addresses the inefficiency of uniform parameter allocation across the layers of modern language models, which fails to account for the non-uniform contribution of layers to the output. The authors propose Tapered Language Models (TLMs), which allocate more parameters to earlier layers and fewer to later ones, leading to improved performance. Their experiments show that this tapered approach consistently enhances perplexity and downstream task performance compared to traditional models, without increasing computational costs.
+### 10. Grading the Grader: Lessons from Evaluating an Agentic Data Analysis System
+**Authors:** Tian Zheng, Kai-Tai Hsu
+**Link:** https://arxiv.org/abs/2606.24839v1
+**Summary:** The paper addresses the challenge of evaluating outputs from complex agentic data analysis systems, which produce diverse results beyond simple text responses. The authors implement a three-layer grading system that combines strict regex matching, lenient grading by a language model, and human inspection. They find that this approach achieves high grading precision and significantly improves recall through iterative nudging strategies, effectively enhancing the evaluation process for these sophisticated systems.
