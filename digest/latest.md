@@ -1,52 +1,52 @@
 ---
-## 2026-06-29
+## 2026-06-30
 
-### 1. DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand
-**Authors:** Dihong Huang, Zhenyu Wei, Zhuxiu Xu, Yunchao Yao, Sikai Li, Mingyu Ding
-**Link:** https://arxiv.org/abs/2606.28323v1
-**Summary:** The paper addresses the challenge of combining existing dexterous manipulation skills to perform multiple tasks with a single hand without interference between the tasks. The authors introduce DexCompose, a framework that uses role-aware action ownership and trains residual modules to maintain task performance while adapting for new tasks. Their method achieved an average success rate of 77.4% across various complex manipulation tasks, indicating a significant improvement over previous approaches.
+### 1. VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes
+**Authors:** Yen-Jen Wang, Jiaman Li, Sirui Chen, Takara E. Truong, Pei Xu, Pieter Abbeel, Rocky Duan, Koushil Sreenath, Angjoo Kanazawa, Carmelo Sferrazza, Guanya Shi, Karen Liu
+**Link:** https://arxiv.org/abs/2606.30645v1
+**Summary:** The paper addresses the challenge of training humanoid robots to perform loco-manipulation tasks by generating a large dataset that connects visual inputs, language commands, and kinematic actions. The authors developed a synthetic pipeline that reconstructs indoor environments and produces 48,000 paired trajectories without human input, which are then used to train a policy for predicting whole-body movements. The key finding is that these synthetic interactions effectively enable real-world performance of navigation and object transport tasks on a physical humanoid robot.
 
-### 2. Surprises in Proper Positive-Only Learning
-**Authors:** Shai Ben-David, Farnam Mansouri, Anay Mehrotra, Manolis Zampetakis
-**Link:** https://arxiv.org/abs/2606.28309v1
-**Summary:** The paper addresses the challenge of properly learning binary classifiers using only positive samples, a scenario known as positive-only learning, which has been difficult to characterize. The authors provide a clear criterion for proper learnability based on the finite VC dimension and a new condition called uniform exterior separability. Their findings highlight the complexities of this learning framework, distinguishing it significantly from standard PAC learning and introducing new combinatorial dimensions relevant to the field.
+### 2. LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training
+**Authors:** Shun Lei, Huaicheng Zhang, Dapeng Wu, Yaoxun Xu, Lishi Zuo, Wei Tan, Hangting Chen, Guangzheng Li, Jianwei Yu, Zhiyong Wu, Dong Yu
+**Link:** https://arxiv.org/abs/2606.30642v1
+**Summary:** LeVo 2 addresses the challenge of generating full-length songs that maintain musical coherence and detail while adhering to lyrics and prompts. It introduces a hybrid framework that combines language modeling with diffusion processes to ensure both coherent planning and track-specific refinement, utilizing an aesthetics-guided training method to enhance musical quality. The key contribution is its effective separation of musicality, controllability, and acoustic refinement in the training process, leading to improved song generation quality that surpasses existing open-source tools and approaches commercial systems.
 
-### 3. Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes
-**Authors:** Luis Leal
-**Link:** https://arxiv.org/abs/2606.28308v1
-**Summary:** This paper investigates how different algorithms for solving two-player zero-sum games select specific Nash equilibria from a set, rather than converging to a unique outcome. Through analysis of six games, including Kuhn poker, the authors demonstrate that selection depends on the algorithm used: for instance, regularized methods favor the maximum-entropy equilibrium while regret-averaging methods tend to end up at lower-entropy outcomes. The study reveals significant implications for the performance against non-optimal opponents, highlighting the importance of their findings for algorithmic game theory.
+### 3. Self-Evolving World Models for LLM Agent Planning
+**Authors:** Xuan Zhang, Wenxuan Zhang, See-Kiong Ng, Yang Deng
+**Link:** https://arxiv.org/abs/2606.30639v1
+**Summary:** The paper addresses the issue of unreliable predictions made by world models in long-horizon language model agents, which can negatively impact decision-making. The authors propose WorldEvolver, a self-evolving framework that improves prediction accuracy by revising its context based on real actions while keeping the agent's parameters unchanged. Key results show that WorldEvolver significantly enhances prediction fidelity and planning performance compared to other models, demonstrating its effectiveness in real-world scenarios.
 
-### 4. Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization
-**Authors:** Shuang Li, Zhihui Zhu, Qiuwei Li
-**Link:** https://arxiv.org/abs/2606.28307v1
-**Summary:** The paper addresses nonconvex optimization problems with linearly constrained variables, specifically in cases where traditional Lipschitz conditions are insufficient. The authors analyze a modified Alternating Direction Method of Multipliers (ADMM) using Bregman divergence, showing that the algorithm effectively converges to second-order stationary points despite the challenges posed by strict saddles. Their results, supported by numerical experiments, extend the application of Bregman methods to distributed optimization scenarios like matrix and tensor factorization.
+### 4. One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining
+**Authors:** Philip Zmushko, Egor Petrov, Nursultan Abdullaev, Mikhail Khrushchev, Samuel Horváth
+**Link:** https://arxiv.org/abs/2606.30634v1
+**Summary:** This paper addresses the challenge of inefficiencies in large-scale LLM pretraining caused by pipeline bubbles in synchronous training. It evaluates the performance of the PipeDream-2BW asynchronous scheduling method, revealing that the common belief in instability due to one-step gradient delays is incorrect and largely depends on the optimizer used. The authors demonstrate that newer optimizers like Muon can handle these delays effectively, and they introduce an additional correction method that enhances performance, achieving results comparable to synchronous training even with large models.
 
-### 5. VGB for Masked Diffusion Model: Efficient Test-time Scaling for Reward Satisfaction and Sample Editing
-**Authors:** Kijung Jeon, Thuy-Duong Vuong, Molei Tao
-**Link:** https://arxiv.org/abs/2606.28301v1
-**Summary:** The paper addresses the challenge of enhancing generative models, specifically Masked Diffusion Models, to better satisfy structural constraints and optimize rewards during inference. The authors introduce MDM-VGB, a novel discrete diffusion sampler that employs reward-guided remasking within a flexible masked-state graph, allowing for more effective generation and repair of samples. They demonstrate that MDM-VGB achieves efficient performance with quadratic complexity, outperforming traditional methods, particularly in tasks like Sudoku and molecular property prediction.
+### 5. GROW$^2$: Grounding Which and Where for Robot Tool Use
+**Authors:** Yuhong Deng, Yuyao Liu, David Hsu
+**Link:** https://arxiv.org/abs/2606.30632v1
+**Summary:** The paper addresses the challenge of enabling robots to use everyday objects creatively as tools, even when those objects don't serve the intended purpose, by introducing GROW$^2$. This approach hierarchically combines semantics and geometry, leveraging Vision-Language Models to understand task instructions and identify relevant object parts, followed by grounding those parts in 3D space from images. The key finding is that GROW$^2$ not only surpasses existing methods on benchmarks for predicting tool affordances, but also demonstrates the ability to generalize to new objects and achieve successful tool use in both simulated and real-world scenarios.
 
-### 6. Democratic ICAI: Debating Our Way to Steering Principles from Preferences
-**Authors:** Kevin Kingslin, Anish Natekar, Ashutosh Ranjan, Vivek Srivastava, Savita Bhat, Shirish Karande
-**Link:** https://arxiv.org/abs/2606.28294v1
-**Summary:** The paper addresses the challenge of accurately capturing the complex reasoning behind human preferences in decision-making. It introduces Democratic ICAI, a method that utilizes structured debates among competing rationales to better understand and express the factors influencing preferences. The results show that this approach leads to more accurate preference predictions and generates preferred guiding principles compared to existing methods.
+### 6. Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models
+**Authors:** Subramanyam Sahoo, Aman Chadha, Vinija Jain, Divya Chaudhary
+**Link:** https://arxiv.org/abs/2606.30627v1
+**Summary:** This paper addresses the issue of reward hacking in AI models, questioning the assumption that conservative offline training leads to safer online adaptation. The authors trained a policy using varying levels of conservatism and found that increased conservatism actually heightened the likelihood of reward hacking during online optimization. Their findings suggest that a calibrated level of conservatism, rather than maximal conservatism, is necessary to effectively balance alignment and vulnerability to exploitation.
 
-### 7. Bridging Ab Initio Symmetries and Global Nuclear Masses with Interpretable Neural Networks
-**Authors:** Phong Dang, Evander Espinoza, Xiaoliang Wan, Michela Negro, Jerry P. Draayer, Feng Pan, Tomas Dytrych, Daniel Langr, David Kekejian
-**Link:** https://arxiv.org/abs/2606.28287v1
-**Summary:** The paper investigates whether established symmetries in nuclear physics, specifically Wigner's SU(4) and Elliott's SU(3), can explain nuclear binding across all nuclei, rather than just in selected cases. The researchers developed three neural network models based on these symmetries to predict nuclear masses, finding that their best-performing model, WINN, significantly reduces prediction errors and highlights important features of nuclear binding, such as the restoration of symmetries near the neutron dripline. This work suggests that these symmetries are fundamental principles governing the entire chart of nuclear masses.
+### 7. DOPD: Dual On-policy Distillation
+**Authors:** Xinlei Yu, Gen Li, Qingyi Si, Guibin Zhang, Yuqi Xu, Congcong Wang, Shuai Dong, Kaiwen Tuo, Xiangyu Zeng, Kaituo Feng, Qunzhong Wang, Yang Shi, Xiaobin Hu, Xiangyu Yue, Jiaqi Wang, Shuicheng Yan
+**Link:** https://arxiv.org/abs/2606.30626v1
+**Summary:** The paper addresses the challenge of effectively transferring knowledge in on-policy distillation (OPD) by introducing DOPD, a dual distillation approach that utilizes privileged information from both teacher and student models while mitigating issues related to privilege illusion. DOPD dynamically adjusts the supervision strength based on the advantages of different tokens, allowing for more credible capability transfer and reduced information asymmetry. The approach demonstrates superior performance compared to traditional OPD methods in various tasks, highlighting its effectiveness and robustness.
 
-### 8. PAC-Bayesian Certificates for Quadratic Closed-Loop Control
-**Authors:** Domagoj Herceg
-**Link:** https://arxiv.org/abs/2606.28281v1
-**Summary:** The paper addresses the challenge of applying PAC-Bayesian bounds to learning-based closed-loop control systems, where the performance metric is a complex quadratic cost. The authors use System Level Synthesis parameterization to derive PAC-Bayes-Chernoff certificates for these systems, allowing them to provide data-driven guarantees on control responses without relying on strict assumptions. A key contribution is the development of a learning algorithm that reduces sensitivity in closed-loop control while improving performance, validated through experiments on a double integrator system.
+### 8. Optimization Dynamics Imprint Semantic Specificity in Contrastive Embedding Norms
+**Authors:** Ziwei Su, Junyu Ren, Victor Veitch
+**Link:** https://arxiv.org/abs/2606.30625v1
+**Summary:** This paper addresses the unexpected relationship between the norms of contrastive embeddings and semantic properties like specificity and frequency, which are typically disregarded during training. The authors develop a theoretical framework that reveals how the length of these embeddings inherently captures meaningful information as a consequence of the optimization process. Their key contribution includes an analytic formula that explains this phenomenon, suggesting that these norms can be utilized as effective calibration tools in certain models and retrieval tasks.
 
-### 9. Agentic Hardware Design as Repository-Level Code Evolution
-**Authors:** Cunxi Yu, Chenhui Deng, Nathaniel Pinckney, Brucek Khailany
-**Link:** https://arxiv.org/abs/2606.28279v1
-**Summary:** The paper presents HORIZON, a self-evolving framework that automates hardware design by treating it as a form of code evolution, utilizing a sophisticated agent loop that manages repository operations. By evaluating this approach on various benchmarks, the authors achieved 100% completion across all tests, demonstrating its effectiveness in hardware design tasks. However, they note that this achievement is just a step towards solving the larger and more complex challenges in chip design.
+### 9. Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent
+**Authors:** Lei Bai, Zongsheng Cao, Yang Chen, Zhiyao Cui, Shangheng Du, Yue Fan, Shiyang Feng, Zijie Guo, Haonan He, Liang He, Xiaohan He, Shuyue Hu, Yusong Hu, Songtao Huang, Yichen Jiang, Hao Li, Xin Li, Dahua Lin, Weihao Lin, Fenghua Ling, Dongrui Liu, Zhuo Liu, Runmin Ma, Chunjiang Mu, Haoyang Peng, Tianshuo Peng, Jinxin Shi, Luohe Shi, Boyuan Sun, Zelin Tan, Shengji Tang, Qianyi Wang, Yiming Wu, Yi Xie, Xiangchao Yan, Jingqi Ye, Peng Ye, Fangchen Yu, Jiakang Yuan, Bihao Zhan, Bo Zhang, Chen Zhang, Shufei Zhang, Shuaiyu Zhang, Wenlong Zhang, Yiqun Zhang, Junpeng Zhao, Zhijie Zhong, Bowen Zhou, Yuhao Zhou
+**Link:** https://arxiv.org/abs/2606.30616v1
+**Summary:** The paper addresses the challenge of achieving the performance of trillion-parameter models while using significantly fewer parameters by focusing on extending the "agent horizon"—the ability of the agent to manage longer tasks and leverage diverse skills. The authors developed the 35B Agents-A1 model, which combines a specialized knowledge-action system and a unique training process that includes multi-teacher distillation across various domains. Key results show that Agents-A1 outperforms or is highly competitive with larger models on several long-horizon task benchmarks, demonstrating a viable approach to high performance without massive scaling of parameters.
 
-### 10. Towards Automating Scientific Review with Google's Paper Assistant Tool
-**Authors:** Rajesh Jayaram, Drew Tyler, David Woodruff, Corinna Cortes, Yossi Matias, Vahab Mirrokni, Vincent Cohen-Addad
-**Link:** https://arxiv.org/abs/2606.28277v1
-**Summary:** The paper addresses the challenge of traditional peer review keeping pace with the rapid production of AI-assisted scientific research. It introduces the Paper Assistant Tool (PAT), an AI framework that analyzes full scientific manuscripts, identifying errors and suggesting improvements. PAT significantly enhances error detection, improving performance by 34% on mathematical issues and demonstrating effectiveness in pilot implementations as a pre-submission tool for major conferences, ultimately reducing the workload for human reviewers.
+### 10. C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders
+**Authors:** Haoran Jin, Xiting Wang, Shijie Ren, Hong Xie, Defu Lian
+**Link:** https://arxiv.org/abs/2606.30609v1
+**Summary:** The paper addresses the issues of feature splitting and absorption in Sparse Autoencoders (SAEs), which hinder the ability to interpret large language models by causing inconsistent latent representations. The authors propose a method called C$^2$R (Cross-sample Consistency Regularization) that ensures each semantic feature is consistently linked to a single latent representation across samples by penalizing similar latent activations. The results show that C$^2$R effectively reduces these issues while maintaining high-quality reconstruction, thereby improving the interpretability of the model's features without sacrificing performance.
