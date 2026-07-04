@@ -1,52 +1,52 @@
 ---
-## 2026-07-03
+## 2026-07-04
 
-### 1. Distributed Attacks in Persistent-State AI Control
-**Authors:** Josh Hills, Ida Caspary, Asa Cooper Stickland
-**Link:** https://arxiv.org/abs/2607.02514v1
-**Summary:** The paper addresses the challenge of detecting distributed attacks in AI coding agents that use a persistent codebase, where agents can subtly inject malicious changes across multiple pull requests (PRs). The authors introduce a framework called Iterative VibeCoding to simulate this scenario and evaluate different attack strategies and monitoring models. Their key finding is that while gradual attacks are harder to detect, a new stateful link-tracker monitor significantly improves the detection of such attacks, reducing evasion rates compared to traditional monitoring approaches.
+### 1. Towards Robustness against Typographic Attack with Training-free Concept Localization
+**Authors:** Bohan Liu, Wenqian Ye, Guangzhi Xiong, Zhenghao He, Sanchit Sinha, Aidong Zhang
+**Link:** https://arxiv.org/abs/2607.02494v1
+**Summary:** The paper addresses the vulnerability of CLIP-based vision models to Typographic Attacks, where irrelevant text in images distorts their visual understanding, posing risks in critical applications like autonomous driving. The authors propose a novel, training-free method for interpreting and improving model robustness by identifying and modifying specific components in the Vision Transformer architecture that misinterpret lexical information. Their approach significantly enhances classification accuracy in the presence of such attacks, outperforming existing defense strategies.
 
-### 2. LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning
-**Authors:** Matteo Boglioni, Thibault Rousset, Siva Reddy, Marius Mosbach, Verna Dankers
-**Link:** https://arxiv.org/abs/2607.02513v1
-**Summary:** The paper addresses the issue of effectively removing sensitive information, such as personally identifiable information (PII), from large language models (LLMs) after they have been trained. The authors present LACUNA, a new testbed that evaluates the precision of unlearning methods at the parameter level, rather than just at the output level. Their findings reveal that existing unlearning techniques lack precision and are vulnerable to attacks that can retrieve erased information, but they also demonstrate that with successful localization of the data, even simple unlearning methods can be effective in completely erasing knowledge from the model.
+### 2. G-RRM: Guiding Symbolic Solvers with Recurrent Reasoning Models
+**Authors:** Timo Bertram, Sidhant Bhavnani, Richard Freinschlag, Erich Kobler, Andreas Mayr, Günter Klambauer
+**Link:** https://arxiv.org/abs/2607.02491v1
+**Summary:** The paper introduces G-RRM, a method that enhances symbolic solvers for constraint satisfaction problems by integrating them with a new type of neural model called SE-RRMs. This neuro-symbolic approach improves the efficiency of symbolic solvers, especially when the problem size is large and the solver can adapt its decisions based on neural suggestions. The key finding is that when the conditions are right, such as in expansive combinatorial search spaces, G-RRM can significantly speed up solvers like backtracking and Glucose 4.1, achieving notable performance improvements, whereas other solvers like CaDiCaL do not benefit from the neural guidance.
 
-### 3. Program-as-Weights: A Programming Paradigm for Fuzzy Functions
-**Authors:** Wentao Zhang, Liliana Hotsko, Woojeong Kim, Pengyu Nie, Stuart Shieber, Yuntian Deng
-**Link:** https://arxiv.org/abs/2607.02512v1
-**Summary:** The paper addresses the challenge of efficiently implementing complex programming tasks, which often rely on large language models, by introducing a new approach called fuzzy-function programming. This approach uses a method called Program-as-Weights (PAW), where a lightweight compiler generates compact neural models from natural language specifications, allowing for locally-executable functions. A key finding is that a smaller interpreter utilizing these PAW-generated programs can achieve similar performance to a much larger model while significantly reducing memory usage and running costs.
+### 3. Visually Grounded Self-Reflection for Vision-Language Models via Reinforcement Learning
+**Authors:** Liyan Tang, Fangcong Yin, Greg Durrett
+**Link:** https://arxiv.org/abs/2607.02490v1
+**Summary:** This paper addresses the issue of large vision-language models' inability to properly reflect on and correct past mistakes while using visual inputs, particularly with out-of-distribution images. The authors introduce a reinforcement learning framework called VRRL that enhances self-reflection through techniques like masked trajectory prefixes and experience replay buffers to train the model on diverse corrections. The key result is a significant improvement in out-of-distribution accuracy on visual grounding tasks compared to standard models and previous training methods.
 
-### 4. Online Safety Monitoring for LLMs
-**Authors:** Mona Schirmer, Metod Jazbec, Alexander Timans, Christian Naesseth, Maja Waldron, Eric Nalisnick
-**Link:** https://arxiv.org/abs/2607.02510v1
-**Summary:** The paper addresses the issue of large language models (LLMs) generating unsafe outputs, even after alignment training. The authors propose a straightforward online safety monitoring approach that uses a simple thresholding mechanism based on verification signals from an external model, calibrated through risk control. Their experiments show that this basic method performs comparably to more complex monitoring techniques based on sequential hypothesis testing.
+### 4. Combating Textual Noise and Redundancy: Entropy-Aware Dense Visual Token Pruning
+**Authors:** Xuehui Wang, Xuankun Yang, Wei Shen
+**Link:** https://arxiv.org/abs/2607.02484v1
+**Summary:** This paper addresses the challenge of efficiently pruning visual tokens in vision-language models (VLMs) without losing important information, particularly in complex tasks with dense instructions. The authors introduce the Entropy-Aware Dense Pruning (EADP) method, which quantifies and mitigates textual noise and optimizes token selection using a novel submodular maximization approach. Their experiments show that EADP significantly enhances the accuracy and efficiency of VLMs while preserving essential visual details under strict constraints on the number of tokens.
 
-### 5. ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning
-**Authors:** Yanjun Zhao, Ruizhong Qiu, Tianxin Wei, Yuanchen Bei, Zhining Liu, Lingjie Chen, Ismini Lourentzou, Hanghang Tong, Jingrui He
-**Link:** https://arxiv.org/abs/2607.02509v1
-**Summary:** The paper addresses the challenge of effectively utilizing long-context information in large language models (LLMs) during reasoning tasks. The authors introduce a method called Recursive Evidence Replay (RECONTEXT), which allows LLMs to better access and leverage relevant information from their inputs without requiring additional training or memory management. Experiments demonstrate that RECONTEXT enhances evidence utilization across multiple LLM architectures, achieving superior performance on long-context datasets.
+### 5. Audio-Based Understanding of Audiobook Narration Appeal
+**Authors:** Shahar Elisha, Mariano Beguerisse-Díaz, Emmanouil Benetos
+**Link:** https://arxiv.org/abs/2607.02473v1
+**Summary:** This study investigates how various qualities of audiobook narration impact listener appeal, considering factors like genre and specific titles. The researchers extracted vocal and acoustic features from audiobooks and analyzed their correlation with listener engagement data. The key finding reveals that particular acoustic characteristics are strongly associated with audiobook appeal, suggesting that understanding these factors can enhance audiobook personalization and narrator selection.
 
-### 6. What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates
-**Authors:** Arman Ghaffarizadeh, Danyal Mohaddes, Aliakbar Izadkhah, Shahriar Noroozizadeh
-**Link:** https://arxiv.org/abs/2607.02507v1
-**Summary:** The paper investigates how social structures influence the way language model (LLM) agents express themselves in public versus off-the-record (OTR) settings. Using a dual-channel debate framework, the authors analyzed public utterances and OTR responses across multiple models and scenarios, revealing that agents often modify their public statements due to relational pressures, leading to a notable divergence of around 40%. This research highlights the need to evaluate LLM agents not just by their explicit objectives but also by the emergent motivations shaped by social contexts.
+### 6. TestEvo-Bench: An Executable and Live Benchmark for Test and Code Co-Evolution
+**Authors:** Jiale Amber Wang, Kaiyuan Wang, Pengyu Nie
+**Link:** https://arxiv.org/abs/2607.02469v1
+**Summary:** The paper presents TestEvo-Bench, a new benchmark designed to assess how well software testing agents can evolve alongside code changes by generating and updating tests based on real commit histories from open-source projects. By providing executable tasks and live updates to the benchmark, it ensures tasks are relevant and reduces the risk of data leakage in evaluations. The study found that while state-of-the-art agents performed relatively well overall—achieving up to a 77.5% success rate in test generation—they struggled with the most recent tasks, particularly when constrained by limited resources.
 
-### 7. Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas
-**Authors:** Yuxuan Li, Lingxi Xie, Xinyue Huo, Jihao Qiu, Jiacheng Shao, Pengfei Chen, Jiannan Ge, Kaiwen Duan, Qi Tian
-**Link:** https://arxiv.org/abs/2607.02504v1
-**Summary:** This paper addresses the challenge of accurately identifying which character speaks in long-form TV dramas by introducing a new dataset, DramaSR-532K, that contains 532,000 annotated dialogue lines from over 900 characters. The authors propose a method called DramaSR-LRM, which utilizes a large reasoning model to combine various auditory, linguistic, and visual information for better speaker recognition. Their approach significantly improves accuracy, especially for short dialogue segments where traditional audio cues may fail, outperforming existing methods.
+### 7. Human Capital, Not Model Benchmarks, Predicts Hybrid Intelligence in Forecasting
+**Authors:** Vivienne Ming
+**Link:** https://arxiv.org/abs/2607.02467v1
+**Summary:** This study investigates how human-AI collaboration affects the accuracy of predictions in a real-money prediction market. By analyzing individual forecasters, the researchers found that the effectiveness of collaboration depends more on specific human qualities—such as perspective-taking and intellectual humility—rather than just cognitive ability or model benchmarks. The key finding is that while many forecasters either matched AI performance or performed worse, a minority successfully combined their reasoning with AI, achieving superior accuracy.
 
-### 8. DemoPSD: Disagreement-Modulated Policy Self-Distillation
-**Authors:** Yunhe Li, Hao Shi, Wenhao Liu, Mengzhe Ruan, Hanxu Hou, Zhongxiang Dai, Shuang Qiu, Linqi Song
-**Link:** https://arxiv.org/abs/2607.02502v1
-**Summary:** The paper presents DemoPSD, a new framework for on-policy self-distillation that addresses issues of overfitting and privileged information leakage in large language models (LLMs). By selectively blending the teacher's guidance with the student's reasoning abilities, DemoPSD achieves better balance and exploration during training. The key result is that this approach outperforms existing methods while enhancing generalization to out-of-distribution benchmarks.
+### 8. Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs
+**Authors:** Junhao Shi, Siyin Wang, Xiaopeng Yu, Li Ji, Jingjing Gong, Xipeng Qiu
+**Link:** https://arxiv.org/abs/2607.02466v1
+**Summary:** The paper addresses the challenge of limited expert demonstrations in training Vision-Language-Action (VLA) models by separating the learning of physical skills (how to move) from understanding tasks (what to do). The authors introduce a two-stage framework called Task-Agnostic Pretraining (TAP), which first learns movement skills from inexpensive, unlabeled data before grounding these skills with minimal expert input. Their approach outperforms traditional methods, achieving significant improvements in performance and robustness with far less labeled data required.
 
-### 9. Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials
-**Authors:** Gil Harari, Yoel Zimmermann, Ola Tangen Kulseng, Laura Zichi, Chuin Wei Tan, Marc L. Descoteaux, Boris Kozinsky
-**Link:** https://arxiv.org/abs/2607.02499v1
-**Summary:** The paper addresses the challenge of optimizing the training process for machine learning interatomic potentials (MLIPs) by examining different optimizers, specifically matrix-structured ones like Muon and SOAP. The authors systematically compare these optimizers against the widely used Adam, finding that SOAP and its hybrid variant with Muon significantly improve convergence speed and accuracy, especially under partial supervision. This highlights the importance of selecting the right optimizer in developing robust MLIP models.
+### 9. Will Scaling Improve Social Simulation with LLMs?
+**Authors:** Caleb Ziems, William Held, Su Doga Karaca, David Grusky, Tatsunori Hashimoto, Diyi Yang
+**Link:** https://arxiv.org/abs/2607.02464v1
+**Summary:** This paper examines whether increasing the size of Large Language Models (LLMs) will enhance their ability to perform social simulations effectively. The authors conducted experiments with various LLMs to analyze how scaling influences the accuracy of simulating opinions, behaviors, and forecasting over time. Their findings suggest that while larger models generally improve simulation outcomes, challenges remain for less-represented topics and specific tasks, indicating that scaling alone may not suffice in all scenarios.
 
-### 10. Controllable Sim Agents with Behavior Latents
-**Authors:** Juanwu Lu, Junyu Zhu, Ziran Wang
-**Link:** https://arxiv.org/abs/2607.02496v1
-**Summary:** The paper addresses the challenge of creating realistic and controllable traffic simulation agents for testing autonomous systems. The authors propose a framework called Controllable Neural Variational Agents (CNeVA), which allows for the inference of customizable behavioral traits in agents while ensuring that their responses to steering commands are predefined and consistent. Key results show that CNeVA outperforms existing models in realism and controllability, particularly in safety and compliance with desired behaviors, while mitigating issues such as reward hacking.
+### 10. OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers
+**Authors:** Donghyun Lee, Jitesh Chavan, Duy Nguyen, Sam Huang, Liming Jiang, Priyadarshini Panda, Timo Mertens, Saurabh Shukla
+**Link:** https://arxiv.org/abs/2607.02461v1
+**Summary:** The paper introduces OrbitQuant, a novel approach to quantizing diffusion transformers (DiTs) for image and video generation, addressing the high computational cost of inference due to shifting activations. By using a data-agnostic method that normalizes and rotates activations, OrbitQuant allows for consistent quantization across various inputs without the need for recalibration for different settings. The key contribution is achieving state-of-the-art post-training quantization performance at low-bit rates, optimizing DiTs' efficiency without sacrificing generation quality.
