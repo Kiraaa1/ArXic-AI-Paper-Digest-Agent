@@ -1,52 +1,52 @@
 ---
-## 2026-07-07
+## 2026-07-08
 
-### 1. From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model
-**Authors:** Wenhao Li, Xueying Jiang, Quanhao Qian, Deli Zhao, Shijian Lu, Gongjie Zhang, Ran Xu
-**Link:** https://arxiv.org/abs/2607.05396v1
-**Summary:** The paper addresses the challenge of deploying robots in varying camera setups, which can hinder the performance of existing Vision-Language-Action (VLA) models that require specific camera positioning. To overcome this, the authors introduce CamVLA, a model that enables robots to operate using only a single camera image by predicting actions independent of camera geometry and dynamically determining their relationship with the robot. The results demonstrate that CamVLA significantly enhances the success rate of robot actions across different unseen viewpoints, making it a robust solution for real-world applications.
+### 1. ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation
+**Authors:** Tianjiao Yu, Xinzhuo Li, Yifan Shen, Onkar Susladkar, Yuanzhe Liu, Xiaona Zhou, Ismini Lourentzou
+**Link:** https://arxiv.org/abs/2607.06565v1
+**Summary:** The paper presents ELSA3D, a novel unified 3D model that improves the interaction between text and 3D representations by using a method called elastic semantic anchoring. This approach organizes language and geometric reasoning at different abstraction levels, allowing the model to effectively select and process relevant information without losing detail. ELSA3D shows significant advancements in image-to-3D generation, text-to-3D generation, and 3D captioning, achieving state-of-the-art results while reducing computational costs and latency.
 
-### 2. Weak-to-Strong Generalization via Direct On-Policy Distillation
-**Authors:** Shiyuan Feng, Huan-ang Gao, Haohan Chi, Hanlin Wu, Zhilong Zhang, Zheng Jiang, Bingxiang He, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou
-**Link:** https://arxiv.org/abs/2607.05394v1
-**Summary:** The paper addresses the challenge of efficiently improving large language models using reinforcement learning with verifiable rewards (RLVR), which is resource-intensive. It introduces Direct On-Policy Distillation (Direct-OPD), a method that transfers the behavior changes induced by RL from a smaller model to a stronger one without needing traditional reward modeling. The key finding is that this approach significantly enhances the performance of the larger model, as demonstrated by improving the Qwen3-1.7B model's score on the AIME 2024 task from 48.3% to 62.4% within just four hours of training on powerful GPUs.
+### 2. Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion
+**Authors:** Shervin Khalafi, Igor Krawczuk, Sergio Rozada, Charilaos Kanatsoulis, Antonio G Marques, Alejandro Ribeiro
+**Link:** https://arxiv.org/abs/2607.06546v1
+**Summary:** The paper addresses the challenge of denoising graphs within graph learning and diffusion models, highlighting limitations of standard linear attention mechanisms. To improve this, the authors propose a new method called Graph Convolutional Attention (GCA), which utilizes spectral properties of input graphs for more effective denoising. GCA demonstrates consistent improvements in performance across various datasets and matches the efficiency of existing graph transformers without requiring complex computations, thus offering a practical solution for graph denoising.
 
-### 3. Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification
-**Authors:** Raphaël Bonnet-Guerrini, Bruno Sanchez, Dominique Fouchez, Benjamin Racine, Maya Guy, Mariam Sabalbal, Manal Yassine, Vincenzo Piuri
-**Link:** https://arxiv.org/abs/2607.05393v1
-**Summary:** This paper addresses the challenge of classifying transient astronomical events as real or bogus without relying on costly human labels. The authors propose a novel deep learning framework that uses simulated data and a dual-network approach to handle different levels of label noise, providing an efficient way to quantify uncertainty in the classifications. The key contribution is a method that effectively performs Real-Bogus classification under conditions of class contamination and achieves strong performance and calibrated uncertainties, making it suitable for future astronomical surveys.
+### 3. Rethinking Indic AI from a Lens of Cultural Heritage Preservation
+**Authors:** Aparna Madva, Sharath Srivatsa, Srinath Srinivasa, Tulika Saha
+**Link:** https://arxiv.org/abs/2607.06544v1
+**Summary:** The paper addresses the challenge of preserving India's diverse linguistic and cultural heritage in the age of AI, emphasizing the potential for technology to both aid and hinder this effort. It reviews the evolution of Natural Language Processing for Indian languages and identifies unique linguistic features that complicate AI development. The authors propose a new research direction called 'Culture Sensing,' aimed at ensuring equitable AI performance across various languages while producing culturally relevant outcomes.
 
-### 4. LLM-as-a-Verifier: A General-Purpose Verification Framework
-**Authors:** Jacky Kwok, Shulu Li, Pranav Atreya, Yuejiang Liu, Yixing Jiang, Chelsea Finn, Marco Pavone, Ion Stoica, Azalia Mirhoseini
-**Link:** https://arxiv.org/abs/2607.05391v1
-**Summary:** The paper introduces LLM-as-a-Verifier, a novel framework that allows large language models (LLMs) to evaluate the correctness of solutions in various tasks by generating continuous scores rather than discrete ratings. This approach improves the granularity and accuracy of the verification process, enabling better distinction between successful and unsuccessful solutions while also enhancing sample efficiency in reinforcement learning scenarios. Key results demonstrate significant performance improvements on multiple benchmarking tasks, positioning LLM-as-a-Verifier as a state-of-the-art tool for both verification and task progress estimation.
+### 4. On the feasibility of dependency parsing of non-human sequences without a gold standard. Is evaluation possible in other species?
+**Authors:** Ramon Ferrer-i-Cancho, Catherine Hobaiter, Thore Bergman, Morgan Gustison
+**Link:** https://arxiv.org/abs/2607.06542v1
+**Summary:** The paper addresses the challenge of evaluating unsupervised dependency parsing for non-human sequences, such as vocalizations or gestures, where no gold standard exists. The authors leverage recent advancements in network science to show that the structure of these sequences allows for a reliable assessment of parsing accuracy, which is not the case for human languages. As a result, they conclude that it is indeed possible to evaluate dependency parsing in non-human primates without a gold standard, highlighting a significant distinction from human languages.
 
-### 5. Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation
-**Authors:** Haozhe Wang, Weijia Feng, Jinpeng Yu, Che Liu, Ping Nie, Fangzhen Lin, Jiaming Liu, Ruihua Huang, Jimmy Lin, Wenhu Chen, Cong Wei
-**Link:** https://arxiv.org/abs/2607.05382v1
-**Summary:** The paper addresses the issue of visual generators confidently creating content beyond their trained knowledge, leading to significant performance drops on new and diverse prompts. The authors introduce a co-training framework that combines training and search tools to enhance generators' ability to adapt to evolving knowledge boundaries. The key contribution is the development of a dataset and methodology that enables these generators to improve over time, effectively meeting user requests that require up-to-date information.
+### 5. Hierarchical Acoustic-Semantic Modeling: Modality Separation and Semantic Coherence for Full-Duplex SLMs
+**Authors:** Zhenyu Liu, Yunxin Li, Xuanyu Zhang, Qixun Teng, Shenyuan Jiang, Haolan Chen, Minjun Zhao, Fanbo Meng, Yu Xu, Yancheng He, Baotian Hu, Haizhou Li, Min Zhang
+**Link:** https://arxiv.org/abs/2607.06540v1
+**Summary:** This paper addresses the challenge of improving full-duplex spoken language models (SLMs) that struggle with interference between acoustic and semantic processing, leading to degraded performance. The authors propose a novel framework called Lychee-FD, which uses a hierarchical parameter separation strategy to reduce this interference while maintaining coherence between the two modalities. Their approach significantly enhances the models' ability to perform in spoken question answering and fluid interactions, yielding notable performance improvements.
 
-### 6. What Does a Discrete Diffusion Model Learn?
-**Authors:** Rodrigo Casado Noguerales, Bernhard Schölkopf, Thomas Hofmann, Aran Raoufi
-**Link:** https://arxiv.org/abs/2607.05381v1
-**Summary:** The paper investigates what discrete diffusion models learn during their training, specifically whether they act as denoisers, score estimators, or bridge plug-in predictors. By rigorously deriving the continuous-time Markov chain evidence lower bound (ELBO) and establishing the Oracle Distance theorem, the authors show that this bound directly relates to data entropy and provides a unique optimal learning strategy. Their framework clarifies the relationships between various loss functions in the literature and demonstrates how each noise process achieves the same optimal negative ELBO, highlighting nuanced behaviors across different diffusion strategies.
+### 6. GraphBU: MILP Instance Generation with Graph-Native Block Units
+**Authors:** Xiaolei Guo, Chenyu Zhou, Jianghao Lin, Dongdong Ge
+**Link:** https://arxiv.org/abs/2607.06532v1
+**Summary:** The paper addresses the challenge of generating mixed-integer linear programming (MILP) instances for solver development, particularly when these instances come from proprietary sources. It introduces GraphBU, a graph-based generator that uses local subproblems and their interfaces as building blocks, allowing for better coupling and structure preservation in the generated instances. Key results show that GraphBU achieves high statistical similarity to source families and maintains a high rate of feasibility in the generated instances, while also enhancing performance in downstream training tasks.
 
-### 7. TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning
-**Authors:** Yury Gorishniy, Akim Kotelnikov, Ivan Rubachev, Artem Babenko
-**Link:** https://arxiv.org/abs/2607.05380v1
-**Summary:** TabPack addresses the challenge of hyperparameter tuning in deep learning for tabular data by introducing an ensemble of multilayer perceptrons (MLPs) that can efficiently sample and train with varying hyperparameters during training. This approach eliminates the need for precise tuning by allowing users to specify only ranges for hyperparameters, leading to strong performance without extensive effort. In experiments, TabPack matched the results of highly tuned methods while significantly reducing computation time and resource requirements.
+### 7. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
+**Authors:** Ghassen Marrakchi, Basarab Matei
+**Link:** https://arxiv.org/abs/2607.06531v1
+**Summary:** The Large Cancer Assistant (LCA) addresses the limitations of existing oncology decision support systems that rigidly link data processing and AI inference, which hinders scalability. It introduces a flexible, model-agnostic framework that uses a standardized data format to orchestrate clinical data and AI models independently, ensuring adaptability and robustness. Key results demonstrate that the LCA efficiently maintains performance across different scenarios while achieving high reliability even in the presence of data anomalies, paving the way for better integration with electronic medical records.
 
-### 8. CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents
-**Authors:** Yujiang Li, Zhenyu Hou, Yi Jing, Jie Tang, Yuxiao Dong
-**Link:** https://arxiv.org/abs/2607.05378v1
-**Summary:** The paper addresses the challenge of long-horizon tasks in reinforcement learning that exceed context windows of large language models (LLMs). It introduces CompactionRL, a novel training strategy that utilizes context compaction to summarize past interactions, allowing LLMs to learn effectively from extended trajectories. The approach yields significant performance improvements on coding benchmarks, demonstrating its effectiveness in enhancing the capabilities of both GLM-4.5-Air and GLM-4.7-Flash models.
+### 8. Life Style Levels: Neighborhood Delineation using Geospatial Data
+**Authors:** Srivatsa Kulkarni, Debarag Banerjee
+**Link:** https://arxiv.org/abs/2607.06529v1
+**Summary:** The paper addresses the lack of fine-scale socioeconomic data in rapidly urbanizing areas of India, which hampers the understanding of urban affluence and deprivation. The authors introduce a scalable framework that uses building morphology from satellite imagery to classify urban areas into high-resolution grids based on their affluence levels. Their approach, validated with ground-level observations, effectively identifies urban settlements and their characteristics, demonstrating significant spatial alignment with known informal settlements and highlighting consumer loan delinquency patterns.
 
-### 9. Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation
-**Authors:** Jiaqi Peng, Xiqian Yu, Delin Feng, Yuqiang Yang, Wenzhe Cai, Jing Xiong, Ganlin Yang, Jinliang Zheng, Jiafei Cao, Xueyuan Wei, Jiangmiao Pang, Yuan Shen, Tai Wang
-**Link:** https://arxiv.org/abs/2607.05377v1
-**Summary:** The paper presents Cortex, a framework designed to improve long-horizon manipulation tasks in embodied agents, which traditional models struggle with due to their limited reliance on current observations. Cortex integrates high-level planning and low-level execution through a set of standardized manipulation skills, allowing it to efficiently annotate extensive video data and train on diverse scenarios. The key contribution is its ability to perform better than existing models on complex tasks, enabling zero-shot execution of real-world multi-stage experiments, demonstrating significant advancements in handling planning and execution gaps.
+### 9. RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation
+**Authors:** Sambaran Bandyopadhyay, Ananth Muppidi
+**Link:** https://arxiv.org/abs/2607.06527v1
+**Summary:** The paper addresses the challenge of multi-hop question answering over Knowledge Graphs, where traditional methods often fail due to a lack of overlap between query terms and intermediate nodes. The authors introduce RSF-GLLM, which uses a Recurrent Soft-Flow module to improve the relevance scoring of nodes and facilitate better reasoning paths through the graph, all while keeping the answer generation process grounded and efficient. Their approach outperforms existing LLM-based methods in terms of speed and effectiveness on benchmark datasets.
 
-### 10. Fitted Occupancy-Ratio Evaluation without Bellman Completeness
-**Authors:** Lars van der Laan, Nathan Kallus
-**Link:** https://arxiv.org/abs/2607.05375v1
-**Summary:** This paper addresses the challenge of estimating occupancy ratios in offline reinforcement learning, which are crucial for off-policy evaluation. The authors introduce a new method called Fitted Occupancy-Ratio Evaluation (FORE), which uses a fixed-point approach to efficiently project occupancy ratios onto a specific class of distributions. The key contribution is the establishment of discounted occupancy-ratio realizability as a sufficient condition for effective offline policy evaluation, eliminating the need for traditional completeness assumptions.
+### 10. DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache Compression
+**Authors:** Anna Cordoba, Adam Puente Tercero, Nerea Angulo Hijo, Mar Linares Tercero, Julia Barrientos, Ainhoa Miranda, Jesus Olivera
+**Link:** https://arxiv.org/abs/2607.06523v1
+**Summary:** DepthWeave-KV addresses the challenge of high memory usage and bandwidth limitations in long-context language model inference caused by storing key-value (KV) caches. The method introduces a token-adaptive compression technique that intelligently adjusts the data representation across transformer layers while focusing on critical tokens to improve retrieval accuracy. This approach results in significant memory savings, achieving an 8.3x reduction in KV memory and enhanced performance in various benchmarks without compromising task quality.
