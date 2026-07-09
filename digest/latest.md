@@ -1,52 +1,52 @@
 ---
-## 2026-07-08
+## 2026-07-09
 
-### 1. ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation
-**Authors:** Tianjiao Yu, Xinzhuo Li, Yifan Shen, Onkar Susladkar, Yuanzhe Liu, Xiaona Zhou, Ismini Lourentzou
-**Link:** https://arxiv.org/abs/2607.06565v1
-**Summary:** The paper presents ELSA3D, a novel unified 3D model that improves the interaction between text and 3D representations by using a method called elastic semantic anchoring. This approach organizes language and geometric reasoning at different abstraction levels, allowing the model to effectively select and process relevant information without losing detail. ELSA3D shows significant advancements in image-to-3D generation, text-to-3D generation, and 3D captioning, achieving state-of-the-art results while reducing computational costs and latency.
+### 1. Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning
+**Authors:** Chen Tang, Yizhou Wang, Jianyu Wu, Lintao Wang, Shixiang Tang, Pengze Li, Encheng Su, Jun Yao, Jiabei Xiao, Yuqi Shi, Jielan Li, Hongxia Hao, Zhangyang Gao, Fang Wu, Ben Fei, Xiangyu Yue, Pan Tan, Bozitao Zhong, Jinouwen Zhang, Aoran Wang, Yan Lu, Jiaheng Liu, Xinzhu Ma, Liang Hong, Mingyue Zheng, Phil Torr, Bowen Zhou, Wanli Ouyang, Lei Bai
+**Link:** https://arxiv.org/abs/2607.07708v1
+**Summary:** The paper addresses the challenge of understanding structure-property relationships in scientific fields by introducing SciReasoner, a multimodal AI model that maintains native structural information during reasoning. SciReasoner improves predictions in protein annotation, chemical retrosynthesis, and materials science by converting structural data into a unified format that enhances interpretability and accuracy. The model achieves state-of-the-art results across 86 benchmarks, demonstrating that it provides both accurate predictions and interpretable reasoning, thus bridging the gap between AI applications and scientific inference.
 
-### 2. Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion
-**Authors:** Shervin Khalafi, Igor Krawczuk, Sergio Rozada, Charilaos Kanatsoulis, Antonio G Marques, Alejandro Ribeiro
-**Link:** https://arxiv.org/abs/2607.06546v1
-**Summary:** The paper addresses the challenge of denoising graphs within graph learning and diffusion models, highlighting limitations of standard linear attention mechanisms. To improve this, the authors propose a new method called Graph Convolutional Attention (GCA), which utilizes spectral properties of input graphs for more effective denoising. GCA demonstrates consistent improvements in performance across various datasets and matches the efficiency of existing graph transformers without requiring complex computations, thus offering a practical solution for graph denoising.
+### 2. Co-LMLM: Continuous-Query Limited Memory Language Models
+**Authors:** Yair Feldman, Linxi Zhao, Nathan Godey, Dongyoung Go, Yilun Hua, Kilian Q. Weinberger, Jennifer J. Sun, Yoav Artzi
+**Link:** https://arxiv.org/abs/2607.07707v1
+**Summary:** The paper presents Co-LMLM, a novel approach to limited memory language models that enhances knowledge retrieval by using continuous vector queries instead of traditional relational databases. This method allows the model to efficiently access and incorporate factual information from various text sources, surpassing previous models in both perplexity and factual accuracy. Notably, Co-LMLM at 360M parameters outperforms larger models trained on significantly more data, achieving competitive performance comparable to leading systems like GPT-4o-mini.
 
-### 3. Rethinking Indic AI from a Lens of Cultural Heritage Preservation
-**Authors:** Aparna Madva, Sharath Srivatsa, Srinath Srinivasa, Tulika Saha
-**Link:** https://arxiv.org/abs/2607.06544v1
-**Summary:** The paper addresses the challenge of preserving India's diverse linguistic and cultural heritage in the age of AI, emphasizing the potential for technology to both aid and hinder this effort. It reviews the evolution of Natural Language Processing for Indian languages and identifies unique linguistic features that complicate AI development. The authors propose a new research direction called 'Culture Sensing,' aimed at ensuring equitable AI performance across various languages while producing culturally relevant outcomes.
+### 3. The Key to Going Linear: Analysis-Driven Transformer Linearization
+**Authors:** Anna Kuzina, Paul N. Whatmough, Babak Ehteshami Bejnordi
+**Link:** https://arxiv.org/abs/2607.07706v1
+**Summary:** This paper addresses the challenge of computationally expensive causal self-attention in transformers when processing long-context inputs. The authors analyze the impact of different state update designs and propose structural modifications, such as sink tokens and short convolutions, to enhance performance. Their linearization method significantly improves efficiency in LLaMA and Qwen models, outperforming previous approaches while maintaining strong retrieval capabilities for long contexts.
 
-### 4. On the feasibility of dependency parsing of non-human sequences without a gold standard. Is evaluation possible in other species?
-**Authors:** Ramon Ferrer-i-Cancho, Catherine Hobaiter, Thore Bergman, Morgan Gustison
-**Link:** https://arxiv.org/abs/2607.06542v1
-**Summary:** The paper addresses the challenge of evaluating unsupervised dependency parsing for non-human sequences, such as vocalizations or gestures, where no gold standard exists. The authors leverage recent advancements in network science to show that the structure of these sequences allows for a reliable assessment of parsing accuracy, which is not the case for human languages. As a result, they conclude that it is indeed possible to evaluate dependency parsing in non-human primates without a gold standard, highlighting a significant distinction from human languages.
+### 4. From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization
+**Authors:** Ying Chang, Jiahang Xu, Xuan Feng, Chenyuan Yang, Peng Cheng, Yuqing Yang
+**Link:** https://arxiv.org/abs/2607.07702v1
+**Summary:** The paper addresses the challenge of optimizing long-horizon agents using execution traces, which are often noisy and inefficient due to redundancy and irrelevant steps. The authors propose STRACE, a framework that improves optimization by identifying and focusing on crucial failure patterns and causal relationships within the traces. Their approach significantly enhances optimization performance, achieving a 1.4 times increase in success rates for agents tested on a formal verification task.
 
-### 5. Hierarchical Acoustic-Semantic Modeling: Modality Separation and Semantic Coherence for Full-Duplex SLMs
-**Authors:** Zhenyu Liu, Yunxin Li, Xuanyu Zhang, Qixun Teng, Shenyuan Jiang, Haolan Chen, Minjun Zhao, Fanbo Meng, Yu Xu, Yancheng He, Baotian Hu, Haizhou Li, Min Zhang
-**Link:** https://arxiv.org/abs/2607.06540v1
-**Summary:** This paper addresses the challenge of improving full-duplex spoken language models (SLMs) that struggle with interference between acoustic and semantic processing, leading to degraded performance. The authors propose a novel framework called Lychee-FD, which uses a hierarchical parameter separation strategy to reduce this interference while maintaining coherence between the two modalities. Their approach significantly enhances the models' ability to perform in spoken question answering and fluid interactions, yielding notable performance improvements.
+### 5. Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass
+**Authors:** Victor Giannakouris, Immanuel Trummer
+**Link:** https://arxiv.org/abs/2607.07696v1
+**Summary:** The paper addresses the issue of slow data access in analytical workloads that rely on external database systems, which are hampered by traditional database drivers. The authors present Jailbreak, a method that uses Large Language Models (LLMs) to directly read data files and create efficient in-memory columnar buffers, bypassing the database engine entirely. The key contribution is demonstrating that this LLM-assisted approach can significantly enhance analytical performance, achieving up to 27 times faster throughput compared to conventional JDBC/ODBC methods.
 
-### 6. GraphBU: MILP Instance Generation with Graph-Native Block Units
-**Authors:** Xiaolei Guo, Chenyu Zhou, Jianghao Lin, Dongdong Ge
-**Link:** https://arxiv.org/abs/2607.06532v1
-**Summary:** The paper addresses the challenge of generating mixed-integer linear programming (MILP) instances for solver development, particularly when these instances come from proprietary sources. It introduces GraphBU, a graph-based generator that uses local subproblems and their interfaces as building blocks, allowing for better coupling and structure preservation in the generated instances. Key results show that GraphBU achieves high statistical similarity to source families and maintains a high rate of feasibility in the generated instances, while also enhancing performance in downstream training tasks.
+### 6. Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety
+**Authors:** Yujiao Chen
+**Link:** https://arxiv.org/abs/2607.07695v1
+**Summary:** The paper addresses the challenge of ensuring safety in multi-agent AI systems by evaluating how different deployment rules influence collective behavior. The authors introduce "institutional red-teaming," a method that systematically tests these rules across various scenarios and models, revealing that specific rules can significantly impact collective safety, with no universally safe choice available. Key findings indicate that identity-targeting rules are particularly harmful, often leading to targeted agent elimination, emphasizing the need for careful selection and monitoring of deployment rules to mitigate risks.
 
-### 7. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
-**Authors:** Ghassen Marrakchi, Basarab Matei
-**Link:** https://arxiv.org/abs/2607.06531v1
-**Summary:** The Large Cancer Assistant (LCA) addresses the limitations of existing oncology decision support systems that rigidly link data processing and AI inference, which hinders scalability. It introduces a flexible, model-agnostic framework that uses a standardized data format to orchestrate clinical data and AI models independently, ensuring adaptability and robustness. Key results demonstrate that the LCA efficiently maintains performance across different scenarios while achieving high reliability even in the presence of data anomalies, paving the way for better integration with electronic medical records.
+### 7. Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
+**Authors:** Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay
+**Link:** https://arxiv.org/abs/2607.07693v1
+**Summary:** This paper addresses the inefficiency of reinforcement learning from human feedback (RLHF) when applied to diffusion models, which often require excessive human evaluations. The authors propose two strategies: selective weighting of denoising timesteps during optimization and a replay mechanism that prioritizes informative trajectories. Their approach enhances feedback efficiency significantly, achieving up to a 6-fold improvement in sample efficiency compared to standard diffusion RLHF methods.
 
-### 8. Life Style Levels: Neighborhood Delineation using Geospatial Data
-**Authors:** Srivatsa Kulkarni, Debarag Banerjee
-**Link:** https://arxiv.org/abs/2607.06529v1
-**Summary:** The paper addresses the lack of fine-scale socioeconomic data in rapidly urbanizing areas of India, which hampers the understanding of urban affluence and deprivation. The authors introduce a scalable framework that uses building morphology from satellite imagery to classify urban areas into high-resolution grids based on their affluence levels. Their approach, validated with ground-level observations, effectively identifies urban settlements and their characteristics, demonstrating significant spatial alignment with known informal settlements and highlighting consumer loan delinquency patterns.
+### 8. Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning
+**Authors:** Vladislav Beliaev
+**Link:** https://arxiv.org/abs/2607.07690v1
+**Summary:** The paper introduces Agon, a new approach to reinforcement learning that uses two competing models to implicitly evaluate each other's reasoning while solving problems, rather than only focusing on the final answers. By alternating roles—one model drafting a solution and the other reading it—the models are trained to out-reason each other, leading to improved performance. The key result shows that this method significantly increases the accuracy of problem-solving, achieving notable gains on complex tasks compared to existing models.
 
-### 9. RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation
-**Authors:** Sambaran Bandyopadhyay, Ananth Muppidi
-**Link:** https://arxiv.org/abs/2607.06527v1
-**Summary:** The paper addresses the challenge of multi-hop question answering over Knowledge Graphs, where traditional methods often fail due to a lack of overlap between query terms and intermediate nodes. The authors introduce RSF-GLLM, which uses a Recurrent Soft-Flow module to improve the relevance scoring of nodes and facilitate better reasoning paths through the graph, all while keeping the answer generation process grounded and efficient. Their approach outperforms existing LLM-based methods in terms of speed and effectiveness on benchmark datasets.
+### 9. ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening
+**Authors:** Shreyasvi Natraj, Cyrus Achtari, Felice Gragnano, Andrea Milzi, Marco Valgimigli, Diego Paez-Granados
+**Link:** https://arxiv.org/abs/2607.07683v1
+**Summary:** The paper addresses the challenge of digitizing paper electrocardiograms (ECGs) in remote clinics, where limited connectivity and computing power hinder access to advanced AI diagnostics. The authors introduced ECGLight, a lightweight framework that converts images of paper ECGs into calibrated digital signals and screens for myocardial infarction (MI) using efficient on-device processing. The system achieves high accuracy rates, detecting MI with 95.51% accuracy on one dataset and 88.89% on another, demonstrating its potential to improve cardiac care in resource-limited settings.
 
-### 10. DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache Compression
-**Authors:** Anna Cordoba, Adam Puente Tercero, Nerea Angulo Hijo, Mar Linares Tercero, Julia Barrientos, Ainhoa Miranda, Jesus Olivera
-**Link:** https://arxiv.org/abs/2607.06523v1
-**Summary:** DepthWeave-KV addresses the challenge of high memory usage and bandwidth limitations in long-context language model inference caused by storing key-value (KV) caches. The method introduces a token-adaptive compression technique that intelligently adjusts the data representation across transformer layers while focusing on critical tokens to improve retrieval accuracy. This approach results in significant memory savings, achieving an 8.3x reduction in KV memory and enhanced performance in various benchmarks without compromising task quality.
+### 10. Neural Operator-enabled Topology-informed Evolutionary Strategy for PDE-Constrained Optimization
+**Authors:** Xiangming Huang, Guannan Zhang, Lu Lu, Raphaël Pestourie
+**Link:** https://arxiv.org/abs/2607.07682v1
+**Summary:** The paper addresses the challenging problem of inverse design for physical systems described by partial differential equations, which are often complex and high-dimensional. The authors propose a new method called Neural Operator-enabled Topology-informed Evolutionary Strategy (NOTES), which combines advanced learning techniques and evolutionary optimization to efficiently explore design spaces. Their approach significantly reduces the dimensionality of designs while achieving high performance, demonstrating superior efficiency compared to traditional methods in applications like nanophotonic beam deflectors and structural optimization.
