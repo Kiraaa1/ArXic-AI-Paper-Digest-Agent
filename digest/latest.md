@@ -1,52 +1,52 @@
 ---
-## 2026-07-09
+## 2026-07-10
 
-### 1. Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning
-**Authors:** Chen Tang, Yizhou Wang, Jianyu Wu, Lintao Wang, Shixiang Tang, Pengze Li, Encheng Su, Jun Yao, Jiabei Xiao, Yuqi Shi, Jielan Li, Hongxia Hao, Zhangyang Gao, Fang Wu, Ben Fei, Xiangyu Yue, Pan Tan, Bozitao Zhong, Jinouwen Zhang, Aoran Wang, Yan Lu, Jiaheng Liu, Xinzhu Ma, Liang Hong, Mingyue Zheng, Phil Torr, Bowen Zhou, Wanli Ouyang, Lei Bai
-**Link:** https://arxiv.org/abs/2607.07708v1
-**Summary:** The paper addresses the challenge of understanding structure-property relationships in scientific fields by introducing SciReasoner, a multimodal AI model that maintains native structural information during reasoning. SciReasoner improves predictions in protein annotation, chemical retrosynthesis, and materials science by converting structural data into a unified format that enhances interpretability and accuracy. The model achieves state-of-the-art results across 86 benchmarks, demonstrating that it provides both accurate predictions and interpretable reasoning, thus bridging the gap between AI applications and scientific inference.
+### 1. UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks
+**Authors:** Zhekai Chen, Chengqi Duan, Kaiyue Sun, Bohao Li, Yuqing Wang, Manyuan Zhang, Xihui Liu
+**Link:** https://arxiv.org/abs/2607.08768v1
+**Summary:** The paper introduces UniClawBench, a new benchmark designed to evaluate proactive agents in real-world tasks by focusing on five core capabilities rather than relying on traditional, static testing methods. It proposes a dynamic evaluation setup with 400 bilingual tasks and live assessment in Docker containers, allowing for a more nuanced understanding of agent performance. The benchmark's innovative design helps isolate the effects of model capabilities and framework choices, contributing valuable insights for future research in developing capable proactive agents.
 
-### 2. Co-LMLM: Continuous-Query Limited Memory Language Models
-**Authors:** Yair Feldman, Linxi Zhao, Nathan Godey, Dongyoung Go, Yilun Hua, Kilian Q. Weinberger, Jennifer J. Sun, Yoav Artzi
-**Link:** https://arxiv.org/abs/2607.07707v1
-**Summary:** The paper presents Co-LMLM, a novel approach to limited memory language models that enhances knowledge retrieval by using continuous vector queries instead of traditional relational databases. This method allows the model to efficiently access and incorporate factual information from various text sources, surpassing previous models in both perplexity and factual accuracy. Notably, Co-LMLM at 360M parameters outperforms larger models trained on significantly more data, achieving competitive performance comparable to leading systems like GPT-4o-mini.
+### 2. OpenCoF: Learning to Reason Through Video Generation
+**Authors:** Xinyan Chen, Ziyu Guo, Renrui Zhang, Dongzhi Jiang, Hongsheng Li
+**Link:** https://arxiv.org/abs/2607.08763v1
+**Summary:** The paper presents OpenCoF, a new framework designed to enhance reasoning in video generation models by introducing a dedicated dataset and a fine-tuned model. Unlike traditional reasoning methods, OpenCoF uses temporally connected frames to improve performance in video reasoning tasks. The key contribution is the demonstration that incorporating diverse temporal supervision and specific mechanisms for organizing reasoning significantly boosts the model's reasoning capabilities across various benchmarks.
 
-### 3. The Key to Going Linear: Analysis-Driven Transformer Linearization
-**Authors:** Anna Kuzina, Paul N. Whatmough, Babak Ehteshami Bejnordi
-**Link:** https://arxiv.org/abs/2607.07706v1
-**Summary:** This paper addresses the challenge of computationally expensive causal self-attention in transformers when processing long-context inputs. The authors analyze the impact of different state update designs and propose structural modifications, such as sink tokens and short convolutions, to enhance performance. Their linearization method significantly improves efficiency in LLaMA and Qwen models, outperforming previous approaches while maintaining strong retrieval capabilities for long contexts.
+### 3. Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation
+**Authors:** Yifan Zhou, Qihao Yang, Yan Li, Donggang Li, Xiru Hu, Hokin Deng, Ziyang Gong, Xuanyi Zhou, Huacan Wang, Xiangchao Yan, Wanghan Xu, Wenlong Zhang, Shaofeng Zhang, Yue Zhou, Yifan Yang, Zhihang Zhong, Xue Yang
+**Link:** https://arxiv.org/abs/2607.08758v1
+**Summary:** The paper addresses the challenge of evaluating AI systems' ability to understand and generate scientific ideas based on their historical lineage, akin to biological evolution. The authors introduce IdeaGene-Bench (IG-Bench), a benchmark that models scientific contributions as "Idea Genome" objects, allowing for the assessment of both lineage reasoning and idea generation. Key findings reveal that current large language models struggle with this task, achieving only 27.3% accuracy in lineage reasoning, highlighting limitations in their compositional understanding.
 
-### 4. From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization
-**Authors:** Ying Chang, Jiahang Xu, Xuan Feng, Chenyuan Yang, Peng Cheng, Yuqing Yang
-**Link:** https://arxiv.org/abs/2607.07702v1
-**Summary:** The paper addresses the challenge of optimizing long-horizon agents using execution traces, which are often noisy and inefficient due to redundancy and irrelevant steps. The authors propose STRACE, a framework that improves optimization by identifying and focusing on crucial failure patterns and causal relationships within the traces. Their approach significantly enhances optimization performance, achieving a 1.4 times increase in success rates for agents tested on a formal verification task.
+### 4. Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling
+**Authors:** Yiwei Zhou
+**Link:** https://arxiv.org/abs/2607.08757v1
+**Summary:** The paper addresses the issue that achieving low average error in the forward distribution of diffusion models does not guarantee stable sampling in the reverse process, particularly through numerical methods like Euler–Maruyama discretization. The authors construct examples demonstrating that despite small forward errors, the reverse process can still exhibit divergent moments. Additionally, they introduce a method to project learned denoisers onto bounded convex sets to ensure better numerical stability and Wasserstein convergence while maintaining pointwise accuracy.
 
-### 5. Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass
-**Authors:** Victor Giannakouris, Immanuel Trummer
-**Link:** https://arxiv.org/abs/2607.07696v1
-**Summary:** The paper addresses the issue of slow data access in analytical workloads that rely on external database systems, which are hampered by traditional database drivers. The authors present Jailbreak, a method that uses Large Language Models (LLMs) to directly read data files and create efficient in-memory columnar buffers, bypassing the database engine entirely. The key contribution is demonstrating that this LLM-assisted approach can significantly enhance analytical performance, achieving up to 27 times faster throughput compared to conventional JDBC/ODBC methods.
+### 5. MulTTiPop: A Multitrack Transcription Dataset for Pop Music
+**Authors:** Nathan Pruyne, Benjamin Stoler, William Chen, Chien-yu Huang, Shinji Watanabe, Chris Donahue
+**Link:** https://arxiv.org/abs/2607.08756v1
+**Summary:** The paper presents MulTTiPop, a new dataset designed to improve automatic music transcription for pop music by providing 572 audio segments paired with multitrack MIDI recordings. The dataset was created through a meticulous process of matching audio with MIDI, ensuring accurate timing and tempo alignment. Evaluation of existing transcription models on this dataset reveals significant challenges, with the top-performing model achieving only 38% Onset F1, indicating that there is much potential for advancements in this area.
 
-### 6. Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety
-**Authors:** Yujiao Chen
-**Link:** https://arxiv.org/abs/2607.07695v1
-**Summary:** The paper addresses the challenge of ensuring safety in multi-agent AI systems by evaluating how different deployment rules influence collective behavior. The authors introduce "institutional red-teaming," a method that systematically tests these rules across various scenarios and models, revealing that specific rules can significantly impact collective safety, with no universally safe choice available. Key findings indicate that identity-targeting rules are particularly harmful, often leading to targeted agent elimination, emphasizing the need for careful selection and monitoring of deployment rules to mitigate risks.
+### 6. SLORR: Simple and Efficient In-Training Low-Rank Regularization
+**Authors:** David González-Martínez, Shiwei Liu
+**Link:** https://arxiv.org/abs/2607.08754v1
+**Summary:** The paper presents SLORR, a new framework for low-rank regularization during training of neural networks, addressing issues with existing methods that are complex or require significant changes to the model. SLORR simplifies the process by applying stateless regularization directly to weight matrices using efficient approximations, allowing for better model compressibility with minimal training overhead. The key finding is that SLORR enables compressed models to maintain high performance with significantly less than 1% additional training cost in various neural network settings.
 
-### 7. Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF
-**Authors:** Eric Zhu, Abhinav Shrivastava, Soumik Mukhopadhyay
-**Link:** https://arxiv.org/abs/2607.07693v1
-**Summary:** This paper addresses the inefficiency of reinforcement learning from human feedback (RLHF) when applied to diffusion models, which often require excessive human evaluations. The authors propose two strategies: selective weighting of denoising timesteps during optimization and a replay mechanism that prioritizes informative trajectories. Their approach enhances feedback efficiency significantly, achieving up to a 6-fold improvement in sample efficiency compared to standard diffusion RLHF methods.
+### 7. Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis
+**Authors:** Kristina Schaaff, Quintus Stierstorfer, Valerie Heckel
+**Link:** https://arxiv.org/abs/2607.08748v1
+**Summary:** This study investigates how an AI-based learning assistant, Syntea, is used by a large number of students in higher education, analyzing data from over 77,000 distance learners. Unlike previous research that relied on small sample sizes and self-reports, this analysis provides insights into actual usage patterns based on objective data, revealing significant differences in usage across various demographic and structural factors. The findings highlight the incorporation of AI support into student routines and offer valuable information for enhancing educational chatbot development.
 
-### 8. Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning
-**Authors:** Vladislav Beliaev
-**Link:** https://arxiv.org/abs/2607.07690v1
-**Summary:** The paper introduces Agon, a new approach to reinforcement learning that uses two competing models to implicitly evaluate each other's reasoning while solving problems, rather than only focusing on the final answers. By alternating roles—one model drafting a solution and the other reading it—the models are trained to out-reason each other, leading to improved performance. The key result shows that this method significantly increases the accuracy of problem-solving, achieving notable gains on complex tasks compared to existing models.
+### 8. Dimensionality Reduction Meets Network Science: Sensemaking on UMAP's kNN Graph
+**Authors:** Duen Horng Chau, Donghao Ren, Fred Hohman, Dominik Moritz
+**Link:** https://arxiv.org/abs/2607.08746v1
+**Summary:** The paper addresses the underutilization of UMAP's internal k-nearest-neighbor (kNN) graph in analyzing high-dimensional data. By applying standard graph algorithms to this graph, the authors reveal insights such as representative data points, dense regions, and tightly-knit neighborhoods. Their findings demonstrate that these graph-based methods can effectively enhance data analysis, often matching or complementing existing clustering techniques.
 
-### 9. ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening
-**Authors:** Shreyasvi Natraj, Cyrus Achtari, Felice Gragnano, Andrea Milzi, Marco Valgimigli, Diego Paez-Granados
-**Link:** https://arxiv.org/abs/2607.07683v1
-**Summary:** The paper addresses the challenge of digitizing paper electrocardiograms (ECGs) in remote clinics, where limited connectivity and computing power hinder access to advanced AI diagnostics. The authors introduced ECGLight, a lightweight framework that converts images of paper ECGs into calibrated digital signals and screens for myocardial infarction (MI) using efficient on-device processing. The system achieves high accuracy rates, detecting MI with 95.51% accuracy on one dataset and 88.89% on another, demonstrating its potential to improve cardiac care in resource-limited settings.
+### 9. AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding
+**Authors:** Siddharth Damodharan, Radhika Gupta, Ali Alshami, Ryan Rabinowitz, Jugal Kalita
+**Link:** https://arxiv.org/abs/2607.08745v1
+**Summary:** The paper introduces AUTOPILOT-VQA, a benchmark designed to evaluate Vision-Language Models in understanding dashcam videos of driving incidents. It addresses the challenge of assessing how well these models can reason about safety-critical scenarios by providing a dataset with structured questions related to real-world driving conditions and incidents. The benchmark enhances the evaluation of autonomous driving systems by shifting focus from simple object recognition to complex, context-aware reasoning about driving safety.
 
-### 10. Neural Operator-enabled Topology-informed Evolutionary Strategy for PDE-Constrained Optimization
-**Authors:** Xiangming Huang, Guannan Zhang, Lu Lu, Raphaël Pestourie
-**Link:** https://arxiv.org/abs/2607.07682v1
-**Summary:** The paper addresses the challenging problem of inverse design for physical systems described by partial differential equations, which are often complex and high-dimensional. The authors propose a new method called Neural Operator-enabled Topology-informed Evolutionary Strategy (NOTES), which combines advanced learning techniques and evolutionary optimization to efficiently explore design spaces. Their approach significantly reduces the dimensionality of designs while achieving high performance, demonstrating superior efficiency compared to traditional methods in applications like nanophotonic beam deflectors and structural optimization.
+### 10. ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation
+**Authors:** Kaifeng Zhao, Mathis Petrovich, Haotian Zhang, Tingwu Wang, Siyu Tang, Davis Rempe
+**Link:** https://arxiv.org/abs/2607.08741v1
+**Summary:** The paper presents ARDY, a new framework for generating realistic 3D human motions in real-time for interactive applications, addressing the limitations of both offline and existing online methods in terms of speed and control. ARDY combines explicit and latent representations to allow for high-fidelity motion generation that can be dynamically controlled using text prompts and kinematic constraints. The key contribution is a two-stage autoregressive transformer that efficiently supports extended context and adaptive goal-setting, leading to impressive motion quality and adherence to user-defined constraints, as demonstrated through extensive evaluations and an interactive demo.
