@@ -1,52 +1,52 @@
 ---
-## 2026-07-14
+## 2026-07-15
 
-### 1. Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data
-**Authors:** Shikai Qiu, Marc Finzi, Yujia Zheng, Kun Zhang, Andrew Gordon Wilson
-**Link:** https://arxiv.org/abs/2607.11883v1
-**Summary:** The paper addresses the challenge of efficiently compressing large neural networks by introducing requential coding, a new method that selects training samples from the student model's distribution to create shorter codes reflecting only where the student model disagrees with the teacher. This approach is shown to yield significantly smaller code lengths compared to traditional methods, especially as model size increases, and provides superior generalization guarantees for large language models. Additionally, the study highlights that lower-entropy data contains more learnable structure than higher-entropy data, suggesting a deeper understanding of model capacity and dataset complexity.
+### 1. Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution
+**Authors:** Junjie Yin, Xinyu Feng
+**Link:** https://arxiv.org/abs/2607.13034v1
+**Summary:** The paper addresses the challenge of AI agents overestimating the complexity of tasks, leading to unnecessary additional work when executing multi-step workflows. The authors propose a new framework called E3, which enables agents to assess task difficulty and follow a more efficient execution path. The key finding is that E3 significantly reduces resource consumption while maintaining success rates, demonstrating a promising direction towards creating more efficient AI systems grounded in real engineering tasks.
 
-### 2. Metacognition in LLMs: Foundations, Progress, and Opportunities
-**Authors:** Gabrielle Kaili-May Liu, Areeb Gani, Jacqueline Lu, Jordan Thomas, Mark Steyvers, Arman Cohan
-**Link:** https://arxiv.org/abs/2607.11881v1
-**Summary:** The paper addresses the challenge of understanding how large language models (LLMs) can develop metacognitive abilities critical for tasks like learning and decision-making. It provides a comprehensive overview of the current state of research, including methods for measuring and enhancing these abilities in LLMs. The authors aim to stimulate further research in this area by categorizing advancements and identifying open questions and future directions.
+### 2. The Seriality Gap in Video Diffusion Models
+**Authors:** Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai
+**Link:** https://arxiv.org/abs/2607.13031v1
+**Summary:** The paper addresses the challenge of video diffusion models struggling to predict outcomes in sequences of events (like bounces between balls) as the number of events increases. The researchers conducted experiments to show that the performance of these models declines with longer causal chains, primarily due to the inherent limitations of their denoising processes. They introduce the concept of the "seriality gap," highlighting how these models fail to efficiently handle tasks requiring sequential reasoning, and suggest that improving the model's architecture and computation methods could enhance performance in such scenarios.
 
-### 3. Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks
-**Authors:** Tiberiu Musat, Tiago Pimentel, Nicholas Zucchet, Thomas Hofmann
-**Link:** https://arxiv.org/abs/2607.11875v1
-**Summary:** This paper addresses the challenge of understanding how Transformer language models develop inductive reasoning skills across various tasks. The authors propose a theoretical framework that describes the learning dynamics of these models as confined to a low-dimensional invariant manifold, allowing for a clearer analysis of their behavior. Key findings include insights into how data statistics influence learning and how initial conditions affect the solutions identified by the model, paving the way for a more predictive understanding of Transformer learning processes.
+### 3. TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale
+**Authors:** Zhouchonghao Wu, Akshay Rangesh, Weixin Li, Wei-Jer Chang, Zachary Lee, Tim Wang, Wei Zhan
+**Link:** https://arxiv.org/abs/2607.13028v1
+**Summary:** The paper introduces TerraZero, a high-performance procedural driving simulator designed for training autonomous driving agents without relying on human demonstration data. By enabling rapid self-play training with diverse, realistic scenarios generated from real-world map geometry, TerraZero achieves impressive results, including ranking among the best in safety and collision metrics in various driving benchmarks. Notably, it is the first fully learned policy to excel in the challenging InterPlan long-tail benchmark.
 
-### 4. A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation
-**Authors:** Yunhai Feng, Natalie Leung, Jiaxuan Wang, Lujie Yang, Haozhi Qi, Preston Culbertson
-**Link:** https://arxiv.org/abs/2607.11874v1
-**Summary:** The paper presents REGRIND, a new approach for teaching robots how to manipulate objects dexterously by using a single demonstration from a human. This method involves retargeting the human's hand movements to a robot's kinematic structure and training a reinforcement learning policy to follow these movements while maintaining important contact dynamics. The key contribution is the successful transfer of this policy to real robots, demonstrating fluent, human-like performance in complex tool-use tasks.
+### 4. PalmClaw: A Native On-Device Agent Framework for Mobile Phones
+**Authors:** Hongru Cai, Yongqi Li, Ran Wei, Wenjie Li
+**Link:** https://arxiv.org/abs/2607.13027v1
+**Summary:** PalmClaw is a new open-source framework designed to enable mobile phone agents to perform multi-step tasks more efficiently by directly accessing device capabilities rather than relying on user interface actions. By structuring how agents interact with mobile tools, it improves task success rates by 11.5% and significantly reduces completion times by nearly 95% compared to existing methods. This framework simplifies the execution process for mobile agents and enhances their effectiveness in leveraging smartphone functionalities.
 
-### 5. A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol
-**Authors:** Esteban U. Vega Barajas
-**Link:** https://arxiv.org/abs/2607.11873v1
-**Summary:** The paper addresses the challenge of effectively classifying open-ended teaching evaluation comments, which are often underutilized by institutions. The authors tested a previously validated classification protocol with different modern representation methods on Spanish data and examined its transferability to English. They found that while the latest models performed well on thematic classification, there was no significant advantage in sentiment classification across different model types, suggesting that the choice of model may be less critical than the methodology itself.
+### 5. A Shortcut to Statistically Steady-State Turbulence with Flow Matching
+**Authors:** Gianluca Galletti, Gerald Gutenbrunner, William Hornsby, Lorenzo Zanisi, Naomi Carey, Stanislas Pamela, Johannes Brandstetter, Fabian Paischer
+**Link:** https://arxiv.org/abs/2607.13022v1
+**Summary:** This paper addresses the challenge of computationally expensive simulations required to reach the steady-state of turbulent systems, specifically in gyrokinetic turbulence. The authors introduce GyroFlow, a latent generative model that bypasses the transient phase by directly modeling the distribution of steady states, leading to significant computational speedups and improved accuracy compared to traditional methods. Their new approach not only performs well in generating accurate steady-state statistics but also enhances numerical code efficiency for producing relevant data.
 
-### 6. Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias
-**Authors:** Zixiang Xu, Sixian Li, Huaxing Liu, Xiang Wang, Shuai Li, Zirui Song, Xiuying Chen
-**Link:** https://arxiv.org/abs/2607.11871v1
-**Summary:** This paper addresses the bias present in large language models (LLMs) when used as judges in scoring tasks, moving beyond traditional input-output analysis. The authors introduce a representation-level perspective, showing that biased inputs lead to distinct changes in the model's hidden state geometry, allowing for predictive measures of bias. Key results indicate that manipulating these hidden states can control scoring outcomes, with their approach significantly outperforming existing methods at anticipating judge failures on unseen benchmarks.
+### 6. Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model
+**Authors:** Harsha Vardhan Khurdula, Abhinav Kumar Singh, Yoeven D Khemlani, Vineet Agarwal
+**Link:** https://arxiv.org/abs/2607.13013v1
+**Summary:** The paper introduces a new approach to automatic speech recognition using a discrete diffusion language model instead of traditional autoregressive decoders. By training a model that refines transcripts in parallel and utilizing a frozen Whisper encoder for acoustic features, the authors achieve a significant reduction in word error rate to 6.6% on the LibriSpeech test-clean dataset. This method allows for efficient transcription in about eight parallel steps and demonstrates effective multilingual performance with a single adapter.
 
-### 7. Evidence-Backed Video Question Answering
-**Authors:** Shijie Wang, Honglu Zhou, Ziyang Wang, Ran Xu, Caiming Xiong, Silvio Savarese, Chen Sun, Juan Carlos Niebles
-**Link:** https://arxiv.org/abs/2607.11862v1
-**Summary:** The paper addresses the issue of explainability in Video Large Language Models (Video LLMs) for question answering, which often lack visual grounding for their answers. The authors introduce Evidence-Backed Video Question Answering (E-VQA), a task that requires models to provide both answers and precise visual evidence from videos, along with a new benchmark dataset called ST-Evidence for training. Their approach shows significant performance improvements in answer accuracy and visual grounding, establishing a strong baseline for future explainable video understanding.
+### 7. Dynamic Resource Allocation for Ensemble Determinization MCTS
+**Authors:** Jakub Kowalski, Adam Ciężkowski, Artur Krzyżyński, Mark H. M. Winands
+**Link:** https://arxiv.org/abs/2607.13007v1
+**Summary:** The paper addresses the challenge of improving the performance of Ensemble Determinization Monte Carlo Tree Search (MCTS) in high-uncertainty environments like board games with randomness and hidden information. The authors introduce two enhancements for dynamic resource allocation: adjusting the number of determinization trees based on search behavior and optimizing simulation budget allocation across these trees. Their experiments with tabletop games show that these enhancements significantly improve the algorithm's performance.
 
-### 8. AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification
-**Authors:** Lingkai Kong, Zijian Wu, Yuzhe Gu, Haiteng Zhao, Wenyong Huang, Shuang Sun, Zhicheng Xiong, Xiaotian Zhang, Shuya Zhao, Yan Wang, Disheng Xu, Wenwei Zhang, Kai Chen
-**Link:** https://arxiv.org/abs/2607.11849v1
-**Summary:** The paper presents AdvancedMathBench, a new benchmark suite designed to assess the advanced mathematical reasoning abilities of large language models (LLMs). It includes a proof-generation benchmark (ProverBench) with 296 challenging problems and a verification benchmark (VerifierBench) featuring 888 proof trajectories, both accompanied by expert evaluations. Key findings indicate that top models struggle with advanced proof generation and verification, highlighting significant limitations in their current capabilities in these areas.
+### 8. The Spectrum Is Not Enough: When Context Helps Time-Series Forecasting
+**Authors:** Mert Onur Cakiroglu, Mehmet Dalkilic, Hasan Kurban
+**Link:** https://arxiv.org/abs/2607.13006v1
+**Summary:** This paper addresses the misconception that the predictability of time-series data can be solely assessed through spectral analysis. The authors demonstrate that the value of adding contextual information (like longer lookback periods or advanced retrieval models) depends on specific features of the series rather than its spectral properties. Key findings include a novel diagnostic called the "coverage deficit," which better captures the predictive value beyond traditional spectral indices across multiple benchmarks, showing that context can significantly change prediction outcomes.
 
-### 9. Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks
-**Authors:** Junrui Zhang, Zemin Chen, Lusi Li, Mohammad Ghasemigol, Daniel Takabi, Rui Ning
-**Link:** https://arxiv.org/abs/2607.11843v1
-**Summary:** The paper addresses the security vulnerability of Quantum Neural Networks (QNNs) to backdoor attacks, specifically by proposing a novel attack method called Q-DIBA that employs input-aware dynamic backdoors. This technique trains a classical trigger generator alongside a QNN to create effective and stealthy backdoor inputs, while overcoming challenges posed by quantum measurements. The results demonstrate that Q-DIBA maintains high accuracy in clean data, successfully activates attacks, and remains resilient against various defense mechanisms, highlighting the need for enhanced security measures in QNN deployments.
+### 9. Watermark Forensics for Generative Models: An Information-Theoretic Perspective
+**Authors:** Xiaoyu Li, Zheng Gao, Xiaoyan Feng, Jiaojiao Jiang, Yulei Sui, Jiankun Hu
+**Link:** https://arxiv.org/abs/2607.13003v1
+**Summary:** The paper addresses the problem of watermarking generative model outputs to not only detect machine-generated text but also attribute it to specific users and extract hidden information. The authors employ an information-theoretic framework to analyze the costs associated with different watermarking capabilities, establishing a precise relationship between sample length and information retrieval outcomes. A key contribution is the provision of a tight entropy-rate law for multi-user attribution, alongside the identification of two significant gaps in watermarking effectiveness, demonstrated through experiments on various generative models.
 
-### 10. LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments
-**Authors:** Divya Mereddy, Jeevan Beedareddy
-**Link:** https://arxiv.org/abs/2607.11839v1
-**Summary:** This paper addresses the challenge of action and activity recognition in medical training environments by introducing a cascaded multimodal fusion framework that utilizes Low-Rank Adaptation (LoRA). The approach efficiently integrates different modalities in stages without retraining earlier components, allowing for scalable adaptation across various datasets. Preliminary results demonstrate that this method outperforms individual modality models and achieves competitive performance compared to existing baselines, highlighting its effectiveness for multimodal integration in healthcare training.
+### 10. Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation
+**Authors:** Aleh Manchuliantsau
+**Link:** https://arxiv.org/abs/2607.12986v1
+**Summary:** The paper addresses the problem of plan evaluators rewarding less explicit strategies in LLM-generated venture routes, which can lead to improvements based on omissions rather than genuine enhancements. The authors analyze the effects of deletions within these plans using a mathematical model and an adaptive framework, finding that many routes can score better through strategic omissions. A key contribution is the introduction of a detection mechanism, PCSC, that neutralizes these omissions, highlighting GATE's role in shaping search outcomes rather than simply filtering plans based on their quality.
