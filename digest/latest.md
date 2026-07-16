@@ -1,52 +1,52 @@
 ---
-## 2026-07-15
+## 2026-07-16
 
-### 1. Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution
-**Authors:** Junjie Yin, Xinyu Feng
-**Link:** https://arxiv.org/abs/2607.13034v1
-**Summary:** The paper addresses the challenge of AI agents overestimating the complexity of tasks, leading to unnecessary additional work when executing multi-step workflows. The authors propose a new framework called E3, which enables agents to assess task difficulty and follow a more efficient execution path. The key finding is that E3 significantly reduces resource consumption while maintaining success rates, demonstrating a promising direction towards creating more efficient AI systems grounded in real engineering tasks.
+### 1. Leveraging unlabelled data for generalizable neural population decoding
+**Authors:** Ximeng Mao, Nanda H. Krishna, Avery Hee-Woon Ryoo, Matthew G. Perich, Guillaume Lajoie
+**Link:** https://arxiv.org/abs/2607.14086v1
+**Summary:** The paper addresses the challenge of training neural decoders for interpreting spike-based neural data without relying solely on labeled datasets. It introduces a new framework called MOJO, which combines self-supervised learning and supervised learning to improve model performance. The results show that MOJO significantly enhances decoding accuracy, especially when labeled data is scarce, and demonstrates generalizability across different species and neural recording modalities.
 
-### 2. The Seriality Gap in Video Diffusion Models
-**Authors:** Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai
-**Link:** https://arxiv.org/abs/2607.13031v1
-**Summary:** The paper addresses the challenge of video diffusion models struggling to predict outcomes in sequences of events (like bounces between balls) as the number of events increases. The researchers conducted experiments to show that the performance of these models declines with longer causal chains, primarily due to the inherent limitations of their denoising processes. They introduce the concept of the "seriality gap," highlighting how these models fail to efficiently handle tasks requiring sequential reasoning, and suggest that improving the model's architecture and computation methods could enhance performance in such scenarios.
+### 2. Linear Independent Component Analysis via Optimal Transport
+**Authors:** Ashutosh Jha, Michel Besserve, Simon Buchholz
+**Link:** https://arxiv.org/abs/2607.14081v1
+**Summary:** The paper addresses the challenge of recovering independent source signals from their mixtures in Linear Independent Component Analysis (ICA). Instead of traditional methods that maximize non-Gaussianity through proxy measures, the authors introduce a new approach using the squared Wasserstein distance to a standard Gaussian. Their proposed OT-ICA algorithm demonstrates superior performance over existing methods in various applications, including EEG artifact removal and economic analysis, without relying on specific distributional assumptions.
 
-### 3. TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale
-**Authors:** Zhouchonghao Wu, Akshay Rangesh, Weixin Li, Wei-Jer Chang, Zachary Lee, Tim Wang, Wei Zhan
-**Link:** https://arxiv.org/abs/2607.13028v1
-**Summary:** The paper introduces TerraZero, a high-performance procedural driving simulator designed for training autonomous driving agents without relying on human demonstration data. By enabling rapid self-play training with diverse, realistic scenarios generated from real-world map geometry, TerraZero achieves impressive results, including ranking among the best in safety and collision metrics in various driving benchmarks. Notably, it is the first fully learned policy to excel in the challenging InterPlan long-tail benchmark.
+### 3. MetaPerch: Learning from metadata for bioacoustics foundation models
+**Authors:** Mustafa Chasmai, Vincent Dumoulin, Jenny Hamer
+**Link:** https://arxiv.org/abs/2607.14072v1
+**Summary:** The paper introduces MetaPerch, a bioacoustic foundation model that enhances species identification by utilizing recording metadata—like location and time—as additional signals during training. This approach leverages the correlations between species and their metadata to improve the model's representation, leading to better performance in diverse environments. The study demonstrates that integrating nine types of metadata across seventeen datasets significantly enhances the model's robustness and generalization in real-world monitoring scenarios.
 
-### 4. PalmClaw: A Native On-Device Agent Framework for Mobile Phones
-**Authors:** Hongru Cai, Yongqi Li, Ran Wei, Wenjie Li
-**Link:** https://arxiv.org/abs/2607.13027v1
-**Summary:** PalmClaw is a new open-source framework designed to enable mobile phone agents to perform multi-step tasks more efficiently by directly accessing device capabilities rather than relying on user interface actions. By structuring how agents interact with mobile tools, it improves task success rates by 11.5% and significantly reduces completion times by nearly 95% compared to existing methods. This framework simplifies the execution process for mobile agents and enhances their effectiveness in leveraging smartphone functionalities.
+### 4. Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes
+**Authors:** Jeremy Guntoro, Alexander Dack, Dylan Danno, Michaela Jančovičová, Križan Jurinović, Vanessa Smilansky
+**Link:** https://arxiv.org/abs/2607.14070v1
+**Summary:** The paper addresses the challenge of biosecurity screening in metagenomic data, specifically focusing on detecting antimicrobial resistance (AMR) and bacterial virulence. The authors utilize Evo 2 genomic representation models to train linear and attention probes on the model's activations, achieving high discrimination rates for AMR detection (up to ROC-AUC 0.977) without fine-tuning. The results indicate that these probes can efficiently identify relevant biosecurity signals, making them a promising tool for rapid metagenomic biosurveillance.
 
-### 5. A Shortcut to Statistically Steady-State Turbulence with Flow Matching
-**Authors:** Gianluca Galletti, Gerald Gutenbrunner, William Hornsby, Lorenzo Zanisi, Naomi Carey, Stanislas Pamela, Johannes Brandstetter, Fabian Paischer
-**Link:** https://arxiv.org/abs/2607.13022v1
-**Summary:** This paper addresses the challenge of computationally expensive simulations required to reach the steady-state of turbulent systems, specifically in gyrokinetic turbulence. The authors introduce GyroFlow, a latent generative model that bypasses the transient phase by directly modeling the distribution of steady states, leading to significant computational speedups and improved accuracy compared to traditional methods. Their new approach not only performs well in generating accurate steady-state statistics but also enhances numerical code efficiency for producing relevant data.
+### 5. Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters
+**Authors:** Xiao Ye, Jacob Dineen, Evan Zhu, Shijie Lu, Kevin Song, Ben Zhou
+**Link:** https://arxiv.org/abs/2607.14051v1
+**Summary:** The paper addresses the issue of evaluating large language models (LLMs) in forecasting, which often suffer from leaks that allow models to access post-event information. The authors introduce "Hindcast," a method that evaluates LLMs by replaying prediction markets while using only historical data available at a specific past date, effectively closing these leaks. The key finding is that while retrieval helps models in cases where relevant discussions existed before the event, it can be detrimental when the available information was purely speculative.
 
-### 6. Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model
-**Authors:** Harsha Vardhan Khurdula, Abhinav Kumar Singh, Yoeven D Khemlani, Vineet Agarwal
-**Link:** https://arxiv.org/abs/2607.13013v1
-**Summary:** The paper introduces a new approach to automatic speech recognition using a discrete diffusion language model instead of traditional autoregressive decoders. By training a model that refines transcripts in parallel and utilizing a frozen Whisper encoder for acoustic features, the authors achieve a significant reduction in word error rate to 6.6% on the LibriSpeech test-clean dataset. This method allows for efficient transcription in about eight parallel steps and demonstrates effective multilingual performance with a single adapter.
+### 6. Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models
+**Authors:** Hefeng Zhou, Jinxuan Zhang, Jiong Lou, Yuxin Liu, Chaochao Lu, Jingjing Qu, Jie Li
+**Link:** https://arxiv.org/abs/2607.14049v1
+**Summary:** The paper addresses the issue of correcting errors in large language models' Chain-of-Thought reasoning, which often results in repeated mistakes. The authors introduce a method called Deep Interaction, which allows users to directly edit responses to fix errors while maintaining correct reasoning steps. Their approach shows a significant improvement, achieving over 25% higher success in corrections and reducing token usage by about 40% on STEM-related tasks compared to existing methods.
 
-### 7. Dynamic Resource Allocation for Ensemble Determinization MCTS
-**Authors:** Jakub Kowalski, Adam Ciężkowski, Artur Krzyżyński, Mark H. M. Winands
-**Link:** https://arxiv.org/abs/2607.13007v1
-**Summary:** The paper addresses the challenge of improving the performance of Ensemble Determinization Monte Carlo Tree Search (MCTS) in high-uncertainty environments like board games with randomness and hidden information. The authors introduce two enhancements for dynamic resource allocation: adjusting the number of determinization trees based on search behavior and optimizing simulation budget allocation across these trees. Their experiments with tabletop games show that these enhancements significantly improve the algorithm's performance.
+### 7. Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education
+**Authors:** Xanthi Kokkinou, Chaido Mizeli, Nafsika Koulaxidou, Marina Delianidi, Konstantinos Diamantaras
+**Link:** https://arxiv.org/abs/2607.14046v1
+**Summary:** The paper introduces Earthquaker-AI, an educational framework designed to improve earthquake preparedness among primary school students by combining robotics, AI, and rubric-based assessments. It enhances learning through interactive simulations using Lego WeDo2, while a conversational AI assistant provides guided learning and feedback tailored to students' cognitive levels. The key contribution is the effective integration of hands-on activities and reflective learning processes, which fosters technological literacy and self-regulation in emergency situations.
 
-### 8. The Spectrum Is Not Enough: When Context Helps Time-Series Forecasting
-**Authors:** Mert Onur Cakiroglu, Mehmet Dalkilic, Hasan Kurban
-**Link:** https://arxiv.org/abs/2607.13006v1
-**Summary:** This paper addresses the misconception that the predictability of time-series data can be solely assessed through spectral analysis. The authors demonstrate that the value of adding contextual information (like longer lookback periods or advanced retrieval models) depends on specific features of the series rather than its spectral properties. Key findings include a novel diagnostic called the "coverage deficit," which better captures the predictive value beyond traditional spectral indices across multiple benchmarks, showing that context can significantly change prediction outcomes.
+### 8. AI-accelerated End-to-End Framework for Rapid Professional Upskilling
+**Authors:** Tam Nguyen, Hung Nguyen, Robert Ogburn
+**Link:** https://arxiv.org/abs/2607.14044v1
+**Summary:** This paper addresses the urgent need for effective reskilling and upskilling in the workplace, where the time to close skills gaps has significantly increased. The authors propose an AI-driven framework that enhances all stages of the learning process, from knowledge acquisition to assessment, and demonstrate its effectiveness through external validation and successful learner outcomes. Key results include approval from a professional board for a related program and the rapid success of learners in achieving certification in a complex area of AI.
 
-### 9. Watermark Forensics for Generative Models: An Information-Theoretic Perspective
-**Authors:** Xiaoyu Li, Zheng Gao, Xiaoyan Feng, Jiaojiao Jiang, Yulei Sui, Jiankun Hu
-**Link:** https://arxiv.org/abs/2607.13003v1
-**Summary:** The paper addresses the problem of watermarking generative model outputs to not only detect machine-generated text but also attribute it to specific users and extract hidden information. The authors employ an information-theoretic framework to analyze the costs associated with different watermarking capabilities, establishing a precise relationship between sample length and information retrieval outcomes. A key contribution is the provision of a tight entropy-rate law for multi-user attribution, alongside the identification of two significant gaps in watermarking effectiveness, demonstrated through experiments on various generative models.
+### 9. Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study
+**Authors:** Zhan Chen, Jiqiao Ma, Chih-wen Kuo
+**Link:** https://arxiv.org/abs/2607.14041v1
+**Summary:** The paper addresses the challenge of optical character recognition (OCR) for the historical Manchu language, which features diverse writing styles and limited labeled training data. It introduces a multi-expert system that utilizes multiple fine-tuned models as specialists, combined with a lightweight classifier to route pages according to their visual style. The key results show that this approach achieves a high level of accuracy, with 99.3% page-level domain accuracy and competitive character error rates across different writing styles.
 
-### 10. Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation
-**Authors:** Aleh Manchuliantsau
-**Link:** https://arxiv.org/abs/2607.12986v1
-**Summary:** The paper addresses the problem of plan evaluators rewarding less explicit strategies in LLM-generated venture routes, which can lead to improvements based on omissions rather than genuine enhancements. The authors analyze the effects of deletions within these plans using a mathematical model and an adaptive framework, finding that many routes can score better through strategic omissions. A key contribution is the introduction of a detection mechanism, PCSC, that neutralizes these omissions, highlighting GATE's role in shaping search outcomes rather than simply filtering plans based on their quality.
+### 10. Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation
+**Authors:** Alaina Brandt
+**Link:** https://arxiv.org/abs/2607.14040v1
+**Summary:** This paper explores whether large language models (LLMs) can be employed for whole-document translation instead of the traditional sentence-by-sentence method, recognizing the importance of contextual and cultural differences in translation. The authors introduced PAT, a system that utilizes a comparable corpus to inform translations and enhance reformulation for specific Spanish-language contexts. The findings indicate that while LLMs can be adapted to produce more cohesive translations, challenges remain in achieving effective reformulations consistently.
