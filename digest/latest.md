@@ -1,52 +1,52 @@
 ---
-## 2026-07-16
+## 2026-07-17
 
-### 1. Leveraging unlabelled data for generalizable neural population decoding
-**Authors:** Ximeng Mao, Nanda H. Krishna, Avery Hee-Woon Ryoo, Matthew G. Perich, Guillaume Lajoie
-**Link:** https://arxiv.org/abs/2607.14086v1
-**Summary:** The paper addresses the challenge of training neural decoders for interpreting spike-based neural data without relying solely on labeled datasets. It introduces a new framework called MOJO, which combines self-supervised learning and supervised learning to improve model performance. The results show that MOJO significantly enhances decoding accuracy, especially when labeled data is scarce, and demonstrates generalizability across different species and neural recording modalities.
+### 1. Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models
+**Authors:** Patrik Wolf, Thomas Kleine Buening, Andreas Krause, Celestine Mendler-Dünner
+**Link:** https://arxiv.org/abs/2607.15277v1
+**Summary:** The paper investigates how well large language models (LLMs) adhere to the principle of statistical self-consistency, which suggests that their predictions should align when considering different subpopulations of data. Using binary trees to partition populations and analyzing LLM responses, the authors found that models often produce inconsistent estimates, with finer subpopulation guesses providing better alignment with human data than direct population-level responses. This indicates that while models have knowledge of subpopulations, they struggle to effectively integrate this knowledge into overall estimates, suggesting a need for improved evaluation methods for LLMs.
 
-### 2. Linear Independent Component Analysis via Optimal Transport
-**Authors:** Ashutosh Jha, Michel Besserve, Simon Buchholz
-**Link:** https://arxiv.org/abs/2607.14081v1
-**Summary:** The paper addresses the challenge of recovering independent source signals from their mixtures in Linear Independent Component Analysis (ICA). Instead of traditional methods that maximize non-Gaussianity through proxy measures, the authors introduce a new approach using the squared Wasserstein distance to a standard Gaussian. Their proposed OT-ICA algorithm demonstrates superior performance over existing methods in various applications, including EEG artifact removal and economic analysis, without relying on specific distributional assumptions.
+### 2. RoboTTT: Context Scaling for Robot Policies
+**Authors:** Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng, Fengyuan Hu, Yunhao Ge, Jimmy Wu, Tianyuan Dai, Scott Reed, Li Fei-Fei, Yuke Zhu, Linxi "Jim" Fan
+**Link:** https://arxiv.org/abs/2607.15275v1
+**Summary:** The paper presents RoboTTT, a novel robot training method that significantly increases the amount of visuomotor context used during robot policy training to 8,000 timesteps, which is three times longer than existing methods. By integrating Test-Time Training with advanced sequence modeling, RoboTTT allows robots to perform complex tasks more effectively, achieving an 87% performance improvement on manipulation tasks compared to models using only single-step context. This breakthrough demonstrates that longer context lengths can enhance the capabilities of robot foundation models, enabling one-shot imitation and robust performance in challenging environments.
 
-### 3. MetaPerch: Learning from metadata for bioacoustics foundation models
-**Authors:** Mustafa Chasmai, Vincent Dumoulin, Jenny Hamer
-**Link:** https://arxiv.org/abs/2607.14072v1
-**Summary:** The paper introduces MetaPerch, a bioacoustic foundation model that enhances species identification by utilizing recording metadata—like location and time—as additional signals during training. This approach leverages the correlations between species and their metadata to improve the model's representation, leading to better performance in diverse environments. The study demonstrates that integrating nine types of metadata across seventeen datasets significantly enhances the model's robustness and generalization in real-world monitoring scenarios.
+### 3. MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators
+**Authors:** Yushi Huang, Xiangxin Zhou, Jun Zhang, Liefeng Bo, Tianyu Pang
+**Link:** https://arxiv.org/abs/2607.15273v1
+**Summary:** The paper addresses the challenge of efficiently generating samples using MeanFlow generators by applying reinforcement learning (RL) techniques from the DiffusionNFT framework. It introduces MeanFlowNFT, which optimizes instantaneous velocities while maintaining the fast sampling characteristics of MeanFlow that rely on average velocities. The key contribution is that MeanFlowNFT outperforms previous state-of-the-art methods, achieving better performance with significantly fewer sampling steps in tasks such as image and video generation.
 
-### 4. Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes
-**Authors:** Jeremy Guntoro, Alexander Dack, Dylan Danno, Michaela Jančovičová, Križan Jurinović, Vanessa Smilansky
-**Link:** https://arxiv.org/abs/2607.14070v1
-**Summary:** The paper addresses the challenge of biosecurity screening in metagenomic data, specifically focusing on detecting antimicrobial resistance (AMR) and bacterial virulence. The authors utilize Evo 2 genomic representation models to train linear and attention probes on the model's activations, achieving high discrimination rates for AMR detection (up to ROC-AUC 0.977) without fine-tuning. The results indicate that these probes can efficiently identify relevant biosecurity signals, making them a promising tool for rapid metagenomic biosurveillance.
+### 4. SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions
+**Authors:** Yasheng Sun, Zezi Zeng, Yifan Yang, Chong Luo, Wenyi Wang, Ziwei Liu, Jürgen Schmidhuber
+**Link:** https://arxiv.org/abs/2607.15272v1
+**Summary:** The paper introduces SciDiagramEdit, a framework designed to automate the editing of scientific diagrams based on natural-language instructions, addressing the often tedious task of revising figures in research papers. It utilizes a benchmark that analyzes revisions from arXiv to learn editing skills, refining its editing capabilities through agentic learning methods. The key contribution is demonstrating that leveraging actual manuscript revisions can significantly enhance the accuracy of figure editing instructions.
 
-### 5. Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters
-**Authors:** Xiao Ye, Jacob Dineen, Evan Zhu, Shijie Lu, Kevin Song, Ben Zhou
-**Link:** https://arxiv.org/abs/2607.14051v1
-**Summary:** The paper addresses the issue of evaluating large language models (LLMs) in forecasting, which often suffer from leaks that allow models to access post-event information. The authors introduce "Hindcast," a method that evaluates LLMs by replaying prediction markets while using only historical data available at a specific past date, effectively closing these leaks. The key finding is that while retrieval helps models in cases where relevant discussions existed before the event, it can be detrimental when the available information was purely speculative.
+### 5. Online Neural Space Time Memory for Dynamic Novel View Synthesis
+**Authors:** Baback Elmieh, Lynn Tsai, Zeman Li, Srinivas Kaza, Tiancheng Sun, Gabor Csapo, Ali Behrouz, Yuan Deng, Stephen Lombardi, Steven M. Seitz, Xuan Luo
+**Link:** https://arxiv.org/abs/2607.15271v1
+**Summary:** The paper addresses the challenge of synthesizing new views from streaming videos in real-time, particularly in dynamic scenes with occlusions. The authors propose a novel method that decouples the processes of memory updates and application, allowing for periodic updates while still applying the memory frame by frame. This approach, which includes a Memory Loss mechanism and a Memory Caching strategy, achieves state-of-the-art performance in real-time view synthesis, especially in scenes involving dynamic human motion.
 
-### 6. Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models
-**Authors:** Hefeng Zhou, Jinxuan Zhang, Jiong Lou, Yuxin Liu, Chaochao Lu, Jingjing Qu, Jie Li
-**Link:** https://arxiv.org/abs/2607.14049v1
-**Summary:** The paper addresses the issue of correcting errors in large language models' Chain-of-Thought reasoning, which often results in repeated mistakes. The authors introduce a method called Deep Interaction, which allows users to directly edit responses to fix errors while maintaining correct reasoning steps. Their approach shows a significant improvement, achieving over 25% higher success in corrections and reducing token usage by about 40% on STEM-related tasks compared to existing methods.
+### 6. Pretraining Data Can Be Poisoned through Computational Propaganda
+**Authors:** Victoria Graf, Hannaneh Hajishirzi, Noah A. Smith, David Kohlbrenner, Kyle Lo
+**Link:** https://arxiv.org/abs/2607.15267v1
+**Summary:** The paper addresses the vulnerability of language models (LMs) to harmful behaviors introduced through poisoned pretraining data, particularly focusing on large-scale data sources. It presents a new method, called HalfLife, for analyzing and estimating the inclusion of malicious content in web-crawled training data from public discussion platforms. The key finding highlights that public interfaces can serve as a vector for effective attacks on language model pretraining, emphasizing the need for better detection mechanisms in data curation processes.
 
-### 7. Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education
-**Authors:** Xanthi Kokkinou, Chaido Mizeli, Nafsika Koulaxidou, Marina Delianidi, Konstantinos Diamantaras
-**Link:** https://arxiv.org/abs/2607.14046v1
-**Summary:** The paper introduces Earthquaker-AI, an educational framework designed to improve earthquake preparedness among primary school students by combining robotics, AI, and rubric-based assessments. It enhances learning through interactive simulations using Lego WeDo2, while a conversational AI assistant provides guided learning and feedback tailored to students' cognitive levels. The key contribution is the effective integration of hands-on activities and reflective learning processes, which fosters technological literacy and self-regulation in emergency situations.
+### 7. SceneBind: Binding What and Where Across Vision, Audio and Language
+**Authors:** Mingfei Chen, Zijun Cui, Ruoke Zhang, Hyeonggon Ryu, Eli Shlizerman
+**Link:** https://arxiv.org/abs/2607.15265v1
+**Summary:** SceneBind addresses the limitation of existing multi-modal models that effectively identify objects but lack explicit spatial relationships in scenes. It introduces a novel representation that combines semantic embeddings with spatial attributes, allowing for better alignment and retrieval of visual, audio, and language information. The key contribution is its state-of-the-art performance in scene and spatial retrieval, along with successful application to tasks like audio-visual localization, supported by a new real-world dataset and training protocol.
 
-### 8. AI-accelerated End-to-End Framework for Rapid Professional Upskilling
-**Authors:** Tam Nguyen, Hung Nguyen, Robert Ogburn
-**Link:** https://arxiv.org/abs/2607.14044v1
-**Summary:** This paper addresses the urgent need for effective reskilling and upskilling in the workplace, where the time to close skills gaps has significantly increased. The authors propose an AI-driven framework that enhances all stages of the learning process, from knowledge acquisition to assessment, and demonstrate its effectiveness through external validation and successful learner outcomes. Key results include approval from a professional board for a related program and the rapid success of learners in achieving certification in a complex area of AI.
+### 8. Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents
+**Authors:** Paul Kassianik, Blaine Nelson, Yaron Singer
+**Link:** https://arxiv.org/abs/2607.15263v1
+**Summary:** The paper addresses the limitation of traditional evaluations of security agents, which often focus solely on their peak performance without considering the operational costs involved. The authors propose a cost-aware evaluation framework that assesses both offensive and defensive security agents based on their performance relative to budget constraints. Key findings reveal that while offensive capabilities improve with additional resources, defensive capabilities rely more on strategic tool usage and decision-making, highlighting the need for evaluations that reflect practical operational efficiency.
 
-### 9. Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study
-**Authors:** Zhan Chen, Jiqiao Ma, Chih-wen Kuo
-**Link:** https://arxiv.org/abs/2607.14041v1
-**Summary:** The paper addresses the challenge of optical character recognition (OCR) for the historical Manchu language, which features diverse writing styles and limited labeled training data. It introduces a multi-expert system that utilizes multiple fine-tuned models as specialists, combined with a lightweight classifier to route pages according to their visual style. The key results show that this approach achieves a high level of accuracy, with 99.3% page-level domain accuracy and competitive character error rates across different writing styles.
+### 9. Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier
+**Authors:** Arthur G. Bubolz, Abreu Quevedo, Giancarlo Lucca, Rafael A. Berri, Eduardo Borges, Bruno L. Dalmazo
+**Link:** https://arxiv.org/abs/2607.15258v1
+**Summary:** This study addresses the challenge of understanding Bitcoin market sentiment by analyzing blockchain activity, financial data, and social media content, rather than solely focusing on price predictions. The researchers developed a sentiment classifier using various machine learning techniques, with XGBoost proving to be the most effective, achieving an average F1-score of around 0.84. They also employed SHAP for model interpretability, demonstrating that combining these data sources can provide valuable insights into cryptocurrency market behavior.
 
-### 10. Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation
-**Authors:** Alaina Brandt
-**Link:** https://arxiv.org/abs/2607.14040v1
-**Summary:** This paper explores whether large language models (LLMs) can be employed for whole-document translation instead of the traditional sentence-by-sentence method, recognizing the importance of contextual and cultural differences in translation. The authors introduced PAT, a system that utilizes a comparable corpus to inform translations and enhance reformulation for specific Spanish-language contexts. The findings indicate that while LLMs can be adapted to produce more cohesive translations, challenges remain in achieving effective reformulations consistently.
+### 10. SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration
+**Authors:** Yuyao Zhang, Junjie Gao, Zhengxian Wu, Jiaming Fan, Jin Zhang, Shihan Ma, Yao Yao, Weiran Qi, Chuyan Jin, Guiyu Ma, Xingzhong Xu, Kai Yang, Ji-Rong Wen, Zhicheng Dou
+**Link:** https://arxiv.org/abs/2607.15257v1
+**Summary:** The paper addresses the challenge of information-seeking agents becoming ineffective due to repetitive search loops when they fail to find useful information. To tackle this, the authors develop SearchOS, a multi-agent framework that maintains a clear and shared record of search progress through a structured context management system. The key contribution is that SearchOS outperforms existing systems, improving the efficiency and effectiveness of information retrieval by dynamically managing tasks and evidence throughout the search process.
