@@ -1,52 +1,52 @@
 ---
-## 2026-07-17
+## 2026-07-18
 
-### 1. Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models
-**Authors:** Patrik Wolf, Thomas Kleine Buening, Andreas Krause, Celestine Mendler-Dünner
-**Link:** https://arxiv.org/abs/2607.15277v1
-**Summary:** The paper investigates how well large language models (LLMs) adhere to the principle of statistical self-consistency, which suggests that their predictions should align when considering different subpopulations of data. Using binary trees to partition populations and analyzing LLM responses, the authors found that models often produce inconsistent estimates, with finer subpopulation guesses providing better alignment with human data than direct population-level responses. This indicates that while models have knowledge of subpopulations, they struggle to effectively integrate this knowledge into overall estimates, suggesting a need for improved evaluation methods for LLMs.
+### 1. teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data
+**Authors:** Qiwei Li, Jorge Ortiz
+**Link:** https://arxiv.org/abs/2607.15254v1
+**Summary:** The paper presents teLLMe, a system aimed at helping traffic agencies explore causal relationships within large urban driving datasets derived from video, enabling them to answer questions about factors like weather's impact on traffic density. It utilizes a combination of causal structure learning techniques and natural language processing to translate user queries into structured causal analyses. The key contribution is the creation of a "Causal Card" that summarizes the effects and assumptions of these analyses, providing insights while clearly communicating uncertainty and supporting expert reasoning rather than definitive conclusions.
 
-### 2. RoboTTT: Context Scaling for Robot Policies
-**Authors:** Yunfan Jiang, Yevgen Chebotar, Ruijie Zheng, Fengyuan Hu, Yunhao Ge, Jimmy Wu, Tianyuan Dai, Scott Reed, Li Fei-Fei, Yuke Zhu, Linxi "Jim" Fan
-**Link:** https://arxiv.org/abs/2607.15275v1
-**Summary:** The paper presents RoboTTT, a novel robot training method that significantly increases the amount of visuomotor context used during robot policy training to 8,000 timesteps, which is three times longer than existing methods. By integrating Test-Time Training with advanced sequence modeling, RoboTTT allows robots to perform complex tasks more effectively, achieving an 87% performance improvement on manipulation tasks compared to models using only single-step context. This breakthrough demonstrates that longer context lengths can enhance the capabilities of robot foundation models, enabling one-shot imitation and robust performance in challenging environments.
+### 2. Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search
+**Authors:** Debayan Mukhopadhyay, Utshab Kumar Ghosh, Shubham Chatterjee
+**Link:** https://arxiv.org/abs/2607.15253v1
+**Summary:** This paper addresses the disconnect between traditional measures of document usefulness in retrieval systems and their actual utility in dynamic, multi-step search scenarios where language models operate as agents. The authors introduce the Counterfactual Trajectory Utility (CTU) score to evaluate the impact of each document on the agent's performance across multiple queries, revealing that approximately one-third of the documents, termed "bridge documents," are crucial for facilitating better future queries despite appearing irrelevant in static assessments. Their findings demonstrate that static relevance and causal usefulness are fundamentally different, suggesting a need to rethink evaluation methodologies for retrieval systems operating in agentic contexts.
 
-### 3. MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators
-**Authors:** Yushi Huang, Xiangxin Zhou, Jun Zhang, Liefeng Bo, Tianyu Pang
-**Link:** https://arxiv.org/abs/2607.15273v1
-**Summary:** The paper addresses the challenge of efficiently generating samples using MeanFlow generators by applying reinforcement learning (RL) techniques from the DiffusionNFT framework. It introduces MeanFlowNFT, which optimizes instantaneous velocities while maintaining the fast sampling characteristics of MeanFlow that rely on average velocities. The key contribution is that MeanFlowNFT outperforms previous state-of-the-art methods, achieving better performance with significantly fewer sampling steps in tasks such as image and video generation.
+### 3. AutoSynthesis: An agentic system for automated meta-analysis
+**Authors:** Moein Taherinezhad, Sebastian Maier, Gerardo Vitagliano, Francesco Pierri, Stefan Feuerriegel
+**Link:** https://arxiv.org/abs/2607.15247v1
+**Summary:** AutoSynthesis addresses the challenge of scaling quantitative evidence synthesis, which is typically a manual and labor-intensive process necessary for fields like science and medicine. It is an automated system that uses multiple agents to conduct meta-analyses by retrieving literature, screening studies, and computing effect sizes, producing results comparable to those from expert analyses. The key contribution of this work is that AutoSynthesis enhances the efficiency and scalability of evidence synthesis, supporting better evidence-based decision-making across various disciplines.
 
-### 4. SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions
-**Authors:** Yasheng Sun, Zezi Zeng, Yifan Yang, Chong Luo, Wenyi Wang, Ziwei Liu, Jürgen Schmidhuber
-**Link:** https://arxiv.org/abs/2607.15272v1
-**Summary:** The paper introduces SciDiagramEdit, a framework designed to automate the editing of scientific diagrams based on natural-language instructions, addressing the often tedious task of revising figures in research papers. It utilizes a benchmark that analyzes revisions from arXiv to learn editing skills, refining its editing capabilities through agentic learning methods. The key contribution is demonstrating that leveraging actual manuscript revisions can significantly enhance the accuracy of figure editing instructions.
+### 4. Mutable Low-Rank Sketches for Retrain-Free Recommendation
+**Authors:** Hector J. Garcia, Nick Clayton
+**Link:** https://arxiv.org/abs/2607.15242v1
+**Summary:** The paper addresses the issue of embedding staleness in recommendation systems, where user preferences are not updated until the next model retraining occurs. It introduces mutable sketches that utilize a KP-tree structure to dynamically update user embeddings in real-time as new ratings are received. The key contribution is that this approach achieves superior recommendation accuracy (lower RMSE) and significantly faster updates compared to traditional methods, enabling near-instant personalized suggestions for new users without the need for retraining the model.
 
-### 5. Online Neural Space Time Memory for Dynamic Novel View Synthesis
-**Authors:** Baback Elmieh, Lynn Tsai, Zeman Li, Srinivas Kaza, Tiancheng Sun, Gabor Csapo, Ali Behrouz, Yuan Deng, Stephen Lombardi, Steven M. Seitz, Xuan Luo
-**Link:** https://arxiv.org/abs/2607.15271v1
-**Summary:** The paper addresses the challenge of synthesizing new views from streaming videos in real-time, particularly in dynamic scenes with occlusions. The authors propose a novel method that decouples the processes of memory updates and application, allowing for periodic updates while still applying the memory frame by frame. This approach, which includes a Memory Loss mechanism and a Memory Caching strategy, achieves state-of-the-art performance in real-time view synthesis, especially in scenes involving dynamic human motion.
+### 5. Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA
+**Authors:** Sushant Gautam, Vajira Thambawita, Michael A. Riegler, Pål Halvorsen, Steven A. Hicks
+**Link:** https://arxiv.org/abs/2607.15241v1
+**Summary:** The paper addresses the challenge of creating trustworthy multimodal AI systems for healthcare, specifically for visual question answering (VQA) in gastrointestinal endoscopy. By analyzing various design approaches from existing systems, the researchers found that while pretrained models perform well, methods that emphasize structured reasoning and clear evidence linkage lead to more reliable results. This study highlights the need for improved evaluation metrics and frameworks that prioritize both explainability and robustness in healthcare AI.
 
-### 6. Pretraining Data Can Be Poisoned through Computational Propaganda
-**Authors:** Victoria Graf, Hannaneh Hajishirzi, Noah A. Smith, David Kohlbrenner, Kyle Lo
-**Link:** https://arxiv.org/abs/2607.15267v1
-**Summary:** The paper addresses the vulnerability of language models (LMs) to harmful behaviors introduced through poisoned pretraining data, particularly focusing on large-scale data sources. It presents a new method, called HalfLife, for analyzing and estimating the inclusion of malicious content in web-crawled training data from public discussion platforms. The key finding highlights that public interfaces can serve as a vector for effective attacks on language model pretraining, emphasizing the need for better detection mechanisms in data curation processes.
+### 6. TikStance: A Multimodal and Hierarchical Dataset for Multi-target Stance Analysis in TikTok Political Conversations
+**Authors:** Yazhi Zhang, Fuqiang Niu, Bowen Zhang
+**Link:** https://arxiv.org/abs/2607.15240v1
+**Summary:** The paper introduces TikStance, a new dataset designed to enable the analysis of political stances in TikTok videos, addressing the challenge of limited data that captures both video content and hierarchically structured comments. It comprises 161 videos and nearly 14,000 comments related to key political figures in the upcoming U.S. election, with well-documented human annotations for stance detection. A significant finding is that nested replies make up over 23% of comments, revealing complexities in political discourse that the dataset aims to facilitate further research into.
 
-### 7. SceneBind: Binding What and Where Across Vision, Audio and Language
-**Authors:** Mingfei Chen, Zijun Cui, Ruoke Zhang, Hyeonggon Ryu, Eli Shlizerman
-**Link:** https://arxiv.org/abs/2607.15265v1
-**Summary:** SceneBind addresses the limitation of existing multi-modal models that effectively identify objects but lack explicit spatial relationships in scenes. It introduces a novel representation that combines semantic embeddings with spatial attributes, allowing for better alignment and retrieval of visual, audio, and language information. The key contribution is its state-of-the-art performance in scene and spatial retrieval, along with successful application to tasks like audio-visual localization, supported by a new real-world dataset and training protocol.
+### 7. Language Identification via Compositional Data Analysis: A Linear-Time Classifier Based on Log-Ratio Geometry
+**Authors:** Paul-Andrei Pogăcean, Sanda-Maria Avram
+**Link:** https://arxiv.org/abs/2607.15238v1
+**Summary:** This paper addresses the problem of language identification, traditionally dominated by resource-intensive neural networks or less effective statistical methods. The authors propose a new approach that represents character and bigram frequencies as compositional vectors transformed with log-ratio geometry, allowing for efficient and robust classification. Their method demonstrates strong accuracy, especially with longer text sequences, providing a fast and interpretable solution for language identification tasks.
 
-### 8. Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents
-**Authors:** Paul Kassianik, Blaine Nelson, Yaron Singer
-**Link:** https://arxiv.org/abs/2607.15263v1
-**Summary:** The paper addresses the limitation of traditional evaluations of security agents, which often focus solely on their peak performance without considering the operational costs involved. The authors propose a cost-aware evaluation framework that assesses both offensive and defensive security agents based on their performance relative to budget constraints. Key findings reveal that while offensive capabilities improve with additional resources, defensive capabilities rely more on strategic tool usage and decision-making, highlighting the need for evaluations that reflect practical operational efficiency.
+### 8. In-Place Tokenizer Expansion for Pre-trained LLMs
+**Authors:** Jimmy T. H. Smith, Tarek Dakhran, Alberto Cabrera, Simon S. Lee, Paul Pak, Aditya Tadimeti, Tim Seyde, Maxime Labonne, Alexander Amini, Mathias Lechner
+**Link:** https://arxiv.org/abs/2607.15232v1
+**Summary:** The paper addresses the inefficiencies of fixed tokenizers in pre-trained language models, particularly when accommodating newly prioritized languages that lead to increased token fragmentation. It proposes an in-place tokenizer expansion method that builds upon the existing tokenizer's merges, allowing for a more efficient and compact vocabulary without losing prior information. The key outcome is a substantial reduction in token count and an estimated 2.2 to 3.7 times speedup in decoding for Hindi and Vietnamese, which enhances performance while releasing updated model weights and tokenizer.
 
-### 9. Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier
-**Authors:** Arthur G. Bubolz, Abreu Quevedo, Giancarlo Lucca, Rafael A. Berri, Eduardo Borges, Bruno L. Dalmazo
-**Link:** https://arxiv.org/abs/2607.15258v1
-**Summary:** This study addresses the challenge of understanding Bitcoin market sentiment by analyzing blockchain activity, financial data, and social media content, rather than solely focusing on price predictions. The researchers developed a sentiment classifier using various machine learning techniques, with XGBoost proving to be the most effective, achieving an average F1-score of around 0.84. They also employed SHAP for model interpretability, demonstrating that combining these data sources can provide valuable insights into cryptocurrency market behavior.
+### 9. Data Driven Block Replacement Scheduling
+**Authors:** Aniruddhan Ganesaraman, VIdyadhar Kulkarni
+**Link:** https://arxiv.org/abs/2607.15229v1
+**Summary:** The paper addresses the challenge of optimizing the interval for replacing machines under a block replacement policy, where machines are replaced upon failure and periodically as a group. The authors develop data-driven algorithms based on multi-armed bandit techniques to dynamically learn the cost-minimizing replacement interval while handling incomplete lifetime data. Key contributions include establishing a regret bound that matches theoretical limits and demonstrating that their approach can estimate lifetime distributions effectively, leading to optimized replacement strategies that outperform traditional methods.
 
-### 10. SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration
-**Authors:** Yuyao Zhang, Junjie Gao, Zhengxian Wu, Jiaming Fan, Jin Zhang, Shihan Ma, Yao Yao, Weiran Qi, Chuyan Jin, Guiyu Ma, Xingzhong Xu, Kai Yang, Ji-Rong Wen, Zhicheng Dou
-**Link:** https://arxiv.org/abs/2607.15257v1
-**Summary:** The paper addresses the challenge of information-seeking agents becoming ineffective due to repetitive search loops when they fail to find useful information. To tackle this, the authors develop SearchOS, a multi-agent framework that maintains a clear and shared record of search progress through a structured context management system. The key contribution is that SearchOS outperforms existing systems, improving the efficiency and effectiveness of information retrieval by dynamically managing tasks and evidence throughout the search process.
+### 10. When Words Are Safe But Actions Kill: Probing Physical Danger Beyond Text Safety in Hidden-State Risk Space
+**Authors:** Weimeng Wang, Ziqiang Wang, Zihang Zhan, Chuanpu Fu, Qi Li, Ke Xu
+**Link:** https://arxiv.org/abs/2607.15218v1
+**Summary:** The paper addresses the issue of distinguishing between the safety of language used in instructions and the physical dangers that may arise when these instructions are acted upon in the real world. The authors propose a method called PRISM that uses logistic regression to analyze hidden states in large language models, achieving high accuracy in detecting physical risks without relying on explicit harmful keywords. Key findings indicate that PRISM significantly outperforms standard language model evaluations in recognizing physical dangers, demonstrating its effectiveness in enhancing safety in embodied AI applications.
