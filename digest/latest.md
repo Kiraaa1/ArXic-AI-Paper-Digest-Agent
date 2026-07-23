@@ -1,52 +1,52 @@
 ---
-## 2026-07-22
+## 2026-07-23
 
-### 1. Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning
-**Authors:** Lizhe Fang, Weizhou Shen, Tianyi Tang, Yisen Wang
-**Link:** https://arxiv.org/abs/2607.19345v1
-**Summary:** This paper addresses the issue of large language models excessively copying text from their inputs instead of generating effective reasoning in long-context tasks. The authors introduce a novel reinforcement learning method called GEAR, which rewards models for focusing on relevant evidence and penalizes them for using irrelevant information. Their approach significantly improves model accuracy—by up to 4.6 points—and reduces repetitive copying, particularly in longer contexts, highlighting the importance of grounding in relevant evidence for effective reasoning.
+### 1. Lipschitzian SLLNs for random functions
+**Authors:** Lai Tian, Johannes O. Royset
+**Link:** https://arxiv.org/abs/2607.20411v1
+**Summary:** The paper addresses the strong laws of large numbers for locally Lipschitz functions within the framework of Lipschitz pseudometrics. The authors establish their results under both topological and model-theoretic conditions, significantly broadening the applicable function classes beyond those in o-minimal structures. A key contribution is the demonstration that certain failure phenomena previously identified do not occur for a wide range of functions, facilitating uniform convergence and identification of solutions in finite samples.
 
-### 2. Appearance Pointers -- Multimodal Region Control of Diffusion Transformers
-**Authors:** Rahul Sajnani, Yulia Gryaditskaya, Radomír Měch, Srinath Sridhar, Matheus Gadelha
-**Link:** https://arxiv.org/abs/2607.19344v1
-**Summary:** The paper addresses the challenge of precise regional control in image generation using Diffusion Transformers, which often struggle to effectively translate text and image inputs into desired outputs. The authors propose a method called appearance pointers, which are compact tokens that guide the model to focus on specified areas and cues in the input. Their approach achieves performance that meets or exceeds existing methods while allowing for flexible multimodal control without needing to retrain the underlying model.
+### 2. LKValues: Aligning Large Language Models with Sri Lankan Societal Values
+**Authors:** Nethmi Muthugala, Supryadi, Surangika Ranathunga, Nisansa de Silva, Ruijie Tao, Ovindu Gunatunga, Pengyun Zhu, Shaowei Zhang, Jingting Zheng, Deyi Xiong
+**Link:** https://arxiv.org/abs/2607.20410v1
+**Summary:** The paper addresses the issue of cultural bias in large language models (LLMs), specifically their misalignment with Sri Lankan values due to a lack of localized evaluation resources. To tackle this, the authors created LKValues, a resource suite developed from a survey of Sri Lankan societal values that includes a Sinhala-English instruction corpus and a benchmarking dataset. Their findings indicate that fine-tuning with LKValues significantly enhances LLM performance by better aligning them with Sri Lankan values, though improvements vary across different model families.
 
-### 3. CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents
-**Authors:** Qijia He, Jiayi Cheng, Chenqian Le, Rui Wang, Xunmei Liu, Yixian Chen, Jie Mei, Zhihao Wang, Xupeng Chen, Yuhuan Chen, Tao Wang
-**Link:** https://arxiv.org/abs/2607.19338v1
-**Summary:** The paper presents CodeRescue, a method for optimizing decision-making in coding agents after a failure by determining when to continue using low-cost models and when to escalate to more expensive ones. The approach involves training a router with execution feedback and incorporating a Conformal Risk Control layer to adapt to different budget scenarios. The key contribution is the demonstration that this calibrated strategy can significantly outperform traditional methods in solving coding tasks while reducing costs, achieving a higher solve rate with less expenditure.
+### 3. SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data
+**Authors:** Wael AbdAlmageed
+**Link:** https://arxiv.org/abs/2607.20402v1
+**Summary:** The paper addresses the challenge of performing reasoning tasks using high-dimensional perceptual inputs, where traditional methods struggle due to the need for discrete symbols. The authors propose SoftReason, a fully differentiable neuro-soft-symbolic architecture that integrates perception with knowledge from a Knowledge Graph, enabling smooth reasoning processes without breaking the gradient flow. The key contribution is a novel way to learn and apply a differentiable immediate-consequence operator, which allows for end-to-end training and effective deduction in tasks such as Knowledge-aware Visual Question Answering.
 
-### 4. Agents in the Wild: Where Research Meets Deployment
-**Authors:** Grace Hui Yang, Pranav N. Venkit, Hooman Sedghamiz, Enrico Santus, Victor Dibia, Ioana Baldini
-**Link:** https://arxiv.org/abs/2607.19336v1
-**Summary:** The paper addresses the challenges of deploying agentic systems, which are large language model-based architectures that can reason, plan, and coordinate in real-world applications. It combines insights from both research and practical case studies in fields like pharmaceutical discovery and finance to identify successful design patterns and strategies for ensuring robustness and reliability in these systems. The authors provide practical tools such as evaluation checklists and templates to help practitioners implement safe deployments across various industries.
+### 4. Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning
+**Authors:** Nicolas Kosanovic, Jordan Dowdy, Jean Chagas Vaz
+**Link:** https://arxiv.org/abs/2607.20399v1
+**Summary:** The paper addresses the challenge of teleoperating miniature humanoid robots for manipulation and locomotion, a capability commonly associated with larger, expensive robots. It presents a newly developed control system that combines Virtual Reality and Reinforcement Learning, enabling a single operator to control both walking and arm movements. The system successfully demonstrated the ability to move small objects while walking at speeds of up to 0.45 m/s, showcasing its effectiveness in remote tele-loco-manipulation tasks.
 
-### 5. 1-Lipschitz Neural Networks on Hadamard Manifolds
-**Authors:** Davide Murari, Marta Ghirardelli, Ben Adcock, Elena Celledoni, Brynjulf Owren, Carola-Bibiane Schönlieb
-**Link:** https://arxiv.org/abs/2607.19335v1
-**Summary:** This paper addresses the challenge of designing robust neural networks with a controlled Lipschitz constant, specifically on Hadamard manifolds which differ from standard Euclidean spaces. The authors develop 1-Lipschitz neural networks using Busemann functions and geometry-preserving layers, demonstrating their effectiveness in robust classification on the Poincaré disk and improved covariance reconstruction on symmetric positive definite matrices compared to traditional methods. The results highlight the networks' enhanced stability and robustness under geometric perturbations.
+### 5. Persian Pixel: A large-scale synthetic OCR dataset for Persian language
+**Authors:** Pouria Mahdi, Haq Nawaz Malik
+**Link:** https://arxiv.org/abs/2607.20385v1
+**Summary:** The paper addresses the challenge of developing effective Optical Character Recognition (OCR) systems for the Persian language, which is hindered by the complexity of its script and a lack of large annotated datasets. To overcome this, the authors created Persian Pixel, a synthetic OCR dataset containing over 343,000 high-quality image-text pairs generated from a vast Persian text corpus, enriched with realistic document degradation models. This dataset provides a scalable resource for training advanced OCR models, facilitating progress in Persian document analysis and digitization.
 
-### 6. Fundamental limits of distributed multiclass classification from simple binary decisions
-**Authors:** Ioannis Papageorgiou, Srinivas Nomula, Ayalvadi Ganesh, Sidharth Jaggi, Parimal Parag
-**Link:** https://arxiv.org/abs/2607.19334v1
-**Summary:** The paper addresses the challenge of building a multi-class classifier using a small number of simple binary classifiers, specifically focusing on cases where these classifiers are hyperplanes in a high-dimensional space. By analyzing a scenario in which class centers are independent Gaussian points affected by noise, the authors derive performance limits for this classification approach and validate their findings through simulations. The key contribution lies in providing explicit performance bounds that demonstrate the effectiveness of using binary decisions in constructing complex classifiers.
+### 6. FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization
+**Authors:** Eva McCord, Ernest Pedapati, Zag ElSayed
+**Link:** https://arxiv.org/abs/2607.20382v1
+**Summary:** The paper addresses the inefficiencies and risks associated with clinical biomarker workflows, particularly in complex assays like FMRP quantification, which often depend on manual processes and siloed systems. The authors propose FMRP-LEAN, an AI-enhanced, HIPAA-compliant Laboratory Information Management System (LIMS) that streamlines biospecimen management through a structured workflow model and secure data handling. Key results show improved workflow visibility, quicker quality control processes, and better communication among lab staff and clinical teams, demonstrating a reliable framework for managing clinical research in compliance with healthcare regulations.
 
-### 7. Provable diffusion-based posterior sampling for linear inverse problems via DDIM
-**Authors:** Yuchen Jiao, Na Li, Changxiao Cai, Yuxin Chen, Gen Li
-**Link:** https://arxiv.org/abs/2607.19333v1
-**Summary:** The paper addresses the challenge of efficiently sampling from the posterior distribution in linear inverse problems, such as image restoration, using diffusion models. The authors introduce a novel algorithm called \pddim, which modifies the standard Diffusion Denoising Implicit Models (DDIM) to incorporate measurement data seamlessly. Their key contribution is the proof of convergence to the Bayesian posterior, demonstrating that this method outperforms existing approaches while remaining computationally efficient and straightforward to implement.
+### 7. Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations
+**Authors:** Hiskias Dingeto
+**Link:** https://arxiv.org/abs/2607.20379v1
+**Summary:** The paper addresses the issue of trustworthiness in natural-language autoencoder explanations, which can pass reconstruction tests without being factually accurate. The authors introduce a method called RECAP, which employs co-trained auxiliary predictors to ensure that specific content in model explanations remains verifiable and decodable. Key results show that RECAP improves the reliability of truth claims from models, significantly enhancing their ability to flag incorrect statements while maintaining high reconstruction scores.
 
-### 8. ROMS-IMLE: A Minimalist Approach to Competitive Single-Step Generative Modelling
-**Authors:** Chirag Vashist, Ke Li
-**Link:** https://arxiv.org/abs/2607.19332v1
-**Summary:** The paper introduces a streamlined generative modeling approach that challenges the complexity of current models by using a simple training objective and a moderately sized convolutional network. By employing Implicit Maximum Likelihood Estimation (IMLE) and avoiding iterative denoising techniques, the model achieves competitive performance, producing high-quality samples efficiently with an FID score of 2.56 on ImageNet 256. This minimalist strategy highlights that effective generative modeling can be achieved without the intricate methodologies commonly employed in the field.
+### 8. PG-KINN: A Physics-Informed Petrov-Galerkin Kolmogorov-Arnold Network for Solving Forward and Inverse PDEs
+**Authors:** Amirhossein Sadr, Nima Soltani, Vahideh Moghtadaiee, Aida Pakniyat, Dara Rahmati, Saeid Gorgin
+**Link:** https://arxiv.org/abs/2607.20378v1
+**Summary:** The paper presents PG-KINN, a novel approach for solving complex partial differential equations (PDEs) that overcomes limitations of traditional multilayer perceptrons and existing Kolmogorov Arnold Networks. By using a Petrov-Galerkin method, PG-KINN combines learnable spline activations with flexible test functions, resulting in improved accuracy and robustness for a range of mathematical problems, including parameter identification in heterogeneous media. The key finding is that this new framework significantly outperforms standard methods and other advanced formulations across multiple challenging scenarios in computational mechanics.
 
-### 9. ISO: An RLVR-Native Optimization Stack
-**Authors:** Hanqing Zhu, Wenyan Cong, Zhizhou Sha, Sagnik Mukherjee, Xinyuan Song, David González-Martínez, Xiaoxia Wu, Yuandong Tian, Shiwei Liu, David Z. Pan, Zhangyang "Atlas" Wang
-**Link:** https://arxiv.org/abs/2607.19331v1
-**Summary:** The paper addresses the challenge of optimizing reinforcement learning with verifiable rewards (RLVR) by focusing on the often-overlooked optimization layer that translates reward feedback into model updates. The authors propose Isospectral Optimization (ISO), a framework that leverages the existing spectral structure of model weights while allowing for new behaviors through changes in input and output frames. Key results demonstrate that ISO significantly improves model performance with fewer training steps, outperforming traditional optimization methods in terms of accuracy across various tasks.
+### 9. Statevector-Referenced Geometry Survival of a Four-Qubit ZZ Quantum Kernel on IBM Quantum Hardware: A Fixed-Subset Diagnostic Across Three Execution Configurations
+**Authors:** Rostyslav Sipakov
+**Link:** https://arxiv.org/abs/2607.20377v1
+**Summary:** This paper investigates how well a specific four-qubit quantum kernel performs on IBM quantum hardware when encoding the geometry of a dataset related to indoor air quality. The authors measured how accurately different execution configurations preserved the intended data structure, finding that while all configurations produced valid Gram matrices, gate twirling yielded the best preservation of geometry. Notably, some configurations showed high fidelity but poor alignment with expected results, highlighting the complex relationship between hardware imperfections and effective quantum machine learning.
 
-### 10. Associative Emotional Learning in Convolutional Neural Networks
-**Authors:** Seowung Leem, Andreas Keil, Mingzhou Ding, Ruogu Fang
-**Link:** https://arxiv.org/abs/2607.19327v1
-**Summary:** This paper addresses the challenge of modeling associative emotional learning, which links stimuli to emotional outcomes, using deep neural networks. The authors developed a model that processes visual information and evaluates its emotional significance, successfully replicating key findings from human studies such as association formation and generalization. Their results demonstrate that these deep learning models can effectively mimic the neural and behavioral aspects of how emotions are learned from experiences.
+### 10. Online Variance Reduction for Domain Adaptation on Streaming Data
+**Authors:** Andrea Napoli
+**Link:** https://arxiv.org/abs/2607.20374v1
+**Summary:** This paper addresses the challenge of domain adaptation in streaming data using stochastic variance reduction methods for specific loss functions (MMD and CORAL). It introduces a novel online algorithm called ARROW, which adaptively reweights incoming data batches to maintain alignment with reference statistics. The key finding is that ARROW achieves performance comparable to traditional offline methods while being suitable for real-time learning environments.
