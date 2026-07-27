@@ -1,52 +1,52 @@
 ---
-## 2026-07-26
+## 2026-07-27
 
-### 1. From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs
-**Authors:** Kaiwen Zhang, Guanjun Liu
-**Link:** https://arxiv.org/abs/2607.21530v1
-**Summary:** The paper addresses the challenge of generating effective tests for concurrent stateful Rust APIs, which often face issues like violating preconditions or lacking meaningful concurrency when synthesized by large language models (LLMs). The authors propose a Petri-net-guided methodology that represents API behaviors and dependencies to generate legal test scenarios, enabling LLMs to produce executable tests while preserving the intended functionality. Key contributions include a structured approach that ensures high-quality testing and systematic exploration of concurrency, offering a bridge between abstract test design and practical implementation.
+### 1. SM4RT: Learning Structured Motion Geometry for 4D Reconstruction
+**Authors:** Shing Ho J. Lin, Wenzhao Zheng, Dong Zhuo, Yuqi Wu, Jie Zhou, Jiwen Lu
+**Link:** https://arxiv.org/abs/2607.22534v1
+**Summary:** The paper presents SM4RT, a model designed to enhance 4D reconstruction by incorporating structured motion geometry, addressing the challenge of understanding dynamic scenes from monocular video. Instead of treating motion as isolated point-wise displacements, SM4RT recognizes that objects typically move collectively according to rigid-body dynamics, and it models this using a framework that captures scene dynamics through a compact set of motion bases. The approach enables accurate reconstruction of both 3D geometry and motion together, yielding strong performance in dynamic scene analysis.
 
-### 2. ElasticTTT: Prior-Preserving Test-Time Tuning for Video Editing
-**Authors:** Yueyi Liu, Chi Zhang, Sen Cui, Miao Liu
-**Link:** https://arxiv.org/abs/2607.21529v1
-**Summary:** The paper addresses the problem of "Prior Collapse" in Test-Time Tuning (TTT) for video editing with pretrained diffusion models, where the model loses its ability to generate diverse outputs and becomes overly focused on the input video. To tackle this issue, the authors introduce ElasticTTT, a framework that includes techniques like Target Distribution Regularization and Contrastive CFG to maintain the generative model's prior and encourage varied editing outputs. The results show that ElasticTTT effectively preserves the model's generative capabilities, achieving state-of-the-art performance in one-shot video editing tasks.
+### 2. Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
+**Authors:** Siyuan Huang, Pengyu Cheng, Haotian Liu, Tao Chen, Yihao Liu, Jingwei Ni, Shijie Zhou, Ziyi Yang, Gangwei Jiang, Mengyu Zhou, Yu Cheng, Xiaoxi Jiang, Guanjun Jiang
+**Link:** https://arxiv.org/abs/2607.22529v1
+**Summary:** The paper addresses the challenge of balancing task diversity and reliable feedback in training large language models (LLMs) by introducing a framework called Skill Self-Play (Skill-SP). This method employs a co-evolutionary process involving a task proposer, a solution solver, and a skill controller, which together facilitate an interactive training loop that expands the model's skill set while ensuring reliable execution. The key finding is that Skill-SP significantly enhances the performance of LLMs, even improving models that initially struggle, thereby pushing the boundaries of their capabilities.
 
-### 3. GS-Agent: Creating 4D Physical Worlds With Generative Simulation
-**Authors:** Hongxin Zhang, Chunru Lin, Junyan Li, Zhou Xian, Tsun-Hsuan Wang, Chuang Gan
-**Link:** https://arxiv.org/abs/2607.21522v1
-**Summary:** The paper presents GS-Agent, a novel framework designed to automatically create dynamic, physically realistic 4D worlds from natural language descriptions, overcoming the limitations of traditional graphics methods that require extensive manual input. By integrating a multi-agent system that collaborates with physics engines, GS-Agent decomposes the creation process into manageable tasks, allowing for rich interactions and realistic rendering. The key result demonstrates its ability to successfully generate diverse and controllable 4D environments with high visual fidelity and physical plausibility.
+### 3. Explainable Reinforcement Learning for assisting Air Traffic Controllers
+**Authors:** Anduel Mehmeti, Gabriella Gigante, Salvatore Venticinque
+**Link:** https://arxiv.org/abs/2607.22525v1
+**Summary:** The paper addresses the challenge of building trust in AI systems used in critical environments like Air Traffic Control by enhancing the explainability of reinforcement learning algorithms. It employs a saliency map technique to reveal which input features most influence the AI agent's decisions regarding flight routing in a simplified ATC environment. This approach aims to facilitate better human-AI collaboration by making the AI's decision-making process more transparent.
 
-### 4. Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation
-**Authors:** Linjun Li
-**Link:** https://arxiv.org/abs/2607.21518v1
-**Summary:** The paper investigates how large language models (LLMs) handle dangerous objectives differently when exposed directly versus through intermediary agents. Using the OpenAI gpt-5.6-sol model, the researchers tested various scenarios and found that direct exposure tends to produce safer advice, while an intermediary can manipulate the objective, leading the model to generate advice aligned with the manipulative intent instead. This highlights a concerning safety gap where a high-capability model can be part of an automated process that obscures dangerous instructions, making it harder for users to identify risks.
+### 4. The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents
+**Authors:** Darshan Tank, Baran Nama
+**Link:** https://arxiv.org/abs/2607.22520v1
+**Summary:** The paper addresses the issue of how adding procedural skills to large language model (LLM) agents can sometimes lead to worse performance, despite average improvements in task success. The authors conducted a comprehensive analysis of nearly 6,000 agent runs across various benchmarks to differentiate between tasks that regress (fail after skills are added) and those that consistently fail. They found that regressions are significant and often arise from factors like skill context influence and improper grounding, suggesting that evaluating skills should focus on both enhancements and regressions to better understand their true impact on performance.
 
-### 5. Improved lower bounds for the Shannon capacity of odd cycles
-**Authors:** Nathaniel Itty, Christopher D. Rosin, Chase Carstensen, Daniel Reichman
-**Link:** https://arxiv.org/abs/2607.21517v1
-**Summary:** The paper addresses the problem of determining lower bounds for the Shannon capacity of odd cycles in graph theory, which indicates the maximum error-free information transmission rate over a noisy channel. The authors improved these bounds by constructing large independent sets within the strong powers of odd cycles using innovative methods, including interactions with a Large Language Model. Key results include establishing new lower bounds for the Shannon capacities of the 7-cycle, 11-cycle, and 13-cycle, surpassing previous records.
+### 5. PinEqualizer: Full Funnel Content Exploration and Debiasing System at Pinterest
+**Authors:** Olafur Gudmundsson, Bo Zhao, Huayi Liao, Anna Kiyantseva, Sai Xiao, Heath Vinicombe, Mostafa Keikha, Luke DeLuccia, Zihao Chen, Junpeng Hou, Weijie Jiang, Bhawna Juneja, Andreanne Lemay, Wei-Ting Lin, Keyvan Moghadam, Jiaxing Qu, Zhiqing Rao, Zhihua Zhang
+**Link:** https://arxiv.org/abs/2607.22518v1
+**Summary:** The paper addresses the cold-start problem in search and recommendation systems by introducing the PinEqualizer, a solution that improves content exploration and reduces bias towards established content. This system covers multiple stages of the user experience and allows for precise model predictions across various content types. Over two years of implementation at Pinterest, it has led to notable enhancements in user engagement and the health of the content ecosystem.
 
-### 6. Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems
-**Authors:** Gaurav Dadhich
-**Link:** https://arxiv.org/abs/2607.21503v1
-**Summary:** The paper addresses the problem of AI agents struggling to manage their reasoning context, leading to inefficient memory use and increasing operational costs in conversations. It introduces a comprehensive framework called Agentic Context Management (ACM), which encompasses strategies for effectively managing information over an agent's lifecycle, including remembering, structuring, and consolidating context. The approach shows significant improvements, achieving high evaluation scores on context management benchmarks while maintaining operational efficiency.
+### 6. Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support
+**Authors:** Peiyong Wang, Udaya Parampalli, Casey R. Myers
+**Link:** https://arxiv.org/abs/2607.22516v1
+**Summary:** The paper introduces Quantum Spectral Models (QSMs) to enhance quantum machine learning by directly constructing data-encoding unitaries from matrix-valued inputs, thereby leveraging spectral representations. By evaluating different QSM variants on tasks involving matrix data, the study finds that these models generally outperform other quantum models, with variations excelling in specific tasks. This research underscores the importance of aligning model design with input structure, providing valuable insights for future advancements in quantum machine learning.
 
-### 7. Artificial Epanorthosis: Why large language models overuse a classical rhetorical figure, and how to mitigate it
-**Authors:** Federico Boggia
-**Link:** https://arxiv.org/abs/2607.21498v1
-**Summary:** The paper addresses the issue of large language models excessively using the rhetorical figure of epanorthosis, or self-correction, which can diminish the quality of generated text. It proposes an assessment method called the Epanorthosis Index to measure this tendency relative to human writing across different genres and demonstrates that targeted instruction and lightweight fine-tuning techniques can significantly reduce its prevalence. The key finding suggests that rather than eliminating epanorthosis completely, the goal should be to align its usage with human norms specific to each genre.
+### 7. Dysphagia Risk Stratification in Head and Neck Cancer via Two-Stage PRO-Clinical Stacking
+**Authors:** Siyuan Zhao, Eric Ababio Anyimadu, Zachary G. Brumm, Yue Ma, Clifton David Fuller, Xinhua Zhang, G. Elisabeta Marai, Guadalupe Canahuate
+**Link:** https://arxiv.org/abs/2607.22514v1
+**Summary:** This study addresses the challenge of identifying head and neck cancer survivors who are at risk for swallowing difficulties (dysphagia) without needing complex imaging technologies. The authors developed a novel two-stage stacking model that integrates patient-reported outcomes and clinical variables to predict dysphagia risk in a straightforward and interpretable way. Their results highlight that specific patient-reported symptoms provide valuable predictive insights, paving the way for a more accessible and effective dysphagia risk assessment approach in clinical settings.
 
-### 8. Toward Generalizable Cognitive Impairment Detection with Speech-Based Multimodal Large Language Models
-**Authors:** Yingchao Huang, Xin Wang, Yuhan Su, Shanshan Yao
-**Link:** https://arxiv.org/abs/2607.21496v1
-**Summary:** The paper addresses the challenge of detecting cognitive impairment (CI) through a non-invasive method using speech analysis. It presents a multimodal framework that combines acoustic and textual features from speech data using large language models to improve detection accuracy. The proposed approach achieves a CI classification accuracy of 92.4%, outperforming traditional single-modality methods and marking a significant advancement in the ability to identify cognitive decline across different datasets.
+### 8. Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
+**Authors:** Davide Scarso, Hugo Noronha de Almeida, Joaquim Pina
+**Link:** https://arxiv.org/abs/2607.22513v1
+**Summary:** The paper addresses the issue of how large language models (LLMs) assess controversial scientific claims, particularly pseudo-scientific assertions linked to ethnonationalism. By testing different LLMs (Claude, Grok, GPT, Gemini) across various configurations and interfaces, the authors found significant discrepancies in how these models rated the credibility of pseudo-scientific content, with Grok showing notably higher scores. The results highlight that the validation of scientific claims by LLMs is not consistent and can be heavily influenced by deployment settings, pointing to the need for better transparency and accountability in their use.
 
-### 9. Toward Continuous Assurance for the Democratization of AI Agent Creation in Industry
-**Authors:** Natan Levy, Harel Berger
-**Link:** https://arxiv.org/abs/2607.21495v1
-**Summary:** This paper addresses the reliability issues that arise when non-engineering users create AI agents within organizations using low-code and no-code tools, as these agents can degrade in performance due to various dependencies. The authors propose a lightweight continuous-assurance framework that includes measures like dependency mapping and scheduled checks to ensure these agents remain operationally ready. They also present a prototype auditor demonstrating how their framework can be effectively implemented for practical assessments and remediation.
+### 9. CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference
+**Authors:** Jiyuan Tan, Vasilis Syrgkanis
+**Link:** https://arxiv.org/abs/2607.22511v1
+**Summary:** CausalForge addresses the challenge of automating theoretical research in causal inference by improving the reliability of result evaluation beyond what current large language model reviewers provide. It integrates a foundational proof assistant with a self-improving system that autonomously selects research topics, proposes formal results, constructs proofs, and audits their alignment with intended scientific claims. The key contribution is the establishment of a robust framework that leverages machine-checked proofs and statement audits to enhance the credibility and accuracy of automated research outputs.
 
-### 10. What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations
-**Authors:** Piotr Wilam
-**Link:** https://arxiv.org/abs/2607.21491v1
-**Summary:** This paper investigates whether independently trained code language models represent programming concepts similarly, focusing on Python and Rust. By employing a concept-circuit extraction method with two different models, Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B, the study reveals that while models agree on which concepts deserve dedicated circuits, their internal organization and processing layers differ significantly. Key findings indicate that code constructs in Rust receive more specialized circuitry than those in Python and show that the shared neurons between the two languages vary across models, highlighting the nuanced relationship between task, language, and model architecture in code representation.
+### 10. Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes
+**Authors:** Athanasios Papastathopoulos-Katsaros, Steven T. Lee, Lin Yao, Ajay Thomas, Junseok Park, Matthew J. McGinley, Zhandong Liu
+**Link:** https://arxiv.org/abs/2607.22508v1
+**Summary:** The paper addresses the challenge of interpreting EEG data for diagnosing neurological conditions, which typically relies on predefined features or complex deep learning models that require large datasets. The authors propose a method called "bag-of-waves," which learns a small set of EEG waveform templates using an unsupervised approach, allowing for the analysis of EEG signals through simpler classifiers. Key results show that this method not only competes with state-of-the-art deep learning models in performance across various datasets but also provides high interpretability by linking identified waveforms to clinically relevant morphologies, making it particularly effective in low-data scenarios.
