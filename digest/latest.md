@@ -1,52 +1,52 @@
 ---
-## 2026-07-27
+## 2026-07-28
 
-### 1. SM4RT: Learning Structured Motion Geometry for 4D Reconstruction
-**Authors:** Shing Ho J. Lin, Wenzhao Zheng, Dong Zhuo, Yuqi Wu, Jie Zhou, Jiwen Lu
-**Link:** https://arxiv.org/abs/2607.22534v1
-**Summary:** The paper presents SM4RT, a model designed to enhance 4D reconstruction by incorporating structured motion geometry, addressing the challenge of understanding dynamic scenes from monocular video. Instead of treating motion as isolated point-wise displacements, SM4RT recognizes that objects typically move collectively according to rigid-body dynamics, and it models this using a framework that captures scene dynamics through a compact set of motion bases. The approach enables accurate reconstruction of both 3D geometry and motion together, yielding strong performance in dynamic scene analysis.
+### 1. ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding
+**Authors:** Hangjie Yuan, Yichen Qian, Zhiwei Tang, Xianzhe Xu, Lirong Wu, Sicheng Yang, Jinwang Wang, Pengju Wang, Zhitao Zeng, Yizeng Han, Yan Xing, Shengxuan Luo, Tao Feng, Qing Xie, Weigen Yao, Yi Yang, Zuozhu Liu, Jiasheng Tang, Shaocheng Wang, Jitao Wang, Jiahong Dong, Weihua Chen, Feng Xu, Fan Wang
+**Link:** https://arxiv.org/abs/2607.24743v1
+**Summary:** ClinFusion addresses the challenge of integrating and understanding various 2D and 3D medical images in clinical practice using a vision-centric multimodal large language model (MLLM). It employs a novel architecture to effectively fuse different medical image types and introduces a new evaluation framework that aligns with clinical standards. The model outperforms existing open-source and proprietary MLLMs across multiple benchmarks and receives strong validation from radiologists for producing high-quality reports.
 
-### 2. Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills
-**Authors:** Siyuan Huang, Pengyu Cheng, Haotian Liu, Tao Chen, Yihao Liu, Jingwei Ni, Shijie Zhou, Ziyi Yang, Gangwei Jiang, Mengyu Zhou, Yu Cheng, Xiaoxi Jiang, Guanjun Jiang
-**Link:** https://arxiv.org/abs/2607.22529v1
-**Summary:** The paper addresses the challenge of balancing task diversity and reliable feedback in training large language models (LLMs) by introducing a framework called Skill Self-Play (Skill-SP). This method employs a co-evolutionary process involving a task proposer, a solution solver, and a skill controller, which together facilitate an interactive training loop that expands the model's skill set while ensuring reliable execution. The key finding is that Skill-SP significantly enhances the performance of LLMs, even improving models that initially struggle, thereby pushing the boundaries of their capabilities.
+### 2. Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport
+**Authors:** Xinyang Wen
+**Link:** https://arxiv.org/abs/2607.24741v1
+**Summary:** The paper addresses the inefficiencies of traditional sequential methods in solving dynamic entropic optimal transport problems, specifically in applications like Flow Matching. The authors introduce TemporalSinkhorn, a parallel-in-time approach that batches candidate solutions and effectively manages updates to maintain accuracy. Key results show significant performance improvements, with speedups of up to 3.632 times faster than traditional methods, while ensuring no tolerance violations in output accuracy.
 
-### 3. Explainable Reinforcement Learning for assisting Air Traffic Controllers
-**Authors:** Anduel Mehmeti, Gabriella Gigante, Salvatore Venticinque
-**Link:** https://arxiv.org/abs/2607.22525v1
-**Summary:** The paper addresses the challenge of building trust in AI systems used in critical environments like Air Traffic Control by enhancing the explainability of reinforcement learning algorithms. It employs a saliency map technique to reveal which input features most influence the AI agent's decisions regarding flight routing in a simplified ATC environment. This approach aims to facilitate better human-AI collaboration by making the AI's decision-making process more transparent.
+### 3. Learning Distributions from Multiple Data Providers
+**Authors:** Jon Kleinberg, Amin Saberi, Xizhi Tan, Grigoris Velegkas
+**Link:** https://arxiv.org/abs/2607.24732v1
+**Summary:** The paper addresses the challenge of learning an unknown distribution from diverse datasets provided by different sources, which offer samples conditioned on specific subsets. The authors analyze how the structure of these subsets affects the learning process and demonstrate that while complete interaction between sets leads to higher sample complexity, certain structural properties can significantly reduce it. A key contribution includes identifying conditions under which optimal sample complexity can be achieved, ranging from nearly linear to quadratic, and providing a method to attain a smooth range of complexities depending on the configuration of the data.
 
-### 4. The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents
-**Authors:** Darshan Tank, Baran Nama
-**Link:** https://arxiv.org/abs/2607.22520v1
-**Summary:** The paper addresses the issue of how adding procedural skills to large language model (LLM) agents can sometimes lead to worse performance, despite average improvements in task success. The authors conducted a comprehensive analysis of nearly 6,000 agent runs across various benchmarks to differentiate between tasks that regress (fail after skills are added) and those that consistently fail. They found that regressions are significant and often arise from factors like skill context influence and improper grounding, suggesting that evaluating skills should focus on both enhancements and regressions to better understand their true impact on performance.
+### 4. Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+**Authors:** Bingnan Li, Haozhe Wang, Haozhong Xiong, Fangtai Wu, Jinpeng Yu, Yang Shi, Jiaming Liu, Ruihua Huang
+**Link:** https://arxiv.org/abs/2607.24731v1
+**Summary:** This paper addresses the challenges of applying classifier-free guidance (CFG) in on-policy distillation (OPD) of diffusion models, particularly when errors between predicted outcomes aren’t well identified. The authors identify a problem called Negative Branch Asymmetry (NBA), where guidance misalignment increases errors. They propose a new method called Positive-Direction Matching (PDM), which improves error handling by separately constraining the positive predictions, resulting in more effective and robust knowledge transfer in tasks like video control.
 
-### 5. PinEqualizer: Full Funnel Content Exploration and Debiasing System at Pinterest
-**Authors:** Olafur Gudmundsson, Bo Zhao, Huayi Liao, Anna Kiyantseva, Sai Xiao, Heath Vinicombe, Mostafa Keikha, Luke DeLuccia, Zihao Chen, Junpeng Hou, Weijie Jiang, Bhawna Juneja, Andreanne Lemay, Wei-Ting Lin, Keyvan Moghadam, Jiaxing Qu, Zhiqing Rao, Zhihua Zhang
-**Link:** https://arxiv.org/abs/2607.22518v1
-**Summary:** The paper addresses the cold-start problem in search and recommendation systems by introducing the PinEqualizer, a solution that improves content exploration and reduces bias towards established content. This system covers multiple stages of the user experience and allows for precise model predictions across various content types. Over two years of implementation at Pinterest, it has led to notable enhancements in user engagement and the health of the content ecosystem.
+### 5. KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability
+**Authors:** Krithi Shailya, Ananya Lakshmi Ravi, Venkatanathan K. V., Sowmya S. Sundaram, Gokul S. Krishnan, Aditi Anand, Balaraman Ravindran
+**Link:** https://arxiv.org/abs/2607.24730v1
+**Summary:** The paper addresses the issue of trust in medical AI systems, specifically chest X-ray classifiers, which often lack interpretability. To enhance explainability, the authors introduce KANEx, a framework that utilizes Kolmogorov-Arnold Networks to create transparent, interpretable models and generate more reliable natural-language explanations through Vision-Language Models. The results show that this approach improves the quality of visual attributions and reasoning in medical contexts, leading to a 10% enhancement in performance over traditional methods.
 
-### 6. Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support
-**Authors:** Peiyong Wang, Udaya Parampalli, Casey R. Myers
-**Link:** https://arxiv.org/abs/2607.22516v1
-**Summary:** The paper introduces Quantum Spectral Models (QSMs) to enhance quantum machine learning by directly constructing data-encoding unitaries from matrix-valued inputs, thereby leveraging spectral representations. By evaluating different QSM variants on tasks involving matrix data, the study finds that these models generally outperform other quantum models, with variations excelling in specific tasks. This research underscores the importance of aligning model design with input structure, providing valuable insights for future advancements in quantum machine learning.
+### 6. Global Convergence of DGM and PINN Algorithms for Solving Nonlinear PDEs
+**Authors:** Justin Sirignano, Konstantinos Spiliopoulos, Samuel Cohen
+**Link:** https://arxiv.org/abs/2607.24726v1
+**Summary:** This paper addresses the challenge of ensuring that neural networks used to solve nonlinear partial differential equations (PDEs) through the Deep Galerkin Method (DGM) and Physics Informed Neural Networks (PINNs) can reliably converge to the actual PDE solutions, rather than just local minima. The authors prove that, for a specific class of semi-linear PDEs, training these neural networks with gradient descent to minimize the PDE residual will indeed lead to convergence to the true solution. This establishes a crucial mathematical foundation for the use of these methods in scientific machine learning.
 
-### 7. Dysphagia Risk Stratification in Head and Neck Cancer via Two-Stage PRO-Clinical Stacking
-**Authors:** Siyuan Zhao, Eric Ababio Anyimadu, Zachary G. Brumm, Yue Ma, Clifton David Fuller, Xinhua Zhang, G. Elisabeta Marai, Guadalupe Canahuate
-**Link:** https://arxiv.org/abs/2607.22514v1
-**Summary:** This study addresses the challenge of identifying head and neck cancer survivors who are at risk for swallowing difficulties (dysphagia) without needing complex imaging technologies. The authors developed a novel two-stage stacking model that integrates patient-reported outcomes and clinical variables to predict dysphagia risk in a straightforward and interpretable way. Their results highlight that specific patient-reported symptoms provide valuable predictive insights, paving the way for a more accessible and effective dysphagia risk assessment approach in clinical settings.
+### 7. The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation
+**Authors:** Tianyi Men, Zhuoran Jin, Kang Liu, Jun Zhao
+**Link:** https://arxiv.org/abs/2607.24720v1
+**Summary:** The paper addresses the challenge of improving multi-turn long-horizon planning in foundation model agents by creating a controlled environment that systematically studies planning across three stages: acquisition, shaping, and integration. The authors find that training with a constructed world model and utilizing multi-teacher on-policy distillation can enhance planning abilities, highlighting the importance of data quality and the effective integration of learned patterns for generalization across different tasks. Their results indicate that better planning requires careful management of training trajectories and the interplay between various planning strategies.
 
-### 8. Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science
-**Authors:** Davide Scarso, Hugo Noronha de Almeida, Joaquim Pina
-**Link:** https://arxiv.org/abs/2607.22513v1
-**Summary:** The paper addresses the issue of how large language models (LLMs) assess controversial scientific claims, particularly pseudo-scientific assertions linked to ethnonationalism. By testing different LLMs (Claude, Grok, GPT, Gemini) across various configurations and interfaces, the authors found significant discrepancies in how these models rated the credibility of pseudo-scientific content, with Grok showing notably higher scores. The results highlight that the validation of scientific claims by LLMs is not consistent and can be heavily influenced by deployment settings, pointing to the need for better transparency and accountability in their use.
+### 8. DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data
+**Authors:** Zhen Huang, Yikun Wang, Shijie Xia, Pengfei Liu
+**Link:** https://arxiv.org/abs/2607.24717v1
+**Summary:** The paper presents DataOrchestra, a framework designed to enhance the pretraining of Large Language Models (LLMs) by customizing data processing for each individual example rather than applying a one-size-fits-all strategy. By intelligently deciding whether to drop, retain, or clean data chunks and tailoring the cleaning methods to specific needs, DataOrchestra improves model performance across multiple benchmarks while also reducing processing costs. The results show consistent gains over traditional data processing methods, demonstrating its effectiveness even in specialized tasks like math continued pretraining.
 
-### 9. CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference
-**Authors:** Jiyuan Tan, Vasilis Syrgkanis
-**Link:** https://arxiv.org/abs/2607.22511v1
-**Summary:** CausalForge addresses the challenge of automating theoretical research in causal inference by improving the reliability of result evaluation beyond what current large language model reviewers provide. It integrates a foundational proof assistant with a self-improving system that autonomously selects research topics, proposes formal results, constructs proofs, and audits their alignment with intended scientific claims. The key contribution is the establishment of a robust framework that leverages machine-checked proofs and statement audits to enhance the credibility and accuracy of automated research outputs.
+### 9. Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures
+**Authors:** Fabian Kreppel, Reza Salkhordeh, Ferdinand Schmidt-Kaler, André Brinkmann
+**Link:** https://arxiv.org/abs/2607.24714v1
+**Summary:** The paper addresses the challenge of creating efficient shuttling compilers for trapped-ion quantum computers, which manage the movement of ion-qubits based on given algorithms. The authors utilized the Claude Opus 4.7 large language model (LLM) to automatically generate and refine Python code for these compilers, resulting in significant reductions in shuttling timesteps—up to 76% for simpler architectures—without requiring extensive manual coding. The study demonstrates that LLMs can effectively streamline the development of quantum compilers, drastically shortening the time needed to adapt to new architectures.
 
-### 10. Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes
-**Authors:** Athanasios Papastathopoulos-Katsaros, Steven T. Lee, Lin Yao, Ajay Thomas, Junseok Park, Matthew J. McGinley, Zhandong Liu
-**Link:** https://arxiv.org/abs/2607.22508v1
-**Summary:** The paper addresses the challenge of interpreting EEG data for diagnosing neurological conditions, which typically relies on predefined features or complex deep learning models that require large datasets. The authors propose a method called "bag-of-waves," which learns a small set of EEG waveform templates using an unsupervised approach, allowing for the analysis of EEG signals through simpler classifiers. Key results show that this method not only competes with state-of-the-art deep learning models in performance across various datasets but also provides high interpretability by linking identified waveforms to clinically relevant morphologies, making it particularly effective in low-data scenarios.
+### 10. ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams
+**Authors:** Ali Ansari, Yasmin Mohammadi, Farnoush Nili, Parsa Esmaeilkhani, Longin Jan Latecki, Eduard Dragut
+**Link:** https://arxiv.org/abs/2607.24707v1
+**Summary:** The paper introduces ERUnderstand, a benchmark designed to enhance AI's ability to understand Entity-Relationship Diagrams (ERDs), which are important for database design but often found in non-machine-readable formats. By compiling a dataset of 2,960 ER diagrams and evaluating state-of-the-art Vision-Language Models (VLMs), the authors discover that while these models can accurately identify common schema elements, their performance significantly declines on more complex features. The benchmark, along with the dataset and evaluation tools, is made publicly available to facilitate further research in this area.
