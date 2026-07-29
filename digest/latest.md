@@ -1,52 +1,52 @@
 ---
-## 2026-07-28
+## 2026-07-29
 
-### 1. ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding
-**Authors:** Hangjie Yuan, Yichen Qian, Zhiwei Tang, Xianzhe Xu, Lirong Wu, Sicheng Yang, Jinwang Wang, Pengju Wang, Zhitao Zeng, Yizeng Han, Yan Xing, Shengxuan Luo, Tao Feng, Qing Xie, Weigen Yao, Yi Yang, Zuozhu Liu, Jiasheng Tang, Shaocheng Wang, Jitao Wang, Jiahong Dong, Weihua Chen, Feng Xu, Fan Wang
-**Link:** https://arxiv.org/abs/2607.24743v1
-**Summary:** ClinFusion addresses the challenge of integrating and understanding various 2D and 3D medical images in clinical practice using a vision-centric multimodal large language model (MLLM). It employs a novel architecture to effectively fuse different medical image types and introduces a new evaluation framework that aligns with clinical standards. The model outperforms existing open-source and proprietary MLLMs across multiple benchmarks and receives strong validation from radiologists for producing high-quality reports.
+### 1. Pass the Baton: Trajectory-Relayed On-Policy Distillation
+**Authors:** Haolei Xu, Xiaowen Xu, Haiwen Hong, Zixuan Ni, Hongxing Li, Yiwen Qiu, Weiming Lu, Yongliang Shen
+**Link:** https://arxiv.org/abs/2607.26057v1
+**Summary:** The paper addresses the issue of "prefix failure" in on-policy distillation, where a student's incorrect reasoning leads to unreliable outputs during training. The authors propose a method called Relay On-Policy Distillation (Relay-OPD), which allows the teacher model to briefly intervene and correct the student's path at critical points in their trajectory. This approach significantly improves performance on mathematical reasoning tasks, achieving an average increase of 5.73% over standard methods, while also reducing training trajectory length by over 50%.
 
-### 2. Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport
-**Authors:** Xinyang Wen
-**Link:** https://arxiv.org/abs/2607.24741v1
-**Summary:** The paper addresses the inefficiencies of traditional sequential methods in solving dynamic entropic optimal transport problems, specifically in applications like Flow Matching. The authors introduce TemporalSinkhorn, a parallel-in-time approach that batches candidate solutions and effectively manages updates to maintain accuracy. Key results show significant performance improvements, with speedups of up to 3.632 times faster than traditional methods, while ensuring no tolerance violations in output accuracy.
+### 2. $π\mathbf{R}^2$: Reactive Real-time Flow Policies
+**Authors:** Sungjae Park, Shubham Tulsiani
+**Link:** https://arxiv.org/abs/2607.26055v1
+**Summary:** The paper presents $π\mathbf{R}^2$, a novel approach to enhance the reactivity of generalist manipulation policies that typically rely on slow, open-loop action-chunking methods, making them less effective in dynamic control situations. By utilizing a dual-channel conditioning system and a latency-adaptive flow schedule, $π\mathbf{R}^2$ enables these policies to respond to real-time proprioceptive inputs while managing vision data efficiently, resulting in a significant speed improvement in replanning. The method demonstrates substantial performance gains, achieving up to a 30% increase in success rates for manipulation tasks in real-world applications compared to existing baselines.
 
-### 3. Learning Distributions from Multiple Data Providers
-**Authors:** Jon Kleinberg, Amin Saberi, Xizhi Tan, Grigoris Velegkas
-**Link:** https://arxiv.org/abs/2607.24732v1
-**Summary:** The paper addresses the challenge of learning an unknown distribution from diverse datasets provided by different sources, which offer samples conditioned on specific subsets. The authors analyze how the structure of these subsets affects the learning process and demonstrate that while complete interaction between sets leads to higher sample complexity, certain structural properties can significantly reduce it. A key contribution includes identifying conditions under which optimal sample complexity can be achieved, ranging from nearly linear to quadratic, and providing a method to attain a smooth range of complexities depending on the configuration of the data.
+### 3. Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA
+**Authors:** Tom Saliencro, Rohan Desai, Priya Nair, Maya Lindqvist, Daniel Whitmore
+**Link:** https://arxiv.org/abs/2607.26052v1
+**Summary:** The paper addresses the inefficiency of Mixture-of-Experts (MoE) models that use a fixed number of experts to process tokens, leading to overuse for simple tokens and underuse for complex ones. The authors propose CARE (Confidence-Adaptive Routing of Experts), which dynamically adjusts the number of experts based on the model's confidence in the tokens and their potential disagreement, allowing for more effective allocation of resources. This approach outperforms traditional fixed-expert methods in several benchmarks, achieving similar results while activating fewer experts and enhancing out-of-distribution detection.
 
-### 4. Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
-**Authors:** Bingnan Li, Haozhe Wang, Haozhong Xiong, Fangtai Wu, Jinpeng Yu, Yang Shi, Jiaming Liu, Ruihua Huang
-**Link:** https://arxiv.org/abs/2607.24731v1
-**Summary:** This paper addresses the challenges of applying classifier-free guidance (CFG) in on-policy distillation (OPD) of diffusion models, particularly when errors between predicted outcomes aren’t well identified. The authors identify a problem called Negative Branch Asymmetry (NBA), where guidance misalignment increases errors. They propose a new method called Positive-Direction Matching (PDM), which improves error handling by separately constraining the positive predictions, resulting in more effective and robust knowledge transfer in tasks like video control.
+### 4. Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis
+**Authors:** Adarsh Bhandary Panambur, Siming Bayer, Andreas Maier
+**Link:** https://arxiv.org/abs/2607.26043v1
+**Summary:** The paper addresses the challenge of improving mammography classification performance by proposing a new framework called Dataset-Informed Transfer Learning (DITL), which combines dataset-specific difficulty signals with neighborhood-aware supervision. DITL features two adaptive components that enhance learning without the need for meticulous hyperparameter tuning. The key result shows that DITL achieves state-of-the-art performance on a large dataset for breast density classification and significantly improves results on smaller datasets, making it a robust solution for breast cancer screening and diagnosis.
 
-### 5. KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability
-**Authors:** Krithi Shailya, Ananya Lakshmi Ravi, Venkatanathan K. V., Sowmya S. Sundaram, Gokul S. Krishnan, Aditi Anand, Balaraman Ravindran
-**Link:** https://arxiv.org/abs/2607.24730v1
-**Summary:** The paper addresses the issue of trust in medical AI systems, specifically chest X-ray classifiers, which often lack interpretability. To enhance explainability, the authors introduce KANEx, a framework that utilizes Kolmogorov-Arnold Networks to create transparent, interpretable models and generate more reliable natural-language explanations through Vision-Language Models. The results show that this approach improves the quality of visual attributions and reasoning in medical contexts, leading to a 10% enhancement in performance over traditional methods.
+### 5. VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening
+**Authors:** Syed Mhamudul Hasan, Anas AlSobeh, Hussein Zangoti, Abdur R. Shahid
+**Link:** https://arxiv.org/abs/2607.26042v1
+**Summary:** VetClaw is a system designed to improve early veterinary disease screening by combining edge and cloud computing. It captures images of animals and symptom descriptions, sending them to a sophisticated model for disease classification. The key contribution is its ability to integrate visual evidence and user inputs into a responsive and safety-conscious workflow, significantly enhancing prediction accuracy compared to relying solely on images.
 
-### 6. Global Convergence of DGM and PINN Algorithms for Solving Nonlinear PDEs
-**Authors:** Justin Sirignano, Konstantinos Spiliopoulos, Samuel Cohen
-**Link:** https://arxiv.org/abs/2607.24726v1
-**Summary:** This paper addresses the challenge of ensuring that neural networks used to solve nonlinear partial differential equations (PDEs) through the Deep Galerkin Method (DGM) and Physics Informed Neural Networks (PINNs) can reliably converge to the actual PDE solutions, rather than just local minima. The authors prove that, for a specific class of semi-linear PDEs, training these neural networks with gradient descent to minimize the PDE residual will indeed lead to convergence to the true solution. This establishes a crucial mathematical foundation for the use of these methods in scientific machine learning.
+### 6. Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?
+**Authors:** Abhishek Pillai, Samir Kumar Nayak, Yuan Chen
+**Link:** https://arxiv.org/abs/2607.26041v1
+**Summary:** The paper addresses the challenge of evaluating how effectively computer-use agents (CUAs) can understand and track transitions in desktop graphical user interfaces (GUIs) when performing complex tasks. The authors present Desktop-Delta Bench (DDB), a benchmark consisting of over 2,000 human-verified instances that test CUAs on their ability to verify state changes and track actions across various applications. Key findings indicate that while models struggle with accurately recognizing transitions and actions, the introduction of context-aware tasks can improve performance, highlighting the need for better diagnostic assessment tools in CUA development.
 
-### 7. The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation
-**Authors:** Tianyi Men, Zhuoran Jin, Kang Liu, Jun Zhao
-**Link:** https://arxiv.org/abs/2607.24720v1
-**Summary:** The paper addresses the challenge of improving multi-turn long-horizon planning in foundation model agents by creating a controlled environment that systematically studies planning across three stages: acquisition, shaping, and integration. The authors find that training with a constructed world model and utilizing multi-teacher on-policy distillation can enhance planning abilities, highlighting the importance of data quality and the effective integration of learned patterns for generalization across different tasks. Their results indicate that better planning requires careful management of training trajectories and the interplay between various planning strategies.
+### 7. Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance
+**Authors:** Gaspard Lambrechts, Adrien Bolland, Daniel Ebi, Damien Ernst
+**Link:** https://arxiv.org/abs/2607.26040v1
+**Summary:** The paper addresses the challenge of improving reinforcement learning algorithms by incorporating additional guidance beyond standard rewards, particularly under both partial and full observability scenarios. The authors introduce a new algorithm called the Reinformed Dreamer, which employs a novel objective for learning representations using latent guidance, enhancing the learning process. Experimental results reveal that the Reinformed Dreamer consistently outperforms the original Dreamer algorithm and previous asymmetric approaches, demonstrating its effectiveness in training better representation models.
 
-### 8. DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data
-**Authors:** Zhen Huang, Yikun Wang, Shijie Xia, Pengfei Liu
-**Link:** https://arxiv.org/abs/2607.24717v1
-**Summary:** The paper presents DataOrchestra, a framework designed to enhance the pretraining of Large Language Models (LLMs) by customizing data processing for each individual example rather than applying a one-size-fits-all strategy. By intelligently deciding whether to drop, retain, or clean data chunks and tailoring the cleaning methods to specific needs, DataOrchestra improves model performance across multiple benchmarks while also reducing processing costs. The results show consistent gains over traditional data processing methods, demonstrating its effectiveness even in specialized tasks like math continued pretraining.
+### 8. Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment
+**Authors:** Elias Fernández Domingos, The Anh Han
+**Link:** https://arxiv.org/abs/2607.26034v1
+**Summary:** The paper investigates how competitive pressure in AI development may lead to riskier, less safe practices, which could harm progress. Through an experimental setup simulating an AI race, the authors found that decisions to engage in unsafe development are influenced more by opponents' choices and the dynamics of the race rather than individual risk preferences. The study suggests that policies should aim to decrease competitive pressure and encourage cooperation in AI development to mitigate these risks.
 
-### 9. Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures
-**Authors:** Fabian Kreppel, Reza Salkhordeh, Ferdinand Schmidt-Kaler, André Brinkmann
-**Link:** https://arxiv.org/abs/2607.24714v1
-**Summary:** The paper addresses the challenge of creating efficient shuttling compilers for trapped-ion quantum computers, which manage the movement of ion-qubits based on given algorithms. The authors utilized the Claude Opus 4.7 large language model (LLM) to automatically generate and refine Python code for these compilers, resulting in significant reductions in shuttling timesteps—up to 76% for simpler architectures—without requiring extensive manual coding. The study demonstrates that LLMs can effectively streamline the development of quantum compilers, drastically shortening the time needed to adapt to new architectures.
+### 9. CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer
+**Authors:** Ankang Yang, Jitao Zhao, Di Jin, Yuxiao Huang, Dongxiao He
+**Link:** https://arxiv.org/abs/2607.26023v1
+**Summary:** The paper introduces CHARM, a multimodal graph foundation model designed to enhance zero-shot transfer in graph domains by leveraging hierarchical context modeling to better capture multimodal semantics and cross-modal relations. By replacing isolated node features with hierarchical contexts that map specific node patterns to broader concepts, CHARM enables improved representation of graphs without the need for extensive target-domain adaptation. Experimental results demonstrate significant advancements in performance on various zero-shot multimodal graph tasks.
 
-### 10. ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams
-**Authors:** Ali Ansari, Yasmin Mohammadi, Farnoush Nili, Parsa Esmaeilkhani, Longin Jan Latecki, Eduard Dragut
-**Link:** https://arxiv.org/abs/2607.24707v1
-**Summary:** The paper introduces ERUnderstand, a benchmark designed to enhance AI's ability to understand Entity-Relationship Diagrams (ERDs), which are important for database design but often found in non-machine-readable formats. By compiling a dataset of 2,960 ER diagrams and evaluating state-of-the-art Vision-Language Models (VLMs), the authors discover that while these models can accurately identify common schema elements, their performance significantly declines on more complex features. The benchmark, along with the dataset and evaluation tools, is made publicly available to facilitate further research in this area.
+### 10. UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams
+**Authors:** Siyu Xia, Chenheng Zhang, Yanting Wu, Haoxuan Li, Jiajun Chai, Xiaohan Wang, Guojun Yin, Wei Lin, Zhouchen Lin, Haifeng Zhang, Jun Wang
+**Link:** https://arxiv.org/abs/2607.26017v1
+**Summary:** The paper addresses the challenge of enabling large language model (LLM) agents to effectively learn and adapt to diverse, ongoing task streams without rigid boundaries. The authors introduce UniMem, a memory management framework that combines episodic and parametric memory, using learnable routing tokens to facilitate flexible task handling and memory expansion. Their experiments demonstrate that UniMem significantly improves performance on long task sequences, achieving an average increase of 4.0 exact match points across three different models.
