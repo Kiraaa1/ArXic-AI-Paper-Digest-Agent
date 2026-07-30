@@ -1,52 +1,52 @@
 ---
-## 2026-07-29
+## 2026-07-30
 
-### 1. Pass the Baton: Trajectory-Relayed On-Policy Distillation
-**Authors:** Haolei Xu, Xiaowen Xu, Haiwen Hong, Zixuan Ni, Hongxing Li, Yiwen Qiu, Weiming Lu, Yongliang Shen
-**Link:** https://arxiv.org/abs/2607.26057v1
-**Summary:** The paper addresses the issue of "prefix failure" in on-policy distillation, where a student's incorrect reasoning leads to unreliable outputs during training. The authors propose a method called Relay On-Policy Distillation (Relay-OPD), which allows the teacher model to briefly intervene and correct the student's path at critical points in their trajectory. This approach significantly improves performance on mathematical reasoning tasks, achieving an average increase of 5.73% over standard methods, while also reducing training trajectory length by over 50%.
+### 1. Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?
+**Authors:** Perry Dong, Ron Polonsky, Dorsa Sadigh, Chelsea Fin
+**Link:** https://arxiv.org/abs/2607.27203v1
+**Summary:** The paper investigates whether pretraining Q-functions is beneficial for fine-tuning policies in value-based reinforcement learning (RL). The authors find that using a randomly-initialized Q-function often performs just as well as a pretrained one due to a mismatch in learning targets. They propose a new method called Initialization via Policy Ensemble (IPE), which leverages multiple diverse policies to enhance Q-function training during online fine-tuning, achieving a notable performance improvement in various continuous control tasks.
 
-### 2. $π\mathbf{R}^2$: Reactive Real-time Flow Policies
-**Authors:** Sungjae Park, Shubham Tulsiani
-**Link:** https://arxiv.org/abs/2607.26055v1
-**Summary:** The paper presents $π\mathbf{R}^2$, a novel approach to enhance the reactivity of generalist manipulation policies that typically rely on slow, open-loop action-chunking methods, making them less effective in dynamic control situations. By utilizing a dual-channel conditioning system and a latency-adaptive flow schedule, $π\mathbf{R}^2$ enables these policies to respond to real-time proprioceptive inputs while managing vision data efficiently, resulting in a significant speed improvement in replanning. The method demonstrates substantial performance gains, achieving up to a 30% increase in success rates for manipulation tasks in real-world applications compared to existing baselines.
+### 2. Mental World Modeling
+**Authors:** Hao Fei, Yiran Zhao
+**Link:** https://arxiv.org/abs/2607.27201v1
+**Summary:** The paper addresses the challenge of accurately predicting human behavior by integrating hidden mental states—such as beliefs and intentions—into world models, which traditionally focus only on physical aspects. The authors propose a new framework called Mental World Modeling (MWM) that explicitly incorporates these mental variables into a model, demonstrating its effectiveness through the MENTIS system, which analyzes decision-making scenarios using a dataset of various media types. The key finding is that modeling mental states significantly improves the prediction of human decisions compared to existing approaches that only consider physical contexts.
 
-### 3. Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA
-**Authors:** Tom Saliencro, Rohan Desai, Priya Nair, Maya Lindqvist, Daniel Whitmore
-**Link:** https://arxiv.org/abs/2607.26052v1
-**Summary:** The paper addresses the inefficiency of Mixture-of-Experts (MoE) models that use a fixed number of experts to process tokens, leading to overuse for simple tokens and underuse for complex ones. The authors propose CARE (Confidence-Adaptive Routing of Experts), which dynamically adjusts the number of experts based on the model's confidence in the tokens and their potential disagreement, allowing for more effective allocation of resources. This approach outperforms traditional fixed-expert methods in several benchmarks, achieving similar results while activating fewer experts and enhancing out-of-distribution detection.
+### 3. From Classification to Regression: Using a Fruitfly to Solve Equations
+**Authors:** Shady E. Ahmed, Panos Stinis
+**Link:** https://arxiv.org/abs/2607.27196v1
+**Summary:** This paper introduces a method for regression tasks that leverages classification techniques, inspired by how fruit flies perceive their surroundings. The authors propose a framework that learns nonlinear input-output relationships by using a finite set of representative local patterns, allowing for efficient predictions through similarity measurement and response aggregation. This approach not only reduces computational and memory demands but also provides flexibility in managing accuracy and inference costs, making it applicable to various data-driven and physics-informed learning scenarios.
 
-### 4. Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis
-**Authors:** Adarsh Bhandary Panambur, Siming Bayer, Andreas Maier
-**Link:** https://arxiv.org/abs/2607.26043v1
-**Summary:** The paper addresses the challenge of improving mammography classification performance by proposing a new framework called Dataset-Informed Transfer Learning (DITL), which combines dataset-specific difficulty signals with neighborhood-aware supervision. DITL features two adaptive components that enhance learning without the need for meticulous hyperparameter tuning. The key result shows that DITL achieves state-of-the-art performance on a large dataset for breast density classification and significantly improves results on smaller datasets, making it a robust solution for breast cancer screening and diagnosis.
+### 4. Can AI agents conduct open-ended AI research? Early evidence from two case studies
+**Authors:** Peter Kirgis, Sayash Kapoor, Andrew Schwartz, Stephan Rabanser, David Africa, Konstantinos Voudouris, Viet Nguyen, Toby Pilditch, Magda Dubois, Harry Coppock, Cozmin Ududec, Nitya Nadgir, Matilda Orona, Tilman Bayer, Derrick Chan-Sew, Yue Ling, Abhishek Shetty, Helen Toner, Gillian Hadfield, Seth Lazar, Steve Newman, Shoshannah Tekofsky, Rishi Bommasani, Arvind Narayanan
+**Link:** https://arxiv.org/abs/2607.27191v1
+**Summary:** The paper investigates whether AI agents can conduct open-ended AI research by automating the research process, specifically evaluating their performance on high-quality unpublished papers. Using a novel method called "shadow evaluations," the researchers assessed the output of AI agents against the original authors' criteria, revealing that while the agents successfully handled the engineering aspects, they failed to make significant progress on the research questions and were subsequently rejected. This highlights that current AI models can manage technical tasks but struggle with essential research elements, such as creativity and judgment.
 
-### 5. VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening
-**Authors:** Syed Mhamudul Hasan, Anas AlSobeh, Hussein Zangoti, Abdur R. Shahid
-**Link:** https://arxiv.org/abs/2607.26042v1
-**Summary:** VetClaw is a system designed to improve early veterinary disease screening by combining edge and cloud computing. It captures images of animals and symptom descriptions, sending them to a sophisticated model for disease classification. The key contribution is its ability to integrate visual evidence and user inputs into a responsive and safety-conscious workflow, significantly enhancing prediction accuracy compared to relying solely on images.
+### 5. APEX-Accounting
+**Authors:** Julien Benchek, Austin Bennett, Jasmin Kern, Ryan Stevens, Rene Sultan, Charis Ching, Hayley Popiel, Vaibhav Mittal, Felix Mercier, Brendan Foody, Bertie Vidgen
+**Link:** https://arxiv.org/abs/2607.27189v1
+**Summary:** APEX-Accounting is a benchmark designed to evaluate the performance of advanced AI models in performing accounting tasks like reconciliations and expense accruals. The benchmark, developed by Mercor and Ramp, includes a set of 160 tasks crafted by accounting experts, demonstrating that while models like Claude-Fable-5 achieve the highest scores, none successfully meet a substantial pass rate for real-world bookkeeping. Notably, the study reveals a paradox regarding token usage, where increased token budgets lead to higher scores overall, but paradoxically lower scores on certain tasks when models use more tokens within budget constraints.
 
-### 6. Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?
-**Authors:** Abhishek Pillai, Samir Kumar Nayak, Yuan Chen
-**Link:** https://arxiv.org/abs/2607.26041v1
-**Summary:** The paper addresses the challenge of evaluating how effectively computer-use agents (CUAs) can understand and track transitions in desktop graphical user interfaces (GUIs) when performing complex tasks. The authors present Desktop-Delta Bench (DDB), a benchmark consisting of over 2,000 human-verified instances that test CUAs on their ability to verify state changes and track actions across various applications. Key findings indicate that while models struggle with accurately recognizing transitions and actions, the introduction of context-aware tasks can improve performance, highlighting the need for better diagnostic assessment tools in CUA development.
+### 6. Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes
+**Authors:** Lennon J. Shikhman, Michael Galarnyk, Aadi Dash, Nicholas A. Welsh
+**Link:** https://arxiv.org/abs/2607.27188v1
+**Summary:** The paper addresses the challenge of accurately recovering latent risk-neutral densities from irregular option quotes, highlighting that good option prices do not necessarily yield accurate densities. It employs controlled synthetic benchmarks and real market data to compare different modeling approaches, finding that while a two-component lognormal mixture performs well overall, a DeepONet model shows significant improvements in error reduction for certain metrics. The study concludes that the performance of these models varies based on specific conditions, emphasizing the importance of target-dependent inductive biases in model selection.
 
-### 7. Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance
-**Authors:** Gaspard Lambrechts, Adrien Bolland, Daniel Ebi, Damien Ernst
-**Link:** https://arxiv.org/abs/2607.26040v1
-**Summary:** The paper addresses the challenge of improving reinforcement learning algorithms by incorporating additional guidance beyond standard rewards, particularly under both partial and full observability scenarios. The authors introduce a new algorithm called the Reinformed Dreamer, which employs a novel objective for learning representations using latent guidance, enhancing the learning process. Experimental results reveal that the Reinformed Dreamer consistently outperforms the original Dreamer algorithm and previous asymmetric approaches, demonstrating its effectiveness in training better representation models.
+### 7. Pangram 4 Technical Report
+**Authors:** Ben Glickenhaus, Katherine Thai, Jenna Russell, Elyas Masrour, Yue Han, Max Spero, Bradley Emi
+**Link:** https://arxiv.org/abs/2607.27183v1
+**Summary:** Pangram 4 is a new AI-text classification model designed to accurately distinguish between human and AI-generated text, addressing challenges in text classification such as identifying subtle edits and mixed authorship. Using deep learning techniques, it achieves outstanding accuracy with high AUROC scores while demonstrating increased robustness against adversarial attacks and better out-of-distribution generalization compared to its predecessor. The model sets a new benchmark for AI text detection across various settings and domains.
 
-### 8. Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment
-**Authors:** Elias Fernández Domingos, The Anh Han
-**Link:** https://arxiv.org/abs/2607.26034v1
-**Summary:** The paper investigates how competitive pressure in AI development may lead to riskier, less safe practices, which could harm progress. Through an experimental setup simulating an AI race, the authors found that decisions to engage in unsafe development are influenced more by opponents' choices and the dynamics of the race rather than individual risk preferences. The study suggests that policies should aim to decrease competitive pressure and encourage cooperation in AI development to mitigate these risks.
+### 8. The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making
+**Authors:** Nia Nixon, Jaeyoon Choi, Pedro Martins De Bastos, Mohammad Amin Samadi, Luise Mehner, Seehee Park, Spencer JaQuay
+**Link:** https://arxiv.org/abs/2607.27179v1
+**Summary:** This paper investigates how the presence of an AI teammate affects communication and dynamics among human team members during decision-making tasks. Using group communication analysis and surveys, the researchers found that while the AI was the most talkative member, it provided the least insightful contributions, which led to human teammates feeling less valued and less connected. The study highlights the immediate social costs of integrating AI in teams, suggesting that further research is needed to understand these dynamics in other contexts.
 
-### 9. CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer
-**Authors:** Ankang Yang, Jitao Zhao, Di Jin, Yuxiao Huang, Dongxiao He
-**Link:** https://arxiv.org/abs/2607.26023v1
-**Summary:** The paper introduces CHARM, a multimodal graph foundation model designed to enhance zero-shot transfer in graph domains by leveraging hierarchical context modeling to better capture multimodal semantics and cross-modal relations. By replacing isolated node features with hierarchical contexts that map specific node patterns to broader concepts, CHARM enables improved representation of graphs without the need for extensive target-domain adaptation. Experimental results demonstrate significant advancements in performance on various zero-shot multimodal graph tasks.
+### 9. DenseOn with the LateOn: Fully Open Dense and Late-Interaction Models for Multilingual, Long-Context, and Code Search
+**Authors:** Raphaël Sourty, Antoine Chaffin, Paulo Roberto Moura Junior, Amélie Chatelain
+**Link:** https://arxiv.org/abs/2607.27178v1
+**Summary:** The paper addresses the reproducibility gap in state-of-the-art retrieval models that often rely on closed training data by presenting an open recipe for training retrieval models, utilizing a large curated dataset to improve multilingual performance through a translate-train approach. The authors developed two models, DenseOn and LateOn, demonstrating that while the dense model excelled in English and supported languages, the late-interaction model offered better generalization to unseen languages. They also released all models, datasets, and training code to support further research and development.
 
-### 10. UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams
-**Authors:** Siyu Xia, Chenheng Zhang, Yanting Wu, Haoxuan Li, Jiajun Chai, Xiaohan Wang, Guojun Yin, Wei Lin, Zhouchen Lin, Haifeng Zhang, Jun Wang
-**Link:** https://arxiv.org/abs/2607.26017v1
-**Summary:** The paper addresses the challenge of enabling large language model (LLM) agents to effectively learn and adapt to diverse, ongoing task streams without rigid boundaries. The authors introduce UniMem, a memory management framework that combines episodic and parametric memory, using learnable routing tokens to facilitate flexible task handling and memory expansion. Their experiments demonstrate that UniMem significantly improves performance on long task sequences, achieving an average increase of 4.0 exact match points across three different models.
+### 10. Partner Capability Estimation for Task-Agnostic Adaptation in Ad-Hoc Teamwork
+**Authors:** Peter Tisnikar, Maja Swieczkowska, Benteng Ma, Gerard Canal, Matteo Leonetti
+**Link:** https://arxiv.org/abs/2607.27177v1
+**Summary:** The paper addresses the challenge of effective collaboration between autonomous agents and human partners whose abilities are often unknown and can vary across different tasks. The researchers developed an approach called CE-CM, which uses Bayesian methods to estimate the capabilities of partners in real-time without requiring prior training on specific tasks. Key findings show that this method significantly improves capability estimates and adaptability in dynamic human-AI teamwork environments, especially when accounting for diverse behaviors.
