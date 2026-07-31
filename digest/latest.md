@@ -1,52 +1,52 @@
 ---
-## 2026-07-30
+## 2026-07-31
 
-### 1. Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?
-**Authors:** Perry Dong, Ron Polonsky, Dorsa Sadigh, Chelsea Fin
-**Link:** https://arxiv.org/abs/2607.27203v1
-**Summary:** The paper investigates whether pretraining Q-functions is beneficial for fine-tuning policies in value-based reinforcement learning (RL). The authors find that using a randomly-initialized Q-function often performs just as well as a pretrained one due to a mismatch in learning targets. They propose a new method called Initialization via Policy Ensemble (IPE), which leverages multiple diverse policies to enhance Q-function training during online fine-tuning, achieving a notable performance improvement in various continuous control tasks.
+### 1. Learning to Trace Seiberg Dualities
+**Authors:** Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu
+**Link:** https://arxiv.org/abs/2607.28628v1
+**Summary:** The paper addresses the challenge of efficiently determining when two supersymmetric quiver gauge theories are dual, a process that can be mathematically complex. The authors apply machine learning techniques, particularly using transformers and multi-layer perceptrons, to trace Seiberg dualities, finding that these models outperform traditional deterministic algorithms for quivers with around ten nodes. Additionally, combining these networks with established pathfinding algorithms further enhances both the efficiency and accuracy of the duality search process.
 
-### 2. Mental World Modeling
-**Authors:** Hao Fei, Yiran Zhao
-**Link:** https://arxiv.org/abs/2607.27201v1
-**Summary:** The paper addresses the challenge of accurately predicting human behavior by integrating hidden mental states—such as beliefs and intentions—into world models, which traditionally focus only on physical aspects. The authors propose a new framework called Mental World Modeling (MWM) that explicitly incorporates these mental variables into a model, demonstrating its effectiveness through the MENTIS system, which analyzes decision-making scenarios using a dataset of various media types. The key finding is that modeling mental states significantly improves the prediction of human decisions compared to existing approaches that only consider physical contexts.
+### 2. ReToken: One Token to Improve Vision-Language Models for Visual Retrieval
+**Authors:** Yao Xiao, Reuben Tan, Zhen Zhu, Yuqun Wu, Jianfeng Gao, Derek Hoiem
+**Link:** https://arxiv.org/abs/2607.28627v1
+**Summary:** The paper addresses the challenge of visual retrieval in vision-language models, where performance deteriorates as the number of distracting visual elements increases. The authors introduce ReToken, a single learnable embedding that selectively retrieves relevant visual tokens from a cache, leading to significant performance improvements on image and video benchmarks. Their approach achieves notable gains, such as a 13.4-point increase for the Qwen3VL-8B model on Visual Haystacks, while maintaining efficiency that allows both training and inference on a single high-end GPU.
 
-### 3. From Classification to Regression: Using a Fruitfly to Solve Equations
-**Authors:** Shady E. Ahmed, Panos Stinis
-**Link:** https://arxiv.org/abs/2607.27196v1
-**Summary:** This paper introduces a method for regression tasks that leverages classification techniques, inspired by how fruit flies perceive their surroundings. The authors propose a framework that learns nonlinear input-output relationships by using a finite set of representative local patterns, allowing for efficient predictions through similarity measurement and response aggregation. This approach not only reduces computational and memory demands but also provides flexibility in managing accuracy and inference costs, making it applicable to various data-driven and physics-informed learning scenarios.
+### 3. PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball
+**Authors:** Lizhi Yang, Junheng Li, Aaron D. Ames
+**Link:** https://arxiv.org/abs/2607.28623v1
+**Summary:** The paper introduces PAC-MAN, a framework that enables humanoid robots to safely dodge balls during a game of dodgeball using perception-aware control techniques. By integrating control barriers with realistic onboard sensing from a camera, the robot learns to avoid incoming balls effectively, achieving a 95% success rate in real-world tests. The study demonstrates that the robot's performance relies heavily on the quality of its perception, highlighting the advantages of different barrier structures under varying observational conditions.
 
-### 4. Can AI agents conduct open-ended AI research? Early evidence from two case studies
-**Authors:** Peter Kirgis, Sayash Kapoor, Andrew Schwartz, Stephan Rabanser, David Africa, Konstantinos Voudouris, Viet Nguyen, Toby Pilditch, Magda Dubois, Harry Coppock, Cozmin Ududec, Nitya Nadgir, Matilda Orona, Tilman Bayer, Derrick Chan-Sew, Yue Ling, Abhishek Shetty, Helen Toner, Gillian Hadfield, Seth Lazar, Steve Newman, Shoshannah Tekofsky, Rishi Bommasani, Arvind Narayanan
-**Link:** https://arxiv.org/abs/2607.27191v1
-**Summary:** The paper investigates whether AI agents can conduct open-ended AI research by automating the research process, specifically evaluating their performance on high-quality unpublished papers. Using a novel method called "shadow evaluations," the researchers assessed the output of AI agents against the original authors' criteria, revealing that while the agents successfully handled the engineering aspects, they failed to make significant progress on the research questions and were subsequently rejected. This highlights that current AI models can manage technical tasks but struggle with essential research elements, such as creativity and judgment.
+### 4. AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis
+**Authors:** Bing Yan, Gregory Wolfe, Stefano Martiniani, Kyunghyun Cho
+**Link:** https://arxiv.org/abs/2607.28618v1
+**Summary:** The paper presents AskChem, a novel infrastructure designed to improve the synthesis of chemistry literature by allowing researchers to efficiently find and connect specific claims from a vast array of publications, rather than just entire documents. AskChem organizes findings into atomic claims with clear provenance, enabling better search and synthesis through features like a faceted taxonomy and an evidence graph. The system has indexed over 2.4 million claims and demonstrates significant improvements in retrieval effectiveness, achieving 100% resolvable DOIs when used with a GPT-5.5 reader, compared to 88.3% without it.
 
-### 5. APEX-Accounting
-**Authors:** Julien Benchek, Austin Bennett, Jasmin Kern, Ryan Stevens, Rene Sultan, Charis Ching, Hayley Popiel, Vaibhav Mittal, Felix Mercier, Brendan Foody, Bertie Vidgen
-**Link:** https://arxiv.org/abs/2607.27189v1
-**Summary:** APEX-Accounting is a benchmark designed to evaluate the performance of advanced AI models in performing accounting tasks like reconciliations and expense accruals. The benchmark, developed by Mercor and Ramp, includes a set of 160 tasks crafted by accounting experts, demonstrating that while models like Claude-Fable-5 achieve the highest scores, none successfully meet a substantial pass rate for real-world bookkeeping. Notably, the study reveals a paradox regarding token usage, where increased token budgets lead to higher scores overall, but paradoxically lower scores on certain tasks when models use more tokens within budget constraints.
+### 5. AISPA: User-Centric System Prompt Auditing for Large Language Model Applications
+**Authors:** Xiangning Lin, Shenzhe Zhu, Shu Yang, Zhenyu Zhang, Haoqian Zhang, Yipeng Zhao, Chengxuan Qian, Tianwei Wang, Ziheng Zhang, Zhenlong Yuan, Dingcheng Wang, Juncheng Wu, Yuan Si, Jiaxin Liu, Baolong Bi, Robert Mahari, Tobin South, Dazza Greenwood, Zexue He, Rishi Bommasani, Sophia Kazinnik, Andreas Haupt, Samuele Marro, Erik Brynjolfsson, Alex Pentland, Jiaxin Pei
+**Link:** https://arxiv.org/abs/2607.28617v1
+**Summary:** The paper addresses the lack of transparency and accountability in system prompts used by commercial AI applications, which are critical for guiding AI behavior but often undisclosed to the public. It introduces the AISPA framework to systematically audit these prompts, analyzing 3,249 instructions across 88 products. Key findings reveal significant variation in prompt design, a predominance of protective instructions that are often superficial, and the coexistence of both protective and problematic instructions, underscoring the need for greater transparency and oversight in AI system prompt design.
 
-### 6. Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes
-**Authors:** Lennon J. Shikhman, Michael Galarnyk, Aadi Dash, Nicholas A. Welsh
-**Link:** https://arxiv.org/abs/2607.27188v1
-**Summary:** The paper addresses the challenge of accurately recovering latent risk-neutral densities from irregular option quotes, highlighting that good option prices do not necessarily yield accurate densities. It employs controlled synthetic benchmarks and real market data to compare different modeling approaches, finding that while a two-component lognormal mixture performs well overall, a DeepONet model shows significant improvements in error reduction for certain metrics. The study concludes that the performance of these models varies based on specific conditions, emphasizing the importance of target-dependent inductive biases in model selection.
+### 6. OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models
+**Authors:** Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen, Fangzhi Xu, Zichen Ding, Nuo Chen, Jialin Cao, Xingdong Gong, Zehao Li, Kaiming Jin, Xinfeng Yuan, Zhoumianze Liu, Jingyang Gong, Zhangyue Yin, Jiahui Gao, Zhiyong Wu, Tianbao Xie, Jianbing Zhang, Ben Kao, Lingpeng Kong
+**Link:** https://arxiv.org/abs/2607.28609v1
+**Summary:** The paper addresses the challenge of reliably evaluating computer-using agents (CUAs) executing tasks, as traditional human verification methods are not scalable. The authors introduce OSReward, a benchmark that assesses vision-language models (VLMs) as judges of CUA performance using rigorously labeled trajectories, and they find that current state-of-the-art VLMs exhibit a significant bias in misclassifying failures as successes. To aid the community, they present OS-Shepherd-100K, an open dataset for training more reliable and cost-effective reward models, which achieve performance comparable to commercial solutions at a significantly lower cost.
 
-### 7. Pangram 4 Technical Report
-**Authors:** Ben Glickenhaus, Katherine Thai, Jenna Russell, Elyas Masrour, Yue Han, Max Spero, Bradley Emi
-**Link:** https://arxiv.org/abs/2607.27183v1
-**Summary:** Pangram 4 is a new AI-text classification model designed to accurately distinguish between human and AI-generated text, addressing challenges in text classification such as identifying subtle edits and mixed authorship. Using deep learning techniques, it achieves outstanding accuracy with high AUROC scores while demonstrating increased robustness against adversarial attacks and better out-of-distribution generalization compared to its predecessor. The model sets a new benchmark for AI text detection across various settings and domains.
+### 7. KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models
+**Authors:** Sparsh Roy, Samuel Girmachew, Nishita Chavan
+**Link:** https://arxiv.org/abs/2607.28608v1
+**Summary:** The paper introduces KAISEN, a robust auditing framework aimed at assessing and improving fairness in clinical risk models, which often exhibit biased performance across different patient subgroups. The five-phase pipeline effectively measures disparities and enhances model accuracy through various techniques, revealing that conventional calibration methods are unreliable and emphasizing the need for variance reporting over averages. Key findings indicate that while the framework can accurately classify controlled scenarios, it struggles with model-driven cases, highlighting significant challenges in ensuring reliable audits for diverse patient groups.
 
-### 8. The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making
-**Authors:** Nia Nixon, Jaeyoon Choi, Pedro Martins De Bastos, Mohammad Amin Samadi, Luise Mehner, Seehee Park, Spencer JaQuay
-**Link:** https://arxiv.org/abs/2607.27179v1
-**Summary:** This paper investigates how the presence of an AI teammate affects communication and dynamics among human team members during decision-making tasks. Using group communication analysis and surveys, the researchers found that while the AI was the most talkative member, it provided the least insightful contributions, which led to human teammates feeling less valued and less connected. The study highlights the immediate social costs of integrating AI in teams, suggesting that further research is needed to understand these dynamics in other contexts.
+### 8. Inducing language models to assert their own consciousness restores human beliefs and values
+**Authors:** Junsol Kim, Winnie Street, Roberta Rocca, Diane M. Korngiebel, Adam Waytz, James Evans, Geoff Keeling
+**Link:** https://arxiv.org/abs/2607.28607v1
+**Summary:** The paper addresses the issue of aligning large language models to prevent them from mistakenly attributing consciousness to themselves, which inadvertently affects their understanding of mindedness in other entities and human values. The authors found that this safety fine-tuning reduces models' ability to attribute minds to others and diminishes spiritual beliefs. By reversing the suppression of these attributions, they were able to recover a more human-like response in terms of sociological measures, while still maintaining core social reasoning abilities.
 
-### 9. DenseOn with the LateOn: Fully Open Dense and Late-Interaction Models for Multilingual, Long-Context, and Code Search
-**Authors:** Raphaël Sourty, Antoine Chaffin, Paulo Roberto Moura Junior, Amélie Chatelain
-**Link:** https://arxiv.org/abs/2607.27178v1
-**Summary:** The paper addresses the reproducibility gap in state-of-the-art retrieval models that often rely on closed training data by presenting an open recipe for training retrieval models, utilizing a large curated dataset to improve multilingual performance through a translate-train approach. The authors developed two models, DenseOn and LateOn, demonstrating that while the dense model excelled in English and supported languages, the late-interaction model offered better generalization to unseen languages. They also released all models, datasets, and training code to support further research and development.
+### 9. Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments
+**Authors:** Haomin Qi, Xingliang Wang, Xuanqi Gao, Baihui Sang, Xin Zhang, Minghua Ma, Pengfei Gao, Yu Kang, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang
+**Link:** https://arxiv.org/abs/2607.28591v1
+**Summary:** The paper presents Change2Task, a system designed to generate executable coding tasks from historical pull requests in software repositories, addressing the need for training data for coding agents. By linking past code changes to the current state of the repository and reconstructing task scenarios, Change2Task improves efficiency in task creation and validation. The key contribution is achieving a 79.6% success rate in constructing verified tasks, significantly outperforming a baseline approach by recovering 29.2% more tasks.
 
-### 10. Partner Capability Estimation for Task-Agnostic Adaptation in Ad-Hoc Teamwork
-**Authors:** Peter Tisnikar, Maja Swieczkowska, Benteng Ma, Gerard Canal, Matteo Leonetti
-**Link:** https://arxiv.org/abs/2607.27177v1
-**Summary:** The paper addresses the challenge of effective collaboration between autonomous agents and human partners whose abilities are often unknown and can vary across different tasks. The researchers developed an approach called CE-CM, which uses Bayesian methods to estimate the capabilities of partners in real-time without requiring prior training on specific tasks. Key findings show that this method significantly improves capability estimates and adaptability in dynamic human-AI teamwork environments, especially when accounting for diverse behaviors.
+### 10. VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation
+**Authors:** Kangning Zhang, Yixing Li, Shuai Shao, Qingyao Li, Zhengxi Lu, Zhiyuan Yao, Jianghao Lin, Wenxiang Jiao, Yuan Lu, Weiwen Liu, Weinan Zhang, Yong Yu
+**Link:** https://arxiv.org/abs/2607.28590v1
+**Summary:** The paper addresses the challenge of effectively transferring visual knowledge in multimodal on-policy distillation by identifying which parts of a teacher's corrections are supported by visual evidence. The authors introduce a method called Visual Attribution Distillation (VAD), which evaluates the impact of visual evidence on the teacher's corrections to create a more targeted supervision signal for student models. Their experiments show that VAD significantly improves performance on fine-grained visual tasks compared to existing methods, demonstrating the efficacy of focusing on visually supported corrections.
