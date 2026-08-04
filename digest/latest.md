@@ -1,52 +1,52 @@
 ---
-## 2026-08-03
+## 2026-08-04
 
-### 1. TokTier: Exact Stateful Tokenization for Agentic LLM Serving
-**Authors:** Zhenyu Zhang, Zhichao Cao
-**Link:** https://arxiv.org/abs/2607.29678v1
-**Summary:** The paper presents TokTier, a stateful tokenization service designed to improve the efficiency of large language model (LLM) serving systems by minimizing re-tokenization when appending text. By using a specialized method that allows for tokenization of only the new additions while maintaining consistency with standard tokenization, TokTier dramatically speeds up processing times. Key results show it can reduce time to first token by 16-34% and achieve up to 1,821 requests per second, vastly outperforming current tokenization methods.
+### 1. AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling
+**Authors:** Jiajun Liang, Yucheng Liao, Yukang Cao, Jiazhe Wei, Ken Li, Wende Tan, Jiankun Zhang, ZY Cui, Jingkang Yang, Liucheng Guo, Shiqi Yang, B. Yang, Caifeng Shan, Ziwei Liu, Chenyang Si
+**Link:** https://arxiv.org/abs/2608.02602v1
+**Summary:** The paper presents AURORA-LM, a new continuous-latent diffusion language model designed to improve text generation by using a high-capacity latent representation instead of relying on discrete tokens. It introduces a unique architecture that incorporates a Query-based Encoder-Decoder to organize text and a Block-causal Diffusion Transformer to learn the latent distribution effectively, achieving superior performance on text generation and summarization tasks. AURORA-LM outperforms existing diffusion-based language models, particularly at larger scales, demonstrating its efficacy in generating high-quality text.
 
-### 2. ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction
-**Authors:** Boyang Zhang, Adrian Lyjak, Eli Stewart, Zhaoqi Li, Simon Suo
-**Link:** https://arxiv.org/abs/2607.29677v1
-**Summary:** ExtractBench addresses the challenge of schema-guided document extraction in enterprise workflows, where agents need to accurately extract information based on user-defined schemas. The authors created a comprehensive benchmark that evaluates extraction performance across multiple metrics, including accuracy and grounding, using a curated dataset of 4,869 pages from various document types. Their key finding is that while commercial visual language models (VLMs) excel with short documents, the LlamaExtract Agentic Plus outperforms others in terms of accuracy and cost efficiency on longer documents.
+### 2. Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework
+**Authors:** Junjie Yin, Buxin She, Xinyu Feng, Fangxing, Li
+**Link:** https://arxiv.org/abs/2608.02599v1
+**Summary:** This paper addresses the challenge of integrating artificial intelligence into power systems education by providing a hands-on, executable framework that simplifies learning for newcomers. The authors developed a series of Jupyter notebook modules that progressively introduce core AI concepts using real power system tasks. Key contributions include a well-structured library of AI applications tailored for power systems, along with community engagement showing strong interest in such educational resources.
 
-### 3. Differentially Private Nonparametric Modal Learning with Applications to Regression and Clustering
-**Authors:** Arkajyoti Bhattacharjee, Arnab Auddy
-**Link:** https://arxiv.org/abs/2607.29675v1
-**Summary:** The paper addresses the challenge of estimating density modes of multimodal distributions while ensuring strong differential privacy. The authors introduce DP-GRAMS, a method that combines a noisy mean-shift algorithm with privacy-preserving techniques, enabling reliable mode recovery under certain smoothness conditions. Key contributions include theoretical guarantees for high-probability mode recovery and asymptotic error rates, along with practical extensions for private regression and clustering, supported by experimental results that demonstrate an effective balance between privacy and utility.
+### 3. onepot-Bench 0: towards lab-aware in silico chemistry benchmarks
+**Authors:** Brandon Wang, Andrei S. Tyrin, Daniil A. Boiko
+**Link:** https://arxiv.org/abs/2608.02595v1
+**Summary:** The paper presents onepot-Bench 0, a new benchmark suite designed to effectively evaluate the capabilities of language models in performing chemistry tasks relevant to laboratory settings. It includes three distinct assessments focused on cheminformatics literacy, safety in synthesis decisions, and reaction prediction using real experimental data. The key contribution of this work is the provision of a more accurate and targeted evaluation framework that measures the practical skills needed for reliable lab performance, addressing limitations in existing benchmarks.
 
-### 4. Sign compression for Muon: SignMuon, MuonSign, and the Limits of Error Feedback
-**Authors:** Maria Smirnova, Alexey Kravatskiy
-**Link:** https://arxiv.org/abs/2607.29674v1
-**Summary:** The paper addresses the challenge of efficiently compressing gradient updates in optimization algorithms using a method called SignMuon, which reduces updates to a single bit per parameter by utilizing the sign of each gradient element. Despite its theoretical limitations—it can ascend on linear functions and struggles with error feedback—experiments reveal that a simpler heuristic of applying the sign after the optimization step yields better practical performance across various tasks like CIFAR-10 and nanoGPT. This suggests that the practical effectiveness of compression techniques can sometimes outweigh their theoretical guarantees in real-world applications.
+### 4. The Condition-Number Barrier in Sparse Least Squares
+**Authors:** Honghao Lin, Vahab Mirrokni, David P. Woodruff
+**Link:** https://arxiv.org/abs/2608.02588v1
+**Summary:** The paper addresses the challenge of improving polynomial-time algorithms for sparse least-squares optimization, specifically regarding their dependence on the restricted condition number. The authors prove a lower bound on the performance of these algorithms by leveraging the randomized exact-volume Small-Set Expansion Hypothesis, demonstrating that no such algorithm can efficiently approximate the solution within a certain sparsity constraint. This result is significant as it confirms a conjecture in the field and utilizes a novel proof approach involving an automated system developed at Google.
 
-### 5. Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations
-**Authors:** Juncheng Zhong, Chenghuang Shen, Jianfeng Liu, Zhengdong Xiao, Longjiu Luo, Qianrong Wang, Wenjun Xu, Wenlian Lu
-**Link:** https://arxiv.org/abs/2607.29665v1
-**Summary:** The paper addresses the challenge of discovering partial differential equations (PDEs) from sparse observational data, where it can be difficult to identify the correct equation structure. The authors propose a "freeze-then-select" method that first extracts spatial features and temporal coefficients before identifying the relevant terms in the equations using a stability-validated selection process. This approach outperforms classical and neural methods in accurately recovering the true equation structures, particularly excelling in complex scenarios like Kuramoto-Sivashinsky dynamics.
+### 5. GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning
+**Authors:** Zhaoxin Yu, Qi Shen, Hengli Li, Zhaowei Zhang, Song-Chun Zhu, Chi Zhang, Zilong Zheng
+**Link:** https://arxiv.org/abs/2608.02585v1
+**Summary:** The paper introduces GradCuit, a method that enhances large language models by optimizing specific internal states during test time to improve reasoning performance and interpretability. By enabling direct feedback from the final output to these internal states through a Transformer architecture, GradCuit achieves an average accuracy of 64.5% across various benchmarks, outperforming existing methods and demonstrating greater robustness and clearer insights into how the model's reasoning evolves during processing. This approach allows LLMs to dynamically adapt their reasoning strategies based on feedback instead of simply generating or re-ranking outputs.
 
-### 6. GQ-FSL: Green Quantized Federated Split Learning
-**Authors:** Idan Roth, Lutz Lampe
-**Link:** https://arxiv.org/abs/2607.29659v1
-**Summary:** The paper addresses the challenges of deploying deep neural networks on resource-limited mobile devices by proposing a green quantized federated split learning framework (GQ-FSL). It leverages stochastic quantization for both local training and data transmission, allowing for different precision levels between client and server models to optimize energy consumption while maintaining convergence. The key contribution is a method that significantly enhances energy efficiency in large-scale DNN deployments without compromising accuracy compared to existing approaches.
+### 6. UEmbed: Unified Sparse and Dense Multimodal Embeddings
+**Authors:** Tingyu Song, Mingxin Li, Yanzhao Zhang, Dingkun Long, Pengjun Xie, Zhijie Nie, Yilun Zhao, Shu Wu
+**Link:** https://arxiv.org/abs/2608.02583v1
+**Summary:** The paper introduces UEmbed, a novel model that unifies sparse and dense embeddings for multimodal retrieval tasks, addressing the limitations of existing learned retrieval systems that typically rely on complex architectures. UEmbed utilizes a decoder-only architecture to generate both types of embeddings in a single forward pass, achieving competitive performance on key benchmarks while simplifying the retrieval process. The model demonstrates strong results, outperforming previous multimodal embeddings and offering practical benefits in effectiveness and efficiency.
 
-### 7. Development of FDD-ON: an Ontology for VAV HVAC System Fault Detection and Diagnostics
-**Authors:** Yimin Chen, Brian Fricke, Bo Shen, Jamie Lian, Mingkan Zhang, James Lo, Yun Zhang, Shi Ye, Jiajing Huang, Han Hu, Chujie Lu, Rui Tang, George Zhuang
-**Link:** https://arxiv.org/abs/2607.29657v1
-**Summary:** The paper addresses the challenge of fault detection and diagnosis (FDD) in variable air volume (VAV) HVAC systems, which often struggle with data interpretation and interoperability. The authors developed an ontology called FDD-ON, which organizes and represents key components, fault types, and symptoms in a structured manner. The key contribution is that FDD-ON enables better querying of diagnostic knowledge and supports the creation of interoperable FDD applications, ultimately enhancing reliability and efficiency in HVAC systems.
+### 7. CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs
+**Authors:** Shuaijun Liu, Qifu Wen, Shuyang Hao, Qi Luo, Chenglong Zhang, Feiyang You, Chengyu Wu, Ningxin Su
+**Link:** https://arxiv.org/abs/2608.02578v1
+**Summary:** The paper introduces CoWAM, a selective intervention system designed to improve how robots coordinate their actions in multi-robot tasks while utilizing World Action Models (WAMs) to predict future outcomes. CoWAM employs coordination contracts to ensure that actions are only changed if they meet specific safety and effectiveness criteria, leading to a notable increase in both coordination and task success rates. The key finding is that CoWAM achieved a 16.7 percentage point improvement in coordination selection and a 9.6 percentage point increase in successful task completion compared to existing methods, with minimal risk of negative interventions.
 
-### 8. Evolving language compositionality in a frequency-structured meaning space
-**Authors:** Fabio De Ponte, Eloise Gaines-White, Conor Houghton, Seth Bullock
-**Link:** https://arxiv.org/abs/2607.29642v1
-**Summary:** The paper investigates how the frequency of meanings influences the evolution of language compositionality in an iterated learning model. The authors found that high-frequency meanings can develop independently of grammatical structures when they are learned holistically, but that imposing frequency on smaller components disrupts language transmission. This highlights the importance of frequency distribution over complete form-meaning units in supporting stable language evolution.
+### 8. Smooth Reparameterizations of Functions on Simplicial Product Spaces: Applications to Probabilistic Tensor Decomposition and Functional Data Registration
+**Authors:** Shashwat Kumar, Arafat Rahman, Anuj Srivastava, P. -A. Absil
+**Link:** https://arxiv.org/abs/2608.02576v1
+**Summary:** This paper addresses optimization challenges on product spaces of simplices, specifically focusing on low-rank tensor decomposition and functional data registration. The authors propose a method to replace the product simplex with a smooth, convex reparameterization, allowing optimization to occur on a manifold via Riemannian Gradient Descent. The key contribution is that this approach leads to better optimization results compared to traditional Projected Gradient Descent, while more accurately capturing the original function shapes during curve registration.
 
-### 9. AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers
-**Authors:** Tianyu Huai, Tingshuo Fan, Xinchi Chen, Yining Zheng, Yuxin Wang, Shuang Chen, Jie Zhou, Xuanjing Huang
-**Link:** https://arxiv.org/abs/2607.29626v1
-**Summary:** The paper presents AgentHPOBench, a new benchmark designed to evaluate the ability of large language model (LLM) agents to optimize hyperparameters in a sequential manner across various machine learning tasks. Unlike existing benchmarks that focus on static outputs, this one measures how well agents can interpret results and guide their next steps based on experimental evidence. The findings indicate that while current agents demonstrate some competence in optimizing experiments, they still struggle with iterative refinement, diagnostic complexity, and consistent performance improvement.
+### 9. Pseudorandom Streams within Diffusion Models Act as Learnable Inputs That Affect Generation Quality
+**Authors:** Shengzhi Deng, Chenqi Ye, Yanze Guo
+**Link:** https://arxiv.org/abs/2608.02575v1
+**Summary:** This paper investigates how the deterministic nature of pseudorandom inputs in diffusion models can influence the quality of generated outputs. The authors introduced a multilayer perceptron that predicts these pseudorandom sequences and found that different orbit structures significantly affect training and generation performance on image datasets like MNIST and CIFAR-10. Their results indicate that treating pseudorandom sources as structured inputs rather than mere randomness can improve model performance and generation quality.
 
-### 10. The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations
-**Authors:** Ilya Mikhelson
-**Link:** https://arxiv.org/abs/2607.29624v1
-**Summary:** The paper addresses the limitations of traditional assessment methods, which can hinder student performance and obscure feedback. It proposes the "Socratic Test," an automated conversational assessment that utilizes Dynamic Assessment principles and combines various educational frameworks to better gauge student understanding. The key contribution is a novel grading system that emphasizes mastery and provides more reliable measurement of a student's cognitive abilities while reducing biases linked to anxiety and power dynamics.
+### 10. AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies
+**Authors:** Qiushi Lin, Chaojie Zhang, Íñigo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic
+**Link:** https://arxiv.org/abs/2608.02569v1
+**Summary:** The paper addresses the challenge of designing effective control-plane policies for datacenters, which has become increasingly complex due to rapid advancements in technology and vast interdependencies. The authors introduce AtumAI, a framework that automates the generation of these policies by formalizing the problem, ensuring transferability of knowledge across tasks, and systematically exploring design options using a combination of machine learning and evolutionary algorithms. Key results demonstrate that policies generated by AtumAI consistently outperform those created by human experts across various tasks like workload placement and resource management.
