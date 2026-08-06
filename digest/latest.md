@@ -1,52 +1,52 @@
 ---
-## 2026-08-05
+## 2026-08-06
 
-### 1. ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs
-**Authors:** Yang Yang, Qinyu Zhao, Mouxiang Chen, Xiaohui Li, Lixin Gu, Wenhai Wang, Hongjie Zhang, Wenwei Zhang
-**Link:** https://arxiv.org/abs/2608.04010v1
-**Summary:** The paper addresses the limitations of existing scaling strategies in Multimodal Large Language Models (MLLMs), which often lead to inefficient memory use and fixed computation distribution between vision and language components. The authors propose a new framework called ParVL that allows for flexible, parallel computation by sharing backbone parameters across multiple vision and language branches and optimizing their allocation based on task requirements. Key results demonstrate that ParVL outperforms traditional single-branch models and shows that the optimal distribution of resources varies depending on the specific task.
+### 1. Reasoning Core: Designing Broad Procedural Data for Completion-Supervised Reasoning Training
+**Authors:** Damien Sileo, Valentin Lacombe, Dimitri Kachler
+**Link:** https://arxiv.org/abs/2608.05148v1
+**Summary:** The paper presents Reasoning Core, a diverse set of 50 procedural problem generators designed to enhance completion-supervised reasoning training for AI models. By comparing this new collection with existing procedural datasets, the authors demonstrate that Reasoning Core yields superior performance on various reasoning benchmarks while highlighting the importance of design factors like compactness and difficulty calibration. The research underscores that simply generating procedural data is insufficient for ensuring model training effectiveness; careful consideration of problem design is crucial.
 
-### 2. SocietyBench: Forecasting Counterfactual Social-World Evolution
-**Authors:** Zhenran Wang, Zhonghan Bian, Jinsong Li, Zhangyang Qi
-**Link:** https://arxiv.org/abs/2608.04009v1
-**Summary:** The paper introduces SocietyBench, a benchmark designed to evaluate how well large language models (LLMs) can forecast social events, a capability that has been largely overlooked compared to task completion abilities. This benchmark creates counterfactual timelines from real-world events and presents various forecasting questions, revealing that even the best models scored only 75 out of 100, indicating significant limitations in their predictive abilities. The authors emphasize the importance of evaluating models across multiple events, as performance gaps can vary widely.
+### 2. Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning
+**Authors:** Boxiu Li, Zimo Wen, Yijia Fan, Junxiang Lei, Sufeng Guo, Jiaao Wu, Ruize Tang, Mukai Li, Yifei Shen, Xiaoyu Chen, Wanbo Zhang, Runjing Gu, Yifei Gao, Yuheng Wu, Xuyao Huang, Zelong Zhao, Jiachen Zhang, Shibo Hu, Hangxi Guo, Yilin Chen, Yuzhe Zhang, Fan Yang, Chuan Wen, Xian Zhang, Xuanhe Zhou, Zhijie Deng
+**Link:** https://arxiv.org/abs/2608.05144v1
+**Summary:** The paper presents Argus, a general-purpose agentic runtime designed to enhance long-horizon reasoning by allowing persistent adaptation to new information while maintaining operational goals. Argus features distinct roles that manage project tasks and employ a self-evolving mechanism to improve performance through verified learning. Key results demonstrate that Argus significantly outperforms Direct Copilot in benchmark tests while effectively managing resources and improving task efficiency over time.
 
-### 3. WorldCup Arena: Prospective, Leakage-Free Evaluation of Frontier LLMs on a Live Tournament
-**Authors:** Zhenran Wang, Zhonghan Bian, Jinsong Li, Zhangyang Qi
-**Link:** https://arxiv.org/abs/2608.04008v1
-**Summary:** The paper addresses the challenge of evaluating the forecasting abilities of large language models (LLMs) without the risk of using prior knowledge or memorization by conducting live predictions during the 2026 FIFA World Cup. The researchers asked six advanced LLMs to predict outcomes for matches in real-time, resulting in 4,494 predictions that showed average accuracy comparable to bookmakers. A key finding was that while the models agreed with each other more often than they were correct, they struggled particularly with closely contested matches and tended to favor certain outcomes, leading to consistently narrow performance margins among them.
+### 3. OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling
+**Authors:** Indraneil Paul, Falko Helm, Goran Glavaš, Iryna Gurevych
+**Link:** https://arxiv.org/abs/2608.05141v1
+**Summary:** The paper presents OctoLong, a novel method for enhancing long-context modeling in language models by curating rich code contexts that extend for millions of tokens, addressing the limitations of traditional long-context corpora. By incorporating these dependency-rich code references during mid-training, the authors demonstrate that even a small integration of OctoLong data significantly improves performance in long-range code retrieval and understanding, which benefits various coding tasks and scenarios. The results suggest that OctoLong can effectively augment the capabilities of open-language models in handling complex coding tasks.
 
-### 4. TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning
-**Authors:** Changle Qu, Sunhao Dai, Hengyi Cai, Yuqi Zhou, Xinran Chen, Simon, Jun Xu
-**Link:** https://arxiv.org/abs/2608.04007v1
-**Summary:** The paper presents TurnSight, a novel framework designed to enhance Tool-Integrated Reasoning in large language models (LLMs) by improving fine-grained credit assignment through turn-level hindsight self-distillation. Instead of relying on traditional trajectory-level supervision, TurnSight utilizes multiple hindsight perspectives derived from the agent's executions, allowing for more accurate learning signals. Experimental results demonstrate that this approach significantly boosts the performance of LLMs on complex tasks involving iterative tool interactions.
+### 4. Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning
+**Authors:** Yinghui He, Ling Yang, Jiarui Liu, Yongjin Yang, Lechen Zhang, Yingcheng Wu, Zhenfei Yin, Mengdi Wang, Sanjeev Arora
+**Link:** https://arxiv.org/abs/2608.05139v1
+**Summary:** The paper addresses the challenge of evaluating and training large language models (LLMs) on complex multi-step tasks that require switching between different reasoning skills. It introduces a new measure called Skill Entropy to quantify the difficulty of these transitions and presents the Skill^2-Bench benchmark to assess model performance across 558 skills. Notably, the authors demonstrate that their proposed Skill-Entropy RL training framework significantly improves model accuracy on these challenging tasks, showcasing the effectiveness of skill entropy as a training signal.
 
-### 5. PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents
-**Authors:** Shuhan Xue, Zixin Ding, Yichen Shen, Yinjie Wang, Zhenfei Yin, Yingcheng Wu, Yuxin Chen, Mengdi Wang, Ling Yang
-**Link:** https://arxiv.org/abs/2608.04003v1
-**Summary:** The paper introduces PAST-Bench, a benchmarking framework that tests how effectively personal AI agents improve their performance by using their past experiences during tasks. By systematically evaluating agents across various scenarios with and without retained experience, the study discovers that while agents do show improvement, it varies based on their capabilities. The authors also present Hermes+, an enhanced agent model that implements targeted interventions to boost learning from experience, demonstrating significant improvements in specific tasks.
+### 5. Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains
+**Authors:** Ayoub Kirouane, Christos Petrocheilos
+**Link:** https://arxiv.org/abs/2608.05138v1
+**Summary:** The paper addresses the lack of Modern Greek support in NVIDIA's retrieval-augmented generation (RAG) models, which is essential for various specialist fields like law and healthcare. The authors develop an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek by mining relevant corpora, training retrieval models, and introducing a new benchmark called HERA. Key results show that their optimized models significantly improve retrieval performance and generation accuracy, indicating a strong foundation for future Greek-language RAG systems.
 
-### 6. Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility
-**Authors:** Mohsen Hariri, Weicong Chen, Nahal Shahini, Vikash Singh, Kai Ye, Amirhossein Samandar, Debargha Ganguly, Sreehari Sankar, Yanyan Zhang, Shouren Wang, Jerry Peng, Biyao Zhang, Michael Hinczewski, Vipin Chaudhary
-**Link:** https://arxiv.org/abs/2608.04001v1
-**Summary:** The paper addresses the challenge of comparing different inference algorithms used in large language models, particularly regarding their performance during test-time scaling. The authors propose a systematic framework that classifies these algorithms based on their structures, establishes clear evaluation principles to improve reproducibility, and facilitates better reporting of computational costs and outcomes. As a key contribution, they also provide a comprehensive dataset of over 2 billion reasoning traces to support future research and benchmarking in this area.
+### 6. The Loss Does Not See the Basis, but Adam Does
+**Authors:** Devender Singh
+**Link:** https://arxiv.org/abs/2608.05136v1
+**Summary:** The paper investigates how different optimization algorithms influence the learning of low-rank solutions in matrix factorization, specifically contrasting the behavior of gradient descent with that of Adam. The authors examine the gauge symmetry of the loss function and show that while gradient descent naturally biases toward low-rank solutions, Adam does not because it lacks gauge equivariance. A key finding is that the choice of optimizer fundamentally affects the recovery of structured solutions, indicating that basis selection is crucial in determining the performance of optimization in learning tasks.
 
-### 7. Agogic: Performance-Timed Music Tokens for LLM-Native Text-to-Symbolic-Music Generation
-**Authors:** Junhao Chen, Mingjin Chen, Jingjia Mao, Lin Chen, Saining Zhang, Minglin Chen, Ruocheng Wu, Liaoyuan Fan, Wenyi Li, Mingju Gao, Henghaofan Zhang, Zhihao Li, Hao Zhao, Yufei Wang, Ruqi Huang
-**Link:** https://arxiv.org/abs/2608.03999v1
-**Summary:** The paper addresses the challenge of how to effectively tokenize music for text-to-music language models, a decision that influences model performance. By systematically replacing tokenization methods while keeping the model and other factors constant, the authors demonstrate that the choice of music representation significantly impacts how well the model generates music, with their new performance-resolution tokenization achieving superior results compared to traditional methods. They provide extensive resources, including trained models and datasets, to facilitate further research in this area.
+### 7. Predicting Brain Morphometry with MT-GNN: Mesh Evolution in Continuous Time with Graph-Based Metric Tensor Embeddings
+**Authors:** Hao Ding, Daniel Semchin, Paul M. Thompson, Boris Gutman
+**Link:** https://arxiv.org/abs/2608.05132v1
+**Summary:** The paper addresses the challenge of predicting the evolution of subcortical brain structures' shape over time using prior MRI scans, which can aid in medical prognosis and clinical trials. The authors propose a novel graph-based neural network model called MT-GNN that predicts the surface geometry directly in continuous time by utilizing a metric tensor approach, resulting in superior accuracy compared to existing methods. Their model achieved a mean vertex error reduction of 2.29% across 14 different brain structures, outperforming other techniques significantly as the prediction horizon increased.
 
-### 8. When Attention Goes Blind: Numerical Failure in ALiBi Positional Encodings
-**Authors:** Christopher Schröder, Lukas Gienapp, Ferdinand Schlatt, Martin Potthast, Gerhard Heyer
-**Link:** https://arxiv.org/abs/2608.03994v1
-**Summary:** The paper addresses a critical issue with ALiBi positional encoding, where the linear bias scaling leads to floating-point precision underflows, causing many attention weights to be zeroed out and affecting model performance. The authors analyze this failure mode, test four mitigation strategies, and find that using log-scaled distances significantly improves token retrieval while maintaining strong performance in standard benchmarks. They offer practical recommendations for training models utilizing ALiBi to enhance retrieval tasks.
+### 8. OPD-V: Visual On-Policy Self-Distillation with Modality Balance
+**Authors:** Aniri, Jinhe Bi, Peng Liao, Zengjie Jin, Volker Tresp, Fei Shen, Yunpu Ma, Tat-Seng Chua
+**Link:** https://arxiv.org/abs/2608.05131v1
+**Summary:** The paper addresses the issue of Modality Imbalance in multimodal large language models, where an over-reliance on text hinders effective visual reasoning during self-distillation. It proposes a new method called OPD-V, which utilizes Positive and Negative Teachers to improve the balance of modalities during the distillation process. The key contribution is the demonstration that incorporating Modality Balance as privileged information enhances reasoning performance across multiple benchmarks while also lowering training costs.
 
-### 9. Assessment of Conditional Diffusion Model for Synthetic Histopathology Image Generation
-**Authors:** Seyed Kahaki, Shijie Li, Weijie Chen, Nicholas Petrick
-**Link:** https://arxiv.org/abs/2608.03990v1
-**Summary:** This paper addresses the challenge of evaluating the quality of synthetic histopathology images, which are essential for overcoming data shortages in computational pathology. The authors propose improved evaluation metrics based on domain-specific features, utilizing foundation models trained on digital pathology data, and demonstrate that these metrics correlate better with the performance of downstream tasks, specifically nuclei segmentation, than conventional metrics. Their key finding emphasizes that diversifying the generated training data is more beneficial for segmentation model performance than simply enhancing the visual fidelity of individual images.
+### 9. SSTQ:Privacy-Preserving Vector Quantization via Subsampled Stochastic TurboQuant
+**Authors:** Adel Javanmard, David P. Woodruff, Vahab Mirrokni
+**Link:** https://arxiv.org/abs/2608.05127v1
+**Summary:** The paper addresses the challenge of achieving local differential privacy in distributed optimization with low communication costs, improving upon existing vector quantization methods that suffer from high variance due to their dimensionality. The authors propose Subsampled Stochastic TurboQuant (SSTQ), which combines advanced mathematical techniques to enhance privacy and efficiency, and demonstrate that it significantly reduces mean squared error (MSE) scaling while requiring fewer bits per client. Empirical evaluations on standard benchmarks show that SSTQ outperforms existing methods in terms of utility and communication efficiency.
 
-### 10. string2string Studio: An Interactive, In-Browser Platform for String-to-String Algorithms
-**Authors:** Mirac Suzgun, James Zou, Stuart M. Shieber, Dan Jurafsky
-**Link:** https://arxiv.org/abs/2608.03984v1
-**Summary:** string2string Studio is an interactive web platform designed for analyzing string-to-string algorithms relevant to fields like natural language processing and computational biology. It features optimized C++ algorithms compiled to WebAssembly, allowing for high-speed local computations without installation, and provides detailed output that makes algorithms transparent and easy to debug. The platform achieves significant performance improvements over prior methods, with internal benchmarks showing speedups up to 2,500 times, and offers accurate homology search results comparable to established tools like NCBI BLAST+.
+### 10. Spoken Function Calling: A New Perspective on Spoken Language Understanding for Large Audio Language Models
+**Authors:** Yuezhang Peng, Yuxin Liu, Changfeng Gao, Zhifu Gao, Xiangang Li, Xie Chen
+**Link:** https://arxiv.org/abs/2608.05126v1
+**Summary:** The paper addresses the limitations of traditional spoken language understanding (SLU) in handling open-domain tasks by introducing a new method called Spoken Function Calling (SFC). This approach involves creating structured rule definitions and a curated dataset to improve semantic understanding in dialogue systems. The key finding is that SFC significantly enhances the accuracy of semantic extraction for both large language models (LLMs) and large audio language models (LALMs) compared to conventional SLU methods.
