@@ -1,52 +1,52 @@
 ---
-## 2026-08-09
+## 2026-08-10
 
-### 1. HarnessOpt-Bench: Evaluating LLMs at Harness Optimization
-**Authors:** Varun Ursekar, Apaar Shanker, Yash Maurya, Shehab Yasser, Vijay S. Kalmath, Veronica Chatrath, Yuan Xue
-**Link:** https://arxiv.org/abs/2608.06301v1
-**Summary:** The paper addresses the challenge of optimizing the harnesses (prompts, tools, and orchestration) that surround large language models (LLMs) to enhance their performance in agentic systems. It introduces HarnessOpt-Bench, a benchmarking framework that allows automated optimization of these harnesses through an iterative process guided by evaluation feedback. The key findings indicate that different LLMs can effectively act as optimizers, revealing significant variation in optimization performance across tasks, which highlights substantial potential for improvement in harness optimization methods.
+### 1. MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation
+**Authors:** Youjun Zhao, Alex Warren, Gary K. L. Tam, Rynson W. H. Lau
+**Link:** https://arxiv.org/abs/2608.07463v1
+**Summary:** The paper addresses the challenge of generating accurate mirror reflections in videos, which often struggle with consistency between the reflected content and the surrounding scene. The authors propose MirrorWorld, a framework that incorporates two key components: Semantic Relation Distillation to capture relationships between scene elements and mirror regions, and Geometric Transformation Alignment to manage the spatial arrangement of reflections. Experimental results demonstrate that MirrorWorld outperforms existing methods for generating mirror reflections in videos.
 
-### 2. Bias Analysis of L2 Speaking Assessment Systems Using Concept Activation Vectors
-**Authors:** Arya Labroo, Mengjie Qian, Kate Knill
-**Link:** https://arxiv.org/abs/2608.06300v1
-**Summary:** This paper addresses the challenge of ensuring that automatic speaking assessment systems for second language learners evaluate speaking proficiency accurately, without being biased by irrelevant factors like a speaker's first language or age. The authors extend the use of Concept Activation Vectors (CAVs) to analyze bias in two different neural assessment models, revealing that whether a concept is influential in scoring depends on the model's architecture rather than the concept itself. They find that while sparse autoencoders can enhance the linear recovery of concepts, they also reduce sensitivity to the original activation spaces, underscoring the need for careful bias auditing in these systems.
+### 2. CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity
+**Authors:** Ananya Sahu, Mohit Bansal, Elias Stengel-Eskin
+**Link:** https://arxiv.org/abs/2608.07460v1
+**Summary:** The paper addresses the issue of large language models (LLMs) producing less diverse and creative outputs after post-training, which negatively affects tasks that require creativity. To solve this, the authors propose CreativeInstruct, a novel instruction-tuning method that encourages creativity through the use of special markers, improving narrative diversity without compromising on quality. Key results show that models fine-tuned with CreativeInstruct are rated as more creative than their post-trained counterparts in 70.3% of cases and improve performance in reinforcement learning tasks significantly.
 
-### 3. On-Policy Self-Distillation without Any Supervision
-**Authors:** Yijiang Li, Bingyang Wang, Yijun Liang, Yunjie Tian, Di Fu, Nuno Vasconcelos
-**Link:** https://arxiv.org/abs/2608.06296v1
-**Summary:** The paper addresses the challenge of on-policy self-distillation in large language models, which traditionally rely on external supervision. It introduces Unsupervised On-Policy Self-Distillation (U-OPSD), a method that utilizes a model's own generated outputs to refine its performance through internal consistency. The key findings demonstrate that U-OPSD significantly improves model accuracy across multiple benchmarks, often exceeding the results of supervised distillation methods.
+### 3. CoinRAG: Contextualized Information Nugget KV Cache Reuse for Long-Context RAG
+**Authors:** Gyuwan Kim, Cheoneum Park, Tao Yang
+**Link:** https://arxiv.org/abs/2608.07458v1
+**Summary:** The paper presents CoinRAG, an approach designed to enhance the efficiency of Retrieval-Augmented Generation (RAG) models by reusing contextualized, fine-grained information nuggets rather than full chunks of retrieved data. By employing a two-stage retrieval process, CoinRAG assembles relevant semantic units into a compact representation, leading to significant reductions in operational costs and a 5.3% improvement in answer quality on multi-hop question answering tasks. This approach advances the state of the art in managing long contexts while maintaining high accuracy and low latency.
 
-### 4. QuanTiMedAI: Quantum-Enhanced Time-Series Model guided by Agentic AI for Cardiac Arrest Mortality Prediction
-**Authors:** Mutasim Fuad Sarker, Adiba Rahman Namira, Wafa Binte Alam, Md Adnan Arefeen, Mahzabeen Emu, Sumaiya Tabassum Nimi
-**Link:** https://arxiv.org/abs/2608.06294v1
-**Summary:** The paper presents QuanTiMedAI, a novel framework for improving mortality prediction in cardiac arrest patients by leveraging quantum computing and agentic AI. This approach integrates a language model for feature selection with a quantum recurrent network that effectively accounts for the temporal dynamics of patient data. The key contribution is that QuanTiMedAI achieves a higher predictive accuracy with fewer parameters compared to existing methods, demonstrating the potential of quantum-enhanced modeling in healthcare.
+### 4. Interaction Creates Dynamical AI Behavior Absent in Isolation
+**Authors:** Bella Xinrui Li, Frank Yingjie Huo, Neil F Johnson
+**Link:** https://arxiv.org/abs/2608.07457v1
+**Summary:** The paper explores how interactions between AI agents can lead to unexpected and new behavior patterns that wouldn't occur in isolation. By analyzing the dynamic responses of a "boss" AI that sends messages to a "subordinate" AI while ignoring its feedback, the authors demonstrate that the subordinate enters a unique behavioral state influenced by the boss, governed by principles from kinetic theory. The key finding is that the delivery of messages affects future AI interactions, leading to the emergence of complex behaviors that challenge traditional understanding.
 
-### 5. NeSy-RAG: Neuro-Symbolic RAG for Explainable Question Answering
-**Authors:** Jonas Gann, Michael Gertz
-**Link:** https://arxiv.org/abs/2608.06292v1
-**Summary:** The paper presents NeSy-RAG, a neuro-symbolic framework designed to enhance explainability in retrieval-augmented generation (RAG) for question answering, addressing the challenges of opaque reasoning and incomplete user context. By synthesizing Prolog modules from retrieved text and introducing a mechanism to detect missing user-specific information, the system provides clear, verifiable reasoning steps linked to their sources. NeSy-RAG demonstrated superior performance on the ShARC benchmark, achieving 61.1% accuracy compared to 42.8% by a traditional RAG model, without requiring domain-specific training.
+### 5. Strategy-first synthesis planning for complex natural products
+**Authors:** Daniel Armstrong, Xuan-Vu Nguyen, Octavian Susanu, Gabriel Gibberd, Théo A. Neukomm, Taddäus Strunden, Dan Forster, Morgane Delattre, Shawn Teh, Clément Rols, John Federice, Hayden Leatherwood, M. Lavelle Barnes, Maarten R. Dobbelaere, Peter Wipf, Jon T. Njardarson, Jieping Zhu, Philippe Schwaller
+**Link:** https://arxiv.org/abs/2608.07454v1
+**Summary:** The paper addresses the challenge of automating the synthesis planning for complex natural products, which often outstrip traditional tools due to their intricate structures. The authors introduce SynthEx, a framework based on large language models that generates diverse synthetic routes, evaluates them, and refines its designs, outperforming conventional catalog-based methods. Notably, expert chemists found its proposed routes comparable to human-designed syntheses, marking a significant advancement in the field.
 
-### 6. BaKron: Efficient Quantization with Kronecker-Factored Hessians
-**Authors:** Johann Birnick, Rayan Saab
-**Link:** https://arxiv.org/abs/2608.06291v1
-**Summary:** The paper introduces BaKron, an efficient algorithm for neural network quantization that leverages two-sided Kronecker-factored Hessians to better capture the correlations between output coordinates. By employing a divide-and-conquer strategy with anti-diagonal parallelism, BaKron significantly reduces computational complexity from quadratic to linear in relation to the weight matrix dimensions while maintaining the same scaling as existing methods. The authors provide practical benchmarks and demonstrate the effectiveness of their approach in capturing richer curvature information during the quantization process.
+### 6. SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent
+**Authors:** Mingxuan Zheng, Yujin Zhou, Chuxue Cao, Boqin Yin, Yuyao Zhang, Jiapeng Sun, Shuaishuai Gong, Sirui Han, Yike Guo
+**Link:** https://arxiv.org/abs/2608.07449v1
+**Summary:** The paper presents SkillProx, a framework designed to enhance the adaptability of LLM agents by improving their skill accumulation and refinement during recurring tasks. It introduces a method that combines diagnostic evaluation of task performance with a structured approach to refining and consolidating skills, resulting in a significant accuracy improvement of 3.0 percentage points over existing techniques. The approach uniquely incorporates a closed-loop feedback mechanism and utility-based skill management for more effective learning.
 
-### 7. Surv-IPTB: An Attention-Based Model for Estimating Individual Probability of Treatment Benefit with Survival Data
-**Authors:** Lev V. Utkin, Stanislav K. Kogan, Andrei V. Konstantinov
-**Link:** https://arxiv.org/abs/2608.06288v1
-**Summary:** The paper introduces Surv-IPTB, a novel attention-based model designed to estimate the probability that an individual patient will benefit from treatment in survival analysis, where the goal is to predict extended survival times. The authors reformulate this estimation task into a binary classification problem using pairwise patient comparisons, effectively handling censored data through interval-valued probabilities. They demonstrate that Surv-IPTB outperforms conventional methods in complex scenarios, thus providing a scalable and statistically sound solution for assessing personalized treatment benefits.
+### 7. Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools
+**Authors:** Afreen Alam, Evgenija Popchanovska, Ana Gjorgjevikj, Maryan Rizinski, Lubomir T. Chitkushev, Irena Vodenska, Dimitar Trajanov
+**Link:** https://arxiv.org/abs/2608.07446v1
+**Summary:** This paper addresses the challenge of effectively identifying and mitigating risks associated with the use of large language models (LLMs) in enterprise settings, where existing open-source tools are often misaligned with risk governance frameworks. The authors develop a structured protocol that maps 21 open-source AI risk mitigation tools to an established risk taxonomy, leveraging an LLM to analyze their capabilities. Key findings reveal that most tools focus on technical controls, leaving significant gaps in governance and regulatory areas, thus suggesting the need for a more integrated risk-mitigation strategy that combines tools with organizational processes.
 
-### 8. The Tamed Subgradient Unadjusted Langevin Algorithm beyond Convexity
-**Authors:** Iosif Lytras, Nikolaos Makras, Sotirios Sabanis
-**Link:** https://arxiv.org/abs/2608.06283v1
-**Summary:** The paper addresses the challenge of sampling from complex target distributions that are non-smooth and non-convex, which can grow rapidly in certain regions. The authors introduce the Subgradient Tamed Unadjusted Langevin Algorithm (SG-TULA), a novel method that leverages subgradients and taming techniques to ensure stable sampling without the need for smoothing. They demonstrate that SG-TULA achieves improved convergence rates and provide explicit guarantees, also successfully applying it to the pretraining of language models like GPT-2, outperforming traditional optimization methods in terms of theoretical guarantees.
+### 8. RIS-Aided mmWave Localization Under Cross-Link Interference via Beam-Domain ML Fingerprinting
+**Authors:** Md Tarek Hassan, Dmitry Zelenchuk, Muhammad Ali Babar Abbasi
+**Link:** https://arxiv.org/abs/2608.07444v1
+**Summary:** This paper addresses the challenge of accurately localizing user equipment (UE) in reconfigurable intelligent surface (RIS)-assisted millimeter-wave (mmWave) networks when direct communication links are unavailable, particularly in the presence of cross-link interference. The authors propose a beam-domain fingerprinting framework that uses signal-to-noise ratios (SNR) to estimate the UE's position without needing detailed channel information, and they evaluate several machine learning models to determine localization accuracy. Notably, their findings reveal that while the model can maintain decent performance under interference, angle estimation accuracy suffers significantly more than range estimation due to how location information is encoded.
 
-### 9. Stochastic Dynamics on Persistence Diagram Space via Reinforcement Learning
-**Authors:** Farzana Nasrin
-**Link:** https://arxiv.org/abs/2608.06276v1
-**Summary:** This paper addresses the challenge of modeling the dynamic behavior of persistence diagrams, which summarize topological structures, in a probabilistic manner. The authors introduce a reinforcement learning framework that allows persistence diagrams to evolve through topology-aware modifications, establishing a controlled way to model stochastic dynamics in this space. Key findings show that their approach can effectively simplify diagrams while preserving essential topological features, making it a valuable tool for applications like neuroimaging analysis.
+### 9. Blast Radius
+**Authors:** MY Pitsane, Hope Mogale
+**Link:** https://arxiv.org/abs/2608.07440v1
+**Summary:** The paper introduces Blast Radius, a memory management system that reduces the token consumption of language models by effectively managing and archiving unused context. The approach uses methods like NECROPHORESIS for reversible eviction and Recurring Dead Matter (RDM) to identify and discard redundant transcripts. Key findings show that Blast Radius reduces token usage by 17-26% and minimizes overflow while preserving the ability to recover archived information, enhancing the efficiency and sustainability of language models and agentic coding.
 
-### 10. The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images
-**Authors:** Zhiheng Wang, Bo Peng, Lai Wei, Chaochao Lu
-**Link:** https://arxiv.org/abs/2608.06270v1
-**Summary:** The paper investigates the effectiveness of visual tool-use in multimodal large language models (LLMs) by examining whether visual inputs actually improve answers to questions. Through a causal analysis involving various intervention methods, the authors reveal that visual tool-use often does not cause improvements in accuracy, highlighting two key failure modes where visual inputs are either irrelevant or poorly utilized. The study concludes that despite some aggregate accuracy gains, visual tool-use doesn't consistently enhance model performance across many scenarios, coining this phenomenon the "illusion of visual tool-use."
+### 10. An Exploratory Evaluation of LLM-Assisted Rewriting of Moderate-Complexity Financial Sentences for DisCoCat-Based Sentiment Analysis
+**Authors:** Brian Llinas, Nikos Chrisochoides
+**Link:** https://arxiv.org/abs/2608.07439v1
+**Summary:** This paper addresses the challenges of using the DisCoCat framework for analyzing financial sentiment in moderately complex sentences, which can be difficult for traditional parsing methods. The authors propose an approach that utilizes large language models (LLMs) to rewrite these sentences, simplifying them while preserving their meaning, leading to more efficient processing in quantum circuits. The key finding is that this LLM-assisted rewriting significantly reduces the complexity of the input sentences and improves sentiment analysis accuracy compared to the original approach, offering a promising direction for scalable quantum natural language processing in finance.
