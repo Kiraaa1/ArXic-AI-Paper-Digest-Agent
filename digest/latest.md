@@ -1,52 +1,52 @@
 ---
-## 2026-08-13
+## 2026-08-14
 
-### 1. AVA-Encoder: Towards Agent-Native Video Representation Learning
-**Authors:** Chuyue Li, Jinpeng Yu, Haozhe Wang, Tian Xueyun, Zhijing Zhang, Bingnan Li, Shuqi Gu, Kan Ren, Jiaming Liu, Ruihua Hua
-**Link:** https://arxiv.org/abs/2608.12313v1
-**Summary:** The paper introduces the AVA-Encoder, a new framework designed to help creative agents learn from high-quality human films by providing a structured video representation that supports agentic reasoning. This approach transforms videos into knowledge graphs that can be reconstructed back into video, allowing for easier querying and editing by agents. The key result shows that AVA-Encoder significantly improves video representation learning, outperforming existing methods and requiring fewer system resources, while also providing a valuable dataset for further research.
+### 1. AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design
+**Authors:** Yaxin Luo, Haobin Jiang, Jialv Zou, Xu Huang, Wenhao Yan, Haodong Li, Zhengrong Yue, Jing Li, Xiaofu Chen, Xiaohan Zhao, Jiacheng Liu, Jiacheng Cui, Zhiqiang Shen, Xiaotong Li
+**Link:** https://arxiv.org/abs/2608.13560v1
+**Summary:** The paper addresses the challenge of transforming academic papers into effective conference posters by proposing AutoDesign, a framework that uses a meta-harness optimizer to improve a code agent's design capabilities through iterative feedback. This approach significantly outperforms existing commercial solutions, achieving a high average quality of poster outputs while demonstrating strong human preference in evaluations. Key results include a substantial improvement in performance on the provided PosterBench dataset, indicating the effectiveness of AutoDesign in automating long-horizon design tasks.
 
-### 2. DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation
-**Authors:** Yan Deng, Fei Xu
-**Link:** https://arxiv.org/abs/2608.12308v1
-**Summary:** DreamFly addresses the challenges of aerial vision-language navigation by enhancing an agent's ability to integrate historical visual context and make effective planning decisions in a partially observable environment. The framework employs a diffusion-based approach with a causally aligned memory and a receding-horizon planning strategy that focuses on executing one action at a time while considering future actions. Experimental results show that DreamFly significantly outperforms existing methods in navigation success rates and reduces navigation errors in various testing environments.
+### 2. OmniScientist: An Omni-Modal Omni-Discipline AI Scientist
+**Authors:** Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee, Wynne Hsu
+**Link:** https://arxiv.org/abs/2608.13558v1
+**Summary:** The paper introduces OmniScientist, an AI system designed to automate full research workflows in science by integrating and reasoning over diverse types of raw data (such as images, audio, and numerical datasets) rather than relying on pre-processed summaries. It features a structured approach with separate agents for ideation, experimentation, and writing, enabling the AI to adapt its research questions and methods based on real-time observations. The results show that OmniScientist successfully completed full research projects across multiple disciplines, outperforming existing methods by leveraging direct perception of data.
 
-### 3. AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses
-**Authors:** Cheng Qian, Wenting Zhao, Liangwei Yang, Heng Wang, Jielin Qiu, Heng Ji, Silvio Savarese, Huan Wang, Shelby Heinecke
-**Link:** https://arxiv.org/abs/2608.12307v1
-**Summary:** This paper explores whether stronger AI models can assist weaker models during testing without changing their parameters, by creating tailored inference-time harnesses that improve task performance. By refining these harnesses based on feedback from a limited validation set, the researchers demonstrated that this approach nearly doubled the target models' performance on certain benchmarks. The findings highlight the importance of designing effective inference-time aids as a complementary strategy to traditional training methods.
+### 3. HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark
+**Authors:** Dairu Liu, Zekun Qi, Jiayu Zeng, Ruixi Yu, Yu Guan, Yintianrun Zhang, Xuchuan Chen, Sikai Liang, Zekai Li, Chenghuai Lin, Xinqiang Yu, Wenyao Zhang, He Wang, Li Yi
+**Link:** https://arxiv.org/abs/2608.13555v1
+**Summary:** The paper addresses the limitations of current humanoid motion tracking evaluations, which are often misaligned with human perceptions and fail to account for critical physical issues like instability and incorrect contacts. The authors introduce the HumanTracker benchmark, featuring a large dataset of motion trajectories organized by motion types and accompanied by a new metric called HumanScore, which better aligns with human preferences and highlights failures that traditional metrics overlook. The key contribution is the creation of a more comprehensive and perceptually relevant evaluation framework for motion tracking.
 
-### 4. Redistribution-based Cost Inference Improves Sparse Safe Offline RL
-**Authors:** Ebenezer Gelo, Geraud Nangue Tasse, Steven James, Benjamin Rosman
-**Link:** https://arxiv.org/abs/2608.12306v1
-**Summary:** The paper addresses the challenge of safe offline reinforcement learning (RL) where feedback is limited to binary signals indicating unsafe transitions rather than detailed per-step costs. The authors propose a Redistribution-based Cost Inference (RCI) framework that translates this sparse feedback into meaningful per-step cost annotations, enabling the training of a constrained offline policy. Their results show that this approach leads to significantly lower violation rates in safety-critical tasks like highway driving and robotic manipulation compared to traditional methods, while also being more robust to variations in the data.
+### 4. Defensive Boosting for Online Probabilistic Forecasting
+**Authors:** Georgy Noarov, Aaron Roth
+**Link:** https://arxiv.org/abs/2608.13554v1
+**Summary:** The paper addresses the challenge of online probabilistic forecasting in situations where the predictors may not consistently perform well, particularly against an adaptive adversary. The authors introduce a novel algorithm called the Defensive Booster, which effectively combines two different boosting guarantees: it competes well with the best available predictions while also reducing classification errors when certain conditions are met. Their approach is highly efficient, requiring only a single weak learner and demonstrating superior performance in both speed and accuracy compared to existing methods.
 
-### 5. Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models
-**Authors:** Saman Marandi, Yu-Shu Hu, Mohammad Modarres
-**Link:** https://arxiv.org/abs/2608.12304v1
-**Summary:** The paper addresses the challenge of efficiently constructing Dynamic Master Logic (DML) models for complex systems, which typically require expert knowledge and manual interpretation of documentation. By leveraging Retrieval-Augmented Generation and Large Language Models, the authors propose an automated framework that transforms system descriptions into Knowledge Graphs (KG-DML). This approach not only enhances scalability but also demonstrates effective reconstruction of functional models for diagnostic and reliability analysis in a practical example from a reactor system.
+### 5. Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure
+**Authors:** Mingyuan Zhang
+**Link:** https://arxiv.org/abs/2608.13549v1
+**Summary:** This paper addresses the challenge of calibrating multi-label classification metrics, specifically the Jaccard score, which has an exponential number of possible outcomes as the number of labels increases. The authors develop a mathematical framework using a MinHash Gram representation and Boolean Möbius inversion to prove bounds on the calibration dimension required for convex surrogates of the Jaccard measure. A key contribution is demonstrating that achieving exact calibration necessitates an exponential number of prediction coordinates, while also presenting polynomial-dimensional alternatives that maintain small regret in Jaccard scoring.
 
-### 6. A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions
-**Authors:** Di Yang Shi, W. Bradley Knox
-**Link:** https://arxiv.org/abs/2608.12302v1
-**Summary:** The paper addresses the challenge of designing human-aligned reward functions that reflect user preferences for AI systems, particularly for those without technical expertise. The proposed method involves a three-step process: identifying fundamental objectives from natural language task descriptions, selecting relevant measurable outcomes, and determining the weights for these outcomes based on user preferences. A key contribution is the efficient approach to selecting reward terms using a polynomial-time algorithm and framing the weight fitting as a convex feasibility problem that allows for a precise and conflict-free reward function region.
+### 6. QuoteBench: How Matched Scores Can Hide Command-Path Failures
+**Authors:** Shangao Li, Yao Zhang, Volker Tresp, Yuanyuan Yang
+**Link:** https://arxiv.org/abs/2608.13547v1
+**Summary:** The paper introduces QuoteBench, a framework designed to evaluate the effectiveness of large language model (LLM) coding agents in executing Bash commands while identifying errors that occur during command generation versus execution. By conducting experiments that assess how different configurations affect command success rates, the study reveals that matched execution scores can obscure significant failures, indicating the need for a detailed reporting of the model’s configuration and evaluation conditions. The key finding is that replaying generated commands through a modified parser can drastically reduce success rates, highlighting the importance of distinguishing between initial command generation and subsequent execution errors.
 
-### 7. Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review of CNN, Transformer, and Foundation-Model-Era Visual Explanations
-**Authors:** AmirHossein Eshghi, Hamid Saadatfar, Seyyed Ali Hoseini, AmirMohsen Eshghi, Siavash Arjomand Bigdel
-**Link:** https://arxiv.org/abs/2608.12299v1
-**Summary:** This paper reviews the evolution of Class Activation Mapping (CAM) methods in explainable AI, which generate heatmaps to highlight relevant features in images for model predictions. It categorizes 57 techniques based on how they attribute explanations and their dependence on model architecture, revealing a shift towards more complex, multi-layer, and probabilistic approaches. The study highlights the fragmentation in evaluating these methods, pointing out the need for standardized metrics to assess their effectiveness and trustworthiness.
+### 7. LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure
+**Authors:** Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thaddäus Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel
+**Link:** https://arxiv.org/abs/2608.13545v1
+**Summary:** The paper addresses the challenge of studying how language models acquire knowledge given their training on diverse and expansive data. To tackle this, the authors created LITTLECURRICULUM, a specially curated dataset focused on U.S. elementary school material, and trained a new language model, LITTLELEARNER, on this limited scope. The key contribution is the establishment of a controlled environment that allows for systematic exploration of knowledge acquisition and representation, demonstrating that while new knowledge can be integrated, it does not extend the model's capabilities beyond the predefined scope.
 
-### 8. Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence
-**Authors:** Aman Tyagi, Hemanth Boinpally, Jonathan Chen, Douglas Gebert, Steven Hickson
-**Link:** https://arxiv.org/abs/2608.12290v1
-**Summary:** The paper addresses the challenge of inconsistent and unpredictable outputs in black-box Image-to-Video models, which often require tedious trial-and-error for fine-tuning. It introduces the "Agentic Self-Improvement" framework, which optimizes video generation through a two-stage process involving prompt refinement via a multimodal language model and Bayesian optimization of parameters. The approach significantly enhances the quality and reliability of generated videos, showing a strong preference for its outputs over traditional methods in preference studies.
+### 8. SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization
+**Authors:** Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, Xiaozhi Wang, Lei Hou, Juanzi Li
+**Link:** https://arxiv.org/abs/2608.13538v1
+**Summary:** The paper addresses the challenge of explaining features extracted by sparse autoencoders, which typically rely on external observations for insights. The authors propose SAEVerbalizer, a framework that fine-tunes a large language model to generate natural-language explanations directly from the decoder directions of the sparse autoencoder. Key results demonstrate that this approach not only provides explanations for unseen features but also allows for flexible adaptation to features from different models.
 
-### 9. Large Language Model-Driven Small-Capitalization Trading: Integrating Financial News Sentiment, Macroeconomic Indicators, and Technical Signals
-**Authors:** Alireza Kargarzadeh, Nariman Khaledian, Navid Parvini, Arman Khaledian
-**Link:** https://arxiv.org/abs/2608.12283v1
-**Summary:** This paper investigates how large language models can enhance small-cap stock trading by integrating sentiment from financial news, macroeconomic indicators, and technical signals. The authors developed a portfolio construction method that considers predicted risks and separates influences from company-specific and macroeconomic factors. Key findings show that focusing on distinct signals often yields better performance, with a notable performance peak found in a strategy utilizing pure macro signals over a 40-day horizon, achieving a high Sharpe ratio.
+### 9. DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees
+**Authors:** Tianyi Li, Yaxin Luo, Xinyi Shang, Zhiqiang Shen
+**Link:** https://arxiv.org/abs/2608.13524v1
+**Summary:** The paper presents DARTree, a method designed to enhance the speed of autoregressive language models by efficiently decoding multiple token proposals in parallel. By leveraging a tree structure for candidate generation instead of relying on a single draft chain, DARTree significantly increases the number of acceptable tokens in each verification round while decoupling the inference process from time-consuming operations. The results show that DARTree achieves a substantial lossless speedup, accepting nearly 99% more tokens per round compared to existing methods and up to 9.73 times faster than traditional autoregressive decoding.
 
-### 10. VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies
-**Authors:** Ankita Rajaram Naik, Anupama Murthi, Benjamin Elder, Siyu Huo, Raavi Gupta, Abhinav Jain, Praveen Venkateswaran, Abdulhamid Adebayo, Danish Contractor
-**Link:** https://arxiv.org/abs/2608.12282v1
-**Summary:** The paper presents VAKRA, a benchmark designed to evaluate the reasoning abilities of agents in enterprise settings when interacting with APIs and document collections. It includes over 8,000 executable APIs and assesses agents across varying levels of complexity, revealing that even advanced models struggle significantly, achieving only about 70% accuracy on simple tasks and dropping to as low as 2.4% on unanswerable queries with complex reasoning under policy constraints. The findings highlight specific weaknesses in language-mediated reasoning and cross-source grounding, suggesting areas for future improvement in AI tool-use capabilities.
+### 10. Vero: Can AI Agents Build Formally Verified Software Repositories?
+**Authors:** Zhe Ye, Hantao Lou, Yuechun Sun, Peiyang Song, Zhengxu Yan, Timothe Kasriel, Qingyang Zhang, Kaiyu Yang, Soonho Kong, Jingxuan He, Dawn Song
+**Link:** https://arxiv.org/abs/2608.13522v1
+**Summary:** The paper introduces Vero, a benchmarking framework designed to evaluate AI agents' ability to generate both code and formal proofs in large software repositories. By testing agents on 43 curated multi-module instances from real-world applications, Vero aims to bridge the gap in verified code generation at the repository level. The key finding indicates that even the most advanced coding agents struggle, fully solving only 27 of 43 tasks, highlighting the current limitations in achieving reliable verified software synthesis.
