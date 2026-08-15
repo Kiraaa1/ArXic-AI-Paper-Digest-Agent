@@ -1,52 +1,52 @@
 ---
-## 2026-08-14
+## 2026-08-15
 
-### 1. AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design
-**Authors:** Yaxin Luo, Haobin Jiang, Jialv Zou, Xu Huang, Wenhao Yan, Haodong Li, Zhengrong Yue, Jing Li, Xiaofu Chen, Xiaohan Zhao, Jiacheng Liu, Jiacheng Cui, Zhiqiang Shen, Xiaotong Li
-**Link:** https://arxiv.org/abs/2608.13560v1
-**Summary:** The paper addresses the challenge of transforming academic papers into effective conference posters by proposing AutoDesign, a framework that uses a meta-harness optimizer to improve a code agent's design capabilities through iterative feedback. This approach significantly outperforms existing commercial solutions, achieving a high average quality of poster outputs while demonstrating strong human preference in evaluations. Key results include a substantial improvement in performance on the provided PosterBench dataset, indicating the effectiveness of AutoDesign in automating long-horizon design tasks.
+### 1. Exponential quantum advantage for learning signals with a single qubit
+**Authors:** Ishaan Kannan, Sridhar Prabhu, Saeed A. Khan, Mandar M. Sohoni, Xingrui Song, Saswata Roy, Alen Senanian, Valla Fatemi, Peter L. McMahon, Jordan Cotler
+**Link:** https://arxiv.org/abs/2608.13521v1
+**Summary:** This paper addresses the challenge of efficiently learning classical signals through measurement, which is typically resource-intensive. The authors demonstrate that by coupling a single qubit with a conventional sensor, they can significantly reduce the required measurements—up to 10 million times less—for tasks like learning Fourier coefficients and analyzing time-varying signals. Their approach, based on a new theoretical framework called Quantum Phase-Space Inference (QΨ), not only highlights the capabilities of near-term quantum technology but also provides a systematic method to identify and leverage quantum advantages in practical applications.
 
-### 2. OmniScientist: An Omni-Modal Omni-Discipline AI Scientist
-**Authors:** Bobo Li, Hao Fei, Tianjie Ju, Mong-Li Lee, Wynne Hsu
-**Link:** https://arxiv.org/abs/2608.13558v1
-**Summary:** The paper introduces OmniScientist, an AI system designed to automate full research workflows in science by integrating and reasoning over diverse types of raw data (such as images, audio, and numerical datasets) rather than relying on pre-processed summaries. It features a structured approach with separate agents for ideation, experimentation, and writing, enabling the AI to adapt its research questions and methods based on real-time observations. The results show that OmniScientist successfully completed full research projects across multiple disciplines, outperforming existing methods by leveraging direct perception of data.
+### 2. The data geometry of masking diffusion: Certified-optimal schedules via unmasking growth complexity
+**Authors:** Martin J. Wainwright
+**Link:** https://arxiv.org/abs/2608.13520v1
+**Summary:** This paper addresses the challenge of improving sampling efficiency in masking diffusion by introducing a new measure called unmasking growth complexity (UGC), which assesses data geometry. The authors develop optimized sampling schedules that adapt to the underlying data structure and demonstrate that their method leads to samplers that can achieve low errors in Kullback-Leibler divergence effectively. A key contribution is the demonstration of significant performance improvements, particularly in high-dimensional settings, through a certified-optimal approach to sampling.
 
-### 3. HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark
-**Authors:** Dairu Liu, Zekun Qi, Jiayu Zeng, Ruixi Yu, Yu Guan, Yintianrun Zhang, Xuchuan Chen, Sikai Liang, Zekai Li, Chenghuai Lin, Xinqiang Yu, Wenyao Zhang, He Wang, Li Yi
-**Link:** https://arxiv.org/abs/2608.13555v1
-**Summary:** The paper addresses the limitations of current humanoid motion tracking evaluations, which are often misaligned with human perceptions and fail to account for critical physical issues like instability and incorrect contacts. The authors introduce the HumanTracker benchmark, featuring a large dataset of motion trajectories organized by motion types and accompanied by a new metric called HumanScore, which better aligns with human preferences and highlights failures that traditional metrics overlook. The key contribution is the creation of a more comprehensive and perceptually relevant evaluation framework for motion tracking.
+### 3. Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology
+**Authors:** Yunsung Chung, Yingshuo Liu, Abboud F. Hassan, Han Feng, Mary M. Maleckar, Nassir Marrouche, Jihun Hamm
+**Link:** https://arxiv.org/abs/2608.13518v1
+**Summary:** The paper addresses the challenge of predicting post-operative outcomes in cardiology, particularly after atrial fibrillation ablation, where recovery processes are complex and irregular. It introduces an intervention-aware clinical world model that tracks a patient's recovery through a structured latent state updated by various clinical events and measurements over time. The model demonstrated effective prediction of recurrence risk, achieving an area under the receiver operating characteristic (AUROC) of 0.756, and it also provided insights into recovery dynamics without needing follow-up MRI data during inference.
 
-### 4. Defensive Boosting for Online Probabilistic Forecasting
-**Authors:** Georgy Noarov, Aaron Roth
-**Link:** https://arxiv.org/abs/2608.13554v1
-**Summary:** The paper addresses the challenge of online probabilistic forecasting in situations where the predictors may not consistently perform well, particularly against an adaptive adversary. The authors introduce a novel algorithm called the Defensive Booster, which effectively combines two different boosting guarantees: it competes well with the best available predictions while also reducing classification errors when certain conditions are met. Their approach is highly efficient, requiring only a single weak learner and demonstrating superior performance in both speed and accuracy compared to existing methods.
+### 4. DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B Parameters Using Only Permissible Post-Training Data
+**Authors:** Peter Schneider-Kamp, Jacob Nielsen, Gianluca Barmina, Kenneth Enevoldsen, Lukas Galke Poech
+**Link:** https://arxiv.org/abs/2608.13517v1
+**Summary:** The paper presents Mimir v1, a 1-billion-parameter language model developed to overcome the challenges of training models on non-permissible datasets by relying solely on ethically sourced post-training data. Using the Hierarchical Reasoning Model architecture, Mimir v1 achieves state-of-the-art performance in Danish and competitive results in English, surpassing existing models like HRM-Text 1B and challenging larger models. The model is available for use on the Hugging Face Hub, promoting accessibility in open-source research.
 
-### 5. Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure
-**Authors:** Mingyuan Zhang
-**Link:** https://arxiv.org/abs/2608.13549v1
-**Summary:** This paper addresses the challenge of calibrating multi-label classification metrics, specifically the Jaccard score, which has an exponential number of possible outcomes as the number of labels increases. The authors develop a mathematical framework using a MinHash Gram representation and Boolean Möbius inversion to prove bounds on the calibration dimension required for convex surrogates of the Jaccard measure. A key contribution is demonstrating that achieving exact calibration necessitates an exponential number of prediction coordinates, while also presenting polynomial-dimensional alternatives that maintain small regret in Jaccard scoring.
+### 5. Measuring Task-Agnostic Training Data Influence Across Language Model Pretraining
+**Authors:** Yuto Nishida, Hirokazu Kiyomaru, Yusuke Oda, Takashi Kodama, Chaoran Liu, Daisuke Kawahara, Yusuke Miyao, Max Müller-Eberstein, Masaru Isonuma
+**Link:** https://arxiv.org/abs/2608.13515v1
+**Summary:** The paper addresses the challenge of measuring how training data influences language model performance during pretraining, without relying on specific downstream tasks. The authors propose a novel method that evaluates an example's influence based on its impact on reducing the distance to final model parameters, using intermediate checkpoints. They find that the influence of certain data types shifts over the course of training, with literature-related data being more influential early on and STEM data gaining importance later, revealing a dynamic relationship between training data and model progression.
 
-### 6. QuoteBench: How Matched Scores Can Hide Command-Path Failures
-**Authors:** Shangao Li, Yao Zhang, Volker Tresp, Yuanyuan Yang
-**Link:** https://arxiv.org/abs/2608.13547v1
-**Summary:** The paper introduces QuoteBench, a framework designed to evaluate the effectiveness of large language model (LLM) coding agents in executing Bash commands while identifying errors that occur during command generation versus execution. By conducting experiments that assess how different configurations affect command success rates, the study reveals that matched execution scores can obscure significant failures, indicating the need for a detailed reporting of the model’s configuration and evaluation conditions. The key finding is that replaying generated commands through a modified parser can drastically reduce success rates, highlighting the importance of distinguishing between initial command generation and subsequent execution errors.
+### 6. Bagging Robustly Learns VC Classes with Linear Sample Complexity
+**Authors:** Omar Montasser
+**Link:** https://arxiv.org/abs/2608.13514v1
+**Summary:** The paper addresses the challenge of creating predictors that are robust to adversarial examples at test time, proving that such predictors can be learned from a number of training samples that scales linearly with the VC dimension. The authors leverage a straightforward approach that combines bagging with robust empirical risk minimization, achieving a significant improvement over previous methods. Their findings also establish a lower bound indicating that this linear sample complexity is optimal for this type of learning task.
 
-### 7. LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure
-**Authors:** Fanfei Li, Jana Zeller, Manuel Prada-Corral, Thaddäus Wiedemer, Prasanna Mayilvahanan, Ryan Cotterell, Wieland Brendel
-**Link:** https://arxiv.org/abs/2608.13545v1
-**Summary:** The paper addresses the challenge of studying how language models acquire knowledge given their training on diverse and expansive data. To tackle this, the authors created LITTLECURRICULUM, a specially curated dataset focused on U.S. elementary school material, and trained a new language model, LITTLELEARNER, on this limited scope. The key contribution is the establishment of a controlled environment that allows for systematic exploration of knowledge acquisition and representation, demonstrating that while new knowledge can be integrated, it does not extend the model's capabilities beyond the predefined scope.
+### 7. TabSOM: A tabular-to-image encoding method based on self-organizing maps
+**Authors:** David Chushig-Muzo, María Ángeles Rodríguez de Cara, Eva Milara, Francisco J. Lara-Abelenda, Luis Zhinin-Vera, Diego H. Peluffo-Ordóñez
+**Link:** https://arxiv.org/abs/2608.13513v1
+**Summary:** The paper introduces TabSOM, a new method for converting tabular data into images to enhance the performance of deep learning models like convolutional neural networks and vision transformers. Unlike existing methods that only consider individual feature values, TabSOM preserves the relationships between features using a Self-Organizing Map to create meaningful visual representations. The approach outperforms twelve prior methods in predictive accuracy and provides improved interpretability, making it a significant advancement in applying deep learning to tabular data.
 
-### 8. SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization
-**Authors:** Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, Xiaozhi Wang, Lei Hou, Juanzi Li
-**Link:** https://arxiv.org/abs/2608.13538v1
-**Summary:** The paper addresses the challenge of explaining features extracted by sparse autoencoders, which typically rely on external observations for insights. The authors propose SAEVerbalizer, a framework that fine-tunes a large language model to generate natural-language explanations directly from the decoder directions of the sparse autoencoder. Key results demonstrate that this approach not only provides explanations for unseen features but also allows for flexible adaptation to features from different models.
+### 8. On the Structural Limits of Machine Learning Decision Systems: An Information-Theoretic, Interaction-Based, and Stochastic-Dynamical Perspective
+**Authors:** Nestor R. Barraza, Gabriel Pena
+**Link:** https://arxiv.org/abs/2608.13510v1
+**Summary:** This paper addresses the limitations of machine learning decision systems by analyzing how intrinsic structural properties of data affect their performance, rather than just focusing on algorithmic advancements. It employs an information-theoretic framework to establish bounds on classification errors and estimation precision, highlighting that these limits are influenced more by the underlying data model than by the algorithms used. The authors emphasize that understanding these constraints is essential for improving predictive capabilities and integrating decision systems more effectively.
 
-### 9. DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees
-**Authors:** Tianyi Li, Yaxin Luo, Xinyi Shang, Zhiqiang Shen
-**Link:** https://arxiv.org/abs/2608.13524v1
-**Summary:** The paper presents DARTree, a method designed to enhance the speed of autoregressive language models by efficiently decoding multiple token proposals in parallel. By leveraging a tree structure for candidate generation instead of relying on a single draft chain, DARTree significantly increases the number of acceptable tokens in each verification round while decoupling the inference process from time-consuming operations. The results show that DARTree achieves a substantial lossless speedup, accepting nearly 99% more tokens per round compared to existing methods and up to 9.73 times faster than traditional autoregressive decoding.
+### 9. Equivariant learning of a transferable three-dimensional classical density functional
+**Authors:** Bingqing Cheng
+**Link:** https://arxiv.org/abs/2608.13506v1
+**Summary:** The paper addresses the challenge of predicting liquid behavior under varying conditions without requiring separate atomistic simulations for each scenario. The authors developed a method to directly learn a three-dimensional free-energy functional from equilibrium density fields while maintaining symmetry and consistency. Their key contribution is a single learned functional that successfully transfers across different temperatures and system sizes, allowing it to predict important liquid properties such as phase behavior and interfacial interactions without needing specific training data.
 
-### 10. Vero: Can AI Agents Build Formally Verified Software Repositories?
-**Authors:** Zhe Ye, Hantao Lou, Yuechun Sun, Peiyang Song, Zhengxu Yan, Timothe Kasriel, Qingyang Zhang, Kaiyu Yang, Soonho Kong, Jingxuan He, Dawn Song
-**Link:** https://arxiv.org/abs/2608.13522v1
-**Summary:** The paper introduces Vero, a benchmarking framework designed to evaluate AI agents' ability to generate both code and formal proofs in large software repositories. By testing agents on 43 curated multi-module instances from real-world applications, Vero aims to bridge the gap in verified code generation at the repository level. The key finding indicates that even the most advanced coding agents struggle, fully solving only 27 of 43 tasks, highlighting the current limitations in achieving reliable verified software synthesis.
+### 10. Intern-S2-Preview: Scientific Agentic Foundation Model
+**Authors:** Lei Bai, Jiaqi Cao, Chiyu Chen, Guanzhou Chen, Kai Chen, Guangran Cheng, Erfei Cui, Xuanlang Dai, Shengyuan Ding, Shangheng Du, Yanhui Duan, Yue Fan, Youqing Fang, Quan Gan, Yuanyuan Gao, Jiaye Ge, Lixin Gu, Yuzhe Gu, Qipeng Guo, Junjun He, Xin Hong, Ming Hu, Zhouqi Hua, Haian Huang, Junhao Huang, Zixian Huang, Minxi Jin, Lingkai Kong, Alexander Lam, Zehao Li, Zonglin Li, Tianhao Liang, Dahua Lin, Junyao Lin, Tianyang Lin, Zhouhan Lin, Jiangning Liu, Jin Liu, Kuikun Liu, Wenran Liu, Yifei Liu, Yuhong Liu, Yuhong Liu, Zhoumianze Liu, Ziyan Liu, Ziyu Liu, Haijun Lv, Han Lv, Chengqi Lyu, Le Ma, Ningsheng Ma, Zerun Ma, Haoyang Peng, Runyu Peng, Jifei Shan, Zixin Shang, Kou Shi, Xiang Shi, Qisheng Su, Xuerui Su, Hao Sun, Xiao Sun, Yanan Sun, Yu Sun, Huanze Tang, Yinghao Tang, Wenhui Tian, Zhongbo Tian, Bingli Wang, Haomin Wang, Jiarui Wang, Jingzhi Wang, Rui Wang, Xiquan Wang, Yi Wang, Zhecan Wang, Ziyi Wang, Zun Wang, Rubin Wei, Lianyi Wu, Wen Wu, Yue Wu, Yuhan Wu, Zhenyu Wu, Zijian Wu, Shuhao Xing, Jun Xu, Xingle Xu, Xuenan Xu, Xiangchao Yan, Ziang Yan, Bowen Yang, Danni Yang, Lin Yang, Zhiqi Yang, Qian Yao, Haochen Ye, Peng Ye, Jinhui Yin, Jiashuo Yu, Dingbo Yuan, Fei Yuan, Yuhang Zang, Bo Zhang, Chao Zhang, Chen Zhang, Hongjie Zhang, Junming Zhang, Wenlong Zhang, Wenwei Zhang, Yiming Zhang, Zhuo Zhang, Ziyang Zhang, Haiteng Zhao, Penghao Zhao, Yibo Zhao, Zhonghan Zhao, Zhihang Zhong, Bowen Zhou, Peiheng Zhou, Xin Zhou, Xinyu Zhou, Yunhua Zhou, Dongsheng Zhu, Yicheng Zou
+**Link:** https://arxiv.org/abs/2608.13505v1
+**Summary:** The paper presents Intern-S2-Preview, a series of advanced AI models designed to enhance scientific reasoning and discovery by processing various types of scientific data and tools over extended tasks. The models are pretrained using a diverse range of scientific documents and then fine-tuned through innovative training techniques, which lead to improved performance on scientific and multimodal benchmarks. Notably, the approach significantly enhances time series analysis and forecasting capabilities, demonstrating superior results in specific scientific tasks.
