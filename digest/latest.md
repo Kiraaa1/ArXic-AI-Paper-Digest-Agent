@@ -1,52 +1,52 @@
 ---
-## 2026-08-16
+## 2026-08-17
 
-### 1. Sparse Orthogonal Regression Technique: A Spectral Framework for Equation Discovery, Approximation, and Integration
-**Authors:** Sabin Roman, Ljupco Todorovski, Saso Dzeroski
-**Link:** https://arxiv.org/abs/2608.13504v1
-**Summary:** The paper introduces the Sparse Orthogonal Regression Technique (SORT), which addresses the challenge of discovering ordinary differential equations from noisy and unevenly sampled data by learning efficient expansions in orthogonal bases. By using L1-regularized regression to estimate expansion coefficients directly from the data, SORT avoids the pitfalls of traditional approaches reliant on specific libraries or predefined equation structures. The key contribution is the establishment of a flexible framework that enhances model robustness against noise and sampling inconsistencies, while also aiding in the estimation of complex integrals and supporting nonlinear approximation tasks.
+### 1. Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils
+**Authors:** Karel Becerra, Boris Mederos, Dean Snow, Ramón A. Mollineda
+**Link:** https://arxiv.org/abs/2608.14539v1
+**Summary:** This study addresses the challenge of determining the biological sex of individuals who created prehistoric hand stencils despite the lack of concrete data and inherent uncertainties in the images. The authors developed an uncertainty-aware deep learning framework that effectively processes and analyzes the stencils, using advanced techniques such as dual image processing and ensemble models to generate multiple silhouette interpretations and predictions. The key contribution is the ability to provide not only sex predictions but also confidence measures regarding these predictions, enhancing archaeological insights into ancient rock art.
 
-### 2. TraVEL: Trajectory-Guided Video Embedding Learning for Driving-Video Retrieval
-**Authors:** Yi-Chung Chen, Philip Jacobson, Tom Lampo, Yiren Lu, Jin Yao, David I. Inouye, Jing Gao, Danhua Guo, Burhan Yaman
-**Link:** https://arxiv.org/abs/2608.13495v1
-**Summary:** The paper addresses the challenge of efficiently retrieving relevant clips from large-scale driving videos, which is crucial for various applications like data curation and safety analysis. The authors propose TraVEL, a motion-aware fine-tuning framework that enhances a general-purpose video embedding model by using ego-trajectory similarity for better motion understanding without requiring expert-defined rules. Their approach demonstrates significant improvements in retrieving motion-centric events, achieving notable gains in retrieval performance across different model scales.
+### 2. Marionette: Predicting World States, Rendering Geometry, Painting Appearance
+**Authors:** Zian Meng, Zhen Li, Chuanhao Li, Qiang Li, Kaipeng Zhang
+**Link:** https://arxiv.org/abs/2608.14530v1
+**Summary:** The paper introduces Marionette, a new model for interactive game worlds that addresses issues of consistency and control in long-term visual predictions by explicitly modeling the evolving world state instead of relying solely on autoregressive methods. It combines a structured 3D world state representation with a fixed renderer for geometry and occlusion, while a separate appearance model generates photorealistic visuals. Key findings demonstrate that Marionette enables direct control over predicted states and significantly reduces spatial errors, improving stability and fidelity in character interactions.
 
-### 3. AlayaWorld: Interactive Long-Horizon World Modeling - Full Technical Report (v1.1)
-**Authors:** AlayaWorld Team, Kaipeng Zhang, Chuanhao Li, Yifan Zhan, Yongtao Ge, Yuanyang Yin, Jiaming Tan, Kang He, Liaoyuan Fan, Mingliang Zhai, Ruicong Liu, Xiaojie Xu, Xuangeng Chu, Zhen Li, Zhengyuan Lin, Zhixiang Wang, Zian Meng, Zihui Gao
-**Link:** https://arxiv.org/abs/2608.13492v1
-**Summary:** The report introduces an enhanced version of AlayaWorld, which improves long-horizon world modeling by refining how conditioning signals—inputs that guide content generation—are represented and integrated. Key innovations include replacing previous memory methods with a streaming 3D point-cache renderer and developing a unified encoding process that closely aligns visual conditions with generated video in both structure and timing. These changes lead to more coherent and contextually relevant outputs in interactive simulations.
+### 3. Handover of In-Context Learning State Across Session Boundaries
+**Authors:** Masahiro Kato, Taka Kato
+**Link:** https://arxiv.org/abs/2608.14528v1
+**Summary:** The paper addresses the challenge of transferring the state of in-context learning (ICL) when a task involving large language models is continued in a new session. The authors propose a structured approach to handover that preserves essential information while managing memory constraints, employing techniques like Gaussian linear regression for precise state transfer. The key contribution is a theoretical framework that quantifies how much information must be retained during the handover and the implications for memory requirements based on the continuation of the task.
 
-### 4. Toward a Gricean Retreat: Probing LLMs for Knowledge Boundaries and Referent Specificity
-**Authors:** Dananjay Srinivas, Saksham Khatwani, Maria Pacheco
-**Link:** https://arxiv.org/abs/2608.13484v1
-**Summary:** This paper explores the tendency of large language models (LLMs) to generate specific details about unknown entities instead of opting for safer, more general claims, which reflects a departure from the Gricean ideal of cooperative conversation. The authors used a benchmark to assess whether LLMs recognize when they lack knowledge about a referent and anticipate the appropriate level of specificity in their responses. They found that while LLMs can identify their knowledge boundaries, they still prefer to produce specific but potentially inaccurate details instead of acknowledging uncertainty, highlighting a gap in their conversational alignment with human communication principles.
+### 4. Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers
+**Authors:** Taenyun Kim, Edyta Bogucka, Daniele Quercia
+**Link:** https://arxiv.org/abs/2608.14522v1
+**Summary:** The paper addresses the problem of bias in AI systems that make moral decisions, which can arise from developer choices in the moral preference elicitation process. The authors conducted a study analyzing three critical stages of this process—feature selection, voter sampling, and question framing—across various AI applications. They found that these developer decisions significantly influence the resulting moral preferences, demonstrating that a transparent and audited approach is essential for fair AI outcomes.
 
-### 5. Synthetic Persona Pretraining: Alignment from Token Zero
-**Authors:** Julian Minder, Viktor Moskvoretskii, Raghav Singhal, Difan Jiao, Andy Arditi, Shaobo Cui, Yiderigun Borjigin, Kartik Bali, Stefan Krsteski, Harsh Raj, Huu Nguyen, Jannik Brinkmann, Ashton Anderson, Roland Aydin, Robert West
-**Link:** https://arxiv.org/abs/2608.13482v1
-**Summary:** The paper addresses the challenge of aligning AI language models with human values by introducing a method called Synthetic Persona Pretraining (SPP), which embeds desired personality traits into the model from the very beginning of its training. By annotating training data with reflections that reflect these values and subsequently binding them to the model during post-training, the authors demonstrate that SPP significantly improves the model's adherence to ethical guidelines and reduces instances of misalignment, particularly in moral dilemmas. The results suggest that instilling values early in the training process is crucial for achieving effective alignment.
+### 5. Learning-to-Transition for Large-scale and High-Order MIMO Detection
+**Authors:** Yubo Zhang, Yiyao Liu, Xiaodong Wang
+**Link:** https://arxiv.org/abs/2608.14511v1
+**Summary:** This paper addresses the challenge of efficiently detecting signals in high-order MIMO systems, which involves navigating a vast symbol space to provide accurate channel decoding. The authors propose a "learning-to-transition" framework that utilizes a Transformer model to sequentially update sampling strategies based on the detection process, enhancing both hard and soft-output detection. A key contribution is the method of transferring learned detection dynamics from a hard-output framework to a more complex soft-output iterative receiver, improving detection performance through layer-specific adaptations informed by decoder feedback.
 
-### 6. MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination
-**Authors:** Saisha Shetty, Satvik Tripathi, Austin Lin, Colin Zhao, Theodore Kim, Don Enwerem, Jacinta Arnold, Shahriar Faghani, Tessa S Cook
-**Link:** https://arxiv.org/abs/2608.13476v1
-**Summary:** The MARC framework addresses the limitations of traditional large language models (LLMs) in clinical AI by introducing a multi-agent system that orchestrates specialized agents for reasoning and coordination tasks, enhancing interpretability and traceability. It simplifies the prompt generation process using a Decomposer module and allows non-experts to configure the system via YAML, making it user-friendly. The open-source framework is designed for flexible deployment and is accessible to clinical professionals without programming skills.
+### 6. Split the Labor: Separating Evidence Interpretation from Decision Aggregation
+**Authors:** Zhelun Wu
+**Link:** https://arxiv.org/abs/2608.14509v1
+**Summary:** The paper addresses the challenge of effectively interpreting multiple sources of evidence and aggregating their conclusions in language models. The authors propose a structured approach using a four-field evidence tuple to separate the tasks of evidence interpretation and decision aggregation, which reveals issues in current aggregation methods. Their key contribution is the introduction of a pooling method for calibrated log-likelihood ratios that improves performance in evidence-based decision-making systems, achieving a significant accuracy improvement over traditional methods.
 
-### 7. AaLLM: An End-to-End Analog Circuit Design Framework from Topology Generation to Sizing Using Large Language Models
-**Authors:** Mohammed Ayman Habib, Rylan Hart, Morteza Fayazi
-**Link:** https://arxiv.org/abs/2608.13472v1
-**Summary:** The paper presents AaLLM, an open-source framework that streamlines the analog circuit design process by automating topology generation and circuit sizing using large language models (LLMs). By implementing a multi-agent system that includes designers, critics, and evaluators, AaLLM significantly reduces the time and effort required for circuit design while producing novel topologies that can outperform traditional methods. Key results show that AaLLM decreases the number of SPICE simulation calls by up to 4.5 times and reduces overall design time by 40 times compared to existing techniques.
+### 7. RecipeNet: A Hierarchical Transformer for Recipe Data
+**Authors:** Pin-Yen Huang, Sachin Chhabra, Prasanth Sai Gouripeddi, Abhinav Kumar, Baoxin Li
+**Link:** https://arxiv.org/abs/2608.14505v1
+**Summary:** The paper addresses the challenge of effectively representing recipe data, which involves complex sequences and interactions among various steps and fields. The authors introduce RecipeNet, a hierarchical Transformer model that captures both the interactions within individual steps and the sequential dependencies across steps. Their experiments show that RecipeNet significantly outperforms traditional tabular models, demonstrating the advantages of hierarchical and sequential approaches for this type of data.
 
-### 8. Active-Trace Complexity Bounds for Moreau--Yosida Unadjusted Langevin Sampling
-**Authors:** Yuchen Xin, Zhihua Zhang
-**Link:** https://arxiv.org/abs/2608.13467v1
-**Summary:** This paper investigates the Moreau--Yosida unadjusted Langevin algorithm (MYULA) for sampling from nonsmooth composite distributions, focusing on improving the algorithm's efficiency by controlling the discretization error through the active trace rather than global curvature. The authors demonstrate that the number of iterations required to achieve a specified accuracy is significantly influenced by the active trace, leading to improved accuracy estimates for various structured penalties. Ultimately, they establish end-to-end guarantees for the sampling process, showing that their approach can enhance the algorithm's performance compared to traditional methods.
+### 8. Universal Thermodynamic Interatomic Potentials for Crystalline Materials
+**Authors:** Juno Nam, Bowen Deng, Xiaochen Du, Luis Barroso-Luque, Benjamin Kurt Miller, Rafael Gómez-Bombarelli
+**Link:** https://arxiv.org/abs/2608.14502v1
+**Summary:** The paper addresses the challenge of calculating free energies in solid-state materials, which are crucial for understanding phase stability but are traditionally difficult to obtain. The authors introduce a thermodynamic interatomic potential (TIP) that extends existing interatomic models to provide thermodynamically consistent Gibbs free energy calculations. This approach allows for efficient determination of a crystal's equation of state and its phase transitions, making free energy calculations as accessible as potential energy evaluations for high-throughput materials discovery.
 
-### 9. Concept Drift Detection and Adaptive Retraining of Malware Classification Models
-**Authors:** Christofer Washington Berruz Chungata, Martin Jurecek, Katerina Potika, William B. Andreopoulos, Mark Stamp
-**Link:** https://arxiv.org/abs/2608.13465v1
-**Summary:** This paper addresses the issue of concept drift in malware classification, where changes in malware patterns over time can degrade model performance. The authors propose and analyze three automated concept drift detection methods, including a novel approach using One-Class Support Vector Machines (OCSVM), and compare their effectiveness across various classification models. The key finding is that drift-aware retraining based on OCSVM yields high classification accuracy while significantly reducing the need for frequent model retraining compared to static or periodic methods.
+### 9. Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training
+**Authors:** Hanfeng Lu, Tianyu Feng, Suyi Li, Yuheng Zhao, Wei Gao, Shaopan Xiong, Ju Huang, Siran Yang, Jiamang Wang, Lin Qu, Wei Wang
+**Link:** https://arxiv.org/abs/2608.14498v1
+**Summary:** The paper presents Rollplex, a runtime designed to optimize the post-training of vision-language models (VLMs) by allowing concurrent processing of independent computations during reinforcement learning. By efficiently managing memory and sharing weights across different phases of training, Rollplex significantly increases GPU utilization and achieves speedups of 1.23 to 2.24 times compared to traditional serial methods, without compromising the integrity of the reinforcement learning updates.
 
-### 10. MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification
-**Authors:** Daniel Perkins, John Squires, Janou Milligan, Chandra Raskoti, Linda Ungerboeck
-**Link:** https://arxiv.org/abs/2608.13463v1
-**Summary:** The paper addresses the challenge of generalizing image classification models across varied datasets and difficulty levels. The authors present ARMDIL, an Adaptive Router that uses a multimodal large language model to smartly direct images to the most suitable classification backbone, incorporating diverse architectures such as CNNs and vision-language models. Key findings indicate that ARMDIL performs well in cross-dataset classification and enhances adaptability and interpretability by allowing easy updates through prompt changes.
+### 10. Generating Benchmark Health Data Using a Tabular Diffusion Transformer
+**Authors:** Hao Yan, Lisa Pilgram, Dan Liu, Linglong Kong, Fida Dankar, Khaled El Emam
+**Link:** https://arxiv.org/abs/2608.14496v1
+**Summary:** The paper addresses the challenge of generating realistic synthetic tabular datasets from multiple heterogeneous tables, which existing methods struggle to handle. The authors propose a two-stage framework that first standardizes these tables into a common format, then uses a diffusion transformer model to learn patterns and generate synthetic data. Their approach demonstrates high fidelity in the generated datasets and maintains a good balance between diversity and realistic representation.
