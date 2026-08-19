@@ -1,52 +1,52 @@
 ---
-## 2026-08-18
+## 2026-08-19
 
-### 1. Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory
-**Authors:** Bingxin Xu, Yuzhang Shang, Emilio Ferrara
-**Link:** https://arxiv.org/abs/2608.16889v1
-**Summary:** The paper addresses the challenges of managing long-horizon robot manipulation tasks, where errors can accumulate across multiple subtasks. The authors introduce BATON, an approach that explores each subtask individually and uses a transition-aware memory system to ensure smoother handoffs between them. This method significantly improves both overall task success and cumulative success rates on the RoboMemArena benchmark, outperforming the current state-of-the-art by over 11%.
+### 1. From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation
+**Authors:** Xingjian Wang, Zhao Wang, Taihang Hu, Jun Zheng, Qing Jin, Qinye Zhou, Zhengtao Wu, Yongchao Du, Zuan Gao, Chao Lin, Yefeng Shen, Xiaoli Xu, Zhengze Xu, Hao Yan, Yuhang Yu, Mingzhou Zhang, Mengting Chen
+**Link:** https://arxiv.org/abs/2608.18076v1
+**Summary:** The paper addresses the challenge of optimizing data design for large-scale image generation by organizing heterogeneous supervision according to the dependencies among different generative capabilities. The authors propose a capability-driven data infrastructure that integrates specialized data engines for text-image grounding and other tasks, along with a multi-stage curriculum to evolve these capabilities effectively. As a result, they curated an extensive dataset and successfully trained multimodal diffusion models, achieving impressive visual performance and versatility across various generation tasks.
 
-### 2. Q-based Variational Inverse Reinforcement Learning
-**Authors:** Ondrej Bajgar, Peter Tisnikar, Alessandro Abate, Konstantinos Gatsis, Maike Osborne
-**Link:** https://arxiv.org/abs/2608.16888v1
-**Summary:** The paper addresses the challenge of inferring human preferences for AI behavior, which is often impractical to specify directly. It introduces Q-based Variational Inverse Reinforcement Learning (QVIRL), a Bayesian method that estimates reward functions by learning a distribution over optimal Q-values from expert demonstrations. QVIRL is notable for its scalability, ability to quantify uncertainty, and successful performance across various tasks, including training with raw pixel data, marking a significant advancement in Bayesian inverse reinforcement learning.
+### 2. Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation
+**Authors:** Iryna Hartsock, Cesar Lam, Christopher Otteni, Aliya Qayyum, Robert Gatenby, Cyrillo Araujo, Ghulam Rasool
+**Link:** https://arxiv.org/abs/2608.18072v1
+**Summary:** The paper presents a multi-agent AI system designed to enhance the structuring and quality assurance of radiology reports. By organizing report content into standardized anatomical sections and identifying discrepancies, the system successfully structured over 22,000 sentences across reports, achieving high evaluation scores from radiologists. This approach aims to improve consistency in radiology reporting and streamline quality oversight in clinical practice.
 
-### 3. Improving the matrix multiplication exponent with modern optimization and AlphaEvolve
-**Authors:** Emilien Dupont, Marvin Eisenberger, Borislav Kozlovskii, Abbas Mehrabian, Francisco J. R. Ruiz, Abigail See, Renfei Zhou, Josh Alman, Virginia Vassilevska Williams, Matej Balog
-**Link:** https://arxiv.org/abs/2608.16884v1
-**Summary:** The paper addresses the problem of improving the matrix multiplication exponent, denoted as $ω$, which indicates the computational complexity of matrix multiplication. The authors reformulate the related optimization problem, apply novel machine learning techniques, and enhance the optimization process using AlphaEvolve. Their approach successfully lowers the upper bound of $ω$ to less than 2.371177, surpassing the previous best bound of 2.371339.
+### 3. On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification
+**Authors:** Qinyuan Ye, Yu Li, Yada Pruksachatkun, Jiaxin Zhang, Chien-Sheng Wu
+**Link:** https://arxiv.org/abs/2608.18066v1
+**Summary:** This paper addresses the reliability issues of memory-based self-improving agents that learn from a series of tasks over time. The authors evaluated these agents by measuring performance variance across multiple runs and examining the impact of task order, revealing that their improvement is sensitive to both noise and the sequence of tasks presented. They suggest that better task specification and oversight could enhance the robustness of these agents, while also calling for more rigorous evaluation practices.
 
-### 4. Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run
-**Authors:** Yunbum Kook, Santosh S. Vempala
-**Link:** https://arxiv.org/abs/2608.16878v1
-**Summary:** This paper addresses the spectral gap and convergence rates of the Hit-and-Run and Coordinate Hit-and-Run Markov chains used for sampling from convex bodies. The authors connect the spectral gap to Poincaré constants and improve existing bounds on the mixing time, demonstrating a better convergence rate for nearly isotropic bodies compared to previous results. The key contribution is a refined analysis that reduces the dimension dependence from cubic to nearly quadratic, while employing duality and calculus techniques in the proof.
+### 4. TokEval: A Tokenizer Evaluation Suite
+**Authors:** Clara Meister
+**Link:** https://arxiv.org/abs/2608.18062v1
+**Summary:** The paper introduces TokEval, a new evaluation framework for language model tokenizers aimed at understanding how different tokenizer properties affect downstream model performance. By conducting controlled pretraining experiments while varying tokenizer characteristics, the authors found that information-theoretic metrics are strong predictors of language modeling abilities, while structure-sensitive metrics relate to task accuracy. This work aims to shift tokenizer evaluation from broad pretraining experiments to more targeted, intrinsic measurements.
 
-### 5. AutoSR: Automatic Symbolic Regression by Searching Research States
-**Authors:** Kejia Zhang, Youran Sun, Xinyu Ren, Chugang Yi, Haizhao Yang
-**Link:** https://arxiv.org/abs/2608.16876v1
-**Summary:** The paper presents AutoSR, an automated system for symbolic regression that enhances traditional approaches by retaining the scientific context and reasoning behind candidate equations rather than just focusing on the equations themselves. It utilizes a method called progressive-widening Monte Carlo tree search to systematically explore scientific investigations, incorporating a comprehensive record of motivations and evidence. The key contribution is that AutoSR successfully recovers known algebraic relations from benchmark problems while also providing a structured justification for its findings, marking a shift towards integrating scientific reasoning into symbolic regression.
+### 5. The concentration game: Bayesian updating, regret, and information
+**Authors:** Akshay Balsubramani
+**Link:** https://arxiv.org/abs/2608.18061v1
+**Summary:** This paper addresses the interplay between Bayesian updating and regret in a two-player game involving a learner and nature, establishing a framework that reconciles these concepts through a unique decomposition of regret. The authors develop a model that yields Gibbs/Bayes weights as a mixed action strategy, which allows the learner to minimize loss across rounds while maintaining an information budget. A significant contribution of this work is the identification of a general regret decomposition that informs various machine learning strategies, linking them through a common information-theoretic framework.
 
-### 6. An Analytical-Prior Framework for Data-Efficient Prediction of Sound-Reduction Frequencies in Rectangular Side-Branch Helmholtz Resonators
-**Authors:** Jiaming Li
-**Link:** https://arxiv.org/abs/2608.16873v1
-**Summary:** The paper addresses the challenge of accurately predicting sound-reduction frequencies in side-branch Helmholtz resonators when high-fidelity simulation data is limited and costly to generate. It introduces an analytical-prior learning framework that leverages a low-cost analytical model to enhance data efficiency, either by correcting simulation data discrepancies or by distilling the analytical model into a learned prior for calibration. The key findings demonstrate that this approach significantly improves prediction accuracy, with mean absolute errors reduced to as low as 0.371 Hz compared to traditional methods.
+### 6. Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating
+**Authors:** Daria Leshchikova, Valentina V. Kuskova, Dmitry Zaytsev, Valerii Klimov
+**Link:** https://arxiv.org/abs/2608.18058v1
+**Summary:** The paper investigates the challenges of user acceptance in online dating platforms that use AI agents for communication. Through large-scale surveys and a novel measurement model, the authors find that users are more willing to deploy their own agents than to engage with others' agents, revealing a significant asymmetry in receptivity. The research provides insights for improving agent design and matchmaking by highlighting the importance of communication reciprocity and user preferences.
 
-### 7. Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning
-**Authors:** Serena Su, Yifan Wang, Senwei Liang
-**Link:** https://arxiv.org/abs/2608.16870v1
-**Summary:** The paper addresses the challenge of accurately classifying circulating tumor cell (CTC) phenotypes using trajectory data from microfluidic devices, which involves complex fluid interactions. The authors present a novel deep learning framework that utilizes a targeted data augmentation strategy called Subsequence to improve learning from localized trajectory segments, leading to enhanced classification accuracy. Key findings indicate that this approach not only boosts performance but also reveals that shorter segments of trajectory data contain critical biophysical information necessary for effective prediction.
+### 7. HLSR: Hybrid Live Forecast Selective Dynamic Vehicle Rerouting for Real-Time Congestion Avoidance
+**Authors:** Xiao Wang, Shun Ren Yang, Hui Nien Hung
+**Link:** https://arxiv.org/abs/2608.18056v1
+**Summary:** The paper addresses urban traffic congestion by proposing HLSR, a selective vehicle rerouting framework that combines real-time traffic data with short-term travel forecasts to improve routing decisions. This approach uses innovative methods such as dual-threshold congestion detection and tailored travel-time predictions to efficiently guide vehicles, minimizing disruptions while enhancing route optimization. The key contribution is a sophisticated integration of live and forecast data that enables dynamic rerouting decisions with limited intervention, leading to better congestion management.
 
-### 8. Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text
-**Authors:** Benjamin Belay
-**Link:** https://arxiv.org/abs/2608.16868v1
-**Summary:** The paper addresses the challenge of verifying the internal computations of language models by examining whether generated text can provide evidence of the internal state that influenced its generation. The researchers implemented this idea in two types of neural network architectures, demonstrating that they could authenticate and trace specific internal states through subtle patterns in the output text, despite producing the same answer. The key finding is that, in controlled settings, detectable evidence of these internal states can indeed be encoded in the generated text, establishing a proof of concept for computational provenance in language models.
+### 8. Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction
+**Authors:** Veronika Spieker, Wenqi Huang, Cemre Ariyurek, Liam Timms, Daniel Rueckert, Onur Afacan, Julia A. Schnabel, Sila Kurugol
+**Link:** https://arxiv.org/abs/2608.18055v1
+**Summary:** The paper addresses the challenge of accurately reconstructing dynamic contrast-enhanced MRI images from undersampled data, which is crucial for reliable quantitative analysis. The authors propose a novel framework that utilizes primitive representations to separate anatomical features, contrast dynamics, and motion into distinct temporal components, enhancing both reconstruction quality and the accuracy of important metrics such as enhancement curves for the aorta and kidney. This approach demonstrates performance comparable to traditional methods and allows for future expansion to accommodate more dynamic factors and higher levels of data acceleration.
 
-### 9. Non-Crossing Deep Quantile Regression for Distributional Survival Prediction
-**Authors:** Shuai Huang, Zhe Qu, Zhaowei Hua, Guohao Shen, Rui Tang, Hongtu Zhu
-**Link:** https://arxiv.org/abs/2608.16864v1
-**Summary:** The paper addresses the challenge of accurately predicting survival distributions in situations where the effects of covariates vary over time, which traditional hazard and mean models oversimplify. It introduces a new framework called Censored Non-crossing Quantile (CNQ) that uses deep learning techniques to estimate multiple conditional survival quantiles while ensuring their proper ordering. The approach outperforms existing methods in simulations and real clinical applications by providing more accurate predictions and revealing nuanced covariate effects that might be missed with simpler models.
+### 9. StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents
+**Authors:** Yining Hua, Hongbin Na, Yifan Zhou, Akshay Kalose, Cyrus Ayubcha, Levi Lian
+**Link:** https://arxiv.org/abs/2608.18050v1
+**Summary:** The paper addresses the challenge of ensuring consistency between different views and versions of digital artifacts used by AI agents in knowledge work. The authors introduce StagedWorkspace, a versioned workspace that links parsed views and edits to the corresponding versions of native files, thereby improving access and tracking of changes. Their results show a significant performance boost in task completion and evaluation scores for models using this dual-access approach compared to traditional single-view methods.
 
-### 10. The canonical facets of multi-separator polytopes
-**Authors:** Bjoern Andres, Silvia Di Gregorio, Jannik Irmai, Lucas Fabian Naumann, Shengxian Zhao
-**Link:** https://arxiv.org/abs/2608.16861v1
-**Summary:** The paper explores the graph multi-separator problem, which aims to improve image segmentation techniques. The authors develop an integer linear program (ILP) formulation and identify the polyhedral structure of the associated multi-separator polytope, revealing graph-theoretic conditions for its facets. A key contribution is the complete characterization of these facets and a demonstration of the relationships between the multi-separator polytope, the boolean quadric polytope, and the lifted multicut polytope.
+### 10. Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation
+**Authors:** Hollis Robbins
+**Link:** https://arxiv.org/abs/2608.18041v1
+**Summary:** This paper identifies a crucial second parameter in language processing, termed "phase," which influences how meanings interact and combine beyond mere co-occurrence frequency. The authors argue that traditional models, like standard transformers, fail to capture this phase, which is essential for understanding complex linguistic phenomena such as allusion and irony. They propose that language interpretation requires a model incorporating this relational parameter, suggesting that a more nuanced approach could better reflect the dynamics of meaning in communication.
