@@ -1,52 +1,52 @@
 ---
-## 2026-08-21
+## 2026-08-22
 
-### 1. Information on trajectories: martingales and random times
-**Authors:** Akshay Balsubramani
-**Link:** https://arxiv.org/abs/2608.20337v1
-**Summary:** This paper examines the flow of information along the trajectories of nonnegative martingales, establishing precise variational identities that apply even at random times. The authors derive classical concentration inequalities through this framework, revealing how much information is lost in different contexts and introducing new concepts like a “peeking penalty” for arbitrary random times. A key contribution is the identification of specific forms for the slack in concentration bounds, which can be interpreted through concepts like Bregman divergences and coalescent probabilities in the context of safe multi-model testing.
+### 1. MidTool: Mid-training Data Synthesis for Agentic Tool Use
+**Authors:** Fengqing Jiang, Yite Wang, Boyi Liu, Zhaoyang Wang, Canwen Xu, Zhewei Yao, Radha Poovendran, Yuxiong He
+**Link:** https://arxiv.org/abs/2608.20314v1
+**Summary:** The paper addresses the challenge of improving large language models' ability to effectively use tools by introducing MidTool, a data synthesis pipeline that enhances mid-training with diverse data sources and supervision from real-world tool APIs. By mid-training the Qwen3 models using the MidTool framework, the authors demonstrate notable improvements in the models' performance on various benchmarks, indicating that targeted mid-training can be crucial for developing general tool-use capabilities in language models.
 
-### 2. ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models
-**Authors:** Sahil Kale, Ian Harris
-**Link:** https://arxiv.org/abs/2608.20338v1
-**Summary:** The paper addresses the challenge of effectively unlearning harmful knowledge in large language models while retaining beneficial information. The authors introduce a new benchmark, ConceptGuard, which evaluates unlearning at the level of concepts rather than isolated facts, focusing on dual-use concepts that can be both harmful and benign. Their findings reveal that current unlearning methods struggle to maintain contextual sensitivity and achieve meaningful control over conceptual knowledge, highlighting the need for improved unlearning techniques aligned with real-world safety needs.
+### 2. Physical-Support Confidence Sets for Highly Coherent Dictionaries
+**Authors:** Guan-Ju Peng
+**Link:** https://arxiv.org/abs/2608.20295v1
+**Summary:** The paper addresses the challenge of accurately identifying physical support in highly coherent dictionary learning, where different dictionaries might interpret the same data differently. The authors propose a novel method called resolution-aware physical-support inference, which considers uncertainties in both the learned dictionary and the deployment signal to project explanations onto a physical support space. Their key contribution is the introduction of active endpoint bracketing (AEB), a computational technique that selectively evaluates candidate solutions, leading to improved physical localization with fewer evaluations compared to traditional methods.
 
-### 3. G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation
-**Authors:** Shiao Xie, Siyu Chen, Jianwei Lv, Bo Yuan, Yujin Wang, Xiandong Li
-**Link:** https://arxiv.org/abs/2608.20331v1
-**Summary:** The paper addresses the challenge of providing personalized and understandable interpretations of medical reports for patients, which requires both factual accuracy and context-specific communication. To tackle this, the authors introduce G-CARL, a novel reinforcement learning framework that uses checklist-based supervision and multi-source retrieval to improve the accuracy and relevance of medical explanations. Their extensive experiments demonstrate that G-CARL significantly outperforms existing methods, yielding interpretations that are more precise and better suited to patient needs.
+### 3. Phantom Gains: Auditing Self-Improvement Against a Measured Null
+**Authors:** Cheng Xu, Nan Yan, Liming Chen, M-Tahar Kechadi
+**Link:** https://arxiv.org/abs/2608.20290v1
+**Summary:** The paper addresses the challenge of accurately auditing improvements in language models by examining the transition in solving individual problems, rather than just overall accuracy. Through a series of controlled experiments comparing self-training methods against a frozen model, the authors identify measurement failures that can misrepresent model performance. They propose a new auditing approach that relies on a per-problem null hypothesis derived from existing data, revealing that external distillation enhances problem-solving abilities, while self-training does not consistently yield positive results.
 
-### 4. $TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval
-**Authors:** Parampreet Singh, Anushka Singh, Sumit Kumar, Vipul Arora
-**Link:** https://arxiv.org/abs/2608.20326v1
-**Summary:** The paper addresses the problem of overconfidence in deep neural networks used for music information retrieval, where the models often provide misleadingly high confidence for incorrect predictions. The authors introduce a new confidence estimation method called $TCP_α$, which employs a margin-controlled penalty to clearly separate confidence scores for correct and incorrect predictions. Their results show that $TCP_α$ significantly improves prediction reliability, achieving higher performance, particularly under conditions where confidence levels are critical, such as rāga identification and dealing with domain shifts.
+### 4. Dynamic Structural Causal Modeling for Sleep
+**Authors:** Ranveer Singh, Saurabh Mathur, Pranuthi Tenali, Arun Badi, Sriraam Natarajan
+**Link:** https://arxiv.org/abs/2608.20285v1
+**Summary:** The study addresses the complex causal dynamics of sleep-disordered breathing, which vary among different patient groups, making it difficult to create targeted treatments. By analyzing Home Sleep Apnea Test recordings using the PCMCI+ algorithm and incorporating domain knowledge, the researchers constructed dynamic causal graphs that reveal systematic differences in causal relationships based on sex and age. Key findings indicate that while certain relationships remain consistent across all patient cohorts, others show significant variation, highlighting the need for tailored interventions.
 
-### 5. A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection
-**Authors:** Anton Lambrecht, Reda El Hail, Xianjun Jiao, Pieter Crombez, Dominique Schreurs, Peter Karsmakers, Adnan Shahid, Eli De Poorter
-**Link:** https://arxiv.org/abs/2608.20322v1
-**Summary:** This paper addresses the need for effective contact-free monitoring of human activity and sleep in healthcare settings by comparing three radar technologies: FMCW, IR-UWB, and Wi-Fi sensing. The authors conduct a controlled study using data from 20 participants across different room layouts and evaluate each technology's performance on activity recognition and sleep monitoring tasks using a convolutional neural network. The key findings indicate that while IR-UWB excels in activity recognition, FMCW performs better in varying environments, highlighting a trade-off between performance and robustness in RF sensing systems.
+### 5. Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization
+**Authors:** Qian Kou, Xiaofeng Shi, Xiaosong Qiu, Hua Zhou
+**Link:** https://arxiv.org/abs/2608.20281v1
+**Summary:** The paper addresses the issue of large language models struggling to answer questions when the relevant documents are not retrieved during inference, a challenge known as document knowledge internalization. The proposed solution, IAR (Inject, Align, and Recover), is a three-stage post-training framework that effectively transforms a fixed corpus into usable knowledge for question answering without retrieval. Key results demonstrate that IAR significantly enhances both domain-specific and general performance across various model families and benchmarks, achieving better accuracies in retrieval-free document internalization compared to conventional methods.
 
-### 6. An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction
-**Authors:** Narges Ahmadi, Yubo Jiao, Jônatas Augusto Manzolli, Jiangbo Yu, Luis Miranda-Moreno
-**Link:** https://arxiv.org/abs/2608.20320v1
-**Summary:** This study addresses the challenge of integrating digital data collection, travel behavior modeling, and demand prediction, which are often handled separately. By implementing a three-agent workflow that combines chatbot surveys, data processing, and predictive modeling, the research found that incorporating visual context and habitual travel information significantly improved prediction accuracy in understanding how weather influences travel choices. The results show that coordinated agents and multimodal techniques can enhance the reliability of travel behavior insights.
+### 6. Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders
+**Authors:** Yash Kulkarni, Shubham Harkare, Arvind Suresh Yogesh Babu
+**Link:** https://arxiv.org/abs/2608.20280v1
+**Summary:** The paper investigates which eviction policy is most effective for caching responses from large language models (LLMs) under different workloads and settings. The authors systematically evaluate several eviction strategies, including LFU, FIFO, and others, using a tool called CLEVER, but find that LFU consistently outperforms other policies by a small margin across various conditions. A significant finding is that many cached responses are not answer-substitutable, suggesting that cache effectiveness is hindered by the quality of hits rather than simply the eviction mechanism used.
 
-### 7. Inducing Task Models from Computer-Use Traces
-**Authors:** Yucheng Jiang, Zora Zhiruo Wang, Ruishi Chen, Diyi Yang
-**Link:** https://arxiv.org/abs/2608.20319v1
-**Summary:** The paper addresses the challenge of creating structured task models from naturalistic computer-use data, which consists of low-level actions like mouse clicks and keyboard inputs. The authors present a method called Task Model Induction (TMI) that effectively identifies and separates concurrent tasks in the data, resulting in hierarchical models that accurately represent how tasks are performed. The key finding is that TMI achieves high accuracy in recovering task structures and significantly improves task performance by 30% compared to existing methods.
+### 7. Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents
+**Authors:** Yiyang Feng, Biddut Sarker Bijoy, Niranjan Balasubramanian, Jiawei Zhou
+**Link:** https://arxiv.org/abs/2608.20274v1
+**Summary:** The paper investigates how skills learned by Large Language Model (LLM) agents can be effectively transferred across different tasks. It compares two approaches to skill induction: using larger tasks versus breaking them down into subtasks, as well as using text versus code formats. The key finding is that skills induced from subtasks generally perform better and that a new "skill utility score," which combines two properties of skills, can predict their success during transfer, thus providing a useful diagnostic tool.
 
-### 8. AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement
-**Authors:** Yizhe Chi, Wenyi Li, Deyao Hong, Xiaoqiu Wang, Mingju Gao, Kaisen Yang, Bingxiang He, Youjie Zheng, Calvin Xiao, Qinhuai Na
-**Link:** https://arxiv.org/abs/2608.20318v1
-**Summary:** The paper addresses the challenge of enabling AI systems to improve their own training algorithms through recursive self-improvement (RSI). The authors introduce AI4AI-Bench, a benchmarking suite that allows agents to rewrite and test various training algorithms within a fixed time frame. Results indicate that existing systems struggle to noticeably improve upon original algorithms, with enhanced reasoning leading to a significant increase in the number of successful submissions and better average scores, but even the best performers achieve only a fraction of the potential optimum.
+### 8. Catching the Rug: Early Prediction of Fraudulent Memecoins on Solana via Machine Learning
+**Authors:** Jianghai Li, Pavel Kuznetsov, Yury Yanovich, Konstantin Nott-Whaley, Igor Vodolazov
+**Link:** https://arxiv.org/abs/2608.20271v1
+**Summary:** This paper addresses the growing risk of fraudulent memecoins, specifically rug pulls, on the Solana blockchain by developing a machine learning framework for early detection. Through analyzing a dataset of 6.4 million tokens, the researchers found that traditional models, like Gradient Boosting (XGBoost), can accurately identify potential rug pulls using just the first 5 minutes of trading data. The study contributes to better understanding and mitigating DeFi fraud on Solana, aiming to protect investors from risky assets.
 
-### 9. Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation
-**Authors:** Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein
-**Link:** https://arxiv.org/abs/2608.20316v1
-**Summary:** The paper addresses the challenge of efficiently routing queries to specialized AI models, balancing the costs of estimating each model's expected return. It introduces a methodology called Pandora's Router, which utilizes a structured approach to determine when it's worthwhile to refine value estimates based on expected benefits. The results demonstrate that this approach achieves similar routing quality as more exhaustive methods while significantly reducing the use of expensive estimators.
+### 9. DICS: Data-Informed Centroid Splitting for Decision Tree Classifiers
+**Authors:** MD Saifur Rahman Mazumder, Feng Yu
+**Link:** https://arxiv.org/abs/2608.20258v1
+**Summary:** The paper addresses the challenge of high computational costs in training decision tree classifiers, particularly for large and complex datasets. It introduces a clustering-based method called Data-Informed Centroid Splitting (DICS), which efficiently narrows down the candidate splits by using data-driven insights. The key contribution is that DICS maintains classification accuracy while significantly reducing training time, demonstrating its effectiveness in enhancing the performance of decision tree models.
 
-### 10. Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records
-**Authors:** Jun Ni Du, Lukas Adamek, Maxim Kryukov, Flavio Dormont, Ziv Bar-Joseph, Sven Jager, Brandon Rufino
-**Link:** https://arxiv.org/abs/2608.20315v1
-**Summary:** The paper addresses the challenge of creating interpretable predictive models for clinical tasks using structured electronic health records (EHRs), which often lack transparency regarding input medical events. The authors introduce BERT-LER, a BERT-like model that encodes laboratory test results as discrete tokens while allowing for graded information representation, and incorporates a method for token-level interpretability. The results show that BERT-LER not only performs competitively on predictive tasks but also provides explanations that align well with clinically known risk factors, making it a valuable tool for various healthcare applications.
+### 10. Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation
+**Authors:** Gijs Kassenaar, Zhao Yang, Vincent François-Lavet
+**Link:** https://arxiv.org/abs/2608.20256v1
+**Summary:** The paper addresses the inefficiency of reasoning language models that use a fixed token budget, which can lead to unnecessary computation on easier problems and insufficient computation on harder ones. The authors propose an adaptive approach where the model learns to decide its reasoning depth using three modes: NoThink, Short, or Long, leading to optimal token allocation based on problem difficulty. Key results show that this adaptive reasoning not only reduces the average response length significantly by 41% without major loss in accuracy on the MATH benchmark but also performs better on other tasks like GSM8K, achieving both higher accuracy and greater token savings.
