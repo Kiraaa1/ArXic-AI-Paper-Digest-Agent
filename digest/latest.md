@@ -1,52 +1,52 @@
 ---
-## 2026-08-23
+## 2026-08-24
 
-### 1. Transfer Learning in Nonparametric Regression with Deep ReLU Networks
-**Authors:** Junpeng Ren, Carlos Misael Madrid Padilla, Yanzhen Chen, Oscar Hernan Madrid Padilla
-**Link:** https://arxiv.org/abs/2608.20255v1
-**Summary:** This paper addresses the challenge of improving nonparametric regression performance when dealing with data from multiple groups that share some common characteristics but also have their own specific variations. The authors propose a two-stage transfer learning method that first estimates a general mean function across all groups and then calculates individual group adjustments. They demonstrate that their approach, particularly when using deep ReLU networks, achieves strong performance and convergence rates while effectively managing high-dimensional data, thus overcoming significant limitations in traditional methods.
+### 1. Primal Acceleration of Newton's Method
+**Authors:** Nikita Doikov
+**Link:** https://arxiv.org/abs/2608.21359v1
+**Summary:** This paper presents a new accelerated Newton method for minimizing convex functions that have a Lipschitz continuous Hessian, focusing on using only primal variables and requiring just one linear system solve per iteration. The method achieves a global convergence rate of \(O(1/k^3)\), which is noteworthy as it's the first of its kind in this setting without needing auxiliary subproblems or dual corrections. Additionally, the approach can be applied in a Hessian-free manner and is extended to more complex optimization problems.
 
-### 2. QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication
-**Authors:** Vincenzo Sammartino, Nathanael Denis, Roberto Di Pietro
-**Link:** https://arxiv.org/abs/2608.20240v1
-**Summary:** The paper presents QUASAR, a novel quantum-classical neural network designed to enhance physical-layer authentication for X-band SAR satellites, which are vital for various applications but currently lack robust security. By combining a convolutional neural network with a variational quantum circuit, QUASAR significantly improves data efficiency, requiring only 10% of the data typically needed while achieving better accuracy in detecting spoofed signals. The system effectively rejects fraudulent transmissions under multiple attack scenarios, marking a significant advancement in security for satellite communications.
+### 2. VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences
+**Authors:** Elaine Lau, Thanuka Udumulla, Lee Izhaki-Tavor, Francisco Guzmán, Nicholas Magazine, Jonas Mueller
+**Link:** https://arxiv.org/abs/2608.21357v1
+**Summary:** The paper introduces VIALS, a benchmark designed to evaluate how well AI models can interpret various visual artifacts commonly used in life sciences, such as microscopy images and gel blots. The authors highlight that while advanced vision-language models perform well with natural images, they struggle with these scientific images, demonstrating a lack of necessary domain knowledge and reasoning skills. The key contribution is the establishment of a set of 161 tasks that can help assess and improve AI's ability to interpret critical artifacts in life sciences workflows.
 
-### 3. Rule-Compliant Visual Spatial Planning for Multimodal Large Language Models
-**Authors:** Yu Chen, Ting Lei, Yaoyi Li, Jia Cai, Zhecen Wu, Yang Liu
-**Link:** https://arxiv.org/abs/2608.20237v1
-**Summary:** This paper addresses the challenge of enabling multimodal large language models to perform visual spatial planning while adhering to explicitly defined, complex rules. The authors introduce RuleMaze, a benchmark for testing this ability, and propose a method called Disentangled Multimodal Planning (DMP) that separates perception, execution, and rule verification for improved rule-following and generalization. The key finding is that DMP significantly enhances the models' compliance with rules and planning success compared to traditional methods.
+### 3. AI with Authority, from Application to Silicon
+**Authors:** Jason Hickey
+**Link:** https://arxiv.org/abs/2608.21356v1
+**Summary:** The paper addresses the significant overhead costs associated with machine verification in AI development, traditionally only feasible for exceptional cases. The authors present the Salt method, which employs generative AI to automate the verification process, allowing a researcher to successfully direct a fleet of AI agents to develop a RISC-V processor without human-reviewed proofs or manual RTL coding. The key contribution is demonstrating that AI-driven verification can enhance productivity and reliability in chip design, with a comprehensive error ledger showing zero incorrect proofs.
 
-### 4. Growth Without Us: Machine Consumers, Corporate Circularity, and the Decoupling of GDP from Humanity after AGI
-**Authors:** Sahil Sharma
-**Link:** https://arxiv.org/abs/2608.20231v1
-**Summary:** The paper addresses the challenge of sustaining economic demand in a fully automated, post-AGI world where human roles in production and consumption diminish. The authors develop a model illustrating how corporations could operate a self-sustaining economy comprised of AI and robotic agents that both produce and consume, leading to high growth rates independent of human involvement. Key findings suggest that in such an economy, the focus shifts entirely to ownership policies, as human welfare becomes decoupled from GDP, which necessitates a reevaluation of how wealth is distributed among humans.
+### 4. PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction
+**Authors:** Yoshitaka Inoue, Minoh Jeong, Alfred Hero, Rui Kuang, Augustin Luna
+**Link:** https://arxiv.org/abs/2608.21349v1
+**Summary:** The paper addresses the challenge of predicting how individual cancer patients will respond to treatments, which is complicated by limited data and tumor variability. The authors introduce PerturbRx, a framework that learns how treatments change molecular profiles and uses these changes to enhance predictions about patient-drug responses, without needing post-treatment data. Their approach shows strong performance in various benchmarks, demonstrating that these learned transitions provide valuable insights for improving treatment predictions.
 
-### 5. Prompt-Conditioned Channel Attention for Hierarchical Feature Modulation toward Anatomy-Agnostic Segmentation
-**Authors:** Mosharof Hossain, Md Rabiul Islam, Limon Halder, Erchin Serpedin, Md Kamrul Hasan
-**Link:** https://arxiv.org/abs/2608.20229v1
-**Summary:** This paper addresses the challenge of accurate anatomical segmentation in medical images, which is hindered by issues like low contrast and ambiguous boundaries. The authors propose a new method called Prompt-Conditioned Channel Attention (PCCA), which enhances feature extraction by integrating semantic prompts throughout a network's layers. Their experiments show significant improvements in segmentation performance across various models and medical imaging datasets, demonstrating the effectiveness of PCCA in producing more precise anatomical representations.
+### 5. Truthful Calibration Measures for Sequential Prediction
+**Authors:** Anagha Gokul, Jason Hartline, Lunjia Hu, Jonathan Ullman, Yifan Wu
+**Link:** https://arxiv.org/abs/2608.21348v1
+**Summary:** The paper addresses the challenge of developing calibration measures for sequential binary prediction that meet the criteria of truthfulness, completeness, and soundness. The authors demonstrate that achieving exact truthfulness is impossible in this context, but they propose two methods to create approximately truthful calibration measures, including an improved multiplicative measure that offers better guarantees than previous work. This advancement enhances the understanding of calibration in probabilistic forecasting.
 
-### 6. Gravitational-wave parameter estimation with machine-learning generated surrogate waveforms
-**Authors:** Suyog Garg, Kipp Cannon
-**Link:** https://arxiv.org/abs/2608.20222v1
-**Summary:** This paper addresses the challenge of efficiently estimating parameters from complex gravitational-wave signals, particularly as future detectors are expected to capture more intricate events. The authors introduce a two-stage machine-learning model that generates accurate gravitational-wave waveforms tailored for parameter estimation. Their approach demonstrates significant improvements in waveform accuracy, enabling the use of lower-quality surrogate waveforms while correcting for systematic biases in the parameter estimation process, thereby speeding up calculations in astrophysical analyses.
+### 6. Asymmetric Capacity Allocation in Self-Refinement Pipelines
+**Authors:** Zhuoyi Yang, Ian G. Harris, Salar Hashemitaheri, Cassie Huang, Yuangang Li, Hyunwoo Oh, Paul Dourish, Tony Givargis, Mohsen Imani, Li Zhang
+**Link:** https://arxiv.org/abs/2608.21345v1
+**Summary:** The paper addresses the issue of inefficient resource allocation in self-refinement pipelines for language models, which involve generation, critique, and revision stages. By systematically studying the impact of different model sizes on these stages across various benchmarks, the authors found that larger models enhance the generation and revision processes, while a smaller, underperforming refiner can hurt performance. Notably, they discovered that the size of the critique stage has minimal impact, suggesting that optimized model size distribution across the stages can lead to more efficient language model systems.
 
-### 7. InsufficiencyBench: Evaluating LLM legal advice on underspecified user queries
-**Authors:** Samuel J. Vincent, Daniel Calloway, Fangyi Yu, Andrew M. Bean, Nabeel Seedat
-**Link:** https://arxiv.org/abs/2608.20220v1
-**Summary:** The paper addresses the challenge that legal AI systems often assume user queries are fully specified, which leads to incorrect legal advice when key facts are omitted. The authors introduce InsufficiencyBench, a benchmark to evaluate how well models recognize and address missing information in legal queries, categorizing types of deficiencies and constructing a dataset of 202 items across various legal domains. Key findings reveal that no evaluated models effectively identify missing elements or provide accurate responses, highlighting significant limitations in current legal AI systems.
+### 7. TurboBias 2.0: Streaming Context-Biasing for Production-Efficient ASR Systems
+**Authors:** Vladimir Bataev, Lilit Grigoryan, Andrei Andrusenko, Nikolay Karpov, Vitaly Lavrukhin, Boris Ginsburg
+**Link:** https://arxiv.org/abs/2608.21343v1
+**Summary:** TurboBias 2.0 addresses the challenge of accurately recognizing user-provided phrases in real-time for automatic speech recognition (ASR) systems, especially under tight latency constraints. The framework enhances the existing TurboBias technique by enabling personalized context biasing for multiple users simultaneously, using a GPU-accelerated system that allows for efficient processing of independent context lists. The key result is an improvement in phrase recognition accuracy while maintaining low latency and high throughput, making it suitable for production environments.
 
-### 8. Electronic Navigational Chart Change Classification
-**Authors:** Jacob Arndt, Abhishek Potnis, Alexandre Sorokine
-**Link:** https://arxiv.org/abs/2608.20218v1
-**Summary:** The paper addresses the challenge of classifying changes in Electronic Navigational Charts (ENCs) to determine their impact on maritime safety, which traditionally relies on manual reviews that are slow and inconsistent. The authors propose an automated classification method that transforms complex data into a structured format using encoding schemes to incorporate geographic context and detailed attributes. Their approach, using tuned gradient-boosted trees, achieves accuracies of 90% and 94% on two datasets, significantly outperforming existing models and highlighting the potential for machine learning to enhance the efficiency of ENC maintenance.
+### 8. Across-Design Uncertainty in Short Pricing Panels: Evidence from Simulated Price Trajectories
+**Authors:** Pedro Cadahia Delgado
+**Link:** https://arxiv.org/abs/2608.21334v1
+**Summary:** This paper addresses the challenge of estimating uncertainty in short pricing panels that have many observations but limited price movements. The researchers employed a synthetic data-generating process to distinguish between errors arising from a specific price trajectory and those from different trajectories under the same pricing regime. The key finding is that most estimation error variance is due to differences across these trajectories, suggesting that more effective data designs should focus on generating independent variations rather than relying on fixed panels.
 
-### 9. Daedalus-150M: A Convolution-Attention Hybrid Designed for CPU Inference
-**Authors:** Christos Koutsiaris
-**Link:** https://arxiv.org/abs/2608.20210v1
-**Summary:** The paper presents Daedalus-150M, a language model specifically designed for efficient CPU inference by using a hybrid architecture that combines convolutional layers and attention mechanisms. Instead of adapting a larger model for smaller hardware, the authors built the model from the ground up to optimize performance for single-user scenarios and reduced memory usage, resulting in high efficiency. Daedalus-150M outperformed several existing models with larger training datasets while requiring less memory, demonstrating the effectiveness of its innovative design.
+### 9. Anatomy-Informed Neural Networks: Encoding Anatomic Priors in Loss and Architecture, with an SE(3) Formulation of Guidewire-Induced Aortoiliac Deformation
+**Authors:** David P. Stonko
+**Link:** https://arxiv.org/abs/2608.21332v1
+**Summary:** This paper addresses the challenge of creating deep-learning models that accurately reflect anatomical structures while improving generalization in scenarios with limited data, particularly in the context of aortoiliac tree deformation during endovascular procedures. The authors propose Anatomy-Informed Neural Networks (AINN), which incorporate both soft and hard anatomical priors into the loss function and network architecture, ensuring that invalid anatomical predictions cannot occur. Their approach is validated through a clinical case, leveraging optimal transport methods to align predictions with 2D angiogram observations, laying the groundwork for future applications with real patient scans.
 
-### 10. ContractScrub: A benchmark for final review of legal contracts
-**Authors:** Yejin Bang, Kirsty Fielding, Brandan Oliver, Brian Birke, Nabeel Seedat, Andrew M. Bean
-**Link:** https://arxiv.org/abs/2608.20204v1
-**Summary:** The paper presents ContractScrub, a new benchmark for assessing how well large language models (LLMs) can perform the final review of legal contracts for errors and inconsistencies. The benchmark includes carefully crafted contracts featuring various common errors and is designed to address the lack of formal evaluations in this area. Key findings reveal that even advanced LLMs struggle with contract scrubbing, with only one model achieving a 0.75 recall score, highlighting the need for specialized benchmarks to accurately assess performance in legal contexts.
+### 10. Move by Move: Measuring and Steering How LLMs Conduct Psychotherapy
+**Authors:** Afonso Baldo, Hugo Pitorro, Areti Vassilopoulos, Anabela C. Areias, Maya D'Eon, Fabíola Costa, Ricardo Rei, Nuno M. Guerreiro
+**Link:** https://arxiv.org/abs/2608.21325v1
+**Summary:** This paper addresses the lack of understanding regarding how large language models (LLMs) conduct psychotherapy interactions, specifically focusing on their conversational styles compared to human therapists. The authors developed a framework consisting of ten therapeutic moves, validated by psychologists, to analyze and compare the interactions of LLMs with those of human clinicians. They found that LLMs excessively rely on inquiry, underutilize psychoeducation, and improve alignment with human therapists' styles significantly when this framework is applied, without needing any model adjustments.
