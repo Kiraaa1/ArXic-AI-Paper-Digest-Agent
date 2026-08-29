@@ -1,52 +1,52 @@
 ---
-## 2026-08-28
+## 2026-08-29
 
-### 1. CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes
-**Authors:** Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li, Qifan Yang, Ting Zhu
-**Link:** https://arxiv.org/abs/2608.27455v1
-**Summary:** The paper introduces CritICL, a new framework designed to enhance the reasoning abilities of large language models (LLMs) during inference by efficiently leveraging their failure modes as guidance. CritICL operates by using either dynamic predictions or a static profile of common failure patterns to provide helpful critiques, ultimately leading to better performance with fewer required outputs compared to traditional methods. Experimental results demonstrate that CritICL not only surpasses standard in-context learning but also competes effectively with more resource-intensive scaling techniques.
+### 1. Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study
+**Authors:** Kevin Zhu, Ryan Zhang, Baraa Abed, Tilendra Choudhary, Malvern Madondo, Mehak Arora, Yixuan Yang, Alasdair Gent, Aditya Nagori, Omer T. Inan, Krista L. Haines, Patrick Georgoff, Suresh M. Agarwal, Vijay Krishnamoorthy, Tetsu Ohnuma, Mihai V. Podgoreanu, Michael R. Pinsky, Gilles Clermont, Craig M. Coopersmith, Craig S. Jabaley, Rishikesan Kamaleswaran
+**Link:** https://arxiv.org/abs/2608.27421v1
+**Summary:** This study addresses the limitations of traditional sepsis severity scores, which are outdated and do not reflect current patient dynamics. The researchers developed a new sepsis index by analyzing real-time patient data over a 72-hour period, using mortality as a guiding factor for score allocation. The key finding is that this new index effectively predicts patient outcomes, correlating well with established indicators and showing potential as a useful decision support tool in critical care settings.
 
-### 2. WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution
-**Authors:** Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Andrew Tomkins, Da-Cheng Juan, Tu Vu
-**Link:** https://arxiv.org/abs/2608.27454v1
-**Summary:** The paper addresses the challenge of systematically reusing and refining knowledge gained from AI agents' experiences to improve their skills. The authors introduce WikiSkill, a framework that organizes this knowledge into a persistent wiki, allowing for the continuous evolution of agent skills based on accumulated experience. Their key finding is that this method consistently surpasses existing approaches in skill development and shows that larger models benefit more from these evolved skills, while smaller models with skills can outperform much larger models lacking them.
+### 2. Boosting LLM Exploration via Weak-Model Guidance in RLVR
+**Authors:** Xingyu Shen, Huishuai Zhang, Peng Li, Yinchun Wang, Dongyan Zhao
+**Link:** https://arxiv.org/abs/2608.27420v1
+**Summary:** The paper addresses the issue of reduced reasoning diversity in large language models (LLMs) during reinforcement learning with verifiable rewards (RLVR), which typically leads to a decline in performance. The authors propose a novel method that utilizes partial reasoning paths from smaller, weaker models to encourage exploration and prevent overconfidence in the target LLM. Their experiments demonstrate that this approach significantly enhances reasoning coverage, especially as the complexity of tasks increases, outperforming traditional RLVR methods and effectively mitigating entropy collapse without added complexity.
 
-### 3. SWE-Prime: Fewer Trajectories, Better Performance
-**Authors:** Dewu Zheng, Ruizhe Ye, Yanlin Wang, Yang Ye, Hongyu Zhang, Ensheng Shi, Xilin Liu, Yuchi Ma, Jianxing Yu, Zibin Zheng
-**Link:** https://arxiv.org/abs/2608.27449v1
-**Summary:** The paper addresses the challenge of improving large language models' performance in resolving real-world software issues, which can be hampered by noisy supervision from successful but flawed training data. The authors introduce SWE-Prime, a two-stage data selection method that filters training trajectories and their segments based on quality and relevance. Their experiments show that utilizing only 10% of high-quality trajectories selected by this method leads to significant performance improvements over training with the entire dataset.
+### 3. Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling
+**Authors:** Maksim Utushkin, Andrei Ovsiannikov, Alexander D'yakonov
+**Link:** https://arxiv.org/abs/2608.27413v1
+**Summary:** The paper addresses the challenge of efficiently recommending friends in large social networks by utilizing Graph Neural Networks (GNNs) and highlights two key innovations: multi-hash user embeddings to significantly reduce memory usage, and temporal neighbor sampling to enhance performance. The proposed system effectively scales to handle vast social graphs, leading to a notable 16% increase in friend additions and 11.5% more unique users adding friends during online tests compared to existing systems. The authors also share their framework for distributed training and inference on large temporal graphs.
 
-### 4. TTPO: Test-Time Policy Optimization
-**Authors:** Aozhe Wang, Zhengxi Lu, Jianze Wang, Shangke Lv, Ying Liu, Weiming Lu, Jun Xiao, Yueting Zhuang, Hua Yang, Qianglong Chen, Yongliang Shen
-**Link:** https://arxiv.org/abs/2608.27448v1
-**Summary:** The paper addresses the challenge of optimizing large language models at test time without relying on ground-truth labels, which can lead to error propagation through pseudo-labeling. The authors introduce Test-Time Policy Optimization (TTPO), an approach that combines On-Policy Self-Distillation with Grouped Reinforcement Learning to selectively distill correct outputs while minimizing the impact of incorrect ones. Key results show that TTPO achieves performance comparable to supervised methods on various benchmarks, significantly improving the Qwen3 model's test-time capabilities and demonstrating effective generalization across tasks.
+### 4. Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms
+**Authors:** Siye Wu, Kai Yang, Yuchen Cai, Xin Xu, Peng-Yuan Wang, Jiaxuan Wang, Jiashun Liu, Jiafei Lyu, Yangkun Chen, Saiyong Yang, Yanghua Xiao
+**Link:** https://arxiv.org/abs/2608.27409v1
+**Summary:** The paper addresses the challenge of consolidating multiple reinforcement learning capabilities in language models by comparing three fusion paradigms: Merge, Mix RL, and multi-teacher on-policy distillation (MOPD). The authors evaluate these approaches using shared experts and data across various model scales and benchmarks, discovering that while their overall performances are similar, they differ significantly in specific scenarios. The findings suggest practical guidelines for choosing the appropriate fusion method based on the existence of expert models, domain proportions, and the importance of preserving domain-specific strengths.
 
-### 5. From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench
-**Authors:** Dewu Zheng, Yanlin Wang, Xiwen Wang, Kefeng Duan, Hongyu Zhang, Xilin Liu, Yuchi Ma, Zibin Zheng
-**Link:** https://arxiv.org/abs/2608.27442v1
-**Summary:** The paper introduces MCR-Bench, a new benchmark for evaluating automated code review systems that captures the complex multi-round interactions between developers and reviewers, which are often overlooked in existing models. By analyzing 2,269 real-world code review tasks across various programming languages, the authors find that current large language models struggle significantly with defect detection and lifecycle tracking, especially as the number of interaction rounds increases. Key insights include that their performance varies greatly by defect type and severity, highlighting the limitations in handling complex defects and suggesting areas for improvement in LLM design.
+### 5. CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators
+**Authors:** Kechen Liu, Ola Shorinwa
+**Link:** https://arxiv.org/abs/2608.27406v1
+**Summary:** The paper presents CLAP, a new framework designed to enable video models to simulate physical actions across different robot types by leveraging diverse video data from both humans and robots. By reconciling differing action representations and using a curriculum-based learning approach, CLAP can effectively learn universal physical laws that apply regardless of the actor. The key contribution is its ability to outperform existing models in complex environments while supporting various action representations and robot forms, making it a versatile tool for training video world models.
 
-### 6. RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution
-**Authors:** Junjie Zhang, Hui Liu, Kecheng Chen, Xianbo Mo, Changsheng Chen, Haoliang Li
-**Link:** https://arxiv.org/abs/2608.27439v1
-**Summary:** The paper introduces RedEvoAgent, an advanced red-teaming agent designed to address the risk of harmful tool use in large language models (LLMs) by automatically evolving attack strategies based on their effectiveness. Unlike traditional methods that rely on static attack patterns, RedEvoAgent distills and updates attack skills using a profiling system and performance validation, resulting in improved efficiency and adaptability across various targets. Testing indicates that RedEvoAgent outperforms existing red-teaming approaches, demonstrating greater versatility and effectiveness in real-world scenarios.
+### 6. How Language Models Organize and Structure Moral Knowledge
+**Authors:** Orion Reblitz-Richardson
+**Link:** https://arxiv.org/abs/2608.27402v1
+**Summary:** This paper investigates how large language models (LLMs) organize moral knowledge by examining their ability to detect and differentiate between various moral foundations. The authors employed linear probes to analyze representation spaces within LLMs, revealing that the models capture multiple independent moral dimensions while also having a shared component indicative of integration. Notably, the findings suggest that LLMs reflect the statistical properties of the training corpus rather than adhering to the expected distinctions in moral reasoning proposed by traditional Moral Foundations Theory.
 
-### 7. Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation
-**Authors:** Nguyen Xuan-Vu, Octavian Susanu, Daniel Armstrong, Philippe Schwaller
-**Link:** https://arxiv.org/abs/2608.27429v1
-**Summary:** The paper addresses the challenge of predicting chemical reactions by focusing on the transformations of electron distributions rather than merely generating product molecules or modifying molecular structures. It introduces a novel method called MAELLE, which treats reaction mappings as discrete flow matching processes over electron occupation vectors, utilizing techniques from Continuous-time Markov Chains and Optimal Transport. The key contribution is MAELLE's ability to outperform existing models on benchmark tests while demonstrating robustness in challenging scenarios, and it also provides mechanistic insights into reaction pathways and potential side products.
+### 7. Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction
+**Authors:** Jin Mu, Guanhua Chen
+**Link:** https://arxiv.org/abs/2608.27397v1
+**Summary:** The paper addresses the issue of clinical language models performing well in controlled environments but struggling in real-world scenarios due to reliance on non-informative features in medical text. To tackle this, the authors introduce CAST (Concept-guided Artifact Suppression Tuning), which uses Sparse Autoencoders to identify and suppress these misleading features while enhancing model interpretability. The key contribution is that CAST not only improves prediction accuracy on discharge-note mortality but also provides a transparent audit trail of clinical decisions, making the model's reasoning clearer and more reliable.
 
-### 8. Stochastic Estimation of Transduced Language Models
-**Authors:** Vésteinn Snæbjarnarson, Samuel Kiegeland, Manuel de Prada Corral, Ryan Cotterell, Tim Vieira
-**Link:** https://arxiv.org/abs/2608.27428v1
-**Summary:** The paper addresses the challenge of accurately estimating the probability of target prefixes in transduced language models (TLMs), which can involve an overwhelming number of source strings. The authors propose a novel method that involves resampling source prefixes without replacement and reweighting them, resulting in an unbiased estimator for target prefix probabilities. Their approach significantly reduces computational time while maintaining estimation accuracy, making it particularly effective for long target strings, such as in DNA-to-amino-acid transduction tasks.
+### 8. LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics
+**Authors:** Lukas Kuhn, Lucas Maes, Giuseppe Serra, Quentin Le Lidec, Yann LeCun, Randall Balestriero, Florian Buettner
+**Link:** https://arxiv.org/abs/2608.27395v1
+**Summary:** The paper introduces LeVJEPA, a novel method for efficiently training video representations without the common complications of previous approaches. It employs a collapse-free learning objective using a single encoder to improve video representation while significantly reducing the computational resources required for pretraining. Notably, LeVJEPA matches or surpasses existing models in performance while using 5.6 to 20.8 times less compute, demonstrating that video can serve as a more effective foundation for visual pretraining.
 
-### 9. Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit
-**Authors:** Yisen Xi
-**Link:** https://arxiv.org/abs/2608.27427v1
-**Summary:** The paper addresses the challenge of allowing the persona of large language model (LLM) agents to evolve while maintaining a traceable and auditable execution process in regulated environments. To solve this, the authors propose the Persona-Execution Separation (PES) architecture, which separates persona and execution into different trust domains connected by controlled interfaces, ensuring that execution remains faceless and traceable. The key contribution is a framework that enables persona flexibility and execution accountability, demonstrated through a pilot case that highlights the architecture's effectiveness in maintaining isolation between persona and execution without compromising governance.
+### 9. RATIO: A Benchmark for Retrieval Across Typed Ideation Operations in Scientific Literature
+**Authors:** Maayan Sharon, Tom Hope
+**Link:** https://arxiv.org/abs/2608.27394v1
+**Summary:** The paper presents RATIO, a benchmark designed to improve the retrieval of scientific literature based on different ideation operations, specifically addressing problems, broadening concepts, and specifying details. It utilizes a method that combines discourse-marker distant supervision with large-scale paper vetting to create a dataset from millions of scientific texts. The key finding is that fine-tuning retrieval models to these specific ideation operations significantly enhances their performance, while also highlighting the potential for further advancements in literature-based idea generation.
 
-### 10. Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners
-**Authors:** Qianlong Lan, Vinothini Pandurangan, Anuj Kaul, Indranil Sanyal
-**Link:** https://arxiv.org/abs/2608.27424v1
-**Summary:** The paper addresses the limitations of conventional evaluation metrics for static security scanners used in assessing machine learning artifacts, which typically overlook cases where scanners fail to provide usable security judgments. The authors evaluate three scanners—ModelScan, ModelAudit, and Fickling—using a benchmark of 170 synthetic artifacts, revealing that while ModelAudit achieved complete security decisions across all labeled families, ModelScan and Fickling demonstrated varying degrees of efficacy, with ModelScan excelling in precision conditional on making a judgment. The study emphasizes the importance of differentiating between the accuracy of judgments and their availability, advocating for more comprehensive evaluation methods in model security scanning.
+### 10. Property-Specific Recoverability from Contact PPG to Camera rPPG under Heterogeneous Observation Conditions
+**Authors:** Timothy Oladunni, Farouk Ganiyu-Adewumi
+**Link:** https://arxiv.org/abs/2608.27392v1
+**Summary:** This study investigates how well physiological data from contact photoplethysmography (PPG) can be recovered using remote photoplethysmography (rPPG) techniques under varying observation conditions. By analyzing 655 recordings with specific algorithms, the researchers found that while some overall metrics, like heart rate, are preserved, the ability to recover different physiological properties varies significantly based on individual recordings and conditions. The key finding is that population-level similarities do not guarantee consistent recovery of individual recordings, highlighting the need for tailored approaches in rPPG applications.
