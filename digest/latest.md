@@ -1,52 +1,52 @@
 ---
-## 2026-08-29
+## 2026-08-30
 
-### 1. Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study
-**Authors:** Kevin Zhu, Ryan Zhang, Baraa Abed, Tilendra Choudhary, Malvern Madondo, Mehak Arora, Yixuan Yang, Alasdair Gent, Aditya Nagori, Omer T. Inan, Krista L. Haines, Patrick Georgoff, Suresh M. Agarwal, Vijay Krishnamoorthy, Tetsu Ohnuma, Mihai V. Podgoreanu, Michael R. Pinsky, Gilles Clermont, Craig M. Coopersmith, Craig S. Jabaley, Rishikesan Kamaleswaran
-**Link:** https://arxiv.org/abs/2608.27421v1
-**Summary:** This study addresses the limitations of traditional sepsis severity scores, which are outdated and do not reflect current patient dynamics. The researchers developed a new sepsis index by analyzing real-time patient data over a 72-hour period, using mortality as a guiding factor for score allocation. The key finding is that this new index effectively predicts patient outcomes, correlating well with established indicators and showing potential as a useful decision support tool in critical care settings.
+### 1. CorporateBench: Large-Scale Q&A Benchmarking with Temporal Knowledge Bases
+**Authors:** Sil Hamilton, Albert Yu Sun, Oscar J. Romero, Carl-Leander Henneking, David Mimno, Bishan Yang, Igor Labutov
+**Link:** https://arxiv.org/abs/2608.27391v1
+**Summary:** The paper introduces CorporateBench, a large-scale benchmark designed to evaluate how well large language models (LLMs) can answer questions within extensive corporate document collections. By creating a realistic set of synthetic firms and their evolving knowledge bases, the benchmark assesses both information extraction and querying capabilities. The findings reveal that LLMs struggle to maintain performance as the scale of input data increases, highlighting a significant challenge in corporate communication reasoning.
 
-### 2. Boosting LLM Exploration via Weak-Model Guidance in RLVR
-**Authors:** Xingyu Shen, Huishuai Zhang, Peng Li, Yinchun Wang, Dongyan Zhao
-**Link:** https://arxiv.org/abs/2608.27420v1
-**Summary:** The paper addresses the issue of reduced reasoning diversity in large language models (LLMs) during reinforcement learning with verifiable rewards (RLVR), which typically leads to a decline in performance. The authors propose a novel method that utilizes partial reasoning paths from smaller, weaker models to encourage exploration and prevent overconfidence in the target LLM. Their experiments demonstrate that this approach significantly enhances reasoning coverage, especially as the complexity of tasks increases, outperforming traditional RLVR methods and effectively mitigating entropy collapse without added complexity.
+### 2. Token-Level Advertising
+**Authors:** Hanbing Liu, Bowei Zhang, Changyuan Yu, Yinyu Ye, Qi Qi
+**Link:** https://arxiv.org/abs/2608.27382v1
+**Summary:** The paper addresses the challenges of traditional advertising models in the context of generative AI by proposing a novel token-level advertising mechanism called Latent Advertiser Mixture Auction (LAMA). This approach allows advertisers to influence the content generation process based on their specific values, leading to optimized allocation of advertising resources. Key results from experiments demonstrate that LAMA enhances platform welfare and revenue while preserving the quality of user responses.
 
-### 3. Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling
-**Authors:** Maksim Utushkin, Andrei Ovsiannikov, Alexander D'yakonov
-**Link:** https://arxiv.org/abs/2608.27413v1
-**Summary:** The paper addresses the challenge of efficiently recommending friends in large social networks by utilizing Graph Neural Networks (GNNs) and highlights two key innovations: multi-hash user embeddings to significantly reduce memory usage, and temporal neighbor sampling to enhance performance. The proposed system effectively scales to handle vast social graphs, leading to a notable 16% increase in friend additions and 11.5% more unique users adding friends during online tests compared to existing systems. The authors also share their framework for distributed training and inference on large temporal graphs.
+### 3. D2C-Routing: Dimension-to-Composition Evidence Routing for Mixed-Origin AI-Generated Text Detection
+**Authors:** Xin Chen, Fuwei Zhang, Yiqi Tong, Wei Guo, Yutian Xiao, Fuzhen Zhuang
+**Link:** https://arxiv.org/abs/2608.27380v1
+**Summary:** The paper addresses the challenge of detecting AI-generated text that originates from mixed sources, meaning the content and style may come from different creators. The authors introduce a new method called Dimension-to-Composition Routing (D2C-Routing), which separately analyzes the content and expression origins before combining the findings to make a final classification. Their approach significantly improves detection performance on the MixD2C benchmark, achieving a four-way average true positive rate that outperforms previous methods by 6.5 points.
 
-### 4. Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms
-**Authors:** Siye Wu, Kai Yang, Yuchen Cai, Xin Xu, Peng-Yuan Wang, Jiaxuan Wang, Jiashun Liu, Jiafei Lyu, Yangkun Chen, Saiyong Yang, Yanghua Xiao
-**Link:** https://arxiv.org/abs/2608.27409v1
-**Summary:** The paper addresses the challenge of consolidating multiple reinforcement learning capabilities in language models by comparing three fusion paradigms: Merge, Mix RL, and multi-teacher on-policy distillation (MOPD). The authors evaluate these approaches using shared experts and data across various model scales and benchmarks, discovering that while their overall performances are similar, they differ significantly in specific scenarios. The findings suggest practical guidelines for choosing the appropriate fusion method based on the existence of expert models, domain proportions, and the importance of preserving domain-specific strengths.
+### 4. Universality and sharp thresholds for ellipsoid fitting
+**Authors:** Frederic Koehler, Youngtak Sohn
+**Link:** https://arxiv.org/abs/2608.27372v1
+**Summary:** The paper addresses the problem of fitting random vectors to ellipsoids, specifically identifying conditions under which this is possible based on the distribution of the data points. The authors establish a clear phase transition threshold that relates to the fourth moment of these vector distributions, demonstrating that a positive definite ellipsoid can fit the data below this threshold, while no fitting is possible above it. A significant contribution is the resolution of the ellipsoid fitting conjecture for standard Gaussian data, identifying a threshold of 1/4, along with insights into fitting errors in the unsatisfiable region.
 
-### 5. CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators
-**Authors:** Kechen Liu, Ola Shorinwa
-**Link:** https://arxiv.org/abs/2608.27406v1
-**Summary:** The paper presents CLAP, a new framework designed to enable video models to simulate physical actions across different robot types by leveraging diverse video data from both humans and robots. By reconciling differing action representations and using a curriculum-based learning approach, CLAP can effectively learn universal physical laws that apply regardless of the actor. The key contribution is its ability to outperform existing models in complex environments while supporting various action representations and robot forms, making it a versatile tool for training video world models.
+### 5. Puro-2B: Poor Lab's Qwen2-1.5B Trained on RTX 5090 within $5090
+**Authors:** Kairong Luo, Jiarui Cui, Yaorui Yin, Shengqi Chen, Yiming Yang, Linxiang Gao, Yanmohan Wang, Mingzhe Zhang, Kaiyue Wen, Kaifeng Lyu, Wenguang Chen
+**Link:** https://arxiv.org/abs/2608.27370v1
+**Summary:** The paper addresses the high costs associated with training large language models, which often make them inaccessible to the academic and open-source communities. The authors propose a cost-effective pretraining recipe for their Puro-2B models, trained on consumer-grade RTX 5090 GPUs, which allows for training up to 1.4 trillion tokens at a minimal cost of under $6.9K while achieving performance close to existing models like Qwen2.5-1.5B. They also offer a detailed framework that includes a cost-performance scaling law and insights on how data curricula affect model performance, all made publicly available.
 
-### 6. How Language Models Organize and Structure Moral Knowledge
-**Authors:** Orion Reblitz-Richardson
-**Link:** https://arxiv.org/abs/2608.27402v1
-**Summary:** This paper investigates how large language models (LLMs) organize moral knowledge by examining their ability to detect and differentiate between various moral foundations. The authors employed linear probes to analyze representation spaces within LLMs, revealing that the models capture multiple independent moral dimensions while also having a shared component indicative of integration. Notably, the findings suggest that LLMs reflect the statistical properties of the training corpus rather than adhering to the expected distinctions in moral reasoning proposed by traditional Moral Foundations Theory.
+### 6. Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models
+**Authors:** Frederik Berenz
+**Link:** https://arxiv.org/abs/2608.27367v1
+**Summary:** The paper addresses the inefficiency of fixed-size Vision Transformer encoders in Joint-Embedding Predictive Architectures (JEPAs), which may be too large for simple tasks and too small for complex ones. The authors propose a method called Successive Capacity Growth (SCG) that incrementally increases the encoder's capacity (in terms of width and depth) based on task complexity, using a mechanism to test and ensure improvements. Key results show that SCG significantly enhances prediction accuracy while being more efficient in parameter usage compared to static models, demonstrating the advantages of adaptive architecture growth in response to task demands.
 
-### 7. Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction
-**Authors:** Jin Mu, Guanhua Chen
-**Link:** https://arxiv.org/abs/2608.27397v1
-**Summary:** The paper addresses the issue of clinical language models performing well in controlled environments but struggling in real-world scenarios due to reliance on non-informative features in medical text. To tackle this, the authors introduce CAST (Concept-guided Artifact Suppression Tuning), which uses Sparse Autoencoders to identify and suppress these misleading features while enhancing model interpretability. The key contribution is that CAST not only improves prediction accuracy on discharge-note mortality but also provides a transparent audit trail of clinical decisions, making the model's reasoning clearer and more reliable.
+### 7. Stageboost: Recommending Signals Based on Counterfactual Estimation
+**Authors:** Darpan Singhal, Matan Mandelbrod, Tal Franji, Manasa Kolla, Vipul Gaba, Yuri Brovman
+**Link:** https://arxiv.org/abs/2608.27366v1
+**Summary:** The paper addresses the challenge of effectively recommending contextual signals on eBay's View-Item page to enhance user engagement and purchasing decisions. The authors propose a two-stage XGBoost model that optimally selects and presents these signals. This approach resulted in a 0.08% overall increase in Gross Merchandise Bought (GMB), and a notable 0.58% increase in GMB for Parts and Accessories, primarily driven by higher conversion rates for expensive items.
 
-### 8. LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics
-**Authors:** Lukas Kuhn, Lucas Maes, Giuseppe Serra, Quentin Le Lidec, Yann LeCun, Randall Balestriero, Florian Buettner
-**Link:** https://arxiv.org/abs/2608.27395v1
-**Summary:** The paper introduces LeVJEPA, a novel method for efficiently training video representations without the common complications of previous approaches. It employs a collapse-free learning objective using a single encoder to improve video representation while significantly reducing the computational resources required for pretraining. Notably, LeVJEPA matches or surpasses existing models in performance while using 5.6 to 20.8 times less compute, demonstrating that video can serve as a more effective foundation for visual pretraining.
+### 8. KnockGS:interaction-Grounded Calibrationof Physical Gaussian Representations
+**Authors:** Chenchen Ge, Hanwen Shen, Bowen Jing, Jiyuan Cai, Xiaofeng Wang, Hongsen Lei, Weitao Zhou, Dandan Zhang, Haibao Yu
+**Link:** https://arxiv.org/abs/2608.27365v1
+**Summary:** The paper introduces KnockGS, a framework that estimates the material properties (elasticity and density) of 3D Gaussian representations of deformable objects by analyzing their dynamic responses to applied forces, rather than requiring these parameters to be predefined. By extracting features from the object's response, the method allows for calibration of the material scales and shows improved accuracy in estimating these parameters compared to existing techniques. Key findings indicate that the calibrated representations can effectively predict responses in interactions that were not part of the calibration process, marking a significant advancement towards more interactive and realistic simulations of physical objects.
 
-### 9. RATIO: A Benchmark for Retrieval Across Typed Ideation Operations in Scientific Literature
-**Authors:** Maayan Sharon, Tom Hope
-**Link:** https://arxiv.org/abs/2608.27394v1
-**Summary:** The paper presents RATIO, a benchmark designed to improve the retrieval of scientific literature based on different ideation operations, specifically addressing problems, broadening concepts, and specifying details. It utilizes a method that combines discourse-marker distant supervision with large-scale paper vetting to create a dataset from millions of scientific texts. The key finding is that fine-tuning retrieval models to these specific ideation operations significantly enhances their performance, while also highlighting the potential for further advancements in literature-based idea generation.
+### 9. Sophistication in GenAI Use: Field Evidence from a Large Firm
+**Authors:** Nicholas J. Hallman, Zachary T. Kowaleski, Anu Puvvada, Jaime J. Schmidt
+**Link:** https://arxiv.org/abs/2608.27364v1
+**Summary:** This paper investigates how effectively employees at a large firm utilize generative AI in their back-office work. By analyzing over 700,000 employee prompts and model responses from nearly 4,000 workers across various departments, the study finds that senior employees tend to use genAI more skillfully, with varying levels of sophistication observed across different functions. Importantly, the research indicates that neither time nor formal AI training significantly enhances this sophisticated use, highlighting the challenges of improving employee engagement with genAI tools.
 
-### 10. Property-Specific Recoverability from Contact PPG to Camera rPPG under Heterogeneous Observation Conditions
-**Authors:** Timothy Oladunni, Farouk Ganiyu-Adewumi
-**Link:** https://arxiv.org/abs/2608.27392v1
-**Summary:** This study investigates how well physiological data from contact photoplethysmography (PPG) can be recovered using remote photoplethysmography (rPPG) techniques under varying observation conditions. By analyzing 655 recordings with specific algorithms, the researchers found that while some overall metrics, like heart rate, are preserved, the ability to recover different physiological properties varies significantly based on individual recordings and conditions. The key finding is that population-level similarities do not guarantee consistent recovery of individual recordings, highlighting the need for tailored approaches in rPPG applications.
+### 10. Your Voice Cloning System is Secretly a Voice Anonymizer
+**Authors:** Romolo Muletta, Felix Matthias Saaro, Mark Cieliebak, Jan Deriu
+**Link:** https://arxiv.org/abs/2608.27360v1
+**Summary:** The paper addresses the challenge of speaker anonymization, which aims to remove identifiable features from speech while maintaining its quality and comprehension. The authors repurpose a multilingual voice cloning model, XTTSv2, to anonymize voices without requiring additional training. Their approach achieves high privacy levels and good speech quality across multiple languages, demonstrating that existing voice cloning technology can effectively serve as a voice anonymization tool.
