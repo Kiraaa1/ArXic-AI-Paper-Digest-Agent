@@ -1,52 +1,52 @@
 ---
-## 2026-08-30
+## 2026-08-31
 
-### 1. CorporateBench: Large-Scale Q&A Benchmarking with Temporal Knowledge Bases
-**Authors:** Sil Hamilton, Albert Yu Sun, Oscar J. Romero, Carl-Leander Henneking, David Mimno, Bishan Yang, Igor Labutov
-**Link:** https://arxiv.org/abs/2608.27391v1
-**Summary:** The paper introduces CorporateBench, a large-scale benchmark designed to evaluate how well large language models (LLMs) can answer questions within extensive corporate document collections. By creating a realistic set of synthetic firms and their evolving knowledge bases, the benchmark assesses both information extraction and querying capabilities. The findings reveal that LLMs struggle to maintain performance as the scale of input data increases, highlighting a significant challenge in corporate communication reasoning.
+### 1. QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs
+**Authors:** Vaibhav Mehandiratta, Saket Ramchandra
+**Link:** https://arxiv.org/abs/2608.28589v1
+**Summary:** The paper presents QGPINNs, a framework utilizing physics-informed neural networks to solve nonlocal differential equations on quantum graphs, enhancing the computational approach by integrating specific boundary and vertex conditions. The framework effectively combines local neural network approximations across graph edges into a cohesive global solution while applying advanced learning strategies for improved accuracy and stability. It has been validated against benchmark structures and real-world networks, demonstrating its effectiveness in solving complex equations and identifying parameters from noisy data.
 
-### 2. Token-Level Advertising
-**Authors:** Hanbing Liu, Bowei Zhang, Changyuan Yu, Yinyu Ye, Qi Qi
-**Link:** https://arxiv.org/abs/2608.27382v1
-**Summary:** The paper addresses the challenges of traditional advertising models in the context of generative AI by proposing a novel token-level advertising mechanism called Latent Advertiser Mixture Auction (LAMA). This approach allows advertisers to influence the content generation process based on their specific values, leading to optimized allocation of advertising resources. Key results from experiments demonstrate that LAMA enhances platform welfare and revenue while preserving the quality of user responses.
+### 2. Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning
+**Authors:** Nan Wang, Mohit Yadav, Jonathan Wulff, Aidan Rosenbaum, Kezhou Chen, Yuvan Sharma, Xu Dong, Yiwei Tao
+**Link:** https://arxiv.org/abs/2608.28578v1
+**Summary:** The paper addresses the challenge of simulating and controlling tendon-driven robotic hands, which are often more affordable but difficult to learn and operate compared to traditional direct-drive hands. The authors introduce Aero Hand Open, a simulation-ready anthropomorphic hand, providing a detailed simulation model, an actuation mapping for motor commands, and a reinforcement learning training package. This allows effective training and deployment of manipulation policies in simulation without the need for additional fine-tuning on the actual hand.
 
-### 3. D2C-Routing: Dimension-to-Composition Evidence Routing for Mixed-Origin AI-Generated Text Detection
-**Authors:** Xin Chen, Fuwei Zhang, Yiqi Tong, Wei Guo, Yutian Xiao, Fuzhen Zhuang
-**Link:** https://arxiv.org/abs/2608.27380v1
-**Summary:** The paper addresses the challenge of detecting AI-generated text that originates from mixed sources, meaning the content and style may come from different creators. The authors introduce a new method called Dimension-to-Composition Routing (D2C-Routing), which separately analyzes the content and expression origins before combining the findings to make a final classification. Their approach significantly improves detection performance on the MixD2C benchmark, achieving a four-way average true positive rate that outperforms previous methods by 6.5 points.
+### 3. Learning a Size-Weight Frontier for Synthetic-Augmented Inference
+**Authors:** Chengpiao Huang, Kaizheng Wang
+**Link:** https://arxiv.org/abs/2608.28576v1
+**Summary:** This paper addresses the challenge of using synthetic data to improve statistical inference when real data is limited, as improperly integrating synthetic samples can introduce bias. The authors propose a framework that defines a size-weight frontier to optimally select the size and weight of synthetic samples to maintain accurate inference across related tasks. Their approach, tested with responses from large language models augmenting opinion survey data, successfully achieves target coverage while significantly reducing confidence intervals.
 
-### 4. Universality and sharp thresholds for ellipsoid fitting
-**Authors:** Frederic Koehler, Youngtak Sohn
-**Link:** https://arxiv.org/abs/2608.27372v1
-**Summary:** The paper addresses the problem of fitting random vectors to ellipsoids, specifically identifying conditions under which this is possible based on the distribution of the data points. The authors establish a clear phase transition threshold that relates to the fourth moment of these vector distributions, demonstrating that a positive definite ellipsoid can fit the data below this threshold, while no fitting is possible above it. A significant contribution is the resolution of the ellipsoid fitting conjecture for standard Gaussian data, identifying a threshold of 1/4, along with insights into fitting errors in the unsatisfiable region.
+### 4. On two proofs of $d^2$ mixing of weighted Dikin walks
+**Authors:** Yuansi Chen, Yunbum Kook
+**Link:** https://arxiv.org/abs/2608.28566v1
+**Summary:** The paper addresses the mixing time of weighted Dikin walks, which are used for sampling from exponential distributions within polytopes and truncated positive-semidefinite cones. The authors develop a new method to analyze mixing by focusing on acceptance probabilities in high-probability regions, leading to improved mixing bounds of $\widetilde O(d^2)$ for both polytopes and a specific metric. Additionally, they establish stronger guarantees using a novel bootstrap condition, further enhancing the mixing bound for a particular metric to $\widetilde O(d^2)$ from a previous $\widetilde O(d^{9/4})$.
 
-### 5. Puro-2B: Poor Lab's Qwen2-1.5B Trained on RTX 5090 within $5090
-**Authors:** Kairong Luo, Jiarui Cui, Yaorui Yin, Shengqi Chen, Yiming Yang, Linxiang Gao, Yanmohan Wang, Mingzhe Zhang, Kaiyue Wen, Kaifeng Lyu, Wenguang Chen
-**Link:** https://arxiv.org/abs/2608.27370v1
-**Summary:** The paper addresses the high costs associated with training large language models, which often make them inaccessible to the academic and open-source communities. The authors propose a cost-effective pretraining recipe for their Puro-2B models, trained on consumer-grade RTX 5090 GPUs, which allows for training up to 1.4 trillion tokens at a minimal cost of under $6.9K while achieving performance close to existing models like Qwen2.5-1.5B. They also offer a detailed framework that includes a cost-performance scaling law and insights on how data curricula affect model performance, all made publicly available.
+### 5. Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy
+**Authors:** Lorenzo Rizzi, Arie Wortsman Zurich, Bruno Loureiro
+**Link:** https://arxiv.org/abs/2608.28564v1
+**Summary:** This paper investigates kernel ridge regression in the context of anisotropic Gaussian data, focusing on how the input covariance's power-law decay affects learning dynamics. The authors derive precise asymptotic expressions for the kernel spectrum and generalization error, revealing that weak anisotropy retains some isotropic characteristics, while strong anisotropy changes the effective dimension and alters bias behavior significantly. These findings enhance the understanding of how input geometry influences kernel methods and their generalization capabilities.
 
-### 6. Successive Capacity Growth: Task-Complexity-Driven Width and Depth Expansion for Vision Transformer Encoders in JEPA World Models
-**Authors:** Frederik Berenz
-**Link:** https://arxiv.org/abs/2608.27367v1
-**Summary:** The paper addresses the inefficiency of fixed-size Vision Transformer encoders in Joint-Embedding Predictive Architectures (JEPAs), which may be too large for simple tasks and too small for complex ones. The authors propose a method called Successive Capacity Growth (SCG) that incrementally increases the encoder's capacity (in terms of width and depth) based on task complexity, using a mechanism to test and ensure improvements. Key results show that SCG significantly enhances prediction accuracy while being more efficient in parameter usage compared to static models, demonstrating the advantages of adaptive architecture growth in response to task demands.
+### 6. A Formal Limitation on Learning Human Language From Textual Corpora
+**Authors:** Emily Cheng, Ryan Cotterell
+**Link:** https://arxiv.org/abs/2608.28560v1
+**Summary:** The paper addresses the challenge of whether a listener can accurately infer a speaker's intended meaning solely from the form of their utterance. The authors apply an information-theoretic framework to establish upper limits on this inference capability, revealing that certain aspects of meaning can only be clarified through extralinguistic context, not through the utterance itself. Their findings suggest that inherent limitations in language mean that no model can fully overcome these bounds, as demonstrated through experiments with various language tasks.
 
-### 7. Stageboost: Recommending Signals Based on Counterfactual Estimation
-**Authors:** Darpan Singhal, Matan Mandelbrod, Tal Franji, Manasa Kolla, Vipul Gaba, Yuri Brovman
-**Link:** https://arxiv.org/abs/2608.27366v1
-**Summary:** The paper addresses the challenge of effectively recommending contextual signals on eBay's View-Item page to enhance user engagement and purchasing decisions. The authors propose a two-stage XGBoost model that optimally selects and presents these signals. This approach resulted in a 0.08% overall increase in Gross Merchandise Bought (GMB), and a notable 0.58% increase in GMB for Parts and Accessories, primarily driven by higher conversion rates for expensive items.
+### 7. Blog: Survey of Optimizers
+**Authors:** Ruoran Xu
+**Link:** https://arxiv.org/abs/2608.28557v1
+**Summary:** This survey paper explores advancements in neural network optimization techniques beyond traditional Adam variants, focusing on a diverse range of methods that account for matrices, training dynamics, and system representations. It categorizes optimizers along four axes, highlighting various approaches, including matrix-aware methods and memory-efficient optimizers, while emphasizing that no single method universally outperforms AdamW across different scenarios. The key takeaway is the need for a more nuanced, context-dependent evaluation of optimizers that considers multiple factors like model scale and training settings.
 
-### 8. KnockGS:interaction-Grounded Calibrationof Physical Gaussian Representations
-**Authors:** Chenchen Ge, Hanwen Shen, Bowen Jing, Jiyuan Cai, Xiaofeng Wang, Hongsen Lei, Weitao Zhou, Dandan Zhang, Haibao Yu
-**Link:** https://arxiv.org/abs/2608.27365v1
-**Summary:** The paper introduces KnockGS, a framework that estimates the material properties (elasticity and density) of 3D Gaussian representations of deformable objects by analyzing their dynamic responses to applied forces, rather than requiring these parameters to be predefined. By extracting features from the object's response, the method allows for calibration of the material scales and shows improved accuracy in estimating these parameters compared to existing techniques. Key findings indicate that the calibrated representations can effectively predict responses in interactions that were not part of the calibration process, marking a significant advancement towards more interactive and realistic simulations of physical objects.
+### 8. Logos: An Agent Harness on a Cross-Process Bus
+**Authors:** Hanzhang Jia, Liheng Zeng, Hao Cheng, Yi Gao, Bo Ma
+**Link:** https://arxiv.org/abs/2608.28553v1
+**Summary:** This paper addresses the limitations of traditional agent systems that rely on single processes, where faults can disrupt all components simultaneously. The authors present Logos, a cross-process agent harness that treats each plugin as a separate process, minimizing the impact of failures. Their key contribution is demonstrating that this approach allows multiple sessions to resume seamlessly after failures, significantly improving resilience compared to conventional systems.
 
-### 9. Sophistication in GenAI Use: Field Evidence from a Large Firm
-**Authors:** Nicholas J. Hallman, Zachary T. Kowaleski, Anu Puvvada, Jaime J. Schmidt
-**Link:** https://arxiv.org/abs/2608.27364v1
-**Summary:** This paper investigates how effectively employees at a large firm utilize generative AI in their back-office work. By analyzing over 700,000 employee prompts and model responses from nearly 4,000 workers across various departments, the study finds that senior employees tend to use genAI more skillfully, with varying levels of sophistication observed across different functions. Importantly, the research indicates that neither time nor formal AI training significantly enhances this sophisticated use, highlighting the challenges of improving employee engagement with genAI tools.
+### 9. Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining
+**Authors:** Kia Kazemi-Nia, Harsh Bandhey, Philip J. Freda, Ryan J. Urbanowicz
+**Link:** https://arxiv.org/abs/2608.28552v1
+**Summary:** This paper addresses the challenge of effective feature selection in high-dimensional biomedical data, where traditional methods often overlook interactions between features or incur high computational costs. The authors present optimized and new variants of Relief-based algorithms in the scikit-rebate Python package, demonstrating that these methods effectively detect feature interactions while achieving significant reductions in runtime. Key findings reveal that certain RBAs excel in identifying both main effects and interactions, making them valuable tools for improving model performance in genomic data analysis.
 
-### 10. Your Voice Cloning System is Secretly a Voice Anonymizer
-**Authors:** Romolo Muletta, Felix Matthias Saaro, Mark Cieliebak, Jan Deriu
-**Link:** https://arxiv.org/abs/2608.27360v1
-**Summary:** The paper addresses the challenge of speaker anonymization, which aims to remove identifiable features from speech while maintaining its quality and comprehension. The authors repurpose a multilingual voice cloning model, XTTSv2, to anonymize voices without requiring additional training. Their approach achieves high privacy levels and good speech quality across multiple languages, demonstrating that existing voice cloning technology can effectively serve as a voice anonymization tool.
+### 10. Video Generative Models as Geometry Learner
+**Authors:** Haosen Yang, Jifei Song, Zhensong Zhang, Xiatian Zhu, Jiankang Deng
+**Link:** https://arxiv.org/abs/2608.28549v1
+**Summary:** The paper addresses the challenge of geometry estimation, specifically for depth and surface normal assessment, by utilizing pretrained video generative models instead of traditional image-based methods. The proposed method, GeoNeXt, reformulates the problem as predicting subsequent frames in a video, allowing for more efficient learning by leveraging structured knowledge from video data to model both images and their geometric properties. The results show that GeoNeXt significantly outperforms existing models while using far less training data, even competing with advanced methods trained on much larger datasets.
