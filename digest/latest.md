@@ -1,52 +1,52 @@
 ---
-## 2026-09-01
+## 2026-09-02
 
-### 1. Context-Aware Interleaved Batching for WhisperX
-**Authors:** Carlos Bain, Max Bain
-**Link:** https://arxiv.org/abs/2608.31170v1
-**Summary:** The paper addresses the challenge of losing historical context in speech transcription when using batching techniques, which can negatively impact punctuation and proper noun accuracy. The authors introduce a new method called Context-Aware Interleaved Batching that utilizes segment boundaries from Voice Activity Detection (VAD) to enhance context preservation during transcription. Their approach demonstrates improved transcription quality, with lower Word Error Rate (WER) and better handling of proper nouns, all while maintaining fast inference speeds.
+### 1. Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation
+**Authors:** Himil Vasava, Ming Jiang
+**Link:** https://arxiv.org/abs/2609.01604v1
+**Summary:** The paper investigates how large language models (LLMs) evaluate natural language generation quality, specifically focusing on the mechanisms behind their scoring processes. By employing a rigorous experimental setup that includes perturbations and causal tracing, the authors reveal that these models use a two-stage evaluation pipeline, where early layers assess local errors and later layers finalize ratings. The key contribution is the identification of how fine-tuning modifies existing model architectures to enhance evaluation capabilities, providing insights into the internal workings of LLM evaluators.
 
-### 2. Constant Individual Regret in General Games
-**Authors:** Mingyang Liu, Gabriele Farina, Asuman Ozdaglar
-**Link:** https://arxiv.org/abs/2608.31166v1
-**Summary:** The paper addresses the challenge of achieving low individual regret in multi-player games using decentralized strategies, specifically without the usual dependence on the time horizon. The authors propose a new algorithm called ECHO-OFTRL, which combines optimistic follow-the-regularized-leader dynamics with an exponential moving average approach to enhance optimism. The key contribution is that this algorithm allows each player to achieve constant individual regret, independent of the horizon, with a bound that depends polylogarithmically on the number of players and the maximum action set size.
+### 2. Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation
+**Authors:** Kefeng Duan, Dewu Zheng, Yanlin Wang, Xiwen Wang, Ensheng Shi, Xilin Liu, Yuchi Ma, Jiachi Chen, Mingwei Liu, Zibin Zheng
+**Link:** https://arxiv.org/abs/2609.01603v1
+**Summary:** The paper addresses the challenge of efficiently evaluating software engineering agents on complex tasks, which typically require extensive code exploration and testing. The authors introduce PTA-IRT, a framework that leverages historical execution trajectories to provide deeper insights into how agents solve problems, allowing for more informed selection of evaluation subsets. The key finding is that PTA-IRT significantly improves performance and ranking accuracy on software engineering benchmarks compared to existing methods, especially when calibration resources are limited.
 
-### 3. SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies
-**Authors:** Weiqi Wang, Zhi Li, Yudong Lei, David Martinez, Xiaofeng Gao, Yuxin Jiang, Chenfanfu Jiang, Yingnian Wu, Demetri Terzopoulos, Ran Gong
-**Link:** https://arxiv.org/abs/2608.31167v1
-**Summary:** The paper addresses the challenge of aligning model-based control with learned policies in long-horizon manipulation tasks, where existing methods often neglect task semantics and reward design. The authors introduce Semantically UNified (SUN) Programs, which unify control objectives and learning through a system called Kuafu that converts language and scene semantics into effective policies. Their approach significantly outperforms traditional methods, achieving an 82.03% success rate across multiple tasks while efficiently generating more successful trajectories compared to alternatives, demonstrating the benefits of integrating symbolic planning with data-driven execution.
+### 3. Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation
+**Authors:** Kefeng Duan, Dewu Zheng, Yanlin Wang, Terry Yue Zhuo, Mingwei Liu, Jianxing Yu, Jiachi Chen, Ensheng Shi, Xilin Liu, Yuchi Ma, Zibin Zheng
+**Link:** https://arxiv.org/abs/2609.01601v1
+**Summary:** The paper addresses the challenge of generating code that aligns with both task requirements and the context of large code repositories, which often exceed the input limits of large language models (LLMs). The authors introduce ACToR, a framework that identifies "critical tokens" during code generation and dynamically retrieves relevant repository context to inform those key positions, significantly improving generation accuracy. Experimental results demonstrate that ACToR outperforms existing methods, with notable performance enhancements on benchmark tasks.
 
-### 4. Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations
-**Authors:** Shijun Zhang
-**Link:** https://arxiv.org/abs/2608.31157v1
-**Summary:** This paper addresses the challenge of efficiently approximating functions using neural networks with a low-dimensional latent representation. The authors study a framework where neural network parameters are generated from a latent vector, focusing on affine parameter generators and ReLU architectures. They prove that the worst-case approximation error decreases with the increase in the network's parameter budget, even when using a fixed-dimensional latent space, achieving significant efficiency in function approximation.
+### 4. CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?
+**Authors:** Damien Sileo, Dimitri Kachler
+**Link:** https://arxiv.org/abs/2609.01600v1
+**Summary:** The paper introduces CordisBench, a benchmark designed to assess how well language models can reason about the lifecycle of software components in dynamic agent systems, where changes can affect multiple dependencies. By evaluating three efficiency-oriented models on various tasks related to identifying impacted components and predicting states after reconfigurations, the study finds that while models perform well on small systems, their reliability diminishes with increased complexity. Notably, even though higher reasoning effort can improve performance, it comes at a significant computational cost, which may not be necessary in controlled settings.
 
-### 5. Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification
-**Authors:** Yisen Xi
-**Link:** https://arxiv.org/abs/2608.31142v1
-**Summary:** The paper addresses the challenge of verifying the identity of anonymous AI models launched under codenames, given the increasing prevalence of such models. The authors propose a four-stage forensic audit protocol that analyzes historical configurations, configures fingerprints, and tests tokenizers to ensure accurate identity verification. Their approach effectively validated model identities in multiple cases, confirming their methodology's reliability and offering a practical implementation for use.
+### 5. The Rise of Verbal Reinforcement Learning
+**Authors:** Kshitij Tayal, Arun Sharma, Genta Indra Winata, Anirban Das, Sambit Sahu
+**Link:** https://arxiv.org/abs/2609.01597v1
+**Summary:** The paper addresses the challenge of improving language agents' performance using natural language feedback. It introduces the concept of Verbal Reinforcement Learning (VRL), organizing it into three categories based on how and when language feedback influences an agent's development. The key contribution is a comprehensive taxonomy that outlines the role of language in defining tasks, guiding reasoning, and shaping model training, highlighting both the potential benefits and challenges of this approach.
 
-### 6. Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation
-**Authors:** Riya Ahuja, Tim Kacprowski, Roya Shiasi Sardoabi
-**Link:** https://arxiv.org/abs/2608.31139v1
-**Summary:** The paper addresses the limitations of fixed-size chunking in biomedical information extraction, which can disrupt semantic evidence during data retrieval. The authors present a configurable semantic chunking framework that enhances the chunking process by using more flexible methods such as entity-preserving windows and tiered trigger prioritization. Their results show that this approach significantly improves performance on certain biomedical relation extraction tasks, achieving an F1 score of 82.6%, outperforming the previous fixed-size method by over eight points.
+### 6. Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation
+**Authors:** Haoyuan Deng, Haichao Liu, Wenkai Guo, Yuan Ling, Zaijia Yang, Yuanjiang Xue, Haosheng Sun, Liangzi Wang, Ziwei Wang
+**Link:** https://arxiv.org/abs/2609.01596v1
+**Summary:** The paper presents Facet-0, a robotic foundation model designed to improve precise manipulation in assembly tasks with sub-millimeter tolerances, addressing challenges like contact failures. It integrates multimodal representation learning and reinforcement learning to predict the consequences of actions and optimize performance through a novel Action-Wrench Critic. Key results demonstrate that Facet-0 achieves an 82% success rate on complex assembly tasks, significantly outperforming traditional methods.
 
-### 7. OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques
-**Authors:** Hamed Babaei Giglou, Sören Auer, Peio Popov, Mahsa Sanaei, Jennifer D'Souza
-**Link:** https://arxiv.org/abs/2608.31137v1
-**Summary:** The paper addresses the challenge of improving ontology alignment (OA) by combining predictions from various alignment techniques, which can sometimes conflict with each other. The authors introduce OntoAligner-Ensemble, a flexible framework that utilizes a two-stage voting-based fusion approach to integrate these predictions. Their experiments show that this ensemble method consistently enhances the balance between precision and recall, often outperforming individual aligners across different domains.
+### 7. Mechanism Design for Alignment and Control
+**Authors:** Dirk Bergemann, Andrew Koh, Stephen Morris
+**Link:** https://arxiv.org/abs/2609.01595v1
+**Summary:** The paper addresses the challenge of designing mechanisms for AI agents with unknown preferences and capabilities, ensuring they act honestly and follow directives. The authors propose a framework that uses a one-sided imitation structure to develop principles for effective policy implementation, enabling strategies like peer scoring and competition to enhance agent alignment. Key contributions include a revelation principle, conditions for disciplining multiple agents, and insights into managing the trade-offs between interpretability and alignment.
 
-### 8. Implementing neural network mixed-effects models in Template Model Builder (TMB)
-**Authors:** Nan Zheng, Hoi Yiu Cheung, Vibhu Sharma, James T. Thorson, Noel G. Cadigan
-**Link:** https://arxiv.org/abs/2608.31133v1
-**Summary:** This paper addresses the challenges of implementing neural network mixed-effects models (NMMs), which combine the predictive power of neural networks with mixed-effects modeling's ability to handle complex data structures. The authors propose a framework using Template Model Builder (TMB) that simplifies the implementation process by utilizing automatic differentiation and Laplace approximation to efficiently estimate the models without the need for manual derivations. Their approach enhances the flexibility and accuracy of NMMs, demonstrating improved statistical performance through two numerical examples and providing reproducible code for wider use.
+### 8. StudentSim: Training LLM-based Student Simulators
+**Authors:** Ke Yang, Chenglong Wang, Michel Galley, Chandan Singh, Jeevana Priya Inala, ChengXiang Zhai, Jianfeng Gao
+**Link:** https://arxiv.org/abs/2609.01591v1
+**Summary:** The paper introduces StudentSim, a framework designed to create personalized AI student simulators that adapt to individual learners' responses and needs, addressing the challenge of limited and costly real student data. By combining pooled training with individualized specialization, StudentSim effectively reflects students' behaviors and improves their learning experiences under tutor guidance. Notably, it outperforms existing models in simulating student interactions across various subjects, demonstrating enhanced behavioral fidelity and responsiveness to tutoring guidance.
 
-### 9. DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening
-**Authors:** Yung Wei Shueh, Zhi-Jie Chen, Chia-Hsuan Hsu, Hsin-Ling Hsu, Donghua Zhang, Chenwei Wu, Jun-En Ding, Tongze Zhang, Shihao Yang, Pengfei Hu, Fang-Ming Hung, Feng Liu
-**Link:** https://arxiv.org/abs/2608.31128v1
-**Summary:** The paper introduces DIASENTINEL, a multi-agent system designed to accurately screen for one-year risk of type 2 diabetes by analyzing electronic health records while adhering to clinical guidelines from the American Diabetes Association. It combines risk prediction, extraction of relevant clinical signals, and a verification process that checks recommendations against established guidelines. The key contribution is a framework that ensures reliable, auditable, and privacy-preserving decision support in clinical settings, complete with an interactive dashboard for real-time screening and patient reporting.
+### 9. Designing Proactive Thought Partners for Writing
+**Authors:** Chao Zhang, Abe Davis, Chih-Wei Chen, Chin-Chia Hsu
+**Link:** https://arxiv.org/abs/2609.01588v1
+**Summary:** The paper addresses the challenge of providing tailored cognitive support to writers during various stages of the writing process, moving beyond basic text assistance. The authors designed and tested a customizable AI tool called a "proactive thought partner," which offers relevant suggestions based on user-defined roles and prompts. Key findings indicate that participants effectively utilized this tool for idea generation and self-monitoring, appreciating its non-intrusive and visually organized support.
 
-### 10. On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions
-**Authors:** Guy Emerson
-**Link:** https://arxiv.org/abs/2608.31120v1
-**Summary:** This paper investigates the compatibility problem for conditional probability distributions encoded as succinct arithmetic circuits, which is relevant for high-dimensional probabilistic models in machine learning. The authors establish that determining the existence of a compatible joint distribution is computationally intractable, showing that the problem is co-NP-complete when all probabilities are non-zero, and PSPACE-complete when zero probabilities are allowed. They also highlight implications for the expressibility of compatible conditionals in probabilistic modeling.
+### 10. The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
+**Authors:** Jundong Hu, Shekar Ramachandran
+**Link:** https://arxiv.org/abs/2609.01587v1
+**Summary:** The paper addresses the issue of accuracy loss in large language models due to post-training quantization, which reduces their operational costs. The authors conducted experiments on nine models to investigate how to best allocate additional precision to improve accuracy, finding that a global approach to finer quantization consistently outperformed localized adjustments. Their key contribution reveals that precision recovery is diffuse across model layers rather than concentrated, suggesting that a universal strategy for quantization may be more effective than targeting specific layers.
