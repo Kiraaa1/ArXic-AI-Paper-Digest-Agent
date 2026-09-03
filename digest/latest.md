@@ -1,52 +1,52 @@
 ---
-## 2026-09-02
+## 2026-09-03
 
-### 1. Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation
-**Authors:** Himil Vasava, Ming Jiang
-**Link:** https://arxiv.org/abs/2609.01604v1
-**Summary:** The paper investigates how large language models (LLMs) evaluate natural language generation quality, specifically focusing on the mechanisms behind their scoring processes. By employing a rigorous experimental setup that includes perturbations and causal tracing, the authors reveal that these models use a two-stage evaluation pipeline, where early layers assess local errors and later layers finalize ratings. The key contribution is the identification of how fine-tuning modifies existing model architectures to enhance evaluation capabilities, providing insights into the internal workings of LLM evaluators.
+### 1. A Common Measure of Communication for Speech Brain-Computer Interfaces
+**Authors:** Dulhan Jayalath, Benjamin Ballyk, Oiwi Parker Jones
+**Link:** https://arxiv.org/abs/2609.02887v1
+**Summary:** The paper addresses the challenge of comparing different speech brain-computer interface (BCI) systems, which currently suffer from inconsistent metrics due to variations in datasets and vocabularies. The authors propose a new measure called open-vocabulary mutual information (OVMI) that quantifies the information a speech BCI can convey relative to the intended vocabulary. They show that using OVMI can enhance the accuracy of speech BCIs by up to 16.3% and provides a standardized way for the community to evaluate and improve these systems.
 
-### 2. Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation
-**Authors:** Kefeng Duan, Dewu Zheng, Yanlin Wang, Xiwen Wang, Ensheng Shi, Xilin Liu, Yuchi Ma, Jiachi Chen, Mingwei Liu, Zibin Zheng
-**Link:** https://arxiv.org/abs/2609.01603v1
-**Summary:** The paper addresses the challenge of efficiently evaluating software engineering agents on complex tasks, which typically require extensive code exploration and testing. The authors introduce PTA-IRT, a framework that leverages historical execution trajectories to provide deeper insights into how agents solve problems, allowing for more informed selection of evaluation subsets. The key finding is that PTA-IRT significantly improves performance and ranking accuracy on software engineering benchmarks compared to existing methods, especially when calibration resources are limited.
+### 2. Discriminative World Models for Web Agents
+**Authors:** Kelvin Li, Dhruv Pendharkar, Anish Pahilajani, Chuyi Shang, Leon Oks, Leonid Karlinsky, Rogerio Feris, Trevor Darrell, Roei Herzig
+**Link:** https://arxiv.org/abs/2609.02885v1
+**Summary:** The paper addresses the misalignment between world models used by web agents for action selection and the ranking of predicted outcomes. The authors propose a new training objective called predicted-state matching, which focuses on distinguishing the true resulting state from alternatives. Their experiments demonstrate that this approach significantly improves action ranking and task success compared to traditional methods, showcasing the effectiveness of their discriminative training strategy.
 
-### 3. Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation
-**Authors:** Kefeng Duan, Dewu Zheng, Yanlin Wang, Terry Yue Zhuo, Mingwei Liu, Jianxing Yu, Jiachi Chen, Ensheng Shi, Xilin Liu, Yuchi Ma, Zibin Zheng
-**Link:** https://arxiv.org/abs/2609.01601v1
-**Summary:** The paper addresses the challenge of generating code that aligns with both task requirements and the context of large code repositories, which often exceed the input limits of large language models (LLMs). The authors introduce ACToR, a framework that identifies "critical tokens" during code generation and dynamically retrieves relevant repository context to inform those key positions, significantly improving generation accuracy. Experimental results demonstrate that ACToR outperforms existing methods, with notable performance enhancements on benchmark tasks.
+### 3. Graph Machine: Towards Better Pretraining via Edges
+**Authors:** Lintai Hou
+**Link:** https://arxiv.org/abs/2609.02881v1
+**Summary:** The paper presents the Graph Machine (GM), a new architecture designed to improve pretraining efficiency by using sparse, dynamic routing while maintaining an \(O(n)\) state size. GM replaces most dense layers in a Transformer model with its sparse layers, employing a referral mechanism for dynamically updated edges. The key finding is that even with significantly reduced token retrieval in the sparse layers, the model maintains robust performance, with one configuration showing a slight improvement in loss.
 
-### 4. CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?
-**Authors:** Damien Sileo, Dimitri Kachler
-**Link:** https://arxiv.org/abs/2609.01600v1
-**Summary:** The paper introduces CordisBench, a benchmark designed to assess how well language models can reason about the lifecycle of software components in dynamic agent systems, where changes can affect multiple dependencies. By evaluating three efficiency-oriented models on various tasks related to identifying impacted components and predicting states after reconfigurations, the study finds that while models perform well on small systems, their reliability diminishes with increased complexity. Notably, even though higher reasoning effort can improve performance, it comes at a significant computational cost, which may not be necessary in controlled settings.
+### 4. GRADSOLVE: fast exact gradients for ODE ensembles on GPUs
+**Authors:** Alessio Spurio Mancini
+**Link:** https://arxiv.org/abs/2609.02876v1
+**Summary:** The paper presents GRADSOLVE, an open-source library that enables fast and exact computation of gradients for ensembles of ordinary differential equations (ODEs) on NVIDIA GPUs. It addresses the challenge of efficiently differentiating ODE solutions by combining a reverse-mode differentiation approach with adaptive solvers, achieving significant speed improvements. The key contribution is that GRADSOLVE computes gradients much faster than existing methods, offering up to 14.1 times the efficiency for gradient calculations while maintaining accuracy, especially beneficial for large ensembles.
 
-### 5. The Rise of Verbal Reinforcement Learning
-**Authors:** Kshitij Tayal, Arun Sharma, Genta Indra Winata, Anirban Das, Sambit Sahu
-**Link:** https://arxiv.org/abs/2609.01597v1
-**Summary:** The paper addresses the challenge of improving language agents' performance using natural language feedback. It introduces the concept of Verbal Reinforcement Learning (VRL), organizing it into three categories based on how and when language feedback influences an agent's development. The key contribution is a comprehensive taxonomy that outlines the role of language in defining tasks, guiding reasoning, and shaping model training, highlighting both the potential benefits and challenges of this approach.
+### 5. Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework
+**Authors:** Cagri Temel
+**Link:** https://arxiv.org/abs/2609.02861v1
+**Summary:** The paper addresses the challenge of understanding and auditing decisions made by deep learning-based autonomous robots, which often lack transparency during incidents. It proposes a decision framework called TRACE, which organizes decision-making into four structured layers that allow actions to be traced back to specific sensor evidence. The experimental results show that TRACE achieves high levels of traceability, continuity, and reconstructability in decision-making, thereby enhancing the transparency required for compliance with regulations like the EU AI Act.
 
-### 6. Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation
-**Authors:** Haoyuan Deng, Haichao Liu, Wenkai Guo, Yuan Ling, Zaijia Yang, Yuanjiang Xue, Haosheng Sun, Liangzi Wang, Ziwei Wang
-**Link:** https://arxiv.org/abs/2609.01596v1
-**Summary:** The paper presents Facet-0, a robotic foundation model designed to improve precise manipulation in assembly tasks with sub-millimeter tolerances, addressing challenges like contact failures. It integrates multimodal representation learning and reinforcement learning to predict the consequences of actions and optimize performance through a novel Action-Wrench Critic. Key results demonstrate that Facet-0 achieves an 82% success rate on complex assembly tasks, significantly outperforming traditional methods.
+### 6. User Feedback Provides a Unique Signal that LLMs Can not Detect
+**Authors:** Shachar Don-Yehiya, Leshem Choshen, Omri Abend
+**Link:** https://arxiv.org/abs/2609.02859v1
+**Summary:** This paper addresses the challenge of effectively utilizing user feedback to improve Large Language Models (LLMs), which is often seen as noisy and ineffective. The authors demonstrate that user feedback is a valuable signal for model enhancement by constructing both synthetic and real-world datasets to compare model revisions made with and without feedback. Their key finding reveals that feedback-informed revisions significantly outperform baseline revisions, highlighting a bias in current evaluation methods that often overlook successful corrections prompted by user feedback.
 
-### 7. Mechanism Design for Alignment and Control
-**Authors:** Dirk Bergemann, Andrew Koh, Stephen Morris
-**Link:** https://arxiv.org/abs/2609.01595v1
-**Summary:** The paper addresses the challenge of designing mechanisms for AI agents with unknown preferences and capabilities, ensuring they act honestly and follow directives. The authors propose a framework that uses a one-sided imitation structure to develop principles for effective policy implementation, enabling strategies like peer scoring and competition to enhance agent alignment. Key contributions include a revelation principle, conditions for disciplining multiple agents, and insights into managing the trade-offs between interpretability and alignment.
+### 7. Improved Gradient Descent Lower Bounds Beyond Nesterov
+**Authors:** Yuhan Ye, Kaizhao Liu
+**Link:** https://arxiv.org/abs/2609.02855v1
+**Summary:** This paper explores the limits of acceleration in gradient descent methods for smooth convex optimization, presenting improved lower bounds on convergence rates with predetermined stepsizes. The authors establish new non-anytime and anytime lower bounds that surpass previous results, highlighting a significant difference in achievable convergence rates depending on whether an algorithm is allowed to use the solution at each iteration or not. These findings clarify the performance capabilities of gradient descent under specific conditions, revealing tighter constraints on its efficiency.
 
-### 8. StudentSim: Training LLM-based Student Simulators
-**Authors:** Ke Yang, Chenglong Wang, Michel Galley, Chandan Singh, Jeevana Priya Inala, ChengXiang Zhai, Jianfeng Gao
-**Link:** https://arxiv.org/abs/2609.01591v1
-**Summary:** The paper introduces StudentSim, a framework designed to create personalized AI student simulators that adapt to individual learners' responses and needs, addressing the challenge of limited and costly real student data. By combining pooled training with individualized specialization, StudentSim effectively reflects students' behaviors and improves their learning experiences under tutor guidance. Notably, it outperforms existing models in simulating student interactions across various subjects, demonstrating enhanced behavioral fidelity and responsiveness to tutoring guidance.
+### 8. The Implications of Linguistic Illegibility for LLM Security
+**Authors:** James Mickens
+**Link:** https://arxiv.org/abs/2609.02852v1
+**Summary:** The paper addresses the issue of "linguistic illegibility" in large language models (LLMs), where the external language outputs do not accurately reflect the internal computations of the models. The authors propose that reliance on linguistic self-reporting for security measures is flawed and advocate for taint tracking as a more robust sandboxing method that defines what system states should remain unaffected by model outputs. This approach, along with additional sandboxing mechanisms, aims to ensure greater security and prevent potential exploits in LLMs.
 
-### 9. Designing Proactive Thought Partners for Writing
-**Authors:** Chao Zhang, Abe Davis, Chih-Wei Chen, Chin-Chia Hsu
-**Link:** https://arxiv.org/abs/2609.01588v1
-**Summary:** The paper addresses the challenge of providing tailored cognitive support to writers during various stages of the writing process, moving beyond basic text assistance. The authors designed and tested a customizable AI tool called a "proactive thought partner," which offers relevant suggestions based on user-defined roles and prompts. Key findings indicate that participants effectively utilized this tool for idea generation and self-monitoring, appreciating its non-intrusive and visually organized support.
+### 9. Post-Training Language Models for Gold-Medal Performance in Coding Competitions
+**Authors:** Aleksander Ficek, Sean Narenthiran, Mehrzad Samadi, Somshubra Majumdar, Boris Ginsburg
+**Link:** https://arxiv.org/abs/2609.02849v1
+**Summary:** This paper addresses the challenge of competitive programming by developing specialized language models that excel in coding competitions. The authors create Nemotron-3 models using a combination of large problem curation, supervised fine-tuning, and reinforcement learning strategies, along with a novel feedback-driven method called GenCorrect to optimize solution generation. Their key finding is that their models outperform both human contestants and previous benchmarks, achieving record scores in the International Olympiad in Informatics (IOI) competitions.
 
-### 10. The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally
-**Authors:** Jundong Hu, Shekar Ramachandran
-**Link:** https://arxiv.org/abs/2609.01587v1
-**Summary:** The paper addresses the issue of accuracy loss in large language models due to post-training quantization, which reduces their operational costs. The authors conducted experiments on nine models to investigate how to best allocate additional precision to improve accuracy, finding that a global approach to finer quantization consistently outperformed localized adjustments. Their key contribution reveals that precision recovery is diffuse across model layers rather than concentrated, suggesting that a universal strategy for quantization may be more effective than targeting specific layers.
+### 10. UE5M3 FP4 Block Scaling for Stable Language Model Pretraining
+**Authors:** Robert Hu, Carlo Luschi, Paul Balanca
+**Link:** https://arxiv.org/abs/2609.02846v1
+**Summary:** The paper addresses the challenges of stable pretraining for 4-bit floating-point language models, specifically focusing on the limitations of current tensor scaling methods. The authors propose a new approach that combines E5M3 block scales with selective stochastic rounding and forgoes some complex techniques, achieving better training performance. Their results show improved training and validation losses compared to existing methods, highlighting the benefits of a simpler pretraining strategy.
