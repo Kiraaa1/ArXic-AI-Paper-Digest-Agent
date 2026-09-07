@@ -1,52 +1,52 @@
 ---
-## 2026-09-06
+## 2026-09-07
 
-### 1. The Natural Language Interaction Protocol and Standard for AI Agents
-**Authors:** Luyi Xing, Rasit Onur Topaloglu, Ranjan Sinha, Abhay Ratnaparkhi, Samuel Ndichu, Christopher Nguyen, Anindita Das, Tom Sheffler, Mohamed Rahouti, Zichuan Li, Xiaojing Liao, Sanjay Aiyagari
-**Link:** https://arxiv.org/abs/2609.04135v1
-**Summary:** The paper addresses the challenge of interoperability among diverse AI agents developed across various frameworks and environments. It introduces the Natural Language Interaction Protocol (NLIP), a standardized application-layer communication protocol that allows these agents to interact more effectively through a lightweight message structure compatible with existing transport methods. The key contribution of NLIP is its ability to enable seamless communication between AI agents and tools, thereby enhancing their collective functionality and impact in social and business contexts.
+### 1. UniMate: One Unified Model to Animate Diverse Skeletons
+**Authors:** Linzhan Mou, Jiahui Lei, Zhiyang Dou, Chenyue Cai, Chaoyue Song, Adam Finkelstein, Szymon Rusinkiewicz
+**Link:** https://arxiv.org/abs/2609.05415v1
+**Summary:** The paper introduces UniMate, a unified model designed to generate realistic animations for various 3D skeletons without needing customization for each individual skeleton. Instead of relying on specific templates or pre-existing motion data, UniMate employs innovative techniques such as a topology-aware diffusion transformer that understands skeletal structure through advanced attention mechanisms. The key contribution is its ability to deliver high-quality, generalized motion synthesis across different skeleton types, significantly improving the efficiency and flexibility of automating 3D animations.
 
-### 2. Prospective Coding Improves Learning in Deep Continuous-Time Recurrent Networks
-**Authors:** Shivang Rawat, Mirko Morello, Flaviano Morone, David J. Heeger
-**Link:** https://arxiv.org/abs/2609.04134v1
-**Summary:** The paper addresses the problem of gradient attenuation in deep continuous-time recurrent networks caused by delays in bottom-up signals and errors. The authors introduce Recursive Quadrature Filters (RQFs), which implement a new approach to make layer inputs prospective, thereby improving gradient flow. Their key finding is that this method enhances learning performance in various network architectures, demonstrating significant accuracy improvements on tasks such as raw-audio speech recognition.
+### 2. WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data
+**Authors:** Ji Soo Lee, Xilun Chen, Pierce Chuang, Ashish Shenoy, Jason Wei, Dohwan Ko, Hyunwoo J. Kim, Benoit Corda
+**Link:** https://arxiv.org/abs/2609.05405v1
+**Summary:** WearableQA addresses the challenge of evaluating how well AI systems can reason about health using data from real-world wearable devices. The benchmark consists of thousands of multiple-choice questions derived from extensive longitudinal data of users, allowing for diverse reasoning evaluations. Key findings show that existing large language models vary significantly in their performance, highlighting that the task remains challenging, with most models scoring below 60% accuracy compared to a random chance baseline.
 
-### 3. Environment Evolution for Terminal Agents
-**Authors:** Zhiyuan Fan, Tinghao Yu, Yuanjun Cai, Jiang Zhou, Jiangtao Guan, Jincheng Liu, Yun Yang, Dingxin Hu, Zhuo Han, Xing Wu, Feng Zhang, Lilin Wang
-**Link:** https://arxiv.org/abs/2609.04128v1
-**Summary:** The paper addresses the challenge of training terminal agents by enhancing the difficulty of their interactive environments as the agents improve. The authors introduce an "environment evolution" method that incrementally adjusts environment complexity off-policy, providing continuous learning signals throughout training. Their approach demonstrates significant improvements in performance, with agents showing up to an 18.0 percentage point increase on benchmark tests.
+### 3. Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction
+**Authors:** Sihwa Park
+**Link:** https://arxiv.org/abs/2609.05404v1
+**Summary:** Diffusion TV addresses the challenge of making complex AI-generated diffusion processes more accessible and engaging to the public. It does this by creating an interactive art installation where participants physically manipulate a modified CRT TV to influence the clarity of AI-generated images and sounds, which represent different time periods of animal species. The key contribution is the promotion of an embodied, experiential understanding of AI generative technologies, allowing users to actively engage with the creative process rather than just the final outputs.
 
-### 4. Epistemic Warrant for LLM Recommendations: Characterizing the Basis for Reliance When Ground Truth Is Unavailable
-**Authors:** Shai Vardi, João Sedoc
-**Link:** https://arxiv.org/abs/2609.04127v1
-**Summary:** The paper addresses the challenge of assessing the reliability of recommendations made by large language models (LLMs) when there is no clear ground truth. The authors propose a new concept called "epistemic warrant," which categorizes recommendations based on their stability and scope. Their findings indicate that this framework provides a more nuanced understanding of LLM recommendations compared to traditional measures of model reliability or user confidence.
+### 4. RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments
+**Authors:** Quoc H. Nguyen, Ali Lafzi, Abhijeet Phatak, Siddharth Pratap Singh, Rohit Upadhyay, Yogananda Domlur Seetharama, Chittaranjan Tripathy
+**Link:** https://arxiv.org/abs/2609.05403v1
+**Summary:** The paper presents RegionFed, a federated learning framework designed to improve personalized query understanding in diverse retail environments, which struggle with data heterogeneity and privacy concerns. Unlike traditional methods that create global models, RegionFed operates at the gradient level, allowing for better personalization without collapsing on modern transformer models. The results show RegionFed achieves 92.27% accuracy, effectively closing the gap to centralized models while ensuring privacy and maintaining stability across various architectures.
 
-### 5. Constant regret in general games via higher-order optimism
-**Authors:** Omar Abbadi, Rida Laraki, Panayotis Mertikopoulos
-**Link:** https://arxiv.org/abs/2609.04113v1
-**Summary:** This paper addresses the challenge of achieving low regret in general N-player games, proposing a new algorithm called higher-order optimism with discounting (HOOD). This algorithm improves upon existing methods by incorporating a higher-order predictive model and entropic regularization, successfully guaranteeing a regret of \(O(N^3\log^2 K)\) for each player. The key contribution lies in effectively dampening oscillations in player strategies, thereby overcoming significant hurdles faced by previous approaches.
+### 5. Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models
+**Authors:** Wonje Jeung, Sangyeon Yoon, Hyesoo Hong, Yoonjun Cho, Dongjae Jeon, Bumjun Kim, Jean Oh, Youngjae Yu, Albert No
+**Link:** https://arxiv.org/abs/2609.05401v1
+**Summary:** The paper addresses the issue of paraphrase invariance in vision-language models (VLMs) used as reward functions in robotic learning, where the same robot behavior should receive consistent rewards regardless of how the goal is described. The authors introduce ROBORMBENCH, a comprehensive benchmark that reveals significant instability in current VLMs due to paraphrased instructions, leading to inconsistent reward assessments. Their key finding is that dedicated reward models specifically trained with trajectory-grounded supervision are much more stable, highlighting the need for robustness against paraphrasing in VLM-based reward systems for robotics.
 
-### 6. Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR
-**Authors:** Boyan Li, Bingsen Chen, Chenghao Yang, Ping Nie, Chen Zhao, Xi Ye
-**Link:** https://arxiv.org/abs/2609.04108v1
-**Summary:** The paper addresses the challenge of enhancing reasoning capabilities in large language models by effectively combining on-policy distillation (OPD) and reinforcement learning with verifiable rewards (RLVR). The authors propose a two-stage approach where OPD is applied first, followed by RLVR, demonstrating that this sequence significantly outperforms methods that combine both techniques simultaneously. Their findings indicate that OPD helps expand the range of solutions guided by a teacher, while RLVR fine-tunes these solutions, thus providing a practical strategy for improving model performance in reasoning tasks.
+### 6. A Deep Generative Model for Synthesizing Labeled Wireless Signals
+**Authors:** Yuxiao Li, Keke Hu, Santiago Mazuelas, Yuan Shen
+**Link:** https://arxiv.org/abs/2609.05396v1
+**Summary:** This paper addresses the challenge of acquiring realistic labeled wireless signal datasets needed for training models in wireless sensing, which can be costly and difficult to obtain. The authors propose a new deep learning approach called Inter-Instance Generative Adversarial Networks (IIns-GAN) to generate these labeled signals, making them adaptable to various environments. The experimental results reveal that the generated signals closely resemble real-world data and enhance the performance of models in tasks such as distance estimation and environment identification.
 
-### 7. Hardware-Aware FP4 FlashAttention-4
-**Authors:** Robert Hu
-**Link:** https://arxiv.org/abs/2609.04105v1
-**Summary:** The paper addresses the challenge of improving the speed of attention mechanisms in neural networks when using Blackwell's 4-bit floating-point (FP4) tensor cores, which do not inherently accelerate processing due to softmax conversions and dependencies. The authors propose a method called Direct-P that efficiently maps scores to FP4 probabilities for faster inference and a causal path that optimizes backward training with FP8 gradients, achieving up to 2.13 times the throughput compared to bfloat16. This approach leads to significantly faster single-GPU updates for large models, although the authors note that using FP4 in distributed training may lead to divergence in performance.
+### 7. Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe
+**Authors:** Dain Kim, Eungi Cho, Kyumin Kim, Shinyeong Noh, Kyuseong Lim
+**Link:** https://arxiv.org/abs/2609.05395v1
+**Summary:** The paper addresses the challenge of using open-source language models for multi-step tool-calling in executing tasks through Korean public APIs, where existing models perform poorly. The authors introduce KOPA-Bench, a benchmark with 145 tasks, and develop EDGE, a method for synthesizing executable paths by dynamically linking API outputs and inputs based on live execution success. Their approach enables a smaller 9B model to significantly improve its performance, coming close to a larger 27B model while exceeding results on additional benchmarks.
 
-### 8. Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM
-**Authors:** Sergii Kozyrev, Davyd Maiboroda
-**Link:** https://arxiv.org/abs/2609.04098v1
-**Summary:** The paper addresses the challenge of effectively quantizing the recurrent components of a Hybrid LLM, specifically the Gated DeltaNet, to 4-bit precision without significant performance degradation. The authors introduce Minima, a quantization approach (NVFP4 W4A4) that successfully maintains low perplexity and high performance across multiple tasks while being smaller and faster than previous models. Key findings demonstrate that the quantization of the recurrent state is robust due to several mechanisms, including error localization and effective noise handling in long contexts, leading to superior efficiency in deploying the model.
+### 8. Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence
+**Authors:** Urja Pawar, Rajitha Ramanayake, Nabeel Kemal, Ashwin Kandath, Owen O'Neill, Guillaume Bourgeon, Houssem Chatbri
+**Link:** https://arxiv.org/abs/2609.05385v1
+**Summary:** This paper investigates the reliability of explanations provided by large language models (LLMs) in decision-making tasks, specifically whether these explanations are necessary and sufficient for the outputs these models generate. The authors use controlled interventions to evaluate how often changes to identified factors impact decisions (necessity) and how often keeping them while removing other information preserves decisions (sufficiency). They find that while the explanations contain relevant information, they do not consistently reflect the factors with the strongest influence, highlighting a need for more reliable frameworks in understanding LLM behaviors during agent oversight.
 
-### 9. Adaptive Vision-Language Grasping via Composable Foundation Priors and Generalizable Grasp Synthesis
-**Authors:** Sixu Yan, Shikang Wang, Binhua Huang, Xuanlai Tang, Guohua Fan, Fan Huang, Haoxuan Li, Yongkang Li, Yuhan Li, Bencheng Liao, Zeyu Zhang, Wenyu Liu, Hangxin Liu, Xinggang Wang
-**Link:** https://arxiv.org/abs/2609.04096v1
-**Summary:** This paper addresses the challenge of adaptable robotic grasping by introducing a framework called AdaRoboVLG, which allows robots to generate and evaluate grasping strategies without needing to retrain their underlying policies for different tasks or hand types. The approach combines a generalizable base policy with specialized foundation models that provide useful context, leading to successful grasping even in complex environments. Key results show that this decoupled method maintains high performance while improving adaptability and learning efficiency across various robotic setups.
+### 9. Reflection-aware Generative Novel View Synthesis
+**Authors:** GeonU Kim, Shin Dong-Yeon, Tae-Hyun Oh
+**Link:** https://arxiv.org/abs/2609.05382v1
+**Summary:** The paper introduces Ref-GeNVS, a novel method for generating new views of scenes that include mirrors without requiring additional training. The approach involves treating the reflections in mirrors as additional viewpoints and using a two-stage generation process to create consistent and coherent images that accurately represent reflected scene details. As a result, Ref-GeNVS significantly outperforms existing methods, delivering high-quality novel views with a clear representation of the scene structures seen through mirrors.
 
-### 10. DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training
-**Authors:** Shubham Gandhi, Saurabh Goyal, Kiran Kate, Yara Rizk
-**Link:** https://arxiv.org/abs/2609.04094v1
-**Summary:** The paper addresses the challenge of enabling long-horizon reinforcement learning agents to receive useful feedback when no clear success indicators are available. The authors introduce DRACO, a method that dynamically creates scoring rubrics during training and redistributes the evaluation across the steps that contributed to achieving key milestones, thus enhancing credit assignment. DRACO demonstrates significant performance improvements over existing models, achieving better scores on both in-domain and out-of-domain tasks without relying on traditional verification methods.
+### 10. Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models
+**Authors:** Matthias Busch, Marius Tacke, Sviatlana V. Lamaka, Mikhail L. Zheludkevich, Christian J. Cyron, Roland C. Aydin, Christian Feiler
+**Link:** https://arxiv.org/abs/2609.05381v1
+**Summary:** The paper addresses the issue of large language models (LLMs) potentially relying on memorized molecular property values rather than performing genuine predictions. The authors evaluated 22 advanced LLMs on 12 regression benchmarks to assess the prevalence of verbatim retrieval of published data, finding that such retrieval was common in certain datasets and influenced by the reasoning level applied. A key finding is that while retrieval is significant, it does not solely determine a model's predictive ability, suggesting that LLMs can still demonstrate general predictive capabilities despite high rates of memorization.
