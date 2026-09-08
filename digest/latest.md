@@ -1,52 +1,52 @@
 ---
-## 2026-09-07
+## 2026-09-08
 
-### 1. UniMate: One Unified Model to Animate Diverse Skeletons
-**Authors:** Linzhan Mou, Jiahui Lei, Zhiyang Dou, Chenyue Cai, Chaoyue Song, Adam Finkelstein, Szymon Rusinkiewicz
-**Link:** https://arxiv.org/abs/2609.05415v1
-**Summary:** The paper introduces UniMate, a unified model designed to generate realistic animations for various 3D skeletons without needing customization for each individual skeleton. Instead of relying on specific templates or pre-existing motion data, UniMate employs innovative techniques such as a topology-aware diffusion transformer that understands skeletal structure through advanced attention mechanisms. The key contribution is its ability to deliver high-quality, generalized motion synthesis across different skeleton types, significantly improving the efficiency and flexibility of automating 3D animations.
+### 1. What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies
+**Authors:** Vivek Chavan, Pengtao Xie, Yahuan Shi, Oliver Heimann, Kevin Haninger, Jörg Krüger
+**Link:** https://arxiv.org/abs/2609.05376v1
+**Summary:** This paper addresses the issue of visuomotor imitation policies that struggle with object selection when faced with visually similar distractors. The authors use a method called Action Chunking with Transformers (ACT) to analyze and improve the system's performance by implementing strategies like distractor augmentation and attention regularization. Their key finding is that targeted interventions significantly enhance robustness and accuracy in selecting objects or destinations, demonstrating the importance of addressing visual distractions in policy learning.
 
-### 2. WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data
-**Authors:** Ji Soo Lee, Xilun Chen, Pierce Chuang, Ashish Shenoy, Jason Wei, Dohwan Ko, Hyunwoo J. Kim, Benoit Corda
-**Link:** https://arxiv.org/abs/2609.05405v1
-**Summary:** WearableQA addresses the challenge of evaluating how well AI systems can reason about health using data from real-world wearable devices. The benchmark consists of thousands of multiple-choice questions derived from extensive longitudinal data of users, allowing for diverse reasoning evaluations. Key findings show that existing large language models vary significantly in their performance, highlighting that the task remains challenging, with most models scoring below 60% accuracy compared to a random chance baseline.
+### 2. CUA-Universe: A Scalable and Dynamic Environment for Hybrid GUI+CLI Agents
+**Authors:** Haoting Shi, Wenhao Wang, Weicheng Fang, Yaozhong Liang, Tian Jin, Pengxiang Zhao, Guangyi Liu, Siheng Chen, Yanfeng Wang
+**Link:** https://arxiv.org/abs/2609.05374v1
+**Summary:** CUA-Universe addresses the limitations of existing computer-use agents that primarily rely on graphical user interfaces (GUIs) and often execute tasks inefficiently. It presents a scalable environment that integrates both GUI and command-line interface (CLI) capabilities, enabling agents to perform tasks more effectively by coordinating visual and command-based operations. The approach resulted in a significant improvement in agent performance, with enhanced success rates and reduced interaction steps and resource usage across various benchmarks.
 
-### 3. Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction
-**Authors:** Sihwa Park
-**Link:** https://arxiv.org/abs/2609.05404v1
-**Summary:** Diffusion TV addresses the challenge of making complex AI-generated diffusion processes more accessible and engaging to the public. It does this by creating an interactive art installation where participants physically manipulate a modified CRT TV to influence the clarity of AI-generated images and sounds, which represent different time periods of animal species. The key contribution is the promotion of an embodied, experiential understanding of AI generative technologies, allowing users to actively engage with the creative process rather than just the final outputs.
+### 3. When LLM Decompilers Recompile More and Preserve Less
+**Authors:** Chang Liu, Edward Raff, Kristopher Micinski
+**Link:** https://arxiv.org/abs/2609.05370v1
+**Summary:** The paper addresses the issue that LLM-based decompilers, while producing clean and compilable code, can misrepresent function behavior, potentially omitting vulnerabilities. To tackle this, the authors introduce Decompile-Diverge, a novel method that synthesizes tests to compare original and decompiled code behavior. Their findings reveal that even when decompiled code successfully recompiles and passes standard tests, it can still diverge in behavior by nearly 5% overall, highlighting the gap between recompilability and actual functional accuracy.
 
-### 4. RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments
-**Authors:** Quoc H. Nguyen, Ali Lafzi, Abhijeet Phatak, Siddharth Pratap Singh, Rohit Upadhyay, Yogananda Domlur Seetharama, Chittaranjan Tripathy
-**Link:** https://arxiv.org/abs/2609.05403v1
-**Summary:** The paper presents RegionFed, a federated learning framework designed to improve personalized query understanding in diverse retail environments, which struggle with data heterogeneity and privacy concerns. Unlike traditional methods that create global models, RegionFed operates at the gradient level, allowing for better personalization without collapsing on modern transformer models. The results show RegionFed achieves 92.27% accuracy, effectively closing the gap to centralized models while ensuring privacy and maintaining stability across various architectures.
+### 4. Design Docs Are All You Need: An AI-native Machine-Learning Performance Tool
+**Authors:** Samuel Kushnir, Kimia Noorbakhsh, Kavya Sreedhar, Liqun Cheng, Ming Liu, Parthasarathy Ranganathan, Mohammad Alizadeh, Fred Kjolstad, Suvinay Subramanian
+**Link:** https://arxiv.org/abs/2609.05364v1
+**Summary:** The paper presents SMART, a performance modeling tool for machine learning systems that addresses the issue of ongoing technical debt and code refactoring caused by rapidly evolving models. Instead of relying on traditional code, SMART utilizes self-contained natural-language design documents to guide coding agents in generating implementations, ensuring that the framework remains robust and up-to-date. The key contribution is demonstrating that these design docs can effectively replace code as the primary artifact for co-designing ML systems, achieving precise performance reproduction comparable to hand-audited models.
 
-### 5. Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models
-**Authors:** Wonje Jeung, Sangyeon Yoon, Hyesoo Hong, Yoonjun Cho, Dongjae Jeon, Bumjun Kim, Jean Oh, Youngjae Yu, Albert No
-**Link:** https://arxiv.org/abs/2609.05401v1
-**Summary:** The paper addresses the issue of paraphrase invariance in vision-language models (VLMs) used as reward functions in robotic learning, where the same robot behavior should receive consistent rewards regardless of how the goal is described. The authors introduce ROBORMBENCH, a comprehensive benchmark that reveals significant instability in current VLMs due to paraphrased instructions, leading to inconsistent reward assessments. Their key finding is that dedicated reward models specifically trained with trajectory-grounded supervision are much more stable, highlighting the need for robustness against paraphrasing in VLM-based reward systems for robotics.
+### 5. Distill Globally, Adapt Locally: Reasoning Distillation and Product-Type Test-Time Training for Scalable Trade-Up Recommendation
+**Authors:** Siliang Liu, Mohammad Ghasemi, Sapan Patel, Amin Banitalebi-Dehkordi
+**Link:** https://arxiv.org/abs/2609.05363v1
+**Summary:** The paper addresses the challenge of making scalable trade-up recommendations, which involve suggesting better alternatives for products customers are interested in. The authors propose a two-level method where a large language model (LLM) first generates structured reasoning for recommendations, which is then distilled into a lightweight classifier that efficiently handles product comparisons without additional LLM usage. This approach significantly increases speed and cost-effectiveness; the distilled model achieved a high accuracy (AUC 0.941) on test data, while being around 5,000 times faster and 10,000 times cheaper than direct LLM inference.
 
-### 6. A Deep Generative Model for Synthesizing Labeled Wireless Signals
-**Authors:** Yuxiao Li, Keke Hu, Santiago Mazuelas, Yuan Shen
-**Link:** https://arxiv.org/abs/2609.05396v1
-**Summary:** This paper addresses the challenge of acquiring realistic labeled wireless signal datasets needed for training models in wireless sensing, which can be costly and difficult to obtain. The authors propose a new deep learning approach called Inter-Instance Generative Adversarial Networks (IIns-GAN) to generate these labeled signals, making them adaptable to various environments. The experimental results reveal that the generated signals closely resemble real-world data and enhance the performance of models in tasks such as distance estimation and environment identification.
+### 6. Who Should Grade My Work? Student Perspectives on Transparent AI-Assisted Writing Assessment in Higher Education
+**Authors:** Rayed AlGhamdi
+**Link:** https://arxiv.org/abs/2609.05346v1
+**Summary:** The paper examines how students perceive AI-generated feedback in writing assessments within higher education, specifically focusing on their understanding of its usefulness and authority. Through a qualitative study with undergraduate computing students, it was found that while students valued AI feedback for its practical suggestions, they maintained that human instructors should remain the ultimate evaluative authority. This highlights a key distinction in students' views between the utility of feedback and the legitimacy of grading.
 
-### 7. Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe
-**Authors:** Dain Kim, Eungi Cho, Kyumin Kim, Shinyeong Noh, Kyuseong Lim
-**Link:** https://arxiv.org/abs/2609.05395v1
-**Summary:** The paper addresses the challenge of using open-source language models for multi-step tool-calling in executing tasks through Korean public APIs, where existing models perform poorly. The authors introduce KOPA-Bench, a benchmark with 145 tasks, and develop EDGE, a method for synthesizing executable paths by dynamically linking API outputs and inputs based on live execution success. Their approach enables a smaller 9B model to significantly improve its performance, coming close to a larger 27B model while exceeding results on additional benchmarks.
+### 7. Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability
+**Authors:** Ankit Goyal, Jaideep Ray
+**Link:** https://arxiv.org/abs/2609.05339v1
+**Summary:** This study investigates how well an agent's memory can be transferred when upgrading to a new model, revealing that different memory formats affect performance during migration. Researchers tested various memory storage methods, including long-context reading, retrieval-augmented generation, compressed notes, and structured knowledge graphs, using synthetic histories. The key finding is that structured knowledge graphs maintain accuracy during migration, while compressed notes suffer significant performance drops, emphasizing the importance of careful migration strategies and retaining original memory data.
 
-### 8. Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence
-**Authors:** Urja Pawar, Rajitha Ramanayake, Nabeel Kemal, Ashwin Kandath, Owen O'Neill, Guillaume Bourgeon, Houssem Chatbri
-**Link:** https://arxiv.org/abs/2609.05385v1
-**Summary:** This paper investigates the reliability of explanations provided by large language models (LLMs) in decision-making tasks, specifically whether these explanations are necessary and sufficient for the outputs these models generate. The authors use controlled interventions to evaluate how often changes to identified factors impact decisions (necessity) and how often keeping them while removing other information preserves decisions (sufficiency). They find that while the explanations contain relevant information, they do not consistently reflect the factors with the strongest influence, highlighting a need for more reliable frameworks in understanding LLM behaviors during agent oversight.
+### 8. Variational Continuation for Double Pendulum Periodic Orbits
+**Authors:** Leo Yao, Ziming Liu, Max Tegmark
+**Link:** https://arxiv.org/abs/2609.05337v1
+**Summary:** This paper addresses the challenge of numerically tracking periodic orbits in dynamical systems, specifically for double pendulums. The authors introduce a Hessian-based technique that automates the computation of necessary derivatives using automatic differentiation, allowing for efficient identification of these orbits and their bifurcations. A significant contribution is the discovery of previously unreported periodic orbits where both pendulum masses never come to rest simultaneously.
 
-### 9. Reflection-aware Generative Novel View Synthesis
-**Authors:** GeonU Kim, Shin Dong-Yeon, Tae-Hyun Oh
-**Link:** https://arxiv.org/abs/2609.05382v1
-**Summary:** The paper introduces Ref-GeNVS, a novel method for generating new views of scenes that include mirrors without requiring additional training. The approach involves treating the reflections in mirrors as additional viewpoints and using a two-stage generation process to create consistent and coherent images that accurately represent reflected scene details. As a result, Ref-GeNVS significantly outperforms existing methods, delivering high-quality novel views with a clear representation of the scene structures seen through mirrors.
+### 9. The History Is the Detector: Executing CVE Patch History, End-to-End
+**Authors:** Qiushi Wu, Kevin Eykholt, Youngja Park, Xiaokui Shu, Dhilung Kirat, Douglas Lee Schales, Ian Molloy
+**Link:** https://arxiv.org/abs/2609.05335v1
+**Summary:** The paper addresses the challenge of utilizing historical vulnerability data to identify and fix software flaws that remain undetected in existing code. The authors introduce BUGSTONE-E2E, a framework that automatically generates executable detection rules from past CVE patch histories and systematically scans software to apply these rules. Their approach successfully extracted over 1,000 detection rules from a large dataset, leading to 644 actionable findings across multiple programs, showcasing the feasibility of transforming CVE history into a practical detection and repair workflow.
 
-### 10. Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models
-**Authors:** Matthias Busch, Marius Tacke, Sviatlana V. Lamaka, Mikhail L. Zheludkevich, Christian J. Cyron, Roland C. Aydin, Christian Feiler
-**Link:** https://arxiv.org/abs/2609.05381v1
-**Summary:** The paper addresses the issue of large language models (LLMs) potentially relying on memorized molecular property values rather than performing genuine predictions. The authors evaluated 22 advanced LLMs on 12 regression benchmarks to assess the prevalence of verbatim retrieval of published data, finding that such retrieval was common in certain datasets and influenced by the reasoning level applied. A key finding is that while retrieval is significant, it does not solely determine a model's predictive ability, suggesting that LLMs can still demonstrate general predictive capabilities despite high rates of memorization.
+### 10. Lightweight Vision Transformer Compression for On-Device Plant Disease Detection in Resource-Constrained Agricultural Field Conditions
+**Authors:** Mahadev Sunil Kumar, Bhavika Gondi, Desaisetty Venkata Satya Sai Swapnith, Gangireddy Rahul Jogi, Sudheesh Manalil, Arnab Raha, Amitava Mukherjee, Parthasarathy Seethapathy, G. Gopakumar
+**Link:** https://arxiv.org/abs/2609.05334v1
+**Summary:** The paper addresses the challenge of deploying Vision Transformers for detecting diseases in chillies, particularly in resource-limited agricultural settings, where existing models are too large. It introduces a comprehensive compression framework combining methods like pruning, quantization, and knowledge distillation, which improves model efficiency while maintaining accuracy. The key result shows that the proposed approach can significantly reduce model size by up to 54.5 times while achieving comparable accuracy to the original model, making it feasible for on-device application in agriculture.
