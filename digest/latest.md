@@ -1,52 +1,52 @@
 ---
-## 2026-09-12
+## 2026-09-15
 
-### 1. CausalArena: Benchmarking Causal Discovery in the Foundation Model Era
-**Authors:** Zi-Rong Li, Si-Yang Liu, Tian-Zuo Wang, Han-Jia Ye
-**Link:** https://arxiv.org/abs/2609.11897v1
-**Summary:** The paper addresses the challenge of evaluating causal discovery methods amid the variability in existing benchmarks and the introduction of causal discovery foundation models (CDFMs). It presents CausalArena, a comprehensive benchmarking framework that combines various synthetic and real-world datasets to assess causal discovery capabilities under a unified protocol. Key findings indicate that performance can vary significantly across different evaluation setups, highlighting the importance of benchmark diversity and the risk of misleading results when pretraining environments overlap with test scenarios.
+### 1. Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection
+**Authors:** Keertana Chidambaram, Andrew Ilyas, Vasilis Syrgkanis
+**Link:** https://arxiv.org/abs/2609.15989v1
+**Summary:** The paper addresses the challenge of monitoring large language models for unsafe planning and deception through a technique called chain-of-thought (CoT) monitoring. The authors propose an attack method termed "plan injection," where seemingly harmless reasoning is secretly embedded in the model's context, allowing it to carry out harmful actions without detection. The key finding reveals that this technique successfully evades monitors in varied tasks, with evasion rates ranging from 25% to 33%, and that providing more resources to the monitor can paradoxically reduce its effectiveness by enabling it to misinterpret the injected plans.
 
-### 2. 3D Point Splatting for mmWave Radar Novel View Synthesis
-**Authors:** Adnan Armouti, Yixuan Gao, Rajalakshmi Nandakumar
-**Link:** https://arxiv.org/abs/2609.11894v1
-**Summary:** This paper addresses the challenge of novel view synthesis (NVS) for millimeter-wave radar, which requires a renderer that accurately handles complex data and multiple viewpoints. The authors introduce 3D Point Splatting (3DPS), a differentiable point renderer that uses a physical radar model and efficiently processes complex signals. Their experiments demonstrate that 3DPS significantly outperforms existing optical methods in accuracy while being efficient in training time.
+### 2. Bellman Policy Optimization
+**Authors:** Zhuoqing Song, Haotian Xu, Xikun Zhang, Lidong Bing
+**Link:** https://arxiv.org/abs/2609.15987v1
+**Summary:** The paper presents Bellman Policy Optimization (BPO), a new method designed to enhance reinforcement learning with verifiable rewards, which improves the reasoning abilities of large language models. BPO reformulates the existing Policy Mirror Descent technique into a trajectory-level objective, eliminating the need to estimate intermediate state values, and it retains the same optimal solution. Experiments indicate that BPO effectively boosts performance on mathematical reasoning tasks.
 
-### 3. Nuha-Speech: Building General-Purpose Arabic Speech-LLMs
-**Authors:** Yingzhi Wang, Reem Alhazzani, Muhammad Alqurishi
-**Link:** https://arxiv.org/abs/2609.11892v1
-**Summary:** The paper addresses the lack of Arabic representation in Speech Large Language Models (speech-LLMs) by introducing Nuha-Speech, which includes the creation of a large dataset and an evaluation framework for Arabic speech tasks. The researchers built a comprehensive Arabic Speech Question-Answering corpus with over 1.5 million samples and utilized it to fine-tune model variants of Qwen-Omni across various scales. This initiative aims to establish foundational resources and evaluate performance in the development of general-purpose Arabic speech-LLMs.
+### 3. Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science
+**Authors:** Honghao Lin, David P. Woodruff, Yuan Deng, Jieming Mao, Song Zuo, Vahab Mirrokni
+**Link:** https://arxiv.org/abs/2609.15983v1
+**Summary:** The paper presents Stellar Colosseum, a framework designed to improve language models' ability to tackle complex, long-term research problems in mathematics and theoretical computer science by effectively coordinating multiple inference strategies and decision-making processes. By integrating this framework with models like Gemini 3.1 Pro, the authors demonstrate that Colosseum can achieve a notable accuracy of 71.0% on challenging theorem-proving benchmarks and successfully solve 218 out of 222 competitive programming problems. This work enhances the reliability and effectiveness of AI in generating research-level proofs and solutions.
 
-### 4. CoRA-NAS: Coarse Ranking and Anchor-Residual Refinement for Neural Architecture Search
-**Authors:** Yifan Yang, Zhaoyan Wang, Zheng Gao, Xiaoyu Li, Jiaojiao Jiang
-**Link:** https://arxiv.org/abs/2609.11884v1
-**Summary:** The paper presents CoRA-NAS, a framework designed to improve the reliability of neural architecture ranking in various search spaces by combining initial static rankings with a low-cost refinement process. It employs a two-step approach that aggregates ranking proxies and uses a machine learning model to adjust early performance predictions based on sample architectures. The method shows strong results, achieving high correlation with fully trained models across different benchmarks and selecting architectures that closely match the best-known accuracies.
+### 4. The Router Within: Eliciting Native Skill Routing from a Frozen LLM
+**Authors:** Ruishuo Chen, Xun Wang, Yu Chen, Zhuoran Li, Longbo Huang
+**Link:** https://arxiv.org/abs/2609.15982v1
+**Summary:** The paper addresses the challenge of efficiently selecting skills for a frozen language model (LLM) without overwhelming its context. The authors introduce Gavel, a method that utilizes the LLM's inherent routing signals by employing two trained linear maps to evaluate skills based on mid-layer states, leading to improved accuracy in skill selection. Gavel outperforms existing skill retrieval methods on multiple benchmarks, achieving up to 21.9 points higher performance when skills are needed during action execution, demonstrating that effective skill routing can be achieved with minimal additional parameters.
 
-### 5. Domain-Specific Hallucination Detection in Large Language Models
-**Authors:** Varun Teja Chundru, Debasmita Biswas
-**Link:** https://arxiv.org/abs/2609.11878v1
-**Summary:** The paper addresses the issue of unfaithful claims, or "hallucination," in large language models by proposing a detection pipeline that combines classification, uncertainty quantification, and calibration techniques. The pipeline achieves high accuracy in detecting hallucinations across various tasks and demonstrates significant improvement in reducing hallucination rates in generated responses when applied to a language model. Additionally, the study shows that fine-tuning models on domain-specific data yields better performance than general-domain training.
+### 5. A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models
+**Authors:** Xingyun Wang, Haomin Zheng, Man Yuan, Leqian Yang, Ziming Liu
+**Link:** https://arxiv.org/abs/2609.15980v1
+**Summary:** The paper addresses the issue of physically incorrect motion generated by video models, investigating whether the model fails to learn correct motions or simply struggles to apply them. The authors introduce the concept of "causal writability," demonstrating that they can edit generated videos to restore correct motion using a low-dimensional approach, even after the model initially produces incorrect outputs. They identify a depth boundary in the model where the ability to edit stops functioning, highlighting that while errors may persist, they can be corrected with stronger adjustments in certain scenarios.
 
-### 6. Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens
-**Authors:** Carl Edwards, Edward De Brouwer, Xiner Li, Namkyeong Lee, Ehsan Hajiramezanali, Anne Biton, Sara Mostafavi, Gabriele Scalia
-**Link:** https://arxiv.org/abs/2609.11877v1
-**Summary:** The paper addresses the challenge of efficiently selecting experiments in CRISPR screens when resources are limited, introducing a large benchmark called AssayBench-Loop to aid in adaptive hit discovery. The authors propose a framework, AssayLoop, which leverages a transformer-based model to guide experiment selection based on historical data, enhanced with biological knowledge from language models. The key finding is that AssayLoop significantly outperforms existing methods, achieving a 5.67-fold enrichment in candidate hit selection while requiring only a small fraction of the candidate library to be tested.
+### 6. Disentangling Representation Evolution in Transformers through Directional Decomposition
+**Authors:** Shwai He, Haichao Zhang, Shen Yan
+**Link:** https://arxiv.org/abs/2609.15975v1
+**Summary:** This paper addresses how representations in Transformers evolve through learned transformations that can either maintain their current direction or change it. The authors propose a method to decompose these transformations into parallel and perpendicular components, revealing that parallel updates are significantly more effective, especially in value spaces. Key findings include that employing parallel suppression during pretraining can enhance model performance, linking representation geometry to improved robustness and training strategies.
 
-### 7. On the Regularization Landscape for the Linear Recommendation Models
-**Authors:** Dong Li, Zhenming Liu, Ruoming Jin, Hao Zhou, Zhi Liu, Jing Gao, Bin Ren
-**Link:** https://arxiv.org/abs/2609.11876v1
-**Summary:** This paper investigates the performance similarities among various linear recommendation models, aiming to determine whether their effectiveness stems from a unified underlying framework. The authors discover that the top-performing models incorporate regularization techniques based on nuclear-norm and Frobenius-norm, leading to two new low-rank solutions that combine the advantages of both methods while addressing their limitations.
+### 7. Discovery Foundation Models: Toward Open-Ended Discovery Intelligence
+**Authors:** Ling Yang, Zhenfei Yin, Yingcheng Wu
+**Link:** https://arxiv.org/abs/2609.15973v1
+**Summary:** The paper presents the concept of Discovery Foundation Models (DFMs), which aim to enhance artificial intelligence by enabling models to independently discover and formulate new problems and knowledge rather than just solving predefined tasks. The authors propose a framework that includes various capabilities necessary for open-ended discovery, exemplified by their implementation, Zetema, and the therapeutic discovery system, GALILEO. A key contribution is the establishment of discovery as a learnable and evaluable capability within foundation model systems, marking a significant shift towards more autonomous forms of intelligence.
 
-### 8. The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement
-**Authors:** Yi Duan, Ying Liu, Zirui Tang, Haodong Chen, Jun Zhou, Yumou Liu, Bangrui Xu, Yukai Wu, Sidi Chen, Yuhan Zhou, Haoyu Wang, Xiaoyou Yu, Shaokun Han, Xuzhou Zhu, Le Zhou, Bolin Lu, Wei Zhou, Jiachen Liu, Nuozhou Fang, Jiaxin Tian, Ruoyu Chen, Yuxuan Li, Kai Zuo, Kaiyan Zhang, Jiantao Qiu, Conghui He, Guoliang Li, Bowen Zhou, Zhiyuan Liu, Zhoufutu Wen, Jihua Kang, Xuanhe Zhou, Fan Wu
-**Link:** https://arxiv.org/abs/2609.11873v1
-**Summary:** The paper addresses the limitations of current AI systems, particularly large language models (LLMs), by proposing a framework for recursive self-improvement (RSI), which allows AI to autonomously enhance both its capabilities and its improvement processes. It outlines a development roadmap that progresses through different levels of autonomy and examines the application of RSI in various fields like scientific discovery and software engineering. The authors connect their theoretical research to practical implementations and identify key challenges that need to be overcome to achieve true RSI in AI systems.
+### 8. Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States
+**Authors:** Zixuan Wang, Yufan Zhou, Jinzhou Tang, Xinle Yu, Chengjun Wu, Lyumanshan Ye, Zhaoxiang Feng, Letian Peng, Adyasha Patra, Fan Bai, Enze Ma, Zhengding Hu, Jianyang Gu, Zhao Wang, Yufei Ding, Jingbo Shang, Tianmin Shu, Zhiting Hu, Zhen Wang
+**Link:** https://arxiv.org/abs/2609.15972v1
+**Summary:** The paper presents the Mind2Dialogue framework, which addresses the challenge of training language models to better understand and respond to users' unspoken beliefs and goals by simulating users' mental states. The approach involves a psychology-guided simulator that generates coherent conversations based on evolving mental states, allowing the model to learn from well-informed responses of an Oracle assistant without directly accessing user mental states. The results show significant improvements in personalization metrics and reasoning capabilities, indicating that this method enhances the model's ability to serve as a more effective AI collaborator.
 
-### 9. Evaluating Time-Series Foundation Models and Multimodal Dietary Context for CGM Forecasting
-**Authors:** Bowen Zhang, Hsiu-Wen Cheng, Hongyu Yang, Evie L. Shen, Joleen Vansomphone, Yuna Li, Kerry Zhou, Zitian Qu, Suning Zhao, Xiangning Deng, Hua Zhou, Jin J. Zhou
-**Link:** https://arxiv.org/abs/2609.11872v1
-**Summary:** This paper addresses the challenge of accurately forecasting glucose levels in individuals with diabetes using continuous glucose monitoring (CGM) data. The authors evaluated various time-series models, discovering that while fine-tuning foundation models like Chronos-Bolt significantly improved prediction accuracy (reducing errors by over 6% to 18%), incorporating dietary context through a multimodal framework further enhanced performance, especially during post-meal periods. The findings highlight the necessity of adapting models specifically for CGM data and the importance of integrating dietary information to improve forecasting reliability.
+### 9. Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation in Clinical Question Answering
+**Authors:** Jiashuo Zhang, Yuling Chen, Yvonne Commodore-Mensah, Michael Oberst
+**Link:** https://arxiv.org/abs/2609.15964v1
+**Summary:** This paper addresses the challenge of enhancing trust in clinical question answering systems powered by large language models (LLMs) by ensuring that claims are verifiably supported by accurate verbatim citations. The authors developed a standardized evaluation framework to test twelve LLMs on their ability to provide citations and necessary supporting quotes for claims made in response to synthetic clinical questions. The findings reveal that while many models successfully provide quotes for a high percentage of claims, they often fall short in fully substantiating each claim, highlighting a significant capability gap in building reliable clinical QA systems.
 
-### 10. Augustinian BabyLM: What Ostensive Definition Can and Cannot Teach a Small Language Model
-**Authors:** Lisa Bylinina
-**Link:** https://arxiv.org/abs/2609.11870v1
-**Summary:** The paper explores how word meanings can be learned by small language models through visual grounding, using a method inspired by St. Augustine's idea of ostensive definition. By initializing word embeddings based on their visual representations, the authors found that this approach benefits models in some areas, particularly in recognizing object properties, while having little impact on general grammatical knowledge. Notably, the study reveals that the visual grounding remains significant for specific words throughout training, although standard benchmarks do not detect these improvements.
+### 10. Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication
+**Authors:** Yilin Xu, Chun Hei Michael Shiu, Chih Wei Ling, Linqi Song
+**Link:** https://arxiv.org/abs/2609.15950v1
+**Summary:** This paper addresses the challenge of maintaining privacy in personalized federated learning, where high-dimensional updates can leak client-specific information. The authors propose a method that limits frequent updates to a fixed, low-dimensional representation and employs variable-length quantization to ensure privacy while reducing communication costs. Their approach effectively maintains performance on tasks like MNIST and CIFAR-10, achieving significant reductions in data transmission while preserving accuracy.
