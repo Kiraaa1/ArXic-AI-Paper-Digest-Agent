@@ -1,52 +1,52 @@
 ---
-## 2026-09-20
+## 2026-09-21
 
-### 1. OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher
-**Authors:** Damiano Da Col, Maximilian Igl, Peter Karkus, Kashyap Chitta, Boris Ivanovic, Marco Pavone, Konrad Schindler, Christos Sakaridis
-**Link:** https://arxiv.org/abs/2609.20756v1
-**Summary:** The paper addresses the challenge of improving end-to-end autonomous driving policies, which can struggle with safety when deployed in real-world conditions due to errors compounding outside their training data. The authors introduce OPTED, a method that fine-tunes pre-trained driving models using a reinforcement learning teacher that operates on simplified input data, reducing the need for expensive simulation runs. The key result is a significant performance improvement in two camera-based driving models, achieving higher driving scores with far fewer simulator interactions than traditional reinforcement learning approaches.
+### 1. Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design
+**Authors:** Hongyang Du, Lan Yan, Christian Flores, Asim Kadav
+**Link:** https://arxiv.org/abs/2609.22086v1
+**Summary:** The paper addresses the challenge of improving agentic graphic design, which involves complex tasks that can't be reliably programmed. The authors present a continual adaptation framework that enhances an external procedural memory through learning from user interactions, effectively refining design skills over time. Their approach resulted in significant performance improvements, raising success rates in design execution and demonstrating that combining different memory enhancement mechanisms leads to better results than using either in isolation.
 
-### 2. RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents
-**Authors:** Mingxuan Zhang, Xiaowen Wang, Anupma Sharan, Zhengyi Chen, Chenyu Diana Zhang, Shanshan Yang, Chittibabu Pacharu
-**Link:** https://arxiv.org/abs/2609.20754v1
-**Summary:** The paper presents RAFT, a novel framework designed to improve troubleshooting agents in enterprise customer support by effectively retrieving relevant guidance from complex historical cases. Unlike traditional methods that treat cases as static documents, RAFT uses a stateful retrieval system that abstracts cases into timelines, allowing for better matches based on the specific stage of the troubleshooting process. The results show that RAFT significantly outperforms existing retrieval methods in retrieving relevant case histories, demonstrating its potential to enhance troubleshooting efficiency.
+### 2. Cross-sector generalization of accident-process role classification in occupational accident narratives
+**Authors:** Aho Yapi, Pierre Latouche, Arnaud Guillin, Yan Bailly
+**Link:** https://arxiv.org/abs/2609.22081v1
+**Summary:** This paper addresses the challenge of automatically classifying and structuring occupational accident narratives, which vary widely in terminology across different sectors. The authors developed a classifier based on a large corpus of construction-sector narratives and evaluated it on unseen data from metallurgy and chemistry plastics, demonstrating that task-specific adaptations significantly improved performance. Key findings indicate that the adapted classifiers achieved high accuracy rates (around 85.6% to 85.8%), suggesting that such systems could effectively aid in analyzing and preventing workplace accidents across various industries.
 
-### 3. Large Language Models as Falsifiers for Cyber-Physical Systems
-**Authors:** Ali ArjomandBigdeli, Jiawei Zhou, Stanley Bak
-**Link:** https://arxiv.org/abs/2609.20752v1
-**Summary:** The paper addresses the challenge of falsifying specifications in cyber-physical systems (CPS) by using large language models (LLMs) to efficiently find counterexamples that violate these specifications. The proposed method, LLM-Falsifier, enhances traditional robustness optimization techniques by leveraging the LLM's ability to process natural language and semantic information related to the system, leading to more effective and sample-efficient searches. The results show that LLM-Falsifier significantly outperforms existing falsification tools on standard benchmarks, requiring fewer simulations to identify counterexamples.
+### 3. CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+**Authors:** Bowen Ye, Lei Li, Shicheng Li, Zihao Yue, Linghao Zhang, Hanglong Lv, Yuanxin Liu, Wenhan Ma, Hao Tian, Rang Li, Jinhao Dong, Yikai Zhao, Xiangwei Deng, Hailin Zhang, Liang Zhao, Qi Liu, Lingpeng Kong, Tong Yang, Fuli Luo
+**Link:** https://arxiv.org/abs/2609.22068v1
+**Summary:** The paper presents CodeMidas, a novel approach that generates reinforcement learning (RL) environments by extracting tasks directly from open-source codebases instead of relying on traditional development artifacts. This method creates a rich dataset of 5,545 diverse coding tasks across multiple programming languages and domains, leading to improved performance in coding agents on various benchmarks. The findings highlight that generating high-quality training tasks from source code significantly enhances the agent's ability to explore codebases and perform coding tasks more effectively.
 
-### 4. dQwen3.5: Hybrid-Attention Diffusion Language Models
-**Authors:** Anton Xue, Litu Rout, Aditya Akella, Adam Klivans, Sujay Sanghavi, Sanjay Shakkottai
-**Link:** https://arxiv.org/abs/2609.20751v1
-**Summary:** The paper addresses the challenge of adapting pretrained autoregressive models into diffusion language models, specifically with hybrid architectures that combine attention and RNN layers. The authors adapted the Qwen3.5 model across multiple scales and discovered that these hybrid models can effectively serve as efficient bases for adaptation, achieving training losses faster than traditional full-attention models. A key finding is that the dQwen3.5 models exhibit similar performance to full-attention models while benefiting from faster parallel decoding.
+### 4. Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw
+**Authors:** Renkai Ma, Ruyuan Wan, Xuan Lu, Fan Yang, Chen Chen, Lingyao Li
+**Link:** https://arxiv.org/abs/2609.22067v1
+**Summary:** This paper addresses the challenge of ensuring that users' values are respected when they delegate tasks to AI agents, rather than just focusing on task completion. Using Value Sensitive Design, the authors analyzed over 73,000 Reddit posts about OpenClaw, revealing that values are more closely tied to the operating conditions set by users rather than the agents' outputs. The key contribution is the concept of "value-sensitive delegation," highlighting the importance of oversight and context in aligning AI agent performance with human values.
 
-### 5. MILER: Semantic Mid-Level Representation for Sim-to-Real Reinforcement Learning in Unstructured Autonomous Driving
-**Authors:** Thomas Steinecker, Denis Trescher, Alexander Bienemann, Thorsten Luettel, Mirko Maehlisch
-**Link:** https://arxiv.org/abs/2609.20747v1
-**Summary:** The paper addresses the challenge of transferring reinforcement learning policies for autonomous driving from simulation to real-world unstructured environments, where such applications have been limited. It introduces MILER, a novel framework that uses a semantic mid-level representation to train driving policies offline and employs a trajectory-alignment strategy for zero-shot transfer during real-world deployment. The framework was successfully tested over 17.3 km, navigating a complex 3.0 km track with various obstacles, demonstrating effective control without human intervention.
+### 5. BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings
+**Authors:** Alexandre Andre, Shivashriganesh P. Mahato, Vinam Arora, Keshav Balaji, Divyansha Lachi, Nanda H. Krishna, Jingyun Xiao, Yizi Zhang, Ximeng Mao, Wenrui Ma, Han Yu, International Brain Laboratory, Daniel Birman, Niccolò Bonacchi, Gaelle A. Chapuis, Joana A. Catarino, Felicia Davatolhagh, Mayo Faulkner, Laura Freitas-Silva, Fei Hu, Julia M. Huntenburg, Anup Khanal, Inês Laranjeira, Petrina Lau, Guido T. Meijer, Nathaniel J. Miska, Jean-Paul Noel, Alejandro Pan-Vazquez, Georg Raiser, Cyrille Rossant, Karolina Z. Socha, Anne E. Urai, Miles J. Wells, Steven J. West, Olivier Winter, Blake Richards, Guillaume Lajoie, Cole Hurwitz, Mehdi Azabou, Matthew R. Whiteway, Liam Paninski, Eva L. Dyer
+**Link:** https://arxiv.org/abs/2609.22064v1
+**Summary:** The paper introduces BrainWideBench, a benchmark designed to assess the transferability of neural representations learned from extensive recordings across multiple brain regions and animals. Using data from 139 mice, it evaluates three types of tasks to see how well pre-trained models can decode behavior, predict neural activity, and reveal anatomical organization. The key finding is that while pretraining enhances performance compared to single-session models, existing methods vary significantly in their transferability, highlighting the ongoing challenges in developing models that effectively generalize across different neurological tasks.
 
-### 6. Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation
-**Authors:** Haocheng Xi, Yiming Xie, Hexu Zhao, Yiwen Zhang, Michael Liu, Thomas Creavin, Kurt Keutzer, Xiuyu Li, Zhaoyang Lv, Chenfeng Xu, Haiwen Feng
-**Link:** https://arxiv.org/abs/2609.20744v1
-**Summary:** The paper addresses the computational inefficiencies of video diffusion models, particularly the bottleneck caused by traditional attention mechanisms during long video generation tasks. To resolve this, the authors introduce Video DeltaNet (VDN), which combines local Softmax attention with a novel linear attention method (Video Delta Attention) that updates memory efficiently while maintaining fine-grained interactions. The key result demonstrates a significant speedup in processing time—14.5 times faster—when generating 768p videos, making the approach highly effective for real-time applications.
+### 6. Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention
+**Authors:** Andre Bacellar
+**Link:** https://arxiv.org/abs/2609.22056v1
+**Summary:** The paper addresses predictability in multi-hop retrieval failures, showing that these failures cluster in specific subpopulations based on query structures. The authors propose a method called RegimeAbstain, which uses a Retrieval Confidence Score derived from multiple features to implement a calibrated abstention policy, significantly reducing the rate of confidently wrong answers in retrieval tasks. Notably, this approach achieves strong performance across various benchmarks and demonstrates a domain-agnostic transferability of its features.
 
-### 7. On-Demand Attention: Language Models Know When to Recall
-**Authors:** Haibo Feng, Ruiqi Liang, Hanyang Peng, Shiqi Yu
-**Link:** https://arxiv.org/abs/2609.20734v1
-**Summary:** The paper addresses the inefficiencies in long-context inference in language models, where full attention requires reading the entire historical context at every step, often unnecessarily. The authors propose a novel method called On-Demand Attention (ODA), which uses a lightweight recall mechanism to selectively access global context only when needed, helping to speed up the decoding process significantly. Experiments demonstrate that ODA maintains performance while substantially reducing the number of global reads, improving the efficiency of pretrained models in handling long contexts.
+### 7. Benchmarking World Models for Continual Learning on Compositional Tasks
+**Authors:** Haoyu Zhou, Joe Watson, Anson Lei, Ingmar Posner
+**Link:** https://arxiv.org/abs/2609.22055v1
+**Summary:** The paper addresses the challenge of enabling world models to learn continuously across different tasks while retaining previously acquired knowledge, particularly in the context of robot manipulation. To tackle this, the authors introduce a benchmark that evaluates world models using a curriculum of compositional tasks that combine aspects of prior tasks, analyzing how different types of inputs affect knowledge reuse. They find that a modular approach, which explicitly includes reusable components, performs better at balancing knowledge retention and new learning compared to traditional methods, highlighting the need for improved continual learning models that minimize forgetting.
 
-### 8. Q&A on Any Spreadsheet Requires Interpreting Its Grid Structure
-**Authors:** Zofia Smoleń
-**Link:** https://arxiv.org/abs/2609.20732v1
-**Summary:** The paper addresses the challenge of improving how large language models (LLMs) interpret data from spreadsheets for question and answer tasks. It introduces a framework that annotates cells based on their roles to create interpretable chunks of spreadsheet data, enhancing context for answer generation. However, the authors note that existing classification models cannot fully capture the complexity of spreadsheet structures, suggesting a need for methods that transform 2D spreadsheets into simpler 1D text for better processing by LLMs.
+### 8. Particle Competition and Cooperation for Robust Graph Convolutional Network Learning Under Label Noise
+**Authors:** Fabricio Breve
+**Link:** https://arxiv.org/abs/2609.22053v1
+**Summary:** The paper addresses the problem of Graph Convolutional Networks (GCNs) being adversely affected by label noise, which can degrade the quality of node representations. The authors propose a hybrid framework called PCC+GCN, which uses a Particle Competition and Cooperation (PCC) approach to refine labels before GCN training, thereby improving robustness against noise. Their results show that PCC+GCN outperforms standard GCNs in terms of accuracy across various noise conditions and is notably faster than other robust methods, indicating its effectiveness as a preprocessing strategy.
 
-### 9. Deep Noir: Autonomous Steering Discovery via Architectural Chronometry in Transformer Models
-**Authors:** Frank E. Bobe, Gregory D. Vetaw, Darshan W. Bryner, Matthew G. Cook, Jose L. Salas-Vernis
-**Link:** https://arxiv.org/abs/2609.20722v1
-**Summary:** The paper presents Deep Noir, a framework that automates the process of tuning large language models (LLMs) for optimal performance during inference by discovering where and how to modify their behavior, a task that was previously done manually. By employing techniques like Logit Lens convergence and causal head-level attribution, Deep Noir significantly improves model performance on tasks such as spam detection and sentiment analysis, achieving impressive gains across various model sizes and architectures. A notable contribution is the framework's ability to identify intervention points that can be applied broadly, while also revealing vulnerabilities associated with steering that could affect the security of deployed systems.
+### 9. Available Guardrails: Certifying Selective Prediction across ML Systems
+**Authors:** Parivesh Priye, Yufeng Wang, Haibin Ling, Michael Chaykowsky
+**Link:** https://arxiv.org/abs/2609.22048v1
+**Summary:** The paper addresses the challenge of certifying the reliability of selective predictors in machine learning systems, which are designed to provide outputs only when they are sufficiently trustworthy. The authors propose a method that combines classical statistical techniques with dynamic programming to optimize the selection of reporting units, balancing safety, granularity, and user traffic. Their key result shows that a truth-informed planning approach significantly improves certification effectiveness, recovering more reliable coverage in predictive outputs across various applications.
 
-### 10. Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL
-**Authors:** Juzheng Zhang, Disha Makhija, Manoj Ghuhan Arivazhagan, Vinayshekhar Bannihatti Kumar, Rashmi Gangadharaiah
-**Link:** https://arxiv.org/abs/2609.20715v1
-**Summary:** The paper addresses the issue of how standard supervised fine-tuning (SFT) could limit reinforcement learning (RL) by only focusing on action tokens, neglecting the predictive power of environmental observations. The authors introduce a method called ActObs, which supervises both action and observation tokens during training, enhancing the agent's ability to model the consequences of its actions. The key contribution is that ActObs leads to better exploration and higher task performance in RL, resulting in improved outcomes compared to traditional action-only training methods.
+### 10. An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency
+**Authors:** Yiming Zhang, Jinghong Zhang, Haoran Zhao, Yiren Ma, Chunlei Zhao
+**Link:** https://arxiv.org/abs/2609.22043v1
+**Summary:** The paper addresses the challenge of managing conflicting memories in large language models, which can lead to increased hallucinations during text generation. The authors introduce the Memory Decision Layer (MDL), a zero-parameter control system that evaluates the trustworthiness of retrieved memories by considering their relevance, reliability, and associated risks. Their approach significantly reduces the hallucination rate by about 56% in scenarios with conflicting memories and virtually eliminates hallucinations in high-risk cases, all while being efficient and interpretative.
