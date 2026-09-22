@@ -1,52 +1,52 @@
 ---
-## 2026-09-21
+## 2026-09-22
 
-### 1. Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design
-**Authors:** Hongyang Du, Lan Yan, Christian Flores, Asim Kadav
-**Link:** https://arxiv.org/abs/2609.22086v1
-**Summary:** The paper addresses the challenge of improving agentic graphic design, which involves complex tasks that can't be reliably programmed. The authors present a continual adaptation framework that enhances an external procedural memory through learning from user interactions, effectively refining design skills over time. Their approach resulted in significant performance improvements, raising success rates in design execution and demonstrating that combining different memory enhancement mechanisms leads to better results than using either in isolation.
+### 1. GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay
+**Authors:** Yiran Wang, Xingyilang Yin, Junfu Pu, Guangzhi Wang, Kaifeng Li, Mingyu Ouyang, Huiqiang Sun, Lingen Li, Cheng Cheng, Wangbo Yu, Honghao Chen, Xiaodong Cun, Chi-Man Pun, Zhiguo Cao, Ying Shan
+**Link:** https://arxiv.org/abs/2609.25001v1
+**Summary:** The paper presents the GameHorizon Suite, a comprehensive framework designed to evaluate AI models in video games across multiple time horizons, addressing gaps in existing datasets that lack diverse game coverage and structured language instructions. It includes an automated annotation pipeline, a large-scale gameplay dataset from 21 games, and a benchmarking system for evaluating model performance. The key contribution is the establishment of a standardized method to assess gameplay skills, revealing significant differences in model capabilities through extensive evaluation.
 
-### 2. Cross-sector generalization of accident-process role classification in occupational accident narratives
-**Authors:** Aho Yapi, Pierre Latouche, Arnaud Guillin, Yan Bailly
-**Link:** https://arxiv.org/abs/2609.22081v1
-**Summary:** This paper addresses the challenge of automatically classifying and structuring occupational accident narratives, which vary widely in terminology across different sectors. The authors developed a classifier based on a large corpus of construction-sector narratives and evaluated it on unseen data from metallurgy and chemistry plastics, demonstrating that task-specific adaptations significantly improved performance. Key findings indicate that the adapted classifiers achieved high accuracy rates (around 85.6% to 85.8%), suggesting that such systems could effectively aid in analyzing and preventing workplace accidents across various industries.
+### 2. Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use
+**Authors:** Zixiang Chen, Wenting Zhao, Zhepeng Cen, Akshara Prabhakar, Jielin Qiu, Jianguo Zhang, Zhiwei Liu, Tulika Manoj Awalgaonkar, Liangwei Yang, Shelby Heinecke, Silvio Savarese, Huan Wang
+**Link:** https://arxiv.org/abs/2609.24985v1
+**Summary:** The paper addresses the challenge of identifying which specific model calls in multi-turn tool-use tasks can be effectively improved through training, as traditional reward signals may not clearly indicate actionable changes. The authors propose a method called Critical-State RL, which uses nested sampling to distinguish meaningful performance variations from noise and to optimize policy based on identified critical states. Their experiments show that training at these strategically selected states significantly enhances performance, achieving up to a 14 percentage point improvement in specific tasks compared to training alternatives that did not yield such improvements.
 
-### 3. CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
-**Authors:** Bowen Ye, Lei Li, Shicheng Li, Zihao Yue, Linghao Zhang, Hanglong Lv, Yuanxin Liu, Wenhan Ma, Hao Tian, Rang Li, Jinhao Dong, Yikai Zhao, Xiangwei Deng, Hailin Zhang, Liang Zhao, Qi Liu, Lingpeng Kong, Tong Yang, Fuli Luo
-**Link:** https://arxiv.org/abs/2609.22068v1
-**Summary:** The paper presents CodeMidas, a novel approach that generates reinforcement learning (RL) environments by extracting tasks directly from open-source codebases instead of relying on traditional development artifacts. This method creates a rich dataset of 5,545 diverse coding tasks across multiple programming languages and domains, leading to improved performance in coding agents on various benchmarks. The findings highlight that generating high-quality training tasks from source code significantly enhances the agent's ability to explore codebases and perform coding tasks more effectively.
+### 3. WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory
+**Authors:** Wangbo Yu, Kunhao Liu, Wenbo Hu, Shenghai Yuan, Chaoran Feng, Haiyang Zhou, Yukun Huang, Yiran Wang, Wang Zhao, Yingmin Luo, Ying Shan
+**Link:** https://arxiv.org/abs/2609.24984v1
+**Summary:** WorldCrafter addresses the challenge of maintaining consistency in video world models during long-term exploration of dynamic environments. It utilizes an implicit 3D-aware memory system that adapts to the requested viewpoint, allowing for effective integration of historical observations without requiring explicit depth information. The model demonstrates improved long-horizon consistency and camera control accuracy, enabling seamless scene exploration from just a single image or text prompt.
 
-### 4. Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw
-**Authors:** Renkai Ma, Ruyuan Wan, Xuan Lu, Fan Yang, Chen Chen, Lingyao Li
-**Link:** https://arxiv.org/abs/2609.22067v1
-**Summary:** This paper addresses the challenge of ensuring that users' values are respected when they delegate tasks to AI agents, rather than just focusing on task completion. Using Value Sensitive Design, the authors analyzed over 73,000 Reddit posts about OpenClaw, revealing that values are more closely tied to the operating conditions set by users rather than the agents' outputs. The key contribution is the concept of "value-sensitive delegation," highlighting the importance of oversight and context in aligning AI agent performance with human values.
+### 4. onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction
+**Authors:** Lei Yang, Mengyin Liu, Jia Wang, Hangyu Guo, Liang Zhao, Zheng Ge, Kang An, Binxing Jiao, Qi Han, Daxin Jiang, Siqi Shen, Xiangyu Zhang
+**Link:** https://arxiv.org/abs/2609.24983v1
+**Summary:** The paper introduces onPanda, an interactive tool designed to streamline the annotation of alignment data for large language models and agents by allowing annotators to correct model outputs at the token level. By enabling users to identify and replace inappropriate tokens while maintaining the model's original sampling distribution, onPanda significantly reduces the time needed for annotation—showing a 52% time savings compared to traditional manual methods. In addition, the tool produces high-quality data for training models and provides nuanced supervision via detailed correction logs.
 
-### 5. BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings
-**Authors:** Alexandre Andre, Shivashriganesh P. Mahato, Vinam Arora, Keshav Balaji, Divyansha Lachi, Nanda H. Krishna, Jingyun Xiao, Yizi Zhang, Ximeng Mao, Wenrui Ma, Han Yu, International Brain Laboratory, Daniel Birman, Niccolò Bonacchi, Gaelle A. Chapuis, Joana A. Catarino, Felicia Davatolhagh, Mayo Faulkner, Laura Freitas-Silva, Fei Hu, Julia M. Huntenburg, Anup Khanal, Inês Laranjeira, Petrina Lau, Guido T. Meijer, Nathaniel J. Miska, Jean-Paul Noel, Alejandro Pan-Vazquez, Georg Raiser, Cyrille Rossant, Karolina Z. Socha, Anne E. Urai, Miles J. Wells, Steven J. West, Olivier Winter, Blake Richards, Guillaume Lajoie, Cole Hurwitz, Mehdi Azabou, Matthew R. Whiteway, Liam Paninski, Eva L. Dyer
-**Link:** https://arxiv.org/abs/2609.22064v1
-**Summary:** The paper introduces BrainWideBench, a benchmark designed to assess the transferability of neural representations learned from extensive recordings across multiple brain regions and animals. Using data from 139 mice, it evaluates three types of tasks to see how well pre-trained models can decode behavior, predict neural activity, and reveal anatomical organization. The key finding is that while pretraining enhances performance compared to single-session models, existing methods vary significantly in their transferability, highlighting the ongoing challenges in developing models that effectively generalize across different neurological tasks.
+### 5. LoRA-generating hypernetworks for efficient on-device LLM generative personalization
+**Authors:** Sean Augenstein, Li Ding, Jihwan Lee, Keith Rush, Andrey Zhmoginov
+**Link:** https://arxiv.org/abs/2609.24979v1
+**Summary:** This paper addresses the challenge of personalizing large language models (LLMs) on mobile devices, where limited computing resources affect model quality. It introduces a method that utilizes a hypernetwork to create low-rank adaptations (LoRA) tailored to individual users based on their context, allowing for efficient on-device personalization without significant computational overhead. The key contribution is demonstrating that this approach effectively enhances personalization for long-form text generation, outperforming traditional methods like in-context learning and parameter-efficient fine-tuning.
 
-### 6. Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention
-**Authors:** Andre Bacellar
-**Link:** https://arxiv.org/abs/2609.22056v1
-**Summary:** The paper addresses predictability in multi-hop retrieval failures, showing that these failures cluster in specific subpopulations based on query structures. The authors propose a method called RegimeAbstain, which uses a Retrieval Confidence Score derived from multiple features to implement a calibrated abstention policy, significantly reducing the rate of confidently wrong answers in retrieval tasks. Notably, this approach achieves strong performance across various benchmarks and demonstrates a domain-agnostic transferability of its features.
+### 6. DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation
+**Authors:** Haoran Yuan, Zekai Wang, Boning Shao, Haoran Lu, Trevor Darrell, Ismini Lourentzou, Wei Zhan
+**Link:** https://arxiv.org/abs/2609.24976v1
+**Summary:** The paper introduces DexTacWAM, a model designed to improve dexterous manipulation by integrating both visual and tactile information to better understand contact dynamics. This is achieved by independently encoding fingertip tactile data and combining it with a video model to enhance predictive capabilities in complex manipulation tasks. The key contribution is that DexTacWAM significantly outperforms existing methods in six dexterous manipulation tasks, demonstrating a more effective approach to learning from limited tactile data while maintaining visual prediction accuracy.
 
-### 7. Benchmarking World Models for Continual Learning on Compositional Tasks
-**Authors:** Haoyu Zhou, Joe Watson, Anson Lei, Ingmar Posner
-**Link:** https://arxiv.org/abs/2609.22055v1
-**Summary:** The paper addresses the challenge of enabling world models to learn continuously across different tasks while retaining previously acquired knowledge, particularly in the context of robot manipulation. To tackle this, the authors introduce a benchmark that evaluates world models using a curriculum of compositional tasks that combine aspects of prior tasks, analyzing how different types of inputs affect knowledge reuse. They find that a modular approach, which explicitly includes reusable components, performs better at balancing knowledge retention and new learning compared to traditional methods, highlighting the need for improved continual learning models that minimize forgetting.
+### 7. Harness-Zero: Harness Distillation via Agent-as-Harness
+**Authors:** Haoran Ye, Yuxing Lu, Haonan Dong, Zhaochen Su, Guojie Song
+**Link:** https://arxiv.org/abs/2609.24974v1
+**Summary:** The paper presents Harness-Zero, a method for transferring the performance benefits of specialized agent harnesses into a single, more general model for various tasks. By using a harnessing agent to convert the guidance from an optimized harness into training data for a model, it enables the model to internalize behaviors that enhance its performance once the specialized harness is removed. The results show a significant improvement in task success rates, achieving a success rate of 44.3% from a baseline of 23.3%, with the method also recovering key effective behaviors not present in the original model.
 
-### 8. Particle Competition and Cooperation for Robust Graph Convolutional Network Learning Under Label Noise
-**Authors:** Fabricio Breve
-**Link:** https://arxiv.org/abs/2609.22053v1
-**Summary:** The paper addresses the problem of Graph Convolutional Networks (GCNs) being adversely affected by label noise, which can degrade the quality of node representations. The authors propose a hybrid framework called PCC+GCN, which uses a Particle Competition and Cooperation (PCC) approach to refine labels before GCN training, thereby improving robustness against noise. Their results show that PCC+GCN outperforms standard GCNs in terms of accuracy across various noise conditions and is notably faster than other robust methods, indicating its effectiveness as a preprocessing strategy.
+### 8. RRSI: Regularized Recursive Self-Improvement of Agent Harnesses
+**Authors:** Peng Xia, Rujun Han, Zifeng Wang, Yanfei Chen, Yufan Zhang, Yoonho Lee, Chengsong Huang, Han Yu, Zhongying CuiZhu, Yifei Ming, Huaxiu Yao, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+**Link:** https://arxiv.org/abs/2609.24972v1
+**Summary:** The paper addresses the problem of overfitting in the recursive self-improvement of agent harnesses for large language models (LLMs), where agents may excel on training tasks but struggle with new ones. The authors propose a method called Regularized Recursive Self-Improvement of Agent Harnesses (RRSI) that uses regularization techniques to manage the evolution of agent harnesses and encourages exploration of new strategies. The results show that RRSI improves performance on both in-distribution and out-of-distribution benchmarks while reducing the number of policy tokens used by the agent.
 
-### 9. Available Guardrails: Certifying Selective Prediction across ML Systems
-**Authors:** Parivesh Priye, Yufeng Wang, Haibin Ling, Michael Chaykowsky
-**Link:** https://arxiv.org/abs/2609.22048v1
-**Summary:** The paper addresses the challenge of certifying the reliability of selective predictors in machine learning systems, which are designed to provide outputs only when they are sufficiently trustworthy. The authors propose a method that combines classical statistical techniques with dynamic programming to optimize the selection of reporting units, balancing safety, granularity, and user traffic. Their key result shows that a truth-informed planning approach significantly improves certification effectiveness, recovering more reliable coverage in predictive outputs across various applications.
+### 9. DolphinBench: Mapping the Pareto Frontier of Agent Memory
+**Authors:** Soumil Rathi, Deshraj Yadav, Taranjeet Singh
+**Link:** https://arxiv.org/abs/2609.24971v1
+**Summary:** The paper introduces DolphinBench, a new benchmark designed to evaluate the effectiveness of agent memory by assessing how well agents complete tasks that rely on long-term memory and context recall. Unlike existing benchmarks that focus primarily on accuracy in conversational settings, DolphinBench includes a comprehensive evaluation of agent performance across various tasks while also measuring cost and latency. The contribution lies in its holistic approach to memory system evaluation, enabling a better understanding of trade-offs in memory usage for agents.
 
-### 10. An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency
-**Authors:** Yiming Zhang, Jinghong Zhang, Haoran Zhao, Yiren Ma, Chunlei Zhao
-**Link:** https://arxiv.org/abs/2609.22043v1
-**Summary:** The paper addresses the challenge of managing conflicting memories in large language models, which can lead to increased hallucinations during text generation. The authors introduce the Memory Decision Layer (MDL), a zero-parameter control system that evaluates the trustworthiness of retrieved memories by considering their relevance, reliability, and associated risks. Their approach significantly reduces the hallucination rate by about 56% in scenarios with conflicting memories and virtually eliminates hallucinations in high-risk cases, all while being efficient and interpretative.
+### 10. Rare Event Estimation via Iterative Unalignment
+**Authors:** Hanming Yang, Daksh Mittal, Jing Dong, Hongseok Namkoong
+**Link:** https://arxiv.org/abs/2609.24969v1
+**Summary:** The paper addresses the challenge of accurately estimating the probabilities of rare events that can occur during the operation of autonomous agents. The authors propose an innovative importance sampling method that involves perturbing the weights of a differentiable language model to enhance the efficiency of probability estimation. Their approach demonstrates significant efficiency improvements, achieving over 800 times the computational efficiency of traditional Monte Carlo methods for events with very low probabilities, showcasing its effectiveness in handling rare event risk assessment.
