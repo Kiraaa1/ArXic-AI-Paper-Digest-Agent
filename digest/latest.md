@@ -1,52 +1,52 @@
 ---
-## 2026-09-29
+## 2026-09-30
 
-### 1. FurE: Efficient Instance-Specific 3D Fur Reconstruction without Animal-Fur Datasets
-**Authors:** Srinjay Sarkar, Prakhar Kaushik, Soumava Paul, Alan Yuille
-**Link:** https://arxiv.org/abs/2609.35770v1
-**Summary:** The paper introduces FurE, a method for efficiently reconstructing realistic animal fur from multi-view images, addressing the challenge of lacking animal-fur datasets and the intricate details involved. The approach utilizes a latent field optimized for individual fur strands, combined with a PCA-based decoder and local thickness cues for realistic representation. Key results include a tenfold speedup in training time while maintaining high fidelity and versatility across both synthetic and real-world scenarios.
+### 1. Skill-Space Shooting for Autonomous Robot Policy Improvement
+**Authors:** Zihang Rui, Renhao Wang, Haoxu Huang, Yang Gao
+**Link:** https://arxiv.org/abs/2609.38178v1
+**Summary:** The paper addresses the challenge of enabling robots to autonomously improve their task performance in real-world settings without the need for constant human supervision. The authors propose a method called skill-space shooting, which leverages reusable skills identified by foundation models to explore and implement corrective actions for robot policies. The key contribution is that this approach allows robots to learn from their experiences and progressively enhance their performance across various tasks, demonstrating effective policy improvement through real-world experiments.
 
-### 2. Telescopic Language Models
-**Authors:** Zhilin Guo, Boqiao Zhang, Hakan Aktas, Kyle Fogarty, Nursena Koprucu Aslan, Wenzhao Li, Canberk Baykal, Albert Miao, Siyu Hong, Yixiao Liu, Adam Wu, Ashish Kumar Singh, Sakar Khattar, Chenliang Zhou, Weihao Xia, Cristina Nader Vasconcelos, Cengiz Oztireli
-**Link:** https://arxiv.org/abs/2609.35769v1
-**Summary:** The paper presents a Telescopic Language Model (TLM) designed to efficiently serve various computational budgets without the need for separate training runs. By using a nested-capacity Transformer trained with stochastic prefix supervision, the model maintains performance across different depths while reducing training costs. The key contribution is a 43-44% reduction in the area under the quality-budget curve compared to traditional fixed-exit models, while also achieving similar performance at full capacity with lower GPU costs.
+### 2. Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering
+**Authors:** Jaewoo Jung, Hyeonseo Yu, Honggyu An, Jisang Han, Mungyeom Kim, Minkyeong Jeon, Heeseong Shin, Wonjun Moon, Federico Tombari, Daniel Barath, Marc Pollefeys, Seungryong Kim, Sunghwan Hong
+**Link:** https://arxiv.org/abs/2609.38177v1
+**Summary:** The paper addresses the challenge of helping Multimodal Large Language Models (MLLMs) effectively reason about 3D scenes from multiple images, which they struggle with compared to humans. The authors propose Imagine3D-LLM, which learns to create a simplified 3D representation of a scene using summary tokens and a reconstruction loss, rather than relying solely on detailed geometric cues. This approach allows the model to outperform previous methods in spatial reasoning tasks, demonstrating that visualizing the scene can be more beneficial than precise geometric information.
 
-### 3. PDMD: Projected Distribution Matching Distillation for Video Diffusion Models
-**Authors:** Zimo Wang, Junkun Yuan, Angtian Wang, Haotian Yang, Canyu Zhang, Siyuan Yuan, Xingchang Huang, Bo Liu, Yizhi Wang, Yiding Yang, Chongyang Ma, Gordon Guocheng Qian
-**Link:** https://arxiv.org/abs/2609.35768v1
-**Summary:** The paper addresses the issue of degradation in sample quality during the training of video diffusion models using Distribution Matching Distillation (DMD), which can result in oversaturation and artifacts. The authors propose a new method called Projected Distribution Matching Distillation (PDMD), which filters out errors from the critic during updates, stabilizing training and enhancing sample quality. Key results show that PDMD improves performance on multiple benchmarks, surpassing the original DMD significantly while requiring minimal code changes and additional computational resources.
+### 3. Breakdown of Local Denoising as Semantic Speciation
+**Authors:** Guangkuo Liu, Mert Okyay, Yifan F. Zhang, Fangjun Hu, Rahul Nandkishore, Xun Gao
+**Link:** https://arxiv.org/abs/2609.38176v1
+**Summary:** This paper investigates the relationship between two phases in generative models—when a sample commits to a semantic class (speciation window) and when local contexts become insufficient for generation (nonlocality window). The authors propose a "common cause" hypothesis to show that the nonlocality window is influenced by the semantic labels of tokens, and they establish conditions under which these two windows converge as system size increases, identifying a "phase transition" in semantic structure emergence. Their findings connect the dynamics of semantic information with model behavior in generative contexts.
 
-### 4. Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning
-**Authors:** Yijia Fan, Ziqi Huang, Zhongang Cai, Yan Li, Zimo Wen, Wanqi Yin, Haiwen Diao, Ziwei Liu
-**Link:** https://arxiv.org/abs/2609.35767v1
-**Summary:** The paper addresses the challenge of improving image generation by allowing unified multimodal models to assess and correct their own outputs through a feedback loop. The authors introduce a method called UMM-Reflection, which uses reinforcement learning to jointly optimize the model's reflection and image revision processes across multiple iterations. The key contribution is a substantial improvement in evaluation scores compared to supervised fine-tuning, demonstrating the effectiveness of this approach on various benchmarks without relying on external validation during inference.
+### 4. STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization
+**Authors:** Bingchen Yao, Haobo Xu, Haokun Lin, Yichen Wu, Ziyu Guo, Renrui Zhang, Zhichao Lu, Zhenan Sun, Ying Wei
+**Link:** https://arxiv.org/abs/2609.38169v1
+**Summary:** The paper addresses the issue of memory inefficiencies in linear attention models due to large recurrent states, which can degrade accuracy when quantized. The authors introduce STEPQuant, a post-training quantization framework that intelligently allocates precision based on the impact of quantization errors over time and across different state components. Their experiments demonstrate that STEPQuant can achieve high accuracy comparable to full precision with significantly reduced memory usage, outperforming traditional uniform quantization methods.
 
-### 5. Retrieving Biblical Intertextual References in Karen Blixen's Seven Gothic Tales
-**Authors:** András Kovács, Alexander Conroy, Daniel Hershcovich, Jens Bjerring-Hansen
-**Link:** https://arxiv.org/abs/2609.35765v1
-**Summary:** This paper addresses the challenge of recognizing biblical references in Karen Blixen's *Seven Gothic Tales*, which often employs nuanced paraphrases and allusions. The authors developed a benchmark of annotated references and evaluated various retrieval models, including TF-IDF and BM25, as well as fine-tuned sentence encoders. They found that while models can effectively retrieve known references, their outputs also suggest meaningful additional connections, highlighting their role as tools that assist scholars rather than definitive sources for literary analysis.
+### 5. LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization
+**Authors:** Yi Pan, Haocheng Xi, Kan Zhu, Xingyang Li, Yibo Wu, Mayank Mishra, Hongtao Zhang, William X. Zheng, Baris Kasikci, Song Han, Kurt Keutzer, Rishabh Iyer, Ion Stoica
+**Link:** https://arxiv.org/abs/2609.38166v1
+**Summary:** The paper addresses the inefficiency of state updates in linear attention models during inference by introducing LeapQuant, a method for 8-bit quantization of recurrent states that minimizes quality loss. By employing per-window quantization and retaining high-precision tokens for outliers, LeapQuant significantly reduces both memory and computational costs. The results indicate that it achieves speedups of 2.05–3.70 times at the kernel level and 1.47 times for overall inference, while maintaining accuracy comparable to the standard 32-bit floating-point models.
 
-### 6. Unifying Distributional Training for One-Step Visual Generation
-**Authors:** Chi Zhang, Haoyang Shi, Yueyi Liu, Ruichuan An, Junkang Zhou, Chang Li, Xiuyuan Lu, Yichi Zhang, Bo Wang, Yuhang Wu, Sen Cui, Miao Liu
-**Link:** https://arxiv.org/abs/2609.35763v1
-**Summary:** The paper addresses the challenge of improving one-step visual generation by proposing a unified framework for distributional training that enhances the connection between feature matching and distribution modeling. This framework led to the development of MGFlow, which effectively uses Gaussian mixtures to model feature distributions and mitigate issues like mode collapse. The key contribution is that MGFlow significantly outperforms existing methods, achieving state-of-the-art results in both image generation and text-to-image generation tasks.
+### 6. Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data
+**Authors:** Joseph Metcalfe, Sara Sharifzadeh, Fabio Caraffini
+**Link:** https://arxiv.org/abs/2609.38165v1
+**Summary:** The paper addresses the challenge of accurately segmenting crops in satellite imagery time series data, highlighting issues with dataset disparities and boundary delineation quality. The authors introduce Cropland PAtteRNS, a novel hybrid model that employs parallel dimensional attention mechanisms to effectively process the temporal, spectral, and spatial aspects of the data. Their findings demonstrate that this model outperforms existing approaches in crop segmentation metrics, particularly in parcel delineation, and emphasize the need for standardized practices in dataset construction to enhance model training and evaluation.
 
-### 7. Scaling Long-Form Story Generation via Narrative State Tracking
-**Authors:** Zhennan Wan, Jianfei Chen
-**Link:** https://arxiv.org/abs/2609.35759v1
-**Summary:** The paper addresses the challenge of maintaining narrative consistency in long-form story generation with large language models (LLMs) as they scale up to full-length novels. The authors introduce NstAgent, a framework that allows LLMs to effectively track key narrative elements such as characters and events without requiring additional training. The key finding is that NstAgent improves both narrative consistency and writing quality for stories ranging from 10,000 to 100,000 words, effectively supporting longer story generation.
+### 7. A Spectral Theory of Distortion in LLM Graph Reconstruction: Sharp Bounds and Empirical Characterization
+**Authors:** Jianru Shen
+**Link:** https://arxiv.org/abs/2609.38161v1
+**Summary:** This paper addresses the challenge of evaluating how accurately language models reconstruct graphs by focusing on the spectral distance between the original and reconstructed graphs. The authors establish sharp bounds for this distance, linking it to changes in edge counts, and demonstrate that these bounds can reveal whether the model primarily edits by adding or removing edges. Their analysis of 135 graph reconstructions shows that models differ significantly in their editing strategies, and the framework they provide allows for a deeper understanding of these differences beyond simple aggregate metrics.
 
-### 8. TokenCast: Forecasting Token Consumption During LLM Agent Execution
-**Authors:** Chaoqian Ouyang, Ling Yue, Libin Zheng, Huanghui Guo, Shengxiang Xu, YiShu Wang, Ran Li, Jian Yin, Shaowu Pan, Shimin Di
-**Link:** https://arxiv.org/abs/2609.35760v1
-**Summary:** The paper addresses the unpredictability of token consumption when large language model (LLM) agents execute tasks, which can vary significantly with each run. The authors introduce TokenCast, a method that tracks and predicts token usage by learning a composable representation of execution segments, allowing the model to adjust forecasts based on new information without additional LLM calls. Key results show that TokenCast reduces prediction errors by an average of 14.5% and uses 21.3% fewer tokens compared to traditional budget policies.
+### 8. EmoRES-TTS: Residual-Enhanced Vector Steering for Emotional Speech Generation
+**Authors:** Kuan-Po Huang, Haohe Liu, Puyuan Peng, Haibin Wu, Zhaoheng Ni, Hung-yi Lee, Jinwon Lee, Neha Chachra
+**Link:** https://arxiv.org/abs/2609.38157v1
+**Summary:** The paper addresses the issue of inconsistent emotional expression in text-to-speech models, which often struggle to convey the requested emotion reliably. The authors introduce EmoRES, a method that enhances the control of emotional speech generation by decomposing emotion vectors into shared and residual components, allowing for improved steering of a fixed model. Their approach significantly outperforms traditional methods, showing substantial improvements in emotion accuracy and listener preference for naturalness.
 
-### 9. Statistical Learning of Contractive Dynamical Representations for Composite Adaptive Control
-**Authors:** Min Kim, José Leonardo Brenes, Fred Hadaegh, Soon-Jo Chung
-**Link:** https://arxiv.org/abs/2609.35758v1
-**Summary:** The paper addresses the challenge of tracking control in the presence of dynamically coupled disturbances by developing a statistical learning framework that identifies and exploits latent representations of these disturbances. Using a hard expectation-maximization procedure with a Kalman smoother, the method learns to predict disturbance behavior while ensuring stable control. The key contribution is a composite adaptive tracking controller that demonstrates enhanced disturbance prediction and improved performance in experimental tests on various systems, outperforming traditional approaches.
+### 9. Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies
+**Authors:** Hui Ren, Lei Fan, Henry Pao, Han Guo, Zeeshan Zia, Ying Chen, Alexander Schwing, Gang Hua
+**Link:** https://arxiv.org/abs/2609.38155v1
+**Summary:** The paper addresses the challenge of tracking and answering questions about the same objects across long videos, where traditional methods often fail to maintain consistent identities. The authors propose Grounded Entity Biographies (GEB), a framework that groups observations of the same entity into a coherent "biography" while retaining contextual information. Their approach shows significant improvements in question answering accuracy, achieving a 72.0% accuracy rate on the EgoLifeQA benchmark, surpassing prior methods by effectively linking entity identities across events.
 
-### 10. Neural Harmonic Measure Operator
-**Authors:** Jinjin He, Sinan Wang, Yuchen Sun, Bo Zhu
-**Link:** https://arxiv.org/abs/2609.35752v1
-**Summary:** The paper presents the Neural Harmonic Measure Operator (NHMO), a neural network-based method designed to efficiently solve elliptic partial differential equations (PDEs) on domains with variable shapes. By parameterizing the harmonic measure using a transformer-based approach, NHMO allows for quick adaptations to different boundary conditions without retraining. The results show that NHMO outperforms existing methods on benchmark tests, demonstrating its effectiveness and versatility in solving these types of PDE problems.
+### 10. Pretraining Latent Information Feedback Transformers with Teacher Supervision
+**Authors:** Dor Tirosh, Ido Amos, Mor Geva
+**Link:** https://arxiv.org/abs/2609.38149v1
+**Summary:** The paper addresses the limitation of traditional Transformer language models, which do not allow feedback of deep-layer representations to shallower layers, resulting in inefficiencies. The authors present the LIFT (Latent Information Feedback Transformer) architecture, which enables models to propagate information across generations by pairing input tokens with state representations derived from another pretrained model. Their experiments demonstrate that LIFT outperforms standard Transformers on various language modeling and reasoning tasks, proving that deep-to-shallow feedback can be effectively utilized in pretrained models through teacher supervision.
