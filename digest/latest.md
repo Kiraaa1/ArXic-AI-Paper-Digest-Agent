@@ -1,52 +1,52 @@
 ---
-## 2026-10-05
+## 2026-10-06
 
-### 1. Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis
-**Authors:** Keerthi Kaashyap, Dennis Anthony, Akshay Krishnan, Nhi Ngoc Nguyen, Jeremy Collins, James Hays, Shreyas Kousik, Animesh Garg
-**Link:** https://arxiv.org/abs/2610.03717v1
-**Summary:** The paper addresses the challenge of improving geometric representation learning through Novel View Synthesis (NVS), which typically struggles with existing methods due to ineffective architectural choices. The authors introduce SNAP, a self-supervised encoder-decoder transformer that employs a pose-conditioned local decoder and a latent-space reconstruction objective to enhance representation learning. The key finding is that SNAP achieves competitive performance across various tasks while maintaining more transferable geometric structures, effectively improving robustness under different camera perspectives compared to traditional 2D representation methods.
+### 1. One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline
+**Authors:** Shih-Chen Tseng, Chih-Hsuan Chen, Ryan Yang, Hsi-An Chen, Chun-Wei Tuan Mu, Yu-Lun Liu
+**Link:** https://arxiv.org/abs/2610.06852v1
+**Summary:** The paper addresses the challenge of adapting flowchart figures in machine learning papers to various aspect ratios without compromising their structure or content. The authors propose an innovative agentic pipeline that involves parsing, styling, and layout stages, ensuring that the flowchart’s connectivity is preserved and editable in formats like draw.io. Their method significantly outperforms existing techniques with a content fidelity score of 68.6%, compared to 11.2-41.4% for previous approaches, demonstrating a major advancement in flowchart relayout.
 
-### 2. 4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes
-**Authors:** Ruihong Shen, Žiga Kovačič, Peter Kulits, Xingrui Wang, Zizhang Li, Joshua B. Tenenbaum, Alan Yuille, Jieneng Chen, Jiajun Wu
-**Link:** https://arxiv.org/abs/2610.03715v1
-**Summary:** The paper presents 4DCodeBench, a new benchmark designed to assess how effectively AI agents can reconstruct dynamic scenes from videos by generating executable graphics code. It involves translating visual inputs into compact scene representations and assessing capabilities across various physical phenomena. The key finding shows that while agents perform well with static scenes, they struggle with accurately reconstructing complex dynamic behaviors, highlighting a gap in current AI models' understanding of dynamic environments.
+### 2. Base Models Can Reason By Taking a Cue From Training Data
+**Authors:** Sophie L. Wang, Amil Dravid, Rulin Shao, Kevin Farhat, Sewon Min, Alexei A. Efros
+**Link:** https://arxiv.org/abs/2610.06851v1
+**Summary:** The paper investigates how specific starting tokens in prompts can influence the reasoning abilities of base models, showing that carefully chosen cues can significantly enhance performance in tasks like math and coding. By analyzing the effects of these tokens and their relationships with training data, the authors find that certain cues can match or even exceed the performance of models fine-tuned with reinforcement learning. The research highlights that manipulating these cues can alter reasoning behavior and compliance in language model responses.
 
-### 3. What Should World Models Forget? Stratified Retention for Continual Adaptation
-**Authors:** Nishit Anand, Ramani Duraiswami, Dinesh Manocha
-**Link:** https://arxiv.org/abs/2610.03713v1
-**Summary:** The paper addresses the challenge of continual learning in world models, where knowledge must be updated as environments change while also maintaining certain core truths. It proposes a method called differential retention that stratifies knowledge retention based on how stable certain information is over time, allowing for accurate revision of outdated facts without confusing it with forgetting crucial invariants. This approach improves evaluation metrics for world models by distinguishing between successful knowledge updates and catastrophic forgetting.
+### 3. BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance
+**Authors:** Haojin Deng, Zhiping Lin, Yimin Yang
+**Link:** https://arxiv.org/abs/2610.06846v1
+**Summary:** The paper addresses the issue of spurious feature reliance in machine learning models, specifically how traditionally trained predictors perform when new tasks are introduced. The authors introduce BiasFlow, a toolkit that monitors class-attribute relationships and proposes BiasFlow Regularization (BFR), a method to align centroids conditionally based on classes. Key results show that integrating BFR improves worst-group accuracy significantly, demonstrating its effectiveness in mitigating bias during retraining of predictor heads on biased data.
 
-### 4. RNADyn: A Benchmark for Generating and Understanding RNA Dynamics
-**Authors:** Yiming Huang, Lennart Bastian, Hanqun Cao, Luis Vollmers, Tolga Birdal
-**Link:** https://arxiv.org/abs/2610.03712v1
-**Summary:** The paper addresses the challenge of understanding RNA dynamics, which involves conformational changes not captured by static structures. To tackle this, the authors introduce RNADynBench, a comprehensive benchmark of RNA molecular dynamics trajectories, and develop RNADynNet, a unified model for both generating trajectories and extracting dynamic characteristics from a single RNA conformer. Their approach demonstrates strong performance, achieving high correlations in generated dynamics and showing that the model's predictions align well with traditional molecular dynamics data.
+### 4. Learning to Read the Contextual Tokens in Diffusion Transformers
+**Authors:** Omer Dahary, Etai Sella, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik
+**Link:** https://arxiv.org/abs/2610.06844v1
+**Summary:** This paper addresses the challenge of understanding how contextual tokens in Multimodal Diffusion Transformers (MM-DiTs) encode information during image generation. The authors developed a framework that utilizes a lightweight network to interpret these tokens, allowing a frozen Large Language Model to extract information about the evolving images. They found that contextual tokens contain significant semantic information early in the generation process, and improved training techniques based on this understanding can enhance the quality of generated images.
 
-### 5. EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras
-**Authors:** Kush Hari, Justin Kerr, Nidhya Shivakumar, Samarth Mahapatra, Carmelo Sferrazza, Jiahui Lei, Jitendra Malik, C. Karen Liu, Ken Goldberg, Angjoo Kanazawa
-**Link:** https://arxiv.org/abs/2610.03710v1
-**Summary:** The paper presents EyeRobot 2.0, a framework that allows robots to perform precise bimanual manipulation using active gaze with just a single stereo camera, rather than relying on wrist-mounted cameras. By employing a technique called Active Visual Fixation (AVF), the system focuses on critical features by adjusting its gaze during tasks and trains through reinforcement learning. The key finding is that EyeRobot 2.0 significantly improves task success rates in both real-world and simulated environments, outperforming traditional methods that use additional cameras, particularly in scenarios where the objects being manipulated obstruct the view.
+### 5. Recursive Video In-Context Learning for Agentic Robot
+**Authors:** Wenrui Bao, Xinxin Liu, Bingxin Xu, Yuzhang Shang
+**Link:** https://arxiv.org/abs/2610.06843v1
+**Summary:** This paper addresses the challenge of enhancing robot performance in task execution by improving how demonstration videos are utilized for learning. The authors propose Recursive Video In-Context Learning (RV-ICL), a method that organizes a demonstration into a hierarchy of sub-events, allowing the robot to access detailed information as needed during task execution. This approach significantly increases the success rates of the robots, achieving improvements from 92.6% to 96.5% on the LIBERO-PRO dataset and from 86.7% to 95.8% on LIBERO-Plus.
 
-### 6. From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing
-**Authors:** Kuangyu Ding, Gesualdo Scutari
-**Link:** https://arxiv.org/abs/2610.03709v1
-**Summary:** This paper addresses the challenge of minimizing sums of strongly convex functions distributed across agents in an undirected graph, focusing on improving decentralized optimization methods that rely on local communication. The authors introduce a novel framework called GATE, which designs a cooperative structure for optimization and communication based on the graph's topology, using a message-passing approach that involves updating variables at each edge. The key contribution is the establishment of a convergence rate that highlights the relationship between the functions' properties, the network's structure, and the optimization design, supported by numerical experiments that demonstrate the effectiveness of the proposed algorithms.
+### 6. Direct Intermediate Initialization for Tilted Diffusion Samplers
+**Authors:** Gregory D. Bellchambers
+**Link:** https://arxiv.org/abs/2610.06834v1
+**Summary:** The paper addresses the challenge of efficiently sampling from diffusion posteriors in tilted diffusion samplers by introducing a method called Direct Intermediate Initialization for the sequential Monte Carlo sampler, MCGDiff. This approach involves using an approximate solver to sample from a softened clean-space posterior, which is then mapped to the tilted target via a Gaussian bridge, thus improving sampling performance. The key contribution is that this method significantly enhances the accuracy of the sampler, demonstrating up to a twofold improvement in performance metrics like sliced Wasserstein distance, especially in scenarios where the target mode is rare.
 
-### 7. LESSER: Post-Training Data Selection with Output-Layer Gradients
-**Authors:** Lyuxin David Zhang, Eric Wong, Surbhi Goel, Anton Xue
-**Link:** https://arxiv.org/abs/2610.03702v1
-**Summary:** The paper addresses the challenge of selecting effective training data for large language models without the heavy computational cost of calculating full gradients. The authors introduce LESSER, a method that uses output-layer gradients, which can be computed more efficiently with just a forward pass, to approximate the performance of traditional full-gradient data selection. Their approach significantly reduces computational costs while maintaining performance alignment in data selection, achieving a reduction in computing resources by up to 9.7 times.
+### 7. Towards Looped Models Done Right, Part II: Rethinking at Fixed Points
+**Authors:** Benhao Huang, Chufan Shi, Junlin Chen, Shicheng Wen, Zhengzhong Liu, Eric Xing, Xuezhe Ma
+**Link:** https://arxiv.org/abs/2610.06833v1
+**Summary:** The paper addresses inefficiencies in looped language models, particularly caused by recurrent states that approach fixed points, which can complicate training and decoding processes. The authors propose improvements in training through a learned depth prior and a new orthogonal injection method that enhance efficiency while maintaining accuracy. Key results show that their techniques reduce model perplexity across various parameter scales and achieve performance comparable to more resource-intensive methods, significantly lowering the computational costs of training and inference.
 
-### 8. Language Models that Play Chess and Explain Their Moves
-**Authors:** Adithya Bhaskar, Jeffrey Cheng, Danqi Chen
-**Link:** https://arxiv.org/abs/2610.03695v1
-**Summary:** The paper addresses the challenge of combining the superhuman playing strength of chess engines with the natural language explanation capabilities of language models. The authors introduce a 4B-parameter chess-language model named Queen, which utilizes a novel framework that integrates a chess encoder with a language model, allowing it to play at Grandmaster level while providing coherent explanations for its moves. The key contribution is that Queen significantly improves its playing strength and explanation quality through iterative learning, achieving a substantial Elo rating increase and producing explanations comparable to advanced language models.
+### 8. UniSlider: Perceptually Uniform Sliders for Continuous Image Editing
+**Authors:** David Serrano-Lozano, Duygu Ceylan, Yannick Hold-Geoffroy, Iliyan Georgiev, Javier Vazquez-Corral, Anna Frühstück
+**Link:** https://arxiv.org/abs/2610.06831v1
+**Summary:** UniSlider addresses the problem of inconsistent perceptual changes in continuous image editing sliders, which often fail to provide a smooth editing experience. The authors propose a lightweight approach that trains a model to create a slider that maintains a linear relationship between slider value and perceptual distance from the input image. The key result shows that UniSlider significantly outperforms previous methods in uniformity and user preference when evaluated on a benchmark for continuous edits.
 
-### 9. Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies
-**Authors:** Jungkyu Park, Dhruva Biswas, Joseph Cappadona, Cerise Tang, Ken G. Zeng, Bartosz Machura, Chuwen Liu, Paolo Tarantino, Coral Omene, Francisco J. Esteva, Rohit Bhargava, Marcin Braun, Kamila Paździerz, Jakub Czerwiński, Hanna Romańska-Knight, Albert Grinshpun, Bareket Daniel, Michele Buchinger, Frederick Howard, Piotr Wysocki, Brie Chun, Freya Schnabel, Rich Caruana, Jan Witowski, Krzysztof J. Geras
-**Link:** https://arxiv.org/abs/2610.03693v1
-**Summary:** The paper addresses the challenge of limited labeled data in developing deep learning biomarkers for predicting responses to neoadjuvant therapy in breast cancer. The authors propose a two-stage AI model that first learns gene expression patterns from histopathology data and then predicts treatment responses using these learned patterns alongside clinical variables. The model demonstrates strong predictive performance with an AUROC of 0.79 across different patient cohorts, highlighting its effectiveness in using biologically informed data compression to improve precision oncology outcomes.
+### 9. MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents
+**Authors:** Haozhen Zhang, Haodong Yue, Quanyu Long, Jianzhu Bao, Qingyuan Liu, Tao Feng, Bohan Liu, Weida Liang, Wenya Wang
+**Link:** https://arxiv.org/abs/2610.06830v1
+**Summary:** The paper introduces MemPilot, a framework that enhances memory management for language model (LLM) agents by allowing for on-demand curation of multimodal information tailored to specific queries. Using reinforcement learning, it optimizes a policy that balances performance, cost, and latency by intelligently deciding when to access memory and how to curate information. The experiments demonstrate that MemPilot achieves better trade-offs in performance and resource use compared to existing systems, showcasing its potential for flexible memory management in LLM applications.
 
-### 10. Simulation-Free Learning of Population Dynamics with Wasserstein Lagrangian Residuals
-**Authors:** Fedor Sergeev, Markus Heinonen, Daniel Waxman, Tim Cooijmans, Ricardo Baptista, Dmitry Batenkov, Eli Bingham
-**Link:** https://arxiv.org/abs/2610.03679v1
-**Summary:** The paper addresses the challenge of modeling the dynamics of probability distributions in systems like cells and fluids without relying on costly simulations. The authors introduce a new method called Double-Stitch that learns these dynamics by focusing on minimizing the residuals of the equations governing motion, based on a Clebsch variational principle. This approach demonstrates superior performance compared to traditional gradient-flow methods, achieving training speeds that are 4 to 14 times faster.
+### 10. CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling
+**Authors:** Yifan Zhang, Yutong Dai, Viraj Prabhu, Zhiyuan Hu, Ran Xu, Zeyuan Chen
+**Link:** https://arxiv.org/abs/2610.06829v1
+**Summary:** The paper introduces CLIFT, a method to enhance the training and testing of open-source web agents by enabling them to verify their own performance using natural language questions, instead of relying on expensive external judges. CLIFT utilizes a self-verification mechanism to improve training efficiency and allows agents to make decisions during testing without external input, achieving state-of-the-art performance in various benchmarks. This approach effectively transforms costly feedback into a reusable training signal, thereby improving agent capabilities.
