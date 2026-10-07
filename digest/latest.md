@@ -1,52 +1,52 @@
 ---
-## 2026-10-06
+## 2026-10-07
 
-### 1. One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline
-**Authors:** Shih-Chen Tseng, Chih-Hsuan Chen, Ryan Yang, Hsi-An Chen, Chun-Wei Tuan Mu, Yu-Lun Liu
-**Link:** https://arxiv.org/abs/2610.06852v1
-**Summary:** The paper addresses the challenge of adapting flowchart figures in machine learning papers to various aspect ratios without compromising their structure or content. The authors propose an innovative agentic pipeline that involves parsing, styling, and layout stages, ensuring that the flowchart’s connectivity is preserved and editable in formats like draw.io. Their method significantly outperforms existing techniques with a content fidelity score of 68.6%, compared to 11.2-41.4% for previous approaches, demonstrating a major advancement in flowchart relayout.
+### 1. QF3: Fast Flow RL with Filtered Q-Gradients
+**Authors:** Chung Min Kim, Brent Yi, David McAllister, Hongsuk Choi, Himanshu Gaurav Singh, Jinkun Cao, Ken Goldberg, Pieter Abbeel, Carmelo Sferrazza, Angjoo Kanazawa
+**Link:** https://arxiv.org/abs/2610.08789v1
+**Summary:** The paper presents QF3, an efficient off-policy reinforcement learning algorithm designed to improve and train flow policies for robot locomotion and manipulation tasks. By leveraging filtered Q-gradients and focusing on reliable update regions, QF3 enables the training of humanoid locomotion policies from scratch and significantly accelerates the training process, achieving a 10-fold speedup compared to previous methods. This approach allows for effective learning of robotic behaviors both from scratch and through fine-tuning of pre-existing policies.
 
-### 2. Base Models Can Reason By Taking a Cue From Training Data
-**Authors:** Sophie L. Wang, Amil Dravid, Rulin Shao, Kevin Farhat, Sewon Min, Alexei A. Efros
-**Link:** https://arxiv.org/abs/2610.06851v1
-**Summary:** The paper investigates how specific starting tokens in prompts can influence the reasoning abilities of base models, showing that carefully chosen cues can significantly enhance performance in tasks like math and coding. By analyzing the effects of these tokens and their relationships with training data, the authors find that certain cues can match or even exceed the performance of models fine-tuned with reinforcement learning. The research highlights that manipulating these cues can alter reasoning behavior and compliance in language model responses.
+### 2. Conformal Prediction Sets Quantify Information Gain: A Theoretical Perspective
+**Authors:** Kevin Zhang, Stephen Bates
+**Link:** https://arxiv.org/abs/2610.08785v1
+**Summary:** This paper addresses the gap in understanding how the size of conformal prediction sets relates to information gain in uncertainty quantification. The authors propose a new theoretical framework linking the size and coverage of these sets to generalized information measures, demonstrating that the reduction in set size from additional information corresponds to well-established information-theoretic principles. Their findings empirically confirm that the way set size reduction and mutual information rank features can vary, which can impact feature selection processes in classification tasks.
 
-### 3. BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance
-**Authors:** Haojin Deng, Zhiping Lin, Yimin Yang
-**Link:** https://arxiv.org/abs/2610.06846v1
-**Summary:** The paper addresses the issue of spurious feature reliance in machine learning models, specifically how traditionally trained predictors perform when new tasks are introduced. The authors introduce BiasFlow, a toolkit that monitors class-attribute relationships and proposes BiasFlow Regularization (BFR), a method to align centroids conditionally based on classes. Key results show that integrating BFR improves worst-group accuracy significantly, demonstrating its effectiveness in mitigating bias during retraining of predictor heads on biased data.
+### 3. 4D-HOF: Hand-Object Flow Matching for Feed-Forward 4D Interaction Reconstruction
+**Authors:** Shiqi Li, Sean Cho, Yijie Li, Fengzhi Guo, Bowen Wen, Cheng Zhang
+**Link:** https://arxiv.org/abs/2610.08782v1
+**Summary:** The paper addresses the challenge of reconstructing 4D hand-object interactions without relying on expensive optimization techniques, which can lead to unstable outcomes. The authors present 4D-HOF, a feed-forward framework that improves reconstruction by correcting errors in real-time using a model that matches estimated hand-object states to a specified interaction shape. The key result is that 4D-HOF achieves state-of-the-art performance in producing stable and accurate reconstructions, even in complex real-world scenarios.
 
-### 4. Learning to Read the Contextual Tokens in Diffusion Transformers
-**Authors:** Omer Dahary, Etai Sella, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik
-**Link:** https://arxiv.org/abs/2610.06844v1
-**Summary:** This paper addresses the challenge of understanding how contextual tokens in Multimodal Diffusion Transformers (MM-DiTs) encode information during image generation. The authors developed a framework that utilizes a lightweight network to interpret these tokens, allowing a frozen Large Language Model to extract information about the evolving images. They found that contextual tokens contain significant semantic information early in the generation process, and improved training techniques based on this understanding can enhance the quality of generated images.
+### 4. IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas
+**Authors:** Ziyu Chen, Yilun Zhao, Jiashuo Sun, Yiling Ma, Manasi Patwardhan, Arman Cohan
+**Link:** https://arxiv.org/abs/2610.08781v1
+**Summary:** The paper presents IdeaAnchor, a method for improving how large language models (LLMs) generate research ideas by synthesizing information from existing literature. By using structured specifications to guide the synthesis process, along with techniques like demonstration and reinforcement learning, the authors enhance the models' ability to identify gaps and propose new research directions. The results show that this approach significantly improves the quality of the generated ideas, with the combination of structured training and retrieval methods yielding the best outcomes.
 
-### 5. Recursive Video In-Context Learning for Agentic Robot
-**Authors:** Wenrui Bao, Xinxin Liu, Bingxin Xu, Yuzhang Shang
-**Link:** https://arxiv.org/abs/2610.06843v1
-**Summary:** This paper addresses the challenge of enhancing robot performance in task execution by improving how demonstration videos are utilized for learning. The authors propose Recursive Video In-Context Learning (RV-ICL), a method that organizes a demonstration into a hierarchy of sub-events, allowing the robot to access detailed information as needed during task execution. This approach significantly increases the success rates of the robots, achieving improvements from 92.6% to 96.5% on the LIBERO-PRO dataset and from 86.7% to 95.8% on LIBERO-Plus.
+### 5. DepthWorld: 3D World Model for Robot Manipulation
+**Authors:** Jai Bardhan, Josef Sivic, Vladimir Petrik
+**Link:** https://arxiv.org/abs/2610.08780v1
+**Summary:** The paper introduces DepthWorld, a novel 3D world model for robot manipulation that addresses the limitation of existing video-based models that lack consistent 3D geometry. The authors develop a calibration pipeline that integrates learned stereo depth with a shared kinematic model, resulting in a new calibrated 3D dataset called DROID-3D. The key contribution is that DepthWorld can jointly predict RGB images and depth information, leading to improved RGB predictions and accurate metric depth for geometric reasoning—demonstrating enhanced performance over traditional RGB-only models.
 
-### 6. Direct Intermediate Initialization for Tilted Diffusion Samplers
-**Authors:** Gregory D. Bellchambers
-**Link:** https://arxiv.org/abs/2610.06834v1
-**Summary:** The paper addresses the challenge of efficiently sampling from diffusion posteriors in tilted diffusion samplers by introducing a method called Direct Intermediate Initialization for the sequential Monte Carlo sampler, MCGDiff. This approach involves using an approximate solver to sample from a softened clean-space posterior, which is then mapped to the tilted target via a Gaussian bridge, thus improving sampling performance. The key contribution is that this method significantly enhances the accuracy of the sampler, demonstrating up to a twofold improvement in performance metrics like sliced Wasserstein distance, especially in scenarios where the target mode is rare.
+### 6. Sherpa: Teaching LLMs to Teach Adaptively
+**Authors:** Weixian Xu, Yanzhe Zhang, Zora Zhiruo Wang, Changyu Chen, Diyi Yang
+**Link:** https://arxiv.org/abs/2610.08778v1
+**Summary:** The paper introduces Sherpa, a reinforcement learning framework designed to train large language models (LLMs) to teach effectively by adapting their instruction based on individual student learning preferences. By simulating different student archetypes, Sherpa significantly enhances the teaching performance of LLMs, resulting in improved student outcomes and higher pedagogy scores. The approach demonstrates a preference for the trained teacher model over traditional LLMs in 79.6% of comparisons, suggesting it aligns more closely with effective human teaching methods.
 
-### 7. Towards Looped Models Done Right, Part II: Rethinking at Fixed Points
-**Authors:** Benhao Huang, Chufan Shi, Junlin Chen, Shicheng Wen, Zhengzhong Liu, Eric Xing, Xuezhe Ma
-**Link:** https://arxiv.org/abs/2610.06833v1
-**Summary:** The paper addresses inefficiencies in looped language models, particularly caused by recurrent states that approach fixed points, which can complicate training and decoding processes. The authors propose improvements in training through a learned depth prior and a new orthogonal injection method that enhance efficiency while maintaining accuracy. Key results show that their techniques reduce model perplexity across various parameter scales and achieve performance comparable to more resource-intensive methods, significantly lowering the computational costs of training and inference.
+### 7. Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?
+**Authors:** Ankit Sonthalia, Haritz Puerto, Alexander Rubinstein, Martin Gubri, Seong Joon Oh
+**Link:** https://arxiv.org/abs/2610.08775v1
+**Summary:** The paper addresses the challenge of efficiently handling large workloads with large language models (LLMs) by introducing a method called "bottling," which enables LLM agents to autonomously generate cost-effective, task-specific solutions. The authors introduce a benchmark, BOTTLED, to evaluate agents' abilities to optimize workload completion under budget constraints. Key findings indicate that while LLMs perform well in zero-shot settings, their effectiveness in bottling varies significantly, though the approach can achieve substantial cost savings while maintaining a high level of performance compared to dedicated models for repetitive tasks.
 
-### 8. UniSlider: Perceptually Uniform Sliders for Continuous Image Editing
-**Authors:** David Serrano-Lozano, Duygu Ceylan, Yannick Hold-Geoffroy, Iliyan Georgiev, Javier Vazquez-Corral, Anna Frühstück
-**Link:** https://arxiv.org/abs/2610.06831v1
-**Summary:** UniSlider addresses the problem of inconsistent perceptual changes in continuous image editing sliders, which often fail to provide a smooth editing experience. The authors propose a lightweight approach that trains a model to create a slider that maintains a linear relationship between slider value and perceptual distance from the input image. The key result shows that UniSlider significantly outperforms previous methods in uniformity and user preference when evaluated on a benchmark for continuous edits.
+### 8. AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model
+**Authors:** Sarim Hashmi, Mukul Ranjan, Kshitij Mishra, Mikhail Kuznetsov, Praneeth Vepakomma, Nils Lukas
+**Link:** https://arxiv.org/abs/2610.08773v1
+**Summary:** The paper addresses the issue of web agents being misled by malicious instructions embedded in web pages, which can divert them from completing user tasks. The authors propose a new training framework called AdvSim2Real that simultaneously evolves the agent, the adversarial prompts, and the task curriculum in a controlled web simulation environment. This approach significantly enhances the agent's performance, leading to a 33.6% increase in task completion when faced with unseen adversarial attacks.
 
-### 9. MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents
-**Authors:** Haozhen Zhang, Haodong Yue, Quanyu Long, Jianzhu Bao, Qingyuan Liu, Tao Feng, Bohan Liu, Weida Liang, Wenya Wang
-**Link:** https://arxiv.org/abs/2610.06830v1
-**Summary:** The paper introduces MemPilot, a framework that enhances memory management for language model (LLM) agents by allowing for on-demand curation of multimodal information tailored to specific queries. Using reinforcement learning, it optimizes a policy that balances performance, cost, and latency by intelligently deciding when to access memory and how to curate information. The experiments demonstrate that MemPilot achieves better trade-offs in performance and resource use compared to existing systems, showcasing its potential for flexible memory management in LLM applications.
+### 9. Rapid Fredholm stabilization of the Kuramoto--Sivashinsky equation with unrestricted, spatially-varying anti-diffusion
+**Authors:** Luke Bhan, Miroslav Krstic, Yuanyuan Shi
+**Link:** https://arxiv.org/abs/2610.08764v1
+**Summary:** This paper addresses the challenge of stabilizing the Kuramoto--Sivashinsky equation, which can become uncontrollable due to certain unstable eigenvalues. The authors introduce a novel feedback control design using two distinct boundary inputs to effectively manage these instabilities and ensure controllability. A key contribution is the development of a continuous mapping for approximating control gains, along with a Fourier neural operator that achieves impressive stabilization results and low gain errors in numerical tests.
 
-### 10. CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling
-**Authors:** Yifan Zhang, Yutong Dai, Viraj Prabhu, Zhiyuan Hu, Ran Xu, Zeyuan Chen
-**Link:** https://arxiv.org/abs/2610.06829v1
-**Summary:** The paper introduces CLIFT, a method to enhance the training and testing of open-source web agents by enabling them to verify their own performance using natural language questions, instead of relying on expensive external judges. CLIFT utilizes a self-verification mechanism to improve training efficiency and allows agents to make decisions during testing without external input, achieving state-of-the-art performance in various benchmarks. This approach effectively transforms costly feedback into a reusable training signal, thereby improving agent capabilities.
+### 10. VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning
+**Authors:** Zewei Zhou, Rachel Luo, Yulong Cao, Chaowei Xiao, Chensheng Peng, Boyi Li, Thomas Tian, Zheng Lian, Yan Wang, Jiaqi Ma, Boris Ivanovic, Marco Pavone, Wenhao Ding
+**Link:** https://arxiv.org/abs/2610.08761v1
+**Summary:** The paper addresses the challenge of verifying self-improving AI policies in tasks that require embodied reasoning, where traditional fixed judges limit progress. The authors introduce VeriFine, a framework that evolves both the AI policy and its evaluative judge through co-training, allowing for adaptive feedback and human input on complex failure cases. Their experiments demonstrate that this approach leads to significant improvements in both AI capabilities and the judges' ability to evaluate them, facilitating more effective continuous self-improvement.
