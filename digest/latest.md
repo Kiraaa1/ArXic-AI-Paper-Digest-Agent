@@ -1,52 +1,52 @@
 ---
-## 2026-10-07
+## 2026-10-08
 
-### 1. QF3: Fast Flow RL with Filtered Q-Gradients
-**Authors:** Chung Min Kim, Brent Yi, David McAllister, Hongsuk Choi, Himanshu Gaurav Singh, Jinkun Cao, Ken Goldberg, Pieter Abbeel, Carmelo Sferrazza, Angjoo Kanazawa
-**Link:** https://arxiv.org/abs/2610.08789v1
-**Summary:** The paper presents QF3, an efficient off-policy reinforcement learning algorithm designed to improve and train flow policies for robot locomotion and manipulation tasks. By leveraging filtered Q-gradients and focusing on reliable update regions, QF3 enables the training of humanoid locomotion policies from scratch and significantly accelerates the training process, achieving a 10-fold speedup compared to previous methods. This approach allows for effective learning of robotic behaviors both from scratch and through fine-tuning of pre-existing policies.
+### 1. Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos
+**Authors:** Shravan Chaudhari, William Paul, Suchi Saria, Rama Chellappa, Homanga Bharadhwaj
+**Link:** https://arxiv.org/abs/2610.10538v1
+**Summary:** The paper addresses the challenge of enabling an embodied assistant to remember the locations and details of objects encountered in everyday activities, even after they are no longer in view. The authors introduce Ledger, a persistent 3D object memory system that utilizes observations from egocentric videos to track and describe objects over time, significantly improving localization accuracy. Key results show Ledger's effectiveness in enhancing memory retrieval and spatial question answering, leading to notable performance improvements in various accuracy metrics compared to previous methods.
 
-### 2. Conformal Prediction Sets Quantify Information Gain: A Theoretical Perspective
-**Authors:** Kevin Zhang, Stephen Bates
-**Link:** https://arxiv.org/abs/2610.08785v1
-**Summary:** This paper addresses the gap in understanding how the size of conformal prediction sets relates to information gain in uncertainty quantification. The authors propose a new theoretical framework linking the size and coverage of these sets to generalized information measures, demonstrating that the reduction in set size from additional information corresponds to well-established information-theoretic principles. Their findings empirically confirm that the way set size reduction and mutual information rank features can vary, which can impact feature selection processes in classification tasks.
+### 2. Decoupling Exploration from Optimization in RLVR
+**Authors:** Saif Punjwani, Micah Goldblum
+**Link:** https://arxiv.org/abs/2610.10536v1
+**Summary:** The paper addresses the challenge of improving language models' reasoning strategies through reinforcement learning with verifiable rewards (RLVR), which often struggles with retaining model quality when exploring novel ideas. The authors propose a new approach called Exploration-Distillation (ExpDis), which separates the exploration phase from optimization by training explorer policies with a novelty bonus and then using their filtered trajectories to improve a student policy without that bonus. The results show that ExpDis significantly outperforms previous methods in generating diverse and accurate solutions across multiple benchmarks.
 
-### 3. 4D-HOF: Hand-Object Flow Matching for Feed-Forward 4D Interaction Reconstruction
-**Authors:** Shiqi Li, Sean Cho, Yijie Li, Fengzhi Guo, Bowen Wen, Cheng Zhang
-**Link:** https://arxiv.org/abs/2610.08782v1
-**Summary:** The paper addresses the challenge of reconstructing 4D hand-object interactions without relying on expensive optimization techniques, which can lead to unstable outcomes. The authors present 4D-HOF, a feed-forward framework that improves reconstruction by correcting errors in real-time using a model that matches estimated hand-object states to a specified interaction shape. The key result is that 4D-HOF achieves state-of-the-art performance in producing stable and accurate reconstructions, even in complex real-world scenarios.
+### 3. EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory
+**Authors:** Hongru Cai, Ran Wei, Wenjie Wang, Chengfa Wu, Ning Song, Yongqi Li, Wenjie Li
+**Link:** https://arxiv.org/abs/2610.10533v1
+**Summary:** EngramEdit addresses the challenge of updating factual knowledge in large language models without affecting other knowledge or capabilities. It proposes a method that allows independent updates of knowledge by using conditional memory to compute target memory representations and edit shared embeddings while minimizing disruptions to unrelated information. The key result is that EngramEdit enables successful and accurate knowledge updates that retain the model's overall functionality, achieving significantly higher accuracy in reasoning tasks compared to existing methods.
 
-### 4. IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas
-**Authors:** Ziyu Chen, Yilun Zhao, Jiashuo Sun, Yiling Ma, Manasi Patwardhan, Arman Cohan
-**Link:** https://arxiv.org/abs/2610.08781v1
-**Summary:** The paper presents IdeaAnchor, a method for improving how large language models (LLMs) generate research ideas by synthesizing information from existing literature. By using structured specifications to guide the synthesis process, along with techniques like demonstration and reinforcement learning, the authors enhance the models' ability to identify gaps and propose new research directions. The results show that this approach significantly improves the quality of the generated ideas, with the combination of structured training and retrieval methods yielding the best outcomes.
+### 4. Long-WAM: Scaling the Context of World-Action Models
+**Authors:** Wei Huang, Bohan Zhang, Chenzhi Liu, Isabella Liu, Shuai Yang, Weian Mao, Luozhou Wang, Yicheng Xiao, Weifeng Lin, Qixin Hu, Bryan Chu, Sifei Liu, Linxi Fan, Xiaojuan Qi, Song Han, Yukang Chen
+**Link:** https://arxiv.org/abs/2610.10528v1
+**Summary:** The paper addresses the challenge of real-time robot control, which requires processing visual history to make accurate predictions about motion and tasks. The authors introduce Long-WAM, a framework that effectively scales the use of visual context by leveraging pre-trained autoregressive video models, leading to significant improvements in task success rates. Specifically, they demonstrate that increasing the context of visual history from 0 to 19.2 seconds can raise success rates on robot tasks from 63.3% to 78.7%, showcasing its effectiveness in dynamic manipulation scenarios.
 
-### 5. DepthWorld: 3D World Model for Robot Manipulation
-**Authors:** Jai Bardhan, Josef Sivic, Vladimir Petrik
-**Link:** https://arxiv.org/abs/2610.08780v1
-**Summary:** The paper introduces DepthWorld, a novel 3D world model for robot manipulation that addresses the limitation of existing video-based models that lack consistent 3D geometry. The authors develop a calibration pipeline that integrates learned stereo depth with a shared kinematic model, resulting in a new calibrated 3D dataset called DROID-3D. The key contribution is that DepthWorld can jointly predict RGB images and depth information, leading to improved RGB predictions and accurate metric depth for geometric reasoning—demonstrating enhanced performance over traditional RGB-only models.
+### 5. Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping
+**Authors:** Aleksandar Armacki, Haoyuan Cai, Ali H. Sayed
+**Link:** https://arxiv.org/abs/2610.10527v1
+**Summary:** The paper addresses the challenge of optimizing decentralized stochastic gradient descent (SGD) under heavy-tailed noise, which is common in modern machine learning. The authors propose a method called clipped decentralized SGD (DSGD) that applies gradient clipping to achieve optimal convergence rates, even in the presence of noise. Their key contribution is showing that clipped DSGD achieves efficient optimization without compromising consensus speed, highlighting a critical advantage of clipping over normalization in decentralized settings.
 
-### 6. Sherpa: Teaching LLMs to Teach Adaptively
-**Authors:** Weixian Xu, Yanzhe Zhang, Zora Zhiruo Wang, Changyu Chen, Diyi Yang
-**Link:** https://arxiv.org/abs/2610.08778v1
-**Summary:** The paper introduces Sherpa, a reinforcement learning framework designed to train large language models (LLMs) to teach effectively by adapting their instruction based on individual student learning preferences. By simulating different student archetypes, Sherpa significantly enhances the teaching performance of LLMs, resulting in improved student outcomes and higher pedagogy scores. The approach demonstrates a preference for the trained teacher model over traditional LLMs in 79.6% of comparisons, suggesting it aligns more closely with effective human teaching methods.
+### 6. Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models
+**Authors:** Mikey Watts, Yuchen Cui
+**Link:** https://arxiv.org/abs/2610.10526v1
+**Summary:** The paper addresses the issue of language sensitivity in vision-language-action models, which are significantly affected by the phrasing of instructions. The authors propose a method that generates rephrasing rules using a large language model, allowing the system to rewrite incoming instructions without altering the underlying policy. This approach improves the model's performance by 16 to 27% on various tasks, particularly benefiting out-of-distribution scenarios, and achieves notable gains in success rates without the need for retraining.
 
-### 7. Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?
-**Authors:** Ankit Sonthalia, Haritz Puerto, Alexander Rubinstein, Martin Gubri, Seong Joon Oh
-**Link:** https://arxiv.org/abs/2610.08775v1
-**Summary:** The paper addresses the challenge of efficiently handling large workloads with large language models (LLMs) by introducing a method called "bottling," which enables LLM agents to autonomously generate cost-effective, task-specific solutions. The authors introduce a benchmark, BOTTLED, to evaluate agents' abilities to optimize workload completion under budget constraints. Key findings indicate that while LLMs perform well in zero-shot settings, their effectiveness in bottling varies significantly, though the approach can achieve substantial cost savings while maintaining a high level of performance compared to dedicated models for repetitive tasks.
+### 7. Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs
+**Authors:** Zhewei Chen, Hao Zhu, Jiaojiao Jiang, Ahad N. Zehmakan
+**Link:** https://arxiv.org/abs/2610.10520v1
+**Summary:** The paper addresses the challenge of transferring knowledge from Graph Neural Networks (GNNs) to Multi-Layer Perceptrons (MLPs) while maintaining predictive accuracy, particularly focusing on how to preserve important graph geometry. The authors introduce the Graph Geometry-aware MLP (G^2MLP), which uses an energy-weighted alignment based on Ollivier-Ricci curvature to guide the distillation process. The key finding is that G^2MLP consistently outperforms existing graph-free distillation methods across various benchmarks, demonstrating improved performance without requiring graph data during inference.
 
-### 8. AdvSim2Real : Training Web Agents Against Adaptive Prompt Injection in a Web World Model
-**Authors:** Sarim Hashmi, Mukul Ranjan, Kshitij Mishra, Mikhail Kuznetsov, Praneeth Vepakomma, Nils Lukas
-**Link:** https://arxiv.org/abs/2610.08773v1
-**Summary:** The paper addresses the issue of web agents being misled by malicious instructions embedded in web pages, which can divert them from completing user tasks. The authors propose a new training framework called AdvSim2Real that simultaneously evolves the agent, the adversarial prompts, and the task curriculum in a controlled web simulation environment. This approach significantly enhances the agent's performance, leading to a 33.6% increase in task completion when faced with unseen adversarial attacks.
+### 8. Why Forget-Only Unlearning Needs Memorization
+**Authors:** Luka Radić, Vikrant Singhal, Amartya Sanyal
+**Link:** https://arxiv.org/abs/2610.10519v1
+**Summary:** The paper investigates the challenges of "forget-only" unlearning, where a model must forget specific training examples without access to the original data. The authors demonstrate that the feasibility of this unlearning process is influenced by the learning method employed, revealing that models may need to retain more information than usual to effectively forget examples. Their key finding is that some algorithms could require almost complete memorization of the training data to accurately implement deletions, suggesting that traditional training methods may not suffice for effective forget-only unlearning.
 
-### 9. Rapid Fredholm stabilization of the Kuramoto--Sivashinsky equation with unrestricted, spatially-varying anti-diffusion
-**Authors:** Luke Bhan, Miroslav Krstic, Yuanyuan Shi
-**Link:** https://arxiv.org/abs/2610.08764v1
-**Summary:** This paper addresses the challenge of stabilizing the Kuramoto--Sivashinsky equation, which can become uncontrollable due to certain unstable eigenvalues. The authors introduce a novel feedback control design using two distinct boundary inputs to effectively manage these instabilities and ensure controllability. A key contribution is the development of a continuous mapping for approximating control gains, along with a Fourier neural operator that achieves impressive stabilization results and low gain errors in numerical tests.
+### 9. RoboJEPA: Scaling Robotic Latent World Models
+**Authors:** Artem Zholus, Nicolas Beltran-Velez, Jianhao Yuan, Sarath Chandar, Tushar Nagarajan, Daniel Severo, Koustuv Sinha, Michal Drozdzal, Adriana Romero Soriano, Jeannette Bohg, Nicolas Ballas, Mahmoud Assran
+**Link:** https://arxiv.org/abs/2610.10515v1
+**Summary:** The paper addresses the challenge of understanding how the performance of robotic latent world models scales with increased model size, data, and computational resources. The authors introduce RoboJEPA, a large-scale model based on the Joint Embedding Predictive Architecture (JEPA), which demonstrates that imagination error decreases predictably with increased compute, allowing for improved robotics planning and performance. Notably, RoboJEPA, at 8 billion parameters, is the largest model of its kind to date and provides insights that could help advance robotic capabilities.
 
-### 10. VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning
-**Authors:** Zewei Zhou, Rachel Luo, Yulong Cao, Chaowei Xiao, Chensheng Peng, Boyi Li, Thomas Tian, Zheng Lian, Yan Wang, Jiaqi Ma, Boris Ivanovic, Marco Pavone, Wenhao Ding
-**Link:** https://arxiv.org/abs/2610.08761v1
-**Summary:** The paper addresses the challenge of verifying self-improving AI policies in tasks that require embodied reasoning, where traditional fixed judges limit progress. The authors introduce VeriFine, a framework that evolves both the AI policy and its evaluative judge through co-training, allowing for adaptive feedback and human input on complex failure cases. Their experiments demonstrate that this approach leads to significant improvements in both AI capabilities and the judges' ability to evaluate them, facilitating more effective continuous self-improvement.
+### 10. SciExam for ENSO: Can AI Agents Build Climate Models?
+**Authors:** Yinling Zhang, Langchen Liu, Dongbin Xiu, Xueyan Zou, Xu Kuang, Mengdi Wang, Shilong Liu
+**Link:** https://arxiv.org/abs/2610.10513v1
+**Summary:** The paper addresses the challenge of evaluating AI agents' ability to create valid scientific models without predefined answers. The authors introduce the SciExam for ENSO benchmark, where agents develop stochastic models of the El Niño-Southern Oscillation using real climate observations within a limited timeframe. Remarkably, six out of twelve agents produced models that outperformed an established published model, indicating that AI can effectively build competitive climate models that contribute to ongoing scientific debates.
