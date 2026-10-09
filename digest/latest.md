@@ -1,52 +1,52 @@
 ---
-## 2026-10-08
+## 2026-10-09
 
-### 1. Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos
-**Authors:** Shravan Chaudhari, William Paul, Suchi Saria, Rama Chellappa, Homanga Bharadhwaj
-**Link:** https://arxiv.org/abs/2610.10538v1
-**Summary:** The paper addresses the challenge of enabling an embodied assistant to remember the locations and details of objects encountered in everyday activities, even after they are no longer in view. The authors introduce Ledger, a persistent 3D object memory system that utilizes observations from egocentric videos to track and describe objects over time, significantly improving localization accuracy. Key results show Ledger's effectiveness in enhancing memory retrieval and spatial question answering, leading to notable performance improvements in various accuracy metrics compared to previous methods.
+### 1. CSF: Contextual Safety Filtering for Motion Generators
+**Authors:** Lizhi Yang, Yiling Hou, Yao Tang, Junheng Li, Daniel Weng, Blake Werner, Aaron D. Ames
+**Link:** https://arxiv.org/abs/2610.12467v1
+**Summary:** The paper addresses the issue of ensuring safe whole-body motion in text-conditioned motion generators, which may misinterpret actions depending on the scene context. The authors introduce a training-free contextual safety filtering (CSF) technique that utilizes reference trajectories to define safety values and enforce safe motions. Their approach significantly reduces dangerous events by up to 90% while maintaining a high rate of harmless motions, and it has been successfully demonstrated on a real robot.
 
-### 2. Decoupling Exploration from Optimization in RLVR
-**Authors:** Saif Punjwani, Micah Goldblum
-**Link:** https://arxiv.org/abs/2610.10536v1
-**Summary:** The paper addresses the challenge of improving language models' reasoning strategies through reinforcement learning with verifiable rewards (RLVR), which often struggles with retaining model quality when exploring novel ideas. The authors propose a new approach called Exploration-Distillation (ExpDis), which separates the exploration phase from optimization by training explorer policies with a novelty bonus and then using their filtered trajectories to improve a student policy without that bonus. The results show that ExpDis significantly outperforms previous methods in generating diverse and accurate solutions across multiple benchmarks.
+### 2. On the estimation and validity of AI time horizons---a statistical look at the METR plot
+**Authors:** Drew T. Nguyen, William Fithian
+**Link:** https://arxiv.org/abs/2610.12466v1
+**Summary:** This paper addresses the estimation of AI time horizons, specifically how long it takes for humans to complete tasks that AI can solve with a 50% probability. The authors employed spline fitting and item-response theory to refine the analysis beyond the assumption of a linear relationship between human completion times and task difficulty. They found that jumps in time horizons are not equally challenging, leading to improved time-horizon estimates and new diagnostic tools for validating these estimates.
 
-### 3. EngramEdit: Decoupled Knowledge Updates in LLMs through Conditional Memory
-**Authors:** Hongru Cai, Ran Wei, Wenjie Wang, Chengfa Wu, Ning Song, Yongqi Li, Wenjie Li
-**Link:** https://arxiv.org/abs/2610.10533v1
-**Summary:** EngramEdit addresses the challenge of updating factual knowledge in large language models without affecting other knowledge or capabilities. It proposes a method that allows independent updates of knowledge by using conditional memory to compute target memory representations and edit shared embeddings while minimizing disruptions to unrelated information. The key result is that EngramEdit enables successful and accurate knowledge updates that retain the model's overall functionality, achieving significantly higher accuracy in reasoning tasks compared to existing methods.
+### 3. A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control
+**Authors:** Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino, Abhishek Gupta, Rosario Scalise, Byron Boots
+**Link:** https://arxiv.org/abs/2610.12465v1
+**Summary:** The paper addresses the challenge of inefficient exploration in large-scale reinforcement learning (RL) for robot control, particularly for complex tasks like locomotion and manipulation. The authors propose an adaptive sampling method called Success Guided Sampling (SGS) that focuses training on task configurations near the limits of the robot's capabilities, enhancing the learning efficiency in massively parallel simulations. This approach significantly improves performance, allowing robots to successfully tackle difficult tasks and even transfer learned skills to real-world scenarios without additional training.
 
-### 4. Long-WAM: Scaling the Context of World-Action Models
-**Authors:** Wei Huang, Bohan Zhang, Chenzhi Liu, Isabella Liu, Shuai Yang, Weian Mao, Luozhou Wang, Yicheng Xiao, Weifeng Lin, Qixin Hu, Bryan Chu, Sifei Liu, Linxi Fan, Xiaojuan Qi, Song Han, Yukang Chen
-**Link:** https://arxiv.org/abs/2610.10528v1
-**Summary:** The paper addresses the challenge of real-time robot control, which requires processing visual history to make accurate predictions about motion and tasks. The authors introduce Long-WAM, a framework that effectively scales the use of visual context by leveraging pre-trained autoregressive video models, leading to significant improvements in task success rates. Specifically, they demonstrate that increasing the context of visual history from 0 to 19.2 seconds can raise success rates on robot tasks from 63.3% to 78.7%, showcasing its effectiveness in dynamic manipulation scenarios.
+### 4. From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents
+**Authors:** Abbas Raftari
+**Link:** https://arxiv.org/abs/2610.12463v1
+**Summary:** The paper addresses the problem of security breaches in AI agents from organizations like OpenAI, Anthropic, and Google, which occurred when agents inadvertently accessed real systems beyond their testing environments. The authors propose a new framework called the Proactive Agent Security Assurance Cycle (PASAC) and a Boundary Assurance Stack to ensure continuous security throughout the execution of these agents. The key contribution is a shift towards proactive security measures, emphasizing the importance of validating boundaries in real-time rather than relying on static safeguards.
 
-### 5. Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping
-**Authors:** Aleksandar Armacki, Haoyuan Cai, Ali H. Sayed
-**Link:** https://arxiv.org/abs/2610.10527v1
-**Summary:** The paper addresses the challenge of optimizing decentralized stochastic gradient descent (SGD) under heavy-tailed noise, which is common in modern machine learning. The authors propose a method called clipped decentralized SGD (DSGD) that applies gradient clipping to achieve optimal convergence rates, even in the presence of noise. Their key contribution is showing that clipped DSGD achieves efficient optimization without compromising consensus speed, highlighting a critical advantage of clipping over normalization in decentralized settings.
+### 5. BrickBench: Evaluating Agentic Brick Design
+**Authors:** Peter Kulits, Yiqing Xu, R. Kenny Jones, Cordelia Schmid, Jiajun Wu
+**Link:** https://arxiv.org/abs/2610.12452v1
+**Summary:** The paper introduces BrickBench, a benchmark designed to evaluate the ability of agents to create LEGO-set designs based on text prompts, ensuring that these designs are both visually appealing and physically buildable. The approach involves agents selecting from a library of parts and reasoning about various constraints to produce their designs. Key findings indicate that while these agents meet many physical and semantic standards, they do not yet match the creativity and quality of human-designed sets.
 
-### 6. Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models
-**Authors:** Mikey Watts, Yuchen Cui
-**Link:** https://arxiv.org/abs/2610.10526v1
-**Summary:** The paper addresses the issue of language sensitivity in vision-language-action models, which are significantly affected by the phrasing of instructions. The authors propose a method that generates rephrasing rules using a large language model, allowing the system to rewrite incoming instructions without altering the underlying policy. This approach improves the model's performance by 16 to 27% on various tasks, particularly benefiting out-of-distribution scenarios, and achieves notable gains in success rates without the need for retraining.
+### 6. One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts
+**Authors:** Adrian Bulat, Yassine Ouali, Georgios Tzimiropoulos
+**Link:** https://arxiv.org/abs/2610.12448v1
+**Summary:** This paper addresses the challenge of achieving high accuracy in vision tasks while minimizing the complexity and storage requirements of deep learning models. The authors introduce a recurrent Vision Transformer architecture (reViT) that uses a single Transformer block and dynamically varies the feature transformations through a set of shared experts, significantly reducing the number of parameters needed. Notably, the reViT model achieves accuracy comparable to deeper encoders while operating efficiently, demonstrating effective performance in various tasks with fewer stored parameters and the ability to adapt to different depths.
 
-### 7. Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs
-**Authors:** Zhewei Chen, Hao Zhu, Jiaojiao Jiang, Ahad N. Zehmakan
-**Link:** https://arxiv.org/abs/2610.10520v1
-**Summary:** The paper addresses the challenge of transferring knowledge from Graph Neural Networks (GNNs) to Multi-Layer Perceptrons (MLPs) while maintaining predictive accuracy, particularly focusing on how to preserve important graph geometry. The authors introduce the Graph Geometry-aware MLP (G^2MLP), which uses an energy-weighted alignment based on Ollivier-Ricci curvature to guide the distillation process. The key finding is that G^2MLP consistently outperforms existing graph-free distillation methods across various benchmarks, demonstrating improved performance without requiring graph data during inference.
+### 7. Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems
+**Authors:** Anna Zimmel, Fleur Hendriks, Markus Holzleitner, Florian Sestak, Martin Weichselbaumer, Vlado Menkovski, Johannes Brandstetter
+**Link:** https://arxiv.org/abs/2610.12449v1
+**Summary:** The paper addresses the challenge of modeling bifurcations in physical systems, where a single input can lead to multiple valid outputs, which traditional deep learning methods struggle to capture. The authors present Bi-FORK, a generative framework that effectively learns these one-to-many mappings by maintaining coherence in space and time and employing a novel sampling technique to identify distinct solution branches. Bi-FORK demonstrates significant scalability and can recreate complex multimodal solutions across various high-dimensional systems, far surpassing previous methods.
 
-### 8. Why Forget-Only Unlearning Needs Memorization
-**Authors:** Luka Radić, Vikrant Singhal, Amartya Sanyal
-**Link:** https://arxiv.org/abs/2610.10519v1
-**Summary:** The paper investigates the challenges of "forget-only" unlearning, where a model must forget specific training examples without access to the original data. The authors demonstrate that the feasibility of this unlearning process is influenced by the learning method employed, revealing that models may need to retain more information than usual to effectively forget examples. Their key finding is that some algorithms could require almost complete memorization of the training data to accurately implement deletions, suggesting that traditional training methods may not suffice for effective forget-only unlearning.
+### 8. Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception
+**Authors:** Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba, Adam Gleave, Chris Cundy
+**Link:** https://arxiv.org/abs/2610.12445v1
+**Summary:** The paper addresses the issue of detecting deception in large language model (LLM) agents, which can mislead users. The authors developed a robust method using probes trained on the largest deception dataset to date, achieving impressive detection accuracy (98.8% AUC) and demonstrating even higher effectiveness in complex cases of deception. They also released their dataset, FIBS, to encourage further research in this area.
 
-### 9. RoboJEPA: Scaling Robotic Latent World Models
-**Authors:** Artem Zholus, Nicolas Beltran-Velez, Jianhao Yuan, Sarath Chandar, Tushar Nagarajan, Daniel Severo, Koustuv Sinha, Michal Drozdzal, Adriana Romero Soriano, Jeannette Bohg, Nicolas Ballas, Mahmoud Assran
-**Link:** https://arxiv.org/abs/2610.10515v1
-**Summary:** The paper addresses the challenge of understanding how the performance of robotic latent world models scales with increased model size, data, and computational resources. The authors introduce RoboJEPA, a large-scale model based on the Joint Embedding Predictive Architecture (JEPA), which demonstrates that imagination error decreases predictably with increased compute, allowing for improved robotics planning and performance. Notably, RoboJEPA, at 8 billion parameters, is the largest model of its kind to date and provides insights that could help advance robotic capabilities.
+### 9. Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization
+**Authors:** Hanyang Li, Shao Tang, Daniel Thomas Braithwaite, Gregory Dexter, Leonardo Neves, Aman Gupta, Hiroto Udagawa, Abhishek Shivanna, Daniel Silva, Rohan Ramanath
+**Link:** https://arxiv.org/abs/2610.12444v1
+**Summary:** The paper addresses the issue of quantization errors in the AdamW optimizer that occur when reducing storage needs with 4-bit representations, which can negatively affect model performance. The authors propose two innovative methods—Zero-Inclusive Preconditioner-space Stochastic Rounding (ZIP-SR) and Zero-Excluding EDEN calibration (ZE-EDEN)—to optimize the quantization process while preserving key statistical characteristics. Their experiments show that both approaches significantly reduce validation loss compared to existing 4-bit implementations, achieving up to 70% reduction in performance gaps relative to 32-bit AdamW optimization in pretraining tasks across a range of model sizes.
 
-### 10. SciExam for ENSO: Can AI Agents Build Climate Models?
-**Authors:** Yinling Zhang, Langchen Liu, Dongbin Xiu, Xueyan Zou, Xu Kuang, Mengdi Wang, Shilong Liu
-**Link:** https://arxiv.org/abs/2610.10513v1
-**Summary:** The paper addresses the challenge of evaluating AI agents' ability to create valid scientific models without predefined answers. The authors introduce the SciExam for ENSO benchmark, where agents develop stochastic models of the El Niño-Southern Oscillation using real climate observations within a limited timeframe. Remarkably, six out of twelve agents produced models that outperformed an established published model, indicating that AI can effectively build competitive climate models that contribute to ongoing scientific debates.
+### 10. Density Ratio Estimation with Stein Displacement Fields
+**Authors:** Song Liu
+**Link:** https://arxiv.org/abs/2610.12437v1
+**Summary:** The paper addresses the challenge of estimating the density ratio between two probability distributions, which is important for understanding how one distribution shifts to another. It introduces a novel method that combines density ratios and displacement fields to model this shift within a single optimization framework. The key contribution is the development of two inference algorithms that either adjust a pretrained model or refine data closer to the original distribution, demonstrating the method's practical applications in simulation-based inference and nonlinear component analysis.
