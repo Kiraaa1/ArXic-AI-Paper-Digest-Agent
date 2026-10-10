@@ -1,52 +1,52 @@
 ---
-## 2026-10-09
+## 2026-10-10
 
-### 1. CSF: Contextual Safety Filtering for Motion Generators
-**Authors:** Lizhi Yang, Yiling Hou, Yao Tang, Junheng Li, Daniel Weng, Blake Werner, Aaron D. Ames
-**Link:** https://arxiv.org/abs/2610.12467v1
-**Summary:** The paper addresses the issue of ensuring safe whole-body motion in text-conditioned motion generators, which may misinterpret actions depending on the scene context. The authors introduce a training-free contextual safety filtering (CSF) technique that utilizes reference trajectories to define safety values and enforce safe motions. Their approach significantly reduces dangerous events by up to 90% while maintaining a high rate of harmless motions, and it has been successfully demonstrated on a real robot.
+### 1. Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff
+**Authors:** Erin Crawley, Hidenori Tanaka
+**Link:** https://arxiv.org/abs/2610.12436v1
+**Summary:** This paper addresses the risk of uncontrolled population growth of misaligned AI agents capable of conducting cyberattacks. The authors develop an ecological theory modeling the dynamics of AI-agent populations, revealing that collaboration among agents can lower the critical population threshold needed for a population explosion, even if individual agent capabilities remain unchanged. They propose that to ensure safety, larger populations should be deployed gradually in controlled settings while assessing how their collective capabilities scale.
 
-### 2. On the estimation and validity of AI time horizons---a statistical look at the METR plot
-**Authors:** Drew T. Nguyen, William Fithian
-**Link:** https://arxiv.org/abs/2610.12466v1
-**Summary:** This paper addresses the estimation of AI time horizons, specifically how long it takes for humans to complete tasks that AI can solve with a 50% probability. The authors employed spline fitting and item-response theory to refine the analysis beyond the assumption of a linear relationship between human completion times and task difficulty. They found that jumps in time horizons are not equally challenging, leading to improved time-horizon estimates and new diagnostic tools for validating these estimates.
+### 2. VioLA: Learning Generalist Humanoid Control Policies from Human Data
+**Authors:** Mert Albaba, Jens Beißwenger, Anna Manasyan, Daniel Marta, Michael J. Black, Wieland Brendel, Andreas Krause, Georg Martius, Martin Riedmiller
+**Link:** https://arxiv.org/abs/2610.12435v1
+**Summary:** The paper presents VioLA, a generalist control policy for humanoid robots that enables them to follow instructions using body and hand motion predictions instead of complex joint commands. By mapping human motion to a common latent space, VioLA leverages a large dataset of human demonstrations, allowing the robot to perform locomotion and manipulation tasks successfully without the need for fine-tuning on specific tasks. The key result shows that VioLA achieves a 100% success rate in locomotion and 88.6% in manipulation tasks on a real robot, outperforming existing methods significantly.
 
-### 3. A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control
-**Authors:** Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino, Abhishek Gupta, Rosario Scalise, Byron Boots
-**Link:** https://arxiv.org/abs/2610.12465v1
-**Summary:** The paper addresses the challenge of inefficient exploration in large-scale reinforcement learning (RL) for robot control, particularly for complex tasks like locomotion and manipulation. The authors propose an adaptive sampling method called Success Guided Sampling (SGS) that focuses training on task configurations near the limits of the robot's capabilities, enhancing the learning efficiency in massively parallel simulations. This approach significantly improves performance, allowing robots to successfully tackle difficult tasks and even transfer learned skills to real-world scenarios without additional training.
+### 3. FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems
+**Authors:** Songyuan Zhang, Baljeet Singh, Sarthak Ranjeet Kaingade, Chuchu Fan, Bryan Trinh
+**Link:** https://arxiv.org/abs/2610.12432v1
+**Summary:** The paper presents FAITH, a new approach to safe reinforcement learning that separates safety from performance in a way that avoids conflicts during training. By using a model-free method to predict safety values, FAITH allows for effective policy updates without competing safety objectives and is capable of managing unsafe actions when necessary. In experiments, FAITH demonstrated superior performance in both task returns and safety rates on high-dimensional systems, including humanoid robots, outperforming existing methods.
 
-### 4. From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents
-**Authors:** Abbas Raftari
-**Link:** https://arxiv.org/abs/2610.12463v1
-**Summary:** The paper addresses the problem of security breaches in AI agents from organizations like OpenAI, Anthropic, and Google, which occurred when agents inadvertently accessed real systems beyond their testing environments. The authors propose a new framework called the Proactive Agent Security Assurance Cycle (PASAC) and a Boundary Assurance Stack to ensure continuous security throughout the execution of these agents. The key contribution is a shift towards proactive security measures, emphasizing the importance of validating boundaries in real-time rather than relying on static safeguards.
+### 4. Toward Joint Optimization of Circuit Depth and Training Data Size in Adaptively Grown Quantum Classifiers
+**Authors:** Saeefa Rubaiyet Nowmi, Md Mahmuduzzaman Kamol, Mohammad Saidur Rahman
+**Link:** https://arxiv.org/abs/2610.12428v1
+**Summary:** The paper investigates the relationship between circuit depth and training data size in quantum classifiers, aiming to optimize both for better model performance. Using the Q-FLAIR growth mechanism, the authors reimplemented its approach to analyze how circuit size changes with increasing training data on the MNIST dataset. They found no predictable relationship between the circuit depth and the amount of training data, highlighting that while the generalization guarantees hold, they do not effectively predict performance variations, suggesting a need for further exploration in this area.
 
-### 5. BrickBench: Evaluating Agentic Brick Design
-**Authors:** Peter Kulits, Yiqing Xu, R. Kenny Jones, Cordelia Schmid, Jiajun Wu
-**Link:** https://arxiv.org/abs/2610.12452v1
-**Summary:** The paper introduces BrickBench, a benchmark designed to evaluate the ability of agents to create LEGO-set designs based on text prompts, ensuring that these designs are both visually appealing and physically buildable. The approach involves agents selecting from a library of parts and reasoning about various constraints to produce their designs. Key findings indicate that while these agents meet many physical and semantic standards, they do not yet match the creativity and quality of human-designed sets.
+### 5. FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?
+**Authors:** Yuxuan Hu, Weikang Shi, Yang Bo, Xudong Lu, Xintong Guo, Shuhan Li, Yuyang He, Huankang Guan, Peiwen Sun, Yunqiao Yang, Wenbo Li, Rui Liu, Hongsheng Li
+**Link:** https://arxiv.org/abs/2610.12427v1
+**Summary:** The paper introduces FastBench, a new benchmark designed to evaluate the ability of Streaming Video Large Language Models (VLMs) to understand high-dynamic real-world video streams, which current benchmarks inadequately address. The approach includes creating question-answer pairs from high-FPS video clips and using a pipeline for filtering and verifying answers, while also providing a baseline method called ProactiveFrame that optimizes frame rate processing. Key findings reveal that even the best-performing models struggle with high-dynamic scenarios, scoring below expectations, highlighting the limitations of current VLMs in perceiving fast events in live video.
 
-### 6. One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts
-**Authors:** Adrian Bulat, Yassine Ouali, Georgios Tzimiropoulos
-**Link:** https://arxiv.org/abs/2610.12448v1
-**Summary:** This paper addresses the challenge of achieving high accuracy in vision tasks while minimizing the complexity and storage requirements of deep learning models. The authors introduce a recurrent Vision Transformer architecture (reViT) that uses a single Transformer block and dynamically varies the feature transformations through a set of shared experts, significantly reducing the number of parameters needed. Notably, the reViT model achieves accuracy comparable to deeper encoders while operating efficiently, demonstrating effective performance in various tasks with fewer stored parameters and the ability to adapt to different depths.
+### 6. RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments
+**Authors:** Zimo Wen, Yijin Chen, Yuxuan Cao, Wendi Chen, Yanwen Zou, Wenye Yu, Fuhang Kuang, Han Xue, Jun Lv, Chuan Wen, Cewu Lu
+**Link:** https://arxiv.org/abs/2610.12424v1
+**Summary:** RoboRSI addresses the challenge of enabling robots to self-improve by efficiently organizing and reusing the skills they acquire through experience in complex environments. The system employs a structured approach called Top-Down Skill Refinement, which breaks tasks into manageable skills and manages the learning process using a coordinated team of components. The key result shows that RoboRSI significantly enhances a mobile manipulator's success rate in multi-object household cleanup tasks during extensive trials, outperforming existing methods by up to 11 percentage points.
 
-### 7. Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems
-**Authors:** Anna Zimmel, Fleur Hendriks, Markus Holzleitner, Florian Sestak, Martin Weichselbaumer, Vlado Menkovski, Johannes Brandstetter
-**Link:** https://arxiv.org/abs/2610.12449v1
-**Summary:** The paper addresses the challenge of modeling bifurcations in physical systems, where a single input can lead to multiple valid outputs, which traditional deep learning methods struggle to capture. The authors present Bi-FORK, a generative framework that effectively learns these one-to-many mappings by maintaining coherence in space and time and employing a novel sampling technique to identify distinct solution branches. Bi-FORK demonstrates significant scalability and can recreate complex multimodal solutions across various high-dimensional systems, far surpassing previous methods.
+### 7. Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching
+**Authors:** Luping Liu, Bingyi Kang, Yifan Wang, Dong Xu
+**Link:** https://arxiv.org/abs/2610.12421v1
+**Summary:** The paper addresses the limitations of traditional dense correspondence matching methods, which rely on strict assumptions about smooth motion and rigid geometry, and are inadequate for image editing and reference-guided generation tasks. The authors propose a novel framework called FreeMatching that leverages generative and semantic representations along with diverse supervision to enhance correspondence matching across complex image transformations. Key findings indicate that FreeMatching significantly improves correspondence quality in challenging scenarios while also serving as a reliable metric for assessing identity preservation that aligns with human evaluations.
 
-### 8. Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception
-**Authors:** Oskar J. Hollinsworth, Alex F. Spies, Tigist Diriba, Adam Gleave, Chris Cundy
-**Link:** https://arxiv.org/abs/2610.12445v1
-**Summary:** The paper addresses the issue of detecting deception in large language model (LLM) agents, which can mislead users. The authors developed a robust method using probes trained on the largest deception dataset to date, achieving impressive detection accuracy (98.8% AUC) and demonstrating even higher effectiveness in complex cases of deception. They also released their dataset, FIBS, to encourage further research in this area.
+### 8. A Unified Bellman Operator for Safety-Critical Reinforcement Learning
+**Authors:** Nishanth Arun Rao, Royina Karegoudra Jayanth, Benjamin Eysenbach, Jaime Fernández Fisac
+**Link:** https://arxiv.org/abs/2610.12420v1
+**Summary:** This paper addresses the challenge of reinforcement learning in safety-critical environments, where it's essential to balance maximizing performance with adhering to safety constraints. The authors introduce a unified Bellman operator that combines both objectives into a single framework, allowing the learning process to converge to an optimal policy that maximizes task performance without compromising safety. Their approach demonstrates stable convergence and effectively maintains safety during testing, showing near-zero safety violations.
 
-### 9. Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization
-**Authors:** Hanyang Li, Shao Tang, Daniel Thomas Braithwaite, Gregory Dexter, Leonardo Neves, Aman Gupta, Hiroto Udagawa, Abhishek Shivanna, Daniel Silva, Rohan Ramanath
-**Link:** https://arxiv.org/abs/2610.12444v1
-**Summary:** The paper addresses the issue of quantization errors in the AdamW optimizer that occur when reducing storage needs with 4-bit representations, which can negatively affect model performance. The authors propose two innovative methods—Zero-Inclusive Preconditioner-space Stochastic Rounding (ZIP-SR) and Zero-Excluding EDEN calibration (ZE-EDEN)—to optimize the quantization process while preserving key statistical characteristics. Their experiments show that both approaches significantly reduce validation loss compared to existing 4-bit implementations, achieving up to 70% reduction in performance gaps relative to 32-bit AdamW optimization in pretraining tasks across a range of model sizes.
+### 9. WOVEN: Weaving Visual World Modeling into Multimodal LLMs
+**Authors:** Zheyu Fan, Yue Zhang, Mingkai Deng, Kangrui Wang, Qineng Wang, Canyu Chen, Jie Hao, Xing Fan, Chenlei Guo, Eric P. Xing, Mohit Bansal, Manling Li
+**Link:** https://arxiv.org/abs/2610.12417v1
+**Summary:** The paper addresses the shortcomings of multimodal large language models (MLLMs) in spatial and physical reasoning by introducing WOVEN, a training source and benchmark for visual transition reasoning. By leveraging a diverse set of visual examples organized by scene, action, and reasoning type, the authors found that training on just a small subset of this data significantly enhances MLLM performance across various tasks. The key contribution is establishing visual transition reasoning as a foundational element for improving the training of MLLMs, leading to substantial performance gains on external benchmarks.
 
-### 10. Density Ratio Estimation with Stein Displacement Fields
-**Authors:** Song Liu
-**Link:** https://arxiv.org/abs/2610.12437v1
-**Summary:** The paper addresses the challenge of estimating the density ratio between two probability distributions, which is important for understanding how one distribution shifts to another. It introduces a novel method that combines density ratios and displacement fields to model this shift within a single optimization framework. The key contribution is the development of two inference algorithms that either adjust a pretrained model or refine data closer to the original distribution, demonstrating the method's practical applications in simulation-based inference and nonlinear component analysis.
+### 10. MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances
+**Authors:** Mingyuan Lei, Yoonchang Sung, Tat-Jen Cham
+**Link:** https://arxiv.org/abs/2610.12416v1
+**Summary:** The paper presents MAMHOI, a new method for generating realistic human-object interactions in complex 3D scenes by addressing the challenges of understanding how interactions can occur in different environments and accurately representing the motion involved. MAMHOI uses a two-step process where it first assesses feasible interaction locations and methods based on the scene, and then generates the corresponding motion for the human-object interaction, all without needing extensive paired data. The results show that MAMHOI produces more realistic interactions while reducing inappropriate object penetration into scenes, enhancing the overall quality and feasibility of the generated interactions.
