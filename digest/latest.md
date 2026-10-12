@@ -1,52 +1,52 @@
 ---
-## 2026-10-11
+## 2026-10-12
 
-### 1. Predicting Alignment Generalization with Value Representations
-**Authors:** Andy Liu, Mehar Bhatia, Karolina Stanczak, Mona Diab, Vered Shwartz, Daniel Fried
-**Link:** https://arxiv.org/abs/2610.12410v1
-**Summary:** This paper addresses the challenge of predicting how fine-tuning large language models (LLMs) to adhere to specific values affects their behavior in unfamiliar contexts. The authors analyze the impact of various value representations, finding that using model activations during value application is far more effective for this prediction than relying on descriptions of the values. A key contribution is the identification of correlations between value similarity and model robustness, which aids in developing a taxonomy of LLM values based on empirical data.
+### 1. Can Language Models Play the Wikipedia Game?
+**Authors:** Alexander Hickey, Joanna Knight, James Bishop
+**Link:** https://arxiv.org/abs/2610.13948v1
+**Summary:** The paper investigates how well language models can navigate a network of Wikipedia articles to find a target article, a task similar to information retrieval. By employing a game format to assess the models across different languages and academic datasets, the researchers created extensive local graphs of Wikipedia and citation data for analysis. The key finding is that while no language model significantly outperformed human players, some models like GPT-4o performed comparably, highlighting variations in performance based on language and topic.
 
-### 2. Searching for "Harmful Refusal": A Psychometric Audit of an AI Safety Benchmark
-**Authors:** Christopher M. Stewart, Preston Botter, Natalie Sarabosing, Muye Zhang, Rachel Phinnemore, Shalini Ghosh, Hong Shen, Hoda Heidari
-**Link:** https://arxiv.org/abs/2610.12409v1
-**Summary:** The paper investigates the effectiveness of the HELM Safety benchmark in assessing the attribute of "harmful refusal" in AI models, focusing on whether it truly measures a distinct safety-related behavior. Employing psychometric analyses, the authors find that the relevant dataset (HarmBench) does not capture a single attribute and that existing evaluation scores may obscure individual model behaviors through aggregation. The key contribution highlights the need for benchmarks to clearly establish their composite scores reflect singular safety attributes before comparing AI models.
+### 2. Hide and Seek: HIDE Concepts to SEEK explanations for black box models
+**Authors:** Bhanu Tokas, Rahul Nair, Rockwell Jackson, Hannah Kerner
+**Link:** https://arxiv.org/abs/2610.13935v1
+**Summary:** The paper addresses the challenge of interpreting predictions from black-box vision models by proposing a new method called Hide and Seek (HnS) for concept-level attribution. HnS uses a vision-language model to identify and localize relevant concepts in images, masks those regions, and measures changes in the model's output without needing access to model weights or annotated data. The results show that HnS provides more accurate attributions compared to existing methods, making it applicable for various tasks such as image captioning and satellite image segmentation.
 
-### 3. LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC
-**Authors:** Shashank Hegde, Alexander Popov, Elie Aljalbout, Nikolai Smolyanskiy
-**Link:** https://arxiv.org/abs/2610.12407v1
-**Summary:** The paper presents LeWAM, a new type of World Action Model that leverages a bidirectional transformer for more accurate action and observation predictions in robotic systems. By training on both forward and backward dynamics in a structured manner, LeWAM effectively filters out noisy information and improves understanding of the robot's and object's states. The key results show that LeWAM not only aligns better with actual state representations compared to its predecessors but also enhances closed-loop action performance and planning capabilities.
+### 3. Constructive Bounds for the Topological Expressivity of Neural Networks
+**Authors:** Kosio Beshkov
+**Link:** https://arxiv.org/abs/2610.13931v1
+**Summary:** This paper addresses the issue of measuring the topological expressivity of neural networks, particularly for functions beyond binary classification. The authors propose a new approach that uses the Betti numbers of the network's output instead of the decision boundary, proving that specific ReLU network architectures can represent complex spaces with arbitrary Betti numbers. They establish upper bounds for these representations and conjecture a tighter architectural bound for spaces homeomorphic to spheres.
 
-### 4. ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills
-**Authors:** Hongxing Li, Dingming Li, Yixin Li, Yong Du, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen
-**Link:** https://arxiv.org/abs/2610.12403v1
-**Summary:** The paper introduces ViSkill, a framework designed to enhance visual language model (VLM) agents by allowing them to learn and reinforce skills through direct visual interactions rather than relying solely on text-based representations. By combining visual skill retrieval with reward shaping and policy optimization in a feedback loop, ViSkill improves sample efficiency and performance. The results demonstrate a high success rate of 0.89, and 0.91 with an accelerated learning mechanism, outperforming existing methods in various environments.
+### 4. AI Models Can Provably Hide Arbitrary Capabilities
+**Authors:** Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas, Christian Schroeder de Witt
+**Link:** https://arxiv.org/abs/2610.13928v1
+**Summary:** The paper addresses the challenge of reliably evaluating hidden dangerous behaviors in AI models before deployment, revealing that current techniques might fail under adversarial conditions. The authors demonstrate a method to embed encrypted backdoor attacks within models, which can remain undiscovered even when the model weights are fully accessible. Their results show that these hidden capabilities are resistant to various elicitation methods, highlighting limitations in existing capability audits and providing cryptographic assurances that bolster defenses against such threats.
 
-### 5. SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models
-**Authors:** Hongxing Li, Jinyue Su, Dingming Li, Wenqi Zhang, Weiming Lu, Jun Xiao, Yueting Zhuang, Yongliang Shen
-**Link:** https://arxiv.org/abs/2610.12402v1
-**Summary:** The paper introduces SpaceCast-Bench, a new benchmark designed to assess predictive spatial reasoning in vision-language models, which is essential for understanding and anticipating spatial changes in scenes rather than just perceiving existing relationships. Through its evaluate-transform-infer framework with a diverse set of questions, the authors reveal a significant performance gap between models and human capabilities, highlighting that even the best-performing model only achieves 58% accuracy compared to 87% for humans. Key findings suggest that incorporating bridge views and explicit 3D evidence improves model performance, and fine-tuning can lead to substantial gains in predictive accuracy.
+### 5. KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling
+**Authors:** Tianyi Wu
+**Link:** https://arxiv.org/abs/2610.13924v1
+**Summary:** This paper investigates the efficiency of parallel sampling methods for generating random binary strings while comparing two metrics of divergence between the target distribution and the output distribution. By analyzing the divergence across different sampling schedules, the authors show that a significant reduction in the expected number of sampling rounds is possible under certain criteria, achieving a logarithmic improvement in complexity. The key contribution is the identification of a round complexity separation depending on the divergence metrics used, demonstrating that careful scheduling can lead to more efficient sampling strategies.
 
-### 6. Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment
-**Authors:** Guowen Li, Yang Liu, Yujie Wang, Qiuyan Sun, Haoyuan Liang, Juepeng Zheng, Hong Cheng, Haohuan Fu
-**Link:** https://arxiv.org/abs/2610.12401v1
-**Summary:** The paper addresses the challenge of enhancing kilometer-scale regional weather forecasting by effectively integrating large-scale predictions from global weather models. The authors introduce ScaleCast, a framework that aligns global and regional weather information and combines them with local interactions, leading to improved forecasting accuracy. Key results show that ScaleCast significantly enhances predictions for various weather variables and adapts well across different regional domains and resolutions, outperforming existing methods in cyclone tracking and local climate metrics.
+### 6. Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning
+**Authors:** Sajjad Baghaeea, Aimin Lib, Shanmugarajan Balasubramanian, Elif Uysal
+**Link:** https://arxiv.org/abs/2610.13923v1
+**Summary:** The paper addresses the challenges of managing data in deep-space communications, where limited storage and variable connectivity make it difficult to prioritize transmissions effectively. It proposes a reinforcement learning framework that optimizes relay-side scheduling and flow control using a goal-oriented loss function to ensure that mission-critical information is prioritized. The approach shows improved performance in terms of information freshness and fairness among different sources compared to traditional scheduling methods.
 
-### 7. SpaceFlow: Locally Controllable 3D Generation
-**Authors:** Neil De La Fuente, Joan Lafuente, Mukhammadali Sayfiddinov, Felicia Scharitzer, Marc Pollefeys, Ata Celen, Sayan Deb Sarkar, Elisabetta Fedele
-**Link:** https://arxiv.org/abs/2610.12399v1
-**Summary:** The paper presents SpaceFlow, a new method for generating 3D objects that allows users to have precise local control over both shape and appearance, addressing the limitations of existing 3D generation techniques that rely on global parameters. By assigning local control levels to geometric primitives, the approach enforces specific spatial constraints during generation and achieves high fidelity in desired areas while allowing creative variation elsewhere. The results show that SpaceFlow balances geometric accuracy and generative flexibility effectively, outperforming previous methods in appearance fidelity and local control capabilities.
+### 7. DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness
+**Authors:** Daniel Szelogowski
+**Link:** https://arxiv.org/abs/2610.13918v1
+**Summary:** This paper addresses the discrepancy between objective sleep measurements and subjective experiences of restfulness in various sleep disorders. The authors developed DyssomniaNN, a multi-scale computational model that simulates human sleep dynamics by integrating biological sleep regulation processes and neural network dynamics. Key findings reveal that traditional metrics like sleep duration do not accurately reflect the restorative quality of sleep, as exemplified by paradoxical insomnia and narcolepsy, highlighting the model's potential for advancing sleep research and treatment strategies.
 
-### 8. Prospective Prediction of OOD Degradation from Source-Side Training Dynamics
-**Authors:** Sasha, Monin
-**Link:** https://arxiv.org/abs/2610.12397v1
-**Summary:** This paper addresses the challenge of predicting out-of-distribution (OOD) performance degradation in machine learning models before it occurs. The authors demonstrate that by analyzing training dynamics from the source data, particularly through temporal summaries of model confidence and entropy, it is possible to develop an effective predictor for OOD failure. Importantly, the study shows that this predictive capability can be generalized between different model architectures without requiring additional training.
+### 8. Designing Protein Structures from Natural Language
+**Authors:** Joseph Lee, Yanjing Li, Bo Qiang, Gregory Lau, Allyson Ettinger, Noah A. Smith, Rory Donovan-Maiye, David Baker, Hanna Hajishirzi, Pang Wei Koh
+**Link:** https://arxiv.org/abs/2610.13917v1
+**Summary:** This paper addresses the challenge of creating proteins with specific structural and functional properties by developing Prompteina, a model that generates protein structures from natural language descriptions. By using a large dataset of protein structures paired with captions, Prompteina significantly outperforms existing methods in terms of aligning generated proteins with intended functions and enhancing design for binder targets. The study demonstrates that using natural language as a guiding input can greatly improve the protein design process.
 
-### 9. HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling
-**Authors:** Qun Dai, Liangjian Wen, Jiang Duan, Yong Dai, Dongkai Wang, Maolin Wang, Mingjie Wang, Jianzhuang Liu, He Yan, Zhao Kang
-**Link:** https://arxiv.org/abs/2610.12393v1
-**Summary:** The paper addresses the challenge of learning multimodal representations that effectively capture synergistic information, which is the unique signal that arises from the interaction of multiple modalities. The authors introduce a method called Higher-order Representation and Information Learning (HRIL), which uses higher-order tensor modeling to explicitly represent these joint interactions and incorporates a regularizer to enhance synergy capture. Their experiments show that HRIL outperforms existing multimodal methods, especially in scenarios where synergistic interactions are crucial.
+### 9. RSI-Anything: Unlocking Recursive Self-Improvement with World Models
+**Authors:** Taoyong Cui, Pinxian Zeng, Wanghan Xu, Hao Xiao, Shuhan Xue, Qiang Gao, Wanli Ouyang, Pheng Ann Heng, Zhenfei Yin, Yingcheng Wu, Ling Yang
+**Link:** https://arxiv.org/abs/2610.13912v1
+**Summary:** The paper addresses the challenge of improving systems through recursive self-improvement (RSI) without relying heavily on costly external feedback. The authors propose a framework called RSI-Anything that employs predictive world models to optimize action selection and learning data while adapting policies. Key results indicate significant performance increases in various tasks, such as code repair and experimental optimization, demonstrating that their approach enhances efficiency and effectiveness in diverse applications.
 
-### 10. GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving
-**Authors:** Jialu Wang, Ruichen Zhang, Xiaoou Liu, Hua Wei, Tianlong Chen
-**Link:** https://arxiv.org/abs/2610.12391v1
-**Summary:** The paper addresses the challenge that multimodal large language models (MLLMs) face in understanding geometric relationships in diagrams, often due to ineffective formalization of geometric elements. The proposed solution, GeoReform, is a framework that optimizes the formal representation of these elements by learning from errors in the reasoning process and adjusting how geometric information is organized and presented. This approach significantly improves the accuracy of a specific MLLM, Qwen3VL-2B, from 42.0% to 56.0% on the Geometry3K benchmark, highlighting the importance of effective formalization for geometry reasoning tasks.
+### 10. When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors
+**Authors:** Shubh Garg, Chen Shani
+**Link:** https://arxiv.org/abs/2610.13910v1
+**Summary:** The paper addresses the challenge of whether Vision-Language Models (VLMs) accurately retain spatial relations when analyzing and reasoning about images. To investigate this, the authors propose two new tools: EICS, a metric for assessing the stability of internal representations, and CASP-VL, a benchmark that introduces controlled spatial changes to images. The key finding reveals that VLMs tend to lose critical spatial information in their representations, even though they perform well on composition-based tasks, highlighting a significant gap between input and output understanding.
