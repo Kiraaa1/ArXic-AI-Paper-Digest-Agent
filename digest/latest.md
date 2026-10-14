@@ -1,52 +1,52 @@
 ---
-## 2026-10-13
+## 2026-10-14
 
-### 1. Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping
-**Authors:** Danil Rudenko, Georgii Bulgakov, Nikolay Kartashev, Ivan Rubachev, Daniil Krasylnikov, Artem Babenko
-**Link:** https://arxiv.org/abs/2610.13909v1
-**Summary:** This paper investigates the effectiveness of various objective functions for deep learning regression tasks on tabular data, with a specific focus on comparing them to the traditional Mean Squared Error (MSE). The authors find that while quantile loss consistently outperforms MSE, the challenge of varying optimal training epochs for different noise levels leads to limitations in using a single global early-stopping approach. To address this, they propose a novel heteroskedasticity-aware extension of quantile loss, which shows improved performance across multiple neural network architectures.
+### 1. ChunkAct: Action Chunking for Agentic Robotics
+**Authors:** Bingxin Xu, Wenrui Bao, Xinxin Liu, Jiawei Zhou, Yuzhang Shang, Emilio Ferrara
+**Link:** https://arxiv.org/abs/2610.18874v1
+**Summary:** The paper introduces ChunkAct, a novel method for improving efficiency in agentic robotics, where a large language model controls robot actions. By implementing action chunking, which allows groups of actions to be executed autonomously and without constant LLM reasoning during execution, the approach significantly reduces the computational load. The key result shows that ChunkAct enhances task success rates by 5% while drastically decreasing the number of LLM calls and tokens used during operation.
 
-### 2. Hitting-Time Bounds for Asynchronous Q-Learning
-**Authors:** Yang Peng
-**Link:** https://arxiv.org/abs/2610.13901v1
-**Summary:** This paper investigates the performance of asynchronous Q-learning using a single trajectory from a fixed behavior policy in finite Markov decision processes. The authors establish that zero-initialized Q-learning can achieve a bounded error with high probability if a constant step size is applied, showing a dependency on the effective horizon and the hitting time of the state-action chain. Their approach also includes a method for dynamically selecting a step size, allowing for effective training without needing prior model knowledge.
+### 2. Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion
+**Authors:** Chih-Hai Su, Tsung-Wei Ke, Yu-Lun Liu
+**Link:** https://arxiv.org/abs/2610.18871v1
+**Summary:** The paper addresses the challenge of completing dense motion details from sparse data across different geometric families, which traditional methods struggle with due to variations in motion scaling. The authors introduce a novel approach that decouples the structure of the motion from its physical scale by learning a dimensionless prior, allowing for more effective motion prediction. Their method outperforms conventional techniques in various scenarios, including previously unseen shapes, and can be applied to real-world recordings without the need for retraining.
 
-### 3. Structural Automata for Neural Semantic Parsing
-**Authors:** Xiao Zhang
-**Link:** https://arxiv.org/abs/2610.13896v1
-**Summary:** The paper addresses the challenge of generating well-formed semantic representations in neural semantic parsing, which can suffer from incomplete or invalid outputs due to token dependencies. The authors propose a method called accepting-path decoding (APD) that ensures valid completions within specified output lengths while maintaining the model's preferred token choices. Their results show that APD significantly improves parsing accuracy, outperforming local masking methods and achieving comparable results to approaches that allow token retraction under length constraints.
+### 3. What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study
+**Authors:** Mingxuan Yan, Litian Gong, Dihong Huang, Zhixu Li, Tianyu Zhang, Wenqian Zhang, Hefeifei Jiang, Peihao Li, Jian Zhang, Mengfei Zhao, Yikai Tang, Hai Zhai, Zehao Wang, Ruijian Liang, Yanjia Huang, Lin Shao, Changliu Liu, Kaiyu Hang, Zhiwen Fan, Masayoshi Tomizuka, Jianfei Yang, Jiachen Li
+**Link:** https://arxiv.org/abs/2610.18869v1
+**Summary:** The paper investigates how to effectively use the quality of demonstrations during vision-language-action (VLA) pretraining to enhance performance in subsequent fine-tuning tasks. By comparing different methods of using demonstration quality—such as weighting and filtering—across various tasks and data conditions, the authors show that approach-aware episode conditioning significantly boosts success rates over traditional methods. Their introduction of AXIS-Bench provides a useful framework for these experiments, leading to a real-world improvement in task success from 9.6% to 31.7%.
 
-### 4. Task Context Shapes Component Roles in Language Models
-**Authors:** Sovesh Mohapatra, Dani S Bassett
-**Link:** https://arxiv.org/abs/2610.13895v1
-**Summary:** This paper investigates how large language models utilize the same attention heads for different tasks and how task context influences their roles. By analyzing the interaction of model components through graph-based representations, the authors demonstrate that task changes can significantly redistribute the influence and output of these shared components. The key finding is that modifying early activations can shift which information the model focuses on, revealing a structured mechanism that allows models to adapt their behavior while using shared parameters.
+### 4. Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards
+**Authors:** Wenbo Hu, Shraman Pramanick, Krishna Kumar Singh, Nanyun Peng, Kai-Wei Chang, Yong Jae Lee
+**Link:** https://arxiv.org/abs/2610.18868v1
+**Summary:** The paper addresses the challenge of training long-horizon agents for complex tasks that require months of autonomy, which is hindered by sparse rewards and insufficient data. The authors introduce Tev-Gym, a dataset featuring 1,170 verified tasks with dense, progressive rewards, allowing for better training through a new method called progress-potential reward shaping (PPRS). As a key result, their model Tev-27B achieves impressive performance benchmarks in computing and math tasks, rivaling leading models despite being trained exclusively on a specific dataset.
 
-### 5. RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics
-**Authors:** Weiliang Chen, Song Liao
-**Link:** https://arxiv.org/abs/2610.13889v1
-**Summary:** The paper presents RATED, a new framework for reliably retrieving AI tools by considering their availability during execution, rather than just their semantic relevance. By combining a fine-tuned dual-encoder for semantic matching with a dynamic feedback mechanism that adapts to runtime execution conditions, RATED significantly reduces the rate of selecting faulty tools. The main finding shows a 52.2% improvement in retrieval performance and a drastic decrease in fault selection during API outages, while maintaining minimal processing latency.
+### 5. Data Free Training of Diffusion Models for Lattice Field Theories
+**Authors:** Dennis Grinwald, Ankur Singha, Khaled Kahouli, Karl Jansen, Shinichi Nakajima
+**Link:** https://arxiv.org/abs/2610.18863v1
+**Summary:** The paper addresses the challenge of sampling equilibrium configurations in lattice field theories, which is crucial for computational efficiency. It proposes a novel method to train diffusion models using their own generated samples, leveraging the target score identity and importance-weighted approaches. The key finding is that this data-free training strategy can achieve performance similar to traditional methods that rely on reference data from Hamiltonian Monte Carlo simulations.
 
-### 6. X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems
-**Authors:** Yeonsung Jung, Zhiyuan Wang, Zifan Wang, Vítor Albiero, Benjamin Newman, Edoardo Debenedetti, Ivan Evtimov, Ninareh Mehrabi
-**Link:** https://arxiv.org/abs/2610.13886v1
-**Summary:** The paper addresses the issue of personal agents causing unintended harmful outcomes when interacting with web services due to compositional failures. It introduces X-AgentRed, a self-evolving framework that explores and refines harmful tool-call paths by analyzing dependencies among tools and using execution feedback to improve its exploration. The key finding shows that X-AgentRed significantly outperforms existing methods, achieving a higher rate of harmful path discovery and greater tool diversity.
+### 6. DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning
+**Authors:** Minghao Luo, Liang Chen
+**Link:** https://arxiv.org/abs/2610.18862v1
+**Summary:** The paper presents DoubtLess, a novel method for enhancing the efficiency of reasoning models by reducing the length of chains of thought (CoT) without requiring additional training. By utilizing a smaller reasoning model to guide a larger one in generating more concise outputs, DoubtLess achieved a 31% reduction in CoT while maintaining accuracy across various benchmarks. This method also decreased the number of tokens used in a self-debugging coding agent by 20%, demonstrating its effectiveness and generalizability.
 
-### 7. Prediction Is Not a Sufficient Memory State
-**Authors:** Robert Jenkinson Alvarez
-**Link:** https://arxiv.org/abs/2610.13881v1
-**Summary:** The paper examines the limitations of memory states in learning systems, specifically highlighting that simply reproducing predictions does not ensure the ability to learn from new data. It characterizes conditions under which a fixed-dimensional memory state can facilitate cumulative learning, revealing that polynomial loss functions require a specific number of memory coordinates to maintain learning. The key contribution is a deeper understanding of the interplay between memory states and learning mechanisms, rather than proposing a new learning algorithm.
+### 7. AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards
+**Authors:** Xin Gao, Yifan Yang, Xin Li, Pan Wang, Yan Li, Muzhao Tian, Mingxi Cheng, Bei Liu, Kai Qiu, Qi Dai, Dong Chen, Yue Dong, Leandros Tassiulas, Rex Ying, Ji Li, Chong Luo
+**Link:** https://arxiv.org/abs/2610.18860v1
+**Summary:** The paper presents AesCode, a system designed to generate aesthetic code for visual artifacts like slides and dashboards by integrating content and visual guidance. By utilizing a design graph and decoupled cross-modal rewards from both deterministic verifiers and a visual language model, AesCode optimizes for spatial planning, aesthetic quality, and correctness through reinforcement learning. The results show that AesCode significantly improves visual quality compared to existing models, achieving performance similar to advanced closed-source models.
 
-### 8. Partially Informed Stochastic Optimization via Zeroth-Order Residual Tracking
-**Authors:** El Mahdi Chayti, Alireza Mirrokni, Martin Jaggi
-**Link:** https://arxiv.org/abs/2610.13871v1
-**Summary:** The paper addresses the challenge of optimizing functions when only partial gradient information is available, such as in scenarios involving performative prediction and bilevel optimization. The authors propose a method called Partially Informed Stochastic Optimization (PISO), which combines known gradient components with a running estimate of the unknown parts to reduce variance during optimization. Key results show that PISO achieves leading efficiency in function evaluations while providing convergence guarantees, outperforming existing methods in various applications.
+### 8. Hybrid Reasoning Agents
+**Authors:** Jiaru Zou, Yunzhe Qi, Sirui Chen, Federico Bianchi, Shang Zhu, Pan Lu, Jingrui He, James Zou
+**Link:** https://arxiv.org/abs/2610.18861v1
+**Summary:** The paper addresses the challenge of creating an AI agent that can efficiently reason beyond human language while still communicating through it. The authors introduce Hybrid Reasoning Agents (HybridAgents), which integrate latent reasoning with text-based interaction, using a novel architecture that allows seamless transitions and maintains context. Their approach outperforms existing AI models across various benchmarks, demonstrating significant improvements in performance, inference speed, and cost efficiency.
 
-### 9. Finite-Sample Guarantees for Fully Discrete Conditional Diffusion Models
-**Authors:** Qiuyun Zhu
-**Link:** https://arxiv.org/abs/2610.13851v1
-**Summary:** This paper addresses the challenge of ensuring that conditional diffusion models, which are learned from data using a finite number of denoising steps, maintain accuracy in their output distributions. The authors propose a method that connects the training objectives with the sampling process, allowing them to analyze both statistical and numerical errors simultaneously. They derive high-probability bounds for errors in the generated distributions, demonstrating that with appropriately chosen grids, the models can achieve good performance in terms of Kullback-Leibler divergence and total-variation error as the sample size increases.
+### 9. Exact Topological Compliance: Generating Persistence-Equivalent Graphs
+**Authors:** Mattie Ji, Indradyumna Roy, Vikas Garg
+**Link:** https://arxiv.org/abs/2610.18856v1
+**Summary:** The paper addresses the challenge of generating graphs that exactly match specified topological features, represented as persistence diagrams (PDs). It proposes two methods: a local approach that iteratively builds graphs while ensuring they match the target PD, and a global constraint satisfaction approach that leverages modern solvers for more efficient generation. Both methods successfully achieve exact compliance with target PDs, marking a significant advancement in topology-aware graph generation.
 
-### 10. Inference-Time Steering Across Scaffolds and Epitopes for Sample-Efficient De Novo Nanobody Design
-**Authors:** Mason Minot, Simon Friedensohn, Cédric R. Weber
-**Link:** https://arxiv.org/abs/2610.13844v1
-**Summary:** The paper addresses the inefficiency in de novo nanobody design, where traditional methods over-generate candidates and filter them afterward. The authors introduce a novel approach that dynamically allocates computation resources during the design process, employing techniques like Global Sequential Monte Carlo and Batched Successive Elimination. Their method improves the efficiency of generating viable nanobody candidates by nearly five times without compromising the diversity of the designs.
+### 10. Two Clocks: Why Larger Rollout Batches Learn Slower but Fail on Schedule in Reinforcement Learning with Verifiable Rewards
+**Authors:** Yuante Li, Junwei Quan, Kai Qiu, Kate Zhang, Yicheng Tao
+**Link:** https://arxiv.org/abs/2610.18853v1
+**Summary:** The paper investigates why larger rollout batches in reinforcement learning with verifiable rewards (RLVR) lead to slower learning and increased failure risk. The authors introduce a "two-clock" framework to differentiate between the samples that contribute to learning progress and those that lead to performance collapse, showing that larger batches can result in less efficient learning despite maintaining first-order improvements. They validate their findings through experiments and propose a scheduling method for RLVR that involves starting with smaller batches before transitioning to larger ones to optimize performance while minimizing failure.
