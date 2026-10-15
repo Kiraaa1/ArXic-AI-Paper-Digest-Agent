@@ -1,52 +1,52 @@
 ---
-## 2026-10-14
+## 2026-10-15
 
-### 1. ChunkAct: Action Chunking for Agentic Robotics
-**Authors:** Bingxin Xu, Wenrui Bao, Xinxin Liu, Jiawei Zhou, Yuzhang Shang, Emilio Ferrara
-**Link:** https://arxiv.org/abs/2610.18874v1
-**Summary:** The paper introduces ChunkAct, a novel method for improving efficiency in agentic robotics, where a large language model controls robot actions. By implementing action chunking, which allows groups of actions to be executed autonomously and without constant LLM reasoning during execution, the approach significantly reduces the computational load. The key result shows that ChunkAct enhances task success rates by 5% while drastically decreasing the number of LLM calls and tokens used during operation.
+### 1. Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion
+**Authors:** Huixuan Cheng, Bike Zhang, Shankar Sastry, Koushil Sreenath
+**Link:** https://arxiv.org/abs/2610.20606v1
+**Summary:** The paper addresses the challenge of understanding and modeling the weights of humanoid control networks, which are typically trained using conventional methods. The authors propose a latent diffusion framework combining a linear autoencoder and a Diffusion Transformer to generate effective control networks directly from their weights. They find that the first-layer weights reveal a structural principle related to the robot's kinematic capabilities, indicating a shared knowledge across different training methods, and they successfully generate networks capable of executing complex motions in the real world.
 
-### 2. Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion
-**Authors:** Chih-Hai Su, Tsung-Wei Ke, Yu-Lun Liu
-**Link:** https://arxiv.org/abs/2610.18871v1
-**Summary:** The paper addresses the challenge of completing dense motion details from sparse data across different geometric families, which traditional methods struggle with due to variations in motion scaling. The authors introduce a novel approach that decouples the structure of the motion from its physical scale by learning a dimensionless prior, allowing for more effective motion prediction. Their method outperforms conventional techniques in various scenarios, including previously unseen shapes, and can be applied to real-world recordings without the need for retraining.
+### 2. Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance
+**Authors:** Zhefei Gong, Hefeifei Jiang, Zehao Wang, Jiachen Li
+**Link:** https://arxiv.org/abs/2610.20607v1
+**Summary:** The paper addresses the challenges of fine-tuning mobile manipulation robots in real-world settings, where there are complex action spaces and interactions between different robotic modules. The proposed HiRe-MoMa framework uses a Hierarchical Residual Architecture to adjust a base policy while minimizing interference and enhancing sample efficiency through sparse human guidance. The key result shows that this approach significantly improves task performance in just 30 minutes of real-world interaction, making fine-tuning of robots more practical in dynamic environments.
 
-### 3. What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study
-**Authors:** Mingxuan Yan, Litian Gong, Dihong Huang, Zhixu Li, Tianyu Zhang, Wenqian Zhang, Hefeifei Jiang, Peihao Li, Jian Zhang, Mengfei Zhao, Yikai Tang, Hai Zhai, Zehao Wang, Ruijian Liang, Yanjia Huang, Lin Shao, Changliu Liu, Kaiyu Hang, Zhiwen Fan, Masayoshi Tomizuka, Jianfei Yang, Jiachen Li
-**Link:** https://arxiv.org/abs/2610.18869v1
-**Summary:** The paper investigates how to effectively use the quality of demonstrations during vision-language-action (VLA) pretraining to enhance performance in subsequent fine-tuning tasks. By comparing different methods of using demonstration quality—such as weighting and filtering—across various tasks and data conditions, the authors show that approach-aware episode conditioning significantly boosts success rates over traditional methods. Their introduction of AXIS-Bench provides a useful framework for these experiments, leading to a real-world improvement in task success from 9.6% to 31.7%.
+### 3. Co-Evolving Acting and Forecasting for Language Agents
+**Authors:** Haofei Yu, Yixing Chen, Yining Zhao, Xuyan Ye, Yuxiang Liu, Zhigang Hua, Yan Xie, Shuang Yang, Jiaxuan You
+**Link:** https://arxiv.org/abs/2610.20597v1
+**Summary:** The paper addresses the challenge of efficiently training language agents in reinforcement learning, which is often hindered by the high costs of long-term predictions. The authors propose a novel method called \name that incorporates multi-step action targets to enhance the learning process, allowing the agent to improve both its acting and forecasting capabilities simultaneously. Key results show that \name outperforms existing methods in terms of overall performance and sample efficiency without adding extra models or complexity during inference.
 
-### 4. Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards
-**Authors:** Wenbo Hu, Shraman Pramanick, Krishna Kumar Singh, Nanyun Peng, Kai-Wei Chang, Yong Jae Lee
-**Link:** https://arxiv.org/abs/2610.18868v1
-**Summary:** The paper addresses the challenge of training long-horizon agents for complex tasks that require months of autonomy, which is hindered by sparse rewards and insufficient data. The authors introduce Tev-Gym, a dataset featuring 1,170 verified tasks with dense, progressive rewards, allowing for better training through a new method called progress-potential reward shaping (PPRS). As a key result, their model Tev-27B achieves impressive performance benchmarks in computing and math tasks, rivaling leading models despite being trained exclusively on a specific dataset.
+### 4. Your Transformer Is Secretly Elastic
+**Authors:** Walter Simoncini, Dheeraj Varghese, Gertjan J. Burghouts, Cees G. M. Snoek
+**Link:** https://arxiv.org/abs/2610.20588v1
+**Summary:** The paper addresses the inflexibility of current transformer models, which only come in fixed sizes, making them suboptimal for varying computational demands. The authors propose a novel method that allows a single transformer model to adaptively adjust its complexity without needing retraining, by jointly ranking individual components based on their importance. This approach enables efficient pruning of models to achieve significant reductions in size and increases in processing throughput, demonstrating impressive performance on various tasks with minimal accuracy loss.
 
-### 5. Data Free Training of Diffusion Models for Lattice Field Theories
-**Authors:** Dennis Grinwald, Ankur Singha, Khaled Kahouli, Karl Jansen, Shinichi Nakajima
-**Link:** https://arxiv.org/abs/2610.18863v1
-**Summary:** The paper addresses the challenge of sampling equilibrium configurations in lattice field theories, which is crucial for computational efficiency. It proposes a novel method to train diffusion models using their own generated samples, leveraging the target score identity and importance-weighted approaches. The key finding is that this data-free training strategy can achieve performance similar to traditional methods that rely on reference data from Hamiltonian Monte Carlo simulations.
+### 5. Price of Anarchy of First-Price Auctions in Agentic Markets
+**Authors:** Shubhendu Trivedi, Jacob Eisenstein, Alekh Agarwal, Ian Gemp, Michael Kaisers, Adam Fisch
+**Link:** https://arxiv.org/abs/2610.20587v1
+**Summary:** The paper addresses the issue of welfare loss in first-price auctions within decentralized AI markets, where agents bid to claim user prompts. By examining the dynamics of competition among bidders and the nature of their bid values, the authors demonstrate that certain market features can significantly reduce the price of anarchy, leading to improved welfare outcomes. Their results indicate that under certain conditions, the efficiency can approach nearly optimal levels, surpassing the standard limits commonly observed in such auction settings.
 
-### 6. DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning
-**Authors:** Minghao Luo, Liang Chen
-**Link:** https://arxiv.org/abs/2610.18862v1
-**Summary:** The paper presents DoubtLess, a novel method for enhancing the efficiency of reasoning models by reducing the length of chains of thought (CoT) without requiring additional training. By utilizing a smaller reasoning model to guide a larger one in generating more concise outputs, DoubtLess achieved a 31% reduction in CoT while maintaining accuracy across various benchmarks. This method also decreased the number of tokens used in a self-debugging coding agent by 20%, demonstrating its effectiveness and generalizability.
+### 6. Continuum Attention
+**Authors:** Afshin Khadangi
+**Link:** https://arxiv.org/abs/2610.20586v1
+**Summary:** The paper introduces Continuum Attention (CA), a new attention mechanism for Transformers that replaces the standard discrete key and value lookup with a continuous memory integration approach. This method allows for more efficient attention calculations and achieves improved performance, demonstrating significant reductions in validation negative log likelihood compared to traditional softmax and focal attention methods. The results suggest that continuous integration could be a valuable alternative for attention mechanisms in deep learning models.
 
-### 7. AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards
-**Authors:** Xin Gao, Yifan Yang, Xin Li, Pan Wang, Yan Li, Muzhao Tian, Mingxi Cheng, Bei Liu, Kai Qiu, Qi Dai, Dong Chen, Yue Dong, Leandros Tassiulas, Rex Ying, Ji Li, Chong Luo
-**Link:** https://arxiv.org/abs/2610.18860v1
-**Summary:** The paper presents AesCode, a system designed to generate aesthetic code for visual artifacts like slides and dashboards by integrating content and visual guidance. By utilizing a design graph and decoupled cross-modal rewards from both deterministic verifiers and a visual language model, AesCode optimizes for spatial planning, aesthetic quality, and correctness through reinforcement learning. The results show that AesCode significantly improves visual quality compared to existing models, achieving performance similar to advanced closed-source models.
+### 7. Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes
+**Authors:** Stavros Nousias, Akis Nousias, Konstantinos Gkrispanis
+**Link:** https://arxiv.org/abs/2610.20585v1
+**Summary:** The paper addresses the challenge of creating surrogate models for steady partial differential equations (PDEs) on unstructured meshes, where traditional methods use a single mixing strategy. The authors introduce a new architecture that utilizes transformer experts focused on different spectral scales, guided by a discrete Hodge-Laplacian to assess high-frequency content. Their method shows significant improvement, reducing relative L2 error by 31% and interior mean squared error by 47% compared to existing techniques.
 
-### 8. Hybrid Reasoning Agents
-**Authors:** Jiaru Zou, Yunzhe Qi, Sirui Chen, Federico Bianchi, Shang Zhu, Pan Lu, Jingrui He, James Zou
-**Link:** https://arxiv.org/abs/2610.18861v1
-**Summary:** The paper addresses the challenge of creating an AI agent that can efficiently reason beyond human language while still communicating through it. The authors introduce Hybrid Reasoning Agents (HybridAgents), which integrate latent reasoning with text-based interaction, using a novel architecture that allows seamless transitions and maintains context. Their approach outperforms existing AI models across various benchmarks, demonstrating significant improvements in performance, inference speed, and cost efficiency.
+### 8. Player-1: Learning to Play from Synthetic Experience
+**Authors:** Mingyu Ouyang, Yiran Wang, Siyuan Hu, Xingyilang Yin, Huiqiang Sun, Guangzhi Wang, Junfu Pu, Cheng Cheng, Honghao Chen, Ying Shan, Mike Zheng Shou, Hwee Tou Ng
+**Link:** https://arxiv.org/abs/2610.20584v1
+**Summary:** The paper addresses the challenge of training agents to control games with rich visuals and diverse mechanics, which traditional methods struggle to fully cover. The authors introduce Player-1, a framework that allows agents to learn from synthetic experiences using a novel action space and specialized environments, leading to substantial improvements in game performance. Notably, their approach resulted in a significant increase in success rates across various games, outperforming existing models and demonstrating enhanced generalization capabilities.
 
-### 9. Exact Topological Compliance: Generating Persistence-Equivalent Graphs
-**Authors:** Mattie Ji, Indradyumna Roy, Vikas Garg
-**Link:** https://arxiv.org/abs/2610.18856v1
-**Summary:** The paper addresses the challenge of generating graphs that exactly match specified topological features, represented as persistence diagrams (PDs). It proposes two methods: a local approach that iteratively builds graphs while ensuring they match the target PD, and a global constraint satisfaction approach that leverages modern solvers for more efficient generation. Both methods successfully achieve exact compliance with target PDs, marking a significant advancement in topology-aware graph generation.
+### 9. Latent Compaction with Test-Time Training
+**Authors:** Yingfa Chen, Xingyu Shen, Chaojun Xiao, Xu Han
+**Link:** https://arxiv.org/abs/2610.20582v1
+**Summary:** The paper addresses the challenge of efficiently compressing key-value (KV) caches used in long-context generation models, which consume excessive memory and attention resources. The authors introduce Latent Compaction, a technique that optimizes a compact, document-specific cache through test-time training without changing the model weights, leading to significant improvements in retrieval accuracy even under aggressive compression. Notably, their method achieves 96.7% accuracy at 32× compression on the RULER benchmark, far outperforming existing approaches.
 
-### 10. Two Clocks: Why Larger Rollout Batches Learn Slower but Fail on Schedule in Reinforcement Learning with Verifiable Rewards
-**Authors:** Yuante Li, Junwei Quan, Kai Qiu, Kate Zhang, Yicheng Tao
-**Link:** https://arxiv.org/abs/2610.18853v1
-**Summary:** The paper investigates why larger rollout batches in reinforcement learning with verifiable rewards (RLVR) lead to slower learning and increased failure risk. The authors introduce a "two-clock" framework to differentiate between the samples that contribute to learning progress and those that lead to performance collapse, showing that larger batches can result in less efficient learning despite maintaining first-order improvements. They validate their findings through experiments and propose a scheduling method for RLVR that involves starting with smaller batches before transitioning to larger ones to optimize performance while minimizing failure.
+### 10. One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness
+**Authors:** Artin Tajdini, Manpreet Kaur, Peng Qi
+**Link:** https://arxiv.org/abs/2610.20576v1
+**Summary:** The paper addresses the issue of large language model (LLM) agents becoming less effective when faced with changes to their training interface, such as altered action names. The authors propose a method called Cross-Interface Policy Regularization (CIPR), which uses a self-supervised approach to train the agent on two equivalent interfaces, encouraging consistency in its actions. The results show that CIPR significantly improves the agent's robustness, recapturing about 10.5% of the accuracy lost due to interface changes while maintaining performance on the original interface.
