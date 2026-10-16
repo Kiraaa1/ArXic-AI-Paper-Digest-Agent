@@ -1,52 +1,52 @@
 ---
-## 2026-10-15
+## 2026-10-16
 
-### 1. Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion
-**Authors:** Huixuan Cheng, Bike Zhang, Shankar Sastry, Koushil Sreenath
-**Link:** https://arxiv.org/abs/2610.20606v1
-**Summary:** The paper addresses the challenge of understanding and modeling the weights of humanoid control networks, which are typically trained using conventional methods. The authors propose a latent diffusion framework combining a linear autoencoder and a Diffusion Transformer to generate effective control networks directly from their weights. They find that the first-layer weights reveal a structural principle related to the robot's kinematic capabilities, indicating a shared knowledge across different training methods, and they successfully generate networks capable of executing complex motions in the real world.
+### 1. LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
+**Authors:** Zhixu Li, Keqian Tang, Litian Gong, Jingyu Yao, Wenqian Zhang, Tianze Xu, Zehao Wang, Yuping Wang, Junge Zhang, Jiachen Li
+**Link:** https://arxiv.org/abs/2610.22372v1
+**Summary:** The paper presents LIBERO-PeRM, a benchmark designed to facilitate personalized robotic manipulation (PeRM), which addresses the challenge of adapting robots to individual preferences in household settings. It explores various questions regarding how robots can learn and generalize user preferences from demonstrations across multiple tasks, while introducing a detailed framework and procedural pipeline for generating training scenarios. Key findings reveal that while current policies struggle with zero-shot personalization, mixed training methods can enhance preference retention and performance, although challenges remain in handling generalization and conflicts among preferences.
 
-### 2. Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance
-**Authors:** Zhefei Gong, Hefeifei Jiang, Zehao Wang, Jiachen Li
-**Link:** https://arxiv.org/abs/2610.20607v1
-**Summary:** The paper addresses the challenges of fine-tuning mobile manipulation robots in real-world settings, where there are complex action spaces and interactions between different robotic modules. The proposed HiRe-MoMa framework uses a Hierarchical Residual Architecture to adjust a base policy while minimizing interference and enhancing sample efficiency through sparse human guidance. The key result shows that this approach significantly improves task performance in just 30 minutes of real-world interaction, making fine-tuning of robots more practical in dynamic environments.
+### 2. Discovering state-of-the-art quantum circuits with large language models
+**Authors:** Andi Gu, Alek H. Kemeny, Susanne F. Yelin, Mikhail D. Lukin
+**Link:** https://arxiv.org/abs/2610.22367v1
+**Summary:** The paper addresses the challenge of optimizing quantum circuits for various computational tasks, which is complicated by the need for reversibility in quantum operations. Researchers developed an evolutionary framework that utilizes large language models to propose and evaluate quantum circuit designs. The study found that this approach significantly improved circuit efficiency in most tasks, including a novel architecture for modular inversion that enhances the viability of a classical algorithm for reversible arithmetic.
 
-### 3. Co-Evolving Acting and Forecasting for Language Agents
-**Authors:** Haofei Yu, Yixing Chen, Yining Zhao, Xuyan Ye, Yuxiang Liu, Zhigang Hua, Yan Xie, Shuang Yang, Jiaxuan You
-**Link:** https://arxiv.org/abs/2610.20597v1
-**Summary:** The paper addresses the challenge of efficiently training language agents in reinforcement learning, which is often hindered by the high costs of long-term predictions. The authors propose a novel method called \name that incorporates multi-step action targets to enhance the learning process, allowing the agent to improve both its acting and forecasting capabilities simultaneously. Key results show that \name outperforms existing methods in terms of overall performance and sample efficiency without adding extra models or complexity during inference.
+### 3. T2-z: Test-Time Optimization of Environment Latents for Robotic World Models
+**Authors:** Chenyuan Zhou, Yining Hong, Huang Huang, Yunfan Jiang, Wenlong Huang, David Held, Vitor Campagnolo Guizilini, Yue Wang, Li Fei-Fei, Jiajun Wu, Leonidas Guibas, Yejin Choi
+**Link:** https://arxiv.org/abs/2610.22364v1
+**Summary:** The paper addresses the challenge of predicting how a robot's actions affect its environment, which often involves unobservable factors. The authors propose T2-Z, a method that optimizes environment-specific latents at test time to improve prediction accuracy without needing prior knowledge of those factors. The results show a significant reduction in prediction error and a notable increase in action success rates across various tasks, demonstrating the effectiveness of the approach in adapting to new environments.
 
-### 4. Your Transformer Is Secretly Elastic
-**Authors:** Walter Simoncini, Dheeraj Varghese, Gertjan J. Burghouts, Cees G. M. Snoek
-**Link:** https://arxiv.org/abs/2610.20588v1
-**Summary:** The paper addresses the inflexibility of current transformer models, which only come in fixed sizes, making them suboptimal for varying computational demands. The authors propose a novel method that allows a single transformer model to adaptively adjust its complexity without needing retraining, by jointly ranking individual components based on their importance. This approach enables efficient pruning of models to achieve significant reductions in size and increases in processing throughput, demonstrating impressive performance on various tasks with minimal accuracy loss.
+### 4. CoDA: Co-Evolution of Data Engines and Action Policies
+**Authors:** Tianjiao Yu, Zhilin Ou, Yifan Shen, Xinzhuo Li, Yuanzhe Liu, Onkar Kishor Susladkar, Fan Wang, Ismini Lourentzou
+**Link:** https://arxiv.org/abs/2610.22362v1
+**Summary:** The paper addresses the challenge of creating useful simulated environments for robot training that specifically help overcome the policy's failures. The authors present CoDA, a framework that allows a simulation engine and action policy to evolve together by sharing a memory of construction challenges and learning progress, which includes a new approach called Text2potential for effective supervision. The results show significant improvements in the robots' ability to succeed in tasks, with out-of-distribution success rising from 5.3% to 27.6% and varying perturbation scenarios showing substantial gains in performance after multiple training rounds.
 
-### 5. Price of Anarchy of First-Price Auctions in Agentic Markets
-**Authors:** Shubhendu Trivedi, Jacob Eisenstein, Alekh Agarwal, Ian Gemp, Michael Kaisers, Adam Fisch
-**Link:** https://arxiv.org/abs/2610.20587v1
-**Summary:** The paper addresses the issue of welfare loss in first-price auctions within decentralized AI markets, where agents bid to claim user prompts. By examining the dynamics of competition among bidders and the nature of their bid values, the authors demonstrate that certain market features can significantly reduce the price of anarchy, leading to improved welfare outcomes. Their results indicate that under certain conditions, the efficiency can approach nearly optimal levels, surpassing the standard limits commonly observed in such auction settings.
+### 5. PathFM: Fast Generative Forecasting of Multivariate Trajectories
+**Authors:** Jiachen Yao, Xiyuan Zhang, Annan Yu, Boran Han, Abdul Fatir Ansari, Shuai Zhang, Michael Bohlke-Schneider, Bernie Wang
+**Link:** https://arxiv.org/abs/2610.22358v1
+**Summary:** The paper introduces PathFM, a novel model for forecasting multivariate time series trajectories, addressing the inadequacy of existing models that only predict individual quantiles without considering dependencies between future paths. By utilizing flow matching and a distilled sampler that shares computation across multiple forecasts, PathFM generates complete future trajectories rapidly, achieving competitive accuracy on standard benchmarks and outperforming existing methods in capturing complex variability. Its design enhances the practicality of generative forecasting for a variety of applications.
 
-### 6. Continuum Attention
-**Authors:** Afshin Khadangi
-**Link:** https://arxiv.org/abs/2610.20586v1
-**Summary:** The paper introduces Continuum Attention (CA), a new attention mechanism for Transformers that replaces the standard discrete key and value lookup with a continuous memory integration approach. This method allows for more efficient attention calculations and achieves improved performance, demonstrating significant reductions in validation negative log likelihood compared to traditional softmax and focal attention methods. The results suggest that continuous integration could be a valuable alternative for attention mechanisms in deep learning models.
+### 6. OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling
+**Authors:** Bowei Liu, Xinchen Zhang, Xuhuan Li, Tianlin Zhang, Kaian Jiang, Jingwei Liu, Congyang Zhao, Yifei Qian, Junhong Liu, Zhiheng Li, Yujiu Yang, Yang Cai, Ling Yang
+**Link:** https://arxiv.org/abs/2610.22355v1
+**Summary:** The paper presents a novel verifier called OmniVerifier-C1 that enhances the assessment of multimodal generative models by breaking down complex prompts into detailed components and providing continuous scores rather than simple True/False judgments. This approach, which utilizes a Decoupled Reinforcement Learning strategy, improves the verifier's generalization abilities across various tasks. The key finding reveals that using pointwise graded evaluations leads to better performance in rule-governed world modeling scenarios compared to traditional binary assessments, underscoring the importance of accurate grading mechanisms in advanced generative systems.
 
-### 7. Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes
-**Authors:** Stavros Nousias, Akis Nousias, Konstantinos Gkrispanis
-**Link:** https://arxiv.org/abs/2610.20585v1
-**Summary:** The paper addresses the challenge of creating surrogate models for steady partial differential equations (PDEs) on unstructured meshes, where traditional methods use a single mixing strategy. The authors introduce a new architecture that utilizes transformer experts focused on different spectral scales, guided by a discrete Hodge-Laplacian to assess high-frequency content. Their method shows significant improvement, reducing relative L2 error by 31% and interior mean squared error by 47% compared to existing techniques.
+### 7. Rethinking Routing Exploration in Modern Mixture-of-Experts
+**Authors:** Bingcong Li, Hao Ma, Michael Muehlebach, Niao He, Yi Ma
+**Link:** https://arxiv.org/abs/2610.22353v1
+**Summary:** The paper addresses the challenge of effective routing in modern Mixture-of-Experts (MoE) models, which combine fine-grained segmentation and shared experts, leading to less exploratory routing. The authors propose MirrorMoE, which optimizes the routing process by adaptively suppressing unnecessary experts to enhance exploration. This approach consistently improves model performance across different scales by better utilizing the combinatorial potential of fine-grained expert segmentation.
 
-### 8. Player-1: Learning to Play from Synthetic Experience
-**Authors:** Mingyu Ouyang, Yiran Wang, Siyuan Hu, Xingyilang Yin, Huiqiang Sun, Guangzhi Wang, Junfu Pu, Cheng Cheng, Honghao Chen, Ying Shan, Mike Zheng Shou, Hwee Tou Ng
-**Link:** https://arxiv.org/abs/2610.20584v1
-**Summary:** The paper addresses the challenge of training agents to control games with rich visuals and diverse mechanics, which traditional methods struggle to fully cover. The authors introduce Player-1, a framework that allows agents to learn from synthetic experiences using a novel action space and specialized environments, leading to substantial improvements in game performance. Notably, their approach resulted in a significant increase in success rates across various games, outperforming existing models and demonstrating enhanced generalization capabilities.
+### 8. FDE-Gym: The Last Mile of AI Delivery
+**Authors:** Dongxu Yang, Hongda Yan, Renxin Wang, Baoli Zhang, Haojia Zuo, Ying Zhao, Youmin Chen, Xiaojian Liao, Congming Gao, Tianyang Jiang, Yixiao Chen, Qing Wang, Zhiguo Yu, Xiaqing Li, Yuhao Zhang, Jiawen Sun, Renzhe Xu, De Mi, Tiancheng Wu, Xianya Fu, Xuanlu Zhao, Bo Feng, Meixuan Ren, Guanming Lin, Ziheng Zhou, Xinhua Wang
+**Link:** https://arxiv.org/abs/2610.22350v1
+**Summary:** The paper addresses the challenge of delivering AI solutions in real-world scenarios where customer requirements are often ambiguous and unstated. It introduces FDE-Gym, a benchmark consisting of 95 delivery tasks from diverse sectors that allows agents to interact with scripted stakeholders within simulated environments. The key finding reveals that while the best-performing model achieved a score of 0.56, it only successfully resolved 14 out of the 95 tasks, highlighting the significant difficulties in uncovering unstated constraints and the complexities of meeting real customer needs effectively.
 
-### 9. Latent Compaction with Test-Time Training
-**Authors:** Yingfa Chen, Xingyu Shen, Chaojun Xiao, Xu Han
-**Link:** https://arxiv.org/abs/2610.20582v1
-**Summary:** The paper addresses the challenge of efficiently compressing key-value (KV) caches used in long-context generation models, which consume excessive memory and attention resources. The authors introduce Latent Compaction, a technique that optimizes a compact, document-specific cache through test-time training without changing the model weights, leading to significant improvements in retrieval accuracy even under aggressive compression. Notably, their method achieves 96.7% accuracy at 32× compression on the RULER benchmark, far outperforming existing approaches.
+### 9. MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
+**Authors:** Shangheng Du, Jinxin Shi, Shuaiyu Zhang, Yiming Wu, Junpeng Zhao, Shiyang Feng, Xin Li, Liang He, Xiangchao Yan, Bo Zhang
+**Link:** https://arxiv.org/abs/2610.22344v1
+**Summary:** The paper presents MLExpert, a 35B Mixture-of-Experts model designed to autonomously enhance machine learning engineering (MLE) processes by optimizing long-horizon experimentation through effective feedback management. By utilizing a novel post-training method and a hierarchical outcome-guided supervision framework, MLExpert significantly improves the efficiency of model-directed experiments, demonstrating a medal rate increase from 37.9% to 72.7% on the MLE-Bench Lite, outperforming existing models. This approach shows promise not only in MLE but also in generalizing optimization capabilities across various tasks.
 
-### 10. One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness
-**Authors:** Artin Tajdini, Manpreet Kaur, Peng Qi
-**Link:** https://arxiv.org/abs/2610.20576v1
-**Summary:** The paper addresses the issue of large language model (LLM) agents becoming less effective when faced with changes to their training interface, such as altered action names. The authors propose a method called Cross-Interface Policy Regularization (CIPR), which uses a self-supervised approach to train the agent on two equivalent interfaces, encouraging consistency in its actions. The results show that CIPR significantly improves the agent's robustness, recapturing about 10.5% of the accuracy lost due to interface changes while maintaining performance on the original interface.
+### 10. GeoState: Learning View-Decoupled Geometry States for 3D World Modeling
+**Authors:** Hongchang Liu, Jian Liu, Yujuan Ding, Liang Peng, Xun Jiang, Fei Ma, Xing Xu, Yi Bin
+**Link:** https://arxiv.org/abs/2610.22343v1
+**Summary:** The paper addresses the challenge of predicting 3D world states without the complications introduced by camera perspective, which can obscure scene dynamics. The authors propose a method called GeoState, which uses a scene tokenizer to create a view-independent representation of the environment, allowing future scene states to be predicted without influence from camera movements. Their approach outperforms existing 3D models and maintains geometric consistency across different views while also demonstrating strong generalization capabilities.
