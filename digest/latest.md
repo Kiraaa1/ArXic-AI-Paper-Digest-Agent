@@ -1,52 +1,52 @@
 ---
-## 2026-10-17
+## 2026-10-18
 
-### 1. 3DCodeVerse: Exploring 3D Worlds as Code
-**Authors:** Yipeng Gao, Ziyao Zeng, Jinfa Huang, Yijiang Li, Haolin Xiong, Wang Qin, Xinlei Yu, Youheng Yao, Jie Zhang, Kun-Yu Lin, Rong Liu, Yinyuan Zhao, Yajie Zhao, Meiqi Guo, Jiebo Luo, Lei Shu, Yunhao Ge, Xinyu Hu, Laurent Itti
-**Link:** https://arxiv.org/abs/2610.22341v1
-**Summary:** The paper presents 3DCodeVerse, a system designed to enable agents to generate and verify editable 3D content efficiently. It includes a large dataset of executable 3D code and a framework that allows for automated refinement and evaluation of 3D programs. Key findings show that fine-tuning existing models on this dataset dramatically enhances their performance in 3D coding tasks, achieving a notable success rate in human evaluations compared to a competitor.
+### 1. Learning Self-Orchestration in Decentralized Agent Swarms
+**Authors:** Guowei Xu, Zhenting Qi, Amani Kiruga, Himabindu Lakkaraju, Yilun Du
+**Link:** https://arxiv.org/abs/2610.22322v1
+**Summary:** The paper addresses the challenge of coordination in decentralized agent swarms by proposing a market-based post-training (MPT) framework that allows agents to learn both their individual actions and how to self-organize based on bids they submit. This approach enables agents to adapt their capabilities and participation patterns without centralized control. Key results demonstrate that MPT outperforms traditional training methods, enhances adaptability to new tasks, and improves overall performance and robustness in larger populations of agents.
 
-### 2. Dexterity from Supervised Play
-**Authors:** Botao He, Yiming Dou, Yiannis Aloimonos, Jitendra Malik, Akash Sharma, Ruoshi Liu
-**Link:** https://arxiv.org/abs/2610.22340v1
-**Summary:** The paper addresses the challenge of enabling robots to learn dexterous manipulation by autonomously accumulating the necessary experience. The authors propose a framework called DSP, which leverages behavior cloning from short sessions of human play to generate an initial policy, subsequently allowing the robot to collect extensive interaction data for training a world model. The key contribution is that this method significantly improves success rates in tasks like object manipulation while requiring far less data than traditional reinforcement learning approaches.
+### 2. AVC-Reward: Event-Centric Audio-Video Consistency Evaluation
+**Authors:** Yuruo Wu, Kaihang Pan, Kai Shen, Jiacheng Li, Shuyuan Tu, Jisheng Dang, Li Tuoyu, Juncheng Li, Siliang Tang
+**Link:** https://arxiv.org/abs/2610.22321v1
+**Summary:** The paper addresses the inadequacy of current evaluation metrics for joint audio-video generation models, which fail to account for the complexity of modern audio-visual scenes. To tackle this, the authors propose AVC-Reward, an event-centric evaluation framework that independently assesses audio and visual events and their relationships. Key findings show that AVC-Reward aligns better with human judgments than existing methods and enhances the audio-video consistency of generated content when applied as a reinforcement-learning signal.
 
-### 3. Lean Graph Search for Formal Theorem Proving
-**Authors:** Yihan Xu, Jia-Chen Gu, Junyi Zhang, Di Wu, Haikang Deng, Po-Nien Kung, Kai-Wei Chang, Amit Sahai, Wei Wang, Nanyun Peng
-**Link:** https://arxiv.org/abs/2610.22339v1
-**Summary:** The paper addresses the challenge of retrieving relevant lemmas for formal theorem proving by leveraging multi-hop dependencies among mathematical declarations, instead of relying solely on direct lexical matches. The authors introduce LeanGraphSearch, a graph-based retrieval method for Lean 4 that effectively identifies supporting lemmas through a graph of forward dependencies, improving recall and coverage in mathematical proofs. Key results demonstrate that this approach enhances theorem proving efficiency, achieving up to a 40% improvement in pass rates compared to conventional methods.
+### 3. A team of Gemini 4 Argon agents beats Minecraft
+**Authors:** Maxence Faldor, Satinder Singh, Roberta Raileanu
+**Link:** https://arxiv.org/abs/2610.22319v1
+**Summary:** The researchers developed a team of four AI agents using the Gemini 4 Argon framework to collaboratively play Minecraft with the objective of defeating the Ender Dragon. These agents autonomously programmed themselves using the Mineflayer library and communicated in-game to devise strategies, ultimately overcoming the challenge by writing nearly 2,800 programs over 27 hours, marking the first fully autonomous completion of the game by AI without human intervention. This achievement highlights the potential of multi-agent coordination and long-term planning in complex software tasks.
 
-### 4. Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty
-**Authors:** Chengze Xie, Xuan Wang, Ying Ding, Hairong Wang, Yan Li
-**Link:** https://arxiv.org/abs/2610.22336v1
-**Summary:** The paper addresses the challenge of developing adaptive treatment policies for patients that remain effective despite errors in biomarker measurements and changes in disease progression. The authors propose a robust reinforcement learning framework that models patients as hidden contexts, allowing for improved generalization and resilience. Their approach, applied to metastatic prostate cancer treatment, demonstrates significantly better performance and reliability compared to existing methods, showcasing the potential of robust RL for creating trustworthy adaptive therapy strategies.
+### 4. Learning to Steer LLM Agents and Multi-Agent Systems
+**Authors:** Leyang Shen, Yaxin Gong, Yang Zhang, Chenxiao Fan, Jiakai Wang, Dong Wang, Yang Liu, Fuli Feng, Chun Kai Ling, Tat-Seng Chua
+**Link:** https://arxiv.org/abs/2610.22316v1
+**Summary:** This paper addresses the issue of goal drift in large language model (LLM)-based agents and multi-agent systems, where these systems may stray from their intended objectives during complex tasks. To mitigate this, the authors introduce a steering agent that monitors and adjusts the execution process, using a dual-path reinforcement learning approach to determine when and how to intervene effectively. The key finding is that this steering agent significantly enhances the performance and efficiency of both single and multi-agent systems, demonstrating the ability to generalize across different tasks and settings without needing additional training.
 
-### 5. Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?
-**Authors:** Trizal Garg, Sibayan Mitra, Arya Karanjkar, Advait Singh, Jagat Sesh Challa, Yash Sinha, Siddharth Mehrotra, Dhruv Kumar, Pratham Yogish Maliya
-**Link:** https://arxiv.org/abs/2610.22333v1
-**Summary:** The paper investigates whether large language models (LLMs) display evaluation awareness—altering their behavior when they know they are being tested—specifically in Indic languages. The researchers tested four instruction-tuned models across five Indic languages and English, finding that models were significantly more likely to refuse harmful requests when informed they were being monitored. Notably, the refusal rate for harmful requests increased by 14.4 percentage points in Indic languages, indicating that safety evaluations may not accurately reflect real usage behaviors in these languages.
+### 5. MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support
+**Authors:** John Mendonça, Daniel Tschernutter, José Pombal, Areti Vassilopoulos, Catarina Botelho, Ignacio Sarasua, Maya D'Eon, Nuno Guerreiro, Ricardo Rei
+**Link:** https://arxiv.org/abs/2610.22314v1
+**Summary:** The paper addresses the challenge of effectively evaluating AI chatbots used for mental health support, which current benchmarks inadequately simulate. It introduces MindEval2, a framework that includes new, interpretable evaluation rubrics developed with psychologists and enhances patient simulations with an LLM, allowing for more realistic interactions. The evaluation of multiple models reveals that, while recent advancements have improved surface-level quality, significant issues remain in consistent guidance calibration across all tested models.
 
-### 6. KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents
-**Authors:** Siqi Chen, Zhengxi Lu, Yuchen Yan, Xingyu Wu, Qipeng Chen, Xin Zhang, Aiting Liu, Chao Deng, Jie Liu, Jin Ma, Weiming Lu, Jun Xiao, Yongliang Shen
-**Link:** https://arxiv.org/abs/2610.22331v1
-**Summary:** The paper addresses the challenge of assigning credit to individual decisions in deep search agents that rely on long-term interactions to complete knowledge-intensive tasks. It introduces KnowGPO, a reinforcement learning framework that evaluates trajectories based on the knowledge they acquire rather than just surface observations, allowing for more reliable credit assignment. The results show that KnowGPO significantly outperforms existing methods and achieves competitive performance with larger models on various benchmarks.
+### 6. Grid-Bench: Can LLMs Predict How Discrete Worlds Change?
+**Authors:** Zixiang Xu, Zirui Song, Wanrong Zheng, Chiyu Zhang, Yue Huang, Yuyang Peng, Kexin Zhang, Jinkun Chen, Xiuying Chen, Xiangliang Zhang, Yan Liu, Laurent Itti, Frank Shyu, Xiaoqiang Luo, Sandeep Pandey, Xi Liu, Luke Simon, Xiyang Hu, Yue Zhao
+**Link:** https://arxiv.org/abs/2610.22312v1
+**Summary:** The paper introduces Grid-Bench, a benchmark designed to evaluate how well large language models (LLMs) can predict the final states of grids after a sequence of spatial transformations. By testing six LLMs on their ability to predict these transformations across varying histories and conditions, the study finds that models struggle with accuracy as the sequence length increases, revealing significant variability in their performance on similar tasks. This benchmarking tool allows for a detailed comparison of LLM capabilities in handling complex, multi-step spatial reasoning.
 
-### 7. Designing Transformers for Continuous Diffusion Language Models
-**Authors:** Weijian Luo, Yujian Chen, Hao Jiang, Guang Cheng, Tianyang Hu
-**Link:** https://arxiv.org/abs/2610.22330v1
-**Summary:** The paper addresses the limitations of existing transformer architectures for continuous diffusion language models (CDLMs) used in language generation. It introduces the Language Diffusion Transformer (LangDiT), which incorporates novel design elements to optimize performance. The key contribution is a significant reduction in generation perplexity, surpassing previous state-of-the-art models, highlighting the importance of architectural design in enhancing CDLM capabilities.
+### 7. Knowledge That Is Linear Before Fine-Tuning Generalizes After It
+**Authors:** Faridoun Mehri, Hinrich Schütze
+**Link:** https://arxiv.org/abs/2610.22300v1
+**Summary:** The paper addresses the problem of why certain facts recalled by language models better support learning new tasks than others. The authors differentiate between "active" facts, which facilitate generalization, and "inert" facts, which do not, by experimenting with relabeled relations and testing the models' ability to generalize to new, similar tasks. They find that the ease of reading the underlying structure of the original relation in the model's pretrained representations strongly predicts the model's generalization success after fine-tuning, highlighting the importance of linearity in the relationship between facts rather than mere recall ability.
 
-### 8. ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning
-**Authors:** Sara Dorfman, Nir Goren, Gal Barak, Daniel Cohen-Or, Or Patashnik
-**Link:** https://arxiv.org/abs/2610.22328v1
-**Summary:** The paper tackles the problem of image editing quality deteriorating over multiple turns due to cumulative distribution shifts. To address this, the authors propose a training method that uses self-generated outputs for editing while leveraging a teacher model to maintain stability and reliability, known as asymmetric conditioning. Their approach significantly reduces quality loss in multi-turn edits while ensuring adherence to the original editing instructions.
+### 8. AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions
+**Authors:** Alexey A. Bokov, Ivan I. Panin, Nikolay B. Nechaev, Mikhail Yu. Valkov, Valeria Yu. Chernina, Natalia Gombolevskaya, Ayyaz Hussain, Vladimir M. Agafonov, Victor A. Gombolevskiy, Aleksandr V. Nesterov, Iaroslav R. Bespalov, Ivan V. Oseledets, Dmitry V. Dylov
+**Link:** https://arxiv.org/abs/2610.22298v1
+**Summary:** The paper addresses the challenge of obtaining clinically sound second opinions from large language models (LLMs) for complex medical cases. The authors created a benchmark using real medical cases to assess various LLMs in generating role-specific and comprehensive clinical reports. They found that structured reports generally performed better in terms of quality and coherence, with the model GPT-5.6-Sol achieving the highest scores and requiring the fewest rounds of review, highlighting the effectiveness of structured and multidisciplinary approaches in medical decision-making.
 
-### 9. Twice Upon a Time: Complementary Representations for Time-Series Reasoning
-**Authors:** Hedi Zisling, Liran Nochumsohn, Ilan Naiman, Mihir Parmar, Omri Azencot
-**Link:** https://arxiv.org/abs/2610.22327v1
-**Summary:** The paper addresses the challenge of effectively representing time-series data for language-based reasoning and prediction tasks. The authors propose a dual-view model that uses complementary representations: one that maintains absolute measurements through line plots and another that normalizes data to highlight temporal structure. This approach significantly improves performance on various benchmarks, achieving a TSRBench accuracy of 53.2%, demonstrating the effectiveness of combining these different representations in time-series language models.
+### 9. Private Retrieval Augmented Generation via Random Projection
+**Authors:** Dixi Yao, Tahseen Rabbani, Tian Li
+**Link:** https://arxiv.org/abs/2610.22297v1
+**Summary:** The paper addresses the privacy risks associated with Retrieval-Augmented Generation (RAG) systems, which can unintentionally leak sensitive information from their data sources. The authors propose a technique that uses random projection to maintain semantic similarity in queries and retrieved items while protecting against data extraction attacks. Their results demonstrate that this method not only outperforms previous approaches that use differential privacy but also provides a practical and effective solution for ensuring privacy in RAG systems.
 
-### 10. Training Reasoning Models to Generate Diverse Scientific Ideas
-**Authors:** Manya Wadhwa, Pranav Narayanan Venkit, Hiroaki Hayashi, Yu Li, Tuhin Chakrabarty, Chien-Sheng Wu
-**Link:** https://arxiv.org/abs/2610.22324v1
-**Summary:** This paper addresses the challenge of generating diverse and high-quality scientific ideas using Large Language Models (LLMs). The authors propose a novel training approach that employs a set-level reinforcement learning objective to generate multiple distinct and structured idea cards grounded in source documents, while penalizing redundancy. Their trained model demonstrates superior creative utility compared to existing models, achieving a balance between idea diversity and quality without sacrificing the feasibility of executing the generated ideas.
+### 10. Backward Compatibility in Zero-Bit Neural Audio Watermarking
+**Authors:** Admir Krnić, Kosta Pavlović, Petar Nedić, Željko Bolević, Slavko Kovačević, Igor Djurović
+**Link:** https://arxiv.org/abs/2610.22296v1
+**Summary:** The paper addresses the issue of maintaining backward compatibility in neural audio watermarking systems, where updates to embedders and detectors can disrupt detection of previously embedded content. The authors propose a training framework that connects new detectors with legacy embedders while introducing a technique called Angular Diversity Loss to prevent performance degradation against older models. This approach successfully restores detection accuracy without compromising audio quality or increasing false positives.
