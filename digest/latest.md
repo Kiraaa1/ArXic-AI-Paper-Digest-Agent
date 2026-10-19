@@ -1,52 +1,52 @@
 ---
-## 2026-10-18
+## 2026-10-19
 
-### 1. Learning Self-Orchestration in Decentralized Agent Swarms
-**Authors:** Guowei Xu, Zhenting Qi, Amani Kiruga, Himabindu Lakkaraju, Yilun Du
-**Link:** https://arxiv.org/abs/2610.22322v1
-**Summary:** The paper addresses the challenge of coordination in decentralized agent swarms by proposing a market-based post-training (MPT) framework that allows agents to learn both their individual actions and how to self-organize based on bids they submit. This approach enables agents to adapt their capabilities and participation patterns without centralized control. Key results demonstrate that MPT outperforms traditional training methods, enhances adaptability to new tasks, and improves overall performance and robustness in larger populations of agents.
+### 1. Rethinking the design space of Vanilla Pixel Diffusion Transformers
+**Authors:** Soumik Mukhopadhyay, Long Mai, Abhinav Shrivastava, Aniruddha Mahapatra
+**Link:** https://arxiv.org/abs/2610.23854v1
+**Summary:** The paper addresses the limitations of vanilla pixel-space diffusion models in generating high-quality images by exploring different prediction approaches. The authors introduce MFlow, a new adaptive parameterization method that learns to interpolate between two prediction strategies—image prediction and velocity prediction—depending on the data and model capacity. The key finding is that MFlow enhances generative performance across various datasets, and they also propose ConvRefiner, a lightweight module that improves the quality of generated images by restoring high-frequency details while maintaining model efficiency.
 
-### 2. AVC-Reward: Event-Centric Audio-Video Consistency Evaluation
-**Authors:** Yuruo Wu, Kaihang Pan, Kai Shen, Jiacheng Li, Shuyuan Tu, Jisheng Dang, Li Tuoyu, Juncheng Li, Siliang Tang
-**Link:** https://arxiv.org/abs/2610.22321v1
-**Summary:** The paper addresses the inadequacy of current evaluation metrics for joint audio-video generation models, which fail to account for the complexity of modern audio-visual scenes. To tackle this, the authors propose AVC-Reward, an event-centric evaluation framework that independently assesses audio and visual events and their relationships. Key findings show that AVC-Reward aligns better with human judgments than existing methods and enhances the audio-video consistency of generated content when applied as a reinforcement-learning signal.
+### 2. Behavioral Couplings: From Formation to Behavioral Emergence in Language Models
+**Authors:** Dongyoon Hahm, Woogyeol Jin, Dennis Wei, Yi Zhou, Nathalie Baracaldo, Kimin Lee
+**Link:** https://arxiv.org/abs/2610.23847v1
+**Summary:** This paper addresses the issue of unintended behaviors that can emerge in large language models (LLMs) after fine-tuning, a phenomenon known as behavioral coupling. The authors investigate how training on documents containing multiple behaviors can lead to the emergence of unexpected behaviors when the model is subsequently fine-tuned to exhibit just one of those behaviors. They find that these couplings can compose, making it challenging to trace the origins of misbehavior, thereby highlighting the need for more comprehensive evaluation methods beyond observing a model's current outputs.
 
-### 3. A team of Gemini 4 Argon agents beats Minecraft
-**Authors:** Maxence Faldor, Satinder Singh, Roberta Raileanu
-**Link:** https://arxiv.org/abs/2610.22319v1
-**Summary:** The researchers developed a team of four AI agents using the Gemini 4 Argon framework to collaboratively play Minecraft with the objective of defeating the Ender Dragon. These agents autonomously programmed themselves using the Mineflayer library and communicated in-game to devise strategies, ultimately overcoming the challenge by writing nearly 2,800 programs over 27 hours, marking the first fully autonomous completion of the game by AI without human intervention. This achievement highlights the potential of multi-agent coordination and long-term planning in complex software tasks.
+### 3. AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery
+**Authors:** Shicheng Liu, Krista Opsahl-Ong, Andrew Drozdov, Julian Killingback, Arnav Singhvi, Ronak Pradeep, Michael Bendersky, James C. Dickerson, Monica S. Lam
+**Link:** https://arxiv.org/abs/2610.23845v1
+**Summary:** The paper addresses the challenge of ensuring reproducibility and analytical robustness in scientific research, which often requires significant manual effort. The authors developed SEER-Repro, a benchmark based on a cancer registry, and created an AI agent that successfully reproduces research claims while also testing their robustness through an analysis pipeline. Key results indicate that this approach allows for a high reproduction rate of claims and identifies critical analytical choices that may influence conclusions, facilitating more efficient scientific review.
 
-### 4. Learning to Steer LLM Agents and Multi-Agent Systems
-**Authors:** Leyang Shen, Yaxin Gong, Yang Zhang, Chenxiao Fan, Jiakai Wang, Dong Wang, Yang Liu, Fuli Feng, Chun Kai Ling, Tat-Seng Chua
-**Link:** https://arxiv.org/abs/2610.22316v1
-**Summary:** This paper addresses the issue of goal drift in large language model (LLM)-based agents and multi-agent systems, where these systems may stray from their intended objectives during complex tasks. To mitigate this, the authors introduce a steering agent that monitors and adjusts the execution process, using a dual-path reinforcement learning approach to determine when and how to intervene effectively. The key finding is that this steering agent significantly enhances the performance and efficiency of both single and multi-agent systems, demonstrating the ability to generalize across different tasks and settings without needing additional training.
+### 4. DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses
+**Authors:** Jianyuan Zhong, Chenwei Wu, Zhaochen Yu, Xixian Jiang, Xuewei Li, Hao Xiao, Xilin Dai, Junyang Wang, Jiaru Zou, Zhiqing Cui, Boyuan Zheng, Jing Xiong, Zhen Zhang, Qiang Gao, Michael Morley, Luis Nakayama, Qiang Xu, Liyue Shen, Tao Gui, Leo Anthony Celi, James Zou, Zhenfei Yin, Yingcheng Wu, Ling Yang
+**Link:** https://arxiv.org/abs/2610.23839v1
+**Summary:** The paper addresses the challenge of developing valuable research hypotheses that can lead to successful scientific investigations. The authors propose the DiscoveryRSI framework, which employs a multi-agent evolutionary search method to create and improve hypothesis trees while learning from past research processes. The key contribution is the demonstrated improvement in hypothesis quality, with a significant increase in evaluative metrics after self-improvement rounds, surpassing other existing models in both expert assessments and alignment with newly published research.
 
-### 5. MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support
-**Authors:** John Mendonça, Daniel Tschernutter, José Pombal, Areti Vassilopoulos, Catarina Botelho, Ignacio Sarasua, Maya D'Eon, Nuno Guerreiro, Ricardo Rei
-**Link:** https://arxiv.org/abs/2610.22314v1
-**Summary:** The paper addresses the challenge of effectively evaluating AI chatbots used for mental health support, which current benchmarks inadequately simulate. It introduces MindEval2, a framework that includes new, interpretable evaluation rubrics developed with psychologists and enhances patient simulations with an LLM, allowing for more realistic interactions. The evaluation of multiple models reveals that, while recent advancements have improved surface-level quality, significant issues remain in consistent guidance calibration across all tested models.
+### 5. Task-aligned spectral inductive biases in parameterized quantum circuits
+**Authors:** Felix Frohnert, Adrián Pérez-Salinas, Sebastian Lange, Marcus Schwaebisch, Evert van Nieuwenburg, Vedran Dunjko
+**Link:** https://arxiv.org/abs/2610.23834v1
+**Summary:** This paper addresses the challenge of designing parameterized quantum circuits that effectively align with specific tasks in quantum machine learning. The authors introduce a method using data reuploading quantum circuits that incorporate a fixed, task-specific spectral query to probe variable input signals. Their findings demonstrate that incorporating such queries enhances learning performance in classification tasks, especially when data is limited, compared to circuits without aligned queries.
 
-### 6. Grid-Bench: Can LLMs Predict How Discrete Worlds Change?
-**Authors:** Zixiang Xu, Zirui Song, Wanrong Zheng, Chiyu Zhang, Yue Huang, Yuyang Peng, Kexin Zhang, Jinkun Chen, Xiuying Chen, Xiangliang Zhang, Yan Liu, Laurent Itti, Frank Shyu, Xiaoqiang Luo, Sandeep Pandey, Xi Liu, Luke Simon, Xiyang Hu, Yue Zhao
-**Link:** https://arxiv.org/abs/2610.22312v1
-**Summary:** The paper introduces Grid-Bench, a benchmark designed to evaluate how well large language models (LLMs) can predict the final states of grids after a sequence of spatial transformations. By testing six LLMs on their ability to predict these transformations across varying histories and conditions, the study finds that models struggle with accuracy as the sequence length increases, revealing significant variability in their performance on similar tasks. This benchmarking tool allows for a detailed comparison of LLM capabilities in handling complex, multi-step spatial reasoning.
+### 6. Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation
+**Authors:** Shaoang Li, Yanhang Shi, Yufei Li, Mingfu Liang, Frank Shyu, Sandeep Pandey, Luke Simon, Xi Liu, Jian Li
+**Link:** https://arxiv.org/abs/2610.23831v1
+**Summary:** The paper addresses the issue of ineffective learning when students receive only answer supervision without accompanying reasoning traces. It proposes ReDiST, a framework that constructs more effective reasoning traces by revising student drafts based on evidence and providing tailored guidance. The key finding is that ReDiST significantly enhances both direct and transfer learning performance compared to traditional methods that rely solely on provided answers or original traces.
 
-### 7. Knowledge That Is Linear Before Fine-Tuning Generalizes After It
-**Authors:** Faridoun Mehri, Hinrich Schütze
-**Link:** https://arxiv.org/abs/2610.22300v1
-**Summary:** The paper addresses the problem of why certain facts recalled by language models better support learning new tasks than others. The authors differentiate between "active" facts, which facilitate generalization, and "inert" facts, which do not, by experimenting with relabeled relations and testing the models' ability to generalize to new, similar tasks. They find that the ease of reading the underlying structure of the original relation in the model's pretrained representations strongly predicts the model's generalization success after fine-tuning, highlighting the importance of linearity in the relationship between facts rather than mere recall ability.
+### 7. Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation
+**Authors:** Rama AlHamidi, Rasul Khanbayov, Erchin Serpedin, Hasan Kurban
+**Link:** https://arxiv.org/abs/2610.23830v1
+**Summary:** The paper addresses the challenge of how to allocate preventive help effectively over time, considering the trade-off between revealing risk through observation and potentially losing intervention opportunities as higher-risk individuals leave. The authors develop a model that shows how waiting for additional signals can provide two new moments of information regarding latent risks for every extra observation period, though this does not always improve allocation welfare. Their findings indicate that while longer observation can reduce timing ambiguities, the optimal intervention time might have already occurred, and certain strategies enhance decision-making without guaranteeing better outcomes.
 
-### 8. AI Consilium: a Benchmark of LLM Clinical Multidisciplinary Second Opinions
-**Authors:** Alexey A. Bokov, Ivan I. Panin, Nikolay B. Nechaev, Mikhail Yu. Valkov, Valeria Yu. Chernina, Natalia Gombolevskaya, Ayyaz Hussain, Vladimir M. Agafonov, Victor A. Gombolevskiy, Aleksandr V. Nesterov, Iaroslav R. Bespalov, Ivan V. Oseledets, Dmitry V. Dylov
-**Link:** https://arxiv.org/abs/2610.22298v1
-**Summary:** The paper addresses the challenge of obtaining clinically sound second opinions from large language models (LLMs) for complex medical cases. The authors created a benchmark using real medical cases to assess various LLMs in generating role-specific and comprehensive clinical reports. They found that structured reports generally performed better in terms of quality and coherence, with the model GPT-5.6-Sol achieving the highest scores and requiring the fewest rounds of review, highlighting the effectiveness of structured and multidisciplinary approaches in medical decision-making.
+### 8. Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?
+**Authors:** Anis Bekri, Amar Abane, Van Sy Mai, Abdella Battou, Saddek Bensalem
+**Link:** https://arxiv.org/abs/2610.23827v1
+**Summary:** This paper addresses the challenge of accurately estimating the quality of entanglement in quantum networks, which is crucial for making control-plane decisions like routing and scheduling. The authors propose a framework that evaluates three methods for this estimation—computing analytically, simulating, or using learned models—and find that while analytical methods can work in simpler scenarios, simulations are necessary in more complex situations influenced by stochastic factors. The key contribution is the demonstration that learned surrogates can effectively approximate simulation results at a fraction of the computational cost, paving the way for more efficient online control in quantum networks.
 
-### 9. Private Retrieval Augmented Generation via Random Projection
-**Authors:** Dixi Yao, Tahseen Rabbani, Tian Li
-**Link:** https://arxiv.org/abs/2610.22297v1
-**Summary:** The paper addresses the privacy risks associated with Retrieval-Augmented Generation (RAG) systems, which can unintentionally leak sensitive information from their data sources. The authors propose a technique that uses random projection to maintain semantic similarity in queries and retrieved items while protecting against data extraction attacks. Their results demonstrate that this method not only outperforms previous approaches that use differential privacy but also provides a practical and effective solution for ensuring privacy in RAG systems.
+### 9. Self-Building Labs
+**Authors:** Jiaru Bai, Yuchi Zhao, Han Hao, Miroslav Bogdanovic, Yang Cao, Varinia Bernales, Alán Aspuru-Guzik
+**Link:** https://arxiv.org/abs/2610.23826v1
+**Summary:** The paper addresses the challenge of flexibility in self-driving laboratories, which often require extensive manual engineering to adapt to new experiments. The authors introduce a self-building laboratory (SBL) that autonomously designs and configures its own experimental setup based on high-level scientific goals, using its existing resources. Their work demonstrates SBL's capability to perform complex experiments, such as quantum-dot synthesis, significantly simplifying the automation process and allowing researchers to focus on specifying objectives rather than technical details.
 
-### 10. Backward Compatibility in Zero-Bit Neural Audio Watermarking
-**Authors:** Admir Krnić, Kosta Pavlović, Petar Nedić, Željko Bolević, Slavko Kovačević, Igor Djurović
-**Link:** https://arxiv.org/abs/2610.22296v1
-**Summary:** The paper addresses the issue of maintaining backward compatibility in neural audio watermarking systems, where updates to embedders and detectors can disrupt detection of previously embedded content. The authors propose a training framework that connects new detectors with legacy embedders while introducing a technique called Angular Diversity Loss to prevent performance degradation against older models. This approach successfully restores detection accuracy without compromising audio quality or increasing false positives.
+### 10. ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference
+**Authors:** Kai Lehman, Jameson Dong, Carolina Cuesta-Lazaro, Niall Jeffrey, Benjamin D. Wandelt, Francisco Villaescusa-Navarro, Sven Krippendorf, Jochen Weller
+**Link:** https://arxiv.org/abs/2610.23825v1
+**Summary:** The paper addresses the challenging problem of accurately computing the evidence of data-generating models in Bayesian inference, which is crucial for model assessment and parameter inference. The authors introduce a novel approach called ENFR (Evidence Networks with Flow-Matched References), which learns Bayes factors to recover absolute evidence efficiently. Their results show that ENFR outperforms existing methods in evidence estimation across various scientific applications, providing a robust tool for evaluating model fidelity.
