@@ -1,52 +1,52 @@
 ---
-## 2026-10-21
+## 2026-10-22
 
-### 1. Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs
-**Authors:** Noam Rotstein, Yoad Tewel, Chen Tessler, Haggai Maron, Gal Chechik, Or Litany, Yoni Kasten, Yuval Atzmon
-**Link:** https://arxiv.org/abs/2610.28632v1
-**Summary:** The paper addresses the challenge of converting realistic video motions into replayable 3D animations for various skeleton rigs, which traditional video models struggle to do. The authors propose a model that separates 3D motion generation from video creation, allowing them to first learn motion patterns and then integrate them with a pretrained video model using cross-attention layers. The key contribution is the successful co-generation of video and 3D motion for arbitrary rigs, enabling accurate animation and scene integration while allowing flexible control and editing of the generated content.
+### 1. LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data
+**Authors:** Zhennan Wan, Jianfei Chen
+**Link:** https://arxiv.org/abs/2610.30132v1
+**Summary:** The paper addresses the challenge of improving long-context reasoning in large language models (LLMs) without relying on costly external training data. The authors introduce a method called LongZero, which enables LLMs to generate their own long-context reasoning tasks and evidence without any external input. Experimental results demonstrate that LongZero significantly outperforms existing reinforcement learning approaches, showcasing its effectiveness in enhancing long-context reasoning capabilities.
 
-### 2. GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery
-**Authors:** Yazhuo Liu, Kunqing Ding, Xiaoguo Gong, Zifeng Wang, Yichen Yang, Yifeng Che, Wen Chen, Josh Kacher, Olivier Pierron, Shigenobu Ogata, Ting Zhu
-**Link:** https://arxiv.org/abs/2610.28629v1
-**Summary:** The paper introduces GBClaw, an AI framework designed to automate the investigation of grain boundaries in polycrystalline materials, which are often complex and difficult to study. By integrating large language models with specialized tools and adaptive workflows, GBClaw facilitates both simulations and detailed mechanistic analyses. The study applied this framework to 14 asymmetric tilt grain boundaries in nickel, revealing significant insights into interfacial defects and deformation modes, particularly highlighting the importance of defect hierarchies on shear strength.
+### 2. Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation
+**Authors:** Zhanshuo Cao, Jiakai Tang, Yuqi Zhou, Sunhao Dai, Jun Xu
+**Link:** https://arxiv.org/abs/2610.30128v1
+**Summary:** This paper addresses the inefficiency of existing sequential recommendation systems that apply a uniform computation depth to all user interaction items, regardless of their significance. The authors propose LoopRec, a new approach that adaptively adjusts the depth of computation for each item based on its individual needs, allowing items that require less processing to exit early while more complex items receive deeper analysis. The key result shows that LoopRec consistently outperforms traditional fixed-depth methods across various benchmarks, demonstrating its effectiveness in optimizing computation and improving recommendation accuracy.
 
-### 3. Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking
-**Authors:** Yuxuan Kuang, Jiashun Wang, Yixuan Sun, Yufei Ye, Sungjae Park, Umar Iqbal, Katerina Fragkiadaki, Shubham Tulsiani
-**Link:** https://arxiv.org/abs/2610.28628v1
-**Summary:** The paper addresses the challenge of teaching robotic hands to perform versatile and reliable dexterous skills, a task complicated by the trade-offs in existing learning methods. The authors introduce AdaDex, a goal-conditioned reinforcement learning framework that combines human motion data with generalization techniques to train adaptable skills from brief motion capture clips. Their approach enables the resulting robotic policies to execute a range of dexterous tasks effectively, outperforming existing methods in terms of adaptability and functionality across different environments.
+### 3. PhysiCalWorld: In-Context Physics Calibration for World Models
+**Authors:** Yunhao Luo, Wentao He, Yinpei Dai, Hyelin Nam, Hongze Fu, Joyce Chai, Nima Fazeli, Jeong Joon Park
+**Link:** https://arxiv.org/abs/2610.30125v1
+**Summary:** The paper presents PhysiCalWorld, a method designed to enhance world models by calibrating them to the specific physics dynamics of a scene, addressing the issue of poor predictions in novel environments due to a lack of accurate physics understanding. Instead of requiring fine-tuning or detailed physics modeling, PhysiCalWorld uses a compact physics descriptor token, derived from exploratory interactions in the test scene, to improve predictive accuracy without significant computational burden. The results demonstrate that this approach notably increases prediction accuracy and planning success across varied environments while maintaining a structured latent space for better generalization.
 
-### 4. UniWALM: Unified World Action Language Model for Embodied Robot Control
-**Authors:** Rahul Sajnani, Diego Romeres, Mingyuan Zhang, Kai Gao, Carl Qi, Baichuan Huang, Srinath Sridhar, Dylan Randle, Lillian J. Ratliff, Jose Barreiros, Manikantan Nambi, Jeroen Vanbaar
-**Link:** https://arxiv.org/abs/2610.28626v1
-**Summary:** The paper presents UniWALM, a unified model that integrates video, actions, and language for controlling robots, aiming to enhance manipulation tasks by allowing the model to generate and utilize language as a form of memory during action execution. The key innovation lies in its mixture-of-transformers architecture, which processes all three modalities simultaneously without needing separate planning phases, leading to improved performance in various tasks, including a significant increase in success rates in a real-world item-finding challenge from 11.1% to 61.1%.
+### 4. A Quasipolynomial Algorithm for $\ell_\infty$ Contractions
+**Authors:** Ashkan Soleymani, Gabriele Farina
+**Link:** https://arxiv.org/abs/2610.30122v1
+**Summary:** This paper presents a quasipolynomial-time algorithm for finding an approximate fixed point in high-dimensional nonexpansive mappings under the $\ell_\infty$ norm. The method employs a boosting technique to reduce the search space effectively. A significant outcome of this work is the implication that simple stochastic games can now be solved in quasipolynomial time, showcasing the practical relevance of this approach.
 
-### 5. Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets
-**Authors:** Jad Yammine, Malek Wahidi, Abrar Anwar, Yan Chang, Mihir Acharya, Anthony Rizk
-**Link:** https://arxiv.org/abs/2610.28624v1
-**Summary:** The paper addresses the high computational, communication, and storage costs associated with maintaining reusable semantic memory in warehouse robot fleets that monitor operational conditions. It introduces IndustrialReMEmbR, a spatiotemporal memory system that optimizes this process by generating scene descriptions only when needed and offloading computational tasks between the robots and a server. The key outcome is a more efficient memory retrieval system that maintains functionality while reducing the need for raw data transfer and processing, enabling GDPR compliance by abstracting personally identifiable information.
+### 5. Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence
+**Authors:** Imon Banerjee, Pierre Alquier
+**Link:** https://arxiv.org/abs/2610.30119v1
+**Summary:** The paper addresses the challenge of establishing generalization error bounds in machine learning for classification tasks using non-independent, regenerative data. The authors develop a self-normalized Bernstein inequality tailored for regenerative processes, providing empirical bounds that account for cycle lengths while minimizing key error terms. A significant contribution is demonstrating that these bounds are minimax-optimal and can inform the design of agnostic classifiers with oracle-like performance guarantees.
 
-### 6. Planning under Noise with Neural Operators
-**Authors:** Michael Chen, Hong Chul Nam, Xi Deng, Anima Anandkumar
-**Link:** https://arxiv.org/abs/2610.28623v1
-**Summary:** The paper addresses the challenge of planning in environments where control execution is affected by noise, which complicates navigation. It introduces a method called Planning Under Noise (PUN), which uses neural operators to learn noise-aware value fields and efficiently compute paths that navigate around obstacles while maintaining feedback for planning. The key contribution is that PUN outperforms existing planners by achieving high success rates and faster runtimes, particularly in complex, noisy conditions, making it effective for planning tasks in high-dimensional spaces.
+### 6. The role of locality and weight sharing in convolutional neural networks
+**Authors:** Francesco Mori, Melanie Weber
+**Link:** https://arxiv.org/abs/2610.30118v1
+**Summary:** This paper investigates how the properties of locality and weight sharing in convolutional neural networks (CNNs) influence their learning processes, particularly in relation to the spatial correlations present in natural images. Using a teacher-student model with a convolutional teacher, the authors derive mathematical equations to compare the learning dynamics of convolutional vs. locally connected networks. They find that while convolutional networks learn faster when positions are uncorrelated, spatial correlations can diminish the advantages of weight sharing, leading to a more complex interplay between learning rates and network architectures.
 
-### 7. MindView: Benchmarking Generative Multi-View Spatial Intelligence
-**Authors:** Yanbo Wang, Siqi Luo, Siyu Zhang, Chenming Zhu, Wenzhao Zheng, Qian Yu, Juncheng Yan, Bin Fu, Tai Wang, Yu Qiao, Yihao Liu, Jiwen Lu
-**Link:** https://arxiv.org/abs/2610.28622v1
-**Summary:** The paper introduces MindView, a benchmark designed to evaluate generative models' ability to create spatially consistent views from partial multi-view observations in indoor scenes. By testing eleven generators on the benchmark, the authors discovered a significant performance gap, leading them to fine-tune the BAGEL model, which improved its score markedly across multiple tasks. Additionally, they propose MindCue, a method that enhances evidence utilization in expanded contexts, further demonstrating the utility of learning to generate spatially grounded views for better spatial understanding.
+### 7. Environment Duels: A Microcosm of LLM Co-Evolution
+**Authors:** Shibo Jin, Zhiqiu Xu, Yiling Zou, Shangyu Gong, Mayur Naik
+**Link:** https://arxiv.org/abs/2610.30116v1
+**Summary:** The paper addresses the problem of understanding how large language models (LLMs) interact and influence each other's capabilities in a competitive environment. The authors introduce a benchmark called Environment Duels, where different LLMs create and solve tasks with hints, revealing that the ability to write challenges differs from the ability to solve them. Key findings show distinct skill sets in authorship and problem-solving, with interactions among models creating stable rankings and demonstrating ways that LLMs can collectively learn and improve.
 
-### 8. Adaptive Multi-Token Prediction: How far should we go?
-**Authors:** Emile Anand, Mohammed Rehan Parwani, Xinyuan Cao
-**Link:** https://arxiv.org/abs/2610.28619v1
-**Summary:** The paper addresses the issue of optimizing multi-token prediction in language models, where determining the optimal number of tokens to draft can be context-dependent. The authors propose Adaptive Multi-Token Prediction (AMTP), a lightweight control mechanism that uses feedback from previous predictions to select the most efficient drafting horizon without needing retraining. Their experiments show that AMTP can significantly accelerate decoding—up to 4.1 times faster than traditional methods—while achieving competitive or superior performance across various settings.
+### 8. The End of Consensus Research?
+**Authors:** Clément Burgelin, Rachid Guerraoui, Zicong Hong, Yinan Hu, Anne-Marie Kermarrec, Rafael Pires, Rasmus Moorits Veski, Martijn de Vos
+**Link:** https://arxiv.org/abs/2610.30114v1
+**Summary:** The paper addresses the longstanding challenge of achieving consensus in distributed computing, specifically for geo-replicated state machines. By using AI to discover a new protocol called A-greement, the authors achieved significant performance improvements over existing solutions, reducing latency for write-heavy and read-heavy workloads. Additionally, the AI tool, AI-greement, not only aided in protocol development but also revealed vulnerabilities in current protocols, highlighting the continuing importance of human expertise in this research area.
 
-### 9. Efficient Edge-aware Attention Network for Graph Generation
-**Authors:** Vincent Jung, Alba Carballo-Castro, Yiming Qin, Lonneke van der Plas, Pascal Frossard
-**Link:** https://arxiv.org/abs/2610.28618v1
-**Summary:** The paper addresses the limitations of existing graph generative models that struggle with scalability due to their reliance on traditional Transformer architectures. The authors introduce an edge-aware attention layer that efficiently incorporates structural information and updates edge representations, leading to significant reductions in GPU memory usage by approximately 65%, while maintaining generation quality and enhancing training and sampling efficiency. This innovative approach represents a significant advancement toward practical scalable graph foundation models.
+### 9. Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research
+**Authors:** Houde Qian, Zheng Jiang, Wenyi Li, Chenxi Xu, Xinjie Lin, Yuzhao Peng, Ruoyu Han, Youjie Zheng, Kaisen Yang, Qinhuai Na, You Fu, Calvin Xiao
+**Link:** https://arxiv.org/abs/2610.30113v1
+**Summary:** The paper presents Quant-Arena, a benchmarking framework designed to evaluate large language models (LLMs) in the context of quantitative trading by testing their ability to generate effective trading strategies based on historical market data. The benchmark involves a competitive assessment where models develop trading strategies, which are then evaluated based on their performance in 2024 after being trained on earlier data. The key finding is that while the top-performing model, GPT-6 Astra, achieved the highest score, none of the models outperformed a simple equal-weighted market strategy in 2024.
 
-### 10. NarraSpace: Multimodal Scene-Grounded Evidence for Picture-Description Dementia Classification
-**Authors:** Qingming Li, Ruiyan Sun, Satoshi Nakamura
-**Link:** https://arxiv.org/abs/2610.28616v1
-**Summary:** NarraSpace addresses the challenge of classifying dementia through picture descriptions by analyzing the relationship between spoken words and visual scene elements in the speech data. The approach utilizes a frozen language model to evaluate the narrative structure and timing of speech related to predefined scene events, linking these back to specific utterances. Key results show that this method achieved an accuracy of approximately 80.88% in identifying Alzheimer's disease among participants, providing a clear, evidence-based way for clinicians to review and assess picture descriptions.
+### 10. Minimax Optimality of the NPMLE for Gaussian Mixtures in Hellinger Distance
+**Authors:** Shayan Hundrieser, Tudor Manole
+**Link:** https://arxiv.org/abs/2610.30109v1
+**Summary:** This paper addresses the estimation of univariate Gaussian mixture densities using the nonparametric maximum likelihood estimator (NPMLE) from independent samples. The authors demonstrate that the unconstrained NPMLE achieves the best possible rate of convergence in squared Hellinger distance, specifically $\log(n)/n$, when the true mixing distribution is sub-Gaussian, and a slightly improved rate when the mixing measure has compact support. A significant contribution of this work is the development of techniques for analyzing the bracketing entropy of finite Gaussian mixtures, which also finds applications in related Gaussian Empirical Bayes problems.
