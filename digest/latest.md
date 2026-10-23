@@ -1,52 +1,52 @@
 ---
-## 2026-10-22
+## 2026-10-23
 
-### 1. LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data
-**Authors:** Zhennan Wan, Jianfei Chen
-**Link:** https://arxiv.org/abs/2610.30132v1
-**Summary:** The paper addresses the challenge of improving long-context reasoning in large language models (LLMs) without relying on costly external training data. The authors introduce a method called LongZero, which enables LLMs to generate their own long-context reasoning tasks and evidence without any external input. Experimental results demonstrate that LongZero significantly outperforms existing reinforcement learning approaches, showcasing its effectiveness in enhancing long-context reasoning capabilities.
+### 1. Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success
+**Authors:** Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei
+**Link:** https://arxiv.org/abs/2610.31670v1
+**Summary:** This paper addresses the challenge of evaluating robotic foundation models without relying on expensive closed-loop testing by introducing a new offline metric called Sensorimotor Alignment ($S^2$). This metric assesses how a model's sensory representations align with the geometry of physical motion, and the authors find that higher $S^2$ scores correlate with better performance in robotics tasks. The key contribution is showing that $S^2$ serves as a useful proxy for model capability, enabling the identification of promising models before extensive fine-tuning is performed.
 
-### 2. Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation
-**Authors:** Zhanshuo Cao, Jiakai Tang, Yuqi Zhou, Sunhao Dai, Jun Xu
-**Link:** https://arxiv.org/abs/2610.30128v1
-**Summary:** This paper addresses the inefficiency of existing sequential recommendation systems that apply a uniform computation depth to all user interaction items, regardless of their significance. The authors propose LoopRec, a new approach that adaptively adjusts the depth of computation for each item based on its individual needs, allowing items that require less processing to exit early while more complex items receive deeper analysis. The key result shows that LoopRec consistently outperforms traditional fixed-depth methods across various benchmarks, demonstrating its effectiveness in optimizing computation and improving recommendation accuracy.
+### 2. Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning
+**Authors:** Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn
+**Link:** https://arxiv.org/abs/2610.31667v1
+**Summary:** This paper addresses the challenge of efficiently pruning candidate solutions in reasoning models during test-time scaling, where the goal is to select the most promising candidates for further computation. The authors propose a new pruning method that optimizes a measure called pass@$k$, which balances the quality and diversity of selected partial solutions to maximize the likelihood of finding at least one correct final answer. Their approach outperforms existing pruning techniques, particularly when a moderate number of candidates are retained, demonstrating the effectiveness of directly balancing quality and diversity in the pruning process.
 
-### 3. PhysiCalWorld: In-Context Physics Calibration for World Models
-**Authors:** Yunhao Luo, Wentao He, Yinpei Dai, Hyelin Nam, Hongze Fu, Joyce Chai, Nima Fazeli, Jeong Joon Park
-**Link:** https://arxiv.org/abs/2610.30125v1
-**Summary:** The paper presents PhysiCalWorld, a method designed to enhance world models by calibrating them to the specific physics dynamics of a scene, addressing the issue of poor predictions in novel environments due to a lack of accurate physics understanding. Instead of requiring fine-tuning or detailed physics modeling, PhysiCalWorld uses a compact physics descriptor token, derived from exploratory interactions in the test scene, to improve predictive accuracy without significant computational burden. The results demonstrate that this approach notably increases prediction accuracy and planning success across varied environments while maintaining a structured latent space for better generalization.
+### 3. Phase Transition from Random Features to Fully Trainable Networks
+**Authors:** Xin He, Huan Lao, Xiliang Lu, Shijun Zhang
+**Link:** https://arxiv.org/abs/2610.31663v1
+**Summary:** This paper investigates the transition from using fixed random features in neural networks to fully trainable representations, addressing the challenge of creating effective approximation spaces in scientific computing. The authors identify a phase transition in approximation accuracy related to varying degrees of trainability and initialization conditions, providing a specific approximation rate for two-layer networks. A key finding is that a small proportion of trainable neurons can significantly reduce approximation errors, with experiments confirming similar behavior in deeper networks.
 
-### 4. A Quasipolynomial Algorithm for $\ell_\infty$ Contractions
-**Authors:** Ashkan Soleymani, Gabriele Farina
-**Link:** https://arxiv.org/abs/2610.30122v1
-**Summary:** This paper presents a quasipolynomial-time algorithm for finding an approximate fixed point in high-dimensional nonexpansive mappings under the $\ell_\infty$ norm. The method employs a boosting technique to reduce the search space effectively. A significant outcome of this work is the implication that simple stochastic games can now be solved in quasipolynomial time, showcasing the practical relevance of this approach.
+### 4. Reliable AI-Assisted Decisions via Selective Auditing
+**Authors:** Isaac Gibbs, Elise L. Han, Ryan J. Tibshirani, Tijana Zrnic
+**Link:** https://arxiv.org/abs/2610.31662v1
+**Summary:** This paper addresses the challenge of effectively monitoring AI decision-making by balancing automated approvals and human expert audits. The authors propose a novel online optimization framework that minimizes expert reviews while ensuring that a controlled fraction of AI errors goes unchecked. Their experiments demonstrate that this method significantly reduces the need for human oversight while maintaining reliable error control across various applications, including language model monitoring and data labeling.
 
-### 5. Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence
-**Authors:** Imon Banerjee, Pierre Alquier
-**Link:** https://arxiv.org/abs/2610.30119v1
-**Summary:** The paper addresses the challenge of establishing generalization error bounds in machine learning for classification tasks using non-independent, regenerative data. The authors develop a self-normalized Bernstein inequality tailored for regenerative processes, providing empirical bounds that account for cycle lengths while minimizing key error terms. A significant contribution is demonstrating that these bounds are minimax-optimal and can inform the design of agnostic classifiers with oracle-like performance guarantees.
+### 5. SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing
+**Authors:** Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe, Huy Nghiem, Yongkyun Lee, Andrew Adams Schoen, Furong Huang
+**Link:** https://arxiv.org/abs/2610.31659v1
+**Summary:** The paper addresses the challenge of auditing whether a text-to-image model was fine-tuned on a specific image dataset, as models can incorporate visual traits without reproducing the original images. The authors propose SpectralCanary, which embeds a low-frequency canary image into dataset images while preserving their captions, allowing a lightweight verifier to identify this signal in generated outputs. The results show that SpectralCanary outperforms existing methods in accuracy and preservation of original images, demonstrating that low-frequency signals are effective for dataset auditing.
 
-### 6. The role of locality and weight sharing in convolutional neural networks
-**Authors:** Francesco Mori, Melanie Weber
-**Link:** https://arxiv.org/abs/2610.30118v1
-**Summary:** This paper investigates how the properties of locality and weight sharing in convolutional neural networks (CNNs) influence their learning processes, particularly in relation to the spatial correlations present in natural images. Using a teacher-student model with a convolutional teacher, the authors derive mathematical equations to compare the learning dynamics of convolutional vs. locally connected networks. They find that while convolutional networks learn faster when positions are uncorrelated, spatial correlations can diminish the advantages of weight sharing, leading to a more complex interplay between learning rates and network architectures.
+### 6. Cost-Aware Abstention for LLM-Based IT Ticket Classification
+**Authors:** Sachin Gupta
+**Link:** https://arxiv.org/abs/2610.31657v1
+**Summary:** This paper addresses the issue of costly misrouting of IT support tickets by evaluating a cost-aware abstention approach, where a routing policy is trained under specific cost conditions and then applied to test data. The researchers compared various classification models, including large language models (LLMs), and found that a TF-IDF logistic regression model with a calibrated threshold significantly reduced routing errors and overall costs. The study highlights the importance of cost-sensitive calibration in ticket classification, particularly showing that strategically abstaining from decisions can lead to notable reductions in misclassification rates and expenses.
 
-### 7. Environment Duels: A Microcosm of LLM Co-Evolution
-**Authors:** Shibo Jin, Zhiqiu Xu, Yiling Zou, Shangyu Gong, Mayur Naik
-**Link:** https://arxiv.org/abs/2610.30116v1
-**Summary:** The paper addresses the problem of understanding how large language models (LLMs) interact and influence each other's capabilities in a competitive environment. The authors introduce a benchmark called Environment Duels, where different LLMs create and solve tasks with hints, revealing that the ability to write challenges differs from the ability to solve them. Key findings show distinct skill sets in authorship and problem-solving, with interactions among models creating stable rankings and demonstrating ways that LLMs can collectively learn and improve.
+### 7. METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
+**Authors:** Ali Najar, Hosein Hasani, Amir Kooshan Fattah, Yasamin Rajabi, Mahdieh Soleymani Baghshah
+**Link:** https://arxiv.org/abs/2610.31656v1
+**Summary:** The paper introduces METTA, a method designed to enhance meta-reinforcement learning agents' ability to quickly adapt to new tasks using memory-based strategies. By splitting adaptation into short-term and long-term memory processes, METTA achieves efficient learning without the heavy computational costs of traditional transformer models. The key findings demonstrate that METTA significantly improves task success rates in complex environments while requiring less training time and offering better exploration strategies.
 
-### 8. The End of Consensus Research?
-**Authors:** Clément Burgelin, Rachid Guerraoui, Zicong Hong, Yinan Hu, Anne-Marie Kermarrec, Rafael Pires, Rasmus Moorits Veski, Martijn de Vos
-**Link:** https://arxiv.org/abs/2610.30114v1
-**Summary:** The paper addresses the longstanding challenge of achieving consensus in distributed computing, specifically for geo-replicated state machines. By using AI to discover a new protocol called A-greement, the authors achieved significant performance improvements over existing solutions, reducing latency for write-heavy and read-heavy workloads. Additionally, the AI tool, AI-greement, not only aided in protocol development but also revealed vulnerabilities in current protocols, highlighting the continuing importance of human expertise in this research area.
+### 8. EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence
+**Authors:** Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu, Zhongxiang Dai, Shuang Qiu
+**Link:** https://arxiv.org/abs/2610.31650v1
+**Summary:** The paper addresses the problem of large language model (LLM) agents executing unsafe actions due to missing safety-critical facts in tool responses. The authors developed EpiSEM-Bench, a benchmark consisting of 300 task pairs that evaluates how well these agents handle evidence omissions and recover necessary information before acting. Key findings reveal significant differences among various models in their ability to detect missing information and adjust their actions accordingly, highlighting the importance of evidence recovery in enhancing safety.
 
-### 9. Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research
-**Authors:** Houde Qian, Zheng Jiang, Wenyi Li, Chenxi Xu, Xinjie Lin, Yuzhao Peng, Ruoyu Han, Youjie Zheng, Kaisen Yang, Qinhuai Na, You Fu, Calvin Xiao
-**Link:** https://arxiv.org/abs/2610.30113v1
-**Summary:** The paper presents Quant-Arena, a benchmarking framework designed to evaluate large language models (LLMs) in the context of quantitative trading by testing their ability to generate effective trading strategies based on historical market data. The benchmark involves a competitive assessment where models develop trading strategies, which are then evaluated based on their performance in 2024 after being trained on earlier data. The key finding is that while the top-performing model, GPT-6 Astra, achieved the highest score, none of the models outperformed a simple equal-weighted market strategy in 2024.
+### 9. Low-Bit N-Gram Embeddings for Language Models
+**Authors:** Stephen Chung, Wenyu Du
+**Link:** https://arxiv.org/abs/2610.31646v1
+**Summary:** The paper addresses the high memory demands of n-gram embedding tables used in language models by exploring low-bit quantization techniques to reduce memory usage. The authors demonstrate that storing n-gram embeddings at four bits can significantly cut memory requirements by about 75% while retaining over 99% of the performance gains typically achieved with full-precision tables. Furthermore, this approach allows for reinvestment of saved memory into larger tables, enhancing overall model performance while maintaining efficiency.
 
-### 10. Minimax Optimality of the NPMLE for Gaussian Mixtures in Hellinger Distance
-**Authors:** Shayan Hundrieser, Tudor Manole
-**Link:** https://arxiv.org/abs/2610.30109v1
-**Summary:** This paper addresses the estimation of univariate Gaussian mixture densities using the nonparametric maximum likelihood estimator (NPMLE) from independent samples. The authors demonstrate that the unconstrained NPMLE achieves the best possible rate of convergence in squared Hellinger distance, specifically $\log(n)/n$, when the true mixing distribution is sub-Gaussian, and a slightly improved rate when the mixing measure has compact support. A significant contribution of this work is the development of techniques for analyzing the bracketing entropy of finite Gaussian mixtures, which also finds applications in related Gaussian Empirical Bayes problems.
+### 10. A Fix for Softmax and Cross-Entropy
+**Authors:** Jonathan T. Barron, Dan Gnanapragasam, Michael Tschannen
+**Link:** https://arxiv.org/abs/2610.31642v1
+**Summary:** This paper addresses two numerical issues in the standard implementations of softmax and cross-entropy: "Softmax Collapse," which hampers gradient computation when one logit is much larger, and "Softmax Cancellation," which generates incorrect gradients when logits are nearly equal. The authors propose straightforward implementations that rectify these problems, leading to improved training dynamics and preventing issues like accuracy collapse and undesired network drift. Key contributions include enhanced training stability and clearer bounds on logit growth during the learning process.
