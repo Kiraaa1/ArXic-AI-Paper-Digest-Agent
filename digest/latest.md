@@ -1,52 +1,52 @@
 ---
-## 2026-10-23
+## 2026-10-24
 
-### 1. Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success
-**Authors:** Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei
-**Link:** https://arxiv.org/abs/2610.31670v1
-**Summary:** This paper addresses the challenge of evaluating robotic foundation models without relying on expensive closed-loop testing by introducing a new offline metric called Sensorimotor Alignment ($S^2$). This metric assesses how a model's sensory representations align with the geometry of physical motion, and the authors find that higher $S^2$ scores correlate with better performance in robotics tasks. The key contribution is showing that $S^2$ serves as a useful proxy for model capability, enabling the identification of promising models before extensive fine-tuning is performed.
+### 1. Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation
+**Authors:** Gabriele Dominici, Teague McMillan, Fazl Barez, Marc Langheinrich, Martin Gjoreski
+**Link:** https://arxiv.org/abs/2610.31639v1
+**Summary:** The paper addresses the issue of attention leakage in chain-of-thought prompting, where models can produce plausible but misleading rationales due to their ability to access irrelevant context. The authors propose CausalCoT, a framework that structures problems as directed acyclic graphs, allowing each reasoning step to focus only on its immediate causal influences, thereby enhancing the clarity and faithfulness of explanations. Their approach improves the model's ability to connect reasoning steps causally, increasing this sensitivity by up to 21 percentage points compared to existing methods, while maintaining strong predictive performance.
 
-### 2. Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning
-**Authors:** Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn
-**Link:** https://arxiv.org/abs/2610.31667v1
-**Summary:** This paper addresses the challenge of efficiently pruning candidate solutions in reasoning models during test-time scaling, where the goal is to select the most promising candidates for further computation. The authors propose a new pruning method that optimizes a measure called pass@$k$, which balances the quality and diversity of selected partial solutions to maximize the likelihood of finding at least one correct final answer. Their approach outperforms existing pruning techniques, particularly when a moderate number of candidates are retained, demonstrating the effectiveness of directly balancing quality and diversity in the pruning process.
+### 2. Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2
+**Authors:** Marek Šuppa, Ivan Vykopal, Jaroslav Kopčan
+**Link:** https://arxiv.org/abs/2610.31636v1
+**Summary:** The paper addresses the issue of unanticipated failure modes in multilingual web corpora, specifically FineWeb2's Slovak subset. The authors employed a tool-using agent based on a large language model (LLM) to debug the corpus by exploring it with a budgeted API and compiling findings into executable tests, which were then validated by native speakers. Their approach identified critical issues, including a significant quantity of machine-generated content that evaded existing filters, demonstrating the agent's effectiveness in detecting and quantifying defects while providing reusable validation tests at a fraction of the typical classification cost.
 
-### 3. Phase Transition from Random Features to Fully Trainable Networks
-**Authors:** Xin He, Huan Lao, Xiliang Lu, Shijun Zhang
-**Link:** https://arxiv.org/abs/2610.31663v1
-**Summary:** This paper investigates the transition from using fixed random features in neural networks to fully trainable representations, addressing the challenge of creating effective approximation spaces in scientific computing. The authors identify a phase transition in approximation accuracy related to varying degrees of trainability and initialization conditions, providing a specific approximation rate for two-layer networks. A key finding is that a small proportion of trainable neurons can significantly reduce approximation errors, with experiments confirming similar behavior in deeper networks.
+### 3. BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing
+**Authors:** Hayden Prairie, Jacob M. Ryan, Taylor Berg-Kirkpatrick, Daniel Y. Fu
+**Link:** https://arxiv.org/abs/2610.31633v1
+**Summary:** The paper addresses the issue of increasing memory usage during inference in looped architectures due to the generation of independent key-value caches (KV-caches) with each recurrence. It introduces a two-stage approach, utilizing stochastic depth during pretraining and a post-training method named BeNice! to enable sharing of the final recurrence's KV-cache with earlier ones. This method facilitates KV-shareability without quality loss, significantly improving cache efficiency and inference performance, including a notable reduction in time-to-first-token and an increase in throughput.
 
-### 4. Reliable AI-Assisted Decisions via Selective Auditing
-**Authors:** Isaac Gibbs, Elise L. Han, Ryan J. Tibshirani, Tijana Zrnic
-**Link:** https://arxiv.org/abs/2610.31662v1
-**Summary:** This paper addresses the challenge of effectively monitoring AI decision-making by balancing automated approvals and human expert audits. The authors propose a novel online optimization framework that minimizes expert reviews while ensuring that a controlled fraction of AI errors goes unchecked. Their experiments demonstrate that this method significantly reduces the need for human oversight while maintaining reliable error control across various applications, including language model monitoring and data labeling.
+### 4. Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3
+**Authors:** Barış Alparslan, Sandy Tanwisuth, Caleb Petterson
+**Link:** https://arxiv.org/abs/2610.31624v1
+**Summary:** The paper investigates whether reinforcement learning with verifiable rewards (RLVR) increases power-seeking behaviors in large language models (LLMs), specifically focusing on the OLMo-3 model. By evaluating behavioral trajectories at various training checkpoints, the authors find that instrumental behavior initially increases but then drops below baseline levels, suggesting that RLVR does not consistently drive such behaviors as expected. This nonmonotonic trend challenges common assumptions about instrumental convergence in LLMs and highlights the importance of training context.
 
-### 5. SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing
-**Authors:** Sy-Tuyen Ho, Anirudh Satheesh, Soham Chawathe, Huy Nghiem, Yongkyun Lee, Andrew Adams Schoen, Furong Huang
-**Link:** https://arxiv.org/abs/2610.31659v1
-**Summary:** The paper addresses the challenge of auditing whether a text-to-image model was fine-tuned on a specific image dataset, as models can incorporate visual traits without reproducing the original images. The authors propose SpectralCanary, which embeds a low-frequency canary image into dataset images while preserving their captions, allowing a lightweight verifier to identify this signal in generated outputs. The results show that SpectralCanary outperforms existing methods in accuracy and preservation of original images, demonstrating that low-frequency signals are effective for dataset auditing.
+### 5. Bilingual Language Models Capture Cross-Linguistic Influence in Second-Language Reading
+**Authors:** Abderrahmane Issam, Irene E. Winther, Stefan L. Frank
+**Link:** https://arxiv.org/abs/2610.31620v1
+**Summary:** This study addresses the challenge of understanding how a person's first language affects their reading times in a second language. The researchers used bilingual language models to analyze eye-tracking data from readers with different first languages reading English. They found that matching the bilingual model to the reader's first language significantly improved the prediction of reading times, highlighting the impact of cross-linguistic influence during L2 reading.
 
-### 6. Cost-Aware Abstention for LLM-Based IT Ticket Classification
-**Authors:** Sachin Gupta
-**Link:** https://arxiv.org/abs/2610.31657v1
-**Summary:** This paper addresses the issue of costly misrouting of IT support tickets by evaluating a cost-aware abstention approach, where a routing policy is trained under specific cost conditions and then applied to test data. The researchers compared various classification models, including large language models (LLMs), and found that a TF-IDF logistic regression model with a calibrated threshold significantly reduced routing errors and overall costs. The study highlights the importance of cost-sensitive calibration in ticket classification, particularly showing that strategically abstaining from decisions can lead to notable reductions in misclassification rates and expenses.
+### 6. OP-Print: Tracing Membership Imprints in On-Policy Self-Distillation
+**Authors:** Qi Li, Xinchao Wang
+**Link:** https://arxiv.org/abs/2610.31616v1
+**Summary:** The paper addresses the privacy risks associated with on-policy self-distillation, specifically the potential for membership inference attacks that exploit the model's learning patterns. The authors introduce OP-Print, a unified framework that effectively identifies and exploits sparse supervision imprints during the distillation process in both gray-box and black-box settings. Their key finding shows that OP-Print significantly outperforms existing baseline attacks, which barely exceed random guessing, highlighting its effectiveness in uncovering private training data.
 
-### 7. METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning
-**Authors:** Ali Najar, Hosein Hasani, Amir Kooshan Fattah, Yasamin Rajabi, Mahdieh Soleymani Baghshah
-**Link:** https://arxiv.org/abs/2610.31656v1
-**Summary:** The paper introduces METTA, a method designed to enhance meta-reinforcement learning agents' ability to quickly adapt to new tasks using memory-based strategies. By splitting adaptation into short-term and long-term memory processes, METTA achieves efficient learning without the heavy computational costs of traditional transformer models. The key findings demonstrate that METTA significantly improves task success rates in complex environments while requiring less training time and offering better exploration strategies.
+### 7. Efficient and Optimal Learning of Discrete Distributions with Person-Level Privacy
+**Authors:** Gautam Kamath, Mahbod Majid, Ankur Moitra, Argyris Mouzakis, Jonathan Ullman
+**Link:** https://arxiv.org/abs/2610.31612v1
+**Summary:** The paper addresses the challenge of learning a discrete distribution while ensuring person-level differential privacy in a batch setting where multiple users contribute samples. The authors introduce polynomial-time algorithms that achieve optimal sample complexity under both pure and approximate differential privacy, utilizing a novel degree-6 sum-of-squares estimator for processing potentially untrusted data. Key contributions include a new privacy-preserving method that matches information-theoretic limits and proves the robustness of the estimation through advanced mathematical techniques.
 
-### 8. EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence
-**Authors:** Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu, Zhongxiang Dai, Shuang Qiu
-**Link:** https://arxiv.org/abs/2610.31650v1
-**Summary:** The paper addresses the problem of large language model (LLM) agents executing unsafe actions due to missing safety-critical facts in tool responses. The authors developed EpiSEM-Bench, a benchmark consisting of 300 task pairs that evaluates how well these agents handle evidence omissions and recover necessary information before acting. Key findings reveal significant differences among various models in their ability to detect missing information and adjust their actions accordingly, highlighting the importance of evidence recovery in enhancing safety.
+### 8. How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions
+**Authors:** Miguel Mochizuki Silva, Samuel Ismael, Mateus C. Dias, Thaís Gaudêncio, Yuri Malheiros, Barufaldi
+**Link:** https://arxiv.org/abs/2610.31606v1
+**Summary:** The paper addresses the challenge of evaluating retrieval scores in a clinical retrieval-augmented generation system specifically for breast lesion management by developing an evidence-aware evaluation protocol. Using a small corpus and various retrieval configurations, the authors found that their hybrid retriever with specific chunk sizes and overlaps consistently retrieved relevant evidence for most queries. Key findings indicate that enhancing ground-truth annotations improved the recognition of relevant evidence while not altering retrieval rankings, underscoring the importance of comprehensive annotation in evaluation.
 
-### 9. Low-Bit N-Gram Embeddings for Language Models
-**Authors:** Stephen Chung, Wenyu Du
-**Link:** https://arxiv.org/abs/2610.31646v1
-**Summary:** The paper addresses the high memory demands of n-gram embedding tables used in language models by exploring low-bit quantization techniques to reduce memory usage. The authors demonstrate that storing n-gram embeddings at four bits can significantly cut memory requirements by about 75% while retaining over 99% of the performance gains typically achieved with full-precision tables. Furthermore, this approach allows for reinvestment of saved memory into larger tables, enhancing overall model performance while maintaining efficiency.
+### 9. CRANE: Post-Hoc Counterfactual Retrieval for Multimodal Classifiers
+**Authors:** Franco Rugolon, Ioanna Miliou, Panagiotis Papapetrou
+**Link:** https://arxiv.org/abs/2610.31594v1
+**Summary:** The paper presents CRANE, a novel framework designed to provide coherent counterfactual explanations for multimodal classifiers—models that integrate multiple types of input data. Unlike traditional methods that evaluate each modality separately, CRANE utilizes a nearest-neighbor approach to retrieve real training examples from the target class, ensuring the explanations are plausible and drawn from the actual training distribution. The key finding is that the Multimodal Consensus Retrieval (MC-R) strategy outperforms others by effectively integrating multiple modalities, leading to superior explanation quality across various datasets.
 
-### 10. A Fix for Softmax and Cross-Entropy
-**Authors:** Jonathan T. Barron, Dan Gnanapragasam, Michael Tschannen
-**Link:** https://arxiv.org/abs/2610.31642v1
-**Summary:** This paper addresses two numerical issues in the standard implementations of softmax and cross-entropy: "Softmax Collapse," which hampers gradient computation when one logit is much larger, and "Softmax Cancellation," which generates incorrect gradients when logits are nearly equal. The authors propose straightforward implementations that rectify these problems, leading to improved training dynamics and preventing issues like accuracy collapse and undesired network drift. Key contributions include enhanced training stability and clearer bounds on logit growth during the learning process.
+### 10. Simulated Control Evals
+**Authors:** Jeffrey Olmo, David Zhang, Tyler Tracy
+**Link:** https://arxiv.org/abs/2610.31593v1
+**Summary:** The paper addresses the challenge of assessing whether AI safeguards can effectively prevent undesired outcomes in real-world environments, which traditional control evaluations struggle to represent accurately. It introduces simulated control evaluations (SCEs), which leverage a language model to mimic tool responses in various settings, improving prediction of safety outcomes. Key results indicate that SCEs significantly outperform conventional control evaluations, achieving higher accuracy and efficiency in predicting safety with considerably fewer samples.
