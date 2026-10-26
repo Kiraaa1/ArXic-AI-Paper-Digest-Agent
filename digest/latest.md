@@ -1,52 +1,52 @@
 ---
-## 2026-10-25
+## 2026-10-26
 
-### 1. Beyond Best-of-$k$: Prior-Consistent DAPS for Ambiguous Nonlinear Inverse Problems
-**Authors:** Merve Kocabas, Benjamin A. Burns, Andreas Geiger, Kent Gauen, Sara Fridovich-Keil
-**Link:** https://arxiv.org/abs/2610.31592v1
-**Summary:** The paper addresses the challenge of solving ambiguous nonlinear inverse problems, such as phase retrieval, where multiple solutions are measurement-consistent but differ based on prior knowledge. The authors present a new method called Prior-Consistent DAPS (PC-DAPS), which improves sampling by maintaining multiple candidate solutions and selectively pruning them based on how well they align with the prior, without needing ground-truth comparisons. The key finding is that PC-DAPS reduces the likelihood of generating prior-inconsistent samples, leading to better sample quality in nonlinear inverse problems while still performing well on linear ones.
+### 1. The Language of Instruction: Genre and Generative AI
+**Authors:** James E. Dobson
+**Link:** https://arxiv.org/abs/2610.32982v1
+**Summary:** The paper addresses the need to conceptualize instruction-fine-tuned language models as part of a distinct genre called the instructional-conversational genre, which merges language patterns from past interactions between humans and generative models. The authors propose that this genre is shaped by processes like instruction fine-tuning, system prompts, and the use of markup languages with special tokens. The key contribution is the formalization of how these elements come together to enhance communication with AI systems, improving their effectiveness in instructional contexts.
 
-### 2. VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act
-**Authors:** Robin Quériaux, Solveig Bachellery, Léa Déléris, Saurabhsingh Rajput, Mariam Barry, Tushar Sharma, Jérôme Lebecq
-**Link:** https://arxiv.org/abs/2610.31588v1
-**Summary:** The paper presents VERA, an open-source dashboard designed to streamline the assessment of large language model (LLM) deployments in compliance with the EU AI Act, which requires evidence of responsible AI practices. By allowing non-engineering staff to easily evaluate models against specific benchmarks and track their environmental impact, VERA significantly reduces the assessment time from 56 seconds to 30 seconds on average. The dashboard received a high usefulness rating of 4.36 out of 5 from users, and both the dashboard and the study materials are publicly available for broader use.
+### 2. SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning
+**Authors:** Yuhan Liu, Lianhui Qin, Shenji Wan
+**Link:** https://arxiv.org/abs/2610.32978v1
+**Summary:** SceneBloom addresses the challenge of creating realistic and diverse indoor environments for training embodied agents, which require accurate spatial arrangements for effective learning. The framework combines a hierarchical sampler that generates furniture layouts using visual diffusion models with a compiler that ensures geometric validity through contract-guided fitting. Key results show that SceneBloom produces high-quality, physically stable layouts without collisions, outperforming other methods and enabling better navigation policy training in real-world scenarios.
 
-### 3. Would an LLM Match into a Residency? Uncertainty, Reasoning and Image Use of Open Language Models on the Spanish MIR Examination
-**Authors:** Miguel Fernandez-de-Retana, Unai Zulaika, Ruben Sanchez-Corcuera, Aritz Bilbao-Jayo, Aitor Almeida
-**Link:** https://arxiv.org/abs/2610.31586v1
-**Summary:** The paper investigates how well open language models perform on the Spanish MIR medical residency exam by assessing their accuracy, confidence in responses, and reasoning abilities. Four models with varying parameters were tested on 1,552 questions, revealing that while they scored competitively, their confidence levels did not correlate well with accuracy, and they often made clinically unsound decisions. Additionally, fine-tuning the models improved their confidence but reduced overall accuracy, and image context provided during the exam did not significantly affect their performance.
+### 3. RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms
+**Authors:** Xi Chen, Fengqi Hu, Zeyu Shen, Jiaying Xu, Shangding Gu, Pan Xu, Anqi Liu, Laixi Shi
+**Link:** https://arxiv.org/abs/2610.32971v1
+**Summary:** The paper addresses the challenges of deploying robust reinforcement learning (RL) algorithms in real-world scenarios, where policies can fail due to unforeseen disruptions. The authors present RobustRLlib, a unified library that combines 17 different robust RL algorithms with a standardized interface, thus enhancing their reusability and evaluation across a variety of tasks and perturbations. A comprehensive assessment of these algorithms reveals their effectiveness and identifies critical areas where improvements are still needed, contributing to a clearer understanding of robustness in RL.
 
-### 4. Action Learning for Scientific Simulations
-**Authors:** Sarah Liaw, Yuanqi Du, Yilun Du
-**Link:** https://arxiv.org/abs/2610.31585v1
-**Summary:** The paper addresses the challenge of understanding and controlling the evolution of dynamical systems by focusing on how to effectively learn from trajectory observations. The authors introduce a method called LEAP, which retrieves a stochastic action by comparing observed trajectories to a reference process, allowing for the capture of complex time-dependent relationships. The key contribution is that this approach enables robust scientific inference and control by providing a flexible, reusable framework for optimizing and ranking trajectories across various stochastic systems.
+### 4. DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection
+**Authors:** Amber Xie, Jiawei Fu, Xiaofeng Guo, Carmelo Sferrazza, Guanya Shi, Haozhi Qi
+**Link:** https://arxiv.org/abs/2610.32969v1
+**Summary:** The paper introduces DexPort, a portable interface designed to simplify the collection of high-quality demonstrations for training dexterous robot hands, addressing the challenges of teleoperation and human motion retargeting. By allowing operators to control wrist motions and select predetermined skills without needing to manage each finger joint, DexPort enables efficient data gathering across various real-world tasks. The approach demonstrated significant improvements in task success rates, achieving up to 78% in real-world scenarios using the recorded commands directly.
 
-### 5. Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration
-**Authors:** Deepthika S, Pawni Yadav, B. Sankar
-**Link:** https://arxiv.org/abs/2610.31579v1
-**Summary:** This study investigates whether users of confident, assertive large language models (LLMs) like GPT-5-mini are prone to adopt incorrect information provided by the model. Through an experimental setup, participants were exposed to various versions of the model, some containing factual inaccuracies, and their responses were analyzed in quizzes. The results showed that users frequently accepted false information as correct, highlighting a dangerous collapse in trust calibration, where confidence in the model did not correspond to factual accuracy, indicating the need for improved transparency in human-AI interactions.
+### 5. Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection
+**Authors:** Bernardo Perrone Ribeiro, Erkut Akdag, Egor Bondarev
+**Link:** https://arxiv.org/abs/2610.32964v1
+**Summary:** The paper addresses the challenge of few-shot anomaly detection in industrial settings, where only a limited number of defect-free images are available for modeling normality. The authors propose "Flownomaly," which uses a novel approach of learning a velocity field in a feature space to recover normal representations from noisy query tokens without relying on stored examples or trajectory integration. Their method achieves state-of-the-art performance in anomaly detection benchmarks, demonstrating impressive AUROC scores, particularly in scenarios with minimal training data.
 
-### 6. What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models
-**Authors:** Jinya Sakurai, Xun Xu, Jaehong Yoon
-**Link:** https://arxiv.org/abs/2610.31576v1
-**Summary:** The paper addresses the challenge of improving the efficiency of masked diffusion language models by optimizing unmasking policies, which determine which predictions can be confidently committed. The authors develop a trajectory-contraction approach that leverages model confidence and hidden states, resulting in a more effective policy that reduces the number of function evaluations needed for accurate outputs. Their best-performing 856K-parameter policy significantly enhances throughput and accuracy across various benchmarks, demonstrating superior performance compared to existing methods.
+### 6. Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox
+**Authors:** Federico Lucca
+**Link:** https://arxiv.org/abs/2610.32955v1
+**Summary:** The paper addresses the challenge of effectively classifying emails in a personal inbox, determining their type, urgency, and whether action is required. The authors introduce Foyer, a measurement protocol that collects ground truth labels before training and compare various classification systems, including decision models and generative LLMs, on real multilingual email data. Key findings reveal that while logistic regression achieves high accuracy, the most accurate systems tend to overlook important emails needing action; a cost-based threshold improves performance, highlighting the complexity of balancing accuracy and practical application in email management.
 
-### 7. Rethinking Sequence Compression with Test-time Regression
-**Authors:** Sihan Yang, Jie Huang, Hanxuan Li, Yifan Guo, Weigao Sun, Yiran Zhong, Weiyang Liu
-**Link:** https://arxiv.org/abs/2610.31574v1
-**Summary:** The paper addresses the inefficiency of current sequence compression techniques in language and multimodal models. It introduces TTR-Compressor, which uses a novel test-time regression approach to compute compressed representations of input tokens efficiently. The results show significant performance improvements, with TTR-Compressor enhancing model capabilities while reducing the number of visual tokens needed for processing.
+### 7. Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning
+**Authors:** Yijing Ke, Tianle Cai, Ruosong Wang
+**Link:** https://arxiv.org/abs/2610.32951v1
+**Summary:** This paper addresses the instability in reinforcement learning for large language models caused by differences in rounding between training and inference processes, which can lead to off-policy updates. The authors propose aligning rounding locations in specific components of the model while keeping the overall system intact, maintaining certain computations in higher precision until the end. Their method successfully prevents training collapse and shows that aligning just one component can be sufficient.
 
-### 8. Social-HUMINT: An LLM-Augmented Unified Framework for Measuring Social Media Exposure
-**Authors:** Pellegrino Casoria, Simon Pietro Romano
-**Link:** https://arxiv.org/abs/2610.31573v1
-**Summary:** The paper addresses the issue of assessing the risk of social engineering attacks based on social media profiling, highlighting how easily user attributes can be inferred from their online presence. It introduces a unified framework that combines Social Media Intelligence (SOCMINT) and Cyber Human Intelligence (Cyber-HUMINT) to quantify user exposure and susceptibility through a multi-agent pipeline enhanced by Large Language Models (LLMs). The key contribution is a validated taxonomy of capabilities that significantly improves the accuracy of user profiling and susceptibility assessments, enabling defenders to better understand their vulnerabilities before attackers do.
+### 8. Beyond Discrete Tokens: Preserving Numerical Continuity in Medical Vision-Language Models
+**Authors:** Dianye Huang, Jiamei Guo, Yue Zhou, Mingde Li, Yi Xiong, Wei Wang, Nassir Navab, Zhongliang Jiang
+**Link:** https://arxiv.org/abs/2610.32948v1
+**Summary:** The paper addresses the challenge of accurately predicting continuous numerical measurements in medical imaging, specifically for ultrasound, where traditional models rely on discrete tokens. The authors propose a new model called HAD-VLM, which merges autoregressive text generation with a diffusion process for continuous measurement prediction, showing significant improvements in measurement accuracy for echocardiographic tasks compared to previous methods. This approach enhances quantitative analysis while maintaining the flexibility needed for various medical tasks.
 
-### 9. On the Token Collapse Phenomenon in Textual Graph Soft Prompting
-**Authors:** Andrea Giuseppe Di Francesco, Rishabh Jain, Franco Maria Nardini, Nicola Tonellotto, Pietro Liò, Fabrizio Silvestri
-**Link:** https://arxiv.org/abs/2610.31572v1
-**Summary:** The paper investigates the issue of "token collapse" in graph soft prompting for language models, where graph-specific tokens become nearly indistinguishable across different inputs, undermining their intended purpose of conveying relational information. The authors analyze the G-Retriever method and find that it often performs poorly, suggesting that learned tokens act more like generic prompts rather than effectively using graph data. They propose a two-stage procedure to produce non-collapsed tokens while maintaining performance, emphasizing the need for better evaluation of graph-token alignment in prompts beyond just accuracy metrics.
+### 9. Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms
+**Authors:** Yuhang Ji, Fasheng Xu, Tianjun Feng
+**Link:** https://arxiv.org/abs/2610.32945v1
+**Summary:** This paper addresses the challenges faced by large language model platforms in balancing advertising and subscription models to optimize revenue while maintaining user satisfaction. The authors analyze how a monopolistic platform can strategically select service quality, advertising intensity, and subscription pricing, finding that a mixed approach can enhance consumer surplus and allow for broader access, even leading to utility disparities among users. They highlight the importance of menu design in their findings, suggesting that advertising-funded options can improve overall service provision and pricing strategies.
 
-### 10. When to Follow the Teacher: Advantage-Based On-Policy Distillation
-**Authors:** Mahdi Sabbaghi, George Pappas, Hamed Hassani, Adel Javanmard
-**Link:** https://arxiv.org/abs/2610.31563v1
-**Summary:** The paper addresses the problem of inefficient teacher-student relationships in Online Policy Distillation (OPD), where students are trained to follow teachers at all times, even when it may not be beneficial. The authors propose Advantage-Based On-Policy Distillation (AOPD), which selectively reinforces teacher actions based on their expected advantages for the student, using a novel estimator that requires no additional rollouts. This approach improves the effectiveness of the distillation process, demonstrating superior performance in various tasks compared to traditional methods.
+### 10. Knowledge Distillation across Item and Code Spaces for Parallel Generative Recommendation
+**Authors:** Yixuan Xu, Hailin Liu, Linxiang Peng, Can Yang
+**Link:** https://arxiv.org/abs/2610.32943v1
+**Summary:** The paper addresses the challenge of improving generative recommendation systems that use discrete semantic codes for items, which currently rely on hard labels from observed item sequences without leveraging the richer distributional knowledge from sequential recommenders. The authors propose two knowledge-distillation techniques, Item Distribution Matching (IDM) and Code Marginal Matching (CMM), to transfer predictive distribution information from a teacher model operating in item space to a student model in code space. Their experiments demonstrate significant improvements in recommendation accuracy, with IDM enhancing Recall@10 by 15.39% and CMM boosting NDCG@10 by 8.28%, thereby showing that these methods can effectively enhance standard supervised learning in recommendation systems.
