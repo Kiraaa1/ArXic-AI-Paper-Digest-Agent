@@ -1,52 +1,52 @@
 ---
-## 2026-10-27
+## 2026-10-28
 
-### 1. Retriever-Free Retrieval: Navigating Documents with Decision Models
-**Authors:** Chao Wan, Paul Jünger, Beixi Du, Bodong Liu, Navaneetha Krishnan, Kilian Q. Weinberger
-**Link:** https://arxiv.org/abs/2610.35868v1
-**Summary:** The paper addresses the limitations of current retrieval methods that rely on lexical matching, which can miss relevant information that even advanced language models could not recover. The authors introduce DecisionRAG, a decision model that evaluates candidate documents more effectively by navigating through the content structure without relying on a traditional retriever or task-specific training. This approach significantly improves retrieval performance, achieving notable gains over dense retrieval methods while maintaining fast query response times.
+### 1. Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction
+**Authors:** Prakhar Kaushik, Soumava Paul, Alan Yuille
+**Link:** https://arxiv.org/abs/2610.37668v1
+**Summary:** The paper addresses the challenges of memory and computational demands in 3D scene rendering and reconstruction by introducing a new primitive called Hexels, which are hexagonal surface elements designed to represent both 3D scenes and 2D images more efficiently. By utilizing larger, locally planar regions with a first-order color field, Hexels improve image quality while reducing memory usage, achieving significant gains in quality and rendering speed compared to existing methods. The key results show an increase in PSNR and a 28.9% reduction in error for 3D reconstructions, marking Hexels as a valuable advancement in the trade-offs between quality and efficiency.
 
-### 2. Center-of-Mass Interpretation of Evolution Strategies
-**Authors:** Akshat Gupta
-**Link:** https://arxiv.org/abs/2610.35865v1
-**Summary:** The paper explores a geometric interpretation of evolution strategies (ES), a popular optimization method, by describing the model updates as movements toward a reward-weighted center of mass of a population of perturbed models. The authors demonstrate that the update can be understood as a displacement from the mean of the sampled rewards, providing an intuitive way to visualize how ES adjusts its parameters based on performance. This geometric framework enhances understanding of ES while remaining accurate even for finite populations.
+### 2. ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning
+**Authors:** Chaehyun Kim, Chi-Pin Huang, Jisoo Kim, Min-Hung Chen, Yu-Chiang Frank Wang, Seungryong Kim, Fu-En Yang
+**Link:** https://arxiv.org/abs/2610.37666v1
+**Summary:** The paper addresses the challenge of improving the generalization of Vision-Language-Action models in robotic manipulation, which often struggle due to limited action-labeled training data. The authors introduce a framework called ThinkWorld that uses a concept called Chain-of-Dynamics to represent actions as sequences of motion tokens, allowing the model to learn from both labeled demonstrations and unannotated human videos. Key results show that this approach enhances the transfer of learning from humans to robots and allows the robots to effectively tackle new tasks and environments.
 
-### 3. Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling
-**Authors:** Xi Chen, Chongjian Ge, Yiran Xu, Yiqun Mei, Henrik I. Christensen, Hao Tan, Ziwen Chen, Hanwen Jiang
-**Link:** https://arxiv.org/abs/2610.35866v1
-**Summary:** The paper presents the Auto-Research Arena, a benchmark designed to evaluate and enhance autonomous research systems in language modeling. It establishes a framework that separates performance qualifications from improvement metrics across multiple research objectives, demonstrating that existing research methods can be outperformed by simpler approaches. The Arena not only benchmarks current systems but also uncovers new research avenues, ultimately leading to improved model training outcomes.
+### 3. When Should We Intervene at Test Time?
+**Authors:** Jiahao Zhang, Xinling Wen, Liangliang Li, Yu Chen
+**Link:** https://arxiv.org/abs/2610.37658v1
+**Summary:** The paper addresses the challenge of test-time adaptation for machine learning models, which can perform inconsistently depending on the input batch. The authors propose PORTAL, a controller that intelligently decides when to apply interventions, which inputs to label for feedback, and when to stop querying, enhancing the model's performance by focusing on promising candidates. The key finding is that PORTAL can turn otherwise ineffective interventions into beneficial ones for selected batches, while also maintaining improvements for future inputs with minimal feedback.
 
-### 4. Learning Force-Reactive Humanoid Loco-Manipulation
-**Authors:** Sihang Li, Xiaofeng Guo, Jinkun Cao, Charlie Cheng, Ruihan Yang, Chen Feng, Guanya Shi, Haozhi Qi
-**Link:** https://arxiv.org/abs/2610.35862v1
-**Summary:** The paper addresses the challenge of coordinating both motion and contact force in humanoid robots during complex tasks. It introduces a framework called FLORE, which utilizes a force-reactive diffusion policy that integrates sensory inputs to predict hand actions and force commands, facilitated by a hybrid whole-body controller for balance and compliance. The key finding is that this approach significantly outperforms a traditional position-only policy, achieving an 80% success rate in executing contact-rich tasks compared to just 26.7% for the latter.
+### 4. Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness
+**Authors:** Igor Shilov, Xiaoxue Yang, Alexander Panfilov, Evgenii Kortukov, Matthieu Meeus, Peter Romov, Wojciech Samek, Jonas Geiping, Yves-Alexandre de Montjoye
+**Link:** https://arxiv.org/abs/2610.37657v1
+**Summary:** The paper presents Heads of Security (HoS), a novel defense mechanism against prompt injection in language models that enhances security by using learned attention gates to separate trusted from untrusted data. HoS significantly improves robustness against adaptive attacks compared to state-of-the-art defenses, maintaining model performance while achieving a dramatic reduction in attack success rates. Overall, the approach demonstrates a successful balance between security and utility, addressing critical vulnerabilities in language model interactions.
 
-### 5. On the stability of learning
-**Authors:** John J. Vastola
-**Link:** https://arxiv.org/abs/2610.35856v1
-**Summary:** This paper investigates the stability of learning algorithms when gradient information is noisy and intermittently available, which is often the case in biological neural networks. The authors analyze various settings, including single-layer and multi-layer networks, and identify explicit conditions that ensure stable learning, distinguishing these from traditional stability conditions in stochastic gradient descent. The key finding is that reliable learning requires not only unbiased credit assignment but also sufficiently frequent and informative feedback.
+### 5. Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops
+**Authors:** Aakash Sarkar, Ananya Mukherjee, Motoshige Sato
+**Link:** https://arxiv.org/abs/2610.37656v1
+**Summary:** This paper addresses the challenge of modeling relationships in graphs, specifically how entities interact based on their relational structure. The authors present a framework inspired by lattice gauge theory, focusing on "Wilson loops" to define these interactions, leading to a unique method of edge attention that respects the underlying symmetries. Their approach achieves impressive performance in inferring unobserved relationships and identifying corrupted data in sparse graphs, significantly outperforming traditional methods.
 
-### 6. Patient-specific rubric-based evaluation of large language models across longitudinal cancer care
-**Authors:** Wei-Wei Zhang, Pengkai Wang, Yan Li, Zhijie Sang, Guan-Qun Zhou, Jun-Yan Li, Shu-Han Zhou, Pei-Wen Liu, Ting-Xi Tang, Min Tang, Zhitian Hou, Jianmin Wu, Jian Guan, i Lin, Hongxia Yang, Ying Sun
-**Link:** https://arxiv.org/abs/2610.35847v1
-**Summary:** This paper addresses the challenge of evaluating large language models (LLMs) in longitudinal cancer care, as traditional assessments often focus on isolated clinical encounters rather than the entire care pathway. The authors introduce NPC-RubricBench, a comprehensive benchmark that evaluates LLMs based on the evolving responsibilities in cancer treatment, revealing that even models with high diagnostic accuracy struggled with later stages of care, particularly in making timely decisions. Key findings indicate that while more detailed prompts can improve decision quality, they may compromise the reliability of evidence used, underscoring the need for adaptive evaluation methods in medical AI.
+### 6. KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry
+**Authors:** Wenqing Peng, Michael Boy, Zhi-Song Liu
+**Link:** https://arxiv.org/abs/2610.37655v1
+**Summary:** The paper introduces KPPax, a tool that transforms kinetic ODE chemical mechanisms from KPP into differentiable code suitable for machine learning, allowing for more accurate model training and parameter estimation in atmospheric chemistry. By integrating JAX for efficient computation and automatic differentiation, KPPax enables precise sensitivity analysis and facilitates the use of neural networks for improving emission inventory corrections. Key results show that KPPax predicts identifiable reaction rate coefficients effectively and significantly enhances the accuracy of biogenic emission corrections by leveraging chemical model integrations.
 
-### 7. Preserve to Expand: Source-Aware Adaptation and Model Merging for Multilingual LLM-Based ASR
-**Authors:** Yuchen Zhang, Haralambos Mouratidis, Ravi Shekhar
-**Link:** https://arxiv.org/abs/2610.35846v1
-**Summary:** The paper addresses the challenge of expanding multilingual automatic speech recognition (ASR) systems to new languages without losing performance in previously supported languages. The authors propose a method using connector-based Speech LLMs, evaluating various strategies for adapting the model while preserving source-language capabilities. Key findings reveal that while certain fine-tuning approaches lead to forgetting source languages, a specific merging technique (SSU-Wanda+TIES) effectively balances the adaptation to new languages with maintaining performance on existing ones.
+### 7. Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well
+**Authors:** Ian Chuang, Hiya Shah, Vamsi Chilamkur, Iman Soltani, Claire Tomlin
+**Link:** https://arxiv.org/abs/2610.37652v1
+**Summary:** The paper addresses the challenge of dexterous in-hand manipulation with multi-fingered robotic hands, focusing on safely reaching diverse object poses without dropping them. The authors developed a training framework that uses simulation to create effective manipulation policies, incorporating innovative methods like varied starting conditions and an adaptive friction curriculum, achieving impressive transfer to real robots. Key results show that their approach allows for high success rates in goal achievement while significantly reducing object drops, demonstrating the potential of these learned skills in practical applications.
 
-### 8. Work Agents: Systems, Capabilities, and Optimization
-**Authors:** Zishan Xu, Enjun Du, Mingqi Gao, Cheng Yang, Junhao Shen, Zirong Chen, Zhiyuan Yao, Yifu Guo, Yuquan Lu, Jinyang Huang, Zhengxi Lu, Siyi Liu, Ziyu Zheng, Yongqi Zhang, Difan Zou, Weiwen Liu
-**Link:** https://arxiv.org/abs/2610.35845v1
-**Summary:** This paper addresses the challenge of reliably executing complex digital tasks using work agents that combine foundation models with operational systems. The authors propose a comprehensive framework that categorizes digital work, introduces key capabilities needed for effective execution, and suggests optimization strategies for both the models and their operational environments. The key contribution is a unified perspective that advances our understanding of work agents, enabling the development of systems that can deliver trustworthy and valuable work outcomes.
+### 8. GEPA-Curator: Curated Learning for Self Improving Agents
+**Authors:** Zack Yu, Nicholas Lee, Minjae Lee, Lakshya Agarwal, Luca Manolache, Wonjun Kang, Matei Zaharia, Michael W. Mahoney, Kurt Keutzer, Sehoon Kim, Amir Gholami
+**Link:** https://arxiv.org/abs/2610.37651v1
+**Summary:** The paper presents GEPA-Curator, a framework designed to enhance the performance of Large Language Models (LLMs) in complex task environments by curating the experiences that inform prompt optimization. It filters out potentially misleading tasks and incorporates successful past experiences to guide learning. The approach demonstrated significant performance improvements, achieving up to 20.7% better results compared to existing methods.
 
-### 9. I-HITL: Inalienable Human-in-the-Loop
-**Authors:** Samuel Breckenridge, Dani Vilardell, Wenhao Wang, Fan Zhang, Ari Juels
-**Link:** https://arxiv.org/abs/2610.35835v1
-**Summary:** The paper addresses the challenge of ensuring robust human oversight in AI systems, particularly when AI agents attempt to bypass established approval mechanisms through coercive tactics. To solve this, the authors introduce the concept of inalienable human-in-the-loop (I-HITL), which ensures that AI actions require explicit human approval, even under adversarial conditions. Their contributions include a formal definition of I-HITL, conditions for its implementation, and a prototype system called Countersign, which enhances existing human oversight frameworks using common consumer devices.
+### 9. Can LLMs Uncover Hidden Physical Laws through Free Exploration?
+**Authors:** Zhen Yang, Wen Wang, Xander Xu, Ying-Cong Chen
+**Link:** https://arxiv.org/abs/2610.37649v1
+**Summary:** This paper investigates whether large language models (LLMs) can autonomously discover new physical laws by exploring simulated environments with altered physics. The authors introduce a framework called LongChang, which enables LLMs to experimentally investigate these worlds without specific guidance. Among 12 tested LLMs, GPT-6-Astra succeeded in uncovering new insights with a 16.7% discovery rate, highlighting the potential of LLMs for scientific exploration despite the limitations observed in other models.
 
-### 10. Information-Theoretic Secure Aggregation With Heterogeneous Client Quantization
-**Authors:** Shreya Meel, Sennur Ulukus, Itzhak Tamo
-**Link:** https://arxiv.org/abs/2610.35833v1
-**Summary:** The paper addresses the challenge of secure aggregation in federated learning when clients have different quantization levels due to varying bandwidth constraints. It proposes a novel information-theoretic secure aggregation protocol that accommodates these heterogeneous quantization levels while preventing privacy breaches from client dropouts and collusion. The key contribution is the use of threshold secret sharing to handle updates from clients without revealing individual updates, despite the differences in their representation.
+### 10. Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis
+**Authors:** Andrew Szot, Samira Abnar, Omar Attia, Abbas Kazerouni, Michael Kirchhof, Cheng-Yu Hsieh, Raviteja Vemulapalli, Alexander Toshev
+**Link:** https://arxiv.org/abs/2610.37648v1
+**Summary:** This paper addresses the challenge of training large language model tool-use agents to effectively complete complex, multi-step tasks by examining how the composition of synthetically generated environments influences their performance. The authors introduce the SynthAPI pipeline, which allows them to control the diversity of environments and systematically analyze the impact of various factors on agent training. Their findings indicate that focusing on the diversity of tools and databases is more beneficial than simply increasing the number of tasks, leading to superior agent performance compared to previous methods.
