@@ -1,52 +1,52 @@
 ---
-## 2026-10-29
+## 2026-10-30
 
-### 1. MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control
-**Authors:** Athanasios Glentis, Dawei Li, Mingyi Hong
-**Link:** https://arxiv.org/abs/2610.37647v1
-**Summary:** The paper addresses the challenge of optimizing language model pretraining by improving weight norm control during updates, which can enhance training efficiency. The authors propose MuonGS, a method that utilizes Gram-Schmidt projection to manage weight updates while avoiding fixed weight norms. The key finding is that MuonGS achieves faster learning rates and better model performance, resulting in up to a 15% speedup in token processing compared to previous methods.
+### 1. Elucidating the Design Space of LM Data Attribution
+**Authors:** Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau
+**Link:** https://arxiv.org/abs/2610.40655v1
+**Summary:** The paper addresses the challenges in evaluating data attribution methods for Language Models (LMs) by introducing a Controlled Attribution Benchmark (CATT) that uses fictitious knowledge to provide clear ground truth. By systematically altering dataset properties and examining the effects of loss functions and aggregation methods on attribution scores, the authors demonstrate that utilizing negative log-odds gradients improves the identification of critical tokens, leading to a significantly higher recall in attribution accuracy. This method also enhances counterfactual retraining performance across various techniques.
 
-### 2. Multi-State Linear Attention with Generalized Second-Order Routing
-**Authors:** Hee Seung Hwang, Sanghyuk Chun, Xindi Wu, Olga Russakovsky, Zhiwei Deng
-**Link:** https://arxiv.org/abs/2610.37645v1
-**Summary:** The paper addresses the inefficiency of self-attention mechanisms in processing long sequences due to their quadratic time complexity. The authors introduce MERLIN, a method that enhances Multi-State Linear Attention by considering both the mean and variance of segment alignments, resulting in a more nuanced aggregation of information. Key results show that MERLIN significantly improves performance on long-context tasks, consistently outpacing existing aggregation methods even when using less memory.
+### 2. Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering
+**Authors:** Moshe Shenfeld, Eliad Tsfadia, Katrina Ligett
+**Link:** https://arxiv.org/abs/2610.40654v1
+**Summary:** The paper addresses the issue of differential privacy being overly influenced by outlier records that can dictate the amount of noise added to data, leading to unnecessary sensitivity. The authors propose a method called "propose-filter-release" (PFR), which privately filters out these outlier records before applying a privacy mechanism. The key contribution is demonstrating that PFR can ensure differential privacy under various scenarios, making it a flexible and general approach applicable to different types of statistical analyses and estimations.
 
-### 3. Metacognitive Decoding: Efficient Inference for Diffusion Language Agents
-**Authors:** Mingyu Zhao, Shuhang Lin, Ligong Han, Xiaojing Yu, Zhenting Wang, Yifei Pang, Yang Zhou, Dimitris N. Metaxas
-**Link:** https://arxiv.org/abs/2610.37642v1
-**Summary:** The paper addresses the challenge of inefficient computation in diffusion language models during token generation for agent interactions. It proposes a metacognitive controller that optimizes the generation process by dynamically deciding when to finalize tokens and how much text to generate, significantly reducing computational costs. The approach achieved an average reduction of 20.6% in inference FLOPs while still maintaining competitive accuracy across various benchmarks.
+### 3. Rethinking Neural Thickets Without Weight Perturbations
+**Authors:** Nicolas Dufour, Elouan Gardès, Amil Dravid, Patrick Pérez, Loic Landrieu
+**Link:** https://arxiv.org/abs/2610.40649v1
+**Summary:** The paper challenges the Neural Thickets hypothesis, which suggests that the performance gains in pretrained language models come from exploring dense neighborhoods in weight space through random perturbations. Instead, the authors propose an approach called Perturb-Select-Vote (PSV), which relies on generating output diversity and selecting high-performing predictions from a frozen model without modifying its weights. The key findings indicate that significant improvements can be achieved through this method, often surpassing the benefits of full weight perturbations, thereby offering a simpler, training-free alternative for enhancing model performance across language and vision tasks.
 
-### 4. What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models
-**Authors:** Chang Su, Bin Wu, Emine Yilmaz, Yao Lu
-**Link:** https://arxiv.org/abs/2610.37631v1
-**Summary:** This paper investigates how language models acquire different types of knowledge during their pretraining phase by analyzing models trained on web data from various years. The authors introduce a temporal variability score (TVS) to track the consistency of knowledge representation over time, finding that while both low- and high-TVS items are learned similarly early on, high-TVS items improve more rapidly later in training. The key result reveals that high-TVS items significantly outperform low-TVS items in knowledge-intensive tasks, highlighting distinct patterns in knowledge acquisition throughout pretraining.
+### 4. Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
+**Authors:** Jiongfan Yang, Weichen Fan, Haiwen Diao, Zhongang Cai, Ziwei Liu
+**Link:** https://arxiv.org/abs/2610.40647v1
+**Summary:** The paper addresses the inefficiency of pixel-space generative Transformers that use one token per image patch, which makes global attention costly when capturing fine details. To tackle this, the authors introduce SpecSlot, a novel approach that decouples the output detail from global attention length by assigning multiple local slots to each spatial anchor and restricting global attention to just the lowest-frequency slot. The key contribution is that SpecSlot achieves comparable or superior image quality while reducing computational costs, outperforming existing models on benchmark datasets.
 
-### 5. Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions
-**Authors:** Anouar Imel, Imad Charradi, Abderrahman Sghir, Khalil El Khammar
-**Link:** https://arxiv.org/abs/2610.37624v1
-**Summary:** The paper addresses how to effectively compress discussions from groups of large language models (LLMs) into a memory for making final decisions, focusing on which claims to retain. It introduces the CrossProfile benchmark and finds that common heuristics—selecting the rarest claims or those most relevant—often fail, with performance improving when attribution tags are removed from facts. Key results show that balancing the evidence retained in memory is more important than the selection policy, and that complete transcripts can hinder decision-making accuracy rather than help.
+### 5. Adaptive Scenario Generation for KL-DRO Around a Learned Density Model
+**Authors:** Aron Brenner, Saurabh Amin
+**Link:** https://arxiv.org/abs/2610.40644v1
+**Summary:** This paper addresses the challenge of distributionally robust optimization (DRO) in scenarios where the available data is limited, particularly in how to hedge against potential distributional shifts. The authors propose an innovative approach using a Kullback-Leibler (KL) ball centered around a learned density model, which allows for adapting the scenario set by iteratively sampling and steering towards worse-case scenarios. The key result shows that this method can significantly reduce costs in situations where data is scarce and the model can extrapolate effectively, especially compared to traditional approaches that rely solely on the empirical distribution.
 
-### 6. VideoLVR: Latent Visual Reasoning over Grounded Video Evidence
-**Authors:** Shilong Li, Xingyuan Bu, Hao Shi, Yun Xing, Weixin Feng, Qiangpeng Yang, Shilei Wen
-**Link:** https://arxiv.org/abs/2610.37613v1
-**Summary:** The paper presents VideoLVR, a new method to enhance video understanding in multimodal large language models by effectively integrating visual evidence during reasoning. Unlike existing methods that struggle with visual detail maintenance or rely on non-visual cues, VideoLVR generates latent visual evidence from relevant video moments and aligns this with text-based reasoning. The approach significantly improves performance on tasks requiring detailed visual understanding without increasing the model's context complexity.
+### 6. Luggage re-identification: A study of strategies towards a real-world application
+**Authors:** Quentin Dhôte, Romaric Audigier
+**Link:** https://arxiv.org/abs/2610.40643v1
+**Summary:** The paper addresses the challenge of luggage re-identification in crowded and cluttered environments, which is crucial for security and lost luggage recovery. The authors propose an end-to-end system that utilizes multiple video streams to detect and re-identify luggage by effectively merging different views and shots. Their experiments on a benchmark dataset demonstrate improved performance in real-world scenarios compared to existing methods focused solely on single, clear images.
 
-### 7. EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning
-**Authors:** Sihan Yang, Weichen Bai, Ruichuan An, Yiming Cheng, Zhiyuan Feng, Tianyi Jiang, Renye Yan, Ning Ding, Yifan Zhang, Renrui Zhang, Yehui Tang, Wentao Zhang
-**Link:** https://arxiv.org/abs/2610.37609v1
-**Summary:** The paper addresses the challenge of improving the efficiency of reinforcement learning (RL) agents when faced with expensive environment rollouts. It introduces EnvSched, an online scheduling system that optimizes task selection by balancing between informative rewards and diverse environments, using a dual-relation graph to manage knowledge from historical rollouts. The results show that EnvSched significantly enhances performance, achieving a higher average score in various benchmarks with fewer training steps compared to random task selection.
+### 7. From extreme weather to agricultural consequences with agentic AI
+**Authors:** Minghan Yu, Mengyu Dai, Yixin Wen, Haizhao Yang
+**Link:** https://arxiv.org/abs/2610.40641v1
+**Summary:** The paper addresses the challenge of predicting the agricultural impact of extreme weather events, which is often difficult despite accurate weather forecasts. The authors introduce WxCrop, an AI-based agent that uses causal analysis of weather indices to reliably predict crop losses for specific scenarios, such as hurricanes and droughts, by integrating weather data with agricultural records. The key result shows that WxCrop can accurately assess crop loss and validate predictions through extensive checks, significantly aiding governments and farmers in responding to agricultural crises.
 
-### 8. Beyond Answer Changes: Matched Same-Class Controls for Local Audio Evidence
-**Authors:** Yunuo Wang, Maoyuan Chen, Yuanjin Huang, Xing Liu
-**Link:** https://arxiv.org/abs/2610.37605v1
-**Summary:** This paper addresses the issue of understanding how audio-language models respond to local changes in sound events, specifically whether answer changes are due to sensitivity to the class of the event or to alterations in the audio waveform itself. The authors conducted experiments comparing same-class (which preserve the original answer) and different-class event replacements in synthetic soundscapes. They found that different-class replacements led to significantly more answer changes, while same-class replacements maintained high accuracy, suggesting that the class of the sound event plays a critical role in model responses.
+### 8. world2vec: Mechanistic world models through latent dynamics learning
+**Authors:** Tobias Schmidt, Rodrigo Gonzalez Laiz, Krisztián Szuppinger, Steffen Schneider
+**Link:** https://arxiv.org/abs/2610.40637v1
+**Summary:** The paper addresses the issue of conventional world models lacking mechanistic interpretability and efficient dynamics representation in controlling environments. The authors introduce "world2vec," a method that learns latent dynamics directly from observations and actions without relying on reward signals, achieving impressive control performance with significantly fewer parameters than existing models. Key results show that world2vec not only excels in controlling continuous environments from pixel data but also enhances system identification across a diverse set of 71 attractors.
 
-### 9. MoI-Bench: A Benchmark for Image Generation and Editing on Mobile Devices
-**Authors:** Kailai Feng, Haoxiang Rao, Yuxiang Wei, Bo Chen, Junsong Li, Yang Pan, Chengkun Cai, Jagmohan Chauhan
-**Link:** https://arxiv.org/abs/2610.37599v1
-**Summary:** The paper introduces MoI-Bench, a new benchmark specifically designed to evaluate image generation and editing models on mobile devices, addressing the gap between on-device and server-side capabilities. It comprises 64 subtasks and employs a two-dimensional Quality-Deployability capability map to provide nuanced insights into model performance. Key findings suggest that while on-device models perform well in generation and editing, there's a critical need to enhance task coverage and editing quality, especially in areas like identity preservation and text rendering.
+### 9. Probing Spatial State Representations in Visual Foundation Models
+**Authors:** Baiqiao Yin, Zhongang Cai, Ruisi Wang, Qiwei Liang, Lei Yang, Ziwei Liu
+**Link:** https://arxiv.org/abs/2610.40636v1
+**Summary:** This paper investigates whether visual foundation models can maintain and update spatial awareness beyond current visual observations, which is crucial for action guidance. The authors explore four dimensions of spatial capability using frozen-feature probes on various model representations while streaming images from static indoor environments. They find that while models can effectively read visible scenes, their ability to maintain object persistence and use that information for future actions often falls short, suggesting that evaluations of spatial representations should also consider their long-term usability and predictive capacities.
 
-### 10. GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting
-**Authors:** Joseph Natter, Long Vu, Yifan Zhang, Bobin Deng, Kun Suo, Rui Wu
-**Link:** https://arxiv.org/abs/2610.37598v1
-**Summary:** The paper addresses the challenge of traffic forecasting, which involves understanding complex temporal and spatial dependencies in road networks, particularly for new or evolving systems. The authors propose the Graph-Aware Spatiotemporal Prior-Data Fitted Network (GAS-PFN), which enhances zero-shot forecasting by integrating road topology into its learning process through a random-walk diffusion method. The key result shows that GAS-PFN significantly improves forecasting accuracy, achieving a 34% reduction in mean squared error compared to its closest predecessor, demonstrating that aligning model design with graph structure enhances prediction performance.
+### 10. ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender
+**Authors:** Qiyao Ma, Xiaodong Liu, Weiwei Yang, Mingqian Feng, Chengquan Guo, Jialin Song, Carolyn Buractaon, Zhe Zhao, Junshan Zhang, Sandeep Atluri, Christopher White, Jianfeng Gao
+**Link:** https://arxiv.org/abs/2610.40627v1
+**Summary:** The paper addresses the issue of large language models inadequately refusing harmful requests during multi-turn conversations due to shallow safety alignment, where safety responses are concentrated in the initial tokens. The authors propose a framework called Assess → Decide → Respond, which allows the model to evaluate user intent, make a clear safety decision, and then generate a response based on that decision. Their approach significantly enhances multi-turn safety performance while maintaining utility, demonstrating that intervening early in the response process can effectively control and improve safety outcomes.
