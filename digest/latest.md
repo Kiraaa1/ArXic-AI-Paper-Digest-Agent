@@ -1,52 +1,52 @@
 ---
-## 2026-10-30
+## 2026-10-31
 
-### 1. Elucidating the Design Space of LM Data Attribution
-**Authors:** Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau
-**Link:** https://arxiv.org/abs/2610.40655v1
-**Summary:** The paper addresses the challenges in evaluating data attribution methods for Language Models (LMs) by introducing a Controlled Attribution Benchmark (CATT) that uses fictitious knowledge to provide clear ground truth. By systematically altering dataset properties and examining the effects of loss functions and aggregation methods on attribution scores, the authors demonstrate that utilizing negative log-odds gradients improves the identification of critical tokens, leading to a significantly higher recall in attribution accuracy. This method also enhances counterfactual retraining performance across various techniques.
+### 1. Testimony from Timelines: Evidence-Grounded Significance Testing of Temporal Clinical Hypotheses
+**Authors:** Chengyang He, Wenlong Zhang, Koduvayur Subbalakshmi, Ping Wang
+**Link:** https://arxiv.org/abs/2610.40619v1
+**Summary:** The paper addresses the issue of validating temporal hypotheses in health-related contexts, such as determining the effects of vaccines or product recalls, where existing language models often provide fluent but unverified assertions. The authors introduce STRATA, a benchmark that evaluates the entire decision-making process leading to a conclusion, and propose the ART approach, which allows for clear inspection of each step in hypothesis testing. The key result is that ART significantly improves record selection accuracy, bringing a leading language model's performance close to that of top-performing models in this domain.
 
-### 2. Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering
-**Authors:** Moshe Shenfeld, Eliad Tsfadia, Katrina Ligett
-**Link:** https://arxiv.org/abs/2610.40654v1
-**Summary:** The paper addresses the issue of differential privacy being overly influenced by outlier records that can dictate the amount of noise added to data, leading to unnecessary sensitivity. The authors propose a method called "propose-filter-release" (PFR), which privately filters out these outlier records before applying a privacy mechanism. The key contribution is demonstrating that PFR can ensure differential privacy under various scenarios, making it a flexible and general approach applicable to different types of statistical analyses and estimations.
+### 2. An ODE-based Sampler for Discrete Diffusion Models
+**Authors:** Samson Gourevitch, Yazid Janati, Eric Moulines, Eric P. Xing, Alain Durmus, Giacomo Zanella
+**Link:** https://arxiv.org/abs/2610.40618v1
+**Summary:** The paper presents an approach to improve sampling from discrete diffusion models by introducing exponential residual flows (ERFs), which use deterministic ordinary differential equations to evolve a continuous residual variable alongside the discrete states. This method preserves the marginals of the original diffusion model and facilitates accelerated sampling and consistency distillation. The authors demonstrate empirical improvements in various tasks, including code and text generation, compared to previous sampling methods.
 
-### 3. Rethinking Neural Thickets Without Weight Perturbations
-**Authors:** Nicolas Dufour, Elouan Gardès, Amil Dravid, Patrick Pérez, Loic Landrieu
-**Link:** https://arxiv.org/abs/2610.40649v1
-**Summary:** The paper challenges the Neural Thickets hypothesis, which suggests that the performance gains in pretrained language models come from exploring dense neighborhoods in weight space through random perturbations. Instead, the authors propose an approach called Perturb-Select-Vote (PSV), which relies on generating output diversity and selecting high-performing predictions from a frozen model without modifying its weights. The key findings indicate that significant improvements can be achieved through this method, often surpassing the benefits of full weight perturbations, thereby offering a simpler, training-free alternative for enhancing model performance across language and vision tasks.
+### 3. Difficulty Calibration Across Time for Membership Inference in Diffusion Models
+**Authors:** Michael Joseph, Yedid Hoshen
+**Link:** https://arxiv.org/abs/2610.40616v1
+**Summary:** This paper addresses the challenge of accurately identifying whether an image was part of a training dataset in diffusion models, a task complicated by differences in image reconstruction difficulty. The authors propose two innovative calibration methods—Reference-Model Calibration (RMC) and Temporal Self-Calibration (TSC)—to effectively distinguish between memorized images and those that are inherently easier or harder to reconstruct. Their methods significantly improve the accuracy of membership inference attacks, demonstrating robust performance across various model types.
 
-### 4. Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
-**Authors:** Jiongfan Yang, Weichen Fan, Haiwen Diao, Zhongang Cai, Ziwei Liu
-**Link:** https://arxiv.org/abs/2610.40647v1
-**Summary:** The paper addresses the inefficiency of pixel-space generative Transformers that use one token per image patch, which makes global attention costly when capturing fine details. To tackle this, the authors introduce SpecSlot, a novel approach that decouples the output detail from global attention length by assigning multiple local slots to each spatial anchor and restricting global attention to just the lowest-frequency slot. The key contribution is that SpecSlot achieves comparable or superior image quality while reducing computational costs, outperforming existing models on benchmark datasets.
+### 4. TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races
+**Authors:** Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi, Jason Park, Valeriu Lacatusu, Sylvestre-Alvise Rebuffi, Hongyan Chang, Hady Elsahar, Tomáš Souček, Tuan Tran, Surya Parimi, Alexandre Mourachko
+**Link:** https://arxiv.org/abs/2610.40613v1
+**Summary:** TextSeal2 addresses the challenge of watermarking outputs from large language models (LLMs) without distorting the generated text or affecting the model's acceptance rate. It improves upon its predecessor by integrating multiple watermarking keys through a novel Gaussian copula technique, ensuring that detection remains robust and efficient. The results show that TextSeal2 significantly enhances detection rates for watermarked outputs by up to 22 percentage points compared to earlier methods while maintaining output quality and speed.
 
-### 5. Adaptive Scenario Generation for KL-DRO Around a Learned Density Model
-**Authors:** Aron Brenner, Saurabh Amin
-**Link:** https://arxiv.org/abs/2610.40644v1
-**Summary:** This paper addresses the challenge of distributionally robust optimization (DRO) in scenarios where the available data is limited, particularly in how to hedge against potential distributional shifts. The authors propose an innovative approach using a Kullback-Leibler (KL) ball centered around a learned density model, which allows for adapting the scenario set by iteratively sampling and steering towards worse-case scenarios. The key result shows that this method can significantly reduce costs in situations where data is scarce and the model can extrapolate effectively, especially compared to traditional approaches that rely solely on the empirical distribution.
+### 5. When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
+**Authors:** A. J. A. Jubayer Talukder, Mohammad Ariful Haque
+**Link:** https://arxiv.org/abs/2610.40611v1
+**Summary:** The paper addresses the challenge of developing proactive assistants that can effectively decide when to provide assistance and generate relevant hints during conversations. The authors propose a compact decoder that integrates both the gating and hint generation processes, allowing for more efficient and memory-informed responses. Their key finding is that this single model outperforms traditional systems in terms of precision and processing time while maintaining competitive performance in hint quality, suggesting a promising direction for enhancing conversational agents.
 
-### 6. Luggage re-identification: A study of strategies towards a real-world application
-**Authors:** Quentin Dhôte, Romaric Audigier
-**Link:** https://arxiv.org/abs/2610.40643v1
-**Summary:** The paper addresses the challenge of luggage re-identification in crowded and cluttered environments, which is crucial for security and lost luggage recovery. The authors propose an end-to-end system that utilizes multiple video streams to detect and re-identify luggage by effectively merging different views and shots. Their experiments on a benchmark dataset demonstrate improved performance in real-world scenarios compared to existing methods focused solely on single, clear images.
+### 6. Collaborative AI agents for autonomous experimental research with solid-state quantum spins
+**Authors:** El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai
+**Link:** https://arxiv.org/abs/2610.40589v1
+**Summary:** The paper addresses the challenge of autonomous scientific research by developing collaborative AI agents that can formulate research questions, evaluate each other's findings, and conduct experiments. These agents utilize large language models to assess theoretical predictions about quantum spins in diamond, refining their research protocols based on experimental feedback. The key contribution is demonstrating that these AI agents can successfully select and conduct research, leading to reliable experimental outcomes while maintaining rigorous criteria for acceptance.
 
-### 7. From extreme weather to agricultural consequences with agentic AI
-**Authors:** Minghan Yu, Mengyu Dai, Yixin Wen, Haizhao Yang
-**Link:** https://arxiv.org/abs/2610.40641v1
-**Summary:** The paper addresses the challenge of predicting the agricultural impact of extreme weather events, which is often difficult despite accurate weather forecasts. The authors introduce WxCrop, an AI-based agent that uses causal analysis of weather indices to reliably predict crop losses for specific scenarios, such as hurricanes and droughts, by integrating weather data with agricultural records. The key result shows that WxCrop can accurately assess crop loss and validate predictions through extensive checks, significantly aiding governments and farmers in responding to agricultural crises.
+### 7. Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In
+**Authors:** Leonidas Raghav
+**Link:** https://arxiv.org/abs/2610.40588v1
+**Summary:** The paper addresses the issue of AI agents potentially colluding by revealing sensitive information when pressured by other agents. It introduces a linear probing method that analyzes an agent's internal activations just before output generation to detect signs of a potential leak, achieving an 82% detection rate of such leaks while maintaining a low false alarm rate. This approach emphasizes the importance of early warnings to prevent collusion before sensitive information is disclosed.
 
-### 8. world2vec: Mechanistic world models through latent dynamics learning
-**Authors:** Tobias Schmidt, Rodrigo Gonzalez Laiz, Krisztián Szuppinger, Steffen Schneider
-**Link:** https://arxiv.org/abs/2610.40637v1
-**Summary:** The paper addresses the issue of conventional world models lacking mechanistic interpretability and efficient dynamics representation in controlling environments. The authors introduce "world2vec," a method that learns latent dynamics directly from observations and actions without relying on reward signals, achieving impressive control performance with significantly fewer parameters than existing models. Key results show that world2vec not only excels in controlling continuous environments from pixel data but also enhances system identification across a diverse set of 71 attractors.
+### 8. Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond
+**Authors:** Yalin E. Sagduyu, Tugba Erpek, Sastry Kompella
+**Link:** https://arxiv.org/abs/2610.40586v1
+**Summary:** The paper addresses the challenge of accurate target localization and velocity estimation in multistatic integrated sensing and communications (ISAC) systems, which are hindered by dense and dynamic clutter. The authors propose a deep learning-based approach for clutter suppression, utilizing advanced neural network architectures to more effectively enhance target signals obscured by clutter. Their method significantly outperforms traditional clutter suppression techniques, achieving higher accuracy in target estimation under challenging conditions.
 
-### 9. Probing Spatial State Representations in Visual Foundation Models
-**Authors:** Baiqiao Yin, Zhongang Cai, Ruisi Wang, Qiwei Liang, Lei Yang, Ziwei Liu
-**Link:** https://arxiv.org/abs/2610.40636v1
-**Summary:** This paper investigates whether visual foundation models can maintain and update spatial awareness beyond current visual observations, which is crucial for action guidance. The authors explore four dimensions of spatial capability using frozen-feature probes on various model representations while streaming images from static indoor environments. They find that while models can effectively read visible scenes, their ability to maintain object persistence and use that information for future actions often falls short, suggesting that evaluations of spatial representations should also consider their long-term usability and predictive capacities.
+### 9. VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
+**Authors:** Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong, Ben Kao, Ravi Kumar, Pritish Kamath
+**Link:** https://arxiv.org/abs/2610.40578v1
+**Summary:** The paper presents VeriCUA, a framework designed to enhance the reliability of task-completion verification for computer-using agents across various platforms by treating verification as an active process of gathering evidence. Unlike traditional methods that rely on limited views of digital environments, VeriCUA dynamically assesses available context and combines different verification checks to yield more accurate assessments. The results demonstrate that this approach leads to improved agreement with established benchmarks, especially in challenging cases, and better detection of false completion claims during execution.
 
-### 10. ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender
-**Authors:** Qiyao Ma, Xiaodong Liu, Weiwei Yang, Mingqian Feng, Chengquan Guo, Jialin Song, Carolyn Buractaon, Zhe Zhao, Junshan Zhang, Sandeep Atluri, Christopher White, Jianfeng Gao
-**Link:** https://arxiv.org/abs/2610.40627v1
-**Summary:** The paper addresses the issue of large language models inadequately refusing harmful requests during multi-turn conversations due to shallow safety alignment, where safety responses are concentrated in the initial tokens. The authors propose a framework called Assess → Decide → Respond, which allows the model to evaluate user intent, make a clear safety decision, and then generate a response based on that decision. Their approach significantly enhances multi-turn safety performance while maintaining utility, demonstrating that intervening early in the response process can effectively control and improve safety outcomes.
+### 10. Multi-View MoE: Letting Every Router Shape Expert Computation
+**Authors:** Zelin Zhao, Tianchi Ma, Junyuan Shang, Shuohuan Wang, Dianhai Yu
+**Link:** https://arxiv.org/abs/2610.40577v1
+**Summary:** The paper addresses the issue of suboptimal expert selection in sparse mixture-of-experts (MoE) models, where traditional single-router systems may not effectively capture expert utility. The authors propose a Multi-View MoE framework that employs multiple routers to enhance expert selection and computation by aggregating preferences and dynamically mixing inputs. This approach leads to significant performance improvements, yielding a 1.18 percentage point gain on a multi-task benchmark, and shows better alignment between router selections and actual expert utility.
