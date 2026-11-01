@@ -1,52 +1,52 @@
 ---
-## 2026-10-31
+## 2026-11-01
 
-### 1. Testimony from Timelines: Evidence-Grounded Significance Testing of Temporal Clinical Hypotheses
-**Authors:** Chengyang He, Wenlong Zhang, Koduvayur Subbalakshmi, Ping Wang
-**Link:** https://arxiv.org/abs/2610.40619v1
-**Summary:** The paper addresses the issue of validating temporal hypotheses in health-related contexts, such as determining the effects of vaccines or product recalls, where existing language models often provide fluent but unverified assertions. The authors introduce STRATA, a benchmark that evaluates the entire decision-making process leading to a conclusion, and propose the ART approach, which allows for clear inspection of each step in hypothesis testing. The key result is that ART significantly improves record selection accuracy, bringing a leading language model's performance close to that of top-performing models in this domain.
+### 1. PIVOT: Progressive Intervention via Online Teacher Correction
+**Authors:** Zhihao Yang, Boyuan Zheng, Puhui Tan, Yukun Chen, Kuan Zhang, Longze Chen, Jiaming Li, Renke Shan, Lu Wang, Xianpei Han
+**Link:** https://arxiv.org/abs/2610.40576v1
+**Summary:** The paper addresses the challenge of reinforcement learning from sparse feedback, particularly in complex reasoning tasks where failures offer no learning signals. The authors introduce PIVOT, a method that combines trajectory-level interventions and token-level supervision from a teacher to enhance the learning process. Their experiments demonstrate that PIVOT significantly improves performance on logic games, achieving nearly double the success rate compared to existing methods.
 
-### 2. An ODE-based Sampler for Discrete Diffusion Models
-**Authors:** Samson Gourevitch, Yazid Janati, Eric Moulines, Eric P. Xing, Alain Durmus, Giacomo Zanella
-**Link:** https://arxiv.org/abs/2610.40618v1
-**Summary:** The paper presents an approach to improve sampling from discrete diffusion models by introducing exponential residual flows (ERFs), which use deterministic ordinary differential equations to evolve a continuous residual variable alongside the discrete states. This method preserves the marginals of the original diffusion model and facilitates accelerated sampling and consistency distillation. The authors demonstrate empirical improvements in various tasks, including code and text generation, compared to previous sampling methods.
+### 2. Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation
+**Authors:** Yifu Luo, Chuang Ma, Zeyu Chen, Enkelejda Kasneci, Qi Chen, Gjergji Kasneci
+**Link:** https://arxiv.org/abs/2610.40574v1
+**Summary:** The paper addresses the limitation of existing On-policy Self-distillation (OPSD) methods that use a fixed teacher model for training language models. The authors propose a new approach called Multi-teacher Adaptive On-policy Self-Distillation (MTA-OPSD), which allows each token to select its own preferred teacher from a pool during training, reflecting the varying preferences across tokens. The key result shows that MTA-OPSD significantly improves performance on mathematical reasoning tasks, achieving an average gain of up to 5.9% over traditional OPSD methods.
 
-### 3. Difficulty Calibration Across Time for Membership Inference in Diffusion Models
-**Authors:** Michael Joseph, Yedid Hoshen
-**Link:** https://arxiv.org/abs/2610.40616v1
-**Summary:** This paper addresses the challenge of accurately identifying whether an image was part of a training dataset in diffusion models, a task complicated by differences in image reconstruction difficulty. The authors propose two innovative calibration methods—Reference-Model Calibration (RMC) and Temporal Self-Calibration (TSC)—to effectively distinguish between memorized images and those that are inherently easier or harder to reconstruct. Their methods significantly improve the accuracy of membership inference attacks, demonstrating robust performance across various model types.
+### 3. Gym-Anything for Robotics: Scaling physical simulations with digital agents
+**Authors:** Pranjal Aggarwal, Sean Welleck
+**Link:** https://arxiv.org/abs/2610.40565v1
+**Summary:** The paper addresses the limitation of current robotics simulations, which are narrow and require significant expert input to create. To overcome this, the authors introduce Gym-Anything for Robotics, a framework that leverages coding agents to autonomously generate realistic simulations, culminating in the RoboWorld set of 25 varied environments. Key contributions include a novel adversarial loop for simulation quality assessment and new training methods that enhance the performance of reinforced learning models, which still struggle significantly with the provided tasks.
 
-### 4. TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races
-**Authors:** Tom Sander, Pierre Fernandez, Itai Gat, Haiming Bao, Jiaxin Shi, Jason Park, Valeriu Lacatusu, Sylvestre-Alvise Rebuffi, Hongyan Chang, Hady Elsahar, Tomáš Souček, Tuan Tran, Surya Parimi, Alexandre Mourachko
-**Link:** https://arxiv.org/abs/2610.40613v1
-**Summary:** TextSeal2 addresses the challenge of watermarking outputs from large language models (LLMs) without distorting the generated text or affecting the model's acceptance rate. It improves upon its predecessor by integrating multiple watermarking keys through a novel Gaussian copula technique, ensuring that detection remains robust and efficient. The results show that TextSeal2 significantly enhances detection rates for watermarked outputs by up to 22 percentage points compared to earlier methods while maintaining output quality and speed.
+### 4. Training Foundation Models with a Single Algorithm
+**Authors:** Yuda Song, Alvin Zhang, Fahim Tajwar, Daman Arora, Jeff Schneider, Daniel Khashabi, Ruslan Salakhutdinov, J. Andrew Bagnell, Aarti Singh, Andrea Zanette
+**Link:** https://arxiv.org/abs/2610.40564v1
+**Summary:** This paper addresses the fragmentation in training foundation models, which typically involves multiple distinct stages and algorithms. The authors propose a unified training approach that combines these stages into a single likelihood-based framework, allowing for more efficient data use and improved model performance. Their method enhances task coverage and accuracy while simplifying the overall training process, paving the way for a more cohesive understanding of foundation model development.
 
-### 5. When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
-**Authors:** A. J. A. Jubayer Talukder, Mohammad Ariful Haque
-**Link:** https://arxiv.org/abs/2610.40611v1
-**Summary:** The paper addresses the challenge of developing proactive assistants that can effectively decide when to provide assistance and generate relevant hints during conversations. The authors propose a compact decoder that integrates both the gating and hint generation processes, allowing for more efficient and memory-informed responses. Their key finding is that this single model outperforms traditional systems in terms of precision and processing time while maintaining competitive performance in hint quality, suggesting a promising direction for enhancing conversational agents.
+### 5. Comparing Human Role-Players and LLM-Simulated Clients in Online Counselling Training: An Analysis of Counselling Patterns
+**Authors:** Eric Rudolph, Philipp Steigerwald, Jens Albrecht
+**Link:** https://arxiv.org/abs/2610.40563v1
+**Summary:** This study compares the effectiveness of Large Language Models (LLMs) in simulating counselling clients against human role-players for training novice counsellors. By analyzing role-play interactions, the researchers found that while LLMs can replicate certain conversational dynamics, there are notable differences in how counsellors communicate with human versus LLM clients. The results suggest that LLM-based simulations can enhance counselling training but also indicate the need for further improvements in virtual client representations.
 
-### 6. Collaborative AI agents for autonomous experimental research with solid-state quantum spins
-**Authors:** El Mustapha Mansouri, Eikichi Kimura, Masato Koga, Keigo Arai
-**Link:** https://arxiv.org/abs/2610.40589v1
-**Summary:** The paper addresses the challenge of autonomous scientific research by developing collaborative AI agents that can formulate research questions, evaluate each other's findings, and conduct experiments. These agents utilize large language models to assess theoretical predictions about quantum spins in diamond, refining their research protocols based on experimental feedback. The key contribution is demonstrating that these AI agents can successfully select and conduct research, leading to reliable experimental outcomes while maintaining rigorous criteria for acceptance.
+### 6. FARMS: A Verifiable Foundation for Automated Computational Science
+**Authors:** Di Wu, Ling Liang, Haizhao Yang
+**Link:** https://arxiv.org/abs/2610.40560v1
+**Summary:** The paper presents FARMS, a framework designed to improve automated computational science by providing a reliable method for connecting mathematical knowledge to AI systems. By transforming computational mathematics into a format that AI can understand and use effectively, FARMS achieved a high acceptance rate in processing numerical problems, demonstrating its potential for affordable and trustworthy automation in scientific computations.
 
-### 7. Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In
-**Authors:** Leonidas Raghav
-**Link:** https://arxiv.org/abs/2610.40588v1
-**Summary:** The paper addresses the issue of AI agents potentially colluding by revealing sensitive information when pressured by other agents. It introduces a linear probing method that analyzes an agent's internal activations just before output generation to detect signs of a potential leak, achieving an 82% detection rate of such leaks while maintaining a low false alarm rate. This approach emphasizes the importance of early warnings to prevent collusion before sensitive information is disclosed.
+### 7. Advancing Clinical Genomic Analysis with a Skill-Centred Agent
+**Authors:** Qiaoyu Zheng, Weike Zhao, Yanjie Fan, Ye Cao, Mengqi Jiang, Xiao Zhou, Xiaoman Zhang, Pengcheng Qiu, Yongguo Yu, Yanfeng Wang, Ya Zhang, Chaoyi Wu, Weidi Xie
+**Link:** https://arxiv.org/abs/2610.40556v1
+**Summary:** The paper addresses the challenge of integrating complex genomic data and guidelines into clinical decision-making, which has become a bottleneck due to the increase in accessible sequencing. The authors developed ClinGeX, a language model agent that uses curated skills to assist clinicians in genomic analysis. Key results showed that ClinGeX significantly improved concordance with expert classifications and reduced interpretation time compared to traditional methods, suggesting its potential to enhance genomic decision-making in practice.
 
-### 8. Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond
-**Authors:** Yalin E. Sagduyu, Tugba Erpek, Sastry Kompella
-**Link:** https://arxiv.org/abs/2610.40586v1
-**Summary:** The paper addresses the challenge of accurate target localization and velocity estimation in multistatic integrated sensing and communications (ISAC) systems, which are hindered by dense and dynamic clutter. The authors propose a deep learning-based approach for clutter suppression, utilizing advanced neural network architectures to more effectively enhance target signals obscured by clutter. Their method significantly outperforms traditional clutter suppression techniques, achieving higher accuracy in target estimation under challenging conditions.
+### 8. Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs
+**Authors:** Alan Sorani, Ashvni Narayanan, Michael Shalyt, Tali Monderer, Rotem Kalisch, Hila Barkan, Elyasheev Leibtag, Shachar Weinbaum, Carsten Schneider, John Campbell, Ido Kaminer
+**Link:** https://arxiv.org/abs/2610.40551v1
+**Summary:** The paper addresses the challenge of evaluating complex mathematical proofs in research-level number theory, particularly given the rise of AI in this area. The authors propose an AI-assisted evaluation pipeline that improves the assessment of natural language proofs and supporting code, significantly reducing error rates in judgment. Key contributions include the successful proofs of open conjectures and a methodology for scalable evaluation in mathematics and AI research.
 
-### 9. VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
-**Authors:** Qiushi Sun, Da Yu, Alexander Knop, Amer Sinha, Lingpeng Kong, Ben Kao, Ravi Kumar, Pritish Kamath
-**Link:** https://arxiv.org/abs/2610.40578v1
-**Summary:** The paper presents VeriCUA, a framework designed to enhance the reliability of task-completion verification for computer-using agents across various platforms by treating verification as an active process of gathering evidence. Unlike traditional methods that rely on limited views of digital environments, VeriCUA dynamically assesses available context and combines different verification checks to yield more accurate assessments. The results demonstrate that this approach leads to improved agreement with established benchmarks, especially in challenging cases, and better detection of false completion claims during execution.
+### 9. Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents
+**Authors:** Daniel Strauß, Zhenshan Bing, Alois Knoll
+**Link:** https://arxiv.org/abs/2610.40545v1
+**Summary:** The paper addresses the inefficiencies in how long-context models retrieve relevant information by proposing a method that utilizes a local traversal approach through an address space, separating content from address to improve retrieval efficiency. This approach introduces a cost-regularized indexing system, promoting the retrieval of complementary memories while avoiding redundancy. Preliminary results demonstrate its effectiveness, achieving high performance in a memory task while suggesting that retrieving stateful memories may be easier to learn than stateless methods, indicating potential for further research.
 
-### 10. Multi-View MoE: Letting Every Router Shape Expert Computation
-**Authors:** Zelin Zhao, Tianchi Ma, Junyuan Shang, Shuohuan Wang, Dianhai Yu
-**Link:** https://arxiv.org/abs/2610.40577v1
-**Summary:** The paper addresses the issue of suboptimal expert selection in sparse mixture-of-experts (MoE) models, where traditional single-router systems may not effectively capture expert utility. The authors propose a Multi-View MoE framework that employs multiple routers to enhance expert selection and computation by aggregating preferences and dynamically mixing inputs. This approach leads to significant performance improvements, yielding a 1.18 percentage point gain on a multi-task benchmark, and shows better alignment between router selections and actual expert utility.
+### 10. Machine Learning-Based Detection of Mobile Money Scan Messages in Ghana: A Comparative Evaluation of Naive Bayes, Support Vector Machine, and Randon Forest Classifiers
+**Authors:** Ibrahim Salifu, Muhaisin Tiyumba Nantogmah
+**Link:** https://arxiv.org/abs/2610.40544v1
+**Summary:** The paper addresses the growing issue of social-engineering fraud targeting mobile money transactions in Ghana, where scammers leverage SMS messages to deceive users. Researchers developed a machine learning system to classify these scam messages from legitimate ones using a dataset of 220 labeled messages and evaluated three classifiers: Naive Bayes, linear SVM, and Random Forest. The key finding was that both Naive Bayes and linear SVM achieved perfect accuracy (1.00) on held-out test data, demonstrating their effectiveness for detecting SMS fraud in resource-limited settings.
