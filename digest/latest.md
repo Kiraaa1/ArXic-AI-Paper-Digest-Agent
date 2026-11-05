@@ -1,52 +1,52 @@
 ---
-## 2026-11-04
+## 2026-11-05
 
-### 1. DreamX: Video Diffusion Model is a Universal Latent Action Learner
-**Authors:** Jisoo Kim, Chaehyun Kim, Junsu Kim, Jiho Park, Seongchan Kim, Eunbeen Hong, Soowon Son, Fu-En Yang, Seungryong Kim
-**Link:** https://arxiv.org/abs/2611.05377v1
-**Summary:** The paper presents DreamX, a novel model designed to learn universal action representations from videos, effectively addressing the challenge of distinguishing actions from irrelevant visual variations. By leveraging a pretrained video diffusion model, DreamX compresses video frames and captures action dynamics in a shared latent space, allowing seamless transfer of actions across different settings, such as humans and robots. The key contribution is achieving state-of-the-art performance on action modeling benchmarks and enabling efficient policy learning in a compact action representation.
+### 1. A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
+**Authors:** Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel
+**Link:** https://arxiv.org/abs/2611.06914v1
+**Summary:** The paper addresses the issue of inconsistent behavior in large language model (LLM) agents used in social simulations due to variations in prompts. The authors propose a framework for controlled context enrichment, enhancing agent inputs with structured background information, and introduce a validation measure called selective robustness to evaluate agent responses. Their findings indicate that different types of contextual enrichment lead to varied and more stable behaviors in the agents during simulations, suggesting a pathway to improving LLM reliability in social settings.
 
-### 2. From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence
-**Authors:** Hao Fei
-**Link:** https://arxiv.org/abs/2611.05376v1
-**Summary:** The paper addresses the limitations of current AI systems that operate independently, highlighting the need for AI to actively augment human intelligence rather than just perform tasks on their own. It proposes the concept of a "cognitive symbiont," a supportive AI that continuously learns about an individual to assist them in real-time by understanding their context and needs. The authors outline a design framework for this symbiotic relationship and discuss potential risks associated with its implementation, emphasizing the importance of governance in the deployment of such AI systems.
+### 2. FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors
+**Authors:** Nicolas Tricard, Linzheng Wang, Jason Chen, Sili Deng
+**Link:** https://arxiv.org/abs/2611.06912v1
+**Summary:** The paper addresses the challenge of reconstructing full fluid flow fields from limited sensor data, comparing ten learned and five classical methods across different turbulence regimes. Using a comprehensive evaluation framework, the study finds that classical methods excel in dense-sensing scenarios, while learned approaches outperform in cases of reduced sensor density or poor observability. Notably, generative models show promise by balancing ensemble quality and computational cost, particularly when handling underconstrained problems.
 
-### 3. Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization
-**Authors:** Austin Tsai, Saurav Nanda, Ganapathy Parthasarathy, Bhuvnesh Kumar, Parivesh Choudhary
-**Link:** https://arxiv.org/abs/2611.05373v1
-**Summary:** The paper addresses the challenge of aligning language models with broader human preferences through a method called Direct Nash Optimization (DNO), which simulates a preference game between two players. By implementing a practical variant called DNO-Prct on various instruct models, the authors demonstrate significant improvements in win rates against a leading model (GPT-4o), indicating that their approach effectively enhances model alignment with human-like responses. Key findings highlight that robust performance can be maintained even with non-proprietary annotators, and specific configurations of the algorithm significantly influence the outcomes.
+### 3. BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories
+**Authors:** Fei Lin, Tengchao Zhang, Ziyang Gong, Xiaotong Yu, Bohan Zhang, Yifan Zhou, Qihao Yang, Ji Dai, Dong Li, Yining Jiang, Qinghua Ni, Jun Huang, Qiang Zhang, Yue Zhou, Zhihang Zhong, Yonglin Tian, Fei-Yue Wang, Xue Yang
+**Link:** https://arxiv.org/abs/2611.06911v1
+**Summary:** The paper presents BEAKER, a benchmark designed to evaluate the capabilities of Multimodal Large Language Models (MLLMs) as "brains" for Self-Driving Chemical Laboratories (SDCLs). It addresses the gap in existing evaluations by providing 1,000 expert-curated questions that assess models on key laboratory tasks, such as equipment identification and procedural reasoning. The key finding indicates that while current models can handle basic experimental procedures, they struggle with precise action grounding and understanding detailed laboratory contexts, highlighting the need for improved models in this domain.
 
-### 4. PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning
-**Authors:** Yuhan Liu, Xinqi Liu, Zixuan Dong, Keith W. Ross, Shenji Wan
-**Link:** https://arxiv.org/abs/2611.05372v1
-**Summary:** The paper addresses the challenge of achieving high-precision inverse kinematics for robot arms, which is complicated by issues like redundancy and the need for fine-tuned controllers. The authors present PolicyIK, a goal-conditioned reinforcement learning method that effectively updates joint positions based on feedback to minimize errors in arm movements. The key contribution is its demonstrated success in both simulation and on a physical robot, achieving over 98% accuracy in task execution compared to traditional methods.
+### 4. FrontierPhysics: Evaluating Agents for End-to-End Physics Research
+**Authors:** Bingran You, Wenjun Ke, Ria Rosenauer, Bo Liu, Wenbo Chen, Min Chen, Shuqi Xu, Yue Ma, Jiechao Feng, Bo Chen, Xiangkai Sun, Jiarui Liu, Jinen Guo, Zeyu Zhou, Xu Huang, Zhuohan Li, Haoyu Li, Heguang Lin, Lijie Ding, Yadong Zeng, Kangqi Zhang, Xinge Liu, Hanwen Liu, Zhenghong Li, Alexander von Recum, Yuchen Zhu, Felix Schwarzfischer, Yizhou Zhao, Jicheng Wang, Binxu Li, Qian Yu, Chan Li, Cheng Dai, Di Wang, Haoyu Zhang, Jiankai Sun, Kaituo Feng, Mian Qin, Ruihong Yin, Yiqun Luo, Weiwei Wu, Shihong Pan, Tsung Yeh Hsieh, Xiao Huang, Yan Zhang, Sihan Li, Zirui Ren, Zengji Tu, Kyoung Whan Choe, Ke Sun, Vincenzo Galia, Vaisakhi Mishra, Jiashu He, Hongyang Wang, Zhiheng Yang, Shubham Gaur, Yifan Gu, Shuyi Wang, Zihao Zuo, Steven Dillmann, Yiyou Sun, Xinyang Han, Hanchung Lee, Molei Tao, Yue Zhao, Shilong Liu, Yuchen Wu, Xuandong Zhao, Xiangyi Li, Florian Brand, Gerbrand Ceder, Hartmut Haeffner
+**Link:** https://arxiv.org/abs/2611.06910v1
+**Summary:** The paper introduces FrontierPhysics, a comprehensive benchmark designed to evaluate AI agents' performance in end-to-end physics research, which requires tasks spanning literature review to manuscript production. Developed with input from physicists, it assesses both the correctness and publishability of research outputs. Key findings reveal that current AI agents struggle primarily with reasoning and intuition rather than physics knowledge or execution, as none achieved high success in the varied test scenarios.
 
-### 5. GUILD: Guided Iterative Data Collection for Imitation Learning
-**Authors:** Shivin Dass, Kevin Nguyen, Rohan Yelandur, Junhong Xu, Roberto Martín-Martín
-**Link:** https://arxiv.org/abs/2611.05368v1
-**Summary:** The paper presents GUILD, a new method for improving the efficiency of data collection in imitation learning for robotics, which traditionally relies on unguided teleoperation and can lead to uninformative data. GUILD iteratively proposes specific tasks for data collection based on semantic insights and evaluates how well the collected data enhances policy performance, thereby optimizing future data collection. The results show that this guided approach significantly outperforms passive data collection strategies in both simulations and real-world scenarios.
+### 5. Perceptive Humanoid Motion from Simulation
+**Authors:** Siyuan Hu, Abulikemu Abuduweili, Yue Meng, Shipeng Liu, Quentin Leboutet, Chen Chen, Matthias Müller, Vladlen Koltun
+**Link:** https://arxiv.org/abs/2611.06908v1
+**Summary:** The paper addresses the challenge of training humanoid robots to perform a variety of physical tasks without the need for extensive human-generated data. The authors introduce HALO, a system that synthesizes a large dataset of vision-language-motion interactions using procedurally generated environments, allowing the robot to learn skills and address complex tasks. Remarkably, HALO demonstrates a 91% success rate when transferring its learned abilities to real-world settings it has never encountered before.
 
-### 6. Suppressing Misaligned Behaviors in Language Models, Durably
-**Authors:** Luxi He, Pengcheng Jiang, Jifan Zhang, Jiawei Han, Danqi Chen
-**Link:** https://arxiv.org/abs/2611.05358v1
-**Summary:** This paper addresses the challenge of suppressing undesired behaviors in language models, which can emerge during training. The authors develop a new approach called Prefix-Expanded Adversarial Reinforcement Learning (PEARL) to effectively suppress these behaviors while maintaining general performance and durability against further training. Key results show that PEARL achieves strong immediate suppression of misaligned actions, especially for more broadly triggered misbehavior, outperforming standard methods.
+### 6. Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement
+**Authors:** Michal Korniak, Marco Bagatella, Ralf Römer, Michal Nauman, Yarden As, Pranav Vignesh, Manan Agarwal, Leander Diaz-Bone, Piotr Zalewski, Mikołaj Czarnecki, Lenart Treven, Shashwat Saxena, Sreyas Venkataraman, Sarvesh Patil, Zhiyuan Zhou, Daniel Marta, Oier Mees, Nur Muhammad Mahi Shafiullah, Carmelo Sferrazza, Bhavya Sukhija, Angela P. Schoellig, Andreas Krause, Max Simchowitz, Andrew Wagenmaker
+**Link:** https://arxiv.org/abs/2611.06905v1
+**Summary:** The paper addresses the challenge of improving generalist robot policies for diverse tasks during deployment, as these models often need adaptation for optimal performance. The authors employ a reinforcement learning (RL) approach to enable online improvement across multiple tasks simultaneously, demonstrating that with the right algorithmic design, these policies can enhance their capabilities and even generalize to tasks not included in their training. This work provides significant evidence that generalist robot models can effectively self-improve in real-time across various tasks.
 
-### 7. Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits
-**Authors:** Teerawat Tongloy, Jiraporn Pongsopa, Rangsan Jomtarak
-**Link:** https://arxiv.org/abs/2611.05355v1
-**Summary:** The paper introduces a novel transformer model that utilizes Born measurements to directly quantify why a language model generates specific answers, improving the interpretability of its decisions. By encoding attention through a polynomial derived from word amplitudes, the model achieves comparable accuracy to traditional softmax transformers while demonstrating a significant ability to identify critical words influencing its outputs. The approach bridges concepts from optics and quantum computing, illustrating its compatibility with qubits and potential for implementation on quantum hardware.
+### 7. Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues
+**Authors:** Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem, Obed Honour Eje
+**Link:** https://arxiv.org/abs/2611.06899v1
+**Summary:** The paper addresses the challenge of detecting pedestrian occlusion without relying on costly occlusion annotations during deployment. It introduces an approach that utilizes the inherent differences in two monocular distance cues, apparent height and monocular metric depth, to infer occlusion. The method demonstrates strong performance, achieving an AUC of 0.909 on the KITTI dataset without requiring training or specific occlusion labels, highlighting the potential of signals that do not need local annotation in diverse environments.
 
-### 8. Agnostic Learning by Imitating
-**Authors:** Sílvia Casacuberta, Parikshit Gopalan, Varun Kanade, Omer Reingold, Konstantinos Stavropoulos, Pranay Tankala
-**Link:** https://arxiv.org/abs/2611.05346v1
-**Summary:** This paper explores the equivalence between two challenging tasks in machine learning: training a model to distinguish between positive and negative examples and training a generative model that produces data indistinguishable from real samples. The authors demonstrate a new efficient method for reducing the generative task to the discriminative task, providing insights into how adaptive queries can enhance learning capabilities. Their key contribution is showing that multiaccuracy oracles, which perform well across a class of models, can yield effective solutions for a broader range of learning objectives than previously understood.
+### 8. Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure
+**Authors:** Siyi Yu
+**Link:** https://arxiv.org/abs/2611.06888v1
+**Summary:** This paper investigates how automation and artificial intelligence (AI) exposure relate to the working conditions classified as dull, dirty, and dangerous across various occupations in the U.S. By analyzing data from O*NET for 754 occupations, the study finds that higher AI exposure correlates with poorer working condition scores, but adjustments for other factors like physical demands and wages weaken this association. The research highlights the complexity of interpreting AI exposure in relation to occupational characteristics and emphasizes the importance of understanding worker preferences for effective automation strategies.
 
-### 9. Adversarial Speculative Reasoning Improves Long Horizon Agents
-**Authors:** Hongyin Luo, Wei Fang, Lijie Yang, Owen Stepan, Daniel Suit, Jeff Krapf, Dana Wensberg, Jack O'Brien
-**Link:** https://arxiv.org/abs/2611.05345v1
-**Summary:** The paper addresses the challenge of improving the reasoning accuracy of long-horizon agents using speculative decoding, which is typically seen as a speed optimization rather than a behavior modifier. The authors propose a method that enhances this process by training draft models to reject less precise reasoning points, effectively reducing numerical noise and improving the output at critical decision junctures. Their approach significantly boosts the success rate of agents on complex tasks without altering the target model itself.
+### 9. Adaptive Multi Mode: Budget-Aware Routing of Optimizers By Online Landscape Probes
+**Authors:** Benjamin Jacob Bodner
+**Link:** https://arxiv.org/abs/2611.06879v1
+**Summary:** The paper introduces AMM (Adaptive Multi Mode), an optimizer routing method that intelligently allocates a fixed budget among various optimization algorithms based on real-time analysis of the optimization landscape, such as curvature and separability. The results demonstrate that AMM significantly outperforms other competitors in most function-dimension-budget scenarios tested, indicating its effectiveness in adapting to different problem characteristics. The method is available as an open-source Python package, promoting accessibility for further research and application.
 
-### 10. A Circuit for In-Context Learning
-**Authors:** Andrew Gao, William Gao
-**Link:** https://arxiv.org/abs/2611.05344v1
-**Summary:** The paper addresses the mechanism behind in-context learning (ICL) in large language models, detailing how these models can effectively classify sentences with arbitrary labels without needing parameter updates. The authors describe a specific circuit within transformer architectures that utilizes a key-value memory system for label identification and retrieval based on previous demonstrations. Their key contribution is identifying and establishing the causal roles of different activation heads in this process, revealing that ICL functions as a gated associative lookup that replicates reliably across different model sizes.
+### 10. SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification
+**Authors:** Yulu An, Yifei Feng, Xiangyang Yin
+**Link:** https://arxiv.org/abs/2611.06876v1
+**Summary:** The paper addresses the challenge of efficiently summarizing long interaction histories in large language model (LLM) agents, which can cause delays in performance. The authors introduce SpecCompact, a framework that accelerates this process by generating structured summary slots in parallel and using a smaller model to verify and refine the summaries. The key result shows that SpecCompact achieves significant speedups—between 2.04 and 5.63 times—compared to traditional summarization methods, along with substantial improvements in a user study.
