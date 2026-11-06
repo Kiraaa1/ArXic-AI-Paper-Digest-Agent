@@ -1,52 +1,52 @@
 ---
-## 2026-11-05
+## 2026-11-06
 
-### 1. A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
-**Authors:** Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel
-**Link:** https://arxiv.org/abs/2611.06914v1
-**Summary:** The paper addresses the issue of inconsistent behavior in large language model (LLM) agents used in social simulations due to variations in prompts. The authors propose a framework for controlled context enrichment, enhancing agent inputs with structured background information, and introduce a validation measure called selective robustness to evaluate agent responses. Their findings indicate that different types of contextual enrichment lead to varied and more stable behaviors in the agents during simulations, suggesting a pathway to improving LLM reliability in social settings.
+### 1. User Embeddings are Superpositions of Interpretable Behavioral Modes
+**Authors:** Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen, Keivan Majidi, Eddie K. H. Ng, Chris Porter, Qi Zhao, Jia Geng, Changmao Li, Brandon R. Feng
+**Link:** https://arxiv.org/abs/2611.08487v1
+**Summary:** The paper addresses the challenge of interpretability in user embeddings used for recommendation and personalization systems, proposing that these embeddings can be viewed as combinations of clear and interpretable behavioral modes. By using sparse autoencoders to recover these modes, the authors demonstrate that their approach outperforms traditional methods on both synthetic and real-world datasets, allowing for natural language naming and querying of the modes. This offers a model-agnostic framework for better understanding user behavior without needing to change existing embedding systems.
 
-### 2. FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors
-**Authors:** Nicolas Tricard, Linzheng Wang, Jason Chen, Sili Deng
-**Link:** https://arxiv.org/abs/2611.06912v1
-**Summary:** The paper addresses the challenge of reconstructing full fluid flow fields from limited sensor data, comparing ten learned and five classical methods across different turbulence regimes. Using a comprehensive evaluation framework, the study finds that classical methods excel in dense-sensing scenarios, while learned approaches outperform in cases of reduced sensor density or poor observability. Notably, generative models show promise by balancing ensemble quality and computational cost, particularly when handling underconstrained problems.
+### 2. SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization
+**Authors:** Qile Jiang, George Em Karniadakis
+**Link:** https://arxiv.org/abs/2611.08483v1
+**Summary:** SwarmEvolve addresses the slow process of LLM-guided evolutionary search for solving mathematical and computational problems, which typically relies on generating lengthy text outputs for each iteration. The framework employs hundreds of low-cost agents that collaborate in swarms, reasoning in latent space and sharing information efficiently without text encoding. SwarmEvolve significantly accelerates problem-solving, achieving top results in 3 to 8 minutes, compared to over an hour for existing methods, and often improves upon previously found solutions from leading models.
 
-### 3. BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories
-**Authors:** Fei Lin, Tengchao Zhang, Ziyang Gong, Xiaotong Yu, Bohan Zhang, Yifan Zhou, Qihao Yang, Ji Dai, Dong Li, Yining Jiang, Qinghua Ni, Jun Huang, Qiang Zhang, Yue Zhou, Zhihang Zhong, Yonglin Tian, Fei-Yue Wang, Xue Yang
-**Link:** https://arxiv.org/abs/2611.06911v1
-**Summary:** The paper presents BEAKER, a benchmark designed to evaluate the capabilities of Multimodal Large Language Models (MLLMs) as "brains" for Self-Driving Chemical Laboratories (SDCLs). It addresses the gap in existing evaluations by providing 1,000 expert-curated questions that assess models on key laboratory tasks, such as equipment identification and procedural reasoning. The key finding indicates that while current models can handle basic experimental procedures, they struggle with precise action grounding and understanding detailed laboratory contexts, highlighting the need for improved models in this domain.
+### 3. Scientist World: Grow a Research World for AI-Scientists
+**Authors:** Taiming Lu, Sachin Konan, Zhuang Liu
+**Link:** https://arxiv.org/abs/2611.08478v1
+**Summary:** The paper addresses the challenge of creating a suitable environment for AI-Scientists to effectively engage with scientific research, as existing literature is inaccessible for execution. The authors developed "Scientist World," an autonomous system that transforms research papers into executable environments, allowing AI-Scientists to interact with and evaluate their methods against human achievements. Remarkably, this platform enabled frontier AI-Scientists to outperform human researchers 74% of the time and has generated extensive research traces to enhance future AI training in scientific ideation.
 
-### 4. FrontierPhysics: Evaluating Agents for End-to-End Physics Research
-**Authors:** Bingran You, Wenjun Ke, Ria Rosenauer, Bo Liu, Wenbo Chen, Min Chen, Shuqi Xu, Yue Ma, Jiechao Feng, Bo Chen, Xiangkai Sun, Jiarui Liu, Jinen Guo, Zeyu Zhou, Xu Huang, Zhuohan Li, Haoyu Li, Heguang Lin, Lijie Ding, Yadong Zeng, Kangqi Zhang, Xinge Liu, Hanwen Liu, Zhenghong Li, Alexander von Recum, Yuchen Zhu, Felix Schwarzfischer, Yizhou Zhao, Jicheng Wang, Binxu Li, Qian Yu, Chan Li, Cheng Dai, Di Wang, Haoyu Zhang, Jiankai Sun, Kaituo Feng, Mian Qin, Ruihong Yin, Yiqun Luo, Weiwei Wu, Shihong Pan, Tsung Yeh Hsieh, Xiao Huang, Yan Zhang, Sihan Li, Zirui Ren, Zengji Tu, Kyoung Whan Choe, Ke Sun, Vincenzo Galia, Vaisakhi Mishra, Jiashu He, Hongyang Wang, Zhiheng Yang, Shubham Gaur, Yifan Gu, Shuyi Wang, Zihao Zuo, Steven Dillmann, Yiyou Sun, Xinyang Han, Hanchung Lee, Molei Tao, Yue Zhao, Shilong Liu, Yuchen Wu, Xuandong Zhao, Xiangyi Li, Florian Brand, Gerbrand Ceder, Hartmut Haeffner
-**Link:** https://arxiv.org/abs/2611.06910v1
-**Summary:** The paper introduces FrontierPhysics, a comprehensive benchmark designed to evaluate AI agents' performance in end-to-end physics research, which requires tasks spanning literature review to manuscript production. Developed with input from physicists, it assesses both the correctness and publishability of research outputs. Key findings reveal that current AI agents struggle primarily with reasoning and intuition rather than physics knowledge or execution, as none achieved high success in the varied test scenarios.
+### 4. XStack: A Benchmark for ML Repo Migration
+**Authors:** Linrong Cai, Taiming Lu, Haozhe Chen, Zhuang Liu
+**Link:** https://arxiv.org/abs/2611.08472v1
+**Summary:** The paper introduces XStack, a benchmark designed to assess the ability of AI agents to migrate machine learning repositories between PyTorch on NVIDIA GPUs and JAX on Google TPUs. The benchmark evaluates how well these agents can convert code from one framework to another, revealing that their migration capabilities are currently unreliable, with performance ranging from 40% to 75% success rates. XStack aims to facilitate easier and more reliable migration of ML code across different ecosystems, ultimately empowering researchers to run their work on their chosen hardware.
 
-### 5. Perceptive Humanoid Motion from Simulation
-**Authors:** Siyuan Hu, Abulikemu Abuduweili, Yue Meng, Shipeng Liu, Quentin Leboutet, Chen Chen, Matthias Müller, Vladlen Koltun
-**Link:** https://arxiv.org/abs/2611.06908v1
-**Summary:** The paper addresses the challenge of training humanoid robots to perform a variety of physical tasks without the need for extensive human-generated data. The authors introduce HALO, a system that synthesizes a large dataset of vision-language-motion interactions using procedurally generated environments, allowing the robot to learn skills and address complex tasks. Remarkably, HALO demonstrates a 91% success rate when transferring its learned abilities to real-world settings it has never encountered before.
+### 5. Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information
+**Authors:** Linqian Wu, Diaoxuan He
+**Link:** https://arxiv.org/abs/2611.08469v1
+**Summary:** This paper addresses the challenge of identifying integrated information (φ) within neural networks, focusing on how experiments with limited and noisy data can reveal insights about the underlying mechanisms of a system rather than just its outputs. The authors analyze specific stochastic networks to demonstrate that, despite identical input-output behaviors, different network architectures can be distinguished through targeted hypothesis testing, revealing crucial information about their internal structures. Key findings include that these measures are sensitive to slight changes in the network's mechanisms and can ensure reliable lower bounds on φ from finite data, thereby contributing to the field of AI interpretability and understanding machine consciousness.
 
-### 6. Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement
-**Authors:** Michal Korniak, Marco Bagatella, Ralf Römer, Michal Nauman, Yarden As, Pranav Vignesh, Manan Agarwal, Leander Diaz-Bone, Piotr Zalewski, Mikołaj Czarnecki, Lenart Treven, Shashwat Saxena, Sreyas Venkataraman, Sarvesh Patil, Zhiyuan Zhou, Daniel Marta, Oier Mees, Nur Muhammad Mahi Shafiullah, Carmelo Sferrazza, Bhavya Sukhija, Angela P. Schoellig, Andreas Krause, Max Simchowitz, Andrew Wagenmaker
-**Link:** https://arxiv.org/abs/2611.06905v1
-**Summary:** The paper addresses the challenge of improving generalist robot policies for diverse tasks during deployment, as these models often need adaptation for optimal performance. The authors employ a reinforcement learning (RL) approach to enable online improvement across multiple tasks simultaneously, demonstrating that with the right algorithmic design, these policies can enhance their capabilities and even generalize to tasks not included in their training. This work provides significant evidence that generalist robot models can effectively self-improve in real-time across various tasks.
+### 6. Towards interpreting any residual stream direction by scaling activation inversion
+**Authors:** Celeste De Schamphelaere, Juan J. Vazquez, Ari Spiesberger, Tomáš Gavenčiak, Gavin Leech, Euan Ong, Jiahai Feng
+**Link:** https://arxiv.org/abs/2611.08465v1
+**Summary:** The paper addresses the challenge of interpreting specific directions in a language model's residual stream, which traditionally relies on existing text from a corpus. The authors introduce Maximally-Activating Example Metamodels (MAEMs), which generate text that strongly activates these directions using a reinforcement learning strategy. Their findings show that MAEMs are more effective than previous methods in identifying and exemplifying concepts, recovering hidden information, and providing verifiable insights into model behavior.
 
-### 7. Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues
-**Authors:** Chibueze Praise Onyenweaku, Toyibat Adele, Sikirulahi Opeyemi Abdulkareem, Obed Honour Eje
-**Link:** https://arxiv.org/abs/2611.06899v1
-**Summary:** The paper addresses the challenge of detecting pedestrian occlusion without relying on costly occlusion annotations during deployment. It introduces an approach that utilizes the inherent differences in two monocular distance cues, apparent height and monocular metric depth, to infer occlusion. The method demonstrates strong performance, achieving an AUC of 0.909 on the KITTI dataset without requiring training or specific occlusion labels, highlighting the potential of signals that do not need local annotation in diverse environments.
+### 7. Adversarial Training with Large Step Sizes: Implicit Bias, Optimization, and Sharpness
+**Authors:** Yi Feng, Andrea Paudice
+**Link:** https://arxiv.org/abs/2611.08457v1
+**Summary:** This paper investigates the effects of using large constant step sizes in adversarial training (AT) for improving model robustness, contrasting it with traditional approaches that utilize smaller step sizes. By analyzing the dynamics of gradient descent in both linear logistic regression and neural networks, the authors uncover unique behaviors in AT, showing that implicit bias and optimization convergence rates differ significantly from standard training, and revealing that loss sharpness can exhibit two-stage dynamics. These findings enhance our understanding of how large step sizes influence the effectiveness of adversarial training.
 
-### 8. Dull, Dirty, Dangerous? Working Conditions and the Limits of Occupational AI Exposure
-**Authors:** Siyi Yu
-**Link:** https://arxiv.org/abs/2611.06888v1
-**Summary:** This paper investigates how automation and artificial intelligence (AI) exposure relate to the working conditions classified as dull, dirty, and dangerous across various occupations in the U.S. By analyzing data from O*NET for 754 occupations, the study finds that higher AI exposure correlates with poorer working condition scores, but adjustments for other factors like physical demands and wages weaken this association. The research highlights the complexity of interpreting AI exposure in relation to occupational characteristics and emphasizes the importance of understanding worker preferences for effective automation strategies.
+### 8. Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO
+**Authors:** Zeyu Leo Liu, Yang Li, Bo Pang, Emre Can Acikgoz, Xuan-Phi Nguyen, Anurag Koul, Srijan Bansal, Erik Nijkamp, Shafiq Joty, Semih Yavuz
+**Link:** https://arxiv.org/abs/2611.08453v1
+**Summary:** The paper investigates the compute efficiency of on-policy distillation (OPD) compared to Group Relative Policy Optimization (GRPO) in training AI models, focusing on whether using a teacher's guidance reduces the training resources needed to achieve similar accuracy. The authors found that OPD can be significantly more efficient, especially when the teacher is the student's own GRPO checkpoint, achieving comparable accuracy with much fewer training FLOPs across various tasks. Furthermore, a multi-teacher approach consolidates specialized models into a single student while maintaining high accuracy at a fraction of the training cost, demonstrating substantial resource savings.
 
-### 9. Adaptive Multi Mode: Budget-Aware Routing of Optimizers By Online Landscape Probes
-**Authors:** Benjamin Jacob Bodner
-**Link:** https://arxiv.org/abs/2611.06879v1
-**Summary:** The paper introduces AMM (Adaptive Multi Mode), an optimizer routing method that intelligently allocates a fixed budget among various optimization algorithms based on real-time analysis of the optimization landscape, such as curvature and separability. The results demonstrate that AMM significantly outperforms other competitors in most function-dimension-budget scenarios tested, indicating its effectiveness in adapting to different problem characteristics. The method is available as an open-source Python package, promoting accessibility for further research and application.
+### 9. ReproBridge: Building Reproducibility into ML Research Artifacts
+**Authors:** Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon
+**Link:** https://arxiv.org/abs/2611.08452v1
+**Summary:** The paper addresses the challenge of reproducing machine learning experiments, which often requires piecing together information from various sources. To tackle this, the authors developed ReproBridge, a standardized approach that organizes code, environment setup, and reproduction guidelines into a cohesive workflow. The key finding is that using these refined artifacts significantly boosts reproduction success rates from 76.4% to 92.6% and lowers API costs, demonstrating the importance of preserving procedural knowledge in improving reproducibility.
 
-### 10. SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification
-**Authors:** Yulu An, Yifei Feng, Xiangyang Yin
-**Link:** https://arxiv.org/abs/2611.06876v1
-**Summary:** The paper addresses the challenge of efficiently summarizing long interaction histories in large language model (LLM) agents, which can cause delays in performance. The authors introduce SpecCompact, a framework that accelerates this process by generating structured summary slots in parallel and using a smaller model to verify and refine the summaries. The key result shows that SpecCompact achieves significant speedups—between 2.04 and 5.63 times—compared to traditional summarization methods, along with substantial improvements in a user study.
+### 10. A Hidden Markov Preference Model for Online Prediction of Adversary Actions
+**Authors:** Angel Daruna, Michael Cogswell, Tixiao Shan, Yi Yao, Han-Pang Chiu, Ajay Divakaran
+**Link:** https://arxiv.org/abs/2611.08445v1
+**Summary:** The paper addresses the challenge of predicting an attacker's next action in a dynamic environment where their behavior can switch between different regimes. The authors propose a hidden Markov model that leverages a feasibility-masked tree of actions to capture the attacker's regime and adapt predictions based on observed actions. Key results indicate that this approach significantly improves prediction accuracy, achieving a better performance (0.8 nats per step) than traditional recurrent models, with faster loss recovery following regime changes.
