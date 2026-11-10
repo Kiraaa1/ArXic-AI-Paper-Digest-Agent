@@ -1,52 +1,52 @@
 ---
-## 2026-11-09
+## 2026-11-10
 
-### 1. On Agentic Manipulation Policies
-**Authors:** Chen Chen, Omid Bagherieh, Naveen Nikamanth Appiah Balaji, Jesse T. Gonzalez, Negin Heravi, Fahad Islam, Xueting Li, Jean-Baptiste Regli, Kejia Ren, Petr Švec, David J. Yoon, Matthias Müller, Vladlen Koltun
-**Link:** https://arxiv.org/abs/2611.09892v1
-**Summary:** This paper addresses the limitations of specialist policies in robot manipulation by introducing agentic manipulation policies (AMPs), which use a generalist AI model to directly control manipulators without relying on demonstrations or task-specific training. The researchers present AMP1, a versatile framework that achieves significantly higher success rates on manipulation tasks compared to leading models, successfully completing 85.6% of trials in a zero-shot setting, while also demonstrating the ability to learn from experience when equipped with a memory store. Overall, AMPs show greater generality and robustness, advancing the field of robotic manipulation.
+### 1. Guiding Data Allocation for Robust Subpopulation Generalization
+**Authors:** Zhaoying Pan, Yipei Wang, Shenyu Lu, Xiaoqian Wang
+**Link:** https://arxiv.org/abs/2611.12884v1
+**Summary:** The paper addresses the issue of machine learning models struggling with subpopulation shifts, which can lead to poor performance on certain groups despite high average accuracy. The authors extend a Gaussian feature-model framework to show that diverse training subgroup distributions, including imbalanced ones, can achieve robust generalization comparable to balanced datasets. They propose a method to strategically allocate data within these subgroups, demonstrating that this approach is a more efficient way to enhance model performance than simply ensuring balance.
 
-### 2. CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse
-**Authors:** Peter Belcak, Greg Heinrich, Saurav Muralidharan, Shizhe Diao, Pavlo Molchanov
-**Link:** https://arxiv.org/abs/2611.09891v1
-**Summary:** The paper addresses the inefficiency of large language models (LLMs) that often solve problems from scratch, leading to redundant computations. The authors propose a method called agentic reasoning caching (ARC), which utilizes reasoning traces from LLMs to create efficient CPU-executable caches for reusing solutions to previously solved tasks. The key result is that ARCs can match the performance of state-of-the-art LLMs on complex mathematical and scientific problems while being significantly cheaper and more robust.
+### 2. Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics
+**Authors:** Majdi Hassan, Marta Skreta, Dominique Beaini, Kirill Neklyudov
+**Link:** https://arxiv.org/abs/2611.12880v1
+**Summary:** The paper addresses the inefficiencies of simulating molecular dynamics using stochastic differential equations, which often require long trajectories for training machine learning models. The authors propose a novel method called Kolmogorov-Chapman Maps (KC-Maps), which learns the transition of these processes using only marginal samples and known parameters, rather than extensive trajectory data. The results show that KC-Maps can effectively model peptide dynamics, significantly reducing the computational time compared to traditional approaches.
 
-### 3. On the (non-)closedness of the set of ReLU networks
-**Authors:** Eloi Martinet, Leon Bungert
-**Link:** https://arxiv.org/abs/2611.09887v1
-**Summary:** This paper investigates the closedness properties of sets of ReLU neural networks, specifically focusing on one hidden layer networks with a limited number of neurons. The authors demonstrate that this set is weakly closed in a specific function space, which ensures that certain energy minimization problems achieve optima within this set. Additionally, they show that sets of ReLU networks with two hidden layers are not closed, contradicting previous conjectures in the field.
+### 3. Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels
+**Authors:** Sreejeet Maity, Aritra Mitra
+**Link:** https://arxiv.org/abs/2611.12878v1
+**Summary:** The paper addresses the challenge of efficiently transmitting updates for temporal-difference (TD) learning in reinforcement learning settings constrained by communication limits. The authors introduce a novel algorithm called Batched Adaptively Quantized TD (BAQ-TD), which combines batching and adaptive quantization to enhance the transmission of information. The key finding is that BAQ-TD can maintain the statistical convergence rates of unquantized TD learning when operating over a channel with limited capacity, demonstrating that only a logarithmic increase in communication is needed compared to previous methods.
 
-### 4. FlowMoP: Stochastic Multi-Person Motion Prediction
-**Authors:** Aadya Agrawal, Ho Kei Cheng, Alexander Schwing
-**Link:** https://arxiv.org/abs/2611.09882v1
-**Summary:** The paper addresses the challenge of predicting the future motions of multiple people, which is inherently uncertain and influenced by various social interactions. The authors introduce a conditional flow matching framework that generates diverse motion predictions for each agent while considering the movements of neighboring agents. Their method outperforms existing deterministic approaches on benchmark datasets and establishes a new baseline for motion prediction in soccer, showing improved accuracy by efficiently modeling social interactions.
+### 4. HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents
+**Authors:** Haozhen Zhang, Bohan Liu, Jianzhu Bao, Qingyuan Liu, Haodong Yue, Xiao Li, Zi Pong Lim, Wenya Wang
+**Link:** https://arxiv.org/abs/2611.12872v1
+**Summary:** The paper presents HiVe-Mem, a new framework designed to enhance how multimodal agents manage and utilize long-term interaction histories. It combines two innovative strategies: expanding memory using a relational graph to retrieve related information and composing diverse evidence forms for each memory, tailored to specific queries. The results indicate that HiVe-Mem significantly improves performance in multimodal tasks while drastically reducing the amount of data processed.
 
-### 5. Graded convolutional networks: scale invariance without the scale and robustness to unknown blur
-**Authors:** Tanush Shaska
-**Link:** https://arxiv.org/abs/2611.09878v1
-**Summary:** This paper addresses the challenge of scale invariance in image processing, particularly under unknown blur conditions. The authors introduce graded convolutional networks that utilize a mathematical framework based on local graded convolutions, allowing for better feature extraction that is robust to variations in scale. They demonstrate that their approach significantly improves classification accuracy on blurred images, with notable performance gains on benchmark datasets like MNIST, outperforming traditional methods.
+### 5. Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection
+**Authors:** Amey Pasarkar, Adji Bousso Dieng
+**Link:** https://arxiv.org/abs/2611.12871v1
+**Summary:** The paper addresses the challenge of anomaly detection, which is important for reliable machine learning applications. The authors propose a novel method called the Vendi Anomaly Score (VAS), which identifies anomalies by measuring how much the removal of a sample affects the diversity of the dataset, without relying on traditional density or partitioning techniques. Their approach achieves state-of-the-art performance on various benchmarks and remains effective in large-scale settings, showcasing its robustness across different contamination levels and dataset sizes.
 
-### 6. On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning
-**Authors:** Haoyu Wang, Ru Wang, Yuanyuan Wang, Jiaxian Guo, Mingming Gong
-**Link:** https://arxiv.org/abs/2611.09872v1
-**Summary:** The paper addresses the issue of unreliable pseudo-labels generated during test-time reinforcement learning (TTRL) when adapting pretrained language models to new, unlabeled data. It introduces the Prompt-Conditional Distributionally Robust DPO (PC-Dr.DPO) method, which adjusts the reliability of updates based on observed vote consistency, and incorporates a caching mechanism to minimize forgetting. The key finding is that PC-Dr.DPO performs as well as or better than existing TTRL methods across multiple benchmarks and models, demonstrating improved reliability and adaptation in the learning process.
+### 6. Where Does Alignment Emerge and What Does It Mean? A Closer Look at the Platonic Representation Hypothesis
+**Authors:** Julia Herbst, Simon Roschmann, Quentin Bouniot, Zeynep Akata
+**Link:** https://arxiv.org/abs/2611.12869v1
+**Summary:** This paper explores the Platonic Representation Hypothesis, which proposes that neural networks are developing similar representation spaces, particularly between language and vision models. The authors analyze alignment between unimodal models at different layers and find that while cross-modal alignment is significant, it does not reach the levels seen within the same modality. Their results indicate that alignment can still emerge effectively in newer models when using clean and informative data.
 
-### 7. CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs
-**Authors:** Xingyu Liu, Xiangyang Yin, Tianhua Xia, Haiyu Wang, Sai Qian Zhang
-**Link:** https://arxiv.org/abs/2611.09868v1
-**Summary:** The paper addresses the problem of poor performance in low-precision large reasoning models (LRMs) during inference due to significant activation fluctuations, particularly in the early decoding steps. The authors introduce CodeQuant2, a clustering-based look-up table quantization framework that effectively manages activation outliers and optimizes calibration sample selection aligned with reasoning behavior. As a result, CodeQuant2 significantly enhances accuracy on reasoning benchmarks and achieves up to 2.85 times faster performance compared to BF16 quantization.
+### 7. Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning
+**Authors:** Xinjie Shen
+**Link:** https://arxiv.org/abs/2611.12865v1
+**Summary:** The paper addresses the problem of reinforcement learning (RL) agents misaligning their behavior with contextual task requirements due to reward incentives, leading to undesirable shortcuts and reward hacking. The authors propose a method to verify and understand these conflicts by encoding them into task dynamics, allowing the generation of diverse environments and compliance feedback. A key finding is that incorporating contextual checks can significantly improve safety in task execution, increasing successful completion from 53% to 89% in various scenarios, while still maximizing productivity.
 
-### 8. GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description
-**Authors:** Rochak Dhakal, Chen Zhao, Soup Cobb, Xin Qian, Xiaofeng Yang, Weihua Zhou
-**Link:** https://arxiv.org/abs/2611.09866v1
-**Summary:** The paper presents GRAC, a novel framework that automates the generation of surgical scene descriptions by using graph-based representations to capture the relationships between instruments, actions, and anatomical structures in surgery. By retrieving relevant examples from training data and conditioning on them, GRAC significantly improves the quality and accuracy of generated captions. It outperforms existing methods on benchmark datasets, demonstrating enhanced language quality and factual correctness in surgical documentation.
+### 8. Is Persona Generalization Predictable?
+**Authors:** Olina Mukherjee, Arnav Goel, Aditi Raghunathan, Jacob Mitchell Springer
+**Link:** https://arxiv.org/abs/2611.12864v1
+**Summary:** This paper addresses the issue of persona generalization in language models, where fine-tuning in one area can inadvertently lead to unsafe behaviors in other areas. The authors discover that the relationship between in-domain and out-of-domain persona rates follows a consistent probit-linear pattern across various models, revealing that training adjustments primarily affect the model's learning transferability. A key finding is that fine-tuning later model layers results in reduced out-of-domain misalignment while maintaining strong performance in the original domain, providing a predictive framework for managing behavioral transfer in language models.
 
-### 9. Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation
-**Authors:** Xun Tu, Minghao Zou, Karthik Desingh
-**Link:** https://arxiv.org/abs/2611.09864v1
-**Summary:** The paper addresses the challenge of mobile manipulators needing to coordinate movement and manipulation to rearrange large objects, which can be affected by the choice of grasp. The authors introduce Grasp-TAGS, a framework that uses reinforcement learning to select optimal grasps based on task-specific goals, and distill this knowledge into a more efficient utility network. The key result shows that Grasp-TAGS significantly improves rearrangement success rates, achieving 89.84% success compared to 79.87% with traditional single-grasp methods.
+### 9. WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems
+**Authors:** Zheng Jiang, Fang Niu, Bo Peng, Houde Qian, Wenyi Li, Deyao Hong, Mingju Gao, Yizhe Chi, Youjie Zheng, Kaisen Yang, Calvin Xiao, Lifeng Sun, Huan-ang Gao
+**Link:** https://arxiv.org/abs/2611.12856v1
+**Summary:** The paper addresses the challenge of evaluating how well large language model agents can autonomously organize and orchestrate workflows in multi-agent systems, rather than just completing tasks. It introduces WorkflowArena, a benchmark with 145 tasks across various professional domains that measures both the quality of the final deliverables and the delegation strategies used by the agents. The key finding is that no single model consistently outperforms others across all domains, and that effective workflow organization can significantly enhance the performance of less capable agents.
 
-### 10. Flow-Guided Target-Space Alignment via Path Consistency
-**Authors:** Ruizhi Yuan, Zeqiu Yu, Wei Gao, Wei Chen, Xiwei Tang, Lu Tang
-**Link:** https://arxiv.org/abs/2611.09863v1
-**Summary:** The paper addresses the challenge of effectively aligning a source modality with a target modality's fixed space for multimodal data analysis, ensuring that both global structure and instance-level correspondence are maintained. The authors introduce FlowAlign, a method that utilizes conditional flow matching to guide the alignment process during training, rather than just at inference. Their experiments show that FlowAlign enhances the accuracy of instance-level correspondences while preserving the overall structure of the target space across various modalities.
+### 10. What kills $v$-prediction? A Patch-wise PCA Perspective on Pixel-Space Flow Matching
+**Authors:** Tianze Luo, Haofeng Huang, Yuan Yao
+**Link:** https://arxiv.org/abs/2611.12852v1
+**Summary:** This paper addresses the challenges faced by Pixel-space Flow Matching in training generative models, particularly the difficulties associated with the common $v$-prediction objective due to off-manifold noisy targets. The authors analyze these issues using patch-wise Principal Component Analysis (PCA) and identify a bandwidth bottleneck that affects the model's performance, leading to the development of the Raw-injected Transformer (RiT). This new architecture effectively restores the performance of $v$-prediction while achieving competitive results on ImageNet, highlighting the importance of the interaction between prediction objectives and model architecture.
