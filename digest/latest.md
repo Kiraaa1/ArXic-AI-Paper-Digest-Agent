@@ -1,52 +1,52 @@
 ---
-## 2026-11-12
+## 2026-11-13
 
-### 1. ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows
-**Authors:** Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, Rohith Nama, Arushi Gupta, Carlos D. Castillo, Prathap Ramachandra, Xiaofan Jiang, Francesco Carbone
-**Link:** https://arxiv.org/abs/2611.14492v1
-**Summary:** ReTrace addresses the inefficiency of relying on Large Language Model (LLM) agents to execute Standard Operating Procedures (SOPs) by distilling these procedures into reusable workflows that can operate without continual LLM calls. By extracting and consolidating the conditions behind each step from logged agent runs, ReTrace generates efficient, executable workflows tailored for various orchestration platforms. The key results show that ReTrace workflows achieve near-completion rates at significantly lower costs and faster runtimes compared to traditional agent-based approaches.
+### 1. Unbundling Multimodal Vision Encoding
+**Authors:** Ellis Brown, Chris Hoang, Shengyi Qian, Shang-Wen Li, Mike Lewis, Marjan Ghazvininejad, Luke Zettlemoyer, Lucas Beyer, Mengye Ren, Jakob Verbeek, Saining Xie, Hu Xu
+**Link:** https://arxiv.org/abs/2611.17334v1
+**Summary:** The paper addresses the ongoing debate about how multimodal language models should integrate visual input, particularly whether to use pretrained vision encoders or train them from scratch. The authors conducted experiments using a controlled framework to compare various encoding strategies, ultimately finding that the key factor for effective visual understanding is dedicated vision capacity rather than a pretrained visual prior. They concluded that joint training of the visual encoder with the language model leads to comparable performance as using a separate pretrained encoder, especially when the vision capacity is strategically placed within the model architecture.
 
-### 2. TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics
-**Authors:** Peng Chen, Yihang Wang, Zhongwen Rao, Yang Shu, Yuying Qiu, Yuxuan Chen, Lujia Pan, Bin Yang, Chenjuan Guo
-**Link:** https://arxiv.org/abs/2611.14491v1
-**Summary:** The paper presents TimeSeek, a novel model designed to enhance time series analytics by addressing the limitations of existing time series foundation models that struggle with diverse data across multiple domains and tasks. TimeSeek utilizes a Multi-Domain Feature Extractor and multi-task collaborative training to effectively capture complex patterns and unify various tasks during pre-training. The key contribution is its ability to achieve state-of-the-art performance in forecasting, anomaly detection, and classification tasks, even in few-shot and zero-shot scenarios, while maintaining efficient inference.
+### 2. ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research
+**Authors:** Jie Wang, Tong Zhu, JiaHao Kuang, Zhe Xu, Yunkai Chai, Dehong Zheng, Yu Cheng, Tao Ji, ZhouHan Lin, Qi Zhang, Bowen Zhou
+**Link:** https://arxiv.org/abs/2611.17332v1
+**Summary:** ArchSpace addresses the lack of documentation and review in LLM architecture research, which often leads to missed insights in both industry and academia. The platform allows researchers to record their architectural proposals along with experimental results, review them via community input, and reference them in future work. By leveraging scaling laws to predict model performance from smaller experiments, ArchSpace aims to facilitate the development of a wider array of architectural innovations for next-generation models.
 
-### 3. Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game
-**Authors:** Muhan Gao, Hangxiao Zhu, Xinqi Su, Yu Zhang, Daniel Khashabi, Kuan-Hao Huang
-**Link:** https://arxiv.org/abs/2611.14487v1
-**Summary:** The paper addresses the challenge of understanding how large language models (LLMs) generate and refine research ideas through an iterative process. The authors introduce a game called Re-Search, where LLMs must rediscover the core idea of a research paper by asking yes-or-no questions, revealing that most progress occurs within the first 30 questions, and identifying key limitations in the models’ ability to generate original questions. The study concludes that enhancing ideation systems with external ideas may be more beneficial than solely improving the models' generation capabilities.
+### 3. Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation
+**Authors:** Zeynep Yıldız, Satchit Chatterji, Ercan Atam, Erman Acar
+**Link:** https://arxiv.org/abs/2611.17329v1
+**Summary:** This paper addresses the challenge of enforcing investment policy constraints in portfolio allocation using deep reinforcement learning (RL). The authors introduce a neurosymbolic approach that integrates symbolic rules directly into the learning process, enabling the RL agent to learn compliance without needing post-hoc corrections. Their method significantly reduces violations of investment rules from as high as 98% to just 4.8%, demonstrating its effectiveness in real-world applications.
 
-### 4. Mechanistic Interpretability Needs a Logic of Inference
-**Authors:** Zhimin Hu, Chen Jiang, Hanbo Xie, N. Apurva Ratan Murty, Sashank Varma
-**Link:** https://arxiv.org/abs/2611.14483v1
-**Summary:** The paper addresses the challenge of interpreting neural networks by establishing a systematic framework for mechanistic interpretability (MI) that enhances our understanding of how their internal workings relate to their behavior. By drawing parallels with neuroscience, the authors propose five principles that guide the inference of mechanisms from complex systems, aiming to turn localized insights into broader, testable hypotheses. The key contribution is a recursive logic that aids in constructing a more rigorous procedure for understanding and verifying the mechanisms behind neural models.
+### 4. AgentSSL: Can MLE Agents Leverage Unlabeled Data?
+**Authors:** Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson, Jennifer J. Sun
+**Link:** https://arxiv.org/abs/2611.17323v1
+**Summary:** The paper addresses the challenge of leveraging abundant unlabeled data for machine learning by introducing Agentic Semi-Supervised Learning (AgentSSL), which frames the problem as a search for optimal programs. The researchers found that agents can effectively synthesize code that integrates existing semi-supervised learning techniques, achieving better performance than traditional human-engineered methods in many scenarios. However, they also identified program selection as a significant hurdle, leading to a dedicated benchmark to evaluate and improve this aspect.
 
-### 5. Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation
-**Authors:** Evelyn Y. Garland, Carola F. Berger
-**Link:** https://arxiv.org/abs/2611.14480v1
-**Summary:** The paper presents Pterodactyl, an automated evaluation system designed for assessing translation quality at the segment level and identifying error-free segments. Utilizing a Large Language Model (LLM) to make binary classifications, the system incorporates prompt engineering and model optimization based on ROC analysis to enhance its performance. The contribution lies in its customizable and cost-effective design, tailored to improve automated translation evaluation tasks.
+### 5. Learning When Diffusion Language Models Should Regenerate
+**Authors:** Minhae Oh, Jeonghye Kim, Jinwoo Koo, Yeongoon Kim, Jimin Seo, Minsik Seol, Jungwoo Lee
+**Link:** https://arxiv.org/abs/2611.17320v1
+**Summary:** This paper addresses the challenge of improving the accuracy of diffusion language models when generating text by identifying when errors occur and how to correct them. The authors introduce DiVR, a verifier that assesses the likelihood of a generated sequence being correct, enabling it to decide which parts should be regenerated. The results show that DiVR significantly boosts accuracy on reasoning tasks while being more cost-effective than traditional search methods.
 
-### 6. FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking
-**Authors:** Arjun Rao, Nishant Gopinath
-**Link:** https://arxiv.org/abs/2611.14477v1
-**Summary:** The paper presents FERN, a system designed to improve table retrieval for text-to-SQL tasks across various benchmark datasets, aiming to enhance the performance compared to existing models. Instead of relying on generative language models, FERN combines three fixed retrievers, enriches the candidate tables with features, and uses a trained ranking model to optimize selection. Notably, FERN achieves competitive recall rates and significantly improves the chances of retrieving relevant tables in top rankings, showing particular strength on the Spider and BIRD datasets despite some challenges on Fiben.
+### 6. CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation
+**Authors:** Peiwen Li, Harshit Verma, Sophia Zhou, Haiwen Wang, Ngoc Bui, Heng Chang, Fei Fei, David van Dijk, Rex Ying
+**Link:** https://arxiv.org/abs/2611.17316v1
+**Summary:** The paper addresses the challenge of efficiently managing memory in coding agents that work on successive tasks while minimizing costs associated with reading and writing this memory. The authors introduce CoReMem, a framework that evaluates the future usefulness of memory segments to optimize memory design and actor decision-making. Key results show that CoReMem significantly improves the performance of a 27B actor model on the ChainSWE task, increasing its success rate while reducing effort and resource consumption.
 
-### 7. C$^2$-Routing: Complementary Cropping and Compression for Efficient Vision-Language Inference
-**Authors:** Guorui Lu, Qinyu Chen
-**Link:** https://arxiv.org/abs/2611.14469v1
-**Summary:** The paper addresses the high computational costs associated with Visual Question Answering (VQA) by introducing C$^2$-Routing, a method that adaptively selects between cropping images for small targets and compressing whole images for context preservation based on the input image and question. This approach successfully reduces the computational load by an average of 36.53% in end-to-end FLOPs and 42.36% in visual tokens while maintaining a minimal impact on accuracy, demonstrating its effectiveness across multiple vision-language models and diverse datasets.
+### 7. Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces
+**Authors:** Abigail L. Tenenbaum, R. Thomas McCoy
+**Link:** https://arxiv.org/abs/2611.17314v1
+**Summary:** This paper explores how certain neural networks can learn new tasks quickly by examining their internal structure after being optimized through meta-learning. The authors draw parallels to additive relationships in word embeddings, showing that the parameters of a meta-learned network can be combined to create new representations for functions, allowing the network to effectively implement these functions without additional training. The key finding is that meta-learning organizes a network's learning trajectories in a way that supports rapid learning of related tasks.
 
-### 8. Bayesian inverse problems and epidemic-threshold uncertainty for a heterogeneous SIS reaction-diffusion model
-**Authors:** Duc-Lam Duong
-**Link:** https://arxiv.org/abs/2611.14468v1
-**Summary:** This paper addresses the challenge of using early observations to infer persistence in a heterogeneous SIS (susceptible-infected-susceptible) epidemic model, despite uncertainties in individual transmission and recovery rates. The authors establish a Bayesian framework that demonstrates how these rates influence epidemic threshold dynamics and persistence, revealing that early prevalence can effectively inform about long-term epidemic outcomes. Key results include a novel method for quantifying convergence of posterior distributions and error bounds for persistence probabilities, alongside numerical examples that validate their findings.
+### 8. Sketching Language Models for Context Attribution
+**Authors:** Christopher Liaw, Aranyak Mehta, Grigoris Velegkas, Felix Zhou
+**Link:** https://arxiv.org/abs/2611.17313v1
+**Summary:** The paper addresses the problem of context attribution in language models, specifically how removing parts of a prompt affects the model's output. The authors propose a novel algorithm that estimates the leave-one-out attribution values using significantly fewer model evaluations compared to direct computation, achieving a bound of \(O(\sqrt{\log(1/\varepsilon)}/\varepsilon)\) evaluations while maintaining accuracy. Key contributions include demonstrating stability in the estimates and deriving a lower bound that matches their upper bound, based on advanced techniques in sketching and matrix query estimation.
 
-### 9. A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets
-**Authors:** Audrey Huang, Nan Jiang, Sham M. Kakade, Sadhika Malladi, Akshay Krishnamurthy, Dylan J. Foster
-**Link:** https://arxiv.org/abs/2611.14467v1
-**Summary:** This paper addresses the challenge of optimizing language model policies during post-training, specifically tackling the issue of "coverage collapse" where optimal responses can become highly unlikely even as overall rewards improve. The authors propose a method called Approximate Policy Mirror Descent (APMD) that includes reference resets to the most recent policy, which helps to restore the likelihood of generating optimal responses and ensures convergence to the best possible policy. The key contribution is the establishment of global convergence guarantees for coverage-preserving algorithms, clarifying the impact of regularization and algorithm design on the efficiency of post-training optimization.
+### 9. Classical Energies Learn to Reason 1,000x Faster than Looped Models
+**Authors:** Benjamin Hoover, Hugh Blayney, James C. R. Whittington
+**Link:** https://arxiv.org/abs/2611.17309v1
+**Summary:** The paper addresses the inefficiencies of looped models in solving reasoning tasks by introducing a learned energy-based model called CRAM, which is inspired by Hopfield & Tank's work from the 1980s. CRAM demonstrates significantly faster training times and lower computational demands, achieving near-complete accuracy on puzzles like Sudoku and Maze while being over 1,000 times quicker than traditional looped models. This study highlights the potential of energy-based approaches for reasoning tasks while cautioning against relying on simple benchmarks for assessing the scalability of reasoning techniques.
 
-### 10. A Theory of Cross-Validation Variance
-**Authors:** Nathaniel S. O'Connell, Jaime L. Speiser
-**Link:** https://arxiv.org/abs/2611.14463v1
-**Summary:** The paper addresses the variability in cross-validation estimates of predictive performance by establishing a theoretical framework that precisely quantifies their variance based on how observations impact training and evaluation in different roles. By deriving an exact identity for this variance, the authors demonstrate that K-fold cross-validation is optimal in minimizing variance, while also identifying that leave-one-out and leave-pair-out schemes yield the lowest variance for specific metrics. This work provides a solid theoretical basis for understanding and improving the selection of cross-validation methods for reliable model evaluation.
+### 10. Quantifying structural stability of transparent models for general insurance pricing
+**Authors:** Félix Côté, Marie-Pier Côté
+**Link:** https://arxiv.org/abs/2611.17308v1
+**Summary:** This paper addresses the challenge of maintaining structural stability in insurance pricing models, which often undergo significant changes when updated due to the short duration of general insurance contracts. The authors introduce a novel metric called the Mean Squared Shape function distance to evaluate the stability of functionally transparent models, allowing for better understanding and comparison of model changes. Their findings reveal that generalised linear models and explainable boosting machines balance stability and accuracy effectively, and that certain strategies can enhance stability without sacrificing performance.
