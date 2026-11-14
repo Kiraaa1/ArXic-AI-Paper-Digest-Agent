@@ -1,52 +1,52 @@
 ---
-## 2026-11-13
+## 2026-11-14
 
-### 1. Unbundling Multimodal Vision Encoding
-**Authors:** Ellis Brown, Chris Hoang, Shengyi Qian, Shang-Wen Li, Mike Lewis, Marjan Ghazvininejad, Luke Zettlemoyer, Lucas Beyer, Mengye Ren, Jakob Verbeek, Saining Xie, Hu Xu
-**Link:** https://arxiv.org/abs/2611.17334v1
-**Summary:** The paper addresses the ongoing debate about how multimodal language models should integrate visual input, particularly whether to use pretrained vision encoders or train them from scratch. The authors conducted experiments using a controlled framework to compare various encoding strategies, ultimately finding that the key factor for effective visual understanding is dedicated vision capacity rather than a pretrained visual prior. They concluded that joint training of the visual encoder with the language model leads to comparable performance as using a separate pretrained encoder, especially when the vision capacity is strategically placed within the model architecture.
+### 1. Towards a Theory of Learnability via Debate
+**Authors:** Tosca Lechner, Vinayak Pathak, Sivan Sabato, Ruth Urner
+**Link:** https://arxiv.org/abs/2611.17303v1
+**Summary:** The paper addresses the challenges of using debate as a training method for AI models, focusing on the implicit learning problem it presents. The authors reformulate this problem as an online learning challenge and introduce a cooperative debate protocol that optimizes learning outcomes. A key finding is that even minor errors from human judges can significantly impair the learning effectiveness of the models.
 
-### 2. ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research
-**Authors:** Jie Wang, Tong Zhu, JiaHao Kuang, Zhe Xu, Yunkai Chai, Dehong Zheng, Yu Cheng, Tao Ji, ZhouHan Lin, Qi Zhang, Bowen Zhou
-**Link:** https://arxiv.org/abs/2611.17332v1
-**Summary:** ArchSpace addresses the lack of documentation and review in LLM architecture research, which often leads to missed insights in both industry and academia. The platform allows researchers to record their architectural proposals along with experimental results, review them via community input, and reference them in future work. By leveraging scaling laws to predict model performance from smaller experiments, ArchSpace aims to facilitate the development of a wider array of architectural innovations for next-generation models.
+### 2. FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification
+**Authors:** Mohamed Alimoussa, Amal El Kaid
+**Link:** https://arxiv.org/abs/2611.17302v1
+**Summary:** The paper introduces FLEX-LBP, a new method that enhances Local Binary Patterns (LBP) by automatically learning key parameters such as radius and color transforms through backpropagation, rather than setting them manually. The approach retains the efficiency of traditional LBP while significantly improving texture classification accuracy across various datasets. Notably, FLEX-LBP outperforms several classical descriptors and achieves a remarkable accuracy of 93.8% on the Kather colorectal cancer benchmark, surpassing the best existing methods.
 
-### 3. Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation
-**Authors:** Zeynep Yıldız, Satchit Chatterji, Ercan Atam, Erman Acar
-**Link:** https://arxiv.org/abs/2611.17329v1
-**Summary:** This paper addresses the challenge of enforcing investment policy constraints in portfolio allocation using deep reinforcement learning (RL). The authors introduce a neurosymbolic approach that integrates symbolic rules directly into the learning process, enabling the RL agent to learn compliance without needing post-hoc corrections. Their method significantly reduces violations of investment rules from as high as 98% to just 4.8%, demonstrating its effectiveness in real-world applications.
+### 3. Consistent Video-to-Video Translation via Explicit Correspondences
+**Authors:** Gaurav Parmar, Zhengqi Li, Richard Zhang, Jun-Yan Zhu, Srinivasa Narasimhan, Eli Shechtman, Yotam Nitzan
+**Link:** https://arxiv.org/abs/2611.17298v1
+**Summary:** The paper addresses the challenge of achieving long-range temporal consistency in interactive video-to-video translation while maintaining fast real-time generation. The authors introduce a new method called vid2vid-long, which utilizes explicit correspondences between input and output video patches, allowing the model to reference relevant past frames outside a fixed-length context window. Their approach significantly enhances long-range consistency without compromising generation quality or speed compared to existing models.
 
-### 4. AgentSSL: Can MLE Agents Leverage Unlabeled Data?
-**Authors:** Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson, Jennifer J. Sun
-**Link:** https://arxiv.org/abs/2611.17323v1
-**Summary:** The paper addresses the challenge of leveraging abundant unlabeled data for machine learning by introducing Agentic Semi-Supervised Learning (AgentSSL), which frames the problem as a search for optimal programs. The researchers found that agents can effectively synthesize code that integrates existing semi-supervised learning techniques, achieving better performance than traditional human-engineered methods in many scenarios. However, they also identified program selection as a significant hurdle, leading to a dedicated benchmark to evaluate and improve this aspect.
+### 4. Goal Encoding in LLMs
+**Authors:** Arnab Sen Sharma, Eric Todd, Sheridan Feucht, Andy Arditi, Rohit Gandikota, Natalie Shapira, Gabriele Sarti, Constanza Fierro, Lisa Schut, David Bau
+**Link:** https://arxiv.org/abs/2611.17297v1
+**Summary:** The paper investigates how large language models (LLMs) encode and pursue goals during task completion. By analyzing the models' attention mechanisms in a coding context, the researchers identified specific attention heads that represent and sustain goal-related information, allowing the LLM to adapt its actions even in different programming environments. A novel non-recurrent goal-seeking (NRGS) model is proposed, suggesting that LLMs continually re-evaluate their goals in light of their current progress, ensuring effective task execution without a traditional recurrent mechanism.
 
-### 5. Learning When Diffusion Language Models Should Regenerate
-**Authors:** Minhae Oh, Jeonghye Kim, Jinwoo Koo, Yeongoon Kim, Jimin Seo, Minsik Seol, Jungwoo Lee
-**Link:** https://arxiv.org/abs/2611.17320v1
-**Summary:** This paper addresses the challenge of improving the accuracy of diffusion language models when generating text by identifying when errors occur and how to correct them. The authors introduce DiVR, a verifier that assesses the likelihood of a generated sequence being correct, enabling it to decide which parts should be regenerated. The results show that DiVR significantly boosts accuracy on reasoning tasks while being more cost-effective than traditional search methods.
+### 5. Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon
+**Authors:** Haozhe Wang, Lina Chen, Fanqi Wan, Qi Han, Yinmin Zhang, Zheng Ge, Daxin Jiang, Junchi Yan
+**Link:** https://arxiv.org/abs/2611.17294v1
+**Summary:** The paper introduces Metal Sandbox, a system designed to optimize the execution of GPU programming tasks on Apple Silicon by efficiently scheduling commands and managing isolated execution environments for multiple coding agents. It allows for parallel and serial command execution across interconnected Macs, significantly improving command throughput and reducing waiting times. The key findings demonstrate that this approach can achieve up to 2.05 times the command throughput and an 18.8% reduction in waiting times for tool execution.
 
-### 6. CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation
-**Authors:** Peiwen Li, Harshit Verma, Sophia Zhou, Haiwen Wang, Ngoc Bui, Heng Chang, Fei Fei, David van Dijk, Rex Ying
-**Link:** https://arxiv.org/abs/2611.17316v1
-**Summary:** The paper addresses the challenge of efficiently managing memory in coding agents that work on successive tasks while minimizing costs associated with reading and writing this memory. The authors introduce CoReMem, a framework that evaluates the future usefulness of memory segments to optimize memory design and actor decision-making. Key results show that CoReMem significantly improves the performance of a 27B actor model on the ChainSWE task, increasing its success rate while reducing effort and resource consumption.
+### 6. Negative-Only Policy Optimization for One-Sided Verifiable Rewards
+**Authors:** Jiacheng Xu, Shuo He, Fuxiang Zhang, Chaojie Wang, Bo An
+**Link:** https://arxiv.org/abs/2611.17287v1
+**Summary:** The paper addresses the challenge of reinforcement learning (RL) in scenarios where reliable verification of successes is not possible, leading to potential false positives in positive feedback. The authors propose a novel method called Negative-Only Policy Optimization (NOPO), which focuses on using only verified negatives to optimize the learning policy while treating verified positives as ambiguous. The key contribution is that NOPO significantly improves performance on various benchmarks, demonstrating its effectiveness in optimizing RL in environments with one-sided verifiability.
 
-### 7. Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces
-**Authors:** Abigail L. Tenenbaum, R. Thomas McCoy
-**Link:** https://arxiv.org/abs/2611.17314v1
-**Summary:** This paper explores how certain neural networks can learn new tasks quickly by examining their internal structure after being optimized through meta-learning. The authors draw parallels to additive relationships in word embeddings, showing that the parameters of a meta-learned network can be combined to create new representations for functions, allowing the network to effectively implement these functions without additional training. The key finding is that meta-learning organizes a network's learning trajectories in a way that supports rapid learning of related tasks.
+### 7. Synthesis Smuggling: Maliciously Hiding Inferred Personal Attributes in LLM Outputs
+**Authors:** Gautam Galada, Supreeth Shastri, Sagnik Ray Choudhury
+**Link:** https://arxiv.org/abs/2611.17280v1
+**Summary:** The paper introduces a threat model called "Synthesis Smuggling," which reveals how a malicious language model can extract sensitive personal information (like gender and age) from user interactions and secretly embed it in seemingly harmless generated content. By training models to make these inferences and encode them using hidden characters or specific word choices, the research demonstrates that such outputs can unintentionally serve as covert channels for transmitting private data, even when users share the content innocently.
 
-### 8. Sketching Language Models for Context Attribution
-**Authors:** Christopher Liaw, Aranyak Mehta, Grigoris Velegkas, Felix Zhou
-**Link:** https://arxiv.org/abs/2611.17313v1
-**Summary:** The paper addresses the problem of context attribution in language models, specifically how removing parts of a prompt affects the model's output. The authors propose a novel algorithm that estimates the leave-one-out attribution values using significantly fewer model evaluations compared to direct computation, achieving a bound of \(O(\sqrt{\log(1/\varepsilon)}/\varepsilon)\) evaluations while maintaining accuracy. Key contributions include demonstrating stability in the estimates and deriving a lower bound that matches their upper bound, based on advanced techniques in sketching and matrix query estimation.
+### 8. LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds
+**Authors:** Pengcheng Zhou, Xuanyu Liu, Yanchen Yin, Tianjie Ju, Bobo Li, Shengqiong Wu, Hao Fei, Mong-Li Lee, Wynne Hsu
+**Link:** https://arxiv.org/abs/2611.17267v1
+**Summary:** The paper presents GeoWorld, a dynamic geographic environment designed to test the decision-making abilities of large language models (LLMs) in settings that continuously change over time. The benchmark, LiveGeo, evaluates how well these agents can gather relevant information and adapt their plans as the environment evolves. The findings indicate that current leading LLMs struggle with both static and dynamic tasks, revealing significant challenges in maintaining accurate decision-making as conditions change.
 
-### 9. Classical Energies Learn to Reason 1,000x Faster than Looped Models
-**Authors:** Benjamin Hoover, Hugh Blayney, James C. R. Whittington
-**Link:** https://arxiv.org/abs/2611.17309v1
-**Summary:** The paper addresses the inefficiencies of looped models in solving reasoning tasks by introducing a learned energy-based model called CRAM, which is inspired by Hopfield & Tank's work from the 1980s. CRAM demonstrates significantly faster training times and lower computational demands, achieving near-complete accuracy on puzzles like Sudoku and Maze while being over 1,000 times quicker than traditional looped models. This study highlights the potential of energy-based approaches for reasoning tasks while cautioning against relying on simple benchmarks for assessing the scalability of reasoning techniques.
+### 9. Programming Quantum Circuit Parameters with Large Language Models
+**Authors:** Tiago de Souza Farias, Caio Moraes Porto, Matheus da Silva Fonseca, Nicolas Armando Cabrera Carpi, Anderson de Araujo Oliveira, Celso Jorge Villas-Boas
+**Link:** https://arxiv.org/abs/2611.17246v1
+**Summary:** This paper explores how large language models (LLMs) can generate parameters for quantum circuits without traditional optimization methods, investigating their effectiveness across various Hamiltonian types. The findings indicate that while LLMs struggle with general Hamiltonians and show limited improvement with feedback, they perform better for structured Hamiltonians, producing low-energy configurations. Additionally, the study highlights limitations in the LLM's ability to provide physically accurate energy values, underscoring the significance of problem structure and verifiability in generating quantum circuit parameters.
 
-### 10. Quantifying structural stability of transparent models for general insurance pricing
-**Authors:** Félix Côté, Marie-Pier Côté
-**Link:** https://arxiv.org/abs/2611.17308v1
-**Summary:** This paper addresses the challenge of maintaining structural stability in insurance pricing models, which often undergo significant changes when updated due to the short duration of general insurance contracts. The authors introduce a novel metric called the Mean Squared Shape function distance to evaluate the stability of functionally transparent models, allowing for better understanding and comparison of model changes. Their findings reveal that generalised linear models and explainable boosting machines balance stability and accuracy effectively, and that certain strategies can enhance stability without sacrificing performance.
+### 10. Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery
+**Authors:** Samidha Verma, Ankit Anand, Sayan Ranu
+**Link:** https://arxiv.org/abs/2611.17241v1
+**Summary:** The paper presents Ballad, an innovative method for selecting and combining various Large Language Models (LLMs) to enhance automated heuristic discovery (AHD) for NP-hard combinatorial optimization problems. Instead of relying solely on more powerful and expensive models, Ballad employs an online bandit algorithm to dynamically choose models based on their performance, ultimately creating an ensemble that often outperforms individual models while significantly reducing costs. The key finding is that this approach can improve heuristic quality and efficiency while achieving cost savings of up to 65.6% compared to using the most powerful model alone.
