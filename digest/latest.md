@@ -1,52 +1,52 @@
 ---
-## 2026-11-17
+## 2026-11-18
 
-### 1. Latent Lattice Language Models
-**Authors:** Shivam Duggal, Zongze Wu, William T. Freeman, Antonio Torralba, Richard Zhang, Eli Shechtman
-**Link:** https://arxiv.org/abs/2611.21608v1
-**Summary:** The paper addresses the challenge of enhancing language model performance without solely relying on deeper or looped architectures by introducing a novel approach called the Lattice of Latents. This method maintains horizontal latent streams that work alongside traditional vertical connections to improve computation and information flow. The key contribution is the demonstration that this lattice structure significantly reduces perplexity in language models, achieving improved performance over existing architectures with comparable parameters.
+### 1. Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching
+**Authors:** Giannis Daras, Marios Papachristou, Adam Klivans, Antonio Torralba, Constantinos Daskalakis
+**Link:** https://arxiv.org/abs/2611.23229v1
+**Summary:** The paper addresses the challenge of collecting large and high-quality datasets for fine-tuning language models, which can lead to overfitting. The authors propose Ambient SFT, a method that uses a "frozen" pre-trained model as a noisy teacher to help guide the fine-tuning process by matching their predictions at different temperature levels. Their approach shows significant improvements over standard fine-tuning methods, achieving up to 21% better performance in various tasks.
 
-### 2. ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization
-**Authors:** Huawei Lin, Jinting Liu, Tongyan Wang, Xuyang Chen, Ruihua Shi, Zhichao Xu, Jiaxin Qin, Guoshenghui Zhao, Baijian Yang, Yingjie Victor Chen, Tan Yu, Weijie Zhao
-**Link:** https://arxiv.org/abs/2611.21605v1
-**Summary:** The paper addresses the issue of visual agents providing answers based on common sense rather than actually analyzing high-resolution images. The authors introduce a new method called Cross-Input Relative Policy Optimization (CrossRPO), which trains agents using specially designed contrast sets to ensure they focus on relevant evidence in images. As a result, their trained agents, ViRA-9B and ViRA-27B, achieve superior accuracy in answering questions correctly, surpassing existing models and demonstrating effective learning from evidence rather than assumptions.
+### 2. Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models
+**Authors:** Rui Ning, Om Chabra, Hari Balakrishnan
+**Link:** https://arxiv.org/abs/2611.23228v1
+**Summary:** The paper presents Spool, a novel framework designed to enhance the efficiency of hybrid vision-language models (VLMs) for low-latency streaming inference on recent video content. By caching and composing state transformations for each frame, Spool eliminates the need to re-process expired frames, significantly speeding up the model while preserving accuracy. As a result, it achieves a 6.6 times faster time-to-first-token across various benchmarks compared to existing solutions.
 
-### 3. Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction
-**Authors:** Ilia Azizi, Frederick Iat-Hin Tam, Marc-Olivier Boldi, Valérie Chavez-Demoulin, Tom Beucler
-**Link:** https://arxiv.org/abs/2611.21602v1
-**Summary:** This study investigates how the National Hurricane Center's Tropical Cyclone Discussions enhance forecasts of hurricane intensity by assessing their value beyond standard numerical predictors. By analyzing data from 637 tropical cyclones and employing a deep learning framework, the researchers found that incorporating the discussions improved the accuracy of short-term wind forecasts significantly. The findings underscore the importance of human judgment in forecasting while highlighting the limitations of the data's timeliness for operational use.
+### 3. StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics
+**Authors:** Xingyang Yu
+**Link:** https://arxiv.org/abs/2611.23225v1
+**Summary:** The paper introduces StringQFT, a comprehensive open-access textbook that integrates string theory with quantum field theory, designed to support AI-assisted theoretical physics. It includes a vast collection of resources, such as section records and calculation tools, enabling automated checks and retrieval-augmented generation for educational and research purposes. The key contribution is the creation of a structured, multiuse resource that facilitates learning and problem-solving in theoretical physics through AI technologies.
 
-### 4. How VLMs Plan What's Next
-**Authors:** Rohit Gandikota, Arnab Sen Sharma, Adam Belfki, David Bau
-**Link:** https://arxiv.org/abs/2611.21600v1
-**Summary:** The paper investigates how vision-language models (VLMs) determine the order in which they describe objects in an image, addressing the lack of clarity around this process. The authors propose a mechanism with four key components that guides the model's focus while generating responses, validated through experiments with Qwen3-VL models. Notably, this framework is applicable across various input formats and model sizes, enhancing understanding of how VLMs handle complex tasks sequentially.
+### 4. An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization
+**Authors:** Zhaosong Lu, Yifeng Xiao
+**Link:** https://arxiv.org/abs/2611.23221v1
+**Summary:** This paper addresses constrained convex finite-sum optimization problems, where solutions must closely adhere to hard constraints. The authors present an improved inexact stochastic variance-reduced gradient method that enhances the efficiency of finding $ε$-surely feasible stochastic optimal solutions, with a lower complexity in gradient evaluations compared to existing approaches. Their method also extends to a deterministic first-order technique for standard convex conic optimization, demonstrating superior performance in scenarios where evaluating constraint gradients is more efficient than evaluating the objective gradient.
 
-### 5. Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks
-**Authors:** Brian Yarbrough, Jesse Wayment, Jingbo Wang, Philip E. Paré, Shreyas Sundaram
-**Link:** https://arxiv.org/abs/2611.21599v1
-**Summary:** Hyperlyve is a framework designed to prove the stability of nonlinear dynamical systems controlled by neural networks, specifically those using ReLU activations. It employs a parallel algorithm to efficiently enumerate the hyperplanes formed by these activations and certifies the stability conditions across the resulting polyhedral regions. The key contribution is that Hyperlyve significantly outperforms existing tools, providing stability proofs for complex systems that were previously impossible to verify, while also clarifying the difficulty of the verification problem as co-NP-complete.
+### 5. Do LLM Agents Still Need to Be Told How to Self-Improve?
+**Authors:** Shobhita Sundaram, Cansu Sancaktar, Phillip Isola
+**Link:** https://arxiv.org/abs/2611.23219v1
+**Summary:** The paper examines whether advanced LLM agents can autonomously determine their own self-improvement strategies without external guidance. By allowing a static LLM agent to experiment with its self-learning algorithm in a gameplay setting, the authors found that these agents could effectively optimize their performance, echoing established theories of self-regulated learning. The study also highlights that the agents' self-generated learning artifacts enhance their capabilities across varied game scenarios and challenges.
 
-### 6. Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent
-**Authors:** Blas Eugenio Vicco Zarate, Miguel Hernán Vicco
-**Link:** https://arxiv.org/abs/2611.21598v1
-**Summary:** The paper addresses the challenge of catastrophic forgetting in continual reinforcement learning, where an agent must adapt to new environments while retaining knowledge from previous ones. The authors introduce the Evolutionary Neuroplastic Agent (ENA), which uses an evolutionary approach to create specialized neural networks that can store and retrieve policies based on detected environment changes. The key finding is that ENA showed promising retention of learned behaviors in various tests, outperforming certain variants in consistent performance, although it did not surpass all contemporary methods in overall efficiency or returns.
+### 6. What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution
+**Authors:** S. M Seefat Alam
+**Link:** https://arxiv.org/abs/2611.23218v1
+**Summary:** The paper investigates the effectiveness of methods that identify and remove social bias in large language models by focusing on individual attention heads. Through an audit of the Qwen-2.5 and Llama-3 models, the authors demonstrate that the metrics used to attribute bias are confounded by factors like prompt identity and response length, making it unclear if the heads truly measure bias. Ultimately, they find that no head set successfully reduces unfairness, challenging the validity of current bias mitigation techniques in these models.
 
-### 7. Optimal Autoregressive Chain-of-Thought Learning via Bagging
-**Authors:** Awni Altabaa, John Lafferty, Omar Montasser
-**Link:** https://arxiv.org/abs/2611.21597v1
-**Summary:** This paper addresses the challenge of effectively learning an autoregressive next-token generator using chain-of-thought demonstrations. The authors propose a bagging algorithm that combines multiple generators trained on bootstrap samples to enhance CoT consistency. A key contribution is the establishment of optimal sample complexity bounds for this method, demonstrating robust performance irrespective of CoT length and enabling the reduction of the ensemble into a single generator efficiently.
+### 7. Higher-Scoring Coding Models Did Not Get More Work Done
+**Authors:** Yining Hua
+**Link:** https://arxiv.org/abs/2611.23216v1
+**Summary:** This study investigates whether higher scores on coding benchmarks correlate with increased productivity in real-world coding tasks, using a natural experiment involving the temporary suspension of the Fable 5 coding model. By analyzing GitHub pull requests from developers before, during, and after the suspension, the researchers found no significant difference in merge rates or productivity between users of Fable 5 and those on a lower-scoring model, Opus 4.8. The key contribution is the finding that higher benchmark scores do not necessarily lead to greater work output in practical coding scenarios.
 
-### 8. SADL: On the Demand-Supply Geometry of Representation Collapse
-**Authors:** Junhan Sun, Yigui Feng, Mingzhe Liu, Haoyan Xu, Lei Ye, Ziqi Han, Hanru Bai, Yanzhao Zhang, Hao Zhao, Guofeng Zhang
-**Link:** https://arxiv.org/abs/2611.21596v1
-**Summary:** The paper addresses the issue of representation collapse in Joint-Embedding Predictive Architectures (JEPAs), where initial encoder outputs are overly similar due to shared components in the input data. The authors introduce a method called Supply And Demand Loss (SADL) that constrains the encoder based on the differences required by the projector output, effectively preventing collapse without altering the core training structure. Key results show that SADL significantly reduces representation collapse and improves learning stability and accuracy across multiple tasks and datasets.
+### 8. Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving
+**Authors:** John Gideon, Anshul Gupta, Megan Applegate-Kenton, Kayli Battel, Todd J Rowell, Patricio Reyes Gomez, Laporsha Dees, Emily Sumner, Avinash Balachandran, Guy Rosman
+**Link:** https://arxiv.org/abs/2611.23211v1
+**Summary:** The paper addresses the challenge of predicting human cognitive impairments while driving, which is difficult due to the lack of extensive labeled data. The authors propose a multimodal masked-diffusion autoencoder called ID-MAE, which not only predicts impairment levels but also reconstructs gaze and driving trajectories from various types of inputs. Their approach significantly improves impairment detection accuracy on a new driving dataset, achieving a paired AUC of 0.706 compared to 0.590 without reconstruction loss, indicating a robust method for understanding driver behavior under different impairment conditions.
 
-### 9. Surrogate-Assisted Compact-Model Extraction for SKY130 CMOS at 77 K
-**Authors:** Aaron Wang, Olivia Gzamouranis, Vaibhav Lohia, Hershel Fei Xun Weiner, Olivia Seidel, Richard Cavanaugh, Giuseppe Di Guglielmo, Nhan Tran, Davide Braga
-**Link:** https://arxiv.org/abs/2611.21594v1
-**Summary:** This paper addresses the need for accurate compact models of SKY130 CMOS transistors for cryogenic applications by developing a surrogate-assisted method to extract these models from measured low-temperature data. The authors utilize a neural network as a surrogate to optimize the fitting of compact-model parameters, achieving improved accuracy over existing models. Their results show that using a specific set of 43 parameters reduces simulation errors significantly compared to traditional methods, particularly for higher bias conditions.
+### 9. Distortion-Free Semantic Watermarks for Black-Box Generative Models
+**Authors:** Aviv Yossef, Or Patashnik, Or Zamir
+**Link:** https://arxiv.org/abs/2611.23208v1
+**Summary:** The paper addresses the challenge of watermarking outputs from black-box generative models in a way that doesn't degrade the quality of the generated content, especially against transformations like cropping or resizing. The authors introduce a generic watermarking algorithm that only requires sampling and semantic embedding access, ensuring the watermarks remain robust and detectable despite content-preserving alterations. The key contribution is a specially trained image encoder that effectively balances the need for stability under transformations with the ability to distinguish between separate generations, demonstrating strong watermark detection across different generative models.
 
-### 10. Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering
-**Authors:** Yisong Cao, Leah Kim, Brian Wright, Ali Rivera
-**Link:** https://arxiv.org/abs/2611.21586v1
-**Summary:** The paper addresses the challenge of understanding the distinct nature of technical job roles in a rapidly evolving job market, given that job titles and descriptions are often insufficient. The authors developed a methodology combining deep learning techniques, including sparse autoencoders and transformer representations, to analyze over 36,000 job postings and segment them into meaningful clusters based on their content. Key findings indicate that different roles, such as Data Scientist and Data Analyst, emphasize varying aspects of their responsibilities, revealing nuanced insights into the job landscape that could enhance job description analysis.
+### 10. Reading Scene States: Uncovering Safety Failures in Vision-Language Models
+**Authors:** Tongxi Wu, Yuyang Cheng, Jiacheng Xian, Menglin Yang, Kai Chen, Jian Zhang, Yang Gao
+**Link:** https://arxiv.org/abs/2611.23206v1
+**Summary:** The paper addresses the safety vulnerabilities of vision-language models (VLMs) that can provide harmful assistance based on visual inputs, even without explicit harmful requests. The authors introduce a benchmark called SceneSafetyBench and develop a systematic attack method, S3TA, to exploit these vulnerabilities, achieving a high attack success rate of 71.2% across multiple VLMs. This research underscores the importance of enhancing safety measures in models that interpret visual information to prevent dangerous outcomes.
