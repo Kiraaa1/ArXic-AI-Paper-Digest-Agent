@@ -1,52 +1,52 @@
 ---
-## 2026-11-18
+## 2026-11-19
 
-### 1. Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching
-**Authors:** Giannis Daras, Marios Papachristou, Adam Klivans, Antonio Torralba, Constantinos Daskalakis
-**Link:** https://arxiv.org/abs/2611.23229v1
-**Summary:** The paper addresses the challenge of collecting large and high-quality datasets for fine-tuning language models, which can lead to overfitting. The authors propose Ambient SFT, a method that uses a "frozen" pre-trained model as a noisy teacher to help guide the fine-tuning process by matching their predictions at different temperature levels. Their approach shows significant improvements over standard fine-tuning methods, achieving up to 21% better performance in various tasks.
+### 1. Jailbreak Detection on Large Language Models via Contrastive Prototype Structures
+**Authors:** Yan Qiu, Yuanyuan Li
+**Link:** https://arxiv.org/abs/2611.24936v1
+**Summary:** The paper addresses the challenge of detecting jailbreak attempts and harmful prompts in large language models by proposing a method called Jailbreak Detection with Prototype Inference (JDPI). This approach leverages contrastively learned representations and binary safety labels to create harmful and benign prototypes, allowing for effective detection without needing to train a separate classifier. Key results show that JDPI improves detection accuracy by 9.1-18.0 percentage points compared to traditional methods and demonstrates strong performance across multiple datasets, even outperforming existing baselines.
 
-### 2. Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models
-**Authors:** Rui Ning, Om Chabra, Hari Balakrishnan
-**Link:** https://arxiv.org/abs/2611.23228v1
-**Summary:** The paper presents Spool, a novel framework designed to enhance the efficiency of hybrid vision-language models (VLMs) for low-latency streaming inference on recent video content. By caching and composing state transformations for each frame, Spool eliminates the need to re-process expired frames, significantly speeding up the model while preserving accuracy. As a result, it achieves a 6.6 times faster time-to-first-token across various benchmarks compared to existing solutions.
+### 2. Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems
+**Authors:** Priyanka Sinha, Sugam Pandey
+**Link:** https://arxiv.org/abs/2611.24932v1
+**Summary:** The paper addresses the problem of determining which human reviewers add value when working alongside AI models in decision-making processes, focusing specifically on the concept of metacognitive calibration, or the alignment of a reviewer's confidence with the actual correctness of their judgments. The authors propose a trait theory of reviewer value based on extensive data from an AI-assisted accounting system, revealing that traditional measures of reviewer skill can misidentify overconfident novices as more capable than true experts. Notably, they find that individual calibration is crucial for identifying valuable reviewers, and that the effectiveness of both humans and AI can be optimized based on this calibration.
 
-### 3. StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics
-**Authors:** Xingyang Yu
-**Link:** https://arxiv.org/abs/2611.23225v1
-**Summary:** The paper introduces StringQFT, a comprehensive open-access textbook that integrates string theory with quantum field theory, designed to support AI-assisted theoretical physics. It includes a vast collection of resources, such as section records and calculation tools, enabling automated checks and retrieval-augmented generation for educational and research purposes. The key contribution is the creation of a structured, multiuse resource that facilitates learning and problem-solving in theoretical physics through AI technologies.
+### 3. Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem
+**Authors:** Sarah H. Cen, Lindsey A. Gailmard, Joohan Kim, Rishi Bommasani, Daniel E. Ho, Percy Liang
+**Link:** https://arxiv.org/abs/2611.24927v1
+**Summary:** The paper addresses the lack of comprehensive documentation on the relationships and dependencies within the AI supply chain, which includes various organizations contributing to AI development. The authors present a pipeline for mapping this supply chain, resulting in a large-scale, multilayered dataset of actors and their interconnections in the AI ecosystem. The main contribution is this dataset, which provides critical insights into industry dynamics, including power concentration and vulnerabilities, and is publicly accessible for further exploration and analysis.
 
-### 4. An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization
-**Authors:** Zhaosong Lu, Yifeng Xiao
-**Link:** https://arxiv.org/abs/2611.23221v1
-**Summary:** This paper addresses constrained convex finite-sum optimization problems, where solutions must closely adhere to hard constraints. The authors present an improved inexact stochastic variance-reduced gradient method that enhances the efficiency of finding $ε$-surely feasible stochastic optimal solutions, with a lower complexity in gradient evaluations compared to existing approaches. Their method also extends to a deterministic first-order technique for standard convex conic optimization, demonstrating superior performance in scenarios where evaluating constraint gradients is more efficient than evaluating the objective gradient.
+### 4. Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses
+**Authors:** Jiahang Lin, Jiahao Chen, Yiding Wang, Shichun Liu, Chengjun Pan, Shihan Dou, Honglin Guo, Yuyang Hu, Changhao Jiang, Zhenhua Han, Hang Yan, Qi Zhang, Tao Gui, Xuanjing Huang
+**Link:** https://arxiv.org/abs/2611.24924v1
+**Summary:** The paper addresses the issue of harness evolution in AI systems, which often neglects implicit user requirements, leading to suboptimal performance. The authors propose a new method called Agentic Harness Engineering Beta (AHE-Beta), which incorporates user feedback to drive the modification and selection of changes in harnesses in a more generalizable manner. AHE-Beta significantly improves the performance of AI agents while reducing the number of tokens used, demonstrating that focusing on user requirements creates better alignment between AI systems and real-world needs.
 
-### 5. Do LLM Agents Still Need to Be Told How to Self-Improve?
-**Authors:** Shobhita Sundaram, Cansu Sancaktar, Phillip Isola
-**Link:** https://arxiv.org/abs/2611.23219v1
-**Summary:** The paper examines whether advanced LLM agents can autonomously determine their own self-improvement strategies without external guidance. By allowing a static LLM agent to experiment with its self-learning algorithm in a gameplay setting, the authors found that these agents could effectively optimize their performance, echoing established theories of self-regulated learning. The study also highlights that the agents' self-generated learning artifacts enhance their capabilities across varied game scenarios and challenges.
+### 5. Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation
+**Authors:** Samet Demir, Zafer Dogan
+**Link:** https://arxiv.org/abs/2611.24908v1
+**Summary:** This paper investigates how the training dynamics of two-layer neural networks using stochastic gradient descent (SGD) affect generalization, particularly through the impact of weights that are not aligned with the target model (teacher). The authors decompose the first-layer weights into components that align with the teacher and those that do not, revealing that SGD updates cause an increase in variance in the non-aligned weights, which negatively affects generalization. The key contribution is the introduction of a new framework, Decomposed Dynamics, that provides insights into how feature learning outside the target subspace can impair performance, ultimately demonstrating that freezing certain weight directions can lead to better generalization outcomes.
 
-### 6. What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution
-**Authors:** S. M Seefat Alam
-**Link:** https://arxiv.org/abs/2611.23218v1
-**Summary:** The paper investigates the effectiveness of methods that identify and remove social bias in large language models by focusing on individual attention heads. Through an audit of the Qwen-2.5 and Llama-3 models, the authors demonstrate that the metrics used to attribute bias are confounded by factors like prompt identity and response length, making it unclear if the heads truly measure bias. Ultimately, they find that no head set successfully reduces unfairness, challenging the validity of current bias mitigation techniques in these models.
+### 6. Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators
+**Authors:** Michael Liaofan Liu, Joe Kileel
+**Link:** https://arxiv.org/abs/2611.24896v1
+**Summary:** This paper addresses the challenge of modeling equivariant functions in the context of finite dimensional group representations. The authors propose a novel framework that utilizes equivariant polynomial features, which are derived from minimal generators of invariant algebras, allowing for efficient learning of these functions. A key contribution is the development of a Python package that automates the computation of these features and demonstrates effective model training with fewer parameters, as evidenced by successful numerical experiments.
 
-### 7. Higher-Scoring Coding Models Did Not Get More Work Done
-**Authors:** Yining Hua
-**Link:** https://arxiv.org/abs/2611.23216v1
-**Summary:** This study investigates whether higher scores on coding benchmarks correlate with increased productivity in real-world coding tasks, using a natural experiment involving the temporary suspension of the Fable 5 coding model. By analyzing GitHub pull requests from developers before, during, and after the suspension, the researchers found no significant difference in merge rates or productivity between users of Fable 5 and those on a lower-scoring model, Opus 4.8. The key contribution is the finding that higher benchmark scores do not necessarily lead to greater work output in practical coding scenarios.
+### 7. On Evaluating User Simulators for Interactive Agents
+**Authors:** Hengguang Zhou, I-Hung Hsu, Li Chen, Priyanshi Shrivastava, Anastasios Angelopoulos, Wei-Lin Chiang, Ion Stoica, Cho-Jui Hsieh
+**Link:** https://arxiv.org/abs/2611.24892v1
+**Summary:** This paper addresses the challenge of accurately evaluating the quality of user simulators used for testing interactive agents, which often fail to reliably detect errors in simulated user behavior. The authors propose a new evaluation framework that assesses both the collective behavior of user simulations and the individual goals and constraints of users. Their findings reveal that existing evaluation methods overlook critical failures, whereas their new suite successfully identifies all types of induced user behavior errors, highlighting the importance of thorough fidelity assessment.
 
-### 8. Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving
-**Authors:** John Gideon, Anshul Gupta, Megan Applegate-Kenton, Kayli Battel, Todd J Rowell, Patricio Reyes Gomez, Laporsha Dees, Emily Sumner, Avinash Balachandran, Guy Rosman
-**Link:** https://arxiv.org/abs/2611.23211v1
-**Summary:** The paper addresses the challenge of predicting human cognitive impairments while driving, which is difficult due to the lack of extensive labeled data. The authors propose a multimodal masked-diffusion autoencoder called ID-MAE, which not only predicts impairment levels but also reconstructs gaze and driving trajectories from various types of inputs. Their approach significantly improves impairment detection accuracy on a new driving dataset, achieving a paired AUC of 0.706 compared to 0.590 without reconstruction loss, indicating a robust method for understanding driver behavior under different impairment conditions.
+### 8. Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity
+**Authors:** Benjamin Novotny, Doug Szeto, Chang Wang, Shicheng Chen, George Zhihua Yuan, Bob Kamma, Michael Ge, John Xin Zhou, Andrea Olgiati
+**Link:** https://arxiv.org/abs/2611.24891v1
+**Summary:** The paper addresses the challenge of optimizing inference request dispatch for large language models (LLMs) as server capacity and request sizes fluctuate, emphasizing the limitations of fixed dispatch rates. It introduces Cap-and-Track, an asynchronous inference system that adapts to changes in capacity by using refusal signals to adjust request handling without needing output-length predictions. Key results demonstrate that this approach can significantly reduce resource usage, serving requests more efficiently compared to traditional fixed-rate systems while maintaining high throughput.
 
-### 9. Distortion-Free Semantic Watermarks for Black-Box Generative Models
-**Authors:** Aviv Yossef, Or Patashnik, Or Zamir
-**Link:** https://arxiv.org/abs/2611.23208v1
-**Summary:** The paper addresses the challenge of watermarking outputs from black-box generative models in a way that doesn't degrade the quality of the generated content, especially against transformations like cropping or resizing. The authors introduce a generic watermarking algorithm that only requires sampling and semantic embedding access, ensuring the watermarks remain robust and detectable despite content-preserving alterations. The key contribution is a specially trained image encoder that effectively balances the need for stability under transformations with the ability to distinguish between separate generations, demonstrating strong watermark detection across different generative models.
+### 9. Who are you? The Personal Imitation Game
+**Authors:** Muhammad Rizky Wellyanto, Hajara-Yasmin Isa, Kexin Xue, Vishal Ravichandran, Wenpeng Lu, Jerry O. Talton, Ranjitha Kumar
+**Link:** https://arxiv.org/abs/2611.24888v1
+**Summary:** The authors introduce the Personal Imitation Game, a more difficult version of Turing's Imitation Game, where the challenge is for a machine to mimic a specific individual's conversational style rather than a generic human. They developed a system using a large language model trained on a decade's worth of personal communication data, demonstrating it could convincingly imitate one of the authors, as judged by participants. The results showed no significant difference in the ability of interrogators to distinguish between the author and the machine, highlighting important considerations for personal AI agents and privacy.
 
-### 10. Reading Scene States: Uncovering Safety Failures in Vision-Language Models
-**Authors:** Tongxi Wu, Yuyang Cheng, Jiacheng Xian, Menglin Yang, Kai Chen, Jian Zhang, Yang Gao
-**Link:** https://arxiv.org/abs/2611.23206v1
-**Summary:** The paper addresses the safety vulnerabilities of vision-language models (VLMs) that can provide harmful assistance based on visual inputs, even without explicit harmful requests. The authors introduce a benchmark called SceneSafetyBench and develop a systematic attack method, S3TA, to exploit these vulnerabilities, achieving a high attack success rate of 71.2% across multiple VLMs. This research underscores the importance of enhancing safety measures in models that interpret visual information to prevent dangerous outcomes.
+### 10. Ground, Iterate, Trace: Decomposing AI Research Ideation
+**Authors:** Samson Yu, Qiran Zou, Jing Yu Lim, Rushi Shah, Anirudh Goyal, Dianbo Liu
+**Link:** https://arxiv.org/abs/2611.24887v1
+**Summary:** The paper addresses the challenge of generating effective research ideas using large language models by introducing the Creative AI Researcher (CAR), a framework that combines literature grounding, iterative development, and specific conceptual operators to enhance ideation. CAR constructs a semantic knowledge graph from relevant literature and employs operators to facilitate idea refinement while ensuring traceability of the ideation process. Key results show that CAR achieves higher methodological novelty in generated ideas compared to traditional prompting methods, though the advantage of using explicit operators over iterative approaches is not statistically significant.
