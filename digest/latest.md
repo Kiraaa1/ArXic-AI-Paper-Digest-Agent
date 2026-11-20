@@ -1,52 +1,52 @@
 ---
-## 2026-11-19
+## 2026-11-20
 
-### 1. Jailbreak Detection on Large Language Models via Contrastive Prototype Structures
-**Authors:** Yan Qiu, Yuanyuan Li
-**Link:** https://arxiv.org/abs/2611.24936v1
-**Summary:** The paper addresses the challenge of detecting jailbreak attempts and harmful prompts in large language models by proposing a method called Jailbreak Detection with Prototype Inference (JDPI). This approach leverages contrastively learned representations and binary safety labels to create harmful and benign prototypes, allowing for effective detection without needing to train a separate classifier. Key results show that JDPI improves detection accuracy by 9.1-18.0 percentage points compared to traditional methods and demonstrates strong performance across multiple datasets, even outperforming existing baselines.
+### 1. RL Post-Training in Diffusion Transformers Is Activation Steering
+**Authors:** Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara, Duen Horng Chau, Pinar Yanardag
+**Link:** https://arxiv.org/abs/2611.26627v1
+**Summary:** The paper tackles the problem of enhancing the performance of diffusion transformers in tasks like text rendering and object composition using reinforcement learning (RL) post-training. The authors propose a simpler approach utilizing fixed steering vectors, which significantly reduce the number of parameters compared to conventional RL-tuned methods. Remarkably, these fixed vectors recover most of the performance improvements achieved through RL post-training, demonstrating that a constant shift can effectively guide the already-trained model towards better outputs without needing complex, input-dependent modifications.
 
-### 2. Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems
-**Authors:** Priyanka Sinha, Sugam Pandey
-**Link:** https://arxiv.org/abs/2611.24932v1
-**Summary:** The paper addresses the problem of determining which human reviewers add value when working alongside AI models in decision-making processes, focusing specifically on the concept of metacognitive calibration, or the alignment of a reviewer's confidence with the actual correctness of their judgments. The authors propose a trait theory of reviewer value based on extensive data from an AI-assisted accounting system, revealing that traditional measures of reviewer skill can misidentify overconfident novices as more capable than true experts. Notably, they find that individual calibration is crucial for identifying valuable reviewers, and that the effectiveness of both humans and AI can be optimized based on this calibration.
+### 2. PlayCraft: Designing Engaging Games from Agent Play Experience
+**Authors:** Weihao Cheng
+**Link:** https://arxiv.org/abs/2611.26624v1
+**Summary:** The paper addresses the challenge of creating engaging games by focusing on player mastery, which requires extensive human feedback and tuning. It introduces PlayCraft, an automated framework that uses a vision-based AI agent to play and analyze games, revising them for better player experience based on its play experience. The results show that PlayCraft significantly enhances learning outcomes in games, leading to larger gains in player performance and a more effective progression of skills compared to initial game designs.
 
-### 3. Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem
-**Authors:** Sarah H. Cen, Lindsey A. Gailmard, Joohan Kim, Rishi Bommasani, Daniel E. Ho, Percy Liang
-**Link:** https://arxiv.org/abs/2611.24927v1
-**Summary:** The paper addresses the lack of comprehensive documentation on the relationships and dependencies within the AI supply chain, which includes various organizations contributing to AI development. The authors present a pipeline for mapping this supply chain, resulting in a large-scale, multilayered dataset of actors and their interconnections in the AI ecosystem. The main contribution is this dataset, which provides critical insights into industry dynamics, including power concentration and vulnerabilities, and is publicly accessible for further exploration and analysis.
+### 3. TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming
+**Authors:** Jinbin Luo, Xiaozhe Yao, Shang Yang, Zhijian Liu, Song Han, Qinghao Hu
+**Link:** https://arxiv.org/abs/2611.26619v1
+**Summary:** TideCache addresses the challenge of efficiently managing GPU memory for hybrid language model architectures, which have varying cache needs based on context. The system introduces a three-part solution that optimizes cache allocation and memory management, allowing for better performance by overlapping data transfer with computation. As a result, TideCache significantly increases the number of completed tasks and reduces latency compared to existing systems, showcasing its efficiency in handling language model serving on superchips.
 
-### 4. Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses
-**Authors:** Jiahang Lin, Jiahao Chen, Yiding Wang, Shichun Liu, Chengjun Pan, Shihan Dou, Honglin Guo, Yuyang Hu, Changhao Jiang, Zhenhua Han, Hang Yan, Qi Zhang, Tao Gui, Xuanjing Huang
-**Link:** https://arxiv.org/abs/2611.24924v1
-**Summary:** The paper addresses the issue of harness evolution in AI systems, which often neglects implicit user requirements, leading to suboptimal performance. The authors propose a new method called Agentic Harness Engineering Beta (AHE-Beta), which incorporates user feedback to drive the modification and selection of changes in harnesses in a more generalizable manner. AHE-Beta significantly improves the performance of AI agents while reducing the number of tokens used, demonstrating that focusing on user requirements creates better alignment between AI systems and real-world needs.
+### 4. One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning
+**Authors:** Yuxin Jiang, Wenqiang Sun, Jiaqi Li, Yuchao Gu, Lvmin Zhang, Ivor Tsang, Mike Zheng Shou
+**Link:** https://arxiv.org/abs/2611.26617v1
+**Summary:** The paper addresses the challenge of learning actions in videos without explicit supervision by leveraging a pretrained video generation model. The authors propose a method called O²LaF, which uses a single video generator to support two dynamic learning tasks: understanding how actions influence changes in videos and generating future video frames based on those actions. The key contribution is that O²LaF achieves state-of-the-art performance in few-shot action learning and enables effective transfer of learned actions across different contexts, demonstrating the potential of repurposing pretrained models for this purpose.
 
-### 5. Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation
-**Authors:** Samet Demir, Zafer Dogan
-**Link:** https://arxiv.org/abs/2611.24908v1
-**Summary:** This paper investigates how the training dynamics of two-layer neural networks using stochastic gradient descent (SGD) affect generalization, particularly through the impact of weights that are not aligned with the target model (teacher). The authors decompose the first-layer weights into components that align with the teacher and those that do not, revealing that SGD updates cause an increase in variance in the non-aligned weights, which negatively affects generalization. The key contribution is the introduction of a new framework, Decomposed Dynamics, that provides insights into how feature learning outside the target subspace can impair performance, ultimately demonstrating that freezing certain weight directions can lead to better generalization outcomes.
+### 5. AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control
+**Authors:** Yiyang Du, Yuxuan Kuang, Qitao Zhao, Yixuan Wang, Zhanqiu Guo, Yi Xu, Xin Li, Wenbin He, Liu Ren, Chenyan Xiong
+**Link:** https://arxiv.org/abs/2611.26613v1
+**Summary:** The paper addresses the challenge of evaluating and understanding how advanced multimodal language agents like GPT-6 Astra perform in direct robot control tasks, particularly when existing benchmarks only provide high-level success rates. To tackle this, the authors developed AgentRoboCritic, which combines a policy agent that articulates its intentions with a critic that assesses the outcomes of actions against these intentions. The key contributions include a detailed analysis of agent performance in 12 manipulation benchmarks, identification of specific limitations, and the creation of a new dataset that enhances action-level evaluation accuracy significantly.
 
-### 6. Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators
-**Authors:** Michael Liaofan Liu, Joe Kileel
-**Link:** https://arxiv.org/abs/2611.24896v1
-**Summary:** This paper addresses the challenge of modeling equivariant functions in the context of finite dimensional group representations. The authors propose a novel framework that utilizes equivariant polynomial features, which are derived from minimal generators of invariant algebras, allowing for efficient learning of these functions. A key contribution is the development of a Python package that automates the computation of these features and demonstrates effective model training with fewer parameters, as evidenced by successful numerical experiments.
+### 6. Bio-PM-Guided Synthetic IMU Generation
+**Authors:** Deepali Singh, Deepesh Parpani, Aviral Gupta
+**Link:** https://arxiv.org/abs/2611.26607v1
+**Summary:** This paper addresses the challenge of collecting and labeling inertial measurement unit (IMU) data for human activity recognition, particularly the issue of models failing to generalize across different subjects. The authors propose generating synthetic IMU data using token embeddings from a pretrained biosignal encoder, Bio-PM, employing both an autoregressive transformer and a diffusion decoder. Their approach improves classification performance on real data, achieving a significant increase in accuracy for difficult activity classes, thus demonstrating that the synthetic data generated is both realistic and beneficial for training classifiers.
 
-### 7. On Evaluating User Simulators for Interactive Agents
-**Authors:** Hengguang Zhou, I-Hung Hsu, Li Chen, Priyanshi Shrivastava, Anastasios Angelopoulos, Wei-Lin Chiang, Ion Stoica, Cho-Jui Hsieh
-**Link:** https://arxiv.org/abs/2611.24892v1
-**Summary:** This paper addresses the challenge of accurately evaluating the quality of user simulators used for testing interactive agents, which often fail to reliably detect errors in simulated user behavior. The authors propose a new evaluation framework that assesses both the collective behavior of user simulations and the individual goals and constraints of users. Their findings reveal that existing evaluation methods overlook critical failures, whereas their new suite successfully identifies all types of induced user behavior errors, highlighting the importance of thorough fidelity assessment.
+### 7. Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth
+**Authors:** Peiyun Hu, Marko Mihajlovic, Lyndon Duong, Lahav Lipson, Wei Dong, Amaël Delaunoy, Stephan R. Richter, Vladlen Koltun
+**Link:** https://arxiv.org/abs/2611.26603v1
+**Summary:** The paper presents Depth Pro 2, a novel method for estimating dense metric depth from images and videos that achieves both sharpness and temporal consistency without sacrificing accuracy. By training a single scalable network that processes both static images and video frames at full resolution, Depth Pro 2 overcomes the traditional trade-offs seen in earlier monocular depth estimation methods. The approach outperforms prior techniques, establishing new benchmarks for depth map quality and efficiency, and the authors have made the models and code publicly available.
 
-### 8. Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity
-**Authors:** Benjamin Novotny, Doug Szeto, Chang Wang, Shicheng Chen, George Zhihua Yuan, Bob Kamma, Michael Ge, John Xin Zhou, Andrea Olgiati
-**Link:** https://arxiv.org/abs/2611.24891v1
-**Summary:** The paper addresses the challenge of optimizing inference request dispatch for large language models (LLMs) as server capacity and request sizes fluctuate, emphasizing the limitations of fixed dispatch rates. It introduces Cap-and-Track, an asynchronous inference system that adapts to changes in capacity by using refusal signals to adjust request handling without needing output-length predictions. Key results demonstrate that this approach can significantly reduce resource usage, serving requests more efficiently compared to traditional fixed-rate systems while maintaining high throughput.
+### 8. SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research
+**Authors:** Amine Lbath, Manan Suri, Aurelien Delaitre, Vadim Okun, Massih-Reza Amini, Dinesh Manocha
+**Link:** https://arxiv.org/abs/2611.26601v1
+**Summary:** This paper addresses the growing role of large language models (LLMs) in identifying and fixing software vulnerabilities by establishing a framework to assess their capabilities based on autonomy levels. The authors systematically review existing evidence on LLM performance in vulnerability research and find that these models have been able to discover, validate, and patch vulnerabilities without human intervention, particularly noted in a significant increase in disclosed critical vulnerabilities over the past decade. Ultimately, while LLMs are enhancing vulnerability detection, the response times from report to fix have not significantly changed.
 
-### 9. Who are you? The Personal Imitation Game
-**Authors:** Muhammad Rizky Wellyanto, Hajara-Yasmin Isa, Kexin Xue, Vishal Ravichandran, Wenpeng Lu, Jerry O. Talton, Ranjitha Kumar
-**Link:** https://arxiv.org/abs/2611.24888v1
-**Summary:** The authors introduce the Personal Imitation Game, a more difficult version of Turing's Imitation Game, where the challenge is for a machine to mimic a specific individual's conversational style rather than a generic human. They developed a system using a large language model trained on a decade's worth of personal communication data, demonstrating it could convincingly imitate one of the authors, as judged by participants. The results showed no significant difference in the ability of interrogators to distinguish between the author and the machine, highlighting important considerations for personal AI agents and privacy.
+### 9. Active Feature Acquisition by Distilling an Oracle Teacher
+**Authors:** Yang Meng, Zixin Ding, Robert L. Grossman, Yuxin Chen
+**Link:** https://arxiv.org/abs/2611.26598v1
+**Summary:** The paper addresses the problem of Active Feature Acquisition (AFA), which involves selecting which features to gather from data under budget constraints, as acquiring features can be expensive or time-consuming. The authors propose a method called OracleImitator, which explicitly constructs a teacher that ranks features based on their impact on prediction accuracy, and distills this ranking into a practical policy for feature acquisition. The key finding is that OracleImitator outperforms existing AFA approaches, achieving significant improvements in accuracy while reducing acquisition costs, demonstrating the effectiveness of using an explicit ranking strategy.
 
-### 10. Ground, Iterate, Trace: Decomposing AI Research Ideation
-**Authors:** Samson Yu, Qiran Zou, Jing Yu Lim, Rushi Shah, Anirudh Goyal, Dianbo Liu
-**Link:** https://arxiv.org/abs/2611.24887v1
-**Summary:** The paper addresses the challenge of generating effective research ideas using large language models by introducing the Creative AI Researcher (CAR), a framework that combines literature grounding, iterative development, and specific conceptual operators to enhance ideation. CAR constructs a semantic knowledge graph from relevant literature and employs operators to facilitate idea refinement while ensuring traceability of the ideation process. Key results show that CAR achieves higher methodological novelty in generated ideas compared to traditional prompting methods, though the advantage of using explicit operators over iterative approaches is not statistically significant.
+### 10. PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation
+**Authors:** Kai Lu, Chenyang Ma, Ioannis Havoutis
+**Link:** https://arxiv.org/abs/2611.26596v1
+**Summary:** The paper addresses the challenge of enabling robotic systems to perform complex, long-horizon loco-manipulation tasks that require precise timing and skill execution. The authors introduce the Physically Grounded Execution (PGX) framework, which breaks down these tasks into manageable components using a predicate-based state machine, focused action execution, and spatial consistency techniques. Their experiments demonstrate that PGX improves the ability of a humanoid robot to progress through task stages and achieve higher success rates in both simulated and real-world scenarios.
