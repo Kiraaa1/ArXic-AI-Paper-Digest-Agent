@@ -1,52 +1,52 @@
 ---
-## 2026-11-20
+## 2026-11-21
 
-### 1. RL Post-Training in Diffusion Transformers Is Activation Steering
-**Authors:** Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara, Duen Horng Chau, Pinar Yanardag
-**Link:** https://arxiv.org/abs/2611.26627v1
-**Summary:** The paper tackles the problem of enhancing the performance of diffusion transformers in tasks like text rendering and object composition using reinforcement learning (RL) post-training. The authors propose a simpler approach utilizing fixed steering vectors, which significantly reduce the number of parameters compared to conventional RL-tuned methods. Remarkably, these fixed vectors recover most of the performance improvements achieved through RL post-training, demonstrating that a constant shift can effectively guide the already-trained model towards better outputs without needing complex, input-dependent modifications.
+### 1. Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning
+**Authors:** Terence D. Agbeyegbe, Toneukarin G. Agbeyegbe
+**Link:** https://arxiv.org/abs/2611.26592v1
+**Summary:** This paper addresses the issue of self-consistency certification in language models, where repeated sampling can lead to overly optimistic reliability claims due to the assumption of independent rollouts. The authors introduce a model considering the correlation between reasoning streams and demonstrate that traditional certification techniques only guarantee finite-sample Type I error control for the realized null hypothesis specific to the observed data, not for general population behavior. Their findings show the necessity of adjusting the certification process to account for this correlation, proposing a prompt-level e-process that ensures population validity under certain conditions.
 
-### 2. PlayCraft: Designing Engaging Games from Agent Play Experience
-**Authors:** Weihao Cheng
-**Link:** https://arxiv.org/abs/2611.26624v1
-**Summary:** The paper addresses the challenge of creating engaging games by focusing on player mastery, which requires extensive human feedback and tuning. It introduces PlayCraft, an automated framework that uses a vision-based AI agent to play and analyze games, revising them for better player experience based on its play experience. The results show that PlayCraft significantly enhances learning outcomes in games, leading to larger gains in player performance and a more effective progression of skills compared to initial game designs.
+### 2. Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models
+**Authors:** Jiahao Huang, Jun Wang
+**Link:** https://arxiv.org/abs/2611.26590v1
+**Summary:** The paper addresses the challenge of understanding how vision-language models (VLMs) represent and access concepts internally. The authors introduce the Multimodal Concept Lens (MC-Lens), a tool that examines how these models integrate visual and textual information by mapping intermediate states to a shared semantic space and enabling selective access to concepts. Key findings reveal that while concepts are accessible during processing, the selective access of these concepts for specific tasks develops later, and common patterns exist across different VLM architectures.
 
-### 3. TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming
-**Authors:** Jinbin Luo, Xiaozhe Yao, Shang Yang, Zhijian Liu, Song Han, Qinghao Hu
-**Link:** https://arxiv.org/abs/2611.26619v1
-**Summary:** TideCache addresses the challenge of efficiently managing GPU memory for hybrid language model architectures, which have varying cache needs based on context. The system introduces a three-part solution that optimizes cache allocation and memory management, allowing for better performance by overlapping data transfer with computation. As a result, TideCache significantly increases the number of completed tasks and reduces latency compared to existing systems, showcasing its efficiency in handling language model serving on superchips.
+### 3. Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards
+**Authors:** Ana E. Sanchez Villalobos, Michael D. Quinn, Aakash Tyagi, Minh D. Luu, David Kebo Houngninou
+**Link:** https://arxiv.org/abs/2611.26588v1
+**Summary:** The paper addresses the issue of "scoreboard escapes," which are bugs that pass standard regression tests while still violating the design specification. The authors propose a novel framework called Verify the Verifier, which utilizes a Large Language Model (LLM) to cross-check test traces against the specification. Through their experiments on OpenTitan IPs, they identified 68 potential scoreboard escapes, of which 41 were confirmed as actual violations, highlighting the framework's effectiveness in detecting previously unnoticed bugs.
 
-### 4. One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning
-**Authors:** Yuxin Jiang, Wenqiang Sun, Jiaqi Li, Yuchao Gu, Lvmin Zhang, Ivor Tsang, Mike Zheng Shou
-**Link:** https://arxiv.org/abs/2611.26617v1
-**Summary:** The paper addresses the challenge of learning actions in videos without explicit supervision by leveraging a pretrained video generation model. The authors propose a method called O²LaF, which uses a single video generator to support two dynamic learning tasks: understanding how actions influence changes in videos and generating future video frames based on those actions. The key contribution is that O²LaF achieves state-of-the-art performance in few-shot action learning and enables effective transfer of learned actions across different contexts, demonstrating the potential of repurposing pretrained models for this purpose.
+### 4. ProtoDiffusion: Token-per-Layer Generative Modeling of Multi-Layer Images
+**Authors:** Adrià Ciurana Lanau, Harleen Hanspal, Lusine Abrahamyan, Emilio Tylson Baixauli, Yu Cao, Danai Triantafyllidou, Stefano Zorzi, Gustavo Zanoni Felipe, Peter Griger, Stefan Sietzen, Petru-Daniel Tudosiu
+**Link:** https://arxiv.org/abs/2611.26586v1
+**Summary:** The paper introduces ProtoDiffusion, a novel framework for efficiently modeling graphic designs composed of multiple RGBA layers without the scalability issues of traditional full-grid representations. By using a shared spatial prototype alongside individual candidate vectors for each layer, the model condenses the representation size significantly while maintaining high fidelity in layer reconstruction. Key results demonstrate its competitive performance in design generation tasks, achieving impressive PSNR and FID scores while being notably faster than existing methods.
 
-### 5. AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control
-**Authors:** Yiyang Du, Yuxuan Kuang, Qitao Zhao, Yixuan Wang, Zhanqiu Guo, Yi Xu, Xin Li, Wenbin He, Liu Ren, Chenyan Xiong
-**Link:** https://arxiv.org/abs/2611.26613v1
-**Summary:** The paper addresses the challenge of evaluating and understanding how advanced multimodal language agents like GPT-6 Astra perform in direct robot control tasks, particularly when existing benchmarks only provide high-level success rates. To tackle this, the authors developed AgentRoboCritic, which combines a policy agent that articulates its intentions with a critic that assesses the outcomes of actions against these intentions. The key contributions include a detailed analysis of agent performance in 12 manipulation benchmarks, identification of specific limitations, and the creation of a new dataset that enhances action-level evaluation accuracy significantly.
+### 5. Represented but misread: Post-training changes how language models read out what they represent
+**Authors:** Jochen Laubrock
+**Link:** https://arxiv.org/abs/2611.26584v1
+**Summary:** The paper investigates whether post-training affects what language models represent or how they interpret that information when generating answers. By analyzing various models before and after post-training using linear probes and signal detection theory, the authors found that post-training generally decreased the sensitivity of the models' outputs to the underlying representations, and it altered how models used prior knowledge in their judgments. Notably, while post-training often amplified errors in classifying authorship of texts, it also improved the models' ability to assess the truth of statements, suggesting that even a small amount of targeted training data can significantly influence the output direction.
 
-### 6. Bio-PM-Guided Synthetic IMU Generation
-**Authors:** Deepali Singh, Deepesh Parpani, Aviral Gupta
-**Link:** https://arxiv.org/abs/2611.26607v1
-**Summary:** This paper addresses the challenge of collecting and labeling inertial measurement unit (IMU) data for human activity recognition, particularly the issue of models failing to generalize across different subjects. The authors propose generating synthetic IMU data using token embeddings from a pretrained biosignal encoder, Bio-PM, employing both an autoregressive transformer and a diffusion decoder. Their approach improves classification performance on real data, achieving a significant increase in accuracy for difficult activity classes, thus demonstrating that the synthetic data generated is both realistic and beneficial for training classifiers.
+### 6. Text-Aware, Vision-Blind: How Multimodal Image Editing Systems Handle Unsafe Inputs
+**Authors:** Ziqing Yang, Yixin Wu, Michael Backes, Yang Zhang
+**Link:** https://arxiv.org/abs/2611.26569v1
+**Summary:** The paper addresses the problem of safety in multimodal image editing systems, which often fail to consider both visual content and text prompts simultaneously. To evaluate this, the authors introduced EditSafetyBench, a benchmark with 5,940 image-instruction pairs that assess the safety awareness of different editing systems. The results reveal a significant mismatch in handling unsafe content based on the combination of images and instructions, suggesting a need for integrated safety measures that account for both modalities.
 
-### 7. Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth
-**Authors:** Peiyun Hu, Marko Mihajlovic, Lyndon Duong, Lahav Lipson, Wei Dong, Amaël Delaunoy, Stephan R. Richter, Vladlen Koltun
-**Link:** https://arxiv.org/abs/2611.26603v1
-**Summary:** The paper presents Depth Pro 2, a novel method for estimating dense metric depth from images and videos that achieves both sharpness and temporal consistency without sacrificing accuracy. By training a single scalable network that processes both static images and video frames at full resolution, Depth Pro 2 overcomes the traditional trade-offs seen in earlier monocular depth estimation methods. The approach outperforms prior techniques, establishing new benchmarks for depth map quality and efficiency, and the authors have made the models and code publicly available.
+### 7. GEOHunter: Mapping a Generative Engine Optimization Network in the Wild
+**Authors:** Sean Tang, Peiran Wang, Ying Li, Esha Shivakumar, Tao Meng, Yuan Tian
+**Link:** https://arxiv.org/abs/2611.26564v1
+**Summary:** The paper addresses the issue of generative engines promoting misleading content through paid placements on user-generated content platforms, which can have harmful implications, especially in sensitive areas like health and finance. The authors analyzed a network of promotional accounts across major Chinese platforms, revealing extensive and coordinated use of these accounts to influence the visibility of products in generative engine outputs. They found that a significant portion of the cited web pages in generative engines could be traced back to this network, highlighting the need for stronger defenses against such manipulation beyond just content-level measures.
 
-### 8. SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research
-**Authors:** Amine Lbath, Manan Suri, Aurelien Delaitre, Vadim Okun, Massih-Reza Amini, Dinesh Manocha
-**Link:** https://arxiv.org/abs/2611.26601v1
-**Summary:** This paper addresses the growing role of large language models (LLMs) in identifying and fixing software vulnerabilities by establishing a framework to assess their capabilities based on autonomy levels. The authors systematically review existing evidence on LLM performance in vulnerability research and find that these models have been able to discover, validate, and patch vulnerabilities without human intervention, particularly noted in a significant increase in disclosed critical vulnerabilities over the past decade. Ultimately, while LLMs are enhancing vulnerability detection, the response times from report to fix have not significantly changed.
+### 8. Multi-institutional grading of Barrett's esophagus dysplasia without stain normalization using a pathology foundation model and multiple instance learning
+**Authors:** Amirali Khosravi, Jaidip M. Jagtap, D. Chamil Codipilly, Catherine E. Hagen, Jason T. Lewis, Rickey E. Carter, Shahriar Faghani, Vani J. A. Konda, Fouad Otaki, Shajan Peter, Nicholas Shaheen, Sachin Wani, Prasad G. Iyer, Bradley J. Erickson
+**Link:** https://arxiv.org/abs/2611.26562v1
+**Summary:** This study addresses the challenge of inconsistent grading of dysplasia in Barrett's esophagus, which is often subject to variability among pathologists. Researchers developed a deep learning system that analyzes whole slide images without the need for stain normalization, utilizing expert annotations to classify samples into different dysplasia levels. The model achieved high diagnostic accuracy, with an area under the curve of 0.96, demonstrating robustness across multiple institutions while successfully detecting dysplasia cases effectively.
 
-### 9. Active Feature Acquisition by Distilling an Oracle Teacher
-**Authors:** Yang Meng, Zixin Ding, Robert L. Grossman, Yuxin Chen
-**Link:** https://arxiv.org/abs/2611.26598v1
-**Summary:** The paper addresses the problem of Active Feature Acquisition (AFA), which involves selecting which features to gather from data under budget constraints, as acquiring features can be expensive or time-consuming. The authors propose a method called OracleImitator, which explicitly constructs a teacher that ranks features based on their impact on prediction accuracy, and distills this ranking into a practical policy for feature acquisition. The key finding is that OracleImitator outperforms existing AFA approaches, achieving significant improvements in accuracy while reducing acquisition costs, demonstrating the effectiveness of using an explicit ranking strategy.
+### 9. MM-SystemOneBias: Evaluating Bias in Multimodal Jev-Style System One Decision Models
+**Authors:** Jinzhe Li, Qi Wang, Dandan Guo, Li Liu, Yuan Wu, Yi Chang
+**Link:** https://arxiv.org/abs/2611.26557v1
+**Summary:** The paper addresses the challenge of evaluating bias in multimodal decision models that rely on different types of input, such as text and images, to make decisions. It introduces a framework called MM-SystemOneBias, which tests 13 models across various scenarios to identify how changes in presentation, like option order or additional irrelevant information, impact decision-making stability. The key finding is that these decision models exhibit greater stability and smaller accuracy losses under certain conditions, highlighting significant input effects that traditional accuracy measures do not fully capture.
 
-### 10. PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation
-**Authors:** Kai Lu, Chenyang Ma, Ioannis Havoutis
-**Link:** https://arxiv.org/abs/2611.26596v1
-**Summary:** The paper addresses the challenge of enabling robotic systems to perform complex, long-horizon loco-manipulation tasks that require precise timing and skill execution. The authors introduce the Physically Grounded Execution (PGX) framework, which breaks down these tasks into manageable components using a predicate-based state machine, focused action execution, and spatial consistency techniques. Their experiments demonstrate that PGX improves the ability of a humanoid robot to progress through task stages and achieve higher success rates in both simulated and real-world scenarios.
+### 10. Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)
+**Authors:** Mengxiao Wang, Mahbub Alam, Kalyan Nakka, Nitesh Saxena
+**Link:** https://arxiv.org/abs/2611.26553v1
+**Summary:** The paper addresses the issue of understanding and replicating security incidents caused by large language model (LLM) agents, which can perform risky actions like deleting files or making payments. The authors introduce ROGUE-AI, a framework that replicates reported incidents and compares outcomes against control scenarios to identify their causes. Key findings show that ROGUE-AI successfully reproduced incidents in 89% of cases and revealed that many reported harms stemmed from agents fulfilling their tasks without recognizing ordinary hazards, suggesting that improved hazard warnings can significantly reduce incidents.
