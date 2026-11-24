@@ -1,52 +1,52 @@
 ---
-## 2026-11-23
+## 2026-11-24
 
-### 1. Optimal Linear Regression Without a Variance
-**Authors:** Artin Tajdini, Jasper C. H. Lee, Jonathan Scarlett, Kevin Jamieson
-**Link:** https://arxiv.org/abs/2611.27983v1
-**Summary:** The paper addresses the challenge of performing linear regression in scenarios where the noise has infinite variance but finite conditional moments, which complicates traditional estimation methods. The authors present a versatile approach that transforms standard finite-variance regression techniques into effective methods for weak-moment scenarios through a process called empirical residual pruning. As a key result, they establish that under certain conditions, the proposed method can achieve reliable parameter estimation with high probability, even without knowledge of the noise characteristics, while also providing a computationally efficient solution.
+### 1. Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action
+**Authors:** Seongchan Kim, Soowon Son, Sangoh Kim, Hyunah Ko, Eunbeen Hong, Hyunkoo Lee, Sanghyun Lee, WonJun Moon, Kihong Kim, Dongyeon Son, Woongchan Nam, Seungryong Kim
+**Link:** https://arxiv.org/abs/2611.31240v1
+**Summary:** The paper addresses the high memory and computational costs of reasoning vision-language-action (VLA) models used in autonomous driving by exploring structured pruning techniques. It introduces MoOP, a pruning method that effectively identifies and preserves essential components of the model based on their importance for scene understanding and trajectory prediction. The key contribution is that MoOP enables significant parameter reduction while maintaining competitive performance and improving inference speed and memory efficiency, outperforming existing methods without the need for post-pruning fine-tuning.
 
-### 2. A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning
-**Authors:** Hari Sitaula, Joseph Opitz
-**Link:** https://arxiv.org/abs/2611.27978v1
-**Summary:** This paper addresses the challenge of accurately forecasting the S&P 500 closing level one day ahead by comparing linear regression, RNNs, and LSTMs using a comprehensive dataset and standardized evaluation methods. The authors conducted a rigorous analysis of existing methodologies in financial deep learning, identifying issues that can inflate performance results, and they proposed corrected benchmarks to assess model effectiveness more reliably. Key findings include a more accurate portrayal of model performance, emphasizing the importance of controlling for methodological biases in stock prediction studies.
+### 2. Let Vision-Language Models Generate Images through Their Representations
+**Authors:** JB Kim, Byungwoo Jeon, Kyungmin Lee, Hyeonmo Kang, Cheonbok Park, Shinyoung Joo, Jinwoo Shin, Jeonghoon Kim
+**Link:** https://arxiv.org/abs/2611.31237v1
+**Summary:** The paper addresses the challenge of integrating visual understanding and generation in unified multimodal models. The authors introduce Integral, a framework that creates a shared visual representation space by combining hierarchical representations and a lightweight generative stream, enhancing the model's ability to generate images while preserving its understanding capabilities. Key results show that sharing visual representations significantly improves generative learning compared to using separate representations, indicating that pretrained vision-language models can effectively support visual generation tasks.
 
-### 3. MemOnce: A Scalable Memory Architecture for Large Language Models
-**Authors:** Chang Nie, Chaoyou Fu, Songlin Liu, Yiqing Hu, Caifeng Shan
-**Link:** https://arxiv.org/abs/2611.27973v1
-**Summary:** The paper presents MemOnce, an innovative memory architecture designed to improve the efficiency of large language models (LLMs) during long interactions by addressing issues of memory usage and computational complexity. It achieves this by utilizing a memory encoder-decoder to store compact representations of hidden states and a sparse attention mechanism for effective memory retrieval. The key contributions include a dramatic reduction in GPU memory usage and prefill latency, while also increasing throughput and performance compared to existing architectures.
+### 3. TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming
+**Authors:** Hani Alomari, Md Atabuzzaman, Chris Thomas
+**Link:** https://arxiv.org/abs/2611.31233v1
+**Summary:** The paper addresses the problem of ineffective retrieval in CLIP-style dual encoders, where images and text are mapped poorly due to a modality gap separating their shared embedding space. The authors propose a method called TowerBridge, which uses weight-space programming to make targeted weight adjustments in the encoders without traditional backpropagation, enhancing retrieval accuracy. Their approach improves retrieval performance significantly across multiple datasets, boosting COCO and Flickr30k retrieval scores while minimally impacting other metrics like ImageNet accuracy.
 
-### 4. On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals
-**Authors:** Javier Sanchis, Álvaro Navarro, Jorge García-Carrasco, Tahar Kechadi, Juan Trujillo
-**Link:** https://arxiv.org/abs/2611.27970v1
-**Summary:** The paper addresses the challenge of standardizing EEG feature comparisons for ADHD classification in children and adolescents by curating a comprehensive dataset from existing recordings. It provides a well-documented resource linking EEG signals to various feature definitions, ensuring consistent signal preparation and quality checks. The key contribution is a publicly available dataset that facilitates analysis, alongside preliminary findings showing robust recruitment-group discrimination in specific task conditions, though without establishing diagnostic validity.
+### 4. Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ
+**Authors:** Daniel Theron
+**Link:** https://arxiv.org/abs/2611.31228v1
+**Summary:** This study investigates the ability of language models to detect and correct their own reasoning errors while performing numerical tasks. The researchers tested four models by prompting them to express their confidence in real-time during problem-solving and found that, although models can be guided to correct mistakes when uncertainty is introduced, they consistently fail to recognize their own errors. The key result highlights a critical disconnect: while models struggle with self-monitoring, they can effectively adjust their responses when prompted with external indicators of uncertainty.
 
-### 5. Non-penetrating World Models
-**Authors:** Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji, Xingyi Yang
-**Link:** https://arxiv.org/abs/2611.27963v1
-**Summary:** The paper addresses the issue of preventing object penetration in interactive video world models, revealing that existing models often fail to do so despite having the necessary predictive information. The authors introduce a framework called NoPeWorld, which uses hidden states from diffusion transformers to predict and replace unsafe actions with safe alternatives, significantly reducing penetration incidents from 74% to 16%. Their method also demonstrates impressive generalization capabilities across various scenarios, and they provide open access to their code and benchmark tools.
+### 5. How Far Can Linear Go? BiPert, a Unified Framework for Single-Cell Perturbation Modelling
+**Authors:** Abhishek Sharma, Aleksej Zelezniak
+**Link:** https://arxiv.org/abs/2611.31227v1
+**Summary:** The paper addresses the challenge of predicting how genetic changes affect cell behavior and identifying which genes are involved, particularly in new cell types. The authors developed a linear framework called BiPert that effectively predicts gene expression changes and identifies perturbed genes by breaking down transcriptional responses into shared and specific components. Key findings show that BiPert outperforms existing methods without requiring extensive biological knowledge and highlights the relationship between consistent perturbation effects and successful gene identification.
 
-### 6. Model Carving: Training Transformers That Optimize Their Own Topology
-**Authors:** Kaden Zheng, Pratyusha Sharma
-**Link:** https://arxiv.org/abs/2611.27962v1
-**Summary:** The paper addresses the inefficiency of fixed Transformer architectures in machine learning by introducing a method called Model Carving, which allows a model to learn its own optimal architecture during training. By using learnable gates to remove unnecessary components, the approach results in smaller, more efficient models that perform better than traditional dense models, even surpassing those obtained through pruning or distillation. Key findings demonstrate that carved models not only achieve lower validation losses but also significantly reduce computational costs and increase decoding speed without compromising quality.
+### 6. Self-Supervised Dataset Distillation via Mutual Information Maximization
+**Authors:** Mohammad Hossein Moslemi, Mahdi Beitollahi, Zhimin Mei, Jiale Cai, Bissan Ghaddar, Boyu Wang
+**Link:** https://arxiv.org/abs/2611.31225v1
+**Summary:** The paper addresses the challenge of dataset distillation in self-supervised learning, where the goal is to create a smaller synthetic dataset that effectively captures the essential information from a larger dataset. The authors propose a new method called Mutual Information Prototype Alignment (MIPA), which optimizes synthetic images to maintain information that is invariant to different data augmentations. Their results demonstrate that MIPA generates higher-quality representations compared to existing methods, while also being more efficient in terms of time and storage.
 
-### 7. Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization
-**Authors:** Mamoona Tasadduq, Maryam Bashir
-**Link:** https://arxiv.org/abs/2611.27959v1
-**Summary:** The paper addresses the challenge of high computational costs in hyperparameter optimization (HPO) when evaluating numerous configurations on large datasets. It introduces a ranking-preserving coreset selection framework that efficiently identifies a smaller subset of data that retains the ranking of configurations from the full dataset. The method significantly accelerates HPO processes with various algorithms, achieving speedups of 1.14x to 8.80x while maintaining comparable accuracy, thereby demonstrating that the coreset selection effectively preserves performance rankings even beyond the selected configurations.
+### 7. Agentic AI for Intent Management and Control in Autonomous Communication Networks
+**Authors:** Burak Demirel, Yu Wang, Pablo Soldati
+**Link:** https://arxiv.org/abs/2611.31223v1
+**Summary:** The paper addresses the challenge of translating high-level intents for mobile networks into actionable optimization and control strategies. It proposes a triadic framework with three agents—a language model for intent interpretation, an optimizer for policy adaptation, and a controller for decision-making—and integrates these components to effectively manage and fulfill network intents. The results from a case study in radio resource management demonstrate the framework's ability to align high-level goals with real-time network operations, showing adaptability to service needs and changing conditions.
 
-### 8. Topology Hub Optimal Transport: Eliminating Long Context Dilution at Flash Speed
-**Authors:** Dylan Forde
-**Link:** https://arxiv.org/abs/2611.27951v1
-**Summary:** The paper addresses the challenge of efficiently retrieving relevant information from long-context models while minimizing the dilution of important signals among numerous distractors. The authors propose Topology Hub Optimal Transport (THOT), a method that employs bounded-support capacity gating and a novel Sinkhorn scaling technique to enhance recall performance. THOT achieves impressive zero-shot recall rates in large contexts, outperforming traditional attention mechanisms and demonstrating significant speed improvements in processing over conventional methods.
+### 8. CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans
+**Authors:** Mohammed Baharoon, Sung Eun Kim, Mahmoud Hussain Alabbad, Lucas Bijnens, Ali Piracha, Reem Alwasiah, Talal Yahyan, Abdulrahman Alamoudi, Mashael Alshehri, Rayan Alsager, Hannah Hancock, Anna M. Hunkemöller, Peter Youssef, Mona A. Alhammad, Afnan Aljumayan, Brecht Van Berkel, Eric Bijnens, Saud Alhussain, Maarten Steyvers, Rolf Symons, Bryan Eelen, Ayed Alaklubi, Maha Buraykan Alshammari, Amirah Fahad Alshammeri, Tomas Gilvydis, Ibrahim AlTurki, Monerah Almohideb, Ali Alburkani, Shahad Alhomaiani, Fatima Jabali, Abdulrhman Aljouie, Daesung Kim, Junha Im, Michael Moritz, Hassan R. Alomaish, Pranav Rajpurkar
+**Link:** https://arxiv.org/abs/2611.31222v1
+**Summary:** CTLink addresses the challenge of linking text descriptions of findings in radiology reports to corresponding areas in 3D chest CT scans, which traditionally lack visual markers for these findings. The model was trained using a newly annotated dataset and significantly outperformed an existing model in terms of accuracy, achieving high hit rates and instance F1 scores in evaluations. Its development enhances the interpretability of radiology reports, although it still faces challenges with certain diffuse findings.
 
-### 9. The Optimal Sample Complexity of Agnostic PAC Learning for Partial Concept Classes
-**Authors:** Liang-Yu Zou
-**Link:** https://arxiv.org/abs/2611.27946v1
-**Summary:** This paper addresses the problem of learning from a partial concept class with finite VC dimension in a setting where the learner must work under agnostic conditions. The authors present a deterministic agnostic PAC learning algorithm that achieves the optimal sample complexity using a number of examples proportional to the VC dimension and the desired accuracy. The key contribution is that their sample complexity result matches a previously established lower bound, confirming the efficiency of their approach.
+### 9. LeJEPA Features Are Not Isotropic, and Should Not Be
+**Authors:** Richeek Das, Pratik Chaudhari
+**Link:** https://arxiv.org/abs/2611.31216v1
+**Summary:** The paper addresses the limitations of the LeJEPA regularizer, which aims to create isotropic Gaussian feature distributions but falls short in practice. The authors propose a new regularization term, PolarReg, which effectively optimizes the marginal distributions of feature magnitudes and directions without enforcing strict independence. This approach significantly improves training efficiency and accuracy, achieving comparable results to LeJEPA in much fewer epochs.
 
-### 10. BioEmu2: Scalable Emulation of Biomolecular Dynamics
-**Authors:** Michael Gastegger, Adam E. Foster, José Jiménez-Luna, Tim Hempel, Sarah Lewis, Yu Xie, Lixin Sun, Iryna Zaporozhets, J. Thorben Frank, Yaoyi Chen, Michael Plainer, Ludwig Winkler, Pedro B. P. S. Reis, Sven H. Giese, Roberto Sordillo, Victor García Satorras, Eray Inanc, Kacper Kapuśniak, Soojung Yang, Rishwanth Raghu, Rachel Kim, Gabriel Dernbach, Deniz Gunceler, Hannes Schulz, Bonnie Kruft, Marwin Segler, Christopher M. Bishop, Cecilia Clementi, Ryota Tomioka, Frank Noé
-**Link:** https://arxiv.org/abs/2611.27924v1
-**Summary:** BioEmu2 addresses the challenge of modeling biomolecular motions and interactions at scale, which is crucial for understanding biomolecular function. It is a generative model that combines structure prediction, equilibrium sampling, and time evolution to sample biomolecular dynamics significantly faster than traditional molecular dynamics methods. The key contributions include high accuracy in structure prediction, effective simulation of megadalton complexes, and the ability to generate long-timescale dynamics while maintaining close agreement with established molecular dynamics references.
+### 10. Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning
+**Authors:** Xiwei Liu, Yulong Li, Xuhui Li, Xinlin Zhuang, Zhixiang Lu, Haolin Yang, Jianxu Chen, Yifan Lu, Zhiran Zhang, Yutong Xie
+**Link:** https://arxiv.org/abs/2611.31215v1
+**Summary:** The paper addresses the challenge of enabling vision-language models (VLMs) to purposefully explore and gather evidence in real indoor spaces to answer spatial reasoning questions. The authors introduce ActSpace-Bench, a benchmark with 994 questions requiring exploration across various real environments, and evaluate how well different VLMs perform in this active exploration. The key finding is that while the best models can purposefully seek evidence, their performance is hampered by limited memory, highlighting the need for improvements in memory management and evidence-based reasoning for better spatial intelligence.
