@@ -1,52 +1,52 @@
 ---
-## 2026-11-24
+## 2026-11-25
 
-### 1. Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action
-**Authors:** Seongchan Kim, Soowon Son, Sangoh Kim, Hyunah Ko, Eunbeen Hong, Hyunkoo Lee, Sanghyun Lee, WonJun Moon, Kihong Kim, Dongyeon Son, Woongchan Nam, Seungryong Kim
-**Link:** https://arxiv.org/abs/2611.31240v1
-**Summary:** The paper addresses the high memory and computational costs of reasoning vision-language-action (VLA) models used in autonomous driving by exploring structured pruning techniques. It introduces MoOP, a pruning method that effectively identifies and preserves essential components of the model based on their importance for scene understanding and trajectory prediction. The key contribution is that MoOP enables significant parameter reduction while maintaining competitive performance and improving inference speed and memory efficiency, outperforming existing methods without the need for post-pruning fine-tuning.
+### 1. OmniAct: One Policy, One Million Embodiments
+**Authors:** Xiang Fan, Yuheng Wang, Jiayuan Yan, Bohan Fang, Wisdom Oluchi Ikezogwo, Ainaz Eftekhar, Max Argus, Jason Ren, Jiafei Duan, Ranjay Krishna
+**Link:** https://arxiv.org/abs/2611.33158v1
+**Summary:** The paper addresses the challenge of creating a single control policy for diverse robots that adapts to each robot's unique physical characteristics while performing manipulation tasks. The authors introduce OmniAct, a policy that utilizes a kinematic graph to tailor behaviors based on the robots' joint configurations and scene interactions. Key results show that OmniAct significantly outperforms existing methods in both simulated environments and on a real-world robot, achieving higher success rates and developing distinct strategies that leverage different robotic morphologies.
 
-### 2. Let Vision-Language Models Generate Images through Their Representations
-**Authors:** JB Kim, Byungwoo Jeon, Kyungmin Lee, Hyeonmo Kang, Cheonbok Park, Shinyoung Joo, Jinwoo Shin, Jeonghoon Kim
-**Link:** https://arxiv.org/abs/2611.31237v1
-**Summary:** The paper addresses the challenge of integrating visual understanding and generation in unified multimodal models. The authors introduce Integral, a framework that creates a shared visual representation space by combining hierarchical representations and a lightweight generative stream, enhancing the model's ability to generate images while preserving its understanding capabilities. Key results show that sharing visual representations significantly improves generative learning compared to using separate representations, indicating that pretrained vision-language models can effectively support visual generation tasks.
+### 2. DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning
+**Authors:** Binfei Ji, Zhiwen Cao, Anqi Yang, Prem Seetharaman, Shuo Yang, Ratheesh Kalarot, Yingyan Celine Lin, Mingze Xu
+**Link:** https://arxiv.org/abs/2611.33153v1
+**Summary:** The paper introduces DiaCap, a model designed for effective audiovisual dialogue captioning that generates transcripts, timestamps, and speaker descriptions for video utterances. It combines utterance timing and audiovisual diarization into a single framework, training on a large dataset with synthetic captions and refining performance through reinforcement learning. DiaCap demonstrates strong performance on a benchmark, outperforming existing models like Gemini 4 Argon in timestamp accuracy while maintaining high diarization quality across multilingual videos.
 
-### 3. TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming
-**Authors:** Hani Alomari, Md Atabuzzaman, Chris Thomas
-**Link:** https://arxiv.org/abs/2611.31233v1
-**Summary:** The paper addresses the problem of ineffective retrieval in CLIP-style dual encoders, where images and text are mapped poorly due to a modality gap separating their shared embedding space. The authors propose a method called TowerBridge, which uses weight-space programming to make targeted weight adjustments in the encoders without traditional backpropagation, enhancing retrieval accuracy. Their approach improves retrieval performance significantly across multiple datasets, boosting COCO and Flickr30k retrieval scores while minimally impacting other metrics like ImageNet accuracy.
+### 3. BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles
+**Authors:** Yuwei Yang, Xiaoxiao Sun, Alejandro Lozano, Yuan-Sen Ting, Yuhui Yuan, Liang Zheng, Serena Yeung-Levy
+**Link:** https://arxiv.org/abs/2611.33151v1
+**Summary:** The paper addresses the challenge of enhancing biomedical vision-language models by leveraging the structural relationships found in scientific articles, such as figures, captions, and associated text. The authors introduce a new dataset, Loom52M, which incorporates these relationships into a contrastive training approach, allowing models to learn from both exact matches and related content. As a result, their model, BioLoom, significantly improves performance on various classification tasks compared to existing baselines, achieving a mean accuracy of 56.82%.
 
-### 4. Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ
-**Authors:** Daniel Theron
-**Link:** https://arxiv.org/abs/2611.31228v1
-**Summary:** This study investigates the ability of language models to detect and correct their own reasoning errors while performing numerical tasks. The researchers tested four models by prompting them to express their confidence in real-time during problem-solving and found that, although models can be guided to correct mistakes when uncertainty is introduced, they consistently fail to recognize their own errors. The key result highlights a critical disconnect: while models struggle with self-monitoring, they can effectively adjust their responses when prompted with external indicators of uncertainty.
+### 4. CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies
+**Authors:** Dawid J. Kopiczko, Tijmen Blankevoort, Yuki M. Asano
+**Link:** https://arxiv.org/abs/2611.33148v1
+**Summary:** The paper addresses the challenge of distilling long-horizon policies from strong teacher models whose reasoning processes are inaccessible via APIs. The authors propose a method called CoT-Proxy that allows a student model to learn effectively from the teacher's actions alone, without relying on the teacher's chain-of-thought, leading to improved performance. Key results show that this approach significantly enhances the success rates of the student models on various tasks, with notable increases of up to 48% on specific benchmarks.
 
-### 5. How Far Can Linear Go? BiPert, a Unified Framework for Single-Cell Perturbation Modelling
-**Authors:** Abhishek Sharma, Aleksej Zelezniak
-**Link:** https://arxiv.org/abs/2611.31227v1
-**Summary:** The paper addresses the challenge of predicting how genetic changes affect cell behavior and identifying which genes are involved, particularly in new cell types. The authors developed a linear framework called BiPert that effectively predicts gene expression changes and identifies perturbed genes by breaking down transcriptional responses into shared and specific components. Key findings show that BiPert outperforms existing methods without requiring extensive biological knowledge and highlights the relationship between consistent perturbation effects and successful gene identification.
+### 5. iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction
+**Authors:** Vansh Kapoor, Max Sobol Mark, Sreyas Venkataraman, Max Simchowitz, Aviral Kumar
+**Link:** https://arxiv.org/abs/2611.33141v1
+**Summary:** The paper presents iWAM, a method for efficient action prediction that leverages world-action models without the high computational cost of generating future scenes. It introduces the idea of conditioning action policies on intermediate features derived from a single evaluation of a video-generation model, rather than needing full frame predictions. The key contribution is demonstrating that this approach can retain the predictive performance of traditional world-action models while significantly reducing inference costs, as shown in various simulated benchmarks and real robot applications.
 
-### 6. Self-Supervised Dataset Distillation via Mutual Information Maximization
-**Authors:** Mohammad Hossein Moslemi, Mahdi Beitollahi, Zhimin Mei, Jiale Cai, Bissan Ghaddar, Boyu Wang
-**Link:** https://arxiv.org/abs/2611.31225v1
-**Summary:** The paper addresses the challenge of dataset distillation in self-supervised learning, where the goal is to create a smaller synthetic dataset that effectively captures the essential information from a larger dataset. The authors propose a new method called Mutual Information Prototype Alignment (MIPA), which optimizes synthetic images to maintain information that is invariant to different data augmentations. Their results demonstrate that MIPA generates higher-quality representations compared to existing methods, while also being more efficient in terms of time and storage.
+### 6. BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation
+**Authors:** Nadav Magar, Amir Hertz, Ariel Shamir, Or Patashnik
+**Link:** https://arxiv.org/abs/2611.33135v1
+**Summary:** The paper addresses the issue of generating valid LEGO assemblies from language models, which often produce builds with parts that either collide or are unattached. The authors introduce BriConstrain, a decoding method that dynamically restricts the model's next-token probabilities to focus on valid attachment configurations, significantly improving the rate of collision-free builds from 31% to 91% for one format and from 15% to 65% for another, while operating at a lower cost than traditional rejection sampling methods.
 
-### 7. Agentic AI for Intent Management and Control in Autonomous Communication Networks
-**Authors:** Burak Demirel, Yu Wang, Pablo Soldati
-**Link:** https://arxiv.org/abs/2611.31223v1
-**Summary:** The paper addresses the challenge of translating high-level intents for mobile networks into actionable optimization and control strategies. It proposes a triadic framework with three agents—a language model for intent interpretation, an optimizer for policy adaptation, and a controller for decision-making—and integrates these components to effectively manage and fulfill network intents. The results from a case study in radio resource management demonstrate the framework's ability to align high-level goals with real-time network operations, showing adaptability to service needs and changing conditions.
+### 7. A Bias in Disguise: Tiny Gradient Edits Stop a Small Language Model's Thinking Loops and Complement a Frontier Model's Weight Edit
+**Authors:** Hussamuddin Syed
+**Link:** https://arxiv.org/abs/2611.33133v1
+**Summary:** The paper addresses the issue of low reasoning accuracy in small language models, specifically the Qwen3.5-0.8B, which struggles to complete thinking tasks effectively. The authors propose a method that combines tiny gradient edits with an existing weight editing technique to significantly improve the model's performance on MATH-500 problems, achieving an accuracy increase from around 15% to over 62% when both approaches are used together. Their findings demonstrate that these edits are mutually beneficial, allowing for enhanced reasoning capabilities in language models.
 
-### 8. CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans
-**Authors:** Mohammed Baharoon, Sung Eun Kim, Mahmoud Hussain Alabbad, Lucas Bijnens, Ali Piracha, Reem Alwasiah, Talal Yahyan, Abdulrahman Alamoudi, Mashael Alshehri, Rayan Alsager, Hannah Hancock, Anna M. Hunkemöller, Peter Youssef, Mona A. Alhammad, Afnan Aljumayan, Brecht Van Berkel, Eric Bijnens, Saud Alhussain, Maarten Steyvers, Rolf Symons, Bryan Eelen, Ayed Alaklubi, Maha Buraykan Alshammari, Amirah Fahad Alshammeri, Tomas Gilvydis, Ibrahim AlTurki, Monerah Almohideb, Ali Alburkani, Shahad Alhomaiani, Fatima Jabali, Abdulrhman Aljouie, Daesung Kim, Junha Im, Michael Moritz, Hassan R. Alomaish, Pranav Rajpurkar
-**Link:** https://arxiv.org/abs/2611.31222v1
-**Summary:** CTLink addresses the challenge of linking text descriptions of findings in radiology reports to corresponding areas in 3D chest CT scans, which traditionally lack visual markers for these findings. The model was trained using a newly annotated dataset and significantly outperformed an existing model in terms of accuracy, achieving high hit rates and instance F1 scores in evaluations. Its development enhances the interpretability of radiology reports, although it still faces challenges with certain diffuse findings.
+### 8. Exploratory Midtraining for Robot Policies
+**Authors:** Kshitiz, Zheyuan Hu, Robyn Wu, Yizhou Li, Yunchu Zhang, Vattanary Tevy, Kavya Tayal, Shawn Yin, Aykut Onol, Kushal Arora, Dhruv Shah, Abhishek Gupta, Zackory Erickson, Aviral Kumar
+**Link:** https://arxiv.org/abs/2611.33130v1
+**Summary:** The paper addresses the limitation of robot policies that primarily learn from human demonstrations, which often lack the variety of low-level behaviors necessary for autonomous improvement. The authors propose a midtraining approach using a new dataset, $β$-Data, where human operators are guided by an adversarially perturbed environment, allowing for more diverse behavior exploration. Their method leads to better task execution, improved generalization across manipulation tasks, and more efficient online learning as robots require fewer attempts to successfully complete tasks compared to conventional training methods.
 
-### 9. LeJEPA Features Are Not Isotropic, and Should Not Be
-**Authors:** Richeek Das, Pratik Chaudhari
-**Link:** https://arxiv.org/abs/2611.31216v1
-**Summary:** The paper addresses the limitations of the LeJEPA regularizer, which aims to create isotropic Gaussian feature distributions but falls short in practice. The authors propose a new regularization term, PolarReg, which effectively optimizes the marginal distributions of feature magnitudes and directions without enforcing strict independence. This approach significantly improves training efficiency and accuracy, achieving comparable results to LeJEPA in much fewer epochs.
+### 9. SAG-Mem-1.0 Technical Report
+**Authors:** Yuchao Wu, XingCheng Liang, Xuanze Wang, Yini Huang, Yue Wu
+**Link:** https://arxiv.org/abs/2611.33124v1
+**Summary:** The paper presents SAG-Mem, a framework for long-term conversational memory that efficiently retrieves relevant facts from past dialogues without losing context or detail. It uses a combination of a lexical index for memory construction and a two-step retrieval process to enhance evidence gathering. The approach achieves the highest performance on established benchmarks, demonstrating its effectiveness in preserving dialogue and expanding retrieval based on evidence.
 
-### 10. Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning
-**Authors:** Xiwei Liu, Yulong Li, Xuhui Li, Xinlin Zhuang, Zhixiang Lu, Haolin Yang, Jianxu Chen, Yifan Lu, Zhiran Zhang, Yutong Xie
-**Link:** https://arxiv.org/abs/2611.31215v1
-**Summary:** The paper addresses the challenge of enabling vision-language models (VLMs) to purposefully explore and gather evidence in real indoor spaces to answer spatial reasoning questions. The authors introduce ActSpace-Bench, a benchmark with 994 questions requiring exploration across various real environments, and evaluate how well different VLMs perform in this active exploration. The key finding is that while the best models can purposefully seek evidence, their performance is hampered by limited memory, highlighting the need for improvements in memory management and evidence-based reasoning for better spatial intelligence.
+### 10. MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing
+**Authors:** Scott Piersall, Yang Gao, Shenyang Liu, Liqiang Wang
+**Link:** https://arxiv.org/abs/2611.33119v1
+**Summary:** The paper presents MetaFORGE, a meta-learning framework designed to enhance the generation of efficient and correct parallel programs using large language models. By optimizing natural-language specifications through a combination of testing, diagnostics, and performance profiling, MetaFORGE significantly improves program quality and execution efficiency compared to previous methods. The results show that it consistently outperforms zero-shot generation and an iterative baseline, showcasing its effective use of optimization knowledge across various computing tasks.
