@@ -1,52 +1,52 @@
 ---
-## 2026-11-25
+## 2026-11-26
 
-### 1. OmniAct: One Policy, One Million Embodiments
-**Authors:** Xiang Fan, Yuheng Wang, Jiayuan Yan, Bohan Fang, Wisdom Oluchi Ikezogwo, Ainaz Eftekhar, Max Argus, Jason Ren, Jiafei Duan, Ranjay Krishna
-**Link:** https://arxiv.org/abs/2611.33158v1
-**Summary:** The paper addresses the challenge of creating a single control policy for diverse robots that adapts to each robot's unique physical characteristics while performing manipulation tasks. The authors introduce OmniAct, a policy that utilizes a kinematic graph to tailor behaviors based on the robots' joint configurations and scene interactions. Key results show that OmniAct significantly outperforms existing methods in both simulated environments and on a real-world robot, achieving higher success rates and developing distinct strategies that leverage different robotic morphologies.
+### 1. Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning
+**Authors:** Yalin E. Sagduyu, Tugba Erpek
+**Link:** https://arxiv.org/abs/2611.34942v1
+**Summary:** This paper addresses the challenge of adapting autoencoder-based communication systems to different channel conditions, particularly when trained on a simpler channel like AWGN and then faced with more complex environments like Rayleigh fading. The authors propose a transfer-learning approach that fine-tunes only a small portion of the encoder and decoder layers while keeping most of the model unchanged, allowing for quick adaptation without significant resource costs. They demonstrate that this method effectively reduces bit error rates and training time while maintaining performance close to fully retrained models.
 
-### 2. DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning
-**Authors:** Binfei Ji, Zhiwen Cao, Anqi Yang, Prem Seetharaman, Shuo Yang, Ratheesh Kalarot, Yingyan Celine Lin, Mingze Xu
-**Link:** https://arxiv.org/abs/2611.33153v1
-**Summary:** The paper introduces DiaCap, a model designed for effective audiovisual dialogue captioning that generates transcripts, timestamps, and speaker descriptions for video utterances. It combines utterance timing and audiovisual diarization into a single framework, training on a large dataset with synthetic captions and refining performance through reinforcement learning. DiaCap demonstrates strong performance on a benchmark, outperforming existing models like Gemini 4 Argon in timestamp accuracy while maintaining high diarization quality across multilingual videos.
+### 2. Tokenisation is not in APX
+**Authors:** Violeta Kastreva, Philip Whittington, Dennis Komm, Tiago Pimentel
+**Link:** https://arxiv.org/abs/2611.34938v1
+**Summary:** This paper addresses the problem of tokenisation, specifically the challenge of finding an optimal tokeniser that efficiently groups elements in a way that aligns with certain objectives, like compression or likelihood maximization. The authors prove that, unless P=NP, it's impossible to design a polynomial-time algorithm that can produce a tokenisation within a constant factor of the optimal solution, thus establishing that tokenisation is not in the APX complexity class. They also demonstrate that direct tokenisation is APX-hard even for simple cases with unary alphabets, indicating that no polynomial-time approximation scheme exists for this problem.
 
-### 3. BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles
-**Authors:** Yuwei Yang, Xiaoxiao Sun, Alejandro Lozano, Yuan-Sen Ting, Yuhui Yuan, Liang Zheng, Serena Yeung-Levy
-**Link:** https://arxiv.org/abs/2611.33151v1
-**Summary:** The paper addresses the challenge of enhancing biomedical vision-language models by leveraging the structural relationships found in scientific articles, such as figures, captions, and associated text. The authors introduce a new dataset, Loom52M, which incorporates these relationships into a contrastive training approach, allowing models to learn from both exact matches and related content. As a result, their model, BioLoom, significantly improves performance on various classification tasks compared to existing baselines, achieving a mean accuracy of 56.82%.
+### 3. Can image generation help visual reasoning? An empirical study
+**Authors:** Xueyang Yu, Yifan Jing, Taiming Lu, Linrong Cai, Zhipeng Cai, Yunyang Xiong, Gabriel Sarch, Zhuang Liu
+**Link:** https://arxiv.org/abs/2611.34935v1
+**Summary:** This paper investigates whether generating images can enhance the ability of multimodal models to answer visual questions. The researchers tested various combinations of vision-language models and image generators but found that using generated images generally decreased accuracy on most tasks. Notably, for some models, repeated image edits produced varying results, indicating that the effectiveness of image generation in visual reasoning is inconsistent.
 
-### 4. CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies
-**Authors:** Dawid J. Kopiczko, Tijmen Blankevoort, Yuki M. Asano
-**Link:** https://arxiv.org/abs/2611.33148v1
-**Summary:** The paper addresses the challenge of distilling long-horizon policies from strong teacher models whose reasoning processes are inaccessible via APIs. The authors propose a method called CoT-Proxy that allows a student model to learn effectively from the teacher's actions alone, without relying on the teacher's chain-of-thought, leading to improved performance. Key results show that this approach significantly enhances the success rates of the student models on various tasks, with notable increases of up to 48% on specific benchmarks.
+### 4. Attack Policy Selection can Mislead Monitor Evaluators
+**Authors:** Charlie Griffin, Oliver Makins, Asa Cooper Stickland, Alessandro Abate, Yarin Gal, Abby D'Cruz, Xander Davies
+**Link:** https://arxiv.org/abs/2611.34934v1
+**Summary:** This paper investigates the reliability of AI monitors that detect harmful behavior by evaluating their performance against attack policies, which serve as proxies for dangerous actions. The study finds that the effectiveness of these monitors can vary significantly (from 0.5% to 23% false negative rates) based on how the attack policies are generated and optimized. This variability highlights the risk of overestimating a monitor's robustness, underscoring the need for careful justification of the evaluation methods and their applicability to real-world scenarios.
 
-### 5. iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction
-**Authors:** Vansh Kapoor, Max Sobol Mark, Sreyas Venkataraman, Max Simchowitz, Aviral Kumar
-**Link:** https://arxiv.org/abs/2611.33141v1
-**Summary:** The paper presents iWAM, a method for efficient action prediction that leverages world-action models without the high computational cost of generating future scenes. It introduces the idea of conditioning action policies on intermediate features derived from a single evaluation of a video-generation model, rather than needing full frame predictions. The key contribution is demonstrating that this approach can retain the predictive performance of traditional world-action models while significantly reducing inference costs, as shown in various simulated benchmarks and real robot applications.
+### 5. A gene informed benchmark for BioScoring of pathology foundation models
+**Authors:** Paul Vilars, Vincent Quoc-Huy Trinh, Maria Vakalopoulou, Dimitris Samaras, Stergios Christodoulidis, Mahdi S. Hosseini
+**Link:** https://arxiv.org/abs/2611.34930v1
+**Summary:** The paper addresses the challenge of evaluating pathology foundation models in a way that reflects their biological relevance, rather than just their performance on classification tasks. It introduces BioScore, a novel benchmark that uses sparse autoencoders to assess how well these models capture specific cell identities based on spatial transcriptomics data. The key finding is that all pathology models outperformed natural image models, highlighting their effectiveness in representing biological features, while also providing detailed insights into which cell identities are well represented by each model.
 
-### 6. BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation
-**Authors:** Nadav Magar, Amir Hertz, Ariel Shamir, Or Patashnik
-**Link:** https://arxiv.org/abs/2611.33135v1
-**Summary:** The paper addresses the issue of generating valid LEGO assemblies from language models, which often produce builds with parts that either collide or are unattached. The authors introduce BriConstrain, a decoding method that dynamically restricts the model's next-token probabilities to focus on valid attachment configurations, significantly improving the rate of collision-free builds from 31% to 91% for one format and from 15% to 65% for another, while operating at a lower cost than traditional rejection sampling methods.
+### 6. Diverse Alternative Reasoning Traces for Hard Math Problems
+**Authors:** Lukas Aichberger, Adam Golinski, Arno Blaas, Arwen Bradley, Jacob Springer, Mehrdad Farajtabar, Michael Kirchhof, Sinead Williamson
+**Link:** https://arxiv.org/abs/2611.34928v1
+**Summary:** The paper addresses the challenge of finding effective reasoning traces for difficult math problems, which are often scarce when sampling randomly from large language models. It introduces a method called Diverse Alternative Reasoning Traces (DART), which refines rejected reasoning traces by breaking them down and creating varied alternative paths. The key finding is that DART recovers 37% more solutions to challenging math problems compared to traditional methods, while also reducing the cost of generating accepted solutions.
 
-### 7. A Bias in Disguise: Tiny Gradient Edits Stop a Small Language Model's Thinking Loops and Complement a Frontier Model's Weight Edit
-**Authors:** Hussamuddin Syed
-**Link:** https://arxiv.org/abs/2611.33133v1
-**Summary:** The paper addresses the issue of low reasoning accuracy in small language models, specifically the Qwen3.5-0.8B, which struggles to complete thinking tasks effectively. The authors propose a method that combines tiny gradient edits with an existing weight editing technique to significantly improve the model's performance on MATH-500 problems, achieving an accuracy increase from around 15% to over 62% when both approaches are used together. Their findings demonstrate that these edits are mutually beneficial, allowing for enhanced reasoning capabilities in language models.
+### 7. Mixture-of-Loops Transformer
+**Authors:** Lianghui Zhu, Shijie Wang, Xinggang Wang, Jinze Bai, Bo Wang, Xiang Bai
+**Link:** https://arxiv.org/abs/2611.34923v1
+**Summary:** The Mixture-of-Loops Transformer (MoLT) addresses the challenge of balancing expressivity and efficiency in looped Transformers by introducing a new attention mechanism that selectively reuses memory across different processing loops. This approach enhances model performance significantly, achieving greater token efficiency and improved accuracy in various tasks compared to existing models. Notably, the U-shaped version of MoLT (U-MoLT) demonstrates a substantial reduction in computational cost while maintaining competitive inference speeds.
 
-### 8. Exploratory Midtraining for Robot Policies
-**Authors:** Kshitiz, Zheyuan Hu, Robyn Wu, Yizhou Li, Yunchu Zhang, Vattanary Tevy, Kavya Tayal, Shawn Yin, Aykut Onol, Kushal Arora, Dhruv Shah, Abhishek Gupta, Zackory Erickson, Aviral Kumar
-**Link:** https://arxiv.org/abs/2611.33130v1
-**Summary:** The paper addresses the limitation of robot policies that primarily learn from human demonstrations, which often lack the variety of low-level behaviors necessary for autonomous improvement. The authors propose a midtraining approach using a new dataset, $β$-Data, where human operators are guided by an adversarially perturbed environment, allowing for more diverse behavior exploration. Their method leads to better task execution, improved generalization across manipulation tasks, and more efficient online learning as robots require fewer attempts to successfully complete tasks compared to conventional training methods.
+### 8. $μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents
+**Authors:** Qihao Lin, Guanxu Chen, Shuhang Zheng, Xiaoya Lu, Jingyi Yang, Terumi Chiba, Wenyi Yu, Chao Zhang, Zhuan Shi, Jing Shao
+**Link:** https://arxiv.org/abs/2611.34920v1
+**Summary:** The paper addresses the challenge of evaluating voice agents in shared environments where multiple users have interdependent requests and varying levels of authority and privacy. The authors introduce $μ$-Bench, a benchmark that simulates user interactions and evaluates joint task completion across various scenarios. Key findings reveal that proprietary voice systems perform better than open-weight models, but overall success rates are limited, particularly in larger groups, highlighting areas for improvement in multi-turn interactions.
 
-### 9. SAG-Mem-1.0 Technical Report
-**Authors:** Yuchao Wu, XingCheng Liang, Xuanze Wang, Yini Huang, Yue Wu
-**Link:** https://arxiv.org/abs/2611.33124v1
-**Summary:** The paper presents SAG-Mem, a framework for long-term conversational memory that efficiently retrieves relevant facts from past dialogues without losing context or detail. It uses a combination of a lexical index for memory construction and a two-step retrieval process to enhance evidence gathering. The approach achieves the highest performance on established benchmarks, demonstrating its effectiveness in preserving dialogue and expanding retrieval based on evidence.
+### 9. Enhancing Maritime Domain Awareness using Latent Space Representations
+**Authors:** Rikard Vinge, Miguel A. Belenguer-Plomer, Isabelle Wittmann, Octavian Dumitru, Michele Lazzarini, Sergio Albani, Conrad M Albrecht
+**Link:** https://arxiv.org/abs/2611.34899v1
+**Summary:** This paper addresses the challenge of Maritime Domain Awareness (MDA) by using compressed latent-space representations of Earth Observation data, specifically from Sentinel-1 synthetic aperture radar imagery. The authors developed a method that leverages these embeddings to detect, localize, and classify vessels efficiently, achieving a high detection accuracy and releasing a new maritime dataset of approximately 2,000 images paired with AIS signals. The findings highlight both the promise and limitations of using Geospatial Foundation Models for detailed MDA applications.
 
-### 10. MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing
-**Authors:** Scott Piersall, Yang Gao, Shenyang Liu, Liqiang Wang
-**Link:** https://arxiv.org/abs/2611.33119v1
-**Summary:** The paper presents MetaFORGE, a meta-learning framework designed to enhance the generation of efficient and correct parallel programs using large language models. By optimizing natural-language specifications through a combination of testing, diagnostics, and performance profiling, MetaFORGE significantly improves program quality and execution efficiency compared to previous methods. The results show that it consistently outperforms zero-shot generation and an iterative baseline, showcasing its effective use of optimization knowledge across various computing tasks.
+### 10. What a Drop Reveals: Sim-to-Real Material Estimation for Deformable Objects from Video
+**Authors:** Ziyue Peng, Yanxi Hu, Junyoung Kim, Andrew Chen, Jin Yang, Chandrajit L. Bajaj, Etienne Vouga, William T. Freeman, Qixing Huang, Brandon Y. Feng
+**Link:** https://arxiv.org/abs/2611.34894v1
+**Summary:** The paper addresses the challenge of estimating material properties, such as stiffness and yield stress, of deformable objects based on their behavior when dropped, using only video footage with no material labels. The authors developed a predictor called PhysReader that learns to connect 2D video data to 3D deformation in a simulated environment, while demonstrating that short 2D optical-flow tracklets transfer better to real scenarios than more detailed 3D inputs. The key finding is that PhysReader outperforms other methods in estimating material properties from real video drops, significantly improving accuracy with minimal processing time.
